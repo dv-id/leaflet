@@ -2,6 +2,7 @@ body {
     background-color: rgb(44, 1, 25);
     color: rgb(255, 126, 165);
     color: rgb(255, 1, 77);
+    line-height: normal;
 }
 
 .alegreya-bold {
@@ -23,7 +24,7 @@ body {
 }
 
 h1 {
-
+    font-family: "Ultra", serif;
 }
 
 h3 {
@@ -36,14 +37,20 @@ h5 {
     margin-bottom: 0px;
 }
 p {
-
+    padding: 10px;
+    color: rgba(197, 97, 130, 0.801);
+    font-size: medium;
 }
 
 li {
     list-style-type: none;
-    margin-bottom: 3px;
-    margin-top: 3px;
+    margin-bottom: 6px;
+    margin-top: 6px;
     color: rgba(197, 97, 130, 0.801);
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
 }
 
 a, a:hover, a:focus, a:active {
