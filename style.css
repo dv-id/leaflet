@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(44, 1, 25);
+    background-color: rgb(44, 1, 25) !important;
     color: rgb(255, 126, 165);
     color: rgb(255, 1, 77);
     line-height: normal;
@@ -10,6 +10,22 @@ body {
     font-optical-sizing: auto;
     font-weight: 700;
 }
+
+.navbar-brand {
+    color: rgb(255, 1, 77) !important;
+}
+
+.accordion {
+    --bs-accordion-btn-bg: rgb(44, 1, 25);
+    --bs-accordion-btn-color: rgb(255, 1, 77);
+    --bs-accordion-active-bg: rgb(44, 1, 25);
+    --bs-accordion-active-color: rgb(255, 1, 77);
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-bg: rgb(44, 1, 25);
+    --bs-accordion-color: rgba(197, 97, 130, 0.801);
+    --bs-accordion-border-color: rgba(197, 97, 130, 0.801);
+}
+
 
 .alegreya {
     font-family: "Ultra", serif;
