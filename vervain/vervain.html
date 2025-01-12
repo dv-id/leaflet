@@ -133,10 +133,10 @@
                             </div>
                             <div class="card-body d-flex justify-content-center" style="background-color: black;">
                                 <!-- <p class="card-text"></p> -->
-                                <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                <!-- <button type="button" class="btn btn-dark" style="background-color: white; color: black; font-style: italic;" data-bs-toggle="modal"
                                     data-bs-target="#staticBackdrop">
                                     < order now >
-                                </button>
+                                </button> -->
                             </div>
                         </div>
                     </div>
@@ -145,38 +145,38 @@
 
 
                     <!-- Modal -->
-                    <div class="modal fade" id="staticBackdrop" data-bs-theme="dark" data-bs-backdrop="static"
+                    <div class="modal fade" id="staticBackdrop" data-bs-theme="light" data-bs-backdrop="static"
                         data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h2 class="modal-title fs-5" id="staticBackdropLabel">Vyplňte Vaše údaje prosím.</h2>
+                                    <h2 class="modal-title fs-5" id="staticBackdropLabel">Fill out your details pleas.</h2>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <form id="customerdetails">
                                         <div class="input-group mb-3">
-                                            <label for="fullname" class="input-group-text">Jméno a Přijmení</label>
-                                            <input id="fullname" type="text" placeholder="zadejte Vaše jméno a příjmení" class="form-control">
+                                            <label for="fullname" class="input-group-text">Name & Surname</label>
+                                            <input id="fullname" type="text" placeholder="input your name and surname please" class="form-control">
                                         </div>
                                         <div class="input-group mb-3">
                                             <label for="email "class="input-group-text">Email</label>
-                                            <input id="email" type="text" placeholder="zadejte Váš email" class="form-control">
+                                            <input id="email" type="text" placeholder="input your email please" class="form-control">
                                         </div>
 
                                         <div class="input-group mb-3">
-                                            <label for="vybranyprodukt "class="input-group-text">Produkt</label>
+                                            <label for="vybranyprodukt "class="input-group-text">Color</label>
                                             <select id="vybranyprodukt" class="form-select" aria-label="Default select example">
-                                                <option value="1">váza HalfVase</option>
-                                                <option value="2">kabinet Cube Cabinet</option>
+                                                <option value="1">Dark blue</option>
+                                                <option value="2">Crystal clear</option>
                                             </select>
                                         </div>
                                     </form>
 
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" onclick="sendEmail()">Objednat</button>
+                                    <button type="button" class="btn btn-secondary" onclick="sendEmail()">Submit order</button>
                                 </div>
                             </div>
                         </div>

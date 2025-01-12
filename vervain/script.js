@@ -12,7 +12,7 @@ function sendEmail() {
 
     let params = {
         fullname: document.getElementById("fullname").value,
-        to: "philip.hruby777@gmail.com",
+        to: "",
         replyto: document.getElementById("email").value,
         message: `new order! 8)! \n jméno: ${name} \n si objednal: ${producttext} \n email: ${email}`
     };
@@ -22,7 +22,7 @@ function sendEmail() {
 
     emailjs.send(serviceID, templateID, params)
         .then(res => {
-            alert("Váš email byl zaslán úspěšně! Vyčkejte než Vás kontaktuji.")
+            alert("Email sent successfully. Wait until we follow up with an email.")
             customerdetails.reset()
         })
         .catch(err => {

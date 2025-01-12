@@ -26,3 +26,8 @@ h1 {
     transition: transform 0.5s ease-in-out; /* Adjusts the smoothness of the slide */
 }
 
+.modal, modal-body {
+    --bs-modal-bg: white;
+    --bs-modal-color: black;
+    --bs-modal-border-color: white;
+}
