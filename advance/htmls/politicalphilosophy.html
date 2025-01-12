@@ -1,0 +1,1756 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>/\dvance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+        code {
+            white-space: pre-wrap;
+        }
+
+        span.smallcaps {
+            font-variant: small-caps;
+        }
+
+        span.underline {
+            text-decoration: underline;
+        }
+
+        div.column {
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+        }
+
+        div.hanging-indent {
+            margin-left: 1.5em;
+            text-indent: -1.5em;
+        }
+
+        ul.task-list {
+            list-style: none;
+        }
+    </style>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body style="
+    background-color: rgb(0, 0, 39);
+    color: rgb(205, 158, 250);" class="vh-100 p-0 mb-0">
+
+    <div class="container" style="margin-top: 10%;">
+        <div id="business-row" class="row justify-content-between">
+           
+            <nav class="navbar navbar-dark navbar-collapse navbar-fixed-top fixed-top justify-content-center container" style="background-color: rgb(0, 0, 40);">
+                <div class="container justify-content-center">
+                <a class="navbar-brand" href="../index.html" style="color: rgb(179, 114, 240);">/\dvance</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../finance.html">Finance</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../startups.html">Startups</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../economics.html">Economics</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../humanities.html">Humanities</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../philosophy.html">Philosophy</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../science.html">Science</a>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+
+                <div class="container" style="background-color: rgb(0, 0, 40);">
+                    <div class="col-12 d-flex justify-content-start align-items-center">
+                        <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                            <ol class="breadcrumb m-1">
+                                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="../philosophy.html">Philosophy</a></li>
+                                <li class="breadcrumb-item active"><a href="../htmls/politicalphilosophy.html">Political Philosophy</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+              <div class="btn position-fixed fixed-bottom d-flex justify-content-end p-0">
+                <a style="color: white; background-color: rgb(0, 0, 40);" class="border rounded p-1"
+                onclick="document.getElementById('contents').scrollIntoView({ behavior: 'smooth' });">contents^</a>
+              </div>
+            </nav>
+
+
+        </div>
+        <div class="row">
+            <h1 id="contents" class="m-0">contents</h4>
+                <div class="col-6">
+                    <ul>
+                        <li class="mb-1">
+                            <a href="#detailed-notes-on-platos-apology-of-socrates">Plato’s Apology of Socrates</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-socrates-the-trial-and-philosophy">Notes on Socrates: The Trial and Philosophy</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-platos-republic">Plato’s Republic</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-on-platos-republic-book-I">Plato’s Republic: Book I</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-platos-republic">Plato’s Republic II</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-aristotle-political-philosophy">Notes on Aristotle: Political Philosophy</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#detailed-notes-on-aristotles-comparative-politics">Aristotle’s Comparative Politics</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-aristotles-political-thought">Aristotle’s Political Thought</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#an-introduction-to-machiavelli">An Introduction to Machiavelli</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-machiavellis-political-philosophy">Machiavelli’s Political Philosophy</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-thomas-hobbes">Thomas Hobbes</a>
+                        </li>
+                        <li>
+                            <a href="#notes-on-hobbes-state-of-nature-and-individualism-from-professor-steven-smiths-lecture">Hobbes’ State of Nature and Individualism</a>
+                        </li>
+ 
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-on-hobbes-political-philosophy">Hobbes’ Political Philosophy</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-john-lockes-political-philosophy">John Locke’s Political Philosophy</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-on-john-lockes-political-philosophy">John Locke’s Political Philosophy II</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-on-john-lockes-political-philosophy-1">John Locke’s Political Philosophy III</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-on-rousseau">Rousseau</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-rousseaus-second-discourse">Rousseau’s Second Discourse</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-jean-jacques-rousseau">Jean-Jacques Rousseau</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-alexis-de-tocquevilles-democracy-in-america">Alexis de Tocqueville’s Democracy in America</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#tocquevilles-analysis-of-american-democracy">Tocqueville’s Analysis of American Democracy</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-tocquevilles-democracy-in-america">Tocqueville’s Democracy in America</a>
+                        </li>
+                        <li>
+                            <a href="#notes-on-globalization-and-political-theory-in-defense-of-politics">Globalization and Political Theory: In Defense of Politics</a>
+                        </li>
+
+                    </ul>
+                </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- insert under this -->
+    <div class="container">
+        <h1>Political Philosophy</h1>
+        <h2 id="what-is-political-philosophy">What is Political Philosophy?</h2>
+        <p>Political philosophy can be viewed in two ways:</p>
+        <ul>
+        <li><p>As a subfield of political science, alongside areas such as American government, comparative politics, and international relations.</p></li>
+        <li><p>As the foundational aspect of political science, addressing the fundamental problems, concepts, and categories that shape the study of politics.</p></li>
+        </ul>
+        <h3 id="the-study-of-great-thinkers">The Study of Great Thinkers</h3>
+        <p>Political philosophy is often explored through the works of historical thinkers such as:</p>
+        <ul>
+        <li><p>Plato</p></li>
+        <li><p>Aristotle</p></li>
+        <li><p>Machiavelli</p></li>
+        <li><p>Hobbes</p></li>
+        <li><p>Hegel</p></li>
+        <li><p>Tocqueville</p></li>
+        <li><p>Nietzsche</p></li>
+        </ul>
+        <h4 id="concerns-of-studying-historical-texts">Concerns of Studying Historical Texts</h4>
+        <p>Studying these texts raises several questions:</p>
+        <ul>
+        <li><p>Why focus on certain thinkers over others?</p></li>
+        <li><p>Does this historical focus lead to antiquarianism or inhibit original thought?</p></li>
+        <li><p>How relevant are the ideas of ancient philosophers to modern issues like globalization, terrorism, and ethnic conflict?</p></li>
+        </ul>
+        <h4 id="the-importance-of-classical-questions">The Importance of Classical Questions</h4>
+        <p>Despite these concerns, the works of these thinkers continue to frame enduring questions in political philosophy, such as:</p>
+        <ul>
+        <li><p>What is justice?</p></li>
+        <li><p>What are the goals of a decent society?</p></li>
+        <li><p>Why should we obey laws, and what are the limits of such obligation?</p></li>
+        <li><p>What constitutes human dignity?</p></li>
+        </ul>
+        <h3 id="what-is-a-regime">What is a Regime?</h3>
+        <p>The course will investigate the concept of regime, defined broadly as:</p>
+        <ul>
+        <li><p>A form of government characterized by how public offices are distributed and how people are governed.</p></li>
+        <li><p>Examples of governance include rule by one, by a few, or by many.</p></li>
+        </ul>
+        <h4 id="key-questions-regarding-regimes">Key Questions Regarding Regimes</h4>
+        <ul>
+        <li><p>How are regimes defined?</p></li>
+        <li><p>What holds them together?</p></li>
+        <li><p>What causes them to fail?</p></li>
+        <li><p>Is there a single best regime?</p></li>
+        </ul>
+        <h3 id="the-nature-of-political-conflict">The Nature of Political Conflict</h3>
+        <p>Regimes can create partisanship and conflict, implying:</p>
+        <ul>
+        <li><p>Political structures inherently create tensions and loyalties, similar to sports teams or personal affiliations.</p></li>
+        <li><p>Politics can often be seen as the "organization of hatreds."</p></li>
+        </ul>
+        <h3 id="regime-characteristics-and-culture">Regime Characteristics and Culture</h3>
+        <p>A regime encompasses not only formal institutions but also:</p>
+        <ul>
+        <li><p>Moral and religious practices</p></li>
+        <li><p>Customs and sentiments that define a people</p></li>
+        </ul>
+        <p>Tocqueville’s analysis of American democracy illustrates this:</p>
+        <ul>
+        <li><p>Examined both formal political institutions and informal practices, such as manners, morals, and civic associations.</p></li>
+        </ul>
+        <h3 id="founding-and-sustaining-regimes">Founding and Sustaining Regimes</h3>
+        <ul>
+        <li><p>The founding of regimes can be seen as a product of historical circumstances or deliberate acts of key figures (e.g., Romulus, Moses).</p></li>
+        <li><p>The role of statesmen is crucial; qualities of sound statesmanship vary between thinkers like Plato, Aristotle, and Machiavelli.</p></li>
+        </ul>
+        <h4 id="the-good-citizen-vs.-the-good-human-being">The Good Citizen vs. The Good Human Being</h4>
+        <p>Aristotle’s distinction suggests:</p>
+        <ul>
+        <li><p>A good citizen is regime-specific.</p></li>
+        <li><p>A good human being transcends regimes and embodies universal virtues.</p></li>
+        </ul>
+        <h3 id="the-best-regime">The Best Regime</h3>
+        <p>The question of the best regime is foundational in political philosophy:</p>
+        <ul>
+        <li><p>Considerations include whether it should be an aristocratic republic or a democratic republic.</p></li>
+        <li><p>The relationship between the ideal regime and existing regimes is complex and often fraught with tensions.</p></li>
+        </ul>
+        <h4 id="philosophy-and-politics">Philosophy and Politics</h4>
+        <p>Political philosophy exists in the "zone of indeterminacy" between the actual and the ideal, prompting inquiry and reflection on governance and ethics.</p>
+        <h3 id="conclusion">Conclusion</h3>
+        <p>Political philosophy is a practical and relevant discipline that is aimed not just at contemplation but at advising how to navigate the complexities of human society and government. As you read the prescribed texts, remember to engage critically with the ideas and to recognize the love, or <em>eros</em>, that drives the quest for knowledge in this field.</p>
+        <h1 id="detailed-notes-on-platos-apology-of-socrates">Detailed Notes on Plato’s Apology of Socrates</h1>
+        <h3 id="introduction">Introduction</h3>
+        <ul>
+        <li><p>The *Apology of Socrates* is an essential introductory text for the study of Political Philosophy.</p></li>
+        <li><p>Reasons for its importance:</p>
+        <ol>
+        <li><p>It features Socrates, often seen as the founder of Political Science, justifying his philosophy before a jury.</p></li>
+        <li><p>It illustrates the tension between political power and philosophical inquiry.</p></li>
+        </ol></li>
+        </ul>
+        <h3 id="the-conflict-of-philosophy-and-political-life">The Conflict of Philosophy and Political Life</h3>
+        <ul>
+        <li><p>Socrates is charged with corrupting the youth and impiety, equating to treason—an extreme political offense.</p></li>
+        <li><p>The text highlights the conflict between the freedom of the mind and the requirements of political life.</p></li>
+        <li><p>The central question posed is: Are freedom of mind and political life compatible?</p></li>
+        </ul>
+        <h3 id="historical-context">Historical Context</h3>
+        <ul>
+        <li><p>The *Apology* serves not only as a defense of Socrates but critiques Athenian democracy itself.</p></li>
+        <li><p>Context of the trial:</p>
+        <ul>
+        <li><p>Occurred in 399 BCE, following the Peloponnesian War (431-404 BCE) between Athens and Sparta.</p></li>
+        <li><p>Socrates lived during a time of political turmoil and change in Athens, particularly after the Thirty Tyrants’ rule and subsequent reinstatement of democracy.</p></li>
+        </ul></li>
+        </ul>
+        <h3 id="key-accusations-against-socrates">Key Accusations Against Socrates</h3>
+        <ul>
+        <li><p>Two sets of accusations:</p>
+        <ol>
+        <li><p>Early accusations based on prejudices established by comic poets (e.g., Aristophanes).</p></li>
+        <li><p>Current charges by Anytus and Meletus claim Socrates corrupts youth and disbelieves in the city’s gods.</p></li>
+        </ol></li>
+        <li><p>Note the distinction between Socrates as presented by poets versus the Socratic method focused on moral and political inquiry.</p></li>
+        </ul>
+        <h3 id="philosophical-method-and-education">Philosophical Method and Education</h3>
+        <ul>
+        <li><p>Socrates advocated for a method of questioning (the Socratic Method) rather than relying on traditional poetic narratives.</p></li>
+        <li><p>The *Apology* presents his philosophy as a critique of the educational norms set by poets.</p></li>
+        <li><p>Socratic citizenship is characterized by a focus on virtue, moral excellence, and philosophical inquiry about human behavior, moving away from warrior ideals.</p></li>
+        </ul>
+        <h3 id="the-role-of-the-oracle">The Role of the Oracle</h3>
+        <ul>
+        <li><p>Socrates’ shift to philosophical inquiry began after consulting the Delphic Oracle, which stated no one was wiser than he.</p></li>
+        <li><p>His quest to disprove this led him to interrogate politicians, poets, and craftsmen about virtue and wisdom.</p></li>
+        </ul>
+        <h3 id="understanding-impiety">Understanding Impiety</h3>
+        <ul>
+        <li><p>The charge of impiety reflects Socrates’ challenge to the status quo and his focus on philosophical inquiry over traditional beliefs.</p></li>
+        <li><p>Impiety signifies a disregard for societal values, beliefs, and pieties.</p></li>
+        <li><p>The philosopher’s pursuit of rational knowledge often results in a confrontation with civic faith.</p></li>
+        </ul>
+        <h3 id="conclusion-1">Conclusion</h3>
+        <ul>
+        <li><p>Socrates’ assertion that genuine pursuit of justice necessitates a private rather than public life invites reflection.</p></li>
+        <li><p>The *Apology* thus serves as a profound commentary on the intersections of philosophy, politics, and ethics.</p></li>
+        <li><p>Next discussions will delve deeper into Socratic virtue and the implications for citizenship.</p></li>
+        </ul>
+        <h1 id="notes-on-socrates-the-trial-and-philosophy">Notes on Socrates: The Trial and Philosophy</h1>
+        <h3 id="introduction-1">Introduction</h3>
+        <ul>
+        <li><p>The discussion centers around Socrates’ trial, as depicted in Plato’s works: <em>Apology</em> and <em>Crito</em>.</p></li>
+        <li><p>Questions raised include Socrates’ innocence, the nature of citizenship, and the balance between personal moral integrity and adherence to law.</p></li>
+        </ul>
+        <h3 id="debate-on-socrates-guilt">Debate on Socrates’ Guilt</h3>
+        <ul>
+        <li><p>Students express differing opinions on whether Socrates is guilty or innocent.</p></li>
+        <li><p>Key points of contention:</p>
+        <ul>
+        <li><p><strong>Innocence:</strong> Some argue that Socrates was wrongfully accused, primarily as a result of subjective interpretations of justice.</p></li>
+        <li><p><strong>Guilt:</strong> Others believe that Socrates, by challenging the authority and traditional values, brought upon his own condemnation.</p></li>
+        </ul></li>
+        </ul>
+        <h3 id="socratic-citizenship">Socratic Citizenship</h3>
+        <h4 id="concept-of-citizenship">Concept of Citizenship</h4>
+        <ul>
+        <li><p>Socrates introduces a new conception of citizenship focused on rational and philosophical engagement as opposed to blind loyalty.</p></li>
+        <li><p>The tension between private moral integrity and public duty is explored.</p></li>
+        </ul>
+        <h4 id="key-arguments">Key Arguments</h4>
+        <ul>
+        <li><p>Socrates’ life emphasized personal examination over public affairs:</p>
+        <ul>
+        <li><p>Claim: Pursuit of private matters does not negate the relevance of the public sphere.</p></li>
+        <li><p>Socrates’ investigations were public, contradicting his claim of exclusively private focus.</p></li>
+        </ul></li>
+        <li><p>Socratic motto akin to Hippocratic Oath: "Do no harm."</p></li>
+        <li><p>Acts of principled abstention seen in:</p>
+        <ul>
+        <li><p>Refusal to condemn Athenian generals for a battle mishap.</p></li>
+        <li><p>Non-participation in unjust arrests under tyrannical orders.</p></li>
+        </ul></li>
+        </ul>
+        <h3 id="civil-disobedience-and-moral-duty">Civil Disobedience and Moral Duty</h3>
+        <ul>
+        <li><p>Socrates’ principled disobedience raises questions:</p>
+        <ul>
+        <li><p>Can personal conscience be placed above the law?</p></li>
+        <li><p>Hobbes’ ideas on the role of individual conscience vs. communal obligation.</p></li>
+        </ul></li>
+        </ul>
+        <h3 id="socrates-as-a-gadfly">Socrates as a Gadfly</h3>
+        <ul>
+        <li><p>Socrates describes himself as a gadfly, stimulating the state to self-examination.</p></li>
+        <li><p>Quote: "I awaken and persuade and reproach each one of you."</p></li>
+        <li><p>The importance of the philosopher in society, implying that true benefit is derived from such critical reflection.</p></li>
+        </ul>
+        <h3 id="divine-mandate-and-piety">Divine Mandate and Piety</h3>
+        <ul>
+        <li><p>Socrates claims a divine command to philosophize.</p></li>
+        <li><p>Questions arise:</p>
+        <ul>
+        <li><p>Is Socrates sincere in this claim?</p></li>
+        <li><p>Does his piety genuinely inform his actions, or is it rhetorical?</p></li>
+        </ul></li>
+        <li><p>Argument about Socratic life: The unexamined life is not worth living.</p></li>
+        </ul>
+        <h3 id="contrast-between-apology-and-crito">Contrast between <em>Apology</em> and <em>Crito</em></h3>
+        <ul>
+        <li><p><strong>Apology:</strong> Socrates defends his philosophy as beneficial to the state.</p></li>
+        <li><p><strong>Crito:</strong> Socrates discusses the obligation to obey the law, presenting a compelling case for civil order.</p>
+        <ul>
+        <li><p>Key argument: Every citizen owes their existence to the laws; disobedience undermines the very fabric of society.</p></li>
+        <li><p>Laws compared to parental figures, highlighting a complex relationship with authority.</p></li>
+        </ul></li>
+        </ul>
+        <h3 id="philosophical-implications">Philosophical Implications</h3>
+        <ul>
+        <li><p>Plato presents contrasting perspectives on the philosopher’s relationship to society:</p>
+        <ul>
+        <li><p>Moral autonomy vs. civic duty.</p></li>
+        <li><p>The individual must choose between participating in public life or pursuing personal philosophical truth.</p></li>
+        </ul></li>
+        <li><p><strong>Tension:</strong> The conflict between philosophical integrity and political obligation.</p></li>
+        </ul>
+        <h3 id="conclusion-2">Conclusion</h3>
+        <ul>
+        <li><p>Socrates’ death seen as both a tragedy and a form of martyrdom for the cause of philosophy.</p></li>
+        <li><p>Reflection on:</p>
+        <ul>
+        <li><p>The limits of toleration in society.</p></li>
+        <li><p>The value of dissenting voices in fostering critical thought.</p></li>
+        </ul></li>
+        <li><p>Importance of balancing personal morals and societal obligations remains relevant.</p></li>
+        </ul>
+        <h1 id="notes-on-platos-republic">Notes on Plato’s <em>Republic</em></h1>
+        <h3 id="introduction-2">Introduction</h3>
+        <ul>
+        <li><p><em>Plato’s Republic</em> is an essential intellectual experience, central to understanding political philosophy.</p></li>
+        <li><p>Emphasizes the significance of the book in the study of political science, influencing works since Aristotle and beyond.</p></li>
+        <li><p>The text is extensive; only the first five books will be covered in detail (<strong>Kallipolis</strong> - the ideal city governed by philosopher-kings).</p></li>
+        </ul>
+        <h3 id="main-themes">Main Themes</h3>
+        <ul>
+        <li><p>The nature of <strong>justice</strong>.</p></li>
+        <li><p>The connection between <strong>moral psychology</strong> and the <strong>ordering of the human soul</strong>.</p></li>
+        <li><p>The impact of <strong>poetry and myth</strong> on society.</p></li>
+        <li><p>Exploration of <strong>metaphysics</strong> and the <strong>theory of forms</strong>.</p></li>
+        </ul>
+        <h3 id="reading-approach">Reading Approach</h3>
+        <ul>
+        <li><p>Engage with <em>Republic</em> as a dialogue rather than a treatise.</p></li>
+        <li><p>Recommendations to read aloud, akin to experiencing a play.</p>
+        <p><strong>Important Quote:</strong> “Only the surface of things reveals the essence of things.”</p></li>
+        </ul>
+        <h3 id="utopian-vs.-dystopian-aspects">Utopian vs. Dystopian Aspects</h3>
+        <ul>
+        <li><p>While often labeled as a utopia, it presents a radical vision of politics and governance.</p></li>
+        <li><p>Explore the relationship between the city and the soul; discord within either is the greatest evil.</p></li>
+        <li><p>The statement: <strong>“Kings must become philosophers and philosophers must become kings.”</strong></p></li>
+        </ul>
+        <h3 id="platos-legacy-and-critique">Plato’s Legacy and Critique</h3>
+        <ul>
+        <li><p>Karl Popper’s critique labeling Plato as a precursor to totalitarianism in <em>The Open Society and Its Enemies</em>.</p></li>
+        <li><p>Representation of a school focused on education over individual liberties.</p></li>
+        </ul>
+        <h3 id="historical-context-1">Historical Context</h3>
+        <ul>
+        <li><p>Written during a period of disillusionment post the execution of Socrates and the defeat of Athens in the Peloponnesian War.</p></li>
+        <li><p>Establishment of the Academy as a direct ancestor to modern universities.</p>
+        <p><strong>Reflection:</strong> Without Plato’s influence, contemporary institutions like Yale might not exist.</p></li>
+        </ul>
+        <h3 id="key-characters-in-the-dialogue">Key Characters in the Dialogue</h3>
+        <h4 id="socrates">Socrates</h4>
+        <ul>
+        <li><p>Central character embodying philosophical inquiry.</p></li>
+        </ul>
+        <h4 id="glaucon-and-adeimantus">Glaucon and Adeimantus</h4>
+        <ul>
+        <li><p>Represent different aspects of philosophical inquiry and human soul.</p></li>
+        <li><p>Engage deeply with Socratic dialogues, asking questions about justice.</p></li>
+        </ul>
+        <h4 id="cephalus">Cephalus</h4>
+        <ul>
+        <li><p>Stands for traditional views of justice tied to wealth and age.</p></li>
+        <li><p>Immediate shift away from conventional wisdom begins with Socrates’ interrogation.</p></li>
+        </ul>
+        <h4 id="polemarchus">Polemarchus</h4>
+        <ul>
+        <li><p>Preoccupies justice with honor and loyalty, linked to spiritedness in the soul.</p></li>
+        </ul>
+        <h4 id="thrasymachus">Thrasymachus</h4>
+        <ul>
+        <li><p>Represents a cynical view that challenges Socratic philosophy.</p></li>
+        </ul>
+        <h3 id="key-conversations-and-arguments">Key Conversations and Arguments</h3>
+        <ul>
+        <li><p>The opening dialogue sets the tone for the work’s exploration of who should rule—majority (Polemarchus) vs. reason (Socrates).</p></li>
+        <li><p>Socratic questioning reveals deeper insights into justice, culminating in complex arguments against conventional morality.</p></li>
+        </ul>
+        <h3 id="philosophical-techniques">Philosophical Techniques</h3>
+        <ul>
+        <li><p>Socratic Method:</p>
+        <ul>
+        <li><p>Engaging characters in dialogue to draw out understanding and definitions.</p></li>
+        </ul></li>
+        <li><p>Allegorical Exploration:</p>
+        <ul>
+        <li><p>Use of myth, rhetoric, and allegory to convey deeper truths.</p></li>
+        </ul></li>
+        </ul>
+        <h3 id="concluding-insights">Concluding Insights</h3>
+        <ul>
+        <li><p>The text invites us to consider the implications of a society governed by philosophical ideals versus the realities of political practice.</p></li>
+        <li><p>Reading plans: Engage with the themes and characters deeply to grasp the overall significance of <em>Republic</em> to modern thought.</p></li>
+        </ul>
+        <h1 id="lecture-notes-on-platos-republic-book-i">Lecture Notes on Plato’s Republic: Book I</h1>
+        <h3 id="introduction-3">Introduction</h3>
+        <ul>
+        <li><p>Focus on the dialogue’s characters and their contributions to the argument and structure of the work.</p></li>
+        <li><p>Previous discussions involved Cephalus; he represents conventional opinion.</p></li>
+        <li><p>Next figure discussed is Polemarchus, Cephalus’ son.</p></li>
+        </ul>
+        <h3 id="character-analysis">Character Analysis</h3>
+        <h4 id="cephalus-1">Cephalus</h4>
+        <ul>
+        <li><p>Embodiment of conventional Athenian views.</p></li>
+        <li><p>His departure allows exploration of more audacious arguments without oversight.</p></li>
+        </ul>
+        <h4 id="polemarchus-1">Polemarchus</h4>
+        <ul>
+        <li><p>Heir to both argument and family fortune; characterized as a gentleman.</p></li>
+        <li><p>His view of justice is to do good to friends and harm to enemies: <br /><span class="math display">Justice = Giving each his due</span><br /></p></li>
+        <li><p>Sees justice as loyalty, akin to patriotism for one’s city (polis).</p></li>
+        <li><p>Socratic challenge: Questions knowledge of friends and enemies, implying loyalties may lead to unjust actions.</p></li>
+        </ul>
+        <h3 id="socratic-challenges">Socratic Challenges</h3>
+        <ul>
+        <li><p>Socrates doubts Polemarchus’ view, asking if we can always correctly identify friends and enemies:</p>
+        <ul>
+        <li><p>Questions the reliability of such distinctions—recognizing our tendency to mistake friends for enemies.</p></li>
+        </ul></li>
+        <li><p>Ends with tension between camaraderie and philosophical reflectiveness.</p></li>
+        </ul>
+        <h3 id="thrasymachus-a-counterpoint">Thrasymachus: A Counterpoint</h3>
+        <ul>
+        <li><p>Introduced as a significant adversary to Socrates, depicting a realist view: <br /><span class="math display">Justice = The interest of the stronger</span><br /></p></li>
+        <li><p>Justice is seen as rules made by and for the benefit of the ruling class.</p></li>
+        <li><p>Articulates that human nature is driven by the desire for power; leading to a zero-sum game in politics.</p></li>
+        </ul>
+        <h4 id="socratic-response">Socratic Response</h4>
+        <ul>
+        <li><p>Questions whether rulers truly know what is in their interest, highlighting: <br /><span class="math display">Mistakes can occur, hence power does not equate to knowledge.</span><br /></p></li>
+        <li><p>Thrasymachus’ shame arises when confronted with Socratic logic—he ultimately admits the just person suffers for being just.</p></li>
+        </ul>
+        <h3 id="the-brothers-glaucon-and-adeimantus">The Brothers: Glaucon and Adeimantus</h3>
+        <ul>
+        <li><p>Challenge Socrates to defend justice itself, not just against injustice.</p></li>
+        <li><p>Glaucon seeks justice praised for its own sake, juxtaposing it against injustice.</p></li>
+        <li><p>Introduced the story of Gyges and the magic ring to question the value of justice under conditions of immunity.</p></li>
+        </ul>
+        <h4 id="adeimantus">Adeimantus</h4>
+        <ul>
+        <li><p>Emphasizes the need for a deeper understanding of justice beyond its benefits.</p></li>
+        <li><p>Advocates for self-guardianship and autonomy, critiquing societal norms praising justice for external rewards.</p></li>
+        </ul>
+        <h3 id="the-citysoul-analogy">The City/Soul Analogy</h3>
+        <ul>
+        <li><p>Socratic thought experiment: Inventing a city in speech to analyze justice at a larger scale.</p></li>
+        <li><p>The analogy serves to connect individual character with societal structure.</p></li>
+        <li><p>Suggests societies shape character and vice versa.</p></li>
+        </ul>
+        <h3 id="education-and-censorship-of-poetry">Education and Censorship of Poetry</h3>
+        <ul>
+        <li><p>Socrates proposes reformation of poetry and arts to tame the spirited part of the soul, focusing initially on the warrior class.</p></li>
+        <li><p>Emphasizes that education through poetry shapes moral understanding: <br /><span class="math display">Poets influence public values; thus must be controlled for a just society.</span><br /></p></li>
+        <li><p>Critique of Homeric poetry as being detrimental to societal values, advocating for a replacement by philosophy.</p></li>
+        </ul>
+        <h3 id="conclusion-3">Conclusion</h3>
+        <ul>
+        <li><p>The arguments in Book I do not yield a clear definition of justice, setting the stage for deeper exploration in subsequent books.</p></li>
+        <li><p>The book challenges readers to reconsider their understanding of justice, virtues, and the relationship between individual ethics and societal norms.</p></li>
+        </ul>
+        <h1 id="lecture-notes-platos-republic">Lecture Notes: Plato’s Republic</h1>
+        <h3 id="introduction-4">Introduction</h3>
+        <ul>
+        <li><p>Professor Smith discusses key themes from Plato’s <em>Republic</em>, focusing on the creation of the just city (Kallipolis).</p></li>
+        <li><p>The lecture highlights the concept of controlling passions and its implications for justice.</p></li>
+        </ul>
+        <h3 id="themes-of-the-republic">Themes of the Republic</h3>
+        <h4 id="control-of-passions">Control of Passions</h4>
+        <ul>
+        <li><p>A major theme discussed is the control of passions as a strategy for achieving self-control, or <em>self-guardianship</em>.</p></li>
+        <li><p>Socrates emphasizes the need to protect oneself from the passion for injustice.</p></li>
+        <li><p>Notable moralists in history include Spinoza, Kant, and Freud, who all approach the question of passion control differently.</p></li>
+        </ul>
+        <h4 id="the-concept-of-thumos">The Concept of Thumos</h4>
+        <ul>
+        <li><p>Socratic passion is referred to as <em>thumos</em> (spiritedness).</p></li>
+        <li><p>Thumos embodies both the desire for fame and distinctions and the drive towards anger and injustice.</p></li>
+        <li><p>This dual nature connects to heroism and tyranny: <br /><span class="math display">Thumos → Heroism  and  Thumos → Tyranny</span><br /></p></li>
+        </ul>
+        <h4 id="leontius-story">Leontius’ Story</h4>
+        <ul>
+        <li><p>Socratic narrative about Leontius illustrates internal conflict regarding desire and shame. He desires to see corpses but feels disgust: <br /><span class="math display">"See you damn wretches, take your fill of this beautiful sight."  (439<em>c</em>)</span><br /></p></li>
+        <li><p>This reflects the struggle between reason and passion in human nature.</p></li>
+        </ul>
+        <h3 id="kallipolis-the-just-city">Kallipolis: The Just City</h3>
+        <h4 id="three-waves-of-reform">Three Waves of Reform</h4>
+        <ul>
+        <li><p>Socrates proposes three waves for creating a just city:</p>
+        <ol>
+        <li><p>Abolition of private property.</p></li>
+        <li><p>Abolition of the family.</p></li>
+        <li><p>Establishment of philosopher-kings.</p></li>
+        </ol></li>
+        </ul>
+        <h4 id="co-education-of-men-and-women">Co-Education of Men and Women</h4>
+        <ul>
+        <li><p>Socrates argues for equal education: <br /><span class="math display">Gender differences are irrelevant for job performance.</span><br /></p></li>
+        <li><p>Proposes that education be the same for men and women, challenging traditional roles.</p></li>
+        <li><p>Eliminates romantic love among the guardian class; sexual relations are purely for reproduction.</p></li>
+        </ul>
+        <h3 id="justice-in-the-republic">Justice in the Republic</h3>
+        <h4 id="definition-of-justice">Definition of Justice</h4>
+        <ul>
+        <li><p>Justice consists of harmony in both the city and the soul.</p></li>
+        <li><p>Defined as individuals performing the functions they are best suited for: <br /><span class="math display">Justice = everyone performing their natural function.</span><br /></p></li>
+        <li><p>Concept of the division of labor: one man, one job (each citizen focusing on what naturally fits them).</p></li>
+        </ul>
+        <h4 id="objections-to-platos-justice-model">Objections to Plato’s Justice Model</h4>
+        <ul>
+        <li><p>Raises questions about unity and diversity in the city.</p></li>
+        <li><p>Concerns about coerciveness and the deprivation of individual autonomy.</p></li>
+        </ul>
+        <h3 id="philosopher-king">Philosopher-King</h3>
+        <ul>
+        <li><p>Emphasizes the need for philosophers to rule; without them, cities cannot attain justice.</p></li>
+        <li><p>Challenges the feasibility of philosopher-kings, citing historical attempts and failures.</p></li>
+        <li><p>Raises practical concerns about the intersection of philosophy and politics: <br /><span class="math display">Can philosophers effectively govern?</span><br /></p></li>
+        </ul>
+        <h3 id="democracy-and-its-implications">Democracy and Its Implications</h3>
+        <ul>
+        <li><p>Socrates critiques democracy, linking it to instability and the transition between anarchy and tyranny.</p></li>
+        <li><p>Identifies a tendency towards excessive freedom which can lead to chaos: <br /><span class="math display">"Doing whatever you like"  is a recipe for instability.</span><br /></p></li>
+        </ul>
+        <h3 id="conclusion-4">Conclusion</h3>
+        <ul>
+        <li><p>Reflection on the need for self-reform before engaging in political reform.</p></li>
+        <li><p>Highlights that true justice and control over passions begin within the individual.</p></li>
+        <li><p>Encourages readers to reconsider the application of Plato’s ideas in contemporary political life.</p></li>
+        </ul>
+        <h3 id="key-quotes-from-the-lecture">Key Quotes from the Lecture</h3>
+        <blockquote>
+        <p>"Philosophy was in the first instance, a therapy for our passions."</p>
+        </blockquote>
+        <blockquote>
+        <p>"You need to reform yourself before you can think about reforming others."</p>
+        </blockquote>
+        <blockquote>
+        <p>"Who will educate the educators?"</p>
+        </blockquote>
+        <h1 id="notes-on-aristotle-political-philosophy">Notes on Aristotle: Political Philosophy</h1>
+        <h3 id="introduction-5">Introduction</h3>
+        <ul>
+        <li><p>Importance of starting with Plato in political philosophy.</p></li>
+        <li><p>Transition to Aristotle, described as Plato’s intellectual heir.</p></li>
+        </ul>
+        <h3 id="life-of-aristotle">Life of Aristotle</h3>
+        <ul>
+        <li><p>Born in 384 BCE, 15 years after Socrates’ trial.</p></li>
+        <li><p>Hometown: Stagira, in Macedonia.</p></li>
+        <li><p>At age 17, sent to Athens to study at The Academy (founded by Plato).</p></li>
+        <li><p>Remained at The Academy for 20 years until Plato’s death.</p></li>
+        <li><p>Later summoned by King Philip of Macedonia to educate his son, Alexander the Great, and returned to establish the Lyceum in Athens.</p></li>
+        <li><p>Faced potential capital charges near the end of his life but chose to leave Athens, stating he did not want the Athenians to "sin against philosophy a second time."</p></li>
+        </ul>
+        <h3 id="differences-between-plato-and-aristotle">Differences between Plato and Aristotle</h3>
+        <ul>
+        <li><p>Style of Writing:</p>
+        <ul>
+        <li><p>Socrates: Conversational, did not write.</p></li>
+        <li><p>Plato: Written dialogues based on Socratic conversations.</p></li>
+        <li><p>Aristotle: Disciplined, thematic treatises on various topics: biology, ethics, metaphysics, politics.</p></li>
+        </ul></li>
+        <li><p>Nature of Political Studies:</p>
+        <ul>
+        <li><p>Plato: Philosophy tied to metaphysical inquiries (e.g., the nature of the soul).</p></li>
+        <li><p>Aristotle: More empirical approach and practical political science.</p></li>
+        </ul></li>
+        <li><p>Collection of Constitutions: Aristotle collected 158 different political constitutions.</p></li>
+        <li><p>Emphasis on Civic Education: Aristotle’s works aimed at educating citizens and statesmen, not just philosophers.</p></li>
+        </ul>
+        <h3 id="aristotles-political-philosophy">Aristotle’s Political Philosophy</h3>
+        <h4 id="political-animal">Political Animal</h4>
+        <ul>
+        <li><p>Central Claim: "Man is by nature a political animal" (zoon politikon).</p></li>
+        <li><p>Argument Structure:</p>
+        <ul>
+        <li><p>Nature does nothing in vain; man has logos (reason/speech).</p></li>
+        <li><p>Humans distinguish good and bad, just and unjust through logos.</p></li>
+        </ul></li>
+        </ul>
+        <h3 id="city-polis-by-nature">City (Polis) by Nature</h3>
+        <h4 id="dual-accounts-of-naturalness">Dual Accounts of Naturalness</h4>
+        <ul>
+        <li><p>Natural History: City-state emerges from smaller group associations (family → tribe → village → polis).</p></li>
+        <li><p>Achieving Telos: The polis allows individuals to reach their highest potential or purpose (telos).</p></li>
+        <li><p>Being apolis (without a city) equates to being beastly or god-like; citizenship is essential for human flourishing.</p></li>
+        </ul>
+        <h4 id="political-association">Political Association</h4>
+        <ul>
+        <li><p>Small, Trust-Based Society: Real political society requires bonds of trust and camaraderie, not mere calculations of interest.</p></li>
+        <li><p>The Imperative of Particularism: The polis is always a particular city and cannot be a universal state.</p></li>
+        <li><p>Relationship with Other Cities: The polis must have a foreign policy, reflecting its unique character and interests.</p></li>
+        </ul>
+        <h3 id="freedom-and-responsibility">Freedom and Responsibility</h3>
+        <ul>
+        <li><p>Freedom: Defined as the exercise of political responsibility rather than mere absence of restraint.</p></li>
+        <li><p>Critique of Modern Democratic Freedom: Contrasts modern views that equate freedom to living as one likes.</p></li>
+        <li><p>Requires active participation in civic life for true fulfillment.</p></li>
+        </ul>
+        <h3 id="naturalness-of-slavery">Naturalness of Slavery</h3>
+        <ul>
+        <li><p>Controversial Judgment: Aristotle’s assertion about the naturalness of slavery framed as a debate.</p></li>
+        <li><p>Distinction between Natural and Forced Slavery.</p></li>
+        <li><p>Criteria for Natural Slavery: Some individuals may be inherently less capable of rational self-government.</p></li>
+        <li><p>Hierarchy: Implies a natural distinction based on intelligence or rational capacity.</p></li>
+        </ul>
+        <h3 id="conclusion-5">Conclusion</h3>
+        <ul>
+        <li><p>Enigmatic Figure: Aristotle’s influence spans across various political frameworks, both democratic and monarchical.</p></li>
+        <li><p>Provocations for Modern Thought: Engages with modern discussions on education, class, and governance.</p></li>
+        <li><p>Weighing Aristotle’s Legacy: Critical examination of his views prompts reflection on contemporary political structures, including elite educational institutions.</p></li>
+        </ul>
+        <h1 id="detailed-notes-on-aristotles-comparative-politics">Detailed Notes on Aristotle’s Comparative Politics</h1>
+        <h3 id="overview-of-aristotles-politics">Overview of Aristotle’s Politics</h3>
+        <p>Professor Steven Smith discusses Aristotle’s concept of <strong>regime</strong> as central to his political theory, particularly in Books III through VI of the <em>Politics</em>. The notion of <em>politea</em> (regime) also serves as a bridge between Aristotle’s metaphysical considerations in Book I and the more empirical political analysis in the subsequent books.</p>
+        <h3 id="definition-of-regime">Definition of Regime</h3>
+        <blockquote>
+        <p><em>"A regime refers to both the formal enumeration of rights and duties within a community, but it also addresses the way of life or the culture of a people."</em></p>
+        </blockquote>
+        <h4 id="identity-of-a-city">Identity of a City</h4>
+        <p>Aristotle argues that the identity and enduring existence of a city over time is grounded in its regime. He distinguishes between the <strong>matter</strong> (citizen body) and the <strong>form</strong> (formal structures) of a regime.</p>
+        <h4 id="matter-of-the-regime">Matter of the Regime</h4>
+        <ul>
+        <li><p><strong>Citizen Body:</strong> Aristotle critiques several definitions of citizenship, including:</p>
+        <ol>
+        <li><p>Geographical proximity</p></li>
+        <li><p>Defensive alliances</p></li>
+        <li><p>Commercial partnerships</p></li>
+        </ol></li>
+        <li><p>The true citizen body is held together by bonds of <em>philia</em> (affection), loyalty, and friendship.</p></li>
+        </ul>
+        <h4 id="civic-friendship">Civic Friendship</h4>
+        <p>Aristotle introduces the concept of <strong>civic friendship</strong>, which does not erase individual identities but affirms competitive and rivalrous relationships among citizens striving for the common good.</p>
+        <h3 id="citizen-participation">Citizen Participation</h3>
+        <p>A <strong>citizen</strong> is defined as one who participates in political life, particularly in deliberation and decision-making, thus: <br /><span class="math display">Citizen = Participation in decision-making + Enjoyment of legal protection</span><br /></p>
+        <h4 id="the-good-citizen">The Good Citizen</h4>
+        <p>The qualifications of a good citizen depend on the type of regime (democracy, monarchy, aristocracy), which leads to Aristotle’s notable assertion:</p>
+        <blockquote>
+        <p><em>"The good citizen and the good human being may not be the same."</em></p>
+        </blockquote>
+        <h3 id="forms-and-structures-of-a-regime">Forms and Structures of a Regime</h3>
+        <p>The <strong>form</strong> of a regime involves the formal arrangement of offices and the distribution of power, summarized in Aristotle’s definitions:</p>
+        <ol>
+        <li><p>Book III, Chapter 6: <em>"The regime is an arrangement of a city with respect to its offices."</em></p></li>
+        <li><p>Book IV, Chapter 1: <em>"A regime is an arrangement in cities connected with offices, establishing their distribution."</em></p></li>
+        </ol>
+        <h4 id="well-ordered-vs.-corrupt-regimes">Well-Ordered vs. Corrupt Regimes</h4>
+        <p>Aristotle categorizes regimes into:</p>
+        <ol>
+        <li><p>Well-ordered (monarchy, aristocracy, polity)</p></li>
+        <li><p>Corrupt (tyranny, oligarchy, democracy)</p></li>
+        </ol>
+        <h4 id="criteria-for-distinguishing-regimes">Criteria for Distinguishing Regimes</h4>
+        <p>The distinction is not purely empirical but normative, assessing regimes based on their governance quality.</p>
+        <h3 id="democracy-and-oligarchy">Democracy and Oligarchy</h3>
+        <p>In discussing democracy, Aristotle argues that the collective wisdom of many can surpass that of a few:</p>
+        <blockquote>
+        <p><em>"The multitude with many senses becomes like a single human being."</em></p>
+        </blockquote>
+        <p>He contrasts democratic deliberation with oligarchy, asserting each regime’s strengths and vulnerabilities.</p>
+        <h4 id="argument-for-democracy">Argument for Democracy</h4>
+        <p>Aristotle likens a collective decision-making process to a <em>potluck dinner</em>, in which: <br /><span class="math display">Quality of decisions ∝ Diversity of contributions</span><br /></p>
+        <h3 id="the-role-of-law">The Role of Law</h3>
+        <p>Aristotle emphasizes the <strong>rule of law</strong> as crucial for impartiality and preventing arbitrary governance:</p>
+        <blockquote>
+        <p><em>"Law is intellect without appetite."</em></p>
+        </blockquote>
+        <p>He juxtaposes the rule of law with the idea of a singular best ruler, advocating for a balance.</p>
+        <h4 id="changeability-of-the-law">Changeability of the Law</h4>
+        <p>Aristotle considers laws to be mutable, depending on the society’s circumstances and needs. He asserts: <br /><span class="math display">Natural right is mutable and context-dependent.</span><br /></p>
+        <h3 id="conclusion-6">Conclusion</h3>
+        <p>The course is winding down with important considerations for Aristotle’s implications regarding governance and the nature of political conflict. The synthesis of the need for a well-ordered regime alongside a recognition of human affairs’ complexities remains a cornerstone of Aristotle’s political analysis.</p>
+        <h4 id="reflection">Reflection</h4>
+        <p>Aristotle’s view of different kinds of regimes addresses the dynamic situations of political communities and advocates for a political system that balances various factions and ideologies effectively.</p>
+        <h1 id="notes-on-aristotles-political-thought">Notes on Aristotle’s Political Thought</h1>
+        <h3 id="introduction-6">Introduction</h3>
+        <p>Professor Steven Smith outlines an exploration of Aristotle’s political philosophy, focusing on faction control and the concept of the polity. This discusses Aristotle’s relevance to contemporary political structures, contrasting with modern political theories, especially those about the separation of powers and the mixed constitution.</p>
+        <h3 id="concluding-aristotle">Concluding Aristotle</h3>
+        <h4 id="aristotles-discovery-of-america">Aristotle’s Discovery of America</h4>
+        <p>The claim may seem paradoxical, yet Smith suggests that Aristotle’s insights foreshadow fundamental aspects of the American Constitution. The key issue addressed is the problem of faction—how to control for conflicts between factions, particularly noted in <em>Politics</em>, Books IV and V.</p>
+        <h4 id="the-polity">The Polity</h4>
+        <p>Aristotle defines the <strong>polity</strong> (Greek: <em>politea</em>) as a regime that incorporates a mix of democracy and oligarchy, primarily characterized by the dominance of the middle class. This regime is believed to mitigate factional conflict.</p>
+        <blockquote>
+        <p>"Where the middling element is great, factional conflict and splits over the nature of regimes occur least of all."</p>
+        </blockquote>
+        <p>This highlights Aristotle’s understanding that a strong middle class can balance extremes, thus reducing tyranny and internal strife.</p>
+        <h4 id="comparison-with-james-madison">Comparison with James Madison</h4>
+        <p>Smith draws parallels between Aristotle’s views and James Madison’s arguments in <em>Federalist No. 10</em>, where competing factions can check one another, preventing tyranny of the majority.</p>
+        <h3 id="aristotles-mixed-constitution">Aristotle’s Mixed Constitution</h3>
+        <p>Aristotle’s mixed constitution comprises classes of citizens: the one (monarchy), the few (aristocracy), and the many (democracy). Unlike Madison’s clear separation of powers for individual liberty, Aristotle emphasizes functional well-being of the city as the primary goal, suggesting that individual freedom is a secondary outcome of a well-functioning polity.</p>
+        <blockquote>
+        <p>"The political partnership must be regarded for the sake of noble acts performed well."</p>
+        </blockquote>
+        <h4 id="critique-of-plato">Critique of Plato</h4>
+        <p>In <em>Politics</em>, Book II, Aristotle critiques Plato’s idea of common ownership advocated in <em>The Republic</em>. He emphasizes the importance of property, arguing that excessive unity can lead to neglect, stating:</p>
+        <blockquote>
+        <p>"A city is, in its nature, a multitude."</p>
+        </blockquote>
+        <p>He asserts the necessity of diversity within the city for its flourishing.</p>
+        <h3 id="purpose-of-the-city">Purpose of the City</h3>
+        <p>The aim of the city, according to Aristotle, is not wealth, but the pursuit of virtue. Wealth exists for the cultivation of virtue, as articulated in the following quote:</p>
+        <blockquote>
+        <p>"If wealth were the purpose of politics, the Phoenicians would be the best regime."</p>
+        </blockquote>
+        <p>Thus, Aristotle critiques contemporary views that prioritize business interests over civic virtue.</p>
+        <h4 id="political-parties-and-demagoguery">Political Parties and Demagoguery</h4>
+        <p>Aristotle condemns the American tendency to form political parties which exacerbate conflicts and promote demagoguery rather than unity and genuine governance.</p>
+        <h3 id="the-ideal-regime">The Ideal Regime</h3>
+        <p>In the concluding chapters of <em>Politics</em>, Aristotle sketches the best regime, noting it should prioritize peace and leisure over war. The ideal citizen, according to Aristotle, is the <strong>megalopsychos</strong> (great-souled person) who embodies practical judgment (<em>phronimos</em>) necessary for effective governance.</p>
+        <h4 id="traits-of-the-megalopsychos">Traits of the Megalopsychos</h4>
+        <p>Aristotle outlines characteristics of the megalopsychos:</p>
+        <ul>
+        <li><p>Slow to act except in important matters.</p></li>
+        <li><p>Repays favors to avoid obligations.</p></li>
+        <li><p>Possesses aesthetic sensibilities.</p></li>
+        <li><p>Engages in dialogue with practical wisdom.</p></li>
+        </ul>
+        <h3 id="political-science-as-master-science">Political Science as Master Science</h3>
+        <p>Aristotle’s political science is distinguished by its emphasis on the concept of the <strong>regime</strong> (politea), which governs all other human activities. Smith emphasizes that Aristotle considers politics the "master science."</p>
+        <h4 id="purpose-of-political-science">Purpose of Political Science</h4>
+        <p>Aristotle argues that political science exists not for knowledge itself but for action (<em>praxis</em>). All political actions aim at a perceived good, thus:</p>
+        <p><br /><span class="math display">All action → some apparent good.</span><br /></p>
+        <p>The study of politics enables better governance and aims to strengthen or reform the regime, adhering to ethical standards of better and worse.</p>
+        <h3 id="methods-of-political-science">Methods of Political Science</h3>
+        <p>While Aristotle resists a rigid methodological framework, he suggests common questions to guide political inquiry:</p>
+        <ol>
+        <li><p>What is the best regime under ideal circumstances?</p></li>
+        <li><p>How can we evaluate regimes under less than ideal conditions?</p></li>
+        <li><p>How can an imperfect regime be stabilized?</p></li>
+        <li><p>What methods are effective for political reform?</p></li>
+        </ol>
+        <h3 id="conclusion-7">Conclusion</h3>
+        <p>In closing, Professor Smith contrasts Aristotle’s evaluative political science with modern approaches often stripped of moral evaluation. Aristotle’s focus on the common good and the practical realities of governance remains pertinent.</p>
+        <h1 id="an-introduction-to-machiavelli">An Introduction to Machiavelli</h1>
+        <h3 id="introduction-7">Introduction</h3>
+        <p>In this setup, we will explore themes from Machiavelli’s work through the lens of the film <em>The Third Man</em>. This class connects cinema and political theory, particularly focusing on Machiavelli’s concepts.</p>
+        <h3 id="about-the-film">About the Film</h3>
+        <ul>
+        <li><p><strong>Title:</strong> The Third Man</p></li>
+        <li><p><strong>Release Year:</strong> 1948</p></li>
+        <li><p><strong>Setting:</strong> Post World War II Vienna</p></li>
+        <li><p><strong>Key Characters:</strong></p>
+        <ul>
+        <li><p>Orson Welles - Black market racketeer</p></li>
+        <li><p>Joseph Cotten - Friend of Welles’ character</p></li>
+        </ul></li>
+        <li><p><strong>Themes:</strong> Deception, moral ambiguity, and the nature of good and evil.</p></li>
+        </ul>
+        <h3 id="machiavelli-life-and-context">Machiavelli: Life and Context</h3>
+        <h4 id="historical-background">Historical Background</h4>
+        <ul>
+        <li><p>Niccolò Machiavelli was a Florentine political thinker.</p></li>
+        <li><p>He lived during the height of the Renaissance, aiming to transform political thought akin to contemporaries in art and philosophy.</p></li>
+        </ul>
+        <h4 id="job-and-exile">Job and Exile</h4>
+        <ul>
+        <li><p>Machiavelli served as the secretary to the second chancery from 1498 to 1512.</p></li>
+        <li><p>After the return of the Medici, he was exiled and wrote his works, including <em>The Prince</em> and <em>Discourses on Livy</em>.</p></li>
+        </ul>
+        <h4 id="philosophy-of-study">Philosophy of Study</h4>
+        <p>Machiavelli wrote to his friend Francesco Vettori describing his study habits:</p>
+        <blockquote>
+        <p>"When evening comes, I return to my house and go to my study. At the door, I take off my clothes of the day covered with muck and dirt and I put on my regal and courtly garments..."</p>
+        </blockquote>
+        <h3 id="the-prince-key-themes">The Prince: Key Themes</h3>
+        <h4 id="nature-of-power">Nature of Power</h4>
+        <p>Machiavelli claims:</p>
+        <blockquote>
+        <p>"I depart from the orders of others... it has appeared to me more fitting to go directly to the effectual truth of things than the imagination of it."</p>
+        </blockquote>
+        <p>He emphasizes the importance of understanding reality over idealism.</p>
+        <h4 id="virtù">Virtù</h4>
+        <ul>
+        <li><p>The concept of <strong>virtù</strong> (manliness) is central in Machiavelli’s writing, referring to qualities of determination, strength, and the capacity to adapt to circumstances.</p></li>
+        <li><p>Presented as crucial in times of crisis or extraordinary political situations.</p></li>
+        </ul>
+        <h4 id="armed-vs.-unarmed-prophets">Armed vs. Unarmed Prophets</h4>
+        <blockquote>
+        <p>"All the armed prophets succeeded, and the unarmed prophets failed."</p>
+        </blockquote>
+        <p>Machiavelli asserts that success in governance often requires the ability to wield power forcibly.</p>
+        <h4 id="realism-vs.-idealism">Realism vs. Idealism</h4>
+        <p>Machiavelli contrasts traditional notions of virtue with a more pragmatic approach:</p>
+        <blockquote>
+        <p>"He will teach the prince how not to be good."</p>
+        </blockquote>
+        <h3 id="machiavellis-legacy">Machiavelli’s Legacy</h3>
+        <ul>
+        <li><p>Influenced subsequent thinkers such as Hobbes, Locke, and Rousseau.</p></li>
+        <li><p>Recognized as the founder of modern political science.</p></li>
+        <li><p>His ideas on the state require a nuanced understanding of morality and power dynamics.</p></li>
+        </ul>
+        <h3 id="conclusion-8">Conclusion</h3>
+        <p>The study of Machiavelli reveals insights into human nature, governance, and the politics of power that remain relevant centuries later. His works challenge readers to wrestle with morality, ambition, and the often violent struggle for authority.</p>
+        <h1 id="notes-on-machiavellis-political-philosophy">Notes on Machiavelli’s Political Philosophy</h1>
+        <h3 id="introduction-8">Introduction</h3>
+        <p>Machiavelli is both a revolutionary and a reformer regarding the moral vocabulary of virtue and vice. He aims to transform the language of virtue, moving away from Platonic or Christian otherworldliness to a focus on worldly power.</p>
+        <h3 id="key-concepts">Key Concepts</h3>
+        <h4 id="virtù-1">Virtù</h4>
+        <ul>
+        <li><p>For Machiavelli, <strong>virtù</strong> is linked with manliness, force, and power.</p></li>
+        <li><p>Machiavelli states in <em>The Prince</em>, Chapter 25, that the ethic of the prince must be one of audacity.</p></li>
+        <li><p>Fortune is metaphorically represented as a woman, requiring the prince to utilize force and audacity to seize it.</p></li>
+        </ul>
+        <h4 id="dirty-hands-problem">Dirty Hands Problem</h4>
+        <ul>
+        <li><p>The "dirty hands" problem refers to the moral conflict involved in political life where rulers must sometimes act immorally for the greater good.</p></li>
+        <li><p>Machiavelli suggests that to teach the prince how not to be good, one must return to the source of morality.</p></li>
+        </ul>
+        <h4 id="religion-and-morality">Religion and Morality</h4>
+        <ul>
+        <li><p>Despite religion not being a primary theme in <em>The Prince</em>, Machiavelli advises princes to cultivate the appearance of religion (Chapter 18).</p></li>
+        <li><p>True religious practice is viewed as harmful while maintaining the appearance is beneficial.</p></li>
+        <li><p>In <em>Discourses on Livy</em>, Machiavelli contrasts the Christian moral code that glorifies humility with the pagan moral code that promotes magnanimity and strength.</p></li>
+        </ul>
+        <h4 id="educational-effects-on-liberty">Educational Effects on Liberty</h4>
+        <p>Machiavelli contrasts contemporary education with that of the ancients, suggesting our moral education has made people less bold and fond of liberty.</p>
+        <h4 id="quotes-on-morality">Quotes on Morality</h4>
+        <p>Machiavelli states:</p>
+        <blockquote>
+        <p>"Our religion has glorified humble and contemplative men rather than men of action."</p>
+        </blockquote>
+        <p>This statement reflects the belief that Christian ideals have weakened societal strength and liberty.</p>
+        <h3 id="political-structure">Political Structure</h3>
+        <h4 id="two-types-of-regimes">Two Types of Regimes</h4>
+        <p>Machiavelli identifies two regimes:</p>
+        <ul>
+        <li><p>Principalities</p></li>
+        <li><p>Republics</p></li>
+        </ul>
+        <h4 id="humors-in-society">Humors in Society</h4>
+        <p>Machiavelli describes two classes characterized by their disposition (or <em>umori</em>): <br /><span class="math display">$$\begin{aligned}
+            H_{1} &amp; : \text{The people desire neither to be commanded nor oppressed} \\
+            H_{2} &amp; : \text{The great desire to command and oppress the people}\end{aligned}$$</span><br /></p>
+        <h4 id="control-of-nobility">Control of Nobility</h4>
+        <p>Machiavelli suggests:</p>
+        <blockquote>
+        <p>"The ends of the people are more decent than that of the great."</p>
+        </blockquote>
+        <p>Thus, a prince should build power on the people’s support rather than the fickle nobility.</p>
+        <h4 id="the-role-of-religion">The Role of Religion</h4>
+        <p>Religion directs moral conduct, but Machiavelli advocates using it strategically to empower the populace to defend their own liberty:</p>
+        <blockquote>
+        <p>"Religion must serve to instill a fighting spirit into people who have lost their instinct to resist."</p>
+        </blockquote>
+        <h3 id="machiavellis-legacy-1">Machiavelli’s Legacy</h3>
+        <h4 id="amoral-realism">Amoral Realism</h4>
+        <p>Machiavelli embodies a kind of <strong>amoral realism</strong> characterized by:</p>
+        <blockquote>
+        <p>"By whatever means necessary."</p>
+        </blockquote>
+        <p>He argues that what has previously been covertly taught should now be openly discussed.</p>
+        <h4 id="critical-reception">Critical Reception</h4>
+        <p>Philosophers such as Spinoza and Rousseau interpret Machiavelli as:</p>
+        <ul>
+        <li><p>An advocate for liberty who disguises his messages against tyranny.</p></li>
+        <li><p>A precursor to modern democratic ideals by redirecting power from the nobles to the common people.</p></li>
+        </ul>
+        <h3 id="conclusion-9">Conclusion</h3>
+        <p>Machiavelli’s work marks a significant departure from classical thought by advocating a political approach that prioritizes strength and cunning over traditional moral values. Understanding Machiavelli is crucial for grasping modern political dynamics and philosophies.</p>
+        <h1 id="notes-on-thomas-hobbes">Notes on Thomas Hobbes</h1>
+        <h3 id="introduction-9">Introduction</h3>
+        <p>Thomas Hobbes, author of <em>Leviathan</em>, is regarded as one of the most significant figures in political theory. His work is celebrated for its mastery of English prose and represents one of the greatest contributions to political philosophy.</p>
+        <h4 id="hobbes-as-a-foil-to-machiavelli">Hobbes as a Foil to Machiavelli</h4>
+        <ul>
+        <li><p>Hobbes can be seen as a counterpart to Machiavelli.</p></li>
+        <li><p>While Machiavelli blazed the trail with new concepts of politics, Hobbes established the framework necessary to sustain these ideas.</p></li>
+        </ul>
+        <h3 id="hobbes-political-theory">Hobbes’ Political Theory</h3>
+        <h4 id="political-absolutism">Political Absolutism</h4>
+        <ul>
+        <li><p>Hobbes is known for his doctrine of sovereignty, emphasizing the notion of an indivisible sovereign power that holds complete authority.</p></li>
+        <li><p>The frontispiece of <em>Leviathan</em> illustrates a sovereign wielding a sword and a scepter, embodying his absolute authority over civilian and ecclesiastical institutions.</p></li>
+        </ul>
+        <h4 id="the-common-wealth-and-sovereignty">The Common Wealth and Sovereignty</h4>
+        <ul>
+        <li><p>The sovereign is a product of a social contract formed by individuals.</p></li>
+        <li><p>Hobbes argues for the necessity of an authoritative power to safeguard peace and security.</p></li>
+        </ul>
+        <h4 id="natural-rights-and-equality">Natural Rights and Equality</h4>
+        <ul>
+        <li><p>Hobbes also asserts the fundamental equality of humans and their inalienable rights.</p></li>
+        <li><p>Authority arises from the consent of the governed, challenging the absolutism of monarchies despite his alignment with royalist ideas.</p></li>
+        </ul>
+        <h3 id="historical-context-2">Historical Context</h3>
+        <h4 id="the-treaty-of-westphalia">The Treaty of Westphalia</h4>
+        <ul>
+        <li><p>Signed in 1648, it ended the Thirty Years’ War and solidified the principles of state sovereignty that Hobbes engaged with in his theories.</p></li>
+        <li><p>Established the concept that individuals within a sovereign state are subject to the authority of that state alone.</p></li>
+        </ul>
+        <h4 id="hobbes-life-and-times">Hobbes’ Life and Times</h4>
+        <ul>
+        <li><p>Born in 1588 during the Spanish Armada’s defeat.</p></li>
+        <li><p>Served as a tutor and engaged with leading figures like Galileo and Descartes.</p></li>
+        </ul>
+        <h4 id="response-to-civil-conflict">Response to Civil Conflict</h4>
+        <ul>
+        <li><p>Hobbes wrote extensively during the English Civil Wars and reflected on political disorder and human nature, leading to his philosophical inquiries in works such as <em>De Cive</em>.</p></li>
+        </ul>
+        <h3 id="philosophical-innovations">Philosophical Innovations</h3>
+        <h4 id="critique-of-aristotelian-thought">Critique of Aristotelian Thought</h4>
+        <ul>
+        <li><p>Hobbes positions himself as the antithesis of Aristotle, rejecting his views on human nature and political organization.</p></li>
+        <li><p>In <em>Leviathan</em>, Hobbes claims:</p></li>
+        </ul>
+        <blockquote>
+        <p>"There is nothing so absurd that the old philosophers have not... maintained."</p>
+        </blockquote>
+        <h4 id="state-of-nature">State of Nature</h4>
+        <ul>
+        <li><p>Hobbes’ concept of the "state of nature" describes a society without governance, characterized by conflict and self-preservation.</p></li>
+        </ul>
+        <p><br /><span class="math display">Life is solitary, poor, nasty, brutish, and short.</span><br /></p>
+        <h4 id="human-behavior">Human Behavior</h4>
+        <p>Hobbes employs a materialistic understanding of human nature:</p>
+        <ul>
+        <li><p>Human beings are to be understood in terms of motion and mechanical properties.</p></li>
+        <li><p>Political order is fabricated through human artifice, not natural inclination or societal norms.</p></li>
+        </ul>
+        <h4 id="the-role-of-reason">The Role of Reason</h4>
+        <p>Reason constitutes an essential part of Hobbes’ framework, equated to a scientific methodology that can reconstruct human society.</p>
+        <blockquote>
+        <p>"Reason is not a sense and memory born with us, nor gotten by experience only, but is attained by industry."</p>
+        </blockquote>
+        <h4 id="authority-and-legitimacy">Authority and Legitimacy</h4>
+        <p>Hobbes’ fundamental question revolves around the source of authority and its legitimacy. His inquiry acts as a basis for social contract theory.</p>
+        <ul>
+        <li><p>What makes authority possible?</p></li>
+        <li><p>How can individuals accept a common authority?</p></li>
+        </ul>
+        <h3 id="conclusion-10">Conclusion</h3>
+        <p>Hobbes stands as a controversial figure whose ideas on political theory and absolutism continue to elicit debate. His legacy is deeply intertwined with the evolution of modern political thought, particularly concerning sovereignty, authority, and the human condition.</p>
+        <h1 id="notes-on-hobbes-state-of-nature-and-individualism-from-professor-steven-smiths-lecture">Notes on Hobbes’ State of Nature and Individualism from Professor Steven Smith’s Lecture</h1>
+        <h3 id="introduction-10">Introduction</h3>
+        <p>In today’s lecture, Professor Steven Smith discusses Thomas Hobbes’ concept of the State of Nature, a foundational idea in Hobbes’ political philosophy. He emphasizes and contrasts this with Aristotle’s views on human nature and authority.</p>
+        <h3 id="the-state-of-nature">The State of Nature</h3>
+        <h4 id="definition-and-context">Definition and Context</h4>
+        <p>Hobbes’ State of Nature is posited as:</p>
+        <blockquote>
+        <p>A condition of human life in the absence of authority, rules, or laws, characterized by the absence of social order.</p>
+        </blockquote>
+        <p>Contrary to Aristotle, who viewed humans as naturally inclined toward perfection, Hobbes sees the State of Nature as a state of maximal individualism and insecurity, where life resembles a constant war: <br /><span class="math display">State of Nature  = war of "all against all"</span><br /></p>
+        <h4 id="characteristics-of-human-life">Characteristics of Human Life</h4>
+        <p>1. Individualism:</p>
+        <ul>
+        <li><p>Hobbes introduces the concept of individuality, where human beings are seen as bundles of desires, fears, and aspirations.</p></li>
+        </ul>
+        <p>2. Desire and Fear:</p>
+        <ul>
+        <li><p>Humans are characterized by continual motions of willing and choosing.</p></li>
+        <li><p>Hobbes identifies continual desire as essential for human life:</p></li>
+        </ul>
+        <p><br /><span class="math display">Happiness = Continual success in obtaining desires</span><br /></p>
+        <h4 id="moral-implications">Moral Implications</h4>
+        <p>Hobbes contends that moral terms like "good" and "evil" arise not from objective standards but from individual preferences: <br /><span class="math display">Good is what we like, and Evil is what we dislike.</span><br /></p>
+        <h3 id="passions-in-human-nature">Passions in Human Nature</h3>
+        <p>Hobbes identifies two fundamental passions that drive human behavior:</p>
+        <ol>
+        <li><p>Pride: Desire for preeminence and recognition.</p></li>
+        <li><p>Fear: Primarily fear of death and losing status.</p></li>
+        </ol>
+        <p>These passions influence individuals’ behavior within the State of Nature, often leading to conflict and struggle.</p>
+        <h3 id="skepticism-and-knowledge">Skepticism and Knowledge</h3>
+        <p>Hobbes’ skepticism relates to what can be known:</p>
+        <blockquote>
+        <p>There are no nonhuman foundations for our beliefs; all knowledge is a human construction.</p>
+        </blockquote>
+        <p>Knowledge depends on shared agreements on terms and definitions, rendering Hobbes’ view of knowledge inherently provisional and subject to change.</p>
+        <h3 id="authority-and-social-contract">Authority and Social Contract</h3>
+        <p>To escape the insecurity of the State of Nature, Hobbes argues that individuals must agree to a social contract:</p>
+        <blockquote>
+        <p>Lay down our rights for peace and security.</p>
+        </blockquote>
+        <p>This requires mutual consent to submit to a common authority, defining the foundations of legitimate authority.</p>
+        <h4 id="the-laws-of-nature">The Laws of Nature</h4>
+        <p>Hobbes outlines the laws of nature as precepts of reason understood to create peace:</p>
+        <ol>
+        <li><p>Seek peace and follow it;</p></li>
+        <li><p>Lay down arms if others will also do so.</p></li>
+        </ol>
+        <p>These laws reflect moral imperatives and are crucial for establishing civil society.</p>
+        <h3 id="hobbes-conception-of-life">Hobbes’ Conception of Life</h3>
+        <p>Hobbes places significant value on life and self-preservation, regarding them as fundamental rights:</p>
+        <blockquote>
+        <p>Every being has a natural right to preserve itself.</p>
+        </blockquote>
+        <p>However, critics argue that Hobbes’ focus on life may lead to excessive fear and aversion to risk, potentially undermining virtues such as courage.</p>
+        <h3 id="critique-of-hobbesian-peace">Critique of Hobbesian Peace</h3>
+        <p>Professor Smith critiques whether Hobbes’ emphasis on peace and life diminishes the importance of virtues like courage and civic responsibility. The lecture concludes with a reflection on the balance between timorousness and courage in societies, questioning:</p>
+        <blockquote>
+        <p>Does Hobbes’ philosophy create a society of cowards, or can it coexist with the need for risk and bravery?</p>
+        </blockquote>
+        <h3 id="conclusion-11">Conclusion</h3>
+        <p>The examination of Hobbes continues, focusing on the implications of his views for nature, authority, and the moral development of society. A critical analysis of how a Hobbesian society balances risk and individual rights versus community safety will be addressed in future discussions.</p>
+        <h1 id="lecture-notes-on-hobbes-political-philosophy">Lecture Notes on Hobbes’ Political Philosophy</h1>
+        <h3 id="introduction-11">Introduction</h3>
+        <p>The lecture discusses the concept of sovereignty in the political philosophy of Thomas Hobbes, particularly as presented in his work, <em>Leviathan</em>. Two critical concepts from Hobbes’s thought are introduced:</p>
+        <ul>
+        <li><p>The State of Nature</p></li>
+        <li><p>Sovereignty</p></li>
+        </ul>
+        <h3 id="the-sovereign-as-a-mortal-god">The Sovereign as a Mortal God</h3>
+        <p>Hobbes describes the sovereign as a <strong>mortal god</strong>, the solution to the problems arising from the state of nature, which Hobbes famously characterizes as "solitary, poor, nasty, brutish, and short." The creation of the sovereign is deemed necessary to end perpetual uncertainty, anxiety, and unrest.</p>
+        <h4 id="characteristics-of-sovereignty">Characteristics of Sovereignty</h4>
+        <ol>
+        <li><p><strong>Artificial Person:</strong> The sovereign is an artificial entity created by a social contract or covenant and does not exist by nature.</p></li>
+        <li><p><strong>Representation of the People:</strong> The sovereign is authorized by the governed, acting on their behalf but not owning the state.</p></li>
+        <li><p><strong>Absolute Power:</strong> Sovereign power must be <strong>unlimited</strong> and <strong>undivided</strong>, controlling various aspects of governance.</p></li>
+        <li><p><strong>Command of Law:</strong> The law is defined as what the sovereign decrees. This leads to a form of <em>legal positivism</em>, where there are no higher laws than those of the sovereign.</p></li>
+        </ol>
+        <h4 id="sovereign-and-the-source-of-law">Sovereign and the Source of Law</h4>
+        <p>The core of Hobbes’s theory asserts that: <br /><span class="math display">Law = Sovereign’s Command</span><br /> This is reminiscent of Thrasymachus’ assertion in Plato’s <em>Republic</em> that justice is the interest of the stronger.</p>
+        <h3 id="justice-and-law">Justice and Law</h3>
+        <p>Hobbes states that the sovereign cannot act unjustly, as it is the source of justice itself. Thus: <br /><span class="math display">If the Sovereign creates law, then all laws are just.</span><br /> He distinguishes between what he calls <strong>just laws</strong> and <strong>good laws</strong>, where: <br /><span class="math display">Good Law = Needful for the Good of the People</span><br /></p>
+        <h4 id="purpose-of-laws">Purpose of Laws</h4>
+        <p>Laws serve to facilitate rather than constrain human actions. As Hobbes writes: <br /><span class="math display">Laws are to direct and guide actions, like hedges to travelers.</span><br /></p>
+        <h4 id="opinions-and-governance">Opinions and Governance</h4>
+        <p>Hobbes argues that managing opinions is crucial in governing actions, hence the sovereign must control permissible ideas. The two main institutions under scrutiny are the <strong>Church</strong> and the <strong>University</strong>, which are seen as conduits for dissenting opinions.</p>
+        <h3 id="economic-and-social-equality">Economic and Social Equality</h3>
+        <p>Hobbes also addresses social justice. He argues for:</p>
+        <ul>
+        <li><p>Equal administration of justice for all classes.</p></li>
+        <li><p>Proposals for taxation that ensure fairness.</p></li>
+        <li><p>Public assistance for the indigent, anticipating welfare concepts.</p></li>
+        </ul>
+        <h3 id="the-nature-of-liberty">The Nature of Liberty</h3>
+        <p>Hobbes distinguishes between the liberty of the ancients (collective participation in governance) and the liberty of the moderns (freedom from constraints). He argues: <br /><span class="math display">Liberty<sub>Modern</sub> = Absence of Constraints</span><br /> For Hobbes, personal liberty is about immunity from being forced to participate in state affairs.</p>
+        <h3 id="conclusion-hobbes-relevance-today">Conclusion: Hobbes’ Relevance Today</h3>
+        <p>Hobbes’ teachings about the state, law, and individual strives for security continue to resonate. His ideas suggest a balance between maintaining order and allowing individual freedoms, creating a psychological framework reflecting the tension between fear (for security) and pride (personal ambition).</p>
+        <h4 id="the-paradox-of-hobbesian-society">The Paradox of Hobbesian Society</h4>
+        <p>Despite Hobbesian principles promoting self-interest and risk aversion, some individuals are compelled to risk for honor or duty. This continuation of the Hobbesian framework leads to societal complexities in understanding motivations beyond self-interest.</p>
+        <h1 id="notes-on-john-lockes-political-philosophy">Notes on John Locke’s Political Philosophy</h1>
+        <h3 id="introduction-12">Introduction</h3>
+        <ul>
+        <li><p>Today’s lecture focuses on John Locke, whose writings have profoundly influenced political ideas and the formation of modern democratic states.</p></li>
+        <li><p>Locke’s principal work, <em>Two Treatises of Civil Government</em>, primarily the <em>Second Treatise</em>, articulates essential concepts of liberty, property, and government.</p></li>
+        <li><p>His ideas were adopted by significant figures like Thomas Jefferson in the <em>Declaration of Independence</em>, making Locke an influential figure in American political thought.</p></li>
+        </ul>
+        <h3 id="core-concepts-of-lockes-philosophy">Core Concepts of Locke’s Philosophy</h3>
+        <h4 id="natural-rights">Natural Rights</h4>
+        <p>Locke argues that all human beings possess natural rights to life, liberty, and property. These rights are inherent and not granted by any government.</p>
+        <h4 id="legitimate-government">Legitimate Government</h4>
+        <ul>
+        <li><p>According to Locke, legitimate government is founded on the consent of the governed.</p></li>
+        <li><p>It must respect and protect individual natural rights and operate under a system of checks and balances (separation of powers).</p></li>
+        <li><p>When a government fails to uphold these principles, citizens have the right to revolt.</p></li>
+        </ul>
+        <h4 id="state-of-nature-1">State of Nature</h4>
+        <ul>
+        <li><p>Locke describes the state of nature as one of perfect freedom and equality where individuals live without a formal government but are still bound by natural law.</p></li>
+        <li><p>In this natural state, individuals possess rights and responsibilities that are moral rather than merely legal.</p></li>
+        </ul>
+        <h3 id="natural-law">Natural Law</h3>
+        <p>Locke’s notion of natural law underlies his political theory:</p>
+        <p><strong>Natural Law</strong> governs the actions of individuals in the state of nature. The crucial points include:</p>
+        <ul>
+        <li><p>The natural law dictates that individuals should not harm others regarding their life, health, liberty, and possessions.</p></li>
+        <li><p>The moral foundation of natural law becomes essential when transitioning to civil society.</p></li>
+        <li><p>It implies a right to self-preservation. If one’s rights are violated, individuals have the right to seek reparation, including self-defense.</p></li>
+        </ul>
+        <h4 id="the-right-to-property">The Right to Property</h4>
+        <h6 id="acquisition-of-property">Acquisition of Property:</h6>
+        <ul>
+        <li><p>Locke famously claims, "Every man has property in his person: this no body has any right to but himself."</p></li>
+        <li><p>Labor is the key to property rights: when individuals mix their labor with nature, they confer ownership of the resulting product.</p></li>
+        </ul>
+        <p><strong>Notable Equations:</strong> <br /><span class="math display">$$\begin{aligned}
+            \text{Property} &amp; = \text{Labor} + \text{Natural Resources} \\
+            \text{Ownership} &amp; \propto \text{Labor Expenditure}\end{aligned}$$</span><br /></p>
+        <h4 id="social-contract-and-government">Social Contract and Government</h4>
+        <p>Locke’s social contract theory posits that governments are formed to protect the natural rights of citizens, which would otherwise be at risk in the state of nature.</p>
+        <ul>
+        <li><p>If governments fail their responsibilities, the people’s consent ceases, justifying revolution (<em>Second Treatise</em>, Section 149).</p></li>
+        </ul>
+        <h3 id="influence-of-historical-context">Influence of Historical Context</h3>
+        <ul>
+        <li><p>Locke’s ideas are influenced by earlier theorists, particularly Hobbes, and were shaped by the political turmoil of his time (e.g., the English Civil War).</p></li>
+        <li><p>Machiavelli and Hobbes set the groundwork for discussions about power and governance, which Locke builds upon to formulate his idea of limited government.</p></li>
+        <li><p>The First Treatise critiques divine right theories of kingship, particularly those by Robert Filmer.</p></li>
+        </ul>
+        <h3 id="conclusion-12">Conclusion</h3>
+        <p>Locke’s approach melds traditional natural law with emerging ideas of self-interest and individual rights. His views paved the way for modern theories of governance grounded in the principles of democracy, property rights, and individual freedoms.</p>
+        <h4 id="key-takeaways">Key Takeaways:</h4>
+        <ul>
+        <li><p>Locke’s notions of natural rights and government by consent have been foundational to modern democracy.</p></li>
+        <li><p>His arguments on property acquisition significantly influenced economic thought and become an early foundation for capitalist ideas as seen in later works like those of Adam Smith.</p></li>
+        <li><p>The intertwining of moral and market principles has created enduring debates within political philosophy regarding rights, responsibilities, and the nature of justice.</p></li>
+        </ul>
+        <h1 id="lecture-notes-on-john-lockes-political-philosophy">Lecture Notes on John Locke’s Political Philosophy</h1>
+        <h3 id="introduction-13">Introduction</h3>
+        <p>Today, we explore John Locke’s Second Treatise of Government, focusing on the themes of capitalism, natural law, and government by consent. Key topics include:</p>
+        <ul>
+        <li><p>The transition from the state of nature to civil society.</p></li>
+        <li><p>The creation of private property and its legitimacy.</p></li>
+        <li><p>The Doctrine of Consent and its implications for government.</p></li>
+        </ul>
+        <h3 id="lockes-view-of-the-state-of-nature">Locke’s View of the State of Nature</h3>
+        <p>Locke presents a philosophical anthropology beginning with the state of nature:</p>
+        <ul>
+        <li><p>The state of nature is marked by the absence of civil authority and is governed by natural law.</p></li>
+        <li><p>In this state, individuals can acquire property through their labor, leading to the development of a market economy.</p></li>
+        </ul>
+        <h4 id="creation-of-property">Creation of Property</h4>
+        <p>Locke posits that property originates from labor. He asserts:</p>
+        <p><br /><span class="math display"><em>P</em> = <em>L</em> × <em>W</em></span><br /></p>
+        <p>where:</p>
+        <ul>
+        <li><p><span class="math inline"><em>P</em></span>: Property</p></li>
+        <li><p><span class="math inline"><em>L</em></span>: Labor</p></li>
+        <li><p><span class="math inline"><em>W</em></span>: Use of natural resources</p></li>
+        </ul>
+        <p>Locke emphasizes that property rights are essential for stability and that government must protect these rights.</p>
+        <h3 id="government-and-consent">Government and Consent</h3>
+        <p>Locke’s significant contribution is the idea of government by consent:</p>
+        <ul>
+        <li><p>The transition from the state of nature to civil society involves individuals consenting to form a community for mutual protection and governance.</p></li>
+        <li><p>Locke states, “The only way whereby anyone divests himself of his natural liberty... is by agreeing with all others to join and unite in a community...” (Chapter 8, Section 95).</p></li>
+        </ul>
+        <h4 id="conditions-of-consent">Conditions of Consent</h4>
+        <ol>
+        <li><p>Legitimacy of Majority Rule: Locke argues that once individuals consent to form a community, the majority is entitled to act for the collective.</p></li>
+        <li><p>Moral Limits on Consent: While a majority can decide, it does not grant authority for arbitrary rule. There are moral constraints on government behavior.</p></li>
+        <li><p>Express vs. Tacit Consent:</p></li>
+        </ol>
+        <ul>
+        <li><p><strong>Express Consent</strong>: Explicit agreement to a government system. Locke asserts citizenship through “positive agreement” (Section 122).</p></li>
+        <li><p><strong>Tacit Consent</strong>: Implied consent by enjoying the benefits of government laws and protection.</p></li>
+        </ul>
+        <h4 id="key-quotes">Key Quotes</h4>
+        <ul>
+        <li><p>“For when any number of men by the consent of every individual make a community, they have thereby made that community one body with a power to act as one body which is only by the will and determination of the majority.”</p></li>
+        <li><p>“Nothing can make any man so... but his actually entering into it by positive agreement, an express promise and compact.” (Section 122)</p></li>
+        </ul>
+        <h3 id="locke-and-capitalism">Locke and Capitalism</h3>
+        <p>Locke is often viewed as a precursor to capitalism:</p>
+        <ul>
+        <li><p>He presents an ethos of industriousness and rationality, discussing property as a moral duty.</p></li>
+        <li><p>His ideas paved the way for modern economics and influence Adam Smith and subsequent capitalist thought.</p></li>
+        </ul>
+        <h4 id="relationship-to-protestant-ethic">Relationship to Protestant Ethic</h4>
+        <p>Max Weber’s analysis in <em>The Protestant Ethic and the Spirit of Capitalism</em> links Locke’s ideas to the moral transformation surrounding property acquisition and capitalism.</p>
+        <h3 id="concerns-with-majority-rule">Concerns with Majority Rule</h3>
+        <p>Locke’s theories raise questions regarding the potential for majority tyranny. Lincoln’s debate with Douglas highlights this concern, emphasizing:</p>
+        <blockquote>
+        <p>“No man is good enough to govern another without that other’s consent.”</p>
+        </blockquote>
+        <p>Lincoln underscores that consent must always be morally informed.</p>
+        <h3 id="conclusion-13">Conclusion</h3>
+        <p>Locke’s political philosophy is central to American thought, particularly the idea that legitimate government is based on the consent of the governed:</p>
+        <ul>
+        <li><p>Discussions to continue on the limitations of government power and the implications of Locke’s ideas for democracy and governance.</p></li>
+        <li><p>Focus on Chapter 14 of the Second Treatise regarding prerogative power—an important subject for contemporary politics.</p></li>
+        </ul>
+        <h1 id="lecture-notes-on-john-lockes-political-philosophy-1">Lecture Notes on John Locke’s Political Philosophy</h1>
+        <h3 id="introduction-14">Introduction</h3>
+        <p>This lecture examines two key issues in the context of John Locke’s Second Treatise:</p>
+        <ul>
+        <li><p>The role of executive power in Locke’s theory of government, particularly its relationship to legislative power.</p></li>
+        <li><p>The implications of Locke’s thought for contemporary political philosophy in America.</p></li>
+        </ul>
+        <h3 id="lockes-theory-of-government">Locke’s Theory of Government</h3>
+        <p>Locke advocates for a government that is limited and constitutional. He is critical of Hobbes’s view of an absolute sovereign, depicted through the metaphor of a lion. Instead, Locke emphasizes the importance of a <strong>separation of powers</strong>, which he refers to as the <strong>subordination of powers</strong>.</p>
+        <h4 id="legislative-authority">Legislative Authority</h4>
+        <p>Locke consistently affirms the primacy of legislative power:</p>
+        <blockquote>
+        <p>“The first and fundamental positive law of all constitutions is in establishing that of the legislative power.”</p>
+        </blockquote>
+        <p>This emphasis indicates that legislative bodies (such as parliaments) should hold supremacy over executive branches. Contrary to Hobbes, whose concerns primarily revolve around anarchy, Locke aims to prevent tyranny and despotism, highlighting that the presence of <strong>settled laws</strong> is crucial to guard against arbitrary rule.</p>
+        <h4 id="separation-of-powers">Separation of Powers</h4>
+        <p>While advocating for legislative supremacy, Locke acknowledges the necessity of executive power—sometimes operating as an agent of the legislature. In his view:</p>
+        <blockquote>
+        <p>“The executive power is ministerial and subordinate to the legislature.” (Section 153)</p>
+        </blockquote>
+        <p>Yet he also creates a distinct need for an <strong>executive branch</strong> to handle matters of war and peace, which he identifies as the <strong>federative power</strong>.</p>
+        <h3 id="prerogative-power-and-executive-authority">Prerogative Power and Executive Authority</h3>
+        <p>Locke argues that the federative or executive power requires certain discretionary capabilities, particularly in emergencies:</p>
+        <blockquote>
+        <p>“It is impossible to foresee and so by laws to provide for all the accidents and necessities that may concern the public... the executive must have the power to act according to discretion for the public good without the prescription of law.”</p>
+        </blockquote>
+        <p>He provides examples—such as the necessity to demolish property to prevent greater harm during emergencies—that highlight the delicate balance between rights and the public interest.</p>
+        <h4 id="limits-of-prerogative-power">Limits of Prerogative Power</h4>
+        <p>Locke does not clearly specify the limits of prerogative power in times of crisis. He raises the question:</p>
+        <blockquote>
+        <p>“Who will judge whether the discretion of the executive is being used for the public safety or the public good or whether it is simply a kind of usurpation of power?”</p>
+        </blockquote>
+        <p>In situations of significant conflict where no judge is available, he suggests that the people must appeal to Heaven, effectively legitimizing a right of revolution:</p>
+        <blockquote>
+        <p>“There shall be no judge on earth... the people have no other remedy in this but to appeal to Heaven.” (Section 168)</p>
+        </blockquote>
+        <h3 id="lockes-legacy-in-america">Locke’s Legacy in America</h3>
+        <p>Locke’s ideas resonate deeply within American founding documents and principles, particularly regarding natural rights, government by consent, and the right to revolution. His philosophies serve as foundations for the American constitutional framework.</p>
+        <h4 id="criticism-of-lockeanism">Criticism of Lockeanism</h4>
+        <p>While many embrace Locke’s principles, critiques exist regarding:</p>
+        <ul>
+        <li><p><strong>Possessive Individualism:</strong> Some argue that Locke’s emphasis on property rights encourages individualism to the detriment of community values.</p></li>
+        <li><p><strong>Legalistic Politics:</strong> Critics claim Locke’s theories facilitate a framework that neglects the common good or public interests.</p></li>
+        </ul>
+        <p>Louis Hartz’s interpretation of America as an embodiment of "irrational Lockeanism" challenges the flexibility of American political options.</p>
+        <h3 id="contrasting-locke-and-rawls">Contrasting Locke and Rawls</h3>
+        <p>The lecture also establishes a fundamental contrast between Locke’s theories and those of John Rawls.</p>
+        <h4 id="the-nature-of-rights">The Nature of Rights</h4>
+        <p>Locke claims:</p>
+        <blockquote>
+        <p>“Every man has property in his own person. This nobody has any right to but himself.” (Section 27)</p>
+        </blockquote>
+        <p>In contrast, Rawls posits:</p>
+        <blockquote>
+        <p>“Each person... possesses an inviolability founded on justice that even the welfare of society as a whole cannot override.”</p>
+        </blockquote>
+        <p>Locke emphasizes <strong>self-ownership</strong> while Rawls introduces the <strong>difference principle</strong>, which advocates for the redistribution of resources for the least advantaged—arguing that natural endowments are products of luck.</p>
+        <h4 id="political-implications">Political Implications</h4>
+        <p>Locke’s framework supports meritocracy while Rawls advocates for a collective approach to social assets and redistribution. Consequently, they represent divergent interpretations of the role of government:</p>
+        <ul>
+        <li><p><strong>Locke:</strong> Government as a protector of individual rights and self-ownership.</p></li>
+        <li><p><strong>Rawls:</strong> Government as a facilitator of justice and equality.</p></li>
+        </ul>
+        <h3 id="conclusion-14">Conclusion</h3>
+        <p>Locke’s philosophy, despite being foundational, faces significant criticism today. While he remains a pivotal figure in the evolution of liberal thought, the complexities and pathologies of modernity expose the limitations of his ideas. The exploration of these doctrines continues to provoke discussion concerning the balance between individual liberty and collective welfare.</p>
+        <h1 id="lecture-notes-on-rousseau">Lecture Notes on Rousseau</h1>
+        <h3 id="the-life-of-rousseau">The Life of Rousseau</h3>
+        <ul>
+        <li><p>Born in 1712 in Geneva, Switzerland, Rousseau lived during the age of absolutism under Louis XIV.</p></li>
+        <li><p>He experienced a life of transition until his death in 1778, shortly before the French Revolution.</p></li>
+        <li><p>Rousseau was a product of the <em>ancien régime</em>, deeply influenced by the society around him.</p></li>
+        <li><p>His early life included various jobs, including music instructor and transcriber. He left Geneva at 16 and lived as a vagabond.</p></li>
+        <li><p>Rousseau rose to fame after publishing <em>The Discourse on the Arts and the Sciences</em> in 1750, followed by the <em>Discourse on the Origins of Inequality</em> in 1755, and <em>The Social Contract</em> in 1762.</p></li>
+        <li><p>Throughout his life, he also authored autobiographical works, novels, and composed music, including the opera <em>Le Devin du Village</em>.</p></li>
+        </ul>
+        <h3 id="rousseaus-philosophy">Rousseau’s Philosophy</h3>
+        <ul>
+        <li><p>Rousseau is often viewed as a critic of liberalism, specifically opposing the property-owning, rights-based society represented by John Locke.</p></li>
+        <li><p>While he expressed ideas that led to revolutionary changes, it is important to understand Rousseau’s complexity and the nuances of his thoughts.</p></li>
+        <li><p>His works discuss themes of freedom, equality, and the nature of man in society.</p></li>
+        </ul>
+        <h3 id="the-second-discourse-a-conjectural-history">The Second Discourse: A Conjectural History</h3>
+        <ul>
+        <li><p>The <em>Second Discourse</em> is considered by many to be Rousseau’s greatest work.</p></li>
+        <li><p>It is a <strong>conjectural history</strong>, reconstructing the origins of human nature and society through thought experiments rather than historical fact.</p></li>
+        <li><p>Rousseau likens the effects of history on humans to the statue of Glaucus, disfigured by time.</p></li>
+        <li><p>He argues for putting aside facts to better understand the nature of humanity.</p>
+        <p><br /><span class="math display">Human Nature = Original State − Influence of Society</span><br /></p></li>
+        <li><p>Rousseau critiques previous philosophers for not accurately reaching the state of nature.</p></li>
+        <li><p>He asserts that human nature will be revealed through an understanding of nature itself.</p></li>
+        </ul>
+        <h3 id="state-of-nature-2">State of Nature</h3>
+        <ul>
+        <li><p>Rousseau suggests a unique understanding of the <strong>state of nature</strong> differing from Hobbes and Locke:</p>
+        <ul>
+        <li><p>Hobbes describes natural man as warlike.</p></li>
+        <li><p>Locke attributes rationality and industry to the state of nature.</p></li>
+        </ul></li>
+        <li><p>For Rousseau, human nature resembles animal nature, emphasizing two distinct qualities:</p>
+        <ul>
+        <li><p><strong>Freedom (or Free Agency):</strong> Humans can shape their own operations.</p>
+        <p><br /><span class="math display">Free Agency = Self-Determination</span><br /></p></li>
+        <li><p><strong>Perfectibility:</strong> Humans are open to change, constantly transforming with circumstances, which leads to the complexities of civilization.</p></li>
+        </ul></li>
+        </ul>
+        <h3 id="compassion-and-the-human-condition">Compassion and the Human Condition</h3>
+        <ul>
+        <li><p>Rousseau posits that humans are fundamentally compassionate (pitié).</p></li>
+        <li><p>He argues that although natural man is compassionate, society corrupts this quality.</p></li>
+        <li><p>The development of reason contributes to egoism, overshadowing our natural sentiments.</p>
+        <p><br /><span class="math display">Egoism ∝ Development of Reason</span><br /></p></li>
+        </ul>
+        <h3 id="on-property-and-civil-society">On Property and Civil Society</h3>
+        <ul>
+        <li><p>Rousseau explains the transition to civilization through the concept of <strong>property</strong>: <br /><span class="math display">Transition to Civilization = Development of Property</span><br /></p></li>
+        <li><p>He states that the first individual to claim ownership of land was the true founder of civil society, leading to conflicts and inequalities.</p></li>
+        <li><p>Rousseau critiques the glorification of property, arguing it fosters greed and inauthentic social bonds, resulting in bourgeois society.</p>
+        <p><br /><span class="math display">Bourgeois Society = Calculating Relationships + Loss of Virtue</span><br /></p></li>
+        <li><p>Rousseau contrasts ancient republican values of civic virtue with modern values focused predominantly on commerce and self-interest.</p></li>
+        </ul>
+        <h3 id="conclusion-15">Conclusion</h3>
+        <ul>
+        <li><p>Rousseau presents a thorough critique of modernity, questioning the moral implications of a society centered around property.</p></li>
+        <li><p>The next discussion will delve deeper into the transformations that led humanity to its modern condition.</p></li>
+        </ul>
+        <h1 id="notes-on-rousseaus-second-discourse">Notes on Rousseau’s Second Discourse</h1>
+        <h3 id="rousseaus-account-of-inequality">Rousseau’s Account of Inequality</h3>
+        <h4 id="key-themes">Key Themes</h4>
+        <ul>
+        <li><p>Rousseau’s work addresses the origins of inequality, particularly pointing to private property.</p></li>
+        <li><p>He suggests that civil society emerged from processes beyond mere material concerns.</p></li>
+        <li><p>The deeper issues encompass <strong>moral and psychological injuries</strong> inflicted by inequality, manifesting in societal attitudes.</p></li>
+        </ul>
+        <h4 id="amour-propre-vs.-amour-de-soi-meme">Amour-propre vs. Amour de soi-meme</h4>
+        <ul>
+        <li><p><strong>Amour-propre</strong> (often translated as "self-love" or "pride") is identified as the root cause of societal discontent: <br /><span class="math display">Amour-propre arises only within society and drives individuals to value themselves relative to others.</span><br /></p></li>
+        <li><p>The contrast is drawn with <strong>amour de soi-meme</strong>: <br /><span class="math display">Amour de soi-meme is a natural sentiment for self-preservation and humanity.</span><br /></p></li>
+        <li><p>Rousseau notes that: <br /><span class="math display">"Amour-propre is an artificial sentiment that moves individuals to value themselves more than others."</span><br /></p></li>
+        </ul>
+        <h3 id="the-development-of-inequality">The Development of Inequality</h3>
+        <ul>
+        <li><p>Rousseau argues that true inequality developed as humans began forming societal structures and seeking esteem.</p></li>
+        <li><p>The existence of <strong>vanity</strong> and <strong>shame</strong> as societal constructs contribute to unhappiness and inequality.</p></li>
+        <li><p>The desire for recognition stands as a double-edged sword—it is necessary for justice but can lead to violent repercussions when unmet.</p></li>
+        </ul>
+        <h3 id="amour-propre-in-society">Amour-propre in Society</h3>
+        <h4 id="consequences-of-amour-propre">Consequences of Amour-propre</h4>
+        <ul>
+        <li><p>Amour-propre can lead to:</p>
+        <ul>
+        <li><p>Feelings of contempt and envy.</p></li>
+        <li><p>Increased vengeful behavior, where individuals seek to rectify perceived slights.</p></li>
+        </ul></li>
+        <li><p>Rousseau suggests that: <br /><span class="math display">As esteem became important, the idea of rights to recognition emerged, leading to conflicts.</span><br /></p></li>
+        </ul>
+        <h3 id="rousseaus-critique-of-civilization">Rousseau’s Critique of Civilization</h3>
+        <ul>
+        <li><p>Civilization brings misery, driven by the tension created by amour-propre.</p></li>
+        <li><p>The <strong>bourgeoisie</strong>, a new societal class, epitomizes this conflict between appearance and essence.</p></li>
+        <li><p>Rousseau emphasizes that: <br /><span class="math display">"The savage lives within himself, while the bourgeoisie lives in the opinions of others."</span><br /></p></li>
+        </ul>
+        <h3 id="possible-solutions-to-inequality">Possible Solutions to Inequality</h3>
+        <h4 id="revisiting-the-state-of-nature">Revisiting the State of Nature</h4>
+        <ul>
+        <li><p>Rousseau suggests that the ideal political association may resemble the simplicity of early democratic societies.</p></li>
+        <li><p>He explicitly critiques later developments in society for moving people away from their natural state.</p></li>
+        <li><p>The resolution for societal discontent is elusive, hinting that returning to a state of simplicity or small democracy might restore balance.</p></li>
+        </ul>
+        <h3 id="conclusion-and-forward-look">Conclusion and Forward Look</h3>
+        <ul>
+        <li><p>The lecture posits that while Rousseau critiques civilization’s impact, he struggles to present viable solutions to the problems it creates.</p></li>
+        <li><p>The next discussion will delve into Rousseau’s <strong>Social Contract</strong> and the role of the <strong>general will</strong> as it relates to individual liberty.</p></li>
+        </ul>
+        <h1 id="notes-on-jean-jacques-rousseau">Notes on Jean-Jacques Rousseau</h1>
+        <h3 id="introduction-15">Introduction</h3>
+        <ul>
+        <li><p>Rousseau’s significant contributions to political science, particularly the concept of the general will.</p></li>
+        <li><p>Addressing the problems of civilization and inequality as outlined in Rousseau’s works.</p></li>
+        </ul>
+        <h3 id="the-general-will">The General Will</h3>
+        <ul>
+        <li><p>Defined as the collective will of the people, distinct from private or individual wills.</p></li>
+        <li><p>Central quote: "Find a form of association which defends and protects with all the common force, the person and goods of each associate and by means of which each one while uniting with all obeys only himself and remains as free as before." (Social Contract, Book I, Chapter 6)</p></li>
+        <li><p>Highlights the paradox of the social contract:</p>
+        <ul>
+        <li><p>How can individuals obey themselves while uniting with others in society?</p></li>
+        <li><p>Rousseau resolves this by advocating for "total alienation" of individual rights to the "entire community," ensuring equality and the absence of dependence on private wills.</p></li>
+        </ul></li>
+        </ul>
+        <h4 id="total-alienation-and-the-community">Total Alienation and the Community</h4>
+        <ul>
+        <li><p>Every individual alienates their rights to the community to create a legitimate sovereign.</p></li>
+        <li><p>The social contract becomes the foundation of the general will, emphasizing popular sovereignty.</p></li>
+        <li><p>The general will is not merely a sum of individual wills but the common good or rational will of the community.</p></li>
+        </ul>
+        <h3 id="moral-freedom-vs.-natural-freedom">Moral Freedom vs. Natural Freedom</h3>
+        <ul>
+        <li><p>Rousseau distinguishes between natural freedom (the freedom to act on one’s instincts) and moral freedom (the freedom to act according to self-imposed laws).</p></li>
+        <li><p>Quote: "What man loses through the social contract is his natural liberty...What he gains is civil liberty...and moral liberty which alone makes man truly the master of himself."</p></li>
+        <li><p>Moral liberty is obedience to laws one prescribes for oneself, which stands in contrast to Hobbes’s view of freedom as immunity from service.</p></li>
+        </ul>
+        <h3 id="approaches-to-law-and-political-participation">Approaches to Law and Political Participation</h3>
+        <ul>
+        <li><p>Rousseau argues that true freedom is found in participation in law-making.</p></li>
+        <li><p>Contrasts with Hobbes and Locke, who support representative governments.</p></li>
+        <li><p>Rousseau claims: "Sovereignty can never be delegated."</p></li>
+        </ul>
+        <h4 id="forms-of-government">Forms of Government</h4>
+        <ul>
+        <li><p>Acknowledges the limitations of direct democracy and endorses variations of government depending on context.</p></li>
+        <li><p>Introduces concepts of separation of powers and the importance of direct participation in governance.</p></li>
+        </ul>
+        <h3 id="legacies-of-rousseau">Legacies of Rousseau</h3>
+        <ul>
+        <li><p>Rousseau’s ideas influenced the French Revolution, particularly through figures such as Robespierre.</p></li>
+        <li><p>His writings inspired notions of citizenship and civic duty as seen in discussions of communal life in models such as kibbutzim.</p></li>
+        <li><p>Influential in various spheres: political, cultural, moral, and educational thought.</p></li>
+        </ul>
+        <h3 id="conclusion-16">Conclusion</h3>
+        <ul>
+        <li><p>Rousseau’s vision of a citizen involved in active governance challenges traditional views of liberty and individualism.</p></li>
+        <li><p>His lasting influence encompasses political theorists, revolutionaries, and writers advocating for autonomy and moral responsibility.</p></li>
+        </ul>
+        <h1 id="notes-on-alexis-de-tocquevilles-democracy-in-america">Notes on Alexis de Tocqueville’s Democracy in America</h1>
+        <h3 id="introduction-16">Introduction</h3>
+        <ul>
+        <li><p>The overarching question of Tocqueville’s work: How to balance freedom and equality in emerging democratic societies?</p></li>
+        <li><p>In the 17th and 18th centuries, freedom and equality were perceived as complementary ideals.</p></li>
+        <li><p>Key philosophers: Hobbes, Locke, Rousseau viewed the state of nature as embodying freedom and equality.</p></li>
+        </ul>
+        <h3 id="the-problem-of-freedom-and-equality">The Problem of Freedom and Equality</h3>
+        <h4 id="transition-in-the-19th-century">Transition in the 19th Century</h4>
+        <ul>
+        <li><p>Emergence of the middle class and new democratic societies raised concerns about the potential conflicts between freedom and equality.</p></li>
+        <li><p>Tocqueville observed that these new democratic forms of social power might threaten human liberty.</p></li>
+        </ul>
+        <h4 id="tocquevilles-contributions">Tocqueville’s Contributions</h4>
+        <ul>
+        <li><p>Acknowledged the challenge of controlling political power in democratic regimes.</p></li>
+        <li><p>Questioned the efficacy of institutional solutions (e.g., checks and balances).</p></li>
+        </ul>
+        <h3 id="the-legacy-of-rousseau">The Legacy of Rousseau</h3>
+        <h4 id="popular-sovereignty">Popular Sovereignty</h4>
+        <ul>
+        <li><p>Contrast between Rousseau’s ideal of popular sovereignty and Tocqueville’s skepticism about its reliability.</p></li>
+        <li><p>"The general will cannot err" vs. Tocqueville’s doubts about the infallibility of the people’s collective sovereignty.</p></li>
+        </ul>
+        <h3 id="key-themes-in-tocquevilles-work">Key Themes in Tocqueville’s Work</h3>
+        <ul>
+        <li><p>Control of the people’s sovereignty is central to political discourse in democracy.</p></li>
+        <li><p>Historical context: Tocqueville’s aristocratic background and its influence on his perspectives.</p></li>
+        </ul>
+        <h3 id="tocquevilles-background">Tocqueville’s Background</h3>
+        <ul>
+        <li><p>Born in 1805 in Normandy, France.</p></li>
+        <li><p>Family history tied to the Norman conquest.</p></li>
+        <li><p>Educational background in law and a commission to study the American prison system in 1830.</p></li>
+        </ul>
+        <h3 id="democracy-in-america">Democracy in America</h3>
+        <h4 id="major-themes">Major Themes</h4>
+        <ul>
+        <li><p>Equality of conditions as a foundational social fact.</p></li>
+        <li><p>Importance of local democracy and civil associations.</p></li>
+        </ul>
+        <h4 id="critical-observations">Critical Observations</h4>
+        <ul>
+        <li><p>"Among the new objects that attracted my attention..." - Introduction emphasizes the significance of equality as a condition preceding political governance.</p></li>
+        <li><p>Historical processes have initiated a gradual move toward equality, influenced by unique socio-political factors.</p></li>
+        </ul>
+        <h3 id="tocquevilles-methodology">Tocqueville’s Methodology</h3>
+        <ul>
+        <li><p>Employing a historical perspective that tracks the evolution of equality.</p></li>
+        <li><p>Analytical approach that juxtaposes the development of American and French democracies.</p></li>
+        </ul>
+        <h4 id="comparative-analysis">Comparative Analysis</h4>
+        <ul>
+        <li><p>Why did American democracy remain relatively mild compared to the turbulence of French democracy?</p></li>
+        <li><p>The processes that formed democratic institutions differ significantly across contexts.</p></li>
+        </ul>
+        <h3 id="key-characteristics-of-american-democracy">Key Characteristics of American Democracy</h3>
+        <ul>
+        <li><p>Local government and townships as fundamental sources of democratic power.</p></li>
+        <li><p>Civil associations play a crucial role in fostering a participatory democracy.</p></li>
+        <li><p>The role of religion: Tocqueville labeled it as a spirit that supports democratic society.</p></li>
+        </ul>
+        <h4 id="local-township-democracy">Local Township Democracy</h4>
+        <ul>
+        <li><p>"In the township... the force of free peoples resides."</p></li>
+        <li><p>Local associations nurture habits of participation inherent to democracy.</p></li>
+        <li><p>The fragility of local institutions in the face of federal authority.</p></li>
+        <li><p>Critique of enlightenment: More enlightenment challenges the local spirit of democracy.</p></li>
+        </ul>
+        <h3 id="conclusion-and-reflection">Conclusion and Reflection</h3>
+        <ul>
+        <li><p>Tocqueville’s work serves as a political educational tool meant for future statesmen.</p></li>
+        <li><p>Recognition that democracy is an evolving process influenced by historical, social, and political conditions.</p></li>
+        <li><p>The importance of understanding the various forms democracy may take to sustain liberty.</p></li>
+        </ul>
+        <h1 id="tocquevilles-analysis-of-american-democracy">Tocqueville’s Analysis of American Democracy</h1>
+        <h3 id="introduction-17">Introduction</h3>
+        <p>In his exploration of American democracy, Alexis de Tocqueville identifies three central features that characterize the democratic experience in the United States. These features may offer insights into the viability of democracy in emerging contexts but are notably specific to the American context.</p>
+        <h3 id="key-features-of-american-democracy">Key Features of American Democracy</h3>
+        <h4 id="local-government">1. Local Government</h4>
+        <p>Tocqueville emphasizes the significance of local government, or what is referred to as the <em>township</em> (or <em>commune</em>). He believes that the <em>spirit of the city</em> is critical for the sustenance of democratic society. By <em>l’esprit de cité</em>, Tocqueville refers to a civic spirit or community engagement that is vital in small towns.</p>
+        <h4 id="civil-association">2. Civil Association</h4>
+        <p>Another key feature that Tocqueville highlights is the notion of <em>civil association</em> or civic engagement. He states:</p>
+        <blockquote>
+        <p>"In democratic countries, the science of association is the mother science. The progress of all the others depends on the progress of that one."</p>
+        </blockquote>
+        <p>This quote illustrates the importance Tocqueville places on voluntary associations and how these groups foster a taste for liberty and community initiative. These associations serve as an intermediary between individuals and the central government, helping to cultivate democratic habits.<br />
+        Tocqueville’s perspective diverges from that of Jean-Jacques Rousseau, who warned against <em>partial associations</em> that could undermine the <em>general will</em>. For Tocqueville, these voluntary groups are essential for developing civic responsibility:</p>
+        <blockquote>
+        <p>"Sentiments and ideas renew themselves; the heart is enlarged and the human mind is developed."</p>
+        </blockquote>
+        <h4 id="spirit-of-religion">3. Spirit of Religion</h4>
+        <p>The third feature Tocqueville discusses is the <em>spirit of religion</em>. He observes:</p>
+        <blockquote>
+        <p>"On my arrival in the United States, it was the religious aspect of the country that struck my eye first."</p>
+        </blockquote>
+        <p>He posits that American democracy flourished alongside religion, contrary to Europe, where the two were often in conflict. Tocqueville argues that:</p>
+        <blockquote>
+        <p>"Despotism can do without faith, but freedom cannot."</p>
+        </blockquote>
+        <p>He believes that moral guidance stemming from religion is essential for maintaining public morality in a free society, countering the materialism that can accompany equality.</p>
+        <h3 id="tocquevilles-concerns">Tocqueville’s Concerns</h3>
+        <p>While Tocqueville acknowledges the strengths of American democracy, he also warns of potential dangers, particularly the threat of <em>tyranny of the majority</em>. He draws attention to the limitations of the U.S. Constitution’s checks and balances, foreseeing that the mobilization of public opinion could override legal protections for minorities. His key points include:</p>
+        <ul>
+        <li><p>Majority tyranny is often more subtle than overt oppression and can manifest in social ostracism.</p></li>
+        <li><p>The <em>empire of the majority</em> can stifle independent thought, leading to a lack of genuine debate and discussion.</p></li>
+        </ul>
+        <p>In a poignant observation, Tocqueville states:</p>
+        <blockquote>
+        <p>"I know of no other country where, in general, less independence of mind and genuine freedom of discussion reign than in America."</p>
+        </blockquote>
+        <p>This reflects his belief that the social pressures exerted by the majority can lead to conformity and suppression of dissent.</p>
+        <h3 id="conclusion-17">Conclusion</h3>
+        <p>In summary, Tocqueville identifies local government, civil association, and the spirit of religion as central to the American democratic experience. However, he also presents a critical view of potential threats, especially regarding the tyranny of the majority. His reflections reveal both the strengths inherent in American democracy and the vulnerabilities that need to be addressed.</p>
+        <h1 id="notes-on-tocquevilles-democracy-in-america"> Notes on Tocqueville’s Democracy in America</h1>
+        <h3 id="introduction-to-tocquevilles-work">Introduction to Tocqueville’s Work</h3>
+        <p>In this lecture, we will explore the ideas outlined in Alexis de Tocqueville’s <em>Democracy in America</em>, focusing on:</p>
+        <ul>
+        <li><p>The moral and psychological components of the democratic state (primarily in Volume 2).</p></li>
+        <li><p>The role of statesmanship in a democratic society.</p></li>
+        </ul>
+        <h3 id="overview-of-the-two-volumes">Overview of the Two Volumes</h3>
+        <h4 id="volume-1">Volume 1</h4>
+        <ul>
+        <li><p>Focuses on social and political institutions of democratic society.</p></li>
+        <li><p>Discusses institutional development and societal structures.</p></li>
+        </ul>
+        <h4 id="volume-2">Volume 2</h4>
+        <ul>
+        <li><p>Addresses moral and psychological characteristics of democratic individuals.</p></li>
+        <li><p>Examines how democracy transforms individual characteristics into what Tocqueville calls a "democratic soul".</p></li>
+        </ul>
+        <h3 id="key-psychological-components-of-the-democratic-individual">Key Psychological Components of the Democratic Individual</h3>
+        <p>Tocqueville identifies three main psychological aspects that shape the moral character of individuals in a democratic society:</p>
+        <ol>
+        <li><p>Compassion</p></li>
+        <li><p>Restlessness (also referred to as inquietude)</p></li>
+        <li><p>Self-interest (specifically “self-interest well understood”)</p></li>
+        </ol>
+        <h4 id="compassion">Compassion</h4>
+        <ul>
+        <li><p>Tocqueville articulates that democracy fosters gentler interactions among individuals.</p></li>
+        <li><p>This idea contrasts with aristocratic societies where individuals viewed others as fundamentally different.</p></li>
+        <li><p><strong>Montesquieu’s Influence:</strong> Argued that commerce softens manners, moving societies away from a warlike ethic.</p></li>
+        <li><p><strong>Rousseau’s Influence:</strong> Identified compassion as a remnant of natural goodness, a trait diminishing with societal complexity.</p></li>
+        <li><p>Tocqueville suggests: In democracies, all individuals perceive each other similarly and thus are more empathic.</p></li>
+        </ul>
+        <h4 id="restlessness-inquietude">Restlessness (Inquietude)</h4>
+        <ul>
+        <li><p>Explained as a sense of anxiety and dissatisfaction prevalent among democratic citizens.</p></li>
+        <li><p>Individuals constantly pursue material well-being, leading to a perpetual state of discontent.</p></li>
+        <li><p>Tocqueville illustrates this idea with a vivid description:</p>
+        <blockquote>
+        <p>"In the United States, a man carefully builds a dwelling in which to pass his declining years and sells it while the roof is being laid."</p>
+        </blockquote></li>
+        <li><p>This restlessness leads to a "joyless quest for joy," demonstrating the frustration inherent in the democratic pursuit of happiness.</p></li>
+        </ul>
+        <h4 id="self-interest-well-understood">Self-Interest (Well Understood)</h4>
+        <ul>
+        <li><p>Self-interest, as Tocqueville describes, is a guiding principle that promotes peaceful cooperation over the pursuit of vanity and glory.</p></li>
+        <li><p>This ethos is associated with commerce and is accessible to everyone, contrasting with the nobility of previous eras.</p></li>
+        <li><p><strong>Quotation:</strong> "Self-interest rightly understood" encourages individuals to pursue personal benefit while contributing to common good.</p></li>
+        </ul>
+        <h3 id="role-of-statesmanship-in-a-democratic-age">Role of Statesmanship in a Democratic Age</h3>
+        <p>Tocqueville emphasizes that the effectiveness of democratic governance relies heavily on the character and virtues of its statesmen:</p>
+        <ul>
+        <li><p>A new political science is required for the new democratic world: "Is a new political science for a world altogether new."</p></li>
+        <li><p>Statesmen must navigate the complexities of historical and social forces while exercising human agency.</p></li>
+        <li><p>Tocqueville critiques historical determinism, insisting on the moral and political agency of individuals.</p></li>
+        <li><p>"Sometimes after a thousand efforts the legislator succeeds in exerting indirect influence on the destiny of nations."</p></li>
+        </ul>
+        <h3 id="conclusion-and-implications">Conclusion and Implications</h3>
+        <p>Tocqueville leaves readers with a paradox:</p>
+        <ul>
+        <li><p>While society progresses through historical forces, the form of future democracies will depend on individual actions, moral decisions, and leadership.</p></li>
+        <li><p>The statesman’s role will connect the aspirations and movements of society with the concrete possibilities for governance and ethical direction.</p></li>
+        </ul>
+        <p>In summary, Tocqueville’s exploration of democracy integrates the moral evolution of individuals with statecraft, encouraging leaders to consider both historical contexts and individual virtues as they shape democratic futures.</p>
+        <h1 id="notes-on-globalization-and-political-theory-in-defense-of-politics">Notes on Globalization and Political Theory: In Defense of Politics</h1>
+        <h3 id="introduction-18">Introduction</h3>
+        <p>The final lecture addresses <strong>Defending Politics</strong> and the significance of politics in contemporary society. It stems from the themes outlined in the syllabus and revisits Bernard Crick’s influential book, <em>In Defense of Politics</em> (1962).</p>
+        <h3 id="understanding-politics">Understanding Politics</h3>
+        <h4 id="cricks-definition-of-politics">Crick’s Definition of Politics</h4>
+        <p>Crick characterizes politics as a distinctive human activity involving:</p>
+        <ul>
+        <li><p><strong>Conflict Resolution:</strong> Conflicts are adjudicated through <strong>discussion, persuasion,</strong> and <strong>debate</strong> instead of <strong>force</strong> or <strong>fraud</strong>.</p></li>
+        <li><p><strong>Political Society:</strong> A society where groups adhere to agreed-upon rules to resolve their conflicts.</p></li>
+        </ul>
+        <h4 id="current-political-perceptions">Current Political Perceptions</h4>
+        <p>There is a contemporary reluctance among philosophers to endorse <strong>patriotism</strong>, seen as tarnished by various ideologies:</p>
+        <ul>
+        <li><p><strong>Ideological Politics:</strong> Examples include the Soviet Union’s ideology, nationalist politics in developing states, and conservative practices in Britain.</p></li>
+        </ul>
+        <h3 id="historical-context-and-argumentation">Historical Context and Argumentation</h3>
+        <h4 id="classical-political-philosophy">Classical Political Philosophy</h4>
+        <p>Prominent figures like <strong>Cicero, Burke, Machiavelli, Rousseau,</strong> and <strong>Lincoln</strong> conveyed the importance of providing reasons to love one’s country. However:</p>
+        <ul>
+        <li><p>In modern academia, expressions of patriotism often face skepticism, suggesting a severe ideological deviation from earlier views.</p></li>
+        </ul>
+        <h4 id="patriotism-vs.-cosmopolitanism">Patriotism vs. Cosmopolitanism</h4>
+        <p>The lecture explores the dichotomy between patriotism and cosmopolitan ethics:</p>
+        <ul>
+        <li><p><strong>Nationalism:</strong> Excessive patriotism can manifest as a rigid nationalistic zeal, epitomized by the phrase "My country, right or wrong."</p></li>
+        <li><p><strong>Cosmopolitanism:</strong> A perspective emphasizing universal moral obligations that transcend national borders, rooted in <strong>Kant’s philosophy</strong>.</p></li>
+        </ul>
+        <h3 id="philosophical-influences">Philosophical Influences</h3>
+        <h4 id="carl-schmitts-view">Carl Schmitt’s View</h4>
+        <blockquote>
+        <p>"The political is the most intense and extreme antagonism." - Schmitt</p>
+        </blockquote>
+        <ul>
+        <li><p><strong>Friend and Enemy Distinction:</strong> This categorization defines the political landscape, suggesting inherent conflict in human relations.</p></li>
+        <li><p><strong>Political Reality:</strong> Schmitt argued that politics is rooted in self-interest and potential conflict among groups.</p></li>
+        </ul>
+        <h4 id="immanuel-kants-cosmopolitanism">Immanuel Kant’s Cosmopolitanism</h4>
+        <blockquote>
+        <p>"The external requirements of law are norms that can be universally applied." - Kant</p>
+        </blockquote>
+        <ul>
+        <li><p><strong>Moral Universalism:</strong> Kant posits that moral duties transcend nationality, arguing for a republic of republics governed by international law.</p></li>
+        <li><p><strong>Perpetual Peace:</strong> Kant’s vision for global tranquility contrasts with Schmitt’s focus on conflict.</p></li>
+        </ul>
+        <h3 id="critique-of-extremes">Critique of Extremes</h3>
+        <p>Neither nationalism nor cosmopolitanism adequately reflects the nuances of political reality.</p>
+        <ul>
+        <li><p>Excessive nationalism risks reducing politics to war and conflict.</p></li>
+        <li><p>Pure cosmopolitanism neglects the deep attachments individuals have to their communities, reducing the political sphere to a morality devoid of localized significance.</p></li>
+        </ul>
+        <h3 id="the-american-political-paradigm">The American Political Paradigm</h3>
+        <h4 id="a-synthesis-of-virtues">A Synthesis of Virtues</h4>
+        <p>The <strong>American regime</strong> embodies principles of both particularity and universality:</p>
+        <ul>
+        <li><p>The <strong>Declaration of Independence</strong> enshrines the idea that all men are created equal, reflecting a universal moral framework.</p></li>
+        <li><p>Yet, it emerges from a specific historical and cultural context, necessitating an understanding of <strong>American political history.</strong></p></li>
+        </ul>
+        <h4 id="educational-recommendations">Educational Recommendations</h4>
+        <p>To navigate modern political landscapes, the lecture emphasizes the importance of classical philosophical texts:</p>
+        <ul>
+        <li><p>Readings should include:</p>
+        <ul>
+        <li><p><em>Plato’s Laws</em></p></li>
+        <li><p><em>Machiavelli’s Discourses on Livy</em></p></li>
+        <li><p><em>Montesquieu’s The Spirit of the Laws</em></p></li>
+        <li><p><em>The Federalist Papers</em></p></li>
+        </ul></li>
+        </ul>
+        <h3 id="conclusion-18">Conclusion</h3>
+        <p>Professor Smith concludes with a call for a renaissance in political education, aimed at rekindling respect for tradition and deeper philosophical insights that strengthen the understanding of civic responsibility.</p>
+        
+
+    </div>
+    <!-- insert above this -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+</body>
+
+</html>

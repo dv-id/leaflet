@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>/\dvance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+        code {
+            white-space: pre-wrap;
+        }
+
+        span.smallcaps {
+            font-variant: small-caps;
+        }
+
+        span.underline {
+            text-decoration: underline;
+        }
+
+        div.column {
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+        }
+
+        div.hanging-indent {
+            margin-left: 1.5em;
+            text-indent: -1.5em;
+        }
+
+        ul.task-list {
+            list-style: none;
+        }
+    </style>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body style="
+    background-color: rgb(0, 0, 39);
+    color: rgb(205, 158, 250);" class="vh-100 p-0 mb-0">
+
+
+
+    <div class="container" style="margin-top: 10%;">
+        <div id="business-row" class="row justify-content-between">
+            
+            <nav class="navbar navbar-dark navbar-collapse navbar-fixed-top fixed-top justify-content-center container" style="background-color: rgb(0, 0, 40);">
+                <div class="container justify-content-center">
+                <a class="navbar-brand" href="../index.html" style="color: rgb(179, 114, 240);">/\dvance</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../finance.html">Finance</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../startups.html">Startups</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../economics.html">Economics</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../humanities.html">Humanities</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../philosophy.html">Philosophy</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../science.html">Science</a>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+
+                <div class="container" style="background-color: rgb(0, 0, 40);">
+                    <div class="col-12 d-flex justify-content-start align-items-center">
+                        <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                            <ol class="breadcrumb m-1">
+                                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="../science.html">Science</a></li>
+                                <li class="breadcrumb-item active"><a href="../htmls/humanbrain.html">Human Brain</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+              <div class="btn position-fixed fixed-bottom d-flex justify-content-end p-0">
+                <a style="color: white; background-color: rgb(0, 0, 40);" class="border rounded p-1"
+                onclick="document.getElementById('contents').scrollIntoView({ behavior: 'smooth' });">contents^</a>
+              </div>
+            </nav>
+            
+
+        </div>
+        <div class="row">
+            <h1 id="contents" class="m-0">contents</h4>
+                <div class="col-6">
+                    <ul>
+                        <li class="mb-1">
+                            <a href="#introduction-to-human-brain">Introduction to Human Brain</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-motion-perception-and-neuroanatomy">Notes on Motion Perception and Neuroanatomy</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#computational-theory-of-mind-and-brain">Computational Theory of Mind and Brain</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#methods-in-human-cognitive-neuroscience-face-perception">Methods in Human Cognitive Neuroscience: Face Perception</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-cognitive-neuroscience-face-perception-and-experimental-methods">Notes on Cognitive Neuroscience: Face Perception and Experimental Methods</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-experimental-design-category-selective-regions-in-the-cortex-and-neural-decoding">Notes on Experimental Design, Category-Selective Regions in the Cortex, and Neural Decoding</a>
+                        </li>
+                        <li>
+                            <a href="#cognitive-neuroscience-navigation-and-brain-function">Cognitive Neuroscience: Navigation and Brain Function</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <ul>
+
+                        <li class="mb-1">
+                            <a href="#notes-on-navigation-and-cognition">Notes on Navigation and Cognition</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#cognitive-development-origins-of-knowledge-and-face-perception">Cognitive Development: Origins of Knowledge and Face Perception</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-face-perception-and-cognitive-neuroscience">Notes on Face Perception and Cognitive Neuroscience</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-on-number-sense">Number Sense</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-hearing-and-speech-perception">Notes on Hearing and Speech Perception</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-on-music-and-audition">Music and Audition</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-on-language-and-representational-similarity-analysis">Language and Representational Similarity Analysis</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-social-cognition-and-theory-of-mind">Social Cognition and Theory of Mind</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-the-psychology-of-social-cognition">The Psychology of Social Cognition</a>
+                        </li>
+                        <li>
+                            <a href="#notes-on-attention-and-cognition">Attention and Cognition</a>
+                        </li>
+                    
+
+                    </ul>
+                </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- insert under this -->
+    <div class="container">
+
+        <h1 id="human-brain">Introduction to Human Brain</h1>
+<h3 id="a-true-story">A True Story</h3>
+<ul>
+<li><p>The story of Bob, a friend who suffered brain-related issues prior to a conference.</p></li>
+<li><p>Incident described:</p>
+<ul>
+<li><p>Bob was found unconscious on the floor.</p></li>
+<li><p>Emergency responders (EMTs) examined Bob but found nothing wrong.</p></li>
+<li><p>After visiting the ER and further testing, Bob’s condition was initially unclear.</p></li>
+</ul></li>
+<li><p>Nancy’s realization of Bob’s prior symptoms: navigational deficits that hinted at potential brain damage.</p></li>
+<li><p>Discovery of a mass (tumor) in Bob’s brain through scans, later diagnosed as a meningioma.</p></li>
+</ul>
+<h3 id="key-themes-explored">Key Themes Explored</h3>
+<ul>
+<li><p>The brain has specific structures that perform different functions.</p></li>
+<li><p>Bob’s IQ remained intact, but he lost specific navigational skills indicating specialized brain functions.</p></li>
+<li><p>Importance of understanding the relationship between brain structure and mental processes.</p></li>
+</ul>
+<h3 id="why-study-the-brain">Why Study the Brain?</h3>
+<ul>
+<li><p><strong>Know Thyself:</strong> Understanding the brain is crucial for self-awareness and identity.</p></li>
+<li><p><strong>Limits of Human Knowledge:</strong> Investigating the brain helps evaluate the extent and limitations of human cognition.</p></li>
+<li><p><strong>Advancing AI:</strong> Insights into the human brain can inform artificial intelligence development. Recent advances in deep learning (e.g., AlexNet) demonstrate both capabilities and limitations of AI in comparison to human cognitive abilities.</p></li>
+<li><p><strong>Intellectual Quest:</strong> The study of the brain is one of the greatest pursuits in understanding human nature.</p></li>
+</ul>
+<h3 id="how-to-study-the-brain">How to Study the Brain</h3>
+<ul>
+<li><p>Emphasis on interdisciplinary approaches, combining:</p>
+<ul>
+<li><p>Cognitive theories</p></li>
+<li><p>Neuropsychology</p></li>
+<li><p>Neuroimaging techniques (e.g., fMRI, EEG)</p></li>
+<li><p>Behavioral studies</p></li>
+</ul></li>
+<li><p>Explore mental functions such as perception, cognition, and emotion in the context of their neurological bases.</p></li>
+</ul>
+<h3 id="course-structure-and-topics">Course Structure and Topics</h3>
+<ul>
+<li><p>Overview of course outline:</p>
+<ul>
+<li><p>Neuroanatomy</p></li>
+<li><p>Vision, perception, and motion</p></li>
+<li><p>Memory, decision-making, and language</p></li>
+<li><p>Navigational and number processing skills</p></li>
+<li><p>Social cognitive processes (e.g., theory of mind)</p></li>
+</ul></li>
+</ul>
+<h3 id="reading-scientific-papers">Reading Scientific Papers</h3>
+<ul>
+<li><p>Importance of understanding scientific literature.</p></li>
+<li><p>Key points to consider:</p>
+<ul>
+<li><p>Identify the research question.</p></li>
+<li><p>Understand the findings and their implications.</p></li>
+<li><p>Analyze the methods and experimental design.</p></li>
+<li><p>Reflect on the larger significance.</p></li>
+</ul></li>
+</ul>
+<h1 id="notes-on-motion-perception-and-neuroanatomy">Notes on Motion Perception and Neuroanatomy</h1>
+<h3 id="introduction-1">Introduction</h3>
+<ul>
+<li><p>Understanding motion perception is crucial for survival, as it allows individuals to respond to predators or prey.</p></li>
+<li><p>Unique human ability: Precision throwing, not seen in other animals.</p></li>
+<li><p>Perception of motion is shared with many animals, indicating its biological importance.</p></li>
+</ul>
+<h3 id="key-observations-in-motion-perception">Key Observations in Motion Perception</h3>
+<ul>
+<li><p>Importance of small details in understanding visual information.</p></li>
+<li><p>The role of audio quality in enhancing lip-reading and facial expression interpretation.</p></li>
+<li><p>Subtlety of facial expressions: Microexpressions can convey emotions and intentions.</p></li>
+<li><p>Motion perception is crucial for navigating daily life and avoiding dangers.</p></li>
+<li><p>The question of whether humans could adapt to life in a persistent strobe-light environment.</p></li>
+</ul>
+<h3 id="computational-challenges-in-perception">Computational Challenges in Perception</h3>
+<ul>
+<li><p>Considering how to create code to analyze motion in videos offers insights into human cognitive processes.</p></li>
+<li><p>Analyzing perceptual inputs involves understanding ecological relevance and computational demands.</p></li>
+</ul>
+<h3 id="neuroanatomy-basics">Neuroanatomy Basics</h3>
+<h4 id="overview-of-the-human-brain">Overview of the Human Brain</h4>
+<ul>
+<li><p>The human brain contains approximately <span class="math inline">10<sup>11</sup></span> neurons.</p></li>
+<li><p>Neurons consist of:</p>
+<ul>
+<li><p><strong>Cell body</strong> and <strong>nucleus</strong></p></li>
+<li><p><strong>Axon</strong>: Long process that transmits signals.</p></li>
+<li><p><strong>Dendrites</strong>: Receivers of signals.</p></li>
+<li><p><strong>Myelin sheath</strong>: Insulates axon for faster signal conduction.</p></li>
+</ul></li>
+<li><p>The brain operates on about 20 watts of power, a stark contrast to computing systems like IBM’s Watson, which requires 20,000 watts.</p></li>
+<li><p>Focus primarily on the <strong>cortex</strong>: The outer layer, responsible for most cognitive functions.</p></li>
+</ul>
+<h4 id="structure-of-the-brain">Structure of the Brain</h4>
+<ul>
+<li><p>Four major components of the brain:</p>
+<ol>
+<li><p>Brain Stem: Relays signals between the spinal cord and the brain.</p></li>
+<li><p>Cerebellum: Coordinates motor control and potentially cognitive functions.</p></li>
+<li><p>Limbic System: Involved in emotion and memory.</p></li>
+<li><p>White Matter: Axonal connections between different brain areas.</p></li>
+</ol></li>
+</ul>
+<h4 id="key-brain-structures">Key Brain Structures</h4>
+<ul>
+<li><p><strong>Brain Stem</strong>: Controls basic life functions (breathing, consciousness, temperature regulation).</p></li>
+<li><p><strong>Cerebellum</strong>: Key in motor coordination; possible involvement in higher cognitive functions.</p></li>
+<li><p><strong>Thalamus</strong>: Acts as the relay center for sensory information (except for olfactory signals) to the cortex.</p>
+<ul>
+<li><p>Direct sensory pathways include connections from:</p>
+<ul>
+<li><p>Eyes to <strong>Visual Cortex</strong> through the <strong>LGN</strong> (Lateral Geniculate Nucleus).</p></li>
+<li><p>Ears to <strong>Auditory Cortex</strong>.</p></li>
+<li><p>Skin to <strong>Somatosensory Cortex</strong>.</p></li>
+</ul></li>
+</ul></li>
+<li><p><strong>Hippocampus</strong>: Associated with long-term memory and navigation.</p></li>
+<li><p><strong>Amygdala</strong>: Involved in emotional processing, particularly fear.</p>
+<ul>
+<li><p><strong>Patient SM</strong>: Cannot process fear due to bilateral amygdala damage.</p></li>
+<li><p>Remember the four F’s: Fighting, fleeing, feeding, and mating.</p></li>
+</ul></li>
+</ul>
+<h4 id="cortex-overview">Cortex Overview</h4>
+<ul>
+<li><p>The cortex is organized into distinct regions with specific functions:</p>
+<ul>
+<li><p><strong>Primary Sensory Regions</strong>: Visual, auditory, somatosensory, and gustatory cortices, each receiving direct sensory input through the thalamus.</p></li>
+<li><p>Maps exist in these regions that correspond to various sensory modalities (retinotopy in visual cortex).</p></li>
+</ul></li>
+</ul>
+<h3 id="retinotopy-and-sensory-maps">Retinotopy and Sensory Maps</h3>
+<h4 id="receptive-fields">Receptive Fields</h4>
+<ul>
+<li><p>A <strong>receptive field</strong> indicates where specific stimuli influence a neuron’s firing.</p></li>
+</ul>
+<h4 id="visual-and-auditory-maps">Visual and Auditory Maps</h4>
+<ul>
+<li><p>In visual cortex, neurons are organized such that nearby neurons respond to similar parts of the visual field (<strong>retinotopy</strong>).</p></li>
+<li><p>Auditory cortex has a frequency map for sound, determining responses for high to low frequencies.</p></li>
+</ul>
+<h3 id="criteria-for-cortical-areas">Criteria for Cortical Areas</h3>
+<ul>
+<li><p><strong>Functional Distinctness</strong>: Each area responds to different stimuli types.</p></li>
+<li><p><strong>Connectivity</strong>: Each region has a unique set of connections to other brain areas.</p></li>
+<li><p><strong>Physical Distinctions</strong>: Structural differences can be observed under a microscope.</p></li>
+</ul>
+<h3 id="case-studies-and-research-methods">Case Studies and Research Methods</h3>
+<ul>
+<li><p>Studies often involve recording from neurons in animal models (e.g., monkeys) to identify functions of specific cortical areas, such as area MT for motion processing.</p></li>
+<li><p>Use of fMRI in human subjects to identify areas responsive to specific types of sensory input.</p></li>
+</ul>
+<h3 id="conclusion">Conclusion</h3>
+<ul>
+<li><p>Motion perception is a complex process involving specialized brain regions, detailed connectivity, and evolutionary significance for survival.</p></li>
+<li><p>Understanding the neuroanatomical basis of perception enhances insights into human cognition and related computational challenges.</p></li>
+</ul>
+<h1 id="computational-theory-of-mind-and-brain">Computational Theory of Mind and Brain</h1>
+<h3 id="introduction-2">Introduction</h3>
+<p>Today’s discussion revolves around David Marr’s computational theory level of analysis, focusing on how the brain gives rise to the mind. Specifically, we will explore this framework through the lens of color vision and face perception.</p>
+<h3 id="marrs-framework">Marr’s Framework</h3>
+<p>Marr proposed a three-level framework to analyze cognitive processes:</p>
+<ol>
+<li><p><strong>Computational Theory:</strong> What is computed and why? This is the abstract level where we define the problem to be solved.</p></li>
+<li><p><strong>Algorithm and Representation:</strong> How is it computed? This level outlines the specific strategies and representations employed to solve the problem.</p></li>
+<li><p><strong>Hardware Implementation:</strong> What physical system is executing the solution? This level concerns the biological or computational hardware involved.</p></li>
+</ol>
+<h3 id="understanding-color-vision">Understanding Color Vision</h3>
+<p>Color vision provides an excellent example to illustrate Marr’s ideas. The inputs for color perception can be represented as follows:</p>
+<p><br /><span class="math display"><em>L</em> = <em>R</em> ⋅ <em>I</em></span><br /></p>
+<p>Where:</p>
+<ul>
+<li><p><span class="math inline"><em>L</em></span>: luminance (light reaching the eye)</p></li>
+<li><p><span class="math inline"><em>R</em></span>: reflectance (material property of the object)</p></li>
+<li><p><span class="math inline"><em>I</em></span>: illumination (light source)</p></li>
+</ul>
+<p>The challenge is to solve for <span class="math inline"><em>R</em></span> given <span class="math inline"><em>L</em></span>—a fundamentally ill-posed problem since various combinations of <span class="math inline"><em>R</em></span> and <span class="math inline"><em>I</em></span> can produce the same <span class="math inline"><em>L</em></span>. The goal is to deduce properties about the color of an object based on incomplete information.</p>
+<h4 id="ill-posed-problems">Ill-Posed Problems</h4>
+<p>An ill-posed problem occurs when: - There are infinitely many solutions for a given input. - Additional assumptions or contextual knowledge is required to constrain the possible solutions.</p>
+<h3 id="face-perception">Face Perception</h3>
+<p>The second focus area is face perception, which also deals with ill-posed problems. Face recognition hinges on distinguishing individuals despite variability in appearance, expressions, and lighting.</p>
+<p>Key questions in face perception include:</p>
+<ul>
+<li><p>What inputs and outputs define face recognition?</p></li>
+<li><p>Are there different mechanisms for recognizing faces vs. other objects?</p></li>
+<li><p>How is face recognition implemented in the brain?</p></li>
+</ul>
+<h4 id="experimental-evidence">Experimental Evidence</h4>
+<p>Research demonstrated that human facial recognition employs learned experiences rather than strict template matching:</p>
+<ol>
+<li><p>Participants displayed difficulty matching unfamiliar faces but excelled with familiar faces.</p></li>
+<li><p>The inferential processes at play leverage contextual cues and long-term exposure to familiar faces.</p></li>
+</ol>
+<h4 id="functional-neuroimaging">Functional Neuroimaging</h4>
+<p>Functional MRI (fMRI) is utilized to pinpoint brain regions associated with face processing. The key concepts include:</p>
+<ul>
+<li><p><strong>BOLD Signal:</strong> The Blood Oxygen Level-Dependent (BOLD) signal reflects neural activity through blood flow changes in response to cognitive tasks.</p></li>
+<li><p><strong>Temporal Resolution:</strong> fMRI is limited in its ability to capture rapid changes due to the hemodynamic response lag (approximately 6 seconds).</p></li>
+</ul>
+<p>The BOLD signal can be mathematically represented as:</p>
+<p><br /><span class="math display">BOLD = <em>f</em>(Neural Activity)</span><br /></p>
+<p>Where <span class="math inline"><em>f</em></span> is a function describing the relationship between neural firing and hemodynamic response.</p>
+<h3 id="future-directions">Future Directions</h3>
+<p>Future investigations should consider: - Developing more sophisticated models to analyze the data produced by fMRI. - Employing machine learning approaches to enhance understanding of face recognition processes. - Exploring differences between face and object recognition in greater depth.</p>
+<h3 id="conclusion-1">Conclusion</h3>
+<p>To truly understand cognitive processes, including color vision and face perception, one must consider multiple levels of analysis. Marr’s framework offers a structured approach to dissect these complex phenomena, guiding future research avenues.</p>
+<h1 id="methods-in-human-cognitive-neuroscience-face-perception">Methods in Human Cognitive Neuroscience: Face Perception</h1>
+<h3 id="agenda">Agenda</h3>
+<ul>
+<li><p>Introduction to methods in human cognitive neuroscience</p></li>
+<li><p>Focus on face perception as a rich domain</p></li>
+<li><p>Review of Marr’s computational theory, behavioral data, and functional MRI</p></li>
+</ul>
+<h3 id="understanding-the-questions">Understanding the Questions</h3>
+<ul>
+<li><p>What is the problem being solved in face perception?</p></li>
+<li><p>Input and output of face perception processes</p></li>
+<li><p>Challenges posed by variability in facial appearances (lighting, orientation, etc.)</p></li>
+<li><p>Behavioral data highlights differences in recognizing familiar vs. unfamiliar faces</p></li>
+</ul>
+<h4 id="invariant-representation">Invariant Representation</h4>
+<p><strong>Definition:</strong> Ability to extract an abstract representation of faces that allows recognition despite variability in appearance.</p>
+<h3 id="behavioral-findings">Behavioral Findings</h3>
+<h4 id="face-inversion-effect">Face Inversion Effect</h4>
+<ul>
+<li><p>Introduced by Robert Yin: compares recognition accuracy of faces presented upright vs. upside down</p></li>
+<li><p>Results showed significantly lower recognition accuracy for inverted faces</p></li>
+<li><p>The face inversion effect is greater for faces than for other stimuli (houses, objects) indicating special processing for faces</p></li>
+</ul>
+<h4 id="strengths-and-weaknesses-of-behavioral-methods">Strengths and Weaknesses of Behavioral Methods</h4>
+<h5 id="strengths">Strengths</h5>
+<ul>
+<li><p>Good for characterizing internal representations qualitatively</p></li>
+<li><p>Helpful in disassociating mental phenomena</p></li>
+<li><p>Low cost and easy to implement</p></li>
+</ul>
+<h5 id="weaknesses">Weaknesses</h5>
+<ul>
+<li><p>Lack direct links to brain mechanisms</p></li>
+<li><p>Limited to accuracy and reaction time data</p></li>
+<li><p>Sparser data relative to anatomical information gleaned from other methods</p></li>
+</ul>
+<h3 id="functional-mri-fmri">Functional MRI (fMRI)</h3>
+<h4 id="purpose">Purpose</h4>
+<ul>
+<li><p>To explore regions selectively involved in processing faces</p></li>
+</ul>
+<h4 id="experimental-design">Experimental Design</h4>
+<ol>
+<li><p>Test hypothesis: Is there a region of the brain selectively responsive to faces?</p></li>
+<li><p>Present faces and objects in a fMRI scanner</p></li>
+<li><p>Identify regions that respond more strongly to faces than objects</p></li>
+</ol>
+<h4 id="conditions-overview">Conditions Overview</h4>
+<p><strong>Definition:</strong> In this context, a "condition" refers to manipulated stimulus characteristics to measure responses. Examples include different types of stimuli such as faces, hands, etc.</p>
+<h4 id="results-and-implications">Results and Implications</h4>
+<ul>
+<li><p>Identification of regions selectively responsive to faces is supported by consistent patterns across subjects.</p></li>
+<li><p>However, alternative hypotheses must be considered to establish causation (e.g., is it selective for faces or simply responding to certain stimuli?).</p></li>
+</ul>
+<h3 id="alternative-methods-in-cognitive-neuroscience">Alternative Methods in Cognitive Neuroscience</h3>
+<h4 id="electrophysiological-measurements-eegerp">Electrophysiological Measurements: EEG/ERP</h4>
+<ul>
+<li><p>Non-invasive measurement of electrical activity on the scalp</p></li>
+<li><p>Provides excellent temporal resolution but poor spatial resolution</p></li>
+<li><p>Useful for tracking the timing of neural processes during face recognition tasks</p></li>
+</ul>
+<h4 id="magnetoencephalography-meg">Magnetoencephalography (MEG)</h4>
+<ul>
+<li><p>Similar to EEG, MEG measures magnetic fields produced by neuronal activity</p></li>
+<li><p>Better spatial resolution than EEG, particularly in detecting activity in cortical folds (sulci)</p></li>
+</ul>
+<h4 id="intracranial-recordings">Intracranial Recordings</h4>
+<ul>
+<li><p>Conducted during neurosurgery for epilepsy, allowing direct measurement from brain regions</p></li>
+<li><p>Provides the highest spatial and temporal resolution, measuring activity from individual neurons</p></li>
+</ul>
+<h3 id="causal-inferences-from-patient-studies">Causal Inferences from Patient Studies</h3>
+<h4 id="prosopagnosia">Prosopagnosia</h4>
+<ul>
+<li><p>Condition where individuals cannot recognize faces despite normal object recognition</p></li>
+<li><p>Suggests the face area is crucial for face discrimination</p></li>
+</ul>
+<h4 id="opposite-case-ck">Opposite Case: CK</h4>
+<ul>
+<li><p>Patient who cannot recognize objects but can recognize faces</p></li>
+<li><p>Suggests face recognition operates independently from general object recognition</p></li>
+</ul>
+<h3 id="conclusion-2">Conclusion</h3>
+<ul>
+<li><p>The combination of behavioral studies, fMRI, electrophysiological methods, and patient studies contributes significantly to understanding the mechanisms of face perception in the human brain.</p></li>
+<li><p>Each method has its strengths and weaknesses; therefore, combining approaches often yields the most comprehensive insights.</p></li>
+</ul>
+<h1 id="notes-on-cognitive-neuroscience-face-perception-and-experimental-methods">Notes on Cognitive Neuroscience: Face Perception and Experimental Methods</h1>
+<h3 id="introduction-3">Introduction</h3>
+<p>These notes summarize the methods in human cognitive neuroscience, particularly focusing on face perception, the challenges of inferring causal relationships in neural data, and various techniques including Transcranial Magnetic Stimulation (TMS) and animal studies.</p>
+<h3 id="causality-in-neuroscience">Causality in Neuroscience</h3>
+<p>Causality refers to the relationship where one event (X) causes another (Y). Specifically, if <span class="math inline"><em>x</em></span> causes <span class="math inline"><em>y</em></span>, then <span class="math inline"><em>y</em></span> would not occur without <span class="math inline"><em>x</em></span> or occurs more frequently when <span class="math inline"><em>x</em></span> occurs compared to when <span class="math inline"><em>x</em></span> does not occur. This requires experimental manipulation of <span class="math inline"><em>x</em></span>.</p>
+<h4 id="causal-chain">Causal Chain</h4>
+<ul>
+<li><p>A stimulus activates the retina.</p></li>
+<li><p>Neural activity is processed in the brain.</p></li>
+<li><p>Behavioral output occurs.</p></li>
+</ul>
+<p>Within this causal chain, we differentiate between:</p>
+<ul>
+<li><p><strong>Stimulus to Neural Activity:</strong> Can be tested with methods like functional MRI, which allow manipulation of the stimulus.</p></li>
+<li><p><strong>Neural Activity to Behavioral Output:</strong> Difficult to infer causality here; methods such as ERPs and fMRI show correlations but cannot confirm causation.</p></li>
+</ul>
+<h4 id="temporal-resolution-in-functional-mri">Temporal Resolution in Functional MRI</h4>
+<p>Functional MRI primarily measures blood flow (BOLD response), leading to delays in the recording of neural activity. For instance: <br /><span class="math display">BOLD response delay ≈ 5 − 6 seconds relative to neural activity.</span><br /> Contrastingly, direct neural activity occurs within milliseconds; thus, fMRI lacks temporal precision.</p>
+<h4 id="transcranial-magnetic-stimulation-tms">Transcranial Magnetic Stimulation (TMS)</h4>
+<p>TMS is a non-invasive method to disrupt neural activity and establish causal relationships. This involves:</p>
+<ul>
+<li><p>Using a coil to generate a strong magnetic field.</p></li>
+<li><p>Inducing electrical fields in brain tissue (perpendicular to the coil).</p></li>
+</ul>
+<p>Spatial resolution is around 1-2 cm, and it tends to disrupt function rather than reveal direct perception changes.</p>
+<h3 id="studying-face-perception">Studying Face Perception</h3>
+<p>Two significant regions related to face perception are:</p>
+<ul>
+<li><p><strong>Fusiform Face Area (FFA):</strong> Involved in face recognition; difficult to stimulate directly due to its depth.</p></li>
+<li><p><strong>Occipital Face Area (OFA):</strong> More accessible to TMS; exhibits some selectivity for faces but is less specialized than the FFA.</p></li>
+</ul>
+<h4 id="experimental-design-using-tms">Experimental Design Using TMS</h4>
+<p>David Pitcher’s experiment demonstrated the causal role of the occipital face area through a simple face-matching task, showing that TMS applied during specific time windows disrupted accuracy in recognizing faces:</p>
+<ul>
+<li><p><strong>Task:</strong> Present two faces, ask if they were the same or different.</p></li>
+<li><p><strong>Timing:</strong> Effects noted between 60-100 milliseconds after stimulus presentation.</p></li>
+</ul>
+<h3 id="animal-studies-in-neuroscience">Animal Studies in Neuroscience</h3>
+<p>Animal studies allow for direct assessment of neuronal activity and anatomical connections not feasible in human subjects:</p>
+<ul>
+<li><p><strong>Neural Code for Faces:</strong> Studies in monkeys explore how neural populations represent faces.</p></li>
+<li><p><strong>Anatomical Connections:</strong> Animals allow researchers to trace connections between functionally defined regions.</p></li>
+</ul>
+<h3 id="ethical-considerations">Ethical Considerations</h3>
+<p>Research involving animals is heavily regulated to minimize pain and suffering. Ethical debate around the necessity and benefits of such research is ongoing in the scientific community.</p>
+<h3 id="key-terminology-in-experimental-design">Key Terminology in Experimental Design</h3>
+<ul>
+<li><p><strong>Independent Variable (IV):</strong> The factor manipulated by the researcher (e.g., type of stimulus).</p></li>
+<li><p><strong>Dependent Variable (DV):</strong> The measured outcome (e.g., brain response to stimuli).</p></li>
+<li><p><strong>Confound:</strong> An unintentional influence that alters the results. Identifying confounds is crucial in designing experiments.</p></li>
+<li><p><strong>Contrast:</strong> A comparison of neural activity between different conditions or tasks.</p></li>
+</ul>
+<h3 id="conclusion-3">Conclusion</h3>
+<p>The complex relationship between neural activity, perception, and behavior necessitates a diverse set of methodologies to dissect these interactions fully. Despite the challenges, techniques like TMS and studies in animals provide invaluable insights into the neural mechanisms of cognitive processes, such as face perception.</p>
+<h1 id="notes-on-experimental-design-category-selective-regions-in-the-cortex-and-neural-decoding">Notes on Experimental Design, Category-Selective Regions in the Cortex, and Neural Decoding</h1>
+<h3 id="experimental-design-1">Experimental Design</h3>
+<h4 id="key-concepts">Key Concepts</h4>
+<ul>
+<li><p>Experimental design focuses on creating conditions that elicit the required data from subjects.</p></li>
+<li><p>The idea of a <strong>minimal pair</strong> is central: two conditions should be identical except for one variable of interest.</p></li>
+<li><p>Avoid confounds where variables co-vary with the independent variable.</p></li>
+</ul>
+<h4 id="task-design">Task Design</h4>
+<ul>
+<li><p>Consider potential boredom of participants; tasks can keep them engaged.</p></li>
+<li><p>Do not assign different tasks across conditions to maintain validity.</p></li>
+</ul>
+<h4 id="baseline-conditions">Baseline Conditions</h4>
+<ul>
+<li><p>A baseline is essential to measure differences in brain activity. For visual experiments, staring at a neutral stimulus (e.g., a dot) may serve as a baseline.</p></li>
+<li><p>Understanding if a given brain region’s response is significantly above baseline is crucial.</p></li>
+</ul>
+<h4 id="within-subjects-design">Within-Subjects Design</h4>
+<ul>
+<li><p>Use within-subjects design to account for individual differences in brain activity, such as variations influenced by caffeine intake.</p></li>
+<li><p>Various conditions should be randomized within a run to keep subjects alert and focused throughout the study.</p></li>
+</ul>
+<h4 id="design-considerations-block-vs.-event-related-designs">Design Considerations: Block vs. Event-Related Designs</h4>
+<ul>
+<li><p><strong>Block Design:</strong> Conditions are presented in a block (e.g., condition A followed by condition B) to create a focused context but may introduce biases from recent history.</p></li>
+<li><p><strong>Event-Related Design:</strong> Conditions are interleaved or presented randomly, allowing for immediate and reactive data collection but may lose temporal resolution due to the hemodynamic response latency (approximately 10 seconds).</p></li>
+<li><p>These designs must balance data richness against potential biases and participant fatigue.</p></li>
+</ul>
+<h3 id="category-selective-regions-in-the-cortex">Category-Selective Regions in the Cortex</h3>
+<h4 id="overview">Overview</h4>
+<ul>
+<li><p>Key regions include the fusiform face area (FFA), body-selective areas, and scene-selective areas.</p></li>
+<li><p>Initial studies show regions are electrical (or hemodynamic) in response to specific categories (e.g., faces vs. objects).</p></li>
+</ul>
+<h4 id="research-findings">Research Findings</h4>
+<ul>
+<li><p>Is there specialized neural machinery for every significant object category? Evidence suggests that the FFA is selective for faces but not as strongly for categories like chairs, food, or snakes.</p></li>
+<li><p>Brain regions do not strictly align with the representation of individual objects but respond to categories based on biological relevance.</p></li>
+</ul>
+<h4 id="ongoing-controversy">Ongoing Controversy</h4>
+<ul>
+<li><p>The debate continues about whether observed responses in selective regions signify discrete functionalities or whether they indicate peaks in broader representational gradients.</p></li>
+<li><p>There may be a mix of selectivity and perceptual feature processing within these regions.</p></li>
+</ul>
+<h4 id="haxbys-challenge">Haxby’s Challenge</h4>
+<ul>
+<li><p>Haxby proposed that areas like the FFA also encode information about non-face categories within their response patterns.</p></li>
+<li><p>Key methods involve comparing patterns of voxel responses to different stimuli over multiple runs to ascertain the presence of information within voxels.</p></li>
+<li><p>By looking at the similarity of response patterns, one can determine if a region also supports responses for non-target categories.</p></li>
+</ul>
+<h3 id="decoding-signals-from-brains">Decoding Signals from Brains</h3>
+<h4 id="neural-decoding-overview">Neural Decoding: Overview</h4>
+<ul>
+<li><p>The goal is to infer the stimulus a person is looking at based on their brain’s activity pattern.</p></li>
+<li><p>Neural decoding involves training a decoder on known stimulus-response pairs and testing it on unknown stimuli to see if similar patterns emerge.</p></li>
+</ul>
+<h4 id="methods-of-neural-decoding">Methods of Neural Decoding</h4>
+<ul>
+<li><p><strong>Multiple Voxel Pattern Analysis (MVPA):</strong> Used for decoding by examining patterns across voxels.</p></li>
+<li><p>Data can also be decoded using patterns from other imaging techniques like MEG or direct recordings from neurons.</p></li>
+</ul>
+<h4 id="findings-from-studies">Findings from Studies</h4>
+<ul>
+<li><p>Studies indicate that while decoding from neural recordings from individual neurons can yield excellent results, decoding from fMRI signals often struggles due to averaging effects across vast neuron populations within voxels.</p></li>
+<li><p>In neurophysiological studies, decoding performance for identity recognition of stimuli (like faces) is significantly better than in fMRI studies.</p></li>
+</ul>
+<h4 id="implications">Implications</h4>
+<ul>
+<li><p>Understanding the mapping of neural representations can inform our knowledge of cognitive processes.</p></li>
+<li><p>A filter on a reasonable interpretation might be that specialized areas encode more than just one type of object but represent broader categories of related stimuli.</p></li>
+</ul>
+<h3 id="conclusion-4">Conclusion</h3>
+<ul>
+<li><p>Experimental design is crucial for obtaining valid data in neuroscience studies, and a deep understanding of the design principles can significantly improve research outcomes.</p></li>
+<li><p>Neural decoding continues to present exciting opportunities for understanding how information is represented in the brain, though significant barriers—such as resolution limitations—remain.</p></li>
+</ul>
+<h1 id="cognitive-neuroscience-navigation-and-brain-function">Cognitive Neuroscience: Navigation and Brain Function</h1>
+<h3 id="key-concepts-1">Key Concepts</h3>
+<h4 id="functional-specificity-challenge">Functional Specificity Challenge</h4>
+<p>The key points from Haxby’s article highlight the challenge to the notion of functional specificity in regions of the brain:</p>
+<ul>
+<li><p>Selective brain regions, like the face area (FFA) and place area (PPA), show responses that may contain information about non-preferred stimuli.</p></li>
+<li><p>This suggests that these regions do not solely encode their preferred categories (faces for the FFA, places for the PPA).</p></li>
+</ul>
+<h4 id="empirical-data-addressing-haxbys-challenge">Empirical Data Addressing Haxby’s Challenge</h4>
+<p>Data types that can offer insights into the question of specificity vs. generality include:</p>
+<ul>
+<li><p><strong>Transcranial Magnetic Stimulation (TMS):</strong> Impacts on perception when interfering with specific brain regions (e.g., the FFA).</p></li>
+<li><p><strong>Prosopagnosia Studies:</strong> Observations where individuals with damage can recognize object forms but not faces.</p></li>
+<li><p><strong>Intracranial Stimulation Studies:</strong> Direct stimulation providing evidence of causal relationships with specific perceptual categories.</p></li>
+</ul>
+<h4 id="methodology-for-decoding-information">Methodology for Decoding Information</h4>
+<p>Discussed methods for exploring representation in the brain, such as:</p>
+<ul>
+<li><p>Functional MRI (fMRI) techniques to localize the PPA based on patterns of response to viewing stimuli (e.g., beach scenes vs. city scenes).</p></li>
+<li><p>The prediction that patterns of responses to similar stimuli would show higher correlation than to different stimuli within the same region.</p></li>
+</ul>
+<h3 id="navigation-in-cognitive-neuroscience">Navigation in Cognitive Neuroscience</h3>
+<h4 id="fundamental-questions-of-navigation">Fundamental Questions of Navigation</h4>
+<p>Two fundamental questions every organism needs to address:</p>
+<ol>
+<li><p>Where am I?</p></li>
+<li><p>How do I get from here to there?</p></li>
+</ol>
+<h4 id="components-of-navigation">Components of Navigation</h4>
+<p>Understanding of navigation involves multiple components, such as:</p>
+<ul>
+<li><p>Recognition of familiar places and layouts.</p></li>
+<li><p>Geometry of the environment came into play as spatial awareness.</p></li>
+<li><p>Knowledge of pathways, obstacles, and physical barriers.</p></li>
+</ul>
+<h3 id="cognitive-maps-and-neural-basis">Cognitive Maps and Neural Basis</h3>
+<h4 id="cognitive-maps">Cognitive Maps</h4>
+<p>Introduction to the concept of cognitive maps began with Tolman’s experiments with rats, leading to the idea that:</p>
+<ul>
+<li><p>Rats develop an abstract representation of their environment rather than specific routs.</p></li>
+<li><p>This indicates that humans likely possess a similar ability to abstract information about their navigation spaces.</p></li>
+</ul>
+<h4 id="key-brain-regions">Key Brain Regions</h4>
+<p>Key brain regions involved in navigation:</p>
+<ul>
+<li><p><strong>Parahippocampal Place Area (PPA):</strong> Responds to scenes and spatial layouts.</p></li>
+<li><p><strong>Retrosplenial Cortex (RSC):</strong> Assists in anchoring spatial positions relative to external information.</p></li>
+<li><p><strong>Occipital Face Area (OFA):</strong> Involved with face recognition but may feature patterns for non-faces.</p></li>
+<li><p>The interaction between various regions contributes to the holistic navigation process.</p></li>
+</ul>
+<h4 id="neural-evidence-and-functionality">Neural Evidence and Functionality</h4>
+<p>To investigate the specific functions, various methodologies such as:</p>
+<ul>
+<li><p>Direct electrical stimulation to test perceptual impacts.</p></li>
+<li><p>Measuring activation responses in brain regions during tasks.</p></li>
+</ul>
+<h3 id="multi-voxel-pattern-analysis-mvpa">Multi-Voxel Pattern Analysis (MVPA)</h3>
+<p>Introduction to MVPA as a method to determine the representation of information in neural populations:</p>
+<ul>
+<li><p>Can indicate whether a brain region can discriminate between similar stimuli or has a more general response.</p></li>
+<li><p>Limitations arise when neuronal populations are intermingled in non-specific ways, which can hinder interpretations.</p></li>
+</ul>
+<h3 id="event-related-fmri-adaptation">Event-related fMRI Adaptation</h3>
+<p>An alternative method when MVPA is inadequate:</p>
+<ul>
+<li><p>Examines neural responses to same versus different stimuli over time.</p></li>
+<li><p>Determines if an area is invariant to variations, giving insights into perceptual processing.</p></li>
+</ul>
+<h3 id="conclusions">Conclusions</h3>
+<p>Overall, understanding navigation in cognitive neuroscience requires examination of functional specificity, the role of key brain regions, empirical methods to discriminate functions, and methodologies like MVPA and event-related fMRI adaptation.</p>
+<h1 id="notes-on-navigation-and-cognition">Notes on Navigation and Cognition</h1>
+<h3 id="introduction-to-navigation">Introduction to Navigation</h3>
+<p>In today’s discussion, we will cover:</p>
+<ul>
+<li><p>Overview of navigation and spatial awareness</p></li>
+<li><p>Populations of neurons involved in navigation</p></li>
+<li><p>The concept of reorientation</p></li>
+<li><p>Implications of navigation systems on higher cognitive functions</p></li>
+</ul>
+<h4 id="basic-problems-of-navigation">Basic Problems of Navigation</h4>
+<p>Two fundamental questions arise in navigation:</p>
+<ul>
+<li><p>Where am I?</p></li>
+<li><p>How do I get from here to my desired destination?</p></li>
+</ul>
+<h4 id="components-of-knowing-where-you-are">Components of Knowing Where You Are</h4>
+<ol>
+<li><p>Recognizing familiar locations (landmarks).</p></li>
+<li><p>Understanding general environment types (urban vs natural).</p></li>
+<li><p>Estimating immediate spatial location with respect to boundaries.</p></li>
+</ol>
+<h4 id="navigational-strategies">Navigational Strategies</h4>
+<ol>
+<li><p>Beaconing: Directly moving toward a visible or audible destination.</p></li>
+<li><p>Cognitive maps: Mapping the environment spatially when direct navigation isn’t possible.</p></li>
+</ol>
+<h3 id="neural-basis-of-navigation">Neural Basis of Navigation</h3>
+<h4 id="key-brain-regions-1">Key Brain Regions</h4>
+<p>Several brain regions participate in navigation:</p>
+<ul>
+<li><p>Parahippocampal Place Area (PPA)</p></li>
+<li><p>Retrosplenial Cortex (RSC)</p></li>
+<li><p>Hippocampus</p></li>
+</ul>
+<h4 id="cognitive-map-theory">Cognitive Map Theory</h4>
+<p>The hippocampus is largely considered the location of the cognitive map: <br /><span class="math display">Cognitive Map = Spatial representation of environment</span><br /> Classic studies in rats demonstrate the capability to navigate via a learned map of environments instead of using sequential directions.</p>
+<h3 id="place-cells">Place Cells</h3>
+<ul>
+<li><p>Definition: Neurons in the hippocampus that activate when an animal is in a specific place.</p></li>
+<li><p>Example of Place Cell Activity:</p></li>
+</ul>
+<ul>
+<li><p>Audio simulation of place cell firing as a rat navigates its environment.</p></li>
+</ul>
+<h4 id="grid-cells">Grid Cells</h4>
+<p>Grid cells exist in the entorhinal cortex and respond across multiple locations following a hexagonal pattern: <br /><span class="math display">Grid Cell Activity ∼ Hexagonal spatial organization</span><br /></p>
+<h4 id="head-direction-cells">Head Direction Cells</h4>
+<ul>
+<li><p>Function: Help to determine the orientation of an animal concerning its environment.</p></li>
+<li><p>Each cell responds to movement along specific angular directions (<span class="math inline">0<sup>∘</sup></span> to <span class="math inline">360<sup>∘</sup></span>).</p></li>
+</ul>
+<h3 id="reorientation">Reorientation</h3>
+<p>Reorientation occurs when an individual loses their spatial bearings. Key insights include:</p>
+<ol>
+<li><p>The reliance on geometrical cues from environmental layout.</p></li>
+<li><p>The phenomenon where stable environmental features are prioritized over salient landmarks (as demonstrated in rat studies).</p></li>
+</ol>
+<h4 id="experimental-findings">Experimental Findings</h4>
+<ol>
+<li><p>Rats trained in rectangular mazes showed reliance on the room’s geometry rather than surface features.</p></li>
+<li><p>Infants exhibited similar behaviors, highlighting a possible evolutionary adaptation to rely on stable shapes for navigation.</p></li>
+</ol>
+<h3 id="information-processing-and-encapsulation">Information Processing and Encapsulation</h3>
+<p>The navigation system exhibits a phenomenon known as informational encapsulation:</p>
+<ul>
+<li><p>Navigation cues (shape of space) operate independently from landmark features, which may not be utilized even when they could help.</p></li>
+</ul>
+<h3 id="advanced-cognitive-applications">Advanced Cognitive Applications</h3>
+<p>Recent studies have explored how navigational systems inform other cognitive functions:</p>
+<ul>
+<li><p><strong>Time Representation:</strong> The hippocampus responds to both spatial and temporal proximities of experiences.</p></li>
+<li><p><strong>Conceptual Spaces:</strong> Grid-like representations extend into conceptual learning, such as categorizing various birds.</p></li>
+<li><p><strong>Social Understanding:</strong> Social place cells have been identified in bats, reflecting an animal’s awareness of others’ locations.</p></li>
+<li><p><strong>Deliberative Thinking:</strong> Neural activity in place cells has been linked to decision-making processes.</p></li>
+</ul>
+<h3 id="conclusion-5">Conclusion</h3>
+<p>The study of navigation extends beyond merely knowing where one is; it encompasses understanding how various cognitive systems intertwine in decision-making, memory, and even social interaction. Continuous research into the neural mechanisms underlying these processes is critical for a comprehensive understanding of cognition.</p>
+<h1 id="cognitive-development-origins-of-knowledge-and-face-perception">Cognitive Development: Origins of Knowledge and Face Perception</h1>
+<h3 id="introduction-4">Introduction</h3>
+<ul>
+<li><p>Fundamental Question: Where does knowledge come from?</p></li>
+<li><p>Key Philosophical Perspectives:</p>
+<ul>
+<li><p>Empiricists (Locke, Hume): Argue that all knowledge comes from experience.</p></li>
+<li><p>Immanuel Kant: Proposed that experience alone is insufficient; some cognitive structures must be a priori (prior to experience).</p></li>
+</ul></li>
+<li><p>Discussion Focus:</p>
+<ul>
+<li><p>Which aspects of knowledge and brain function are innate versus learned?</p></li>
+<li><p>The role of space and time as organizing principles of cognition.</p></li>
+</ul></li>
+</ul>
+<h3 id="brain-development">Brain Development</h3>
+<h4 id="general-overview">General Overview</h4>
+<ul>
+<li><p>Most neurons in the adult brain are generated before birth.</p></li>
+<li><p>Long-range connections are generally present at birth.</p></li>
+<li><p>Brain undergoes significant changes in the first two years:</p>
+<ul>
+<li><p>Volume doubles within the first year.</p></li>
+<li><p>Cortical thickness increases sharply.</p></li>
+<li><p>Neuron complexity increases due to:</p>
+<ul>
+<li><p>Synaptogenesis (formation of synapses)</p></li>
+<li><p>Myelination (insulation of neurons to speed up signal transmission)</p></li>
+</ul></li>
+</ul></li>
+<li><p>Neurons and connections present at birth must accelerate functioning and complexity during early development.</p></li>
+</ul>
+<h4 id="face-perception-1">Face Perception</h4>
+<ul>
+<li><p>Importance: Face perception is a rich domain of research.</p></li>
+<li><p>Key Questions:</p>
+<ul>
+<li><p>What perceptual abilities do newborns have regarding faces?</p></li>
+<li><p>How do these abilities develop postnatally?</p></li>
+</ul></li>
+</ul>
+<h4 id="empirical-evidence-of-face-detection-in-newborns">Empirical Evidence of Face Detection in Newborns</h4>
+<ul>
+<li><p>Preliminary studies show newborn infants prefer looking at schematic faces over non-faces.</p></li>
+<li><p>Introduction of mechanisms assessing visual attention using habituation paradigms.</p>
+<ul>
+<li><p>Infants show longer looking times to novel versus familiar stimuli.</p></li>
+<li><p>Evidence suggests innate preferences for face-like structures occur within hours of birth.</p></li>
+</ul></li>
+</ul>
+<h3 id="theoretical-considerations-in-face-perception">Theoretical Considerations in Face Perception</h3>
+<h4 id="nature-vs.-nurture-debate">Nature vs. Nurture Debate</h4>
+<ul>
+<li><p>Degree of innateness of face perception structures.</p></li>
+<li><p>Possibility exists for both innate templates and learned experiences.</p></li>
+<li><p><strong>Perceptual Narrowing</strong>:</p>
+<ul>
+<li><p>Evidence shows that as infants grow, their ability to discriminate between different species’ faces declines, focusing instead on faces familiar to them.</p></li>
+<li><p>Perceptual narrowing may enhance processing efficiency by prioritizing social cues and relevant distinctions.</p></li>
+</ul></li>
+</ul>
+<h4 id="neural-mechanisms-and-functional-organization">Neural Mechanisms and Functional Organization</h4>
+<ul>
+<li><p>Development of specific face-selective areas, such as the Fusiform Face Area (FFA).</p></li>
+<li><p>Studies using fMRI have indicated that the FFA is reactive to faces by six months of age, resembling adult brain patterns, though not fully mature.</p></li>
+<li><p>Ongoing debate whether observed abilities stem from face-specific neural pathways or more generic object recognition systems.</p></li>
+</ul>
+<h3 id="future-directions-and-ongoing-research">Future Directions and Ongoing Research</h3>
+<ul>
+<li><p>Need for further investigations into:</p>
+<ul>
+<li><p>The nature of innate face perception mechanisms.</p></li>
+<li><p>The role of social interaction in maintaining discrimination abilities with exposure to varied stimuli.</p></li>
+<li><p>Longitudinal studies to track neural development alongside behavioral changes.</p></li>
+</ul></li>
+<li><p>Importance of computational modeling to simulate developmental processes to gain insight into the mechanisms behind face perception.</p></li>
+</ul>
+<h3 id="conclusion-6">Conclusion</h3>
+<ul>
+<li><p>Understanding face perception integrates the study of cognition, neural development, and social interaction.</p></li>
+<li><p>The interplay between innate structures and experiential learning continues to shape our understanding of how humans perceive and interact with the world.</p></li>
+</ul>
+<h1 id="notes-on-face-perception-and-cognitive-neuroscience">Notes on Face Perception and Cognitive Neuroscience</h1>
+<h3 id="overview-1">Overview</h3>
+<p>The lecture discusses face perception, the role of innate structures in the brain, and the development of neural regions specializing in face processing. It also explores the connectivity patterns in the brain and how they relate to cognitive functions, specifically in the context of both normal and atypical development.</p>
+<h3 id="key-questions">Key Questions</h3>
+<ul>
+<li><p>What’s innate about face perception?</p></li>
+<li><p>How do the face areas know where to develop in the brain?</p></li>
+</ul>
+<h3 id="recap-of-key-points">Recap of Key Points</h3>
+<p>Last time, the following key points were discussed:</p>
+<ul>
+<li><p>Most evidence suggests there might not be much that is innate about face perception.</p></li>
+<li><p>Newborns show a preference for faces over scrambled faces, suggesting a possible innate bias.</p></li>
+<li><p>Evidence exists that even without exposure to faces, infants and monkeys can discriminate between faces.</p></li>
+<li><p>Face patches in monkeys do not develop in the absence of visual exposure to faces.</p></li>
+<li><p>The question remains regarding how and where these areas are organized in the brain.</p></li>
+</ul>
+<h3 id="possible-theories">Possible Theories</h3>
+<h4 id="innate-properties">Innate Properties</h4>
+<p>A possibility exists that innate properties may lead to general selectivity for visual objects like curved shapes, which can subsequently allow for the emergence of face selective mechanisms once exposed to faces.</p>
+<h4 id="connectivity-patterns">Connectivity Patterns</h4>
+<p>Another promising avenue of research is studying the long-range structural connectivity in the brain. This connectivity might be responsible for the location and function of regions that become specialized for face processing.</p>
+<h3 id="deep-net-modeling">Deep Net Modeling</h3>
+<p>Recent advancements in deep neural networks allow investigators to create models that might emulate the emergence of specialized areas in the brain. Questions include:</p>
+<ul>
+<li><p>What conditions are necessary in a network to develop face patches?</p></li>
+<li><p>Why do computational mechanisms favor such specialized regions?</p></li>
+</ul>
+<h3 id="structural-connectivity-and-diffusion-imaging">Structural Connectivity and Diffusion Imaging</h3>
+<h4 id="diffusion-mri">Diffusion MRI</h4>
+<p>The primary method for studying structural connectivity in humans is through diffusion MRI, which measures the direction of water diffusion in the brain. Areas where axons are present will show a preferential direction of diffusion due to their myelinated fibers. <br /><span class="math display">Diffusion direction ∝ Orientation of Axons</span><br /> This enables researchers to visualize the long-range connections in the brain.</p>
+<h4 id="tractography">Tractography</h4>
+<p>Using tractography, researchers can model the potential pathways of connectivity based on diffusion data. They explore whether the connectivity patterns can predict the function of the regions.</p>
+<h3 id="connectivity-fingerprints">Connectivity Fingerprints</h3>
+<p>Researchers create connectivity “fingerprints” for regions like the fusiform face area and seek to determine if these fingerprints predict functional selectivity. It has been shown that the fusiform face area has a distinct fingerprint that correlates with face processing functions.</p>
+<h3 id="the-case-of-rewired-ferrets">The Case of Rewired Ferrets</h3>
+<p>Research conducted on ferrets that had their visual connections redirected showed compelling evidence that the functionality of brain regions can be influenced by what kind of input they receive. These studies suggest:</p>
+<ul>
+<li><p>If primary auditory cortex receives visual input, it may develop visual processing capabilities.</p></li>
+<li><p>Understanding whether these changes result from connectivity or experience provides insight into neural plasticity and development.</p></li>
+</ul>
+<h3 id="visual-word-form-area">Visual Word Form Area</h3>
+<p>The visual word form area is a specific case where experience determines selectivity:</p>
+<ul>
+<li><p>This region shows selectivity for words and is shaped by language experience, indicating that learning can map functions to specific cortical areas.</p></li>
+<li><p>This area develops due to experience, highlighting the role of language learning in brain development.</p></li>
+</ul>
+<h3 id="phenomena-of-innateness">Phenomena of Innateness</h3>
+<p>Different proposals arise concerning which brain regions or functions are innate versus those shaped by experience. For instance:</p>
+<ul>
+<li><p>Regions specializing in spatial awareness, as shown in rodents, have innate properties supporting navigation.</p></li>
+<li><p>In contrast, areas activated by visual language in blind individuals represent a potential reorganization based on experience, extending beyond visual functions.</p></li>
+</ul>
+<h3 id="reorganization-after-brain-damage">Reorganization After Brain Damage</h3>
+<p>A contrasting case is presented regarding brain damage:</p>
+<ul>
+<li><p>In adults, damage to language-dominant areas leads to significant impairment with limited recovery.</p></li>
+<li><p>It has been indicated that children exhibit greater plasticity, suggesting that language functions can be partially reallocated to right hemisphere areas.</p></li>
+</ul>
+<h3 id="conclusion-7">Conclusion</h3>
+<p>The discussion on face perception, neural wiring, and the role of experience opens up many avenues for further research. The balance of innateness and experience in shaping the developing brain and its functions remains a fundamental question in cognitive neuroscience.</p>
+<h1 id="lecture-notes-on-number-sense">Lecture Notes on Number Sense</h1>
+<h3 id="introduction-5">Introduction</h3>
+<ul>
+<li><p>The lecture focuses on the concept of number, its behavioral aspects, and its representation in the brain.</p></li>
+<li><p>Importance of numerical concepts in daily life (e.g., making change, telling time, comparing quantities).</p></li>
+<li><p>Number is fundamental in modern science, engineering, and various decision-making processes in animals.</p></li>
+</ul>
+<h3 id="understanding-numerical-concepts">Understanding Numerical Concepts</h3>
+<h4 id="behavioral-aspects">Behavioral Aspects</h4>
+<ul>
+<li><p>Animals exhibit the ability to understand simple numerical concepts.</p></li>
+<li><p>Examples include:</p>
+<ul>
+<li><p><strong>Foraging:</strong> Animals must assess the quantity and quality of food sources.</p></li>
+<li><p><strong>Team Formation:</strong> Animals, such as schooling fish and hunting lions, consider group sizes for safety and hunting strategy.</p></li>
+<li><p><strong>Mating Displays:</strong> For instance, the Tungara frog demonstrates a sophistication in call variations that suggests an understanding of numerical advantage in attracting mates.</p></li>
+</ul></li>
+</ul>
+<h4 id="biological-basis">Biological Basis</h4>
+<ul>
+<li><p>Stan Dehaene claims that humans and animals share a <strong>biologically determined, domain-specific representation</strong> of numbers.</p></li>
+<li><p>The left intraparietal area is a specific brain region associated with number sense.</p></li>
+</ul>
+<h3 id="key-concepts-of-number-sense">Key Concepts of Number Sense</h3>
+<ul>
+<li><p><strong>Number Sense:</strong> The ability to represent large numerical magnitudes without verbal counting.</p>
+<ul>
+<li><p>Representations are approximate.</p></li>
+<li><p>Discrimination depends on the ratio of numbers, not the absolute difference: <br /><span class="math display">$$\text{Discrimination} \approx \frac{\Delta n}{n}$$</span><br /></p></li>
+<li><p>These representations are abstract and generalize across different modalities.</p></li>
+</ul></li>
+<li><p><strong>Weber’s Law:</strong> The ability to discern between two quantities is proportional to the ratio of those quantities, not the absolute difference.</p></li>
+</ul>
+<h3 id="approximate-number-system-ans">Approximate Number System (ANS)</h3>
+<ul>
+<li><p>The ANS allows for quick judgments about quantity.</p></li>
+<li><p>Performance on estimation tasks varies based on the ratio of the compared numbers.</p></li>
+<li><p>Example: Human accuracy decreases when comparing numbers that are closer together (e.g., 16 vs 17 is harder than 16 vs 32).</p></li>
+</ul>
+<h3 id="symbolic-vs.-nonsymbolic-numbers">Symbolic vs. Nonsymbolic Numbers</h3>
+<h4 id="nonsymbolic-representation">Nonsymbolic Representation</h4>
+<ul>
+<li><p>Individuals can compare nonsymbolic quantities (e.g., arrays of dots).</p></li>
+<li><p>Studies show that individuals are equally accurate in tasks comparing different modalities (e.g., dots vs. tones).</p></li>
+</ul>
+<h4 id="symbolic-representation">Symbolic Representation</h4>
+<ul>
+<li><p>The capability to understand and manipulate numbers through symbols also shows reliance on approximate number sense.</p></li>
+<li><p>Even in symbolic tasks, individuals utilize their innate sense of number.</p></li>
+</ul>
+<h3 id="development-and-individual-differences">Development and Individual Differences</h3>
+<ul>
+<li><p>Individual differences in number sense can predict later mathematical abilities.</p></li>
+<li><p>Developmental dyscalculia reflects these differences and indicates that number sense may be a distinct cognitive system, independent of other skills.</p></li>
+</ul>
+<h3 id="neural-mechanisms">Neural Mechanisms</h3>
+<h4 id="neuroanatomy">Neuroanatomy</h4>
+<ul>
+<li><p>The <strong>intraparietal sulcus</strong> (IPS) is a primary area involved in numerical processing.</p></li>
+<li><p>Damage in this area can lead to specific kinds of acalculia (loss of mathematical ability).</p></li>
+</ul>
+<h4 id="neuroscience-studies">Neuroscience Studies</h4>
+<ul>
+<li><p>Studies demonstrate activation in the hIPS region for both kinds of tasks—numerical and non-numerical.</p></li>
+<li><p>Single neuron recordings in animals show number-specific responses, indicating abstract representations.</p></li>
+<li><p>Monkeys can perform numerical tasks in different modalities, suggesting the abstract nature of number neurons.</p></li>
+</ul>
+<h3 id="conclusion-8">Conclusion</h3>
+<ul>
+<li><p>The approximate number system is fundamental and shared across species.</p></li>
+<li><p>It supports the ability to make quantitative judgments and is influenced by both biology and experience.</p></li>
+<li><p>Future studies may further elucidate the neural correlates and training effects on number sense.</p></li>
+</ul>
+<h1 id="notes-on-hearing-and-speech-perception">Notes on Hearing and Speech Perception</h1>
+<h3 id="introduction-to-hearing">Introduction to Hearing</h3>
+<p>Hearing involves the ability to extract rich information from sound, enabling us to:</p>
+<ul>
+<li><p>Identify the scene and understand events.</p></li>
+<li><p>Localize sound sources (e.g., recognizing where a sound is coming from).</p></li>
+<li><p>Recognize sound sources and events (e.g., identifying a glass breaking).</p></li>
+<li><p>Selectively attend to one sound source among multiple overlapping sounds (known as the <strong>"cocktail party effect"</strong>).</p></li>
+<li><p>Enjoy music and discern material properties from sound (e.g., identifying objects by sound when dropped).</p></li>
+</ul>
+<h3 id="what-is-sound">What is Sound?</h3>
+<p>Sound is characterized by <strong>longitudinal compressions</strong> and <strong>decompressions</strong> traveling through air to the ear. The key aspects are:</p>
+<ul>
+<li><p>Sound waves travel as a series of compressions (high pressure) and rarefactions (low pressure).</p></li>
+<li><p>Natural sounds span various frequencies, and we can visualize sound through <strong>spectrograms</strong>.</p></li>
+</ul>
+<p>For an auditory system to operate effectively, it encounters computational challenges, including:</p>
+<ul>
+<li><p><strong>Invariance Problems:</strong> The same sound may appear different under varying conditions (e.g., different speakers saying the same word).</p></li>
+<li><p><strong>Multiple Sound Sources:</strong> Distinguishing overlapping sounds requires complex processing.</p></li>
+<li><p><strong>Reverberation (Reverb):</strong> Echo-like effects complicate perception but can also provide spatial information.</p></li>
+</ul>
+<h3 id="spectrograms">Spectrograms</h3>
+<p>Spectrograms visually represent sound frequency, intensity, and time:</p>
+<ul>
+<li><p>On the x-axis: Time</p></li>
+<li><p>On the y-axis: Frequency</p></li>
+<li><p>Color intensity: Energy at each frequency</p></li>
+</ul>
+<p>For example, spectrograms of whistling versus talking show distinct energy patterns due to pitch differences and articulatory features.</p>
+<h3 id="speech-perception">Speech Perception</h3>
+<p>Speech is composed of several phonemes, which are the distinct units of sound. Important notes include:</p>
+<ul>
+<li><p>Vowels produce harmonics seen as regularly spaced bands on a spectrogram.</p></li>
+<li><p>Consonants are represented as vertical patterns, characterized by less harmonic structure.</p></li>
+<li><p>Variability across speakers influences how phonemes are recognized.</p></li>
+<li><p>The auditory context affects perception (the <strong>contextual effect</strong>).</p></li>
+</ul>
+<h4 id="challenges-in-speech-perception">Challenges in Speech Perception</h4>
+<p>The main challenges stem from:</p>
+<ul>
+<li><p>Variability in speech across speakers and dialects.</p></li>
+<li><p>The influence of coarticulation, where the pronunciation of a sound is affected by surrounding sounds.</p></li>
+<li><p>Listening conditions (e.g., background noise, reverb) complicating understanding.</p></li>
+</ul>
+<h4 id="neural-processing-of-sound">Neural Processing of Sound</h4>
+<p>The processing of auditory information progresses from the cochlea (where transduction occurs) to various pathways leading to the cortex. Key points include:</p>
+<ul>
+<li><p>The cochlea performs a <strong>Fourier transform</strong> on sound frequencies.</p></li>
+<li><p><strong>Primary Auditory Cortex (A1)</strong> receives input from the cochlea, organized in a <strong>tonotopic map</strong>, where frequency is mapped spatially.</p></li>
+<li><p>Neurons in A1 function as <strong>linear filters</strong> sensitive to changes in frequency over time, known as <strong>Spectrotemporal Receptive Fields (STRFs)</strong>.</p></li>
+</ul>
+<h3 id="research-insights">Research Insights</h3>
+<p>Recent studies reveal:</p>
+<ul>
+<li><p>Primary Auditory Cortex shows similar responses to natural and synthetic sounds.</p></li>
+<li><p>Nearby regions of the auditory cortex demonstrate selective responses to speech, indicating the presence of specialized processing areas.</p></li>
+</ul>
+<h3 id="conclusion-9">Conclusion</h3>
+<p>The auditory system is proficient at processing complex sounds, enabling tasks such as localizing sound sources, recognizing speech, and interpreting environmental cues. The fundamental challenges to auditory perception arise from invariant processing, multiple overlapping sounds, and various influences of conversational context.</p>
+<h1 id="lecture-notes-on-music-and-audition">Lecture Notes on Music and Audition</h1>
+<h3 id="introduction-to-audition">Introduction to Audition</h3>
+<ul>
+<li><p>Audition involves understanding sound, which is defined as pressure waves traveling through air.</p></li>
+<li><p>Hearing allows us to extract information from these pressure waves, enabling recognition of sounds, localization, understanding of material properties, and interpretation of events.</p></li>
+</ul>
+<h3 id="computational-challenges-in-audition">Computational Challenges in Audition</h3>
+<h4 id="ill-posed-problems-1">Ill-Posed Problems</h4>
+<ul>
+<li><p><strong>Cocktail Party Problem</strong>: Difficulty separating multiple overlapping sound sources (e.g., voices, background noise).</p></li>
+<li><p><strong>Reverberation</strong>: Sounds are reflected off surfaces, causing echoes and complicating sound identification.</p></li>
+<li><p>Ill-posed problems arise when the available information does not lead to a unique solution.</p></li>
+</ul>
+<h3 id="speech-perception-1">Speech Perception</h3>
+<h4 id="phonemes">Phonemes</h4>
+<ul>
+<li><p><strong>Phonemes</strong>: Minimum units of sound that can distinguish words (e.g., ’make’ vs. ’bake’).</p></li>
+<li><p>Phoneme characteristics:</p>
+<ul>
+<li><p>Vowels: Characterized by stacked harmonics in a spectrogram.</p></li>
+<li><p>Consonants: Represented by quick transitions that lead into vowel sounds.</p></li>
+</ul></li>
+</ul>
+<h4 id="talker-variability">Talker Variability</h4>
+<ul>
+<li><p>Phonemes can vary in spectral appearance depending on the speaker.</p></li>
+<li><p>Importance of understanding invariance in our perception of sounds.</p></li>
+</ul>
+<h3 id="neural-basis-of-auditory-processing">Neural Basis of Auditory Processing</h3>
+<ul>
+<li><p>Primary auditory cortex (A1) is found in the superior temporal lobe and has a tonotopic organization, where different frequencies occupy different areas.</p></li>
+<li><p>Spectrotemporal receptive fields (STRFs) characterize the response properties of neurons in A1.</p></li>
+</ul>
+<h3 id="music-as-a-unique-human-experience">Music as a Unique Human Experience</h3>
+<ul>
+<li><p>Music is considered fundamentally human: every studied culture has some form of music.</p></li>
+<li><p>Discusses the evolutionary aspect of music - why it exists and what purpose it serves.</p></li>
+</ul>
+<h4 id="evolutionary-theories">Evolutionary Theories</h4>
+<ul>
+<li><p><strong>Darwin’s Speculation</strong>: Music may have evolved as a form of communication before language.</p></li>
+<li><p><strong>Mehr’s Hypothesis</strong>: Music serves to manage parent-offspring conflict through infant-directed song.</p></li>
+<li><p><strong>Pinker’s Argument</strong>: Music is "auditory cheesecake," a byproduct of other evolved capacities, rather than an evolved function itself.</p></li>
+</ul>
+<h4 id="cross-cultural-universality">Cross-Cultural Universality</h4>
+<ul>
+<li><p>Music exists across all human cultures, but there are important variabilities.</p></li>
+<li><p>Studies suggest common features, like limit in discrete pitches and presence of a regular pulse.</p></li>
+</ul>
+<h3 id="music-processing-in-the-brain">Music Processing in the Brain</h3>
+<h4 id="amusia">Amusia</h4>
+<ul>
+<li><p>Amusia refers to an inability to recognize or produce music while retaining language processing abilities.</p></li>
+<li><p>Congenital amusia exists without brain damage and encompasses difficulties in pitch contour perception across both music and speech.</p></li>
+</ul>
+<h4 id="functional-brain-imaging-studies">Functional Brain Imaging Studies</h4>
+<ul>
+<li><p>Previous studies found overlapping activations in areas like Broca’s region in response to music and language, but these lacked individual subject data.</p></li>
+<li><p>More robust studies have shown distinct areas for processing music and speech, suggesting a dissociation between music and language processing systems.</p></li>
+</ul>
+<h3 id="conclusion-10">Conclusion</h3>
+<ul>
+<li><p>The relationship between music and language is complex: they are processed in separate regions of the brain without significant overlap for higher-level functions.</p></li>
+<li><p>Further research is needed to explore the origins and functions of music in human evolution and cognition.</p></li>
+</ul>
+<h1 id="lecture-notes-on-language-and-representational-similarity-analysis">Lecture Notes on Language and Representational Similarity Analysis</h1>
+<h3 id="overview-2">Overview</h3>
+<p>This lecture discusses concepts in language processing and representational similarity analysis (RSA), particularly in the context of functional MRI (fMRI) and cognitive neuroscience.</p>
+<h3 id="representational-similarity-analysis-rsa">Representational Similarity Analysis (RSA)</h3>
+<h4 id="definition">Definition</h4>
+<p>RSA is a method for analyzing the similarities in neural responses across different stimuli or conditions. It extends upon multiple voxel pattern analysis (MVPA), which focuses on binary classifications.</p>
+<h4 id="basics-of-mvpa">Basics of MVPA</h4>
+<p>In MVPA, responses from brain regions (voxels) are compared while subjects view different stimuli (e.g., dogs vs. cats). The method applies a split-half analysis, where data from one condition is compared against another: <br /><span class="math display">$$\text{Similarity}(A,B) = \frac{\sum_{i=1}^{n} r_{A_i} \cdot r_{B_i}}{|A|\cdot|B|}$$</span><br /> Here, <span class="math inline"><em>r</em><sub><em>A</em><sub><em>i</em></sub></sub></span> and <span class="math inline"><em>r</em><sub><em>B</em><sub><em>i</em></sub></sub></span> represent response vectors from conditions A and B, respectively, and <span class="math inline"><em>n</em></span> is the number of voxels.</p>
+<h4 id="advantages-of-rsa">Advantages of RSA</h4>
+<p>RSA analyzes patterns across multiple conditions, providing a more nuanced view of brain representation:</p>
+<ul>
+<li><p>It generates a matrix of pairwise similarities.</p></li>
+<li><p>It can encompass more than just binary classifications, allowing comparisons across various stimuli.</p></li>
+</ul>
+<h4 id="application-of-rsa">Application of RSA</h4>
+<ol>
+<li><p>Behavioral Similarity Judgment: Participants can rate the similarity of stimuli (e.g., dogs to cats).</p></li>
+<li><p>Correlation of Matrices: These similarity matrices can be correlated to assess the relationship between neural responses and behavioral judgments:</p></li>
+</ol>
+<p><br /><span class="math display">Correlation(<em>M</em><sub><em>n</em><em>e</em><em>u</em><em>r</em><em>a</em><em>l</em></sub>, <em>M</em><sub><em>b</em><em>e</em><em>h</em><em>a</em><em>v</em><em>i</em><em>o</em><em>r</em><em>a</em><em>l</em></sub>)</span><br /> This can provide insights into how similar or different representations are in the brain versus behavioral assessments.</p>
+<h3 id="cognitive-components-of-language">Cognitive Components of Language</h3>
+<h4 id="essence-of-language">Essence of Language</h4>
+<p>Language allows humans to express complex ideas. The essential properties include:</p>
+<ul>
+<li><p>Universality among neurologically intact humans (around 7,000 distinct languages).</p></li>
+<li><p>The open-ended and compositional nature of human language.</p></li>
+</ul>
+<h4 id="components-of-language">Components of Language</h4>
+<ol>
+<li><p>Phonology: The sounds of language (e.g., distinguishing between /b/ and /p/).</p></li>
+<li><p>Semantics: Understanding a word’s meaning, both singularly and within context.</p></li>
+<li><p>Syntax: Rules that govern how words combine (e.g., word order).</p></li>
+<li><p>Pragmatics: The context of language use and inferred intention (e.g., the difference between "Can you pass the salt?" and "Please pass the salt.").</p></li>
+</ol>
+<h3 id="language-and-thought">Language and Thought</h3>
+<h4 id="relationship-between-language-and-thought">Relationship Between Language and Thought</h4>
+<p>Consider the following questions:</p>
+<ol>
+<li><p>Is language a separate cognitive function or is it intertwined with overall thought processes?</p></li>
+<li><p>Do individuals with specific cognitive impairments retain language capabilities?</p></li>
+</ol>
+<h4 id="aphasia-studies">Aphasia Studies</h4>
+<p>Studies on patients with global aphasia show that while they may lose language ability, they can retain certain cognitive functions:</p>
+<ul>
+<li><p>Individuals with Broca’s aphasia can often understand language but struggle with speech production.</p></li>
+<li><p>Patients can perform non-verbal cognitive tasks well, suggesting separation between cognitive processes and language.</p></li>
+</ul>
+<h4 id="neuroimaging-evidence">Neuroimaging Evidence</h4>
+<p>Functional MRI studies measure brain activity during cognitive tasks:<br />
+Initial studies suggested overlap between language and other cognitive functions; however, more refined methods of individual analysis indicated that:</p>
+<ul>
+<li><p>Language regions do not significantly activate during non-linguistic tasks.</p></li>
+<li><p>This implies that while language may enhance some cognitive functions, they are not fundamentally the same.</p></li>
+</ul>
+<h3 id="conclusion-11">Conclusion</h3>
+<p>The integration of RSA with traditional language and cognitive studies enhances our understanding of how representations are formed in the brain and the distinct roles that language plays within the broader context of human cognition.</p>
+<h1 id="notes-on-social-cognition-and-theory-of-mind">Notes on Social Cognition and Theory of Mind</h1>
+<h3 id="introduction-6">Introduction</h3>
+<ul>
+<li><p>Discussion focused on uniquely human functions, transitioning from shared skills with animals (e.g., navigation, visual perception).</p></li>
+<li><p>Unique human cognitive abilities include music, language, and social cognition (the ability to think about others’ thoughts).</p></li>
+</ul>
+<h3 id="the-importance-of-social-cognition">The Importance of Social Cognition</h3>
+<ul>
+<li><p>Human beings are <strong>profoundly social</strong> creatures.</p></li>
+<li><p>Daily experiences often revolve around interactions with others.</p></li>
+<li><p>Personal reflections at the end of life frequently center on social connections rather than work or achievements.</p></li>
+<li><p>Social interactions contribute significantly to human happiness and suffering.</p></li>
+<li><p>Autistic individuals often struggle with understanding social cues, highlighting the importance of social cognition.</p></li>
+</ul>
+<h3 id="social-cognition-defined">Social Cognition Defined</h3>
+<ul>
+<li><p>Social cognition involves understanding others’ intentions, desires, and beliefs.</p></li>
+<li><p><strong>Mentalizing</strong>: Inferring hidden mental states of others, a process crucial for social interaction.</p></li>
+<li><p>Example: Understanding why someone engages in a specific action requires inferring their hidden intentions—actions like reaching for an object imply desire.</p></li>
+</ul>
+<h3 id="the-cognitive-mechanisms-in-social-cognition">The Cognitive Mechanisms in Social Cognition</h3>
+<h4 id="components-of-mentalizing">Components of Mentalizing</h4>
+<ul>
+<li><p>Inferring an agent’s:</p>
+<ul>
+<li><p><strong>Perceptual Inputs</strong>: What they can see/hear.</p></li>
+<li><p><strong>Desires/Goals</strong>: What they wish to achieve.</p></li>
+<li><p><strong>Beliefs</strong>: What they think is true.</p></li>
+</ul></li>
+<li><p>These components are interrelated and essential for understanding social interactions.</p></li>
+</ul>
+<h4 id="example-of-mentalizing">Example of Mentalizing</h4>
+<ul>
+<li><p>An illustrative example used in the lecture was the interaction between 18-month-old infants and an experimenter, demonstrating their ability to interpret actions without explicit verbal communication.</p></li>
+</ul>
+<h3 id="theory-of-mind-and-false-belief-tasks">Theory of Mind and False Belief Tasks</h3>
+<ul>
+<li><p>The <strong>False Belief Paradigm</strong> tests whether individuals understand that others can hold beliefs that differ from reality.</p></li>
+<li><p>Classic experiment—<strong>Sally-Anne Task</strong>:</p>
+<ul>
+<li><p>Sally hides a ball in a basket, Anne moves it to a box while Sally is away.</p></li>
+<li><p>When Sally returns, a child’s prediction of where she will look for the ball reveals their understanding of false beliefs.</p></li>
+</ul></li>
+<li><p>Results typically show that:</p>
+<ul>
+<li><p>3-year-olds often fail (expect Sally to look in the box).</p></li>
+<li><p>5-year-olds succeed (expect Sally to look in the basket).</p></li>
+</ul></li>
+</ul>
+<h3 id="autism-and-theory-of-mind">Autism and Theory of Mind</h3>
+<ul>
+<li><p>Children with autism often struggle with false belief tasks, suggesting a deficit in mentalizing.</p></li>
+<li><p><strong>Debbie Zaichik’s False Photo Task</strong>: Tests the understanding of physical representations as controls for false beliefs.</p></li>
+</ul>
+<h3 id="neuroimaging-insights">Neuroimaging Insights</h3>
+<ul>
+<li><p>Brain regions associated with social cognition include:</p>
+<ul>
+<li><p><strong>Medial Prefrontal Cortex (mPFC)</strong></p></li>
+<li><p><strong>Temporoparietal Junction (TPJ)</strong></p></li>
+</ul></li>
+<li><p><strong>Functional MRI Studies</strong>:</p>
+<ul>
+<li><p>Tasks comparing false belief and false photo conditions activate different brain regions.</p></li>
+<li><p>The TPJ specifically responds to tasks requiring the attribution of thoughts and beliefs to others.</p></li>
+</ul></li>
+</ul>
+<h3 id="moral-reasoning-as-a-test-case">Moral Reasoning as a Test Case</h3>
+<ul>
+<li><p>Moral reasoning is intertwined with social cognition, as it often requires consideration of others’ beliefs and intentions.</p></li>
+<li><p>A crucial distinction is made between <strong>intentional harm</strong> (e.g., murder) and <strong>accidental harm</strong> (e.g., manslaughter).</p></li>
+<li><p>Studies show variations in moral judgment based on whether participants understand the agent’s beliefs.</p></li>
+</ul>
+<h4 id="results-in-autism">Results in Autism</h4>
+<ul>
+<li><p>Research found that people with autism may give less weight to beliefs when judging moral permissibility.</p></li>
+<li><p>TMS (Transcranial Magnetic Stimulation) studies to the rTPJ indicate its role in the moral reasoning process.</p></li>
+</ul>
+<h3 id="conclusion-12">Conclusion</h3>
+<ul>
+<li><p>Understanding social cognition is essential to understand human behavior and interpersonal interactions.</p></li>
+<li><p>Further research is necessary to unravel the complexities of mentalizing and the neurobiological underpinnings involved, particularly concerning developmental conditions like autism.</p></li>
+</ul>
+<h1 id="lecture-notes-the-psychology-of-social-cognition">Lecture Notes: The Psychology of Social Cognition</h1>
+<h3 id="introduction-7">Introduction</h3>
+<p>Understanding what individuals think and believe transcends external appearances and is crucial for predicting behavior and interactions. This is fundamentally considered part of being human and enriches literature and social understanding.</p>
+<h3 id="false-belief-tasks">False Belief Tasks</h3>
+<h4 id="sally-anne-task">Sally-Anne Task</h4>
+<p>The classic method to study false beliefs involves the Sally-Anne task, which illustrates how individuals can hold false beliefs that differ from reality.</p>
+<h4 id="developmental-aspects">Developmental Aspects</h4>
+<ul>
+<li><p><strong>Five-year-olds</strong> typically pass the false-belief tasks easily.</p></li>
+<li><p><strong>Three-year-olds</strong> generally fail these tasks.</p></li>
+<li><p><strong>Autistic individuals</strong> may pass later (at ages 7-9) or not at all.</p></li>
+</ul>
+<h3 id="the-social-brain-tpj-temporo-parietal-junction">The Social Brain: TPJ (Temporo-parietal Junction)</h3>
+<p>Evidence suggests the TPJ is critical in processing others’ thoughts and beliefs distinctively from physical representations.</p>
+<h4 id="brain-activation">Brain Activation</h4>
+<ul>
+<li><p>Increased TPJ activation occurs during false-belief tasks when considering another’s thoughts compared to perceiving a physical representation.</p></li>
+<li><p>The TPJ does not respond to visceral sensations (thirst, hunger, pain) but is specific to mental state reasoning.</p></li>
+</ul>
+<h3 id="moral-reasoning-and-tpj">Moral Reasoning and TPJ</h3>
+<p>The TPJ also plays a role in moral reasoning. Individuals with autism show less sensitivity to the knowledge context of others’ actions, particularly in moral evaluations.</p>
+<h3 id="white-matter-and-connectivity-in-the-brain">White Matter and Connectivity in the Brain</h3>
+<h4 id="importance-of-white-matter">Importance of White Matter</h4>
+<ul>
+<li><p>Comprising  45% of the human brain, white matter facilitates communication between brain regions.</p></li>
+<li><p>The distinct structural connectivity patterns of brain regions are vital for understanding their functions.</p></li>
+</ul>
+<h4 id="connectivity-and-function">Connectivity and Function</h4>
+<ul>
+<li><p>Heidi Johansen-Berg and Matt Rushworth state that connectivity patterns define functional networks.</p></li>
+<li><p>Inputs to a brain region influence its available information, while outputs dictate its influence on others.</p></li>
+</ul>
+<h4 id="developmental-aspects-1">Developmental Aspects</h4>
+<ul>
+<li><p>Connectivity is essential for the development and specialization of brain regions.</p></li>
+<li><p>Connectivity fingerprints may allow researchers to find homologous regions across species.</p></li>
+</ul>
+<h3 id="clinical-implications">Clinical Implications</h3>
+<p>Disruptions in white matter are linked to various disorders (e.g., dyslexia, autism), emphasizing the importance of studying connectivity patterns in clinical research.</p>
+<h3 id="diffusion-imaging">Diffusion Imaging</h3>
+<p>Diffusion imaging leverages the principle that water diffuses preferentially along fiber bundles to visualize brain connectivity.</p>
+<h4 id="fractional-anisotropy-fa">Fractional Anisotropy (FA)</h4>
+<p>FA measures the degree of orientation in a brain region’s fibers, which has clinical implications for understanding various conditions.</p>
+<h3 id="challenges-of-tractography">Challenges of Tractography</h3>
+<p>While tractography can identify major fiber bundles, it can face significant challenges, including:</p>
+<ol>
+<li><p>Crossing Fibers Problem: Difficulty in distinguishing pathways where fibers cross each other.</p></li>
+<li><p>Heuristic Constraints: Assumptions about fiber behavior can lead to inaccuracies.</p></li>
+</ol>
+<h3 id="resting-state-functional-connectivity">Resting-State Functional Connectivity</h3>
+<p>Resting-state studies allow researchers to examine where regions in the brain show correlated activity without any explicit task.</p>
+<h4 id="default-mode-network-dmn">Default Mode Network (DMN)</h4>
+<p>The DMN includes regions that are more active during rest and less active during demanding tasks. It reflects introspection, memory recall, and social thinking.</p>
+<h4 id="multiple-demand-network">Multiple-Demand Network</h4>
+<p>Regions that activate during a variety of challenging cognitive tasks demonstrate fluid intelligence and support task performance across domains.</p>
+<h3 id="conclusion-13">Conclusion</h3>
+<p>The study of the brain requires an understanding of both individual regions and broader networks, emphasizing the complexities in how we comprehend social cognition, connectivity, and moral reasoning.</p>
+<h1 id="notes-on-attention-and-cognition">Notes on Attention and Cognition</h1>
+<h3 id="introduction-to-attention">Introduction to Attention</h3>
+<ul>
+<li><p>Attention is a critical cognitive process that allows us to focus on specific stimuli while ignoring others.</p></li>
+<li><p>Driving while talking on a cell phone raises questions about attention and cognitive load.</p></li>
+<li><p>The ability to multitask is limited by our cognitive resources.</p></li>
+</ul>
+<h3 id="limited-processing-ability">Limited Processing Ability</h3>
+<h4 id="cognition-as-a-limited-resource">Cognition as a Limited Resource</h4>
+<ul>
+<li><p>Human cognition can be likened to a toaster model: if one resource is heavily used, less remains for others.</p></li>
+<li><p>Our ability to process information is limited, as shown through various examples:</p>
+<ul>
+<li><p>Listening to music while reading difficult texts.</p></li>
+<li><p>Recognizing faces and scenes simultaneously.</p></li>
+</ul></li>
+</ul>
+<h4 id="perception-demonstration">Perception Demonstration</h4>
+<ul>
+<li><p>An experiment was described where subjects attempted to recall blue letters from a quickly displayed array of letters, illustrating the limits of visual attention.</p></li>
+<li><p>The probability of identifying specific items in a visual field diminishes when multiple items are present.</p></li>
+</ul>
+<h3 id="capacity-limits-of-attention">Capacity Limits of Attention</h3>
+<ul>
+<li><p>Attention acts as a filter, letting certain information into awareness while blocking out excess stimuli.</p></li>
+<li><p>Human perception is not capable of processing everything in the visual field concurrently.</p></li>
+<li><p>Real-world examples (e.g., fish predation) demonstrate the effects of limited attention in dynamic environments.</p></li>
+</ul>
+<h3 id="types-of-attention">Types of Attention</h3>
+<h4 id="overt-vs.-covert-attention">Overt vs. Covert Attention</h4>
+<ul>
+<li><p><strong>Overt Attention</strong>: Involves eye movements to select different sources of information.</p></li>
+<li><p><strong>Covert Attention</strong>: Ability to focus on a stimulus without moving the eyes, adjusting perceptual filters instead.</p></li>
+</ul>
+<h4 id="controlled-vs.-stimulus-driven-attention">Controlled vs. Stimulus-Driven Attention</h4>
+<ul>
+<li><p><strong>Stimulus-Driven Attention</strong> (Exogenous): Refers to attention captured by external stimuli, such as pop-ups or brightly colored objects.</p></li>
+<li><p><strong>Voluntary Attention</strong> (Endogenous): Attention that is self-directed and conscious, allowing for focus on desired stimuli.</p></li>
+</ul>
+<h4 id="spatial-vs.-feature-based-attention">Spatial vs. Feature-Based Attention</h4>
+<ul>
+<li><p><strong>Spatial Attention</strong>: Focus on a particular area in the visual field.</p></li>
+<li><p><strong>Feature-Based Attention</strong>: Focus on specific attributes (e.g., color, shape) without knowing the location in advance.</p></li>
+</ul>
+<h3 id="neuroscience-of-attention">Neuroscience of Attention</h3>
+<h4 id="brain-regions-involved-in-attention">Brain Regions Involved in Attention</h4>
+<ul>
+<li><p>The frontal-parietal attention network is critical in tasks that require attention modulation.</p></li>
+<li><p>Attention affects perceptual processing across numerous brain areas including primary visual cortex (V1), fusiform face area (FFA), and parahippocampal place area (PPA).</p></li>
+</ul>
+<h4 id="neural-correlates-of-awareness">Neural Correlates of Awareness</h4>
+<ul>
+<li><p>Awareness can be uncoupled from perception, allowing studies of how stimuli are processed without conscious awareness.</p></li>
+<li><p>Research shows that even when individuals are unaware of a stimulus, there may still be brain activation in regions like the PPA.</p></li>
+</ul>
+<h3 id="conclusions-1">Conclusions</h3>
+<ul>
+<li><p>Attention is a dynamic and multifaceted cognitive process, essential to effective functioning in complex environments.</p></li>
+<li><p>Ongoing research seeks to further understand the underlying mechanisms of attention and awareness and their implications for cognition and behavior.</p></li>
+</ul>
+
+
+    </div>
+    <!-- insert above this -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+</body>
+
+</html>

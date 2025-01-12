@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrollspy with Offcanvas</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    section {
+      margin-top: 100vh; /* Just to create spacing for demo */
+      padding: 50px;
+      border: 1px solid #ccc;
+    }
+
+    .nav-link.active {
+      font-weight: bold;
+      color: #007bff;
+    }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="100" tabindex="0">
+  <div class="container">
+    <button class="btn btn-primary my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+      Open Table of Contents
+    </button>
+
+    <section id="overview-of-accounting">
+      <h2>Overview of Accounting</h2>
+      <p>Details about accounting...</p>
+    </section>
+
+    <section id="another-section">
+      <h2>Another Section</h2>
+      <p>Details about another section...</p>
+    </section>
+
+    <section id="final-section">
+      <h2>Final Section</h2>
+      <p>Details about the final section...</p>
+    </section>
+  </div>
+
+  <!-- Offcanvas (Table of Contents) -->
+  <div class="offcanvas offcanvas-start w-50" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Table of Contents</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <nav id="navbar-example3" class="nav flex-column">
+        <a class="nav-link" href="#overview-of-accounting">Overview of Accounting</a>
+        <a class="nav-link" href="#another-section">Another Section</a>
+        <a class="nav-link" href="#final-section">Final Section</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

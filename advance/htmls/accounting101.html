@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>/\dvance</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <style>
+    code {
+      white-space: pre-wrap;
+    }
+
+    span.smallcaps {
+      font-variant: small-caps;
+    }
+
+    span.underline {
+      text-decoration: underline;
+    }
+
+    div.column {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+    }
+
+    div.hanging-indent {
+      margin-left: 1.5em;
+      text-indent: -1.5em;
+    }
+
+    ul.task-list {
+      list-style: none;
+    }
+  </style>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body style="
+    background-color: rgb(0, 0, 39);
+    color: rgb(205, 158, 250);" class="vh-100 p-0">
+
+      <nav class="navbar navbar-dark navbar-collapse navbar-fixed-top fixed-top justify-content-center container"
+        style="background-color: rgb(0, 0, 40);">
+        <div class="container justify-content-center">
+          <a class="navbar-brand" href="../index.html" style="color: rgb(179, 114, 240);">/\dvance</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav text-center">
+              <li class="nav-item">
+                <a class="nav-link" href="../finance.html">Finance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../startups.html">Startups</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../economics.html">Economics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../humanities.html">Humanities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../philosophy.html">Philosophy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../science.html">Science</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container" style="background-color: rgb(0, 0, 40);">
+          <div class="col-12 d-flex justify-content-start align-items-center">
+            <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+              <ol class="breadcrumb m-1">
+                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="../finance.html">Finance</a></li>
+                <li class="breadcrumb-item active"><a href="../htmls/accounting101.html">Accounting 101</a></li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+
+        <div class="btn position-fixed fixed-bottom d-flex justify-content-end p-0">
+          <a style="color: white; background-color: rgb(0, 0, 40);" class="border rounded p-1"
+            onclick="document.getElementById('contents').scrollIntoView({ behavior: 'smooth' });">contents^</a>
+        </div>
+      </nav>
+
+      <div class="container vh-100 mb-0">
+        <div id="business-row" class="row justify-content-between">
+
+      <div class="offcanvas offcanvas-start w-50 bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" data-bs-scroll="true" data-bs-backdrop="true">
+          <div class="col">
+            <div id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
+              <a class="p-1 rounded" href="#overview-of-accounting">Overview of accounting</a>
+              <a class="p-1 rounded" href="#simple-list-item-2">Item 2</a>
+              <a class="p-1 rounded" href="#simple-list-item-3">Item 3</a>
+              <a class="p-1 rounded" href="#simple-list-item-4">Item 4</a>
+              <a class="p-1 rounded" href="#simple-list-item-5">Item 5</a>
+            </div>
+        
+          </div>
+        
+        </div>
+      </div>
+
+
+
+
+
+  
+      <div class="row mt-3">
+
+
+        <h1 id="contents" class="m-0">contents</h4>
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button>
+
+          <div class="col-6">
+            <ul>
+              <li class="mb-1">
+                <a href="#overview-of-accounting">Overview of Accounting</a>
+              </li>
+              <li class="mb-1">
+                <a href="#accounting-income-statements-and-related-principles">Accounting: Income Statements and Related
+                  Principles</a>
+              </li>
+              <li class="mb-1">
+                <a href="#income-statemnets-across-company-life-cycles">Income Statements Across Company Life Cycles</a>
+              </li>
+              <li class="mb-1">
+                <a href="#balance-sheet-1">Balance Sheet</a>
+              </li>
+              <li class="mb-1">
+                <a href="#understanding-balance-sheets-across-the-corporate-life-cycle">Understanding Balance Sheets
+                  Across the Corporate Life Cycle</a>
+              </li>
+              <li>
+                <a href="#statement-of-cash-flows">Statement of Cash Flows</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li class="mb-1">
+                <a href="#understanding-statements-of-cash-flow">Understanding Statements of Cash Flows</a>
+              </li>
+              <li class="mb-1">
+                <a href="#general-notes-on-accounting-and-financial-statements">General Notes on Accounting and
+                  Financial Statements </a>
+              </li>
+              <li class="mb-1">
+                <a href="#accounting-inconsistencies">Accounting Inconsistencies</a>
+              </li>
+              <li class="mb-1">
+                <a href="#accounting-ratios">Accounting Ratios</a>
+              </li>
+              <li>
+                <a href="#financial-ratios-and-corporate-life-cycle-analysis">Financial Ratios and Corporate Life Cycle
+                  Analysis</a>
+              </li>
+
+            </ul>
+          </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- insert under this -->
+    <div class="container">
+      <h1 id="accounting">Accounting 101</h1>
+      <h1 id="overview-of-accounting">Overview of Accounting</h1>
+      <p>Accounting serves a crucial role in business through:</p>
+      <ul>
+        <li>
+          <p>Checking transactions to ensure accuracy</p>
+        </li>
+        <li>
+          <p>Consistent recording of these transactions</p>
+        </li>
+        <li>
+          <p>Reporting that allows understanding of financial health</p>
+        </li>
+      </ul>
+      <p>Contrary to some beliefs, the role of accountants is not to forecast the future or to value businesses or
+        assets;
+        rather, they are considered historians, recording past transactions.</p>
+      <h3 id="key-questions-addressed-by-accounting">Key Questions Addressed by Accounting</h3>
+      <p>The three fundamental questions any stakeholder should be able to answer from accounting statements are:</p>
+      <ol>
+        <li>
+          <p><strong>What do you own?</strong> (Assets)</p>
+        </li>
+        <li>
+          <p><strong>What do you owe?</strong> (Liabilities)</p>
+        </li>
+        <li>
+          <p><strong>How much money did you make?</strong> (Earnings/Cash Flow)</p>
+        </li>
+      </ol>
+      <p>These questions can be addressed through three primary financial statements:</p>
+      <ul>
+        <li>
+          <p>Balance Sheet</p>
+        </li>
+        <li>
+          <p>Income Statement</p>
+        </li>
+        <li>
+          <p>Statement of Cash Flows</p>
+        </li>
+      </ul>
+      <h3 id="financial-statements">Financial Statements</h3>
+      <h4 id="balance-sheet">Balance Sheet</h4>
+      <p>The Balance Sheet provides a snapshot of a company’s financial position at a specific point in time and
+        includes:
+      </p>
+      <ul>
+        <li>
+          <p><strong>Assets:</strong> What the company owns</p>
+          <ul>
+            <li>
+              <p><em>Fixed Assets:</em> Long-term physical assets (e.g., land, buildings, machinery)</p>
+            </li>
+            <li>
+              <p><em>Current Assets:</em> Short-term assets (e.g., cash, inventory, accounts receivable)</p>
+            </li>
+            <li>
+              <p><em>Financial Assets:</em> Investments in other companies (stocks/bonds)</p>
+            </li>
+            <li>
+              <p><em>Intangible Assets:</em> Non-physical assets (e.g., patents, brand names)</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Liabilities:</strong> What the company owes</p>
+          <ul>
+            <li>
+              <p><em>Current Liabilities:</em> Debts due within one year (e.g., accounts payable, short-term debt)</p>
+            </li>
+            <li>
+              <p><em>Long-term Liabilities:</em> Debts due after one year (e.g., bank loans, bonds)</p>
+            </li>
+            <li>
+              <p><em>Other Liabilities:</em> Obligations (e.g., pension funds, healthcare obligations)</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Equity:</strong> The residual interest in the assets after deducting liabilities</p>
+        </li>
+      </ul>
+      <p>The basic equation governing the balance sheet can be represented as: <br /><span
+          class="math display">Assets = Liabilities + Equity</span><br /></p>
+      <h4 id="income-statement">Income Statement</h4>
+      <p>The Income Statement details the company’s financial performance over a specific period, focusing on:</p>
+      <ul>
+        <li>
+          <p><strong>Revenues:</strong> Total income from sales</p>
+        </li>
+        <li>
+          <p><strong>Cost of Goods Sold (COGS):</strong> Direct costs attributable to production</p>
+        </li>
+        <li>
+          <p><strong>Gross Profit:</strong> Calculated as: <br /><span class="math display">Gross
+              Profit = Revenues − COGS</span><br /></p>
+        </li>
+        <li>
+          <p><strong>Operating Expenses:</strong> Indirect costs (e.g., marketing, administrative)</p>
+        </li>
+        <li>
+          <p><strong>Operating Profit:</strong> Calculated as: <br /><span class="math display">Operating Profit = Gross
+              Profit − Operating Expenses</span><br /></p>
+        </li>
+        <li>
+          <p><strong>Net Income:</strong> Final profit after taxes and other non-operating expenses</p>
+        </li>
+      </ul>
+      <h4 id="statement-of-cash-flows">Statement of Cash Flows</h4>
+      <p>The Statement of Cash Flows explains the changes in cash balances due to operational, investing, and financing
+        activities:</p>
+      <ul>
+        <li>
+          <p><strong>Cash Flows from Operations:</strong> Driven by net income, adjustments for non-cash expenses, and
+            changes in working capital</p>
+        </li>
+        <li>
+          <p><strong>Cash Flows from Investing:</strong> Cash spent on capital expenditures or investments in other
+            businesses</p>
+        </li>
+        <li>
+          <p><strong>Cash Flows from Financing:</strong> Cash received from issuing debt/equity and cash paid for
+            dividends or debt repayments</p>
+        </li>
+      </ul>
+      <p>The fundamental equation for change in cash balance can be simplified as: <br /><span
+          class="math display"><em>Δ</em>Cash = Cash Flows from Operations + Cash Flows from Investing + Cash Flows from
+          Financing</span><br /></p>
+      <h3 id="interconnections-of-financial-statements">Interconnections of Financial Statements</h3>
+      <p>The three financial statements are interconnected:</p>
+      <ul>
+        <li>
+          <p>Depreciation and amortization from the income statement are added back in the cash flow statement.</p>
+        </li>
+        <li>
+          <p>Investments in fixed assets on the balance sheet reflect as capital expenditures in the cash flow
+            statement.
+          </p>
+        </li>
+        <li>
+          <p>Changes in the balance sheet components influence cash flow movements.</p>
+        </li>
+      </ul>
+      <h3 id="accounting-standards">Accounting Standards</h3>
+      <p>Accounting practices are governed by formalized rules to ensure consistency and comparability:</p>
+      <ul>
+        <li>
+          <p><strong>GAAP:</strong> Generally Accepted Accounting Principles used predominantly in the United States.
+          </p>
+        </li>
+        <li>
+          <p><strong>IFRS:</strong> International Financial Reporting Standards used in many other countries.</p>
+        </li>
+      </ul>
+      <p>Understanding and applying these standards is crucial for accurate financial analysis.</p>
+      <h3 id="conclusion">Conclusion</h3>
+      <p>As students of accounting, it is essential to interpret financial statements with an accounting mindset.
+        Approach
+        each statement analytically and remember that the evolving nature of accounting practices affects reporting and
+        analysis.</p>
+      <h1 id="accounting-income-statements-and-related-principles">Accounting: Income Statements and Related Principles
+      </h1>
+      <h3 id="introduction">Introduction</h3>
+      <p>In this session, we will cover the fundamental concepts of income statements, focusing on the differences
+        between
+        cash accounting and accrual accounting.</p>
+      <h3 id="accounting-methods">Accounting Methods</h3>
+      <h4 id="cash-accounting">Cash Accounting</h4>
+      <ul>
+        <li>
+          <p>Revenue is recorded when cash is received.</p>
+        </li>
+        <li>
+          <p>Expenses are recorded when cash is paid.</p>
+        </li>
+        <li>
+          <p>Suitable for very small businesses (often called checkbook accounting).</p>
+        </li>
+      </ul>
+      <h4 id="accrual-accounting">Accrual Accounting</h4>
+      <ul>
+        <li>
+          <p>Revenue is recorded when it is earned, regardless of when cash is received.</p>
+        </li>
+        <li>
+          <p>Expenses are recorded when they are incurred, not necessarily when they are paid.</p>
+        </li>
+        <li>
+          <p>This method follows the principle of recognizing transactions when they occur.</p>
+        </li>
+        <li>
+          <p>Example: Selling an item on December 30 does require recognizing revenue in the financials for that year,
+            even without payment.</p>
+        </li>
+      </ul>
+      <h3 id="classification-of-expenses">Classification of Expenses</h3>
+      <p>Expenses can be broadly categorized into three types:</p>
+      <ol>
+        <li>
+          <p><strong>Operating Expenses (OPEX)</strong>:</p>
+          <ul>
+            <li>
+              <p>Expenses tied directly to revenue generation.</p>
+            </li>
+            <li>
+              <p>Examples: Labor, materials.</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Financing Expenses (FINEX)</strong>:</p>
+          <ul>
+            <li>
+              <p>Costs related to capital not derived from equity.</p>
+            </li>
+            <li>
+              <p>Examples: Interest on loans or debt.</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Capital Expenses (CAPEX)</strong>:</p>
+          <ul>
+            <li>
+              <p>Long-term investments that provide benefits over years.</p>
+            </li>
+            <li>
+              <p>Examples: Buildings, machinery.</p>
+            </li>
+          </ul>
+        </li>
+      </ol>
+      <h3 id="income-statement-structure">Income Statement Structure</h3>
+      <p>The typical income statement follows this structure: <br /><span class="math display">Net
+          Income = Revenue − Cost
+          of Goods Sold (COGS) − Operating Expenses − Financing Expenses − Taxes</span><br /></p>
+      <h4 id="income-statement-breakdown">Income Statement Breakdown</h4>
+      <p><strong>1. Revenues:</strong> Total sales minus returns and discounts. <strong>2. Cost of Goods Sold
+          (COGS):</strong> Direct costs associated with producing the products/services. <strong>3. Gross
+          Profit:</strong>
+        <br /><span class="math display">Gross Profit = Revenue − COGS</span><br /> <strong>4. Operating
+          Profit:</strong>
+        <br /><span class="math display">Operating Profit = Gross Profit − Operating Expenses</span><br /> <strong>5.
+          Taxable Income:</strong> <br /><span class="math display">Taxable Income = Operating Profit − Financing
+          Expenses</span><br /> <strong>6. Net Income:</strong> <br /><span class="math display">Net Income = Taxable
+          Income − Taxes</span><br />
+      </p>
+      <h4 id="revenue-recognition-challenges">Revenue Recognition Challenges</h4>
+      <ul>
+        <li>
+          <p><strong>Long-term Contracts :</strong> Revenue from contracts spanning multiple years is often recognized
+            proportionately to the service provided.</p>
+        </li>
+        <li>
+          <p><strong>Example:</strong> A three-year software contract requires splitting revenue over the contract
+            duration.</p>
+        </li>
+        <li>
+          <p><strong>Geographical Breakdown :</strong> Companies need to report revenue sources by geographical
+            location.
+          </p>
+        </li>
+        <li>
+          <p><strong>Segment Reporting :</strong> Companies may need to separate revenue based on different business
+            segments.</p>
+        </li>
+      </ul>
+      <h3 id="cost-of-goods-sold-and-operating-expenses">Cost of Goods Sold and Operating Expenses</h3>
+      <ul>
+        <li>
+          <p><strong>Cost of Goods Sold (COGS)</strong>: Directly linked to product/service creation.</p>
+        </li>
+        <li>
+          <p><strong>Other Operating Expenses</strong>: Include selling, general, and administrative costs (SG&amp;A),
+            which cannot be directly traced to specific products.</p>
+        </li>
+      </ul>
+      <h4 id="depreciation">Depreciation</h4>
+      <p>Depreciation is a way to allocate capital expenses over time.</p>
+      <ul>
+        <li>
+          <p><strong>Economic Depreciation</strong>: Reflects actual loss of asset value over time.</p>
+        </li>
+        <li>
+          <p><strong>Accounting Depreciation</strong>: - <em>Straight-Line Depreciation</em>: <br /><span
+              class="math display">$$\text{Annual Depreciation} = \frac{\text{Asset Value}}{\text{Useful
+              Life}}$$</span><br /></p>
+        </li>
+        <li>
+          <p><strong>Tax Depreciation</strong>: Focuses on minimizing taxable income rather than reflecting true asset
+            value.</p>
+        </li>
+      </ul>
+      <h3 id="financing-expenses">Financing Expenses</h3>
+      <ul>
+        <li>
+          <p>Interest Expense : Typically charged on loans or bonds.</p>
+        </li>
+        <li>
+          <p>Can also include implicit financing charges from leases treated as debt.</p>
+        </li>
+      </ul>
+      <h4 id="non-operating-income">Non-operating Income</h4>
+      <ul>
+        <li>
+          <p>Income from non-operating activities is listed below operating income and can include:</p>
+        </li>
+        <li>
+          <p>Interest income and minority investment income.</p>
+        </li>
+      </ul>
+      <h3 id="extraordinary-items">Extraordinary Items</h3>
+      <ul>
+        <li>
+          <p>Defined as non-recurring income or expenses that should be separated from typical income to avoid skewing
+            financial results.</p>
+        </li>
+        <li>
+          <p>Caution is advised if extraordinary items appear regularly, as they may not be truly extraordinary.</p>
+        </li>
+      </ul>
+      <h3 id="pro-forma-statements">Pro Forma Statements</h3>
+      <ul>
+        <li>
+          <p>Companies may provide pro forma income statements, which adjust accounting expenses for more favorable
+            interpretations.</p>
+        </li>
+        <li>
+          <p>Important for investors to scrutinize these adjustments for validity.</p>
+        </li>
+      </ul>
+      <h3 id="conclusion-1">Conclusion</h3>
+      <p>The final goal of an income statement is to provide a clear picture of a company’s earnings through various
+        classifications of income and expenses, adhering to generally accepted accounting principles (GAAP).
+        Understanding
+        these classifications and their impact on reported net income is crucial for informed financial analysis.</p>
+      <h1 id="income-statements-across-company-life-cycles">Income Statements Across Company Life Cycles</h1>
+      <h3 id="introduction-1">Introduction</h3>
+      <p>This document aims to provide detailed notes on income statements, highlighting differences and commonalities
+        across companies at various stages in their life cycles. The discussion focuses on how income statements reflect
+        the growth and maturity of companies and includes case studies of specific companies.</p>
+      <h3 id="company-life-cycle-overview">Company Life Cycle Overview</h3>
+      <p>Companies, much like living organisms, undergo a life cycle consisting of the following phases:</p>
+      <ul>
+        <li>
+          <p><strong>Birth</strong> – Initial formation and establishment.</p>
+        </li>
+        <li>
+          <p><strong>Growth</strong> – Rapidly increasing revenues, often experiencing high revenue growth rates.</p>
+        </li>
+        <li>
+          <p><strong>Maturity</strong> – Stabilization of revenues and profit margins.</p>
+        </li>
+        <li>
+          <p><strong>Decline</strong> – Decreasing revenues and potential losses, leading to possible dissolution or
+            transformation.</p>
+        </li>
+      </ul>
+      <h3 id="key-components-of-income-statements">Key Components of Income Statements</h3>
+      <p>The main components of an income statement typically include:</p>
+      <ul>
+        <li>
+          <p>Revenues (Sales)</p>
+        </li>
+        <li>
+          <p>Cost of Goods Sold (COGS)</p>
+        </li>
+        <li>
+          <p>Gross Profit (GP)</p>
+        </li>
+        <li>
+          <p>Operating Expenses (including R&amp;D, Selling, General and Administrative costs)</p>
+        </li>
+        <li>
+          <p>Operating Income</p>
+        </li>
+        <li>
+          <p>Net Income</p>
+        </li>
+      </ul>
+      <h4 id="common-equations-and-definitions">Common Equations and Definitions</h4>
+      <ul>
+        <li>
+          <p><strong>Gross Profit</strong>: <br /><span
+              class="math display"><em>G</em><em>P</em> = <em>R</em><em>e</em><em>v</em><em>e</em><em>n</em><em>u</em><em>e</em><em>s</em> − <em>C</em><em>O</em><em>G</em><em>S</em></span><br />
+          </p>
+        </li>
+        <li>
+          <p><strong>Operating Income</strong>: <br /><span
+              class="math display"><em>O</em><em>p</em><em>e</em><em>r</em><em>a</em><em>t</em><em>i</em><em>n</em><em>g</em> <em>I</em><em>n</em><em>c</em><em>o</em><em>m</em><em>e</em> = <em>G</em><em>r</em><em>o</em><em>s</em><em>s</em> <em>P</em><em>r</em><em>o</em><em>f</em><em>i</em><em>t</em> − <em>O</em><em>p</em><em>e</em><em>r</em><em>a</em><em>t</em><em>i</em><em>n</em><em>g</em> <em>E</em><em>x</em><em>p</em><em>e</em><em>n</em><em>s</em><em>e</em><em>s</em></span><br />
+          </p>
+        </li>
+        <li>
+          <p><strong>Net Income</strong>: <br /><span
+              class="math display"><em>N</em><em>e</em><em>t</em> <em>I</em><em>n</em><em>c</em><em>o</em><em>m</em><em>e</em> = <em>O</em><em>p</em><em>e</em><em>r</em><em>a</em><em>t</em><em>i</em><em>n</em><em>g</em> <em>I</em><em>n</em><em>c</em><em>o</em><em>m</em><em>e</em> − <em>I</em><em>n</em><em>t</em><em>e</em><em>r</em><em>e</em><em>s</em><em>t</em> <em>E</em><em>x</em><em>p</em><em>e</em><em>n</em><em>s</em><em>e</em><em>s</em> − <em>T</em><em>a</em><em>x</em><em>e</em><em>s</em></span><br />
+          </p>
+        </li>
+      </ul>
+      <h3 id="case-studies">Case Studies</h3>
+      <h4 id="peloton">Peloton</h4>
+      <ul>
+        <li>
+          <p><strong>Overview</strong>: Peloton is a young company focused on high-end exercise bikes and subscription
+            services.</p>
+        </li>
+        <li>
+          <p><strong>Income Statement Highlights</strong>:</p>
+          <ul>
+            <li>
+              <p>Rapid revenue growth from $XX in 2017 to $YY in 2019 (doubling each year).</p>
+            </li>
+            <li>
+              <p>High gross profits due to the nature of the product.</p>
+            </li>
+            <li>
+              <p><strong>Net Income</strong>: Negative due to high operating expenses.</p>
+            </li>
+            <li>
+              <p>R&amp;D expenses are significant but may not be treated as operating expenses.</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h4 id="netflix">Netflix</h4>
+      <ul>
+        <li>
+          <p><strong>Overview</strong>: Netflix is a more mature growth company with a larger revenue base.</p>
+        </li>
+        <li>
+          <p><strong>Income Statement Highlights</strong>:</p>
+          <ul>
+            <li>
+              <p>Revenue growth at a slower rate than Peloton, yet impressive given the base.</p>
+            </li>
+            <li>
+              <p>Technology and development treated as operating expenses.</p>
+            </li>
+            <li>
+              <p><strong>Net Income</strong>: Positive as the company is beyond the youthful phase of high primary
+                expenses.</p>
+            </li>
+            <li>
+              <p>Basic vs. Diluted net income explained as: <br /><span class="math display">$$\text{Basic Net Income} =
+                  \frac{\text{Net Income}}{\text{Shares Outstanding}}$$</span><br /> <br /><span
+                  class="math display">$$\text{Diluted Net Income} = \frac{\text{Net Income}}{\text{Shares Outstanding +
+                  Potential Shares}}$$</span><br /></p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h4 id="coca-cola">Coca-Cola</h4>
+      <ul>
+        <li>
+          <p><strong>Overview</strong>: Coca-Cola has transitioned from a growth company to a mature company.</p>
+        </li>
+        <li>
+          <p><strong>Income Statement Highlights</strong>:</p>
+          <ul>
+            <li>
+              <p>Revenue growth is very low, indicating maturity.</p>
+            </li>
+            <li>
+              <p>Major expenses include Selling, General and Administrative (SG&amp;A).</p>
+            </li>
+            <li>
+              <p>Comparison of expenses reveals that SG&amp;A is nearly equivalent to COGS.</p>
+            </li>
+            <li>
+              <p><strong>Equity Income</strong>: Reflects contributions from subsidiary holdings.</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h4 id="toyota-declining-company">Toyota (Declining Company)</h4>
+      <ul>
+        <li>
+          <p><strong>Overview</strong>: Traditional automobile companies like Toyota face decline due to market shifts.
+          </p>
+        </li>
+        <li>
+          <p><strong>Income Statement Highlights</strong>:</p>
+          <ul>
+            <li>
+              <p>Declining revenues in 2020 compared to 2019.</p>
+            </li>
+            <li>
+              <p>Financing operation revenues and expenses are part of the income statement mapping the integrated bank
+                function.</p>
+            </li>
+            <li>
+              <p>Foreign exchange losses impact the income statement significantly.</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h3 id="sector-specific-considerations">Sector-Specific Considerations</h3>
+      <p>Accounting principles are generally consistent but unique line items may appear depending on the company
+        sector:
+      </p>
+      <ul>
+        <li>
+          <p><strong>Commodity Companies</strong>: E.g., Total (French oil company)</p>
+          <ul>
+            <li>
+              <p>Subtraction of excise taxes from revenues.</p>
+            </li>
+            <li>
+              <p>Exploration costs treated as operating expenses.</p>
+            </li>
+            <li>
+              <p>Non-controlling interest items are similar to equity income in cross-holdings.</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Financial Services</strong>: E.g., HSBC</p>
+          <ul>
+            <li>
+              <p>Interest income and expenses dominate the income statement.</p>
+            </li>
+            <li>
+              <p>Operating income is less relevant compared to net profit.</p>
+            </li>
+            <li>
+              <p>Provisions for bad debts are key.</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Pharmaceuticals</strong>: E.g., Dr. Reddy’s Lab</p>
+          <ul>
+            <li>
+              <p>Significant R&amp;D costs often treated as operating expenses, which misrepresents true profit levels.
+              </p>
+            </li>
+            <li>
+              <p><strong>R&amp;D should ideally be treated as a capital asset and amortized over time.</strong></p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h3 id="conclusion-2">Conclusion</h3>
+      <p>Understanding income statements requires consideration of the lifecycle stage of a company and the sector in
+        which it operates. Each sector features unique line items that reflect operational realities. Evaluating
+        financial
+        performance necessitates adjusting for these variations as companies evolve.</p>
+      <h1 id="balance-sheet-1">Balance Sheet</h1>
+      <h3 id="introduction-2">Introduction</h3>
+      <p>In this session, we explore the concept of balance sheets in accounting, outlining two primary perspectives on
+        their purpose:</p>
+      <ul>
+        <li>
+          <p>Record of capital invested in assets (historical cost)</p>
+        </li>
+        <li>
+          <p>Reflection of current market value or liquidation value of assets</p>
+        </li>
+      </ul>
+      <p>These dual perspectives illustrate the complexity and the potential discrepancies in balance sheet accounting.
+      </p>
+      <h3 id="types-of-assets">Types of Assets</h3>
+      <p>The balance sheet categorizes assets into several types:</p>
+      <ol>
+        <li>
+          <p><strong>Fixed Assets:</strong> Physical assets with long lives.</p>
+        </li>
+        <li>
+          <p><strong>Current Assets:</strong> Assets with a life of less than one year.</p>
+        </li>
+        <li>
+          <p><strong>Financial Assets:</strong> Investments in securities or other companies.</p>
+        </li>
+        <li>
+          <p><strong>Intangible Assets:</strong> Non-physical assets like brand names.</p>
+        </li>
+      </ol>
+      <h4 id="fixed-and-current-assets">Fixed and Current Assets</h4>
+      <p><strong>Old Method vs. Fair Value Accounting</strong>:</p>
+      <ul>
+        <li>
+          <p>Old Method: Record fixed assets at the purchase price less accumulated depreciation. <br /><span
+              class="math display">Net Book Value = Purchase Price − Accumulated Depreciation</span><br /></p>
+        </li>
+        <li>
+          <p>Fair Value Accounting: Record fixed assets based on their current market value.</p>
+        </li>
+      </ul>
+      <h4 id="financial-assets">Financial Assets</h4>
+      <p>The accounting treatment depends on the type of securities:</p>
+      <ul>
+        <li>
+          <p><strong>Publicly Traded Securities:</strong> Reflect market value.</p>
+        </li>
+        <li>
+          <p><strong>Holdings in Other Companies:</strong> - Minority stakes: Use the equity method, report
+            proportionate
+            income/loss. - Majority stakes: Consolidate financial statements with 100% revenue/reporting.</p>
+        </li>
+      </ul>
+      <h4 id="intangible-assets">Intangible Assets</h4>
+      <ul>
+        <li>
+          <p>Significant intangible assets include brand equity and technological advantages.</p>
+        </li>
+        <li>
+          <p><strong>Goodwill:</strong> The primary intangible asset recorded is goodwill, which arises from
+            acquisitions
+            and reflects the premium paid over the book value.</p>
+        </li>
+        <li>
+          <p>Goodwill is problematic as it often does not reflect true underlying value and can lead to distortions.</p>
+        </li>
+      </ul>
+      <h1 id="understanding-balance-sheets-across-the-corporate-life-cycle">Understanding Balance Sheets Across the
+        Corporate Life Cycle</h1>
+      <h3 id="introduction-3">Introduction</h3>
+      <p>In this session, we will explore how balance sheets evolve through the different stages of a company’s
+        corporate
+        life cycle. This analysis will demonstrate how balance sheets reflect the financial position and history of
+        companies at various maturity levels.</p>
+      <h3 id="corporate-life-cycle-stages">Corporate Life Cycle Stages</h3>
+      <p>The corporate life cycle includes the following stages:</p>
+      <h4 id="young-company">1. Young Company</h4>
+      <ul>
+        <li>
+          <p><strong>Asset Base:</strong> Small but growing rapidly.</p>
+        </li>
+        <li>
+          <p><strong>Debt:</strong> Very little or no debt, as it is often viewed as a last resort.</p>
+        </li>
+        <li>
+          <p><strong>Shareholders’ Equity:</strong> Can be negative due to accumulated losses.</p>
+        </li>
+      </ul>
+      <h4 id="growth-company">2. Growth Company</h4>
+      <ul>
+        <li>
+          <p><strong>Asset Base:</strong> Still small but continuing to grow quickly.</p>
+        </li>
+        <li>
+          <p><strong>Debt:</strong> Remains low or non-existent.</p>
+        </li>
+        <li>
+          <p><strong>Shareholders’ Equity:</strong> Likely to become positive due to new equity inflows (e.g., from
+            venture capital).</p>
+        </li>
+      </ul>
+      <h4 id="mature-growth-company">3. Mature Growth Company</h4>
+      <ul>
+        <li>
+          <p><strong>Asset Base:</strong> Stabilizes as growth slows.</p>
+        </li>
+        <li>
+          <p><strong>Debt:</strong> May begin to increase as the company finances growth.</p>
+        </li>
+        <li>
+          <p><strong>Shareholders’ Equity:</strong> Increases due to retained earnings.</p>
+        </li>
+      </ul>
+      <h4 id="mature-stable-company">4. Mature Stable Company</h4>
+      <ul>
+        <li>
+          <p><strong>Asset Base:</strong> Stabilizes and may be large.</p>
+        </li>
+        <li>
+          <p><strong>Debt:</strong> Often high and growing, used to finance dividends or share buybacks.</p>
+        </li>
+        <li>
+          <p><strong>Shareholders’ Equity:</strong> May shrink if the company returns substantial cash to shareholders.
+          </p>
+        </li>
+      </ul>
+      <h4 id="declining-company">5. Declining Company</h4>
+      <ul>
+        <li>
+          <p><strong>Asset Base:</strong> Begins to decline.</p>
+        </li>
+        <li>
+          <p><strong>Debt:</strong> Should decline in line with assets to avoid financial distress.</p>
+        </li>
+        <li>
+          <p><strong>Shareholders’ Equity:</strong> Declines as a result of losses.</p>
+        </li>
+      </ul>
+      <h3 id="case-studies-1">Case Studies</h3>
+      <p>To illustrate these concepts, we will analyze the balance sheets of four companies at different stages of their
+        life cycle.</p>
+      <h4 id="peloton-young-company">1. Peloton (Young Company)</h4>
+      <ul>
+        <li>
+          <p><strong>Total Assets:</strong> Grew from $271 million to $865 million.</p>
+        </li>
+        <li>
+          <p><strong>Shareholders’ Equity:</strong> Initially negative due to sustained losses.</p>
+        </li>
+        <li>
+          <p><strong>Largest Asset:</strong> Cash and marketable securities.</p>
+        </li>
+        <li>
+          <p><strong>Value Reflection:</strong> Future growth not accurately reflected in assets.</p>
+        </li>
+      </ul>
+      <h4 id="netflix-growth-company">2. Netflix (Growth Company)</h4>
+      <ul>
+        <li>
+          <p><strong>Largest Asset:</strong> Non-current content cost, reflecting owned media content.</p>
+        </li>
+        <li>
+          <p><strong>Deferred Revenue:</strong> Represents subscriptions collected, showing future services owed.</p>
+        </li>
+        <li>
+          <p><strong>Common Stock:</strong> Par value indicated but largely obsolete in relevance.</p>
+        </li>
+      </ul>
+      <h4 id="coca-cola-mature-company">3. Coca-Cola (Mature Company)</h4>
+      <ul>
+        <li>
+          <p><strong>Total Assets:</strong> Substantial but growing slowly, indicating maturity.</p>
+        </li>
+        <li>
+          <p><strong>Equity Method Investments:</strong> Valuations in other companies, requiring caution in
+            interpretation.</p>
+        </li>
+        <li>
+          <p><strong>Goodwill:</strong> Arises from acquisitions but lacks intrinsic value.</p>
+        </li>
+        <li>
+          <p><strong>Treasury Stock:</strong> Reflects share repurchase impacting equity.</p>
+        </li>
+      </ul>
+      <h4 id="toyota-mature-stable-company">4. Toyota (Mature Stable Company)</h4>
+      <ul>
+        <li>
+          <p><strong>Total Assets:</strong> Nearly stable; reflective of established operations.</p>
+        </li>
+        <li>
+          <p><strong>Finance Receivables:</strong> Company finances purchases via loans, impacting cash flows.</p>
+        </li>
+        <li>
+          <p><strong>Accrued Pension Costs:</strong> Show obligations that vary by country.</p>
+        </li>
+      </ul>
+      <h3 id="sector-specific-observations">Sector-Specific Observations</h3>
+      <h4 id="commodity-companies-example-total">Commodity Companies (Example: Total)</h4>
+      <ul>
+        <li>
+          <p><strong>Inventory Pricing:</strong> Significant fluctuations; oil prices can heavily affect asset values.
+          </p>
+        </li>
+      </ul>
+      <h4 id="financial-institutions-example-hsbc">Financial Institutions (Example: HSBC)</h4>
+      <ul>
+        <li>
+          <p><strong>Financial Assets:</strong> Easier to value, more transparency in asset valuation.</p>
+        </li>
+        <li>
+          <p><strong>Non-controlling Interests:</strong> Book value of minority interests in consolidated companies.</p>
+        </li>
+      </ul>
+      <h4 id="pharmaceutical-companies-example-dr.-reddys-labs">Pharmaceutical Companies (Example: Dr. Reddy’s Labs)
+      </h4>
+      <ul>
+        <li>
+          <p><strong>Intangible Assets:</strong> R&amp;D and patents often not represented in balance sheet.</p>
+        </li>
+      </ul>
+      <h3 id="conclusions">Conclusions</h3>
+      <ul>
+        <li>
+          <p><strong>Historical Reflection:</strong> Balance sheets reflect a company’s past, indicating its maturity
+            and
+            growth stage.</p>
+        </li>
+        <li>
+          <p><strong>Fair Value Accounting Controversies:</strong> Balances neither reflect historical cost nor current
+            market value effectively.</p>
+        </li>
+        <li>
+          <p><strong>Investor Awareness:</strong> It’s essential to scrutinize financial statements for discrepancies in
+            values presented.</p>
+        </li>
+      </ul>
+      <h1 id="statement-of-cash-flows-1">Statement of Cash Flows</h1>
+      <h3 id="introduction-4">Introduction</h3>
+      <p>Having discussed Income Statements and Balance Sheets, we now turn to the third essential financial statement:
+        the Statement of Cash Flows (SCF). The SCF provides critical insight into how cash flows are generated and used
+        in
+        a company.</p>
+      <h3 id="objectives-of-the-statement-of-cash-flows">Objectives of the Statement of Cash Flows</h3>
+      <p>The primary objectives of the SCF are:</p>
+      <ul>
+        <li>
+          <p>To explain how much the cash balance of a company changed during a certain period.</p>
+        </li>
+        <li>
+          <p>To provide insights into:</p>
+          <ul>
+            <li>
+              <p>Cash flows from operations</p>
+            </li>
+            <li>
+              <p>Cash flows from investing</p>
+            </li>
+            <li>
+              <p>Cash flows from financing</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h3 id="structure-of-the-statement-of-cash-flows">Structure of the Statement of Cash Flows</h3>
+      <p>The SCF is typically divided into three sections:</p>
+      <ol>
+        <li>
+          <p><strong>Cash Flows from Operations (CFO)</strong></p>
+        </li>
+        <li>
+          <p><strong>Cash Flows from Investing (CFI)</strong></p>
+        </li>
+        <li>
+          <p><strong>Cash Flows from Financing (CFF)</strong></p>
+        </li>
+      </ol>
+      <h3 id="cash-flows-from-operations">Cash Flows from Operations</h3>
+      <p>Cash flows from operations typically start with <strong>Net Income</strong>: <br /><span
+          class="math display">CFO = Net Income + Non-Cash Charges − Change in Non-Cash Working Capital</span><br /></p>
+      <h4 id="adjustments-to-net-income">Adjustments to Net Income</h4>
+      <p>To convert Net Income into Cash Flows from Operations:</p>
+      <ul>
+        <li>
+          <p>Add back non-cash expenses:</p>
+          <ul>
+            <li>
+              <p>Depreciation</p>
+            </li>
+            <li>
+              <p>Amortization</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>Subtract changes in non-cash working capital:</p>
+          <ul>
+            <li>
+              <p>Increase in Accounts Receivable: Decrease in Cash Flow</p>
+            </li>
+            <li>
+              <p>Increase in Inventory: Decrease in Cash Flow</p>
+            </li>
+            <li>
+              <p>Increase in Accounts Payable: Increase in Cash Flow</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h4 id="non-cash-working-capital">Non-Cash Working Capital</h4>
+      <p><strong>Non-Cash Working Capital</strong> is the difference between current assets and liabilities, excluding
+        cash and cash equivalents. It affects cash flow as follows: <br /><span class="math display">Change in Non-Cash
+          Working Capital = <em>Δ</em>Accounts Receivable + <em>Δ</em>Inventory − <em>Δ</em>Accounts
+          Payable</span><br />
+      </p>
+      <h3 id="cash-flows-from-investing">Cash Flows from Investing</h3>
+      <p>Cash flows from investing reflect the investments made by the company. This section can include:</p>
+      <ul>
+        <li>
+          <p>Cash spent on capital expenditures (CAPEX): <br /><span class="math display">Net Investment in Operating
+              Assets = CAPEX − Cash Proceeds from Sale of Assets</span><br /></p>
+        </li>
+        <li>
+          <p>Cash spent on non-operating investments (e.g., marketable securities, other companies).</p>
+        </li>
+      </ul>
+      <h3 id="cash-flows-from-financing">Cash Flows from Financing</h3>
+      <p>Cash flows from financing arise from activities that fund the business. This section is broken down into:</p>
+      <ul>
+        <li>
+          <p><strong>Cash Flows to/from Debt</strong>: <br /><span class="math display">$$\begin{aligned}
+              \text{Net Cash Flow from Debt} &amp;= \text{Cash Inflow from New Debt} - \text{Cash Outflow from Debt
+              Repayment}
+              \end{aligned}$$</span><br /></p>
+        </li>
+        <li>
+          <p><strong>Cash Flows to/from Equity</strong>: <br /><span class="math display">$$\begin{aligned}
+              \text{Net Cash Flow from Equity} &amp;= \text{Cash Inflow from Issuance} - (\text{Cash Outflow for
+              Dividends
+              + Cash Outflow for Buybacks})
+              \end{aligned}$$</span><br /></p>
+        </li>
+      </ul>
+      <h3 id="key-comparisons-in-cash-flows">Key Comparisons in Cash Flows</h3>
+      <p>When analyzing cash flows, compare the following:</p>
+      <ul>
+        <li>
+          <p><strong>Depreciation (CFO)</strong> vs. <strong>Capital Expenditures (CFI)</strong>: Companies with growth
+            should show CAPEX greater than depreciation.</p>
+        </li>
+        <li>
+          <p>Keep in mind that certain acquisitions may not reflect in cash flows if paid with equity, limiting the
+            visibility of cash transactions.</p>
+        </li>
+      </ul>
+      <h3 id="potential-dividends-from-cash-flows">Potential Dividends from Cash Flows</h3>
+      <p>The free cash flow available for dividends or stock buybacks can be calculated as follows: <br /><span
+          class="math display">Free Cash Flow to Equity = CFO − Capital Expenditures + Cash Inflows − Debt
+          Payments</span><br /></p>
+      <h3 id="conclusion-3">Conclusion</h3>
+      <p>The Statement of Cash Flows distinguishes itself by emphasizing cash movements rather than accrual accounting.
+        It
+        is essential for understanding the real cash position of a company and potential returns to investors.</p>
+      <h1 id="understanding-statements-of-cash-flows">Understanding Statements of Cash Flows</h1>
+      <h3 id="introduction-5">Introduction</h3>
+      <p>A statement of cash flows summarizes the cash generated and used during a specific period. It divides cash
+        flows
+        into three main sections: Operating, Investing, and Financing. Understanding these cash flows helps in analyzing
+        the financial health and trajectory of a company.</p>
+      <h3 id="lifecycle-perspective-of-companies">Lifecycle Perspective of Companies</h3>
+      <p>Companies typically undergo several stages in their lifecycle, which influences their statement of cash flows:
+      </p>
+      <h4 id="young-companies">1. Young Companies</h4>
+      <ul>
+        <li>
+          <p><strong>Operating Cash Flows:</strong> Negative</p>
+        </li>
+        <li>
+          <p><strong>Investing Cash Flows:</strong> Negative (investment for future growth)</p>
+        </li>
+        <li>
+          <p><strong>Financing Cash Flows:</strong> Positive (raising equity/debt)</p>
+        </li>
+      </ul>
+      <p><br /><span class="math display">Operating CF &lt; 0,  Investing CF &lt; 0,  Financing CF &gt; 0</span><br />
+      </p>
+      <h4 id="growth-phase">2. Growth Phase</h4>
+      <ul>
+        <li>
+          <p><strong>Operating Cash Flows:</strong> May turn positive</p>
+        </li>
+        <li>
+          <p><strong>Investing Cash Flows:</strong> Continues to be negative</p>
+        </li>
+        <li>
+          <p><strong>Financing Cash Flows:</strong> Neutral (stabilizes financing activities)</p>
+        </li>
+      </ul>
+      <p><br /><span class="math display">Operating CF ≥ 0,  Investing CF &lt; 0,  Financing CF ≈ 0</span><br /></p>
+      <h4 id="mature-companies">3. Mature Companies</h4>
+      <ul>
+        <li>
+          <p><strong>Operating Cash Flows:</strong> Positive</p>
+        </li>
+        <li>
+          <p><strong>Investing Cash Flows:</strong> Stabilizes with maintenance investments</p>
+        </li>
+        <li>
+          <p><strong>Financing Cash Flows:</strong> Positive net inflows from debt and dividends</p>
+        </li>
+      </ul>
+      <p><br /><span class="math display">Operating CF &gt; 0,  Investing CF stable,  Financing CF &gt; 0</span><br />
+      </p>
+      <h4 id="decline-phase">4. Decline Phase</h4>
+      <ul>
+        <li>
+          <p><strong>Operating Cash Flows:</strong> Decline</p>
+        </li>
+        <li>
+          <p><strong>Investing Cash Flows:</strong> May turn positive (selling assets)</p>
+        </li>
+        <li>
+          <p><strong>Financing Cash Flows:</strong> Debt repayments increase</p>
+        </li>
+      </ul>
+      <p><br /><span class="math display">Operating CF &lt; 0,  Investing CF &gt; 0,  Financing CF net
+          outflows</span><br /></p>
+      <h3 id="case-studies-of-cash-flows-from-actual-companies">Case Studies of Cash Flows from Actual Companies</h3>
+      <h4 id="a.-peloton">A. Peloton</h4>
+      <ul>
+        <li>
+          <p><strong>Operating Cash Flows:</strong> Negative due to early-stage business</p>
+        </li>
+        <li>
+          <p><strong>Investing Cash Flows:</strong> Negative</p>
+        </li>
+        <li>
+          <p><strong>Financing Cash Flows:</strong> Positive due to <span class="math inline">539</span> million in new
+            equity raised</p>
+        </li>
+      </ul>
+      <p><br /><span class="math display">Operating CF &lt; 0,  Investing CF &lt; 0,  Financing CF &gt; 0</span><br />
+      </p>
+      <h4 id="b.-netflix">B. Netflix</h4>
+      <ul>
+        <li>
+          <p><strong>Operating Cash Flows:</strong> Negative due to high content expenses (<span
+              class="math inline">13.9</span> billion)</p>
+        </li>
+        <li>
+          <p><strong>Investing Cash Flows:</strong> Limited</p>
+        </li>
+        <li>
+          <p><strong>Financing Cash Flows:</strong> Increased borrowing to fund operations</p>
+        </li>
+      </ul>
+      <p><br /><span class="math display">Operating CF &lt; 0,  Investing CF ≈ 0,  Financing CF &gt; 0</span><br /></p>
+      <h4 id="c.-coca-cola">C. Coca-Cola</h4>
+      <ul>
+        <li>
+          <p><strong>Operating Cash Flows:</strong> Strong positive due to net income (<span
+              class="math inline">8.99</span> billion)</p>
+        </li>
+        <li>
+          <p><strong>Investing Cash Flows:</strong> Consolidated additional spending</p>
+        </li>
+        <li>
+          <p><strong>Financing Cash Flows:</strong> Borrowing and cash outflows from dividends (<span
+              class="math inline">6.8</span> billion)</p>
+        </li>
+      </ul>
+      <p><br /><span class="math display">Operating CF &gt; 0,  Investing CF consolidated,  Financing CF inflows and
+          outflows</span><br /></p>
+      <h4 id="d.-toyota">D. Toyota </h4>
+      <ul>
+        <li>
+          <p><strong>Deferred Income Taxes:</strong> Negative cash flows indicate tax payments from prior years.</p>
+        </li>
+        <li>
+          <p><strong>Financing Cash Flows:</strong> Cash flows indicating dividends paid to shareholders.</p>
+        </li>
+      </ul>
+      <p><br /><span class="math display">Deferred Taxes &lt; 0,  Dividends &lt; 0</span><br /></p>
+      <h4 id="e.-total-oil-company">E. Total (Oil Company)</h4>
+      <ul>
+        <li>
+          <p><strong>Depreciation/Amortization:</strong> Significant impact on cash flow despite net losses.</p>
+        </li>
+        <li>
+          <p><strong>Investing Cash Flows:</strong> Regular disposals as part of operations.</p>
+        </li>
+      </ul>
+      <p><br /><span class="math display">Depreciation impacts cash, Investing CF regular disposals</span><br /></p>
+      <h4 id="f.-pharmaceutical-companies-e.g.-dr.-reddys-lab">F. Pharmaceutical Companies (e.g., Dr. Reddy’s Lab)</h4>
+      <ul>
+        <li>
+          <p><strong>R&amp;D as Investing Cash Flow:</strong> Major investments are hidden within operating expenses.
+          </p>
+        </li>
+        <li>
+          <p><strong>Investing Activities:</strong> Lackluster due to R&amp;D being accounted for in net income.</p>
+        </li>
+      </ul>
+      <p><br /><span class="math display">Investing CF not capturing R&amp;D</span><br /></p>
+      <h3 id="conclusion-4">Conclusion</h3>
+      <p>The statement of cash flows is a crucial document that details a company’s cash inflows and outflows. Analyzing
+        cash flows according to the lifecycle of the company can provide valuable insights into operational efficiency,
+        investment strategies, and financing practices. Each section—Operating, Investing, and Financing—offers unique
+        insights into the company’s financial health.</p>
+      <h1 id="general-notes-on-accounting-and-financial-statements">General Notes on Accounting and Financial Statements
+      </h1>
+      <h3 id="introduction-6">Introduction</h3>
+      <p>Accounting is a field that has evolved significantly, particularly as economies have shifted from manufacturing
+        to technology and services. This session addresses the need to update our understanding of various accounting
+        issues, especially for modern firms.</p>
+      <h3 id="financial-statements-overview">Financial Statements Overview</h3>
+      <p>Three primary financial statements are critical for analysis:</p>
+      <ul>
+        <li>
+          <p><strong>Income Statement</strong></p>
+        </li>
+        <li>
+          <p><strong>Balance Sheet</strong></p>
+        </li>
+        <li>
+          <p><strong>Statement of Cash Flows</strong></p>
+        </li>
+      </ul>
+      <h3 id="key-issues-to-address">Key Issues to Address</h3>
+      <p>We will discuss four main areas:</p>
+      <ol>
+        <li>
+          <p>Taxes and their reporting</p>
+        </li>
+        <li>
+          <p>Management compensation through stock and options</p>
+        </li>
+        <li>
+          <p>Commitments that resemble debt but are not classified as such</p>
+        </li>
+        <li>
+          <p>Capital expenditures treated as operating expenses</p>
+        </li>
+      </ol>
+      <h3 id="taxes-in-financial-statements">Taxes in Financial Statements</h3>
+      <p>Understanding tax rates is crucial as companies deal with various rates:</p>
+      <ul>
+        <li>
+          <p><strong>Marginal Tax Rate</strong>: <br /><span class="math display">Marginal Tax Rate = Federal
+              Rate + State
+              and Local Rates</span><br /> For U.S. companies post-2017, the federal rate is 21% plus state/local
+            approximations bring it to 24% to 25%.</p>
+        </li>
+        <li>
+          <p><strong>Effective Tax Rate</strong>: <br /><span class="math display">$$\text{Effective Tax Rate} =
+              \frac{\text{Taxes Due}}{\text{Taxable Income}}$$</span><br /> This reflects what the company reports.</p>
+        </li>
+        <li>
+          <p><strong>Cash Tax Rate</strong>: <br /><span class="math display">$$\text{Cash Tax Rate} = \frac{\text{Cash
+              Taxes Paid}}{\text{Income}}$$</span><br /></p>
+        </li>
+      </ul>
+      <p>The three tax rates may diverge due to:</p>
+      <ul>
+        <li>
+          <p>International operations with different marginal tax rates.</p>
+        </li>
+        <li>
+          <p>Legal tax deferral and avoidance strategies.</p>
+        </li>
+      </ul>
+      <h4 id="deferred-taxes">Deferred Taxes</h4>
+      <p>Deferred taxes arise when there’s a difference between what a company reports and what it actually pays:</p>
+      <ul>
+        <li>
+          <p><strong>Deferred Tax Assets</strong> (if paid more in taxes): expected reduction in future tax payments.
+          </p>
+        </li>
+        <li>
+          <p><strong>Deferred Tax Liabilities</strong> (if paid less in taxes): expected increase in future tax
+            payments.
+          </p>
+        </li>
+      </ul>
+      <p>Net Operating Loss (NOL) can be carried forward (up to 20 years) or backward (up to 2 years) affecting future
+        tax
+        strategies.</p>
+      <h3 id="stock-based-compensation">Stock-Based Compensation</h3>
+      <p>Stock-based compensation links management and employee interests with shareholders. It includes:</p>
+      <ul>
+        <li>
+          <p>Stock Options: the right to buy shares at a fixed price.</p>
+        </li>
+        <li>
+          <p>Restricted Stock: shares given but not tradable.</p>
+        </li>
+      </ul>
+      <h4 id="expense-treatment">Expense Treatment</h4>
+      <p>Post-2004, companies must value options at grant date: <br /><span class="math display">Operating
+          Expense = Value
+          of Options Granted</span><br /> Companies should not add back stock-based compensation when calculating cash
+        flows, as it represents a genuine dilution of shares.</p>
+      <h3 id="lease-commitments-as-debt">Lease Commitments as Debt</h3>
+      <p>Leases, especially long-term ones, should be viewed as debt. The distinction between capital leases (treated as
+        debt) and operating leases (treated as expenses) was eliminated in 2019.</p>
+      <h4 id="conversion-process">Conversion Process</h4>
+      <p>To convert lease commitments to debt:</p>
+      <ol>
+        <li>
+          <p>Calculate the present value of future lease payments using the pre-tax cost of borrowing.</p>
+        </li>
+        <li>
+          <p>Record the present value as lease liability on the balance sheet.</p>
+        </li>
+        <li>
+          <p>Create a corresponding intangible asset category for the lease asset.</p>
+        </li>
+      </ol>
+      <p>Operating income must be adjusted by removing lease expenses and adding depreciation.</p>
+      <h3 id="research-and-development-rd-as-capital-expenditure">Research and Development (R&amp;D) as Capital
+        Expenditure</h3>
+      <p>R&amp;D expenditures create long-term benefits and should be capitalized:</p>
+      <ol>
+        <li>
+          <p>Determine amortization life for R&amp;D costs.</p>
+        </li>
+        <li>
+          <p>Collect R&amp;D expenses from prior years.</p>
+        </li>
+        <li>
+          <p>Adjust earnings by adding back R&amp;D and deducting amortization.</p>
+        </li>
+      </ol>
+      <p>This logic can extend to other contractual commitments like advertising, training, and customer acquisition
+        costs.</p>
+      <h3 id="conclusion-5">Conclusion</h3>
+      <p>Traditional accounting frameworks are based on outdated economic conditions. Analysts must adapt financial
+        statements for relevance in today’s economy, ensuring accurate representation of a firm’s financial health.</p>
+      <h1 id="accounting-inconsistencies">Accounting Inconsistencies</h1>
+      <h3 id="overview">Overview</h3>
+      <p>This document presents detailed notes on key accounting inconsistencies, specifically focusing on tax rates,
+        non-debt commitments, capital expenditures, and stockholder-based compensation. Each section discusses the
+        implications of these inconsistencies on financial statements.</p>
+      <h3 id="tax-rates">Tax Rates</h3>
+      <h4 id="effective-tax-rate-calculation">Effective Tax Rate Calculation</h4>
+      <p>Given a set of companies, the effective tax rate can be calculated using:</p>
+      <p><br /><span class="math display">$$\text{Effective Tax Rate} = \frac{\text{Taxes Paid}}{\text{Taxable
+          Income}}$$</span><br /></p>
+      <h4 id="observations">Observations</h4>
+      <ul>
+        <li>
+          <p>Companies like <strong>Peloton</strong> (0%) and <strong>Netflix</strong> (9.5%) exhibit low or zero
+            effective tax rates, typically seen in younger companies.</p>
+        </li>
+        <li>
+          <p><strong>Coca-Cola</strong> pays 16.8%, while <strong>HSBC</strong> pays nearly 35%.</p>
+        </li>
+        <li>
+          <p>Notably, <strong>Dr. Reddy’s Labs</strong> reported a negative tax rate due to a tax credit resulting in a
+            recovery of $1.6 billion.</p>
+        </li>
+      </ul>
+      <h4 id="cash-flow-analysis">Cash Flow Analysis</h4>
+      <p>To understand taxes paid in cash flow terms, reference the cash flow statement alongside the income statement.
+        The actual taxes paid can differ significantly due to deferred taxes:</p>
+      <p><br /><span class="math display">Total Cash Taxes Paid = Taxes from Income Statement + Deferred
+          Taxes</span><br /></p>
+      <h3 id="non-debt-commitments">Non-Debt Commitments</h3>
+      <h4 id="understanding-commitments">Understanding Commitments</h4>
+      <p>Even if contractual obligations (e.g., leases) are not labeled as debt, they represent future cash outflows
+        that
+        need to be accounted for.</p>
+      <h4 id="lease-commitments">Lease Commitments</h4>
+      <p>Historically, lease obligations were treated as operating expenses. However, as of 2019, they are recognized as
+        debt on balance sheets.</p>
+      <p>For instance, <strong>Nordstrom’s</strong> lease commitments in its financial statements were converted into a
+        present value debt figure:</p>
+      <h4 id="present-value-calculation">Present Value Calculation</h4>
+      <p>Assuming an interest rate of 4.7% for discounting future lease payments, the present value (PV) of commitments
+        can be calculated by:</p>
+      <p><br /><span class="math display">$$PV = \sum_{t=1}^{n} \frac{\text{Lease Payment}_t}{(1+r)^t}$$</span><br />
+      </p>
+      <p>This change increases the total debt and total assets on the balance sheet, while operating income will be
+        influenced by depreciation of these lease assets.</p>
+      <h3 id="capital-expenditures">Capital Expenditures</h3>
+      <h4 id="distinction-between-tangible-and-intangible-assets">Distinction Between Tangible and Intangible Assets
+      </h4>
+      <p>Capital expenditures (CapEx) can include both physical (tangible) and non-physical (intangible) investments.
+        Key
+        observations include:</p>
+      <ul>
+        <li>
+          <p>Research and Development (R&amp;D) spending is typically treated as an operating expense rather than CapEx.
+          </p>
+        </li>
+        <li>
+          <p>This accounting treatment results in significant underrepresentation of company assets and overstatement of
+            operating expenses.</p>
+        </li>
+      </ul>
+      <h4 id="amortizing-rd-expenses">Amortizing R&amp;D Expenses</h4>
+      <p>To transform R&amp;D expenses from operating to capital expenses, follow this process:</p>
+      <ol>
+        <li>
+          <p>Estimate the amortizable life of R&amp;D (e.g., 10 years for pharmaceuticals).</p>
+        </li>
+        <li>
+          <p>Calculate the cumulative R&amp;D expenses historically.</p>
+        </li>
+        <li>
+          <p>Calculate annual depreciation based on the estimated amortization.</p>
+        </li>
+      </ol>
+      <p>For example, if \$3.03 billion is reported as R&amp;D expense, and $1.69 billion would be recognized as
+        amortization, then:</p>
+      <p><br /><span class="math display">Effective Income = Reported Income + R&amp;D
+          Expense − Amortization</span><br />
+      </p>
+      <h3 id="stock-based-compensation-1">Stock-Based Compensation</h3>
+      <h4 id="historical-context">Historical Context</h4>
+      <p>Prior to 2004, stock options were often treated as zero value, leading to inconsistencies in reported earnings.
+        Post-2004 standards require the valuation of stock options at issuance.</p>
+      <h4 id="impact-on-financial-statements">Impact on Financial Statements</h4>
+      <p>Consider a company like <strong>Netflix</strong> that reports stock-based compensation. The financial
+        implications include:</p>
+      <ul>
+        <li>
+          <p>Stock-based compensation is now an expense, affecting net income.</p>
+        </li>
+        <li>
+          <p>Accumulative options can dilute earnings per share (EPS).</p>
+        </li>
+      </ul>
+      <p>Quantifying the impact on cash flows can be misleading since stock options result in actual share dilution
+        rather
+        than merely representing non-cash expenses.</p>
+      <h3 id="conclusion-6">Conclusion</h3>
+      <p>In accounting, understanding these inconsistencies helps refine financial analysis. By approaching financial
+        statements with this framework, investors can better assess company performance and value beyond conventional
+        accounting practices.</p>
+      <h1 id="accounting-ratios">Accounting Ratios</h1>
+      <h3 id="introduction-7">Introduction</h3>
+      <p>Accounting ratios are crucial tools for comparing financial performance across companies and over time. Ratios
+        help overcome the limitations of absolute numbers, which can often mislead due to differences in scale among
+        firms.</p>
+      <h3 id="purpose-of-ratios">Purpose of Ratios</h3>
+      <ul>
+        <li>
+          <p>Ratios provide a framework for comparing financial performance of different entities, thus normalizing for
+            size.</p>
+        </li>
+        <li>
+          <p>They help reveal underlying trends in profitability, efficiency, and risk.</p>
+        </li>
+      </ul>
+      <h3 id="profit-margins">Profit Margins</h3>
+      <p>Profit margins scale profits to revenues. They can be classified according to the measure used in the
+        numerator,
+        as follows:</p>
+      <ul>
+        <li>
+          <p><strong>Contribution Margin</strong>: <br /><span class="math display">$$\text{Contribution Margin} =
+              \frac{\text{Sales} - \text{Variable Costs}}{\text{Sales}}$$</span><br /></p>
+        </li>
+        <li>
+          <p><strong>Gross Margin</strong>: <br /><span class="math display">$$\text{Gross Margin} = \frac{\text{Sales}
+              -
+              \text{Cost of Goods Sold}}{\text{Sales}}$$</span><br /></p>
+        </li>
+        <li>
+          <p><strong>Operating Margin</strong>: <br /><span class="math display">$$\text{Operating Margin} =
+              \frac{\text{Operating Income}}{\text{Sales}}$$</span><br /></p>
+        </li>
+        <li>
+          <p><strong>After-tax Operating Margin</strong>: <br /><span class="math display">$$\text{After-tax Operating
+              Margin} = \frac{\text{After-tax Operating Income}}{\text{Sales}}$$</span><br /></p>
+        </li>
+        <li>
+          <p><strong>Net Margin</strong>: <br /><span class="math display">$$\text{Net Margin} = \frac{\text{Net
+              Income}}{\text{Sales}}$$</span><br /></p>
+        </li>
+        <li>
+          <p><strong>EBITDA Margin</strong>: <br /><span class="math display">$$\text{EBITDA Margin} =
+              \frac{\text{EBITDA}}{\text{Sales}}$$</span><br /></p>
+        </li>
+      </ul>
+      <h3 id="understanding-margins">Understanding Margins</h3>
+      <p>Each margin provides insights into different aspects of profitability:</p>
+      <ul>
+        <li>
+          <p><strong>Contribution and Gross Margins</strong> indicate profitability per additional unit sold.</p>
+        </li>
+        <li>
+          <p><strong>Operating Margin</strong> reveals overall business profitability after accounting for fixed costs.
+          </p>
+        </li>
+        <li>
+          <p><strong>EBITDA Margin</strong> is crucial for understanding cash flow generation capacity.</p>
+        </li>
+        <li>
+          <p><strong>Net Margin</strong> shows profitability to equity holders after all expenses and taxes.</p>
+        </li>
+      </ul>
+      <h3 id="accounting-returns">Accounting Returns</h3>
+      <p>Accounting returns measure profit relative to capital invested. They are classified mainly into:</p>
+      <ul>
+        <li>
+          <p><strong>Return on Equity (ROE)</strong>: <br /><span class="math display">$$\text{ROE} = \frac{\text{Net
+              Income}}{\text{Shareholders' Equity}}$$</span><br /></p>
+        </li>
+        <li>
+          <p><strong>Return on Invested Capital (ROIC)</strong>: <br /><span class="math display">$$\text{ROIC} =
+              \frac{\text{Operating Income} \times (1 - \text{Tax Rate})}{\text{Invested Capital}}$$</span><br /></p>
+          <p>Where: <br /><span class="math display">Invested Capital = Debt + Equity − Cash</span><br /></p>
+        </li>
+      </ul>
+      <h3 id="efficiency-ratios">Efficiency Ratios</h3>
+      <p>Efficiency ratios assess how effectively a company utilizes its resources to generate revenue. Common ratios
+        include:</p>
+      <ul>
+        <li>
+          <p><strong>Revenue to Working Capital</strong>: Focuses on how efficiently capital is managed.</p>
+        </li>
+        <li>
+          <p><strong>Asset Turnover Ratio</strong>: <br /><span class="math display">$$\text{Asset Turnover} =
+              \frac{\text{Sales}}{\text{Total Assets}}$$</span><br /></p>
+        </li>
+        <li>
+          <p><strong>Revenue to Invested Capital</strong>: <br /><span class="math display">$$\text{Revenue to Invested
+              Capital} = \frac{\text{Sales}}{\text{Invested Capital}}$$</span><br /></p>
+        </li>
+      </ul>
+      <h3 id="financial-leverage-ratios">Financial Leverage Ratios</h3>
+      <p>Financial leverage ratios depict the extent of a company’s borrowing. Key forms include:</p>
+      <ul>
+        <li>
+          <p><strong>Debt to Equity Ratio</strong>: <br /><span class="math display">$$\text{Debt to Equity} =
+              \frac{\text{Total Debt}}{\text{Shareholders' Equity}}$$</span><br /></p>
+        </li>
+        <li>
+          <p><strong>Debt to Capital Ratio</strong>: <br /><span class="math display">$$\text{Debt to Capital} =
+              \frac{\text{Total Debt}}{\text{Total Debt} + \text{Equity}}$$</span><br /></p>
+        </li>
+        <li>
+          <p><strong>Debt to EBITDA Ratio</strong>: <br /><span class="math display">$$\text{Debt to EBITDA} =
+              \frac{\text{Total Debt}}{\text{EBITDA}}$$</span><br /></p>
+        </li>
+      </ul>
+      <h3 id="liquidity-ratios">Liquidity Ratios</h3>
+      <p>Liquidity ratios help assess a company’s ability to meet short-term obligations. Frequently used types include:
+      </p>
+      <ul>
+        <li>
+          <p><strong>Current Ratio</strong>: <br /><span class="math display">$$\text{Current Ratio} =
+              \frac{\text{Current
+              Assets}}{\text{Current Liabilities}}$$</span><br /></p>
+        </li>
+        <li>
+          <p><strong>Quick Ratio</strong>: <br /><span class="math display">$$\text{Quick Ratio} = \frac{\text{Current
+              Assets} - \text{Inventory}}{\text{Current Liabilities}}$$</span><br /></p>
+        </li>
+      </ul>
+      <h3 id="conclusion-7">Conclusion</h3>
+      <p>In conclusion, understanding accounting ratios and their interpretations is fundamental to analyzing company
+        performance. Ratios provide normalized measures for comparison across time and entities while revealing insights
+        into profitability, efficiency, leverage, and liquidity.</p>
+      <h1 id="financial-ratios-and-corporate-life-cycle-analysis">Financial Ratios and Corporate Life Cycle Analysis
+      </h1>
+      <h3 id="introduction-8">Introduction</h3>
+      <p>This session aims to apply financial ratios to real companies and examine how these metrics evolve throughout
+        the
+        corporate life cycle. The analysis encompasses:</p>
+      <ul>
+        <li>
+          <p>Profitability Ratios</p>
+        </li>
+        <li>
+          <p>Accounting Returns</p>
+        </li>
+        <li>
+          <p>Debt Ratios</p>
+        </li>
+        <li>
+          <p>Efficiency Ratios</p>
+        </li>
+        <li>
+          <p>Coverage and Liquidity Ratios</p>
+        </li>
+      </ul>
+      <h3 id="corporate-life-cycle-and-financial-ratios">Corporate Life Cycle and Financial Ratios</h3>
+      <p>Financial ratios change significantly as a company matures. Key observations include:</p>
+      <h4 id="profitability-ratios">Profitability Ratios</h4>
+      <ul>
+        <li>
+          <p>Younger companies typically exhibit:</p>
+          <ul>
+            <li>
+              <p>Positive Gross Margins</p>
+            </li>
+            <li>
+              <p>Negative Operating Margins</p>
+            </li>
+            <li>
+              <p>Negative Net Margins</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>As companies grow:</p>
+          <ul>
+            <li>
+              <p>Operating Margins become positive.</p>
+            </li>
+            <li>
+              <p>Net Margins eventually turn positive.</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h4 id="accounting-returns-1">Accounting Returns</h4>
+      <ul>
+        <li>
+          <p>Younger companies can have negative accounting returns or returns that cannot be computed.</p>
+        </li>
+        <li>
+          <p>As they mature, they exhibit returning trends:</p>
+          <ul>
+            <li>
+              <p>Accounting Returns increase and peak.</p>
+            </li>
+            <li>
+              <p>Mature companies see declining returns.</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h4 id="debt-ratios">Debt Ratios</h4>
+      <ul>
+        <li>
+          <p>Young companies should avoid incurring debt; high debt ratios are risky.</p>
+        </li>
+        <li>
+          <p>As companies mature, debt ratios become more apparent:</p>
+          <ul>
+            <li>
+              <p>Growth firms may carry moderate debt.</p>
+            </li>
+            <li>
+              <p>Mature firms can manage debt ratios effectively.</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h3 id="profitability-analysis-of-selected-companies">Profitability Analysis of Selected Companies</h3>
+      <p>In this analysis, gross margin, operating margin, after-tax operating margin, net margin, and effective tax
+        rate
+        were computed for six selected companies: Peloton, Netflix, Coca-Cola, Toyota, Total, and Dr. Reddy’s.</p>
+      <ul>
+        <li>
+          <p>Gross Margin :</p>
+          <ul>
+            <li>
+              <p>Peloton: Low gross margin reflecting youth.</p>
+            </li>
+            <li>
+              <p>Dr. Reddy’s: High gross margin ( 80%).</p>
+            </li>
+            <li>
+              <p>Toyota and Total: Lower margins due to higher production costs.</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>Operating Margin and Net Margin :</p>
+          <ul>
+            <li>
+              <p>Peloton: Positive gross margin but negative operating and net margins.</p>
+            </li>
+            <li>
+              <p>Coca-Cola and Dr. Reddy’s: Higher operating margins due to relatively lower production costs and market
+                dynamics.</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h3 id="accounting-returns-2">Accounting Returns</h3>
+      <p>Accounting returns were analyzed using Return on Equity (ROE) and Return on Invested Capital (ROIC).
+        <br /><span class="math display">$$ROE = \frac{\text{Net Income}}{\text{Book Equity}}$$</span><br /> <br /><span
+          class="math display">$$ROIC = \frac{\text{After-Tax Operating Income}}{\text{Invested Capital}} =
+          \frac{\text{Operating Income} \times (1 - \text{Effective Tax Rate})}{\text{Book Equity} + \text{Debt} -
+          \text{Cash}}$$</span><br /></p>
+      <ul>
+        <li>
+          <p>Notable findings:</p>
+          <ul>
+            <li>
+              <p>Dr. Reddy’s has minimal debt, thus showing high ROE.</p>
+            </li>
+            <li>
+              <p>Peloton’s ROE is notably negative due to losses.</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h3 id="efficiency-ratios-1">Efficiency Ratios</h3>
+      <p>Efficiency ratios were computed using: <br /><span class="math display">$$\text{Sales to Invested Capital} =
+          \frac{\text{Revenues}}{\text{Invested Capital}}$$</span><br /> <br /><span class="math display">$$\text{Asset
+          Turnover Ratio} = \frac{\text{Revenues}}{\text{Total Assets}}$$</span><br /></p>
+      <ul>
+        <li>
+          <p>Netflix : Most efficient with a revenue generation of $1.71 for every dollar of invested capital.</p>
+        </li>
+        <li>
+          <p>Growth Considerations : As Netflix scaled, efficiency improved, indicating operational leverage benefits as
+            companies mature.</p>
+        </li>
+      </ul>
+      <h3 id="debt-ratios-1">Debt Ratios</h3>
+      <p>Debt ratios such as Debt to Equity and Debt to Capital ratios were analyzed: <br /><span
+          class="math display">$$\text{Debt to Equity Ratio} = \frac{\text{Total Debt}}{\text{Book Equity}} \quad
+          \text{or} \quad \frac{\text{Market Debt}}{\text{Market Equity}}$$</span><br /></p>
+      <ul>
+        <li>
+          <p>Notable observations on debt:</p>
+          <ul>
+            <li>
+              <p>Netflix has a high Book Debt to Equity Ratio (195%), but a significantly lower Market Debt to Equity
+                Ratio (7%).</p>
+            </li>
+            <li>
+              <p>Dr. Reddy’s demonstrates minimal debt across all measures.</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h3 id="coverage-and-liquidity-ratios">Coverage and Liquidity Ratios</h3>
+      <p>Coverage ratios such as Interest Coverage and Fixed Charge Coverage were computed: <br /><span
+          class="math display">$$\text{Interest Coverage} = \frac{\text{Operating Income}}{\text{Interest
+          Expense}}$$</span><br /> <br /><span class="math display">$$\text{Fixed Charge Coverage} =
+          \frac{\text{Operating
+          Income} + \text{Fixed Charges}}{\text{Fixed Charges} + \text{Interest}}$$</span><br /></p>
+      <ul>
+        <li>
+          <p>Dr. Reddy’s : High ratios indicating low risk.</p>
+        </li>
+        <li>
+          <p>Current Ratios and Quick Ratios : Given less utility in recent times, they may not accurately reflect a
+            company’s short-term health.</p>
+        </li>
+      </ul>
+      <h3 id="conclusion-8">Conclusion</h3>
+      <p>Financial ratios are valuable tools but should be approached with caution. Key recommendations include:</p>
+      <ul>
+        <li>
+          <p>Use a select few ratios that best represent the business’s performance.</p>
+        </li>
+        <li>
+          <p>Ensure ratios support your understanding of a company’s operational effectiveness and future potential.</p>
+        </li>
+        <li>
+          <p>Conduct an average-based analysis (normalization) for volatile companies to mitigate year-to-year
+            fluctuations.</p>
+        </li>
+        <li>
+          <p>Remember, ratios are tools for analysis—not ends in themselves.</p>
+        </li>
+      </ul>
+
+    </div>
+    <!-- insert above this -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+      </script>
+</body>
+
+</html>

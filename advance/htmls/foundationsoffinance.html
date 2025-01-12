@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>/\dvance</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <style>
+    code {
+      white-space: pre-wrap;
+    }
+
+    span.smallcaps {
+      font-variant: small-caps;
+    }
+
+    span.underline {
+      text-decoration: underline;
+    }
+
+    div.column {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+    }
+
+    div.hanging-indent {
+      margin-left: 1.5em;
+      text-indent: -1.5em;
+    }
+
+    ul.task-list {
+      list-style: none;
+    }
+  </style>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body style="
+    background-color: rgb(0, 0, 39);
+    color: rgb(205, 158, 250);" class="vh-100 p-0 mb-0">
+
+  <div class="container" style="margin-top: 10%;">
+    <div id="business-row" class="row justify-content-between">
+      
+      <nav class="navbar navbar-dark navbar-collapse navbar-fixed-top fixed-top justify-content-center container" style="background-color: rgb(0, 0, 40);">
+        <div class="container justify-content-center">
+        <a class="navbar-brand" href="../index.html" style="color: rgb(179, 114, 240);">/\dvance</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="../finance.html">Finance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../startups.html">Startups</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../economics.html">Economics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../humanities.html">Humanities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../philosophy.html">Philosophy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../science.html">Science</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+
+        <div class="container" style="background-color: rgb(0, 0, 40);">
+          <div class="col-12 d-flex justify-content-start align-items-center">
+              <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                  <ol class="breadcrumb m-1">
+                      <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                      <li class="breadcrumb-item"><a href="../finance.html">Finance</a></li>
+                      <li class="breadcrumb-item active"><a href="../htmls/foundationsoffinance.html">Foundations of Finance</a></li>
+                  </ol>
+              </nav>
+          </div>
+      </div>
+
+      <div class="btn position-fixed fixed-bottom d-flex justify-content-end p-0">
+        <a style="color: white; background-color: rgb(0, 0, 40);" class="border rounded p-1"
+        onclick="document.getElementById('contents').scrollIntoView({ behavior: 'smooth' });">contents^</a>
+      </div>
+    </nav>
+      
+
+    </div>
+
+    <div class="row">
+      <h1 id="contents" class="m-0">contents</h4>
+          <div class="col-6">
+              <ul>
+                  <li class="mb-1">
+                      <a href="#first-steps-in-finance">First Steps in Finance</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#the-structure-of-a-business">The Structure of a Business</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#understanding-risk">Understanding Risk</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#measuring-risk">Measuring Risk</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#time-value-of-money">Time Value of Money</a>
+                  </li>
+                  <li>
+                      <a href="#bond-pricing-and-the-time-value-of-money">Bond Pricing and the Time Value of Money</a>
+                  </li>
+
+
+
+              </ul>
+          </div>
+          <div class="col-6">
+              <ul>
+                <li class="mb-1">
+                  <a href="#foundations-of-equity-valuation">Foundations of Equity Valuation</a>
+              </li>
+              <li class="mb-1">
+                  <a href="#option-valuation">Option Valuation</a>
+              </li>
+              <li class="mb-1">
+                  <a href="#inflation-the-hidden-tax">Inflation the Hidden Tax</a>
+              </li>
+              <li class="mb-1">
+                  <a href="#understanding-interest-rates">Understanding Interest Rates</a>
+              </li>
+              <li>
+                  <a href="#currencies-and-their-impact-on-financial-analysis">Currencies and Their Impact on Financial Analysis</a>
+              </li>
+
+              </ul>
+          </div>
+  </div>
+  </div>
+
+
+
+
+  <!-- insert under this -->
+  <div class="container">
+    <h1>Foundations of Finance</h1>
+    <h1 id="first-steps-in-finance">First Steps in Finance</h1>
+    <h3 id="introduction">Introduction</h3>
+    <p>Finance is central to all business decisions, encapsulated in the saying: "It’s always about the money." This course includes essential distinctions and foundations for understanding the financial aspects of business.</p>
+    <h3 id="differences-between-corporate-finance-and-valuation">Differences between Corporate Finance and Valuation</h3>
+    <ul>
+    <li><p><strong>Corporate Finance</strong>: Focuses on internal financial decision-making and value creation within a business.</p></li>
+    <li><p><strong>Valuation</strong>: Looks at businesses from an external perspective, emphasizing the determination of business value based on future expectations.</p></li>
+    </ul>
+    <h3 id="six-building-blocks-of-finance">Six Building Blocks of Finance</h3>
+    <p>The following six building blocks establish the framework for the subject:</p>
+    <h4 id="philosophy-of-finance">1. Philosophy of Finance</h4>
+    <p>Finance is fundamentally about future expectations rather than past performance. The perspective is always forward-looking.</p>
+    <h4 id="cash-flows">2. Cash Flows</h4>
+    <p>Finance revolves around cash flows, not accounting earnings. Understanding cash flow is vital.</p>
+    <ul>
+    <li><p><strong>Types of Cash Flows</strong>:</p>
+    <ol>
+    <li><p><strong>Contractual Cash Flows</strong>: Predefined cash inflows or outflows, e.g., bonds.</p></li>
+    <li><p><strong>Residual Cash Flows</strong>: Cash available to equity holders after expenses.</p></li>
+    <li><p><strong>Contingent Cash Flows</strong>: Cash flows that depend on uncertain future events.</p></li>
+    </ol></li>
+    </ul>
+    <h4 id="risk">3. Risk</h4>
+    <p>Risk is a central tenet in finance.</p>
+    <ul>
+    <li><p>Understanding risk means recognizing its good and bad sides.</p></li>
+    <li><p>Importance of measuring risk and its implications on decision-making.</p></li>
+    <li><p>Risk perception may vary among stakeholders like shareholders and managers.</p></li>
+    </ul>
+    <h4 id="time-value-of-money-tvm">4. Time Value of Money (TVM)</h4>
+    <p>The principle of TVM asserts that a dollar today is worth more than a dollar in the future. <br /><span class="math display">$$PV = \frac{FV}{(1 + r)^n}$$</span><br /> where <span class="math inline"><em>P</em><em>V</em></span> is present value, <span class="math inline"><em>F</em><em>V</em></span> is future value, <span class="math inline"><em>r</em></span> is the interest rate, and <span class="math inline"><em>n</em></span> is the number of periods.</p>
+    <h4 id="value">5. Value</h4>
+    <p>Understanding valuation is crucial:</p>
+    <ul>
+    <li><p>Valuation involves assessing different types of cash flows.</p></li>
+    <li><p><strong>Valuation Methods</strong> based on cash flows:</p>
+    <ul>
+    <li><p>Contractually set cash flows: Discounted at risk-adjusted rates.</p></li>
+    <li><p>Residual cash flows: Discounted based on expected investor returns.</p></li>
+    <li><p>Contingent cash flows: Valued using option pricing methods.</p></li>
+    </ul></li>
+    </ul>
+    <h4 id="trading">6. Trading</h4>
+    <p>Financial markets facilitate business operations. Understanding trading principles is essential.</p>
+    <ul>
+    <li><p><strong>Arbitrage</strong>: Theoretically, the opportunity to earn a risk-free profit.</p></li>
+    <li><p>Challenges in finding arbitrage opportunities due to:</p>
+    <ol>
+    <li><p>Trading Costs: Implicit and explicit costs that hinder arbitrage.</p></li>
+    <li><p>Taxes: Tax considerations that affect investment decisions and cash flows.</p></li>
+    </ol></li>
+    </ul>
+    <h3 id="conclusion">Conclusion</h3>
+    <p>These six building blocks lay the groundwork for more advanced topics in corporate finance and valuation. Mastery of these concepts is essential for understanding the complexities of finance in business.</p>
+    <h1 id="the-structure-of-a-business">The Structure of a Business</h1>
+    <h3 id="introduction-1">Introduction</h3>
+    <p>This session focuses on the intersection of business and finance, laying the foundation for the concept of the <strong>corporate life cycle</strong>. This concept is crucial for understanding corporate finance and valuation.</p>
+    <h3 id="financial-balance-sheet-structure">Financial Balance Sheet Structure</h3>
+    <p>In finance, the balance sheet differs from accounting. Acc accountants classify assets and liabilities more granularly; however, from a financial standpoint, we focus on two primary items on each side:</p>
+    <h4 id="assets-side">Assets Side</h4>
+    <ul>
+    <li><p>Assets in Place : Investments that have already been made by the company, such as factories or proprietary software.</p></li>
+    <li><p>Growth Assets : Potential future investments and projects that are expected to create additional value.</p></li>
+    </ul>
+    <h4 id="liabilities-side">Liabilities Side</h4>
+    <ul>
+    <li><p>Debt : Money borrowed that requires payment.</p></li>
+    <li><p>Equity : Funds raised through ownership stakes in the business.</p></li>
+    </ul>
+    <h3 id="assets-in-place">Assets in Place</h3>
+    <h4 id="definition-and-value">Definition and Value</h4>
+    <p>The value of assets in place is not dictated by the historical cost but by their potential to generate future cash flows.</p>
+    <p><br /><span class="math display">Value of Assets in Place = Expected Future Cash Flows</span><br /></p>
+    <h4 id="disconnects-in-value">Disconnects in Value</h4>
+    <p>The value attached to assets in place can deviate from their accounting values:</p>
+    <ul>
+    <li><p>If the assets are no longer productive, their value may be significantly lower.</p></li>
+    <li><p>Conversely, if the assets have increased productivity, their value may be significantly higher.</p></li>
+    </ul>
+    <h3 id="growth-assets">Growth Assets</h3>
+    <h4 id="definition-and-impact-on-value">Definition and Impact on Value</h4>
+    <p>Growth assets are based on future investments rather than their cost. Key considerations include:</p>
+    <ul>
+    <li><p>The cost of capital associated with new investments, denoted as <span class="math inline"><em>r</em></span>.</p></li>
+    <li><p>The expected return on those investments.</p></li>
+    </ul>
+    <h4 id="excess-return-concept">Excess Return Concept</h4>
+    <p><br /><span class="math display">Excess Return = Expected Return − Cost of Capital</span><br /> If excess returns are positive, investments add value; if zero or negative, they do not contribute value.</p>
+    <h3 id="debt">Debt</h3>
+    <p>Debt must be carefully classified by certain criteria:</p>
+    <ol>
+    <li><p>A <strong>contractual commitment</strong> to make future payments.</p></li>
+    <li><p>Consequences for failing to meet these obligations (e.g., bankruptcy).</p></li>
+    <li><p>Tax implications; in many jurisdictions, interest payments are tax-deductible.</p></li>
+    </ol>
+    <h3 id="equity">Equity</h3>
+    <h4 id="residual-claims">Residual Claims</h4>
+    <p>Equity represents a residual claim on the cash flows of the company. The formula can be expressed as: <br /><span class="math display">Residual Cash Flow = Total Cash Flows − Debt Obligations</span><br /> It is important to note that residual claims may not reach the equity holders directly due to managerial discretion over dividends.</p>
+    <h3 id="corporate-life-cycle">Corporate Life Cycle</h3>
+    <p>The corporate life cycle progresses through distinct phases:</p>
+    <ul>
+    <li><p>Startup : Valuation relies heavily on growth assets.</p></li>
+    <li><p>Young Company : Growth assets are still valued primarily.</p></li>
+    <li><p>Mature Company : Assets in place begin to dominate the balance sheet.</p></li>
+    <li><p>Decline : Value is increasingly driven by assets in place, with negative implications for growth assets.</p></li>
+    </ul>
+    <h4 id="finance-as-a-function-of-cycle-stage">Finance as a Function of Cycle Stage</h4>
+    <ul>
+    <li><p>Early stages: Fund through equity.</p></li>
+    <li><p>Growth stages: Maintain a balance with equity but may introduce debt as opportunities arise.</p></li>
+    <li><p>Mature phases: Increased leverage from debt due to stable cash flows and tax benefits.</p></li>
+    </ul>
+    <h4 id="harvesting-cash-flows">Harvesting Cash Flows</h4>
+    <p>During each phase of the life cycle, the ability to return cash flows changes:</p>
+    <ul>
+    <li><p>Startups often exhibit negative cash flows.</p></li>
+    <li><p>Maturity allows more substantial cash returns to investors.</p></li>
+    </ul>
+    <h3 id="conclusion-1">Conclusion</h3>
+    <p>Understanding a business’s position within the corporate life cycle provides critical insight into its financial structure. The financial balance sheet is forward-looking, focusing on expected future performance rather than past expenditures.</p>
+    <h1 id="understanding-risk">Understanding Risk</h1>
+    <h3 id="introduction-2">Introduction</h3>
+    <p>This session will delve into the concept of <strong>risk</strong>, which fundamentally influences decision-making in finance. Historically, the nature of risk has evolved from physical risks to financial risks.</p>
+    <h4 id="historical-context">Historical Context</h4>
+    <ul>
+    <li><p>Early human existence revolved around physical risks.</p></li>
+    <li><p>Approximately 600 years ago, distinctions began to form between physical risks and financial risks.</p></li>
+    <li><p>Example: A wealthy individual investing in a ship for spice trade exemplifies this distinction.</p>
+    <ul>
+    <li><p>If the ship returns safely, wealth is gained.</p></li>
+    <li><p>If lost (sunk or attacked by pirates), the sailors face mortality.</p></li>
+    </ul></li>
+    </ul>
+    <h3 id="defining-risk">Defining Risk</h3>
+    <p>The definition of risk is crucial to understanding its implications in finance.</p>
+    <h4 id="the-concept-of-risk">The Concept of Risk</h4>
+    <p><strong>Frank Knight’s Distinction (1920s)</strong>: Uncertainty vs. Risk:</p>
+    <ul>
+    <li><p>Uncertainty: Lacks known probabilities.</p></li>
+    <li><p>Risk: Has known probabilities, allowing for calculation.</p></li>
+    </ul>
+    <p>Example:</p>
+    <ul>
+    <li><p>Individual 1 draws from an urn without knowing the ball distribution (uncertainty).</p></li>
+    <li><p>Individual 2 knows the distribution and calculates probabilities (risk).</p></li>
+    </ul>
+    <h4 id="a-broader-definition-of-risk">A Broader Definition of Risk</h4>
+    <p>Risk should be seen as both positive and negative.</p>
+    <ul>
+    <li><p>If viewed solely as negative: Risk avoidance would be the main strategy, hindering business growth.</p></li>
+    <li><p>Successful businesses seek appropriate risks versus avoiding them entirely.</p></li>
+    </ul>
+    <h3 id="human-behavior-and-risk">Human Behavior and Risk</h3>
+    <h4 id="risk-aversion">Risk Aversion</h4>
+    <p>Humans exhibit risk-averse behavior; they prefer certainty over uncertainty in financial decisions.</p>
+    <h4 id="expected-value-experiment">Expected Value Experiment</h4>
+    <p>Coin flipping game as an illustration:</p>
+    <ul>
+    <li><p>Gain \$1 for tails, $0 for heads.</p></li>
+    <li><p>Expected value for each flip = $0.50.</p></li>
+    </ul>
+    <p>Historical counterpart: Nicholas Bernoulli’s findings showed:</p>
+    <ul>
+    <li><p>People were only willing to pay $2 on average for the chance to play the game, highlighting risk aversion.</p></li>
+    </ul>
+    <h4 id="measures-of-risk-aversion">Measures of Risk Aversion</h4>
+    <p>1. <strong>Certainty Equivalence</strong>:</p>
+    <ul>
+    <li><p>Defined as the guaranteed amount an individual would accept instead of taking a risky bet.</p></li>
+    <li><p>Example:</p></li>
+    </ul>
+    <p><br /><span class="math display">Expected Value = 0.5 × 1000 + 0.5 × 0 = $500</span><br /> If an individual accepts $400, they are risk-averse.</p>
+    <p>2. <strong>Risk Aversion Coefficient (Utility Functions)</strong>:</p>
+    <ul>
+    <li><p>Risk aversion can also be quantified through utility theory, measuring satisfaction or happiness.</p></li>
+    </ul>
+    <h3 id="research-findings-on-risk-aversion">Research Findings on Risk Aversion</h3>
+    <p>Four major avenues of study regarding risk aversion:</p>
+    <ul>
+    <li><p>Experimental studies.</p></li>
+    <li><p>Surveys on real-world risk decisions.</p></li>
+    <li><p>Observations on asset pricing, reflecting risk attitude.</p></li>
+    <li><p>Behavior in gambling and betting contexts.</p></li>
+    </ul>
+    <h4 id="key-findings">Key Findings</h4>
+    <p>1. Gender Differences:</p>
+    <ul>
+    <li><p>Men are generally less risk-averse than women for small bets, equalizing as stakes increase.</p></li>
+    </ul>
+    <p>2. Age:</p>
+    <ul>
+    <li><p>Younger individuals tend to exhibit less risk aversion.</p></li>
+    </ul>
+    <p>3. Experience:</p>
+    <ul>
+    <li><p>Increased expertise generally correlates with decreased risk aversion.</p></li>
+    </ul>
+    <p>4. Cultural Comparisons:</p>
+    <ul>
+    <li><p>Risk aversion appears relatively uniform across different races and cultures.</p></li>
+    </ul>
+    <h3 id="behavioral-finance-insights">Behavioral Finance Insights</h3>
+    <p>Behavioral finance highlights quirks in human risk-taking behavior:</p>
+    <ul>
+    <li><p>Presentation of choices affects decisions. For example:</p>
+    <ul>
+    <li><p>Preference for saving 200 people over a one-third probability of saving all.</p></li>
+    <li><p>Preference shifts in loss scenarios (loss aversion).</p></li>
+    </ul></li>
+    <li><p>Myopic loss aversion refers to heightened risk aversion due to frequent feedback on investments.</p></li>
+    <li><p>External money (e.g., "house money") influences willingness to take risks.</p></li>
+    <li><p>After losing, individuals may increase risk in an attempt to break even.</p></li>
+    </ul>
+    <h3 id="conclusion-2">Conclusion</h3>
+    <p>Understanding risk aversion and human behavior regarding risks can significantly influence financial decision-making. Key takeaways include:</p>
+    <ul>
+    <li><p>Risk is multifaceted — both positive and negative aspects.</p></li>
+    <li><p>Risk aversion is deeply embedded in human nature, though variations exist.</p></li>
+    <li><p>Behavioral finance provides insights into our risk-related behaviors, often deviating from classical economic theories.</p></li>
+    </ul>
+    <h1 id="measuring-risk">Measuring Risk</h1>
+    <h3 id="introduction-3">Introduction</h3>
+    <p>In this session, we will build on the concept of risk by transitioning from risk aversion, discussed in the last session, to various measures of risk. The primary focus will be on understanding how risk is integrated into investment valuation.</p>
+    <h3 id="risk-aversion-and-expected-returns">Risk Aversion and Expected Returns</h3>
+    <ul>
+    <li><p>If all investors were risk neutral, they would accept the risk-free rate as the expected return for all investments, regardless of their risk.</p></li>
+    <li><p>Given that investors are generally risk averse, they will prefer guaranteed cash flows over risky expected cash flows.</p></li>
+    <li><p>The challenge lies in measuring risk and incorporating these measures into our value assessments.</p></li>
+    </ul>
+    <h3 id="mean-variance-framework">Mean Variance Framework</h3>
+    <p>The mean variance framework is pivotal in finance:</p>
+    <h4 id="expected-return-and-variance">Expected Return and Variance</h4>
+    <ul>
+    <li><p>The expected return (<span class="math inline"><em>E</em>[<em>R</em>]</span>) on an investment is viewed as the desirable characteristic.</p></li>
+    <li><p>Risk, in this context, is quantified using the variance (<span class="math inline"><em>σ</em><sup>2</sup></span>) of returns, which represents the degree of spread from the expected return: <br /><span class="math display"><em>σ</em><sup>2</sup> = <em>E</em>[(<em>R</em> − <em>E</em>[<em>R</em>])<sup>2</sup>]</span><br /> where <span class="math inline"><em>R</em></span> is the actual return.</p></li>
+    </ul>
+    <h4 id="assumptions-of-the-framework">Assumptions of the Framework</h4>
+    <ul>
+    <li><p>Two fundamental assumptions must hold:</p>
+    <ol>
+    <li><p>Returns are normally distributed, characterized by the mean and standard deviation.</p></li>
+    <li><p>Investors have a utility function that is risk-averse, which implies that they care about both expected returns and standard deviations.</p></li>
+    </ol></li>
+    </ul>
+    <h3 id="sources-of-variability-in-returns">Sources of Variability in Returns</h3>
+    <p>Identifying the sources of risk is crucial:</p>
+    <ul>
+    <li><p><strong>Firm-Specific Risk</strong> (Project Risk): Individual projects may yield returns that differ from expected.</p></li>
+    <li><p><strong>Industry Risk</strong>: Competition and industry-specific events can impact expected returns.</p></li>
+    <li><p><strong>Systematic Risk</strong>: Macroeconomic factors (e.g., interest rate changes, exchange rate fluctuations) that affect entire sectors or the overall market.</p></li>
+    </ul>
+    <h3 id="diversification-and-risk-reduction">Diversification and Risk Reduction</h3>
+    <h4 id="benefits-of-diversification">Benefits of Diversification</h4>
+    <p>Diversification helps in risk reduction by distributing investments across various assets.</p>
+    <ul>
+    <li><p>Individual risks (firm-specific) average out when a diverse portfolio is held, leveraging the Law of Large Numbers.</p></li>
+    <li><p>However, macroeconomic or systematic risks remain present and cannot be diversified away.</p></li>
+    </ul>
+    <h4 id="statistical-illustration-of-diversification">Statistical Illustration of Diversification</h4>
+    <ul>
+    <li><p>Consider two stocks:</p>
+    <ul>
+    <li><p>Stock 1: <span class="math inline">Expected Return = 1.5%, Standard Deviation = 10%</span></p></li>
+    <li><p>Stock 2: <span class="math inline">Expected Return = 4%, Standard Deviation = 15%</span></p></li>
+    </ul></li>
+    <li><p>If the correlation (<span class="math inline"><em>ρ</em></span>) between these stocks is <span class="math inline">0.2</span>, and half of the portfolio is equally invested in both stocks: <br /><span class="math display">Portfolio Variance = <em>w</em><sub>1</sub><sup>2</sup><em>σ</em><sub>1</sub><sup>2</sup> + <em>w</em><sub>2</sub><sup>2</sup><em>σ</em><sub>2</sub><sup>2</sup> + 2<em>w</em><sub>1</sub><em>w</em><sub>2</sub><em>ρ</em><em>σ</em><sub>1</sub><em>σ</em><sub>2</sub></span><br /> where <span class="math inline"><em>w</em><sub>1</sub></span> and <span class="math inline"><em>w</em><sub>2</sub></span> are the weights in each stock.</p></li>
+    </ul>
+    <p>Calculating the portfolio’s standard deviation yields: <br /><span class="math display"><em>σ</em><sub><em>P</em></sub> = 9.81%</span><br /> which is lower than either stock’s individual standard deviations.</p>
+    <h3 id="marginal-investors-and-the-capital-asset-pricing-model-capm">Marginal Investors and the Capital Asset Pricing Model (CAPM)</h3>
+    <h4 id="marginal-investor-concept">Marginal Investor Concept</h4>
+    <p>In a market context, the marginal investor is essential for determining asset prices.</p>
+    <ul>
+    <li><p>Marginal investors are typically diversified investors.</p></li>
+    <li><p>This indicates that they price assets based on the risk of the asset in relation to the overall market portfolio, not just individual stocks.</p></li>
+    </ul>
+    <h4 id="capm-framework">CAPM Framework</h4>
+    <p>The CAPM states that: <br /><span class="math display"><em>E</em>[<em>R</em><sub><em>i</em></sub>] = <em>R</em><sub><em>f</em></sub> + <em>β</em><sub><em>i</em></sub>(<em>E</em>[<em>R</em><sub><em>m</em></sub>] − <em>R</em><sub><em>f</em></sub>)</span><br /> where:</p>
+    <ul>
+    <li><p><span class="math inline"><em>E</em>[<em>R</em><sub><em>i</em></sub>]</span> = Expected return on investment <span class="math inline"><em>i</em></span></p></li>
+    <li><p><span class="math inline"><em>R</em><sub><em>f</em></sub></span> = Risk-free rate</p></li>
+    <li><p><span class="math inline"><em>β</em><sub><em>i</em></sub></span> = Measure of the risk of investment <span class="math inline"><em>i</em></span> relative to the market</p></li>
+    <li><p><span class="math inline"><em>E</em>[<em>R</em><sub><em>m</em></sub>]</span> = Expected return of the market</p></li>
+    </ul>
+    <h4 id="beta-calculation">Beta Calculation</h4>
+    <p>Beta (<span class="math inline"><em>β</em></span>) reflects an asset’s covariance with the market: <br /><span class="math display">$$\beta_i = \frac{\text{Cov}(R_i, R_m)}{\sigma^2_m}$$</span><br /> where <span class="math inline"><em>σ</em><sub><em>m</em></sub><sup>2</sup></span> is the variance of the market returns.</p>
+    <h3 id="extensions-of-risk-return-models">Extensions of Risk-Return Models</h3>
+    <p>Various models have evolved to account for limitations in the CAPM:</p>
+    <ul>
+    <li><p><strong>Multi-Factor Models</strong>: Allow multiple sources of market risk.</p></li>
+    <li><p><strong>Proxy Models</strong>: Risk characteristics inferred from historical data, e.g., small-cap companies earning higher returns than large-cap.</p></li>
+    </ul>
+    <h3 id="conclusion-3">Conclusion</h3>
+    <ul>
+    <li><p>Risk is critical to finance; however, not all risks warrant reward.</p></li>
+    <li><p>Investors must consider the perspective of marginal investors who dictate asset prices.</p></li>
+    <li><p>Effective risk measurement is essential for sound finance practices and helps guide investment decisions.</p></li>
+    </ul>
+    <h1 id="time-value-of-money">Time Value of Money</h1>
+    <h3 id="introduction-4">Introduction</h3>
+    <p>In this session, we will integrate the concepts of cash flows and discount rates into a single framework called the Time Value of Money (TVM). The fundamental premise of TVM is captured in the saying: "A dollar today is worth more than a dollar tomorrow."</p>
+    <h3 id="reasons-for-time-value-of-money">Reasons for Time Value of Money</h3>
+    <p>There are three primary reasons why present cash flows are valued higher than future cash flows:</p>
+    <ol>
+    <li><p><strong>Consumption Preference:</strong> Humans prefer to consume today rather than wait for future consumption. To compensate for deferring consumption, lenders demand a real interest rate.</p></li>
+    <li><p><strong>Inflation:</strong> Inflation decreases the purchasing power of money over time. Thus, a dollar today can buy more than a dollar in the future.</p></li>
+    <li><p><strong>Uncertainty:</strong> A dollar received today is certain, whereas a dollar received in the future depends on factors beyond our control, leading to higher risk and less value placed on future cash flows.</p></li>
+    </ol>
+    <p>As these factors increase, the time value of money will also increase.</p>
+    <h3 id="mechanics-of-time-value-of-money">Mechanics of Time Value of Money</h3>
+    <p>The mechanics of TVM involve two operations:</p>
+    <ul>
+    <li><p><strong>Discounting:</strong> Bringing future cash flows back to the present.</p></li>
+    <li><p><strong>Compounding:</strong> Taking present cash flows forward into the future.</p></li>
+    </ul>
+    <p>The <strong>discount rate</strong> captures the combined effects of preference for current consumption, inflation, and uncertainty.</p>
+    <h3 id="present-value-principles">Present Value Principles</h3>
+    <p>1. Cash flows must be evaluated at the same point in time to be aggregated. 2. Investment decisions should consider both the magnitude and timing of cash flows.</p>
+    <h4 id="timeline-illustration">Timeline Illustration</h4>
+    <p>A timeline is useful for visualizing cash flow occurrences over time. An example could be a representation of receiving $100 at the end of each year for four years, also known as an <strong>annuity</strong>.</p>
+    <h4 id="types-of-cash-flows">Types of Cash Flows</h4>
+    <p>I will discuss five types of cash flows:</p>
+    <ol>
+    <li><p><strong>Simple Cash Flow:</strong> A single payment at a future date. For example, receiving $10 million in ten years.</p></li>
+    <li><p><strong>Annuities:</strong> Equal cash flows received at regular intervals. E.g., $100 received every year for five years.</p></li>
+    <li><p><strong>Growing Annuities:</strong> Cash flows that grow at a constant rate over time. E.g., $100 growing at 5% per year for 25 years.</p></li>
+    <li><p><strong>Perpetuities:</strong> Constant cash flows that continue indefinitely. E.g., receiving $100 every year forever.</p></li>
+    <li><p><strong>Growing Perpetuities:</strong> A cash flow that grows at a constant rate indefinitely. E.g., receiving $100 that grows at 2% every year forever.</p></li>
+    </ol>
+    <h3 id="present-value-formulas">Present Value Formulas</h3>
+    <p>The present value (PV) of different cash flows can be calculated using specific equations.</p>
+    <ol>
+    <li><p><strong>Simple Cash Flow:</strong> <br /><span class="math display">$$PV = \frac{FV}{(1 + r)^n}$$</span><br /> where <span class="math inline"><em>F</em><em>V</em></span> is the future value, <span class="math inline"><em>r</em></span> is the discount rate, and <span class="math inline"><em>n</em></span> is the number of years.</p></li>
+    <li><p><strong>Annuity:</strong> <br /><span class="math display">$$PV = C \times \frac{1 - (1 + r)^{-n}}{r}$$</span><br /> where <span class="math inline"><em>C</em></span> is the cash flow per period.</p></li>
+    <li><p><strong>Growing Annuity:</strong> <br /><span class="math display">$$PV = \frac{C \times (1 - (1 + g)^{n} / (1 + r)^{n})}{r - g}$$</span><br /> where <span class="math inline"><em>g</em></span> is the growth rate.</p></li>
+    <li><p><strong>Perpetuity:</strong> <br /><span class="math display">$$PV = \frac{C}{r}$$</span><br /></p></li>
+    <li><p><strong>Growing Perpetuity:</strong> <br /><span class="math display">$$PV = \frac{C \times (1 + g)}{r - g}$$</span><br /></p></li>
+    </ol>
+    <h3 id="compound-interest-effects">Compound Interest Effects</h3>
+    <p>The frequency of compounding interest affects the overall returns. For instance: <strong>If an investment has an annual rate of 10% and is compounded:</strong></p>
+    <ul>
+    <li><p>Annually: it remains 10%.</p></li>
+    <li><p>Semi-annually: the effective return becomes approximately <span class="math inline">10.125%</span>.</p></li>
+    <li><p>Monthly: <span class="math inline">10.471%</span>.</p></li>
+    <li><p>Continuously: <span class="math inline">10.517%</span>.</p></li>
+    </ul>
+    <h3 id="conclusion-4">Conclusion</h3>
+    <p>Understanding these principles and calculations surrounding the time value of money can be immensely beneficial in both corporate finance and valuation. Knowing how to compute present value for various types of cash flows will serve as a vital skill as you navigate the complexities of finance.</p>
+    <h1 id="bond-pricing-and-the-time-value-of-money">Bond Pricing and the Time Value of Money</h1>
+    <h3 id="introduction-5">Introduction</h3>
+    <p>In this session, we will build on the previous discussion on the <strong>time value of money</strong> by applying those principles to the valuation of <strong>contractual claims</strong>, particularly focusing on bonds.</p>
+    <h3 id="understanding-contractual-claims">Understanding Contractual Claims</h3>
+    <p>When entering into a contract, a promisor agrees to pay cash flows over the life of the contract. These cash flows can be:</p>
+    <ul>
+    <li><p><strong>Fixed Cash Flows</strong>: For example, a bond that pays $50 million annually for 10 years.</p></li>
+    <li><p><strong>Variable Cash Flows</strong>: Such as a floating rate loan where the payment is defined as 1% above inflation each year.</p></li>
+    </ul>
+    <h3 id="default-risk">Default Risk</h3>
+    <p>Default risk arises when a promisor fails to fulfill their payment obligation.</p>
+    <ul>
+    <li><p><strong>Risk-Free Claims</strong>: Only promises from governments are typically considered risk-free, because they can print money. However, not all government obligations are without risk (e.g., bonds from Argentina, Venezuela, or Greece).</p></li>
+    </ul>
+    <h3 id="valuing-a-fixed-rate-risk-free-bond">Valuing a Fixed Rate Risk-Free Bond</h3>
+    <p>To value a fixed-rate risk-free bond, we discount the known future cash flows (coupons and face value) at the <strong>risk-free rate</strong>.</p>
+    <h4 class="unnumbered" id="example">Example</h4>
+    <p>Consider a U.S. government bond with:</p>
+    <ul>
+    <li><p>Maturity: 10 years</p></li>
+    <li><p>Coupon Rate: 3% (Annual payment of $30 for a bond with a face value of $1000)</p></li>
+    <li><p>Current Market Interest Rate: 2%</p></li>
+    </ul>
+    <h4 class="unnumbered" id="present-value-calculation">Present Value Calculation</h4>
+    <p>The present value <span class="math inline"><em>P</em><em>V</em></span> of the bond can be computed as: <br /><span class="math display">$$PV = \sum_{t=1}^{n} \frac{C}{(1 + r)^t} + \frac{F}{(1 + r)^n}$$</span><br /> Where:</p>
+    <ul>
+    <li><p><span class="math inline"><em>C</em></span> = Annual coupon payment ($30)</p></li>
+    <li><p><span class="math inline"><em>F</em></span> = Face value ($1000)</p></li>
+    <li><p><span class="math inline"><em>r</em></span> = Discount rate (2%)</p></li>
+    <li><p><span class="math inline"><em>n</em></span> = Number of years (10)</p></li>
+    </ul>
+    <p>Thus, the bond value is computed as: <br /><span class="math display">$$PV = \sum_{t=1}^{10} \frac{30}{(1 + 0.02)^t} + \frac{1000}{(1 + 0.02)^{10}} \approx 1089.83$$</span><br /> <strong>Note:</strong> Bonds typically pay interest semi-annually; for accuracy, adjust for this in calculations.</p>
+    <h3 id="yield-to-maturity-ytm">Yield to Maturity (YTM)</h3>
+    <h4 class="unnumbered" id="understanding-ytm">Understanding YTM</h4>
+    <p>The yield to maturity is the internal rate of return (IRR) that equates the present value of future cash flows with the bond price.</p>
+    <h4 class="unnumbered" id="calculation-of-ytm">Calculation of YTM</h4>
+    <p>If the price of the bond drops to $1043.76, we calculate YTM as follows: <br /><span class="math display">$$1043.76 = \sum_{t=1}^{10} \frac{30}{(1 + r)^t} + \frac{1000}{(1 + r)^{10}}$$</span><br /> After solving, if <span class="math inline"><em>r</em> = 2.5%</span>, the yield to maturity represents the new market interest rate.</p>
+    <h3 id="bond-sensitivity-to-interest-rates">Bond Sensitivity to Interest Rates</h3>
+    <h4 id="bond-convexity">Bond Convexity</h4>
+    <p>The price sensitivity of bonds to interest rate changes is further characterized by:</p>
+    <ol>
+    <li><p><strong>Longer Maturity = Higher Sensitivity</strong></p></li>
+    <li><p><strong>Lower Coupon Rate = Higher Sensitivity</strong></p></li>
+    </ol>
+    <p>For instance, if interest rates rise from 2.5% to 3.5%, the bond price drops significantly compared to the effect of lowering rates.</p>
+    <h3 id="incorporating-default-risk-into-bond-pricing">Incorporating Default Risk into Bond Pricing</h3>
+    <p>To account for default risk, adjust the discount rate includes a default spread.</p>
+    <ul>
+    <li><p>For example, if the risk-free rate is 2.5% and the default spread is 1.75%, the adjusted discount rate becomes: <br /><span class="math display">Discount Rate = Risk-Free Rate + Default Spread = 2.5% + 1.75% = 4.25%</span><br /></p></li>
+    </ul>
+    <h4 class="unnumbered" id="bond-value-example-with-default-risk">Bond Value Example with Default Risk</h4>
+    <p>For a bond with a face value of $1000, 10-year maturity, and a coupon rate of 3%: <br /><span class="math display">$$PV = \sum_{t=1}^{10} \frac{30}{(1 + 0.0425)^t} + \frac{1000}{(1 + 0.0425)^{10}} \approx 899.87$$</span><br /> This adjustment reflects the additional risk from potential default.</p>
+    <h3 id="conclusion-5">Conclusion</h3>
+    <p>Understanding how to value bonds involves knowing the principles of time value of money and recognizing the implications of default risk. Sensitivity to interest rates varies based on maturity and coupon rates, impacting the pricing of both risk-free and risky bonds.</p>
+    <h1 id="foundations-of-equity-valuation">Foundations of Equity Valuation</h1>
+    <h3 id="overview-of-equity-valuation">Overview of Equity Valuation</h3>
+    <p>In this session, we explore the time value concepts for valuing bonds and extend them to value equity or residual claims. As an equity investor, you are essentially a part-owner in a business, and your claims to cash flows come after all other obligations (e.g., debt payments) have been settled.</p>
+    <h4 id="key-concepts">Key Concepts</h4>
+    <ul>
+    <li><p><strong>Residual Cash Flow:</strong> The cash flow left over after all contractual obligations have been met.</p></li>
+    <li><p><strong>Equity Valuation Approaches:</strong></p>
+    <ul>
+    <li><p><em>Direct Approach:</em> Focus on cash flows to equity, which are the cash flows available to equity investors after debt payments. These cash flows are discounted at the cost of equity.</p></li>
+    <li><p><em>Indirect Approach:</em> Value the business as a whole, considering cash flows to all claim holders and discounting them at the cost of capital (weighted average of cost of equity and cost of debt).</p></li>
+    </ul></li>
+    </ul>
+    <h3 id="cash-flows-and-their-importance">Cash Flows and Their Importance</h3>
+    <p>In equity valuation, we focus on cash flows after reinvestment needs and debt payments.</p>
+    <h4 id="types-of-cash-flows-1">Types of Cash Flows</h4>
+    <ul>
+    <li><p><strong>Cash Flows to Equity:</strong> Cash flows remaining after all necessary payments, including interest, principal, taxes, and reinvestment expenses.</p></li>
+    <li><p><strong>Free Cash Flow to Equity (FCFE):</strong> Represents the cash that could potentially be paid out to equity shareholders. Formally, the FCFE can be defined as: <br /><span class="math display">FCFE = Net Income + Depreciation − Change in Working Capital − Capital Expenditures − Debt Repayments + New Debt</span><br /></p></li>
+    </ul>
+    <h4 id="discount-rate">Discount Rate</h4>
+    <p>The discount rate used to evaluate the equity cash flows should reflect the risk associated with the investment. Commonly, this is assessed using the <strong>Cost of Equity</strong>.</p>
+    <h3 id="cost-of-equity">Cost of Equity</h3>
+    <p>The cost of equity is the return required by equity investors to compensate for the risk of their investment.</p>
+    <h4 id="measuring-cost-of-equity">Measuring Cost of Equity</h4>
+    <p>The cost of equity is dependent on the perceived risk. Higher risk equates to a higher cost of equity. The Capital Asset Pricing Model (CAPM) is one method used to estimate the cost of equity: <br /><span class="math display"><em>r</em><sub><em>e</em></sub> = <em>r</em><sub><em>f</em></sub> + <em>β</em>(<em>r</em><sub><em>m</em></sub> − <em>r</em><sub><em>f</em></sub>)</span><br /> where:</p>
+    <ul>
+    <li><p><span class="math inline"><em>r</em><sub><em>e</em></sub></span> = cost of equity</p></li>
+    <li><p><span class="math inline"><em>r</em><sub><em>f</em></sub></span> = risk-free rate</p></li>
+    <li><p><span class="math inline"><em>β</em></span> = measure of systemic risk (volatility relative to the market)</p></li>
+    <li><p><span class="math inline"><em>r</em><sub><em>m</em></sub></span> = expected market return</p></li>
+    </ul>
+    <h3 id="dividend-discount-model-ddm-example">Dividend Discount Model (DDM) Example</h3>
+    <p>Consider a fictitious public company, "Cornette" with the following assumptions:</p>
+    <ul>
+    <li><p>Last dividend (<span class="math inline"><em>D</em><sub>0</sub></span>) = $4 per share.</p></li>
+    <li><p>Dividend growth rate (<span class="math inline"><em>g</em></span>) = 2% in perpetuity.</p></li>
+    <li><p>Cost of equity (<span class="math inline"><em>r</em><sub><em>e</em></sub></span>) = 8%.</p></li>
+    </ul>
+    <p>To find the value of Cornette’s stock using the DDM: <br /><span class="math display">$$V_0 = \frac{D_1}{r_e - g}$$</span><br /> where <span class="math inline"><em>D</em><sub>1</sub> = <em>D</em><sub>0</sub> × (1 + <em>g</em>)</span>: <br /><span class="math display"><em>D</em><sub>1</sub> = 4 × (1 + 0.02) = 4.08</span><br /> Thus, <br /><span class="math display">$$V_0 = \frac{4.08}{0.08 - 0.02} = \frac{4.08}{0.06} = 68$$</span><br /> With Cornette’s stock trading at $70, this suggests the stock is slightly overvalued.</p>
+    <h3 id="free-cash-flow-equity-model">Free Cash Flow Equity Model</h3>
+    <p>If we consider the Free Cash Flow Equity model, and assume potential dividends (<span class="math inline"><em>P</em><sub><em>D</em></sub></span>) are $4.25: <br /><span class="math display">$$V_0 = \frac{P_D \times (1 + g)}{r_e - g}$$</span><br /> Substituting gives: <br /><span class="math display">$$V_0 = \frac{4.25 \times (1 + 0.02)}{0.08 - 0.02} = \frac{4.335}{0.06} = 72.25$$</span><br /></p>
+    <h4 id="firm-valuation">Firm Valuation</h4>
+    <p>To value an entire business (firm), consider cash flows to both equity and debt holders. The cash flow to the firm (<span class="math inline"><em>C</em><em>F</em><em>F</em></span>) is discounted at the <strong>Weighted Average Cost of Capital</strong> (WACC): <br /><span class="math display">$$WACC = \frac{E}{V} r_e + \frac{D}{V} r_d (1 - T)$$</span><br /> Where:</p>
+    <ul>
+    <li><p><span class="math inline"><em>E</em></span> = market value of equity</p></li>
+    <li><p><span class="math inline"><em>D</em></span> = market value of debt</p></li>
+    <li><p><span class="math inline"><em>V</em> = <em>E</em> + <em>D</em></span></p></li>
+    <li><p><span class="math inline"><em>r</em><sub><em>d</em></sub></span> = cost of debt</p></li>
+    <li><p><span class="math inline"><em>T</em></span> = corporate tax rate</p></li>
+    </ul>
+    <p>The business’s value can then be found, and subtracting the debt provides the equity value: <br /><span class="math display"><em>V</em><sub><em>e</em><em>q</em><em>u</em><em>i</em><em>t</em><em>y</em></sub> = <em>V</em><sub><em>f</em><em>i</em><em>r</em><em>m</em></sub> − <em>D</em></span><br /></p>
+    <h3 id="drivers-of-value">Drivers of Value</h3>
+    <ul>
+    <li><p><strong>Cash Flows:</strong> The actual monetary flows generated by the firm that can be distributed to stakeholders.</p></li>
+    <li><p><strong>Growth Prospects:</strong> The expected future growth of those cash flows.</p></li>
+    <li><p><strong>Risk Assessment:</strong> How risk is measured and incorporated into the discount rates used for valuation.</p></li>
+    </ul>
+    <p>In summary, successful equity valuation hinges on consistent assumptions about cash flows, growth rates, and risk. Future classes will delve deeper into these valuation processes, enhancing your ability to evaluate residual claims in a business effectively.</p>
+    <h1 id="option-valuation">Option Valuation</h1>
+    <h3 id="introduction-to-options">Introduction to Options</h3>
+    <p>An option is a financial derivative that provides its holder with the right, but not the obligation, to buy or sell a specified asset, known as the <strong>underlying asset</strong>, at a fixed price, known as the <strong>strike price</strong>, anytime before the expiration of the option.</p>
+    <ul>
+    <li><p><strong>Underlying Asset</strong>: The asset on which the option contract is based.</p></li>
+    <li><p><strong>Strike Price (K)</strong>: The predetermined price at which the holder can buy (call option) or sell (put option) the underlying asset.</p></li>
+    </ul>
+    <h3 id="types-of-options">Types of Options</h3>
+    <h4 id="call-options">Call Options</h4>
+    <p>A call option gives the holder the right to buy the underlying asset at the strike price (K).</p>
+    <ul>
+    <li><p>It can be exercised at any time before expiration if it’s an <strong>American option</strong>.</p></li>
+    <li><p>It can only be exercised at expiration if it’s a <strong>European option</strong>.</p></li>
+    </ul>
+    <p>The payoff for a call option can be represented as: <br /><span class="math display">Payoff = max (<em>S</em><sub><em>T</em></sub> − <em>K</em>, 0)</span><br /> Where <span class="math inline"><em>S</em><sub><em>T</em></sub></span> is the stock price at expiration.</p>
+    <h4 id="put-options">Put Options</h4>
+    <p>A put option gives the holder the right to sell the underlying asset at the strike price (K).</p>
+    <p>The payoff for a put option can be represented as: <br /><span class="math display">Payoff = max (<em>K</em> − <em>S</em><sub><em>T</em></sub>, 0)</span><br /></p>
+    <h3 id="payoff-diagrams">Payoff Diagrams</h3>
+    <p>Payoff diagrams visually depict the potential profit or loss from options:</p>
+    <ul>
+    <li><p>For a call option, if the stock price <span class="math inline"><em>S</em><sub><em>T</em></sub></span> is less than the strike price <span class="math inline"><em>K</em></span>, the option is not exercised, resulting in a loss equal to the premium paid for the option.</p></li>
+    <li><p>For a put option, if the stock price <span class="math inline"><em>S</em><sub><em>T</em></sub></span> is lower than the strike price <span class="math inline"><em>K</em></span>, the option is exercised, leading to a profit equal to the difference <span class="math inline"><em>K</em> − <em>S</em><sub><em>T</em></sub></span>.</p></li>
+    </ul>
+    <h3 id="factors-affecting-option-value">Factors Affecting Option Value</h3>
+    <p>The value of an option is influenced by several factors:</p>
+    <ol>
+    <li><p><strong>Value of the Underlying Asset (S)</strong>: As the asset price increases, call options become more valuable and put options become less valuable.</p></li>
+    <li><p><strong>Variance of the Underlying Asset</strong>: Increased volatility increases the value of both call and put options due to the potential for greater cash flows.</p></li>
+    <li><p><strong>Dividends</strong>: Dividends decrease the stock price when paid out, impacting the values of both call and put options.</p></li>
+    <li><p><strong>Strike Price (K)</strong>: A lower strike price increases the value of a call option and decreases the value of a put option.</p></li>
+    <li><p><strong>Time to Expiration (T)</strong>: More time until expiration increases the value of both call and put options.</p></li>
+    <li><p><strong>Risk-Free Rate (r)</strong>: Higher interest rates increase the value of call options while decreasing the value of put options.</p></li>
+    </ol>
+    <h3 id="option-pricing-models">Option Pricing Models</h3>
+    <h4 id="replicating-portfolio">Replicating Portfolio</h4>
+    <p>Option pricing revolves around creating a <strong>replicating portfolio</strong>. This portfolio replicates the cash flows of the option using the underlying asset and riskless borrowing or lending.</p>
+    <h4 id="binomial-option-pricing-model">Binomial Option Pricing Model</h4>
+    <p>In a binomial model, the stock price can move to one of two prices in successive time steps.</p>
+    <p>Consider a stock priced at <span class="math inline"><em>S</em></span> that can either rise to <span class="math inline"><em>U</em></span> or fall to <span class="math inline"><em>D</em></span> in successive time periods.</p>
+    <p>The value of a call option can be valued by working backwards from the potential payoffs at expiration through a binomial tree diagram.</p>
+    <h4 id="black-scholes-model">Black-Scholes Model</h4>
+    <p>The Black-Scholes formula calculates the price of European call and put options. The value of a call option is given by: <br /><span class="math display"><em>C</em> = <em>S</em><sub>0</sub> ⋅ <em>N</em>(<em>d</em><sub>1</sub>) − <em>K</em><em>e</em><sup> − <em>r</em><em>t</em></sup> ⋅ <em>N</em>(<em>d</em><sub>2</sub>)</span><br /> where <br /><span class="math display">$$d_1 = \frac{\ln(S_0/K) + (r + \sigma^2/2) t}{\sigma \sqrt{t}}$$</span><br /> <br /><span class="math display">$$d_2 = d_1 - \sigma \sqrt{t}$$</span><br /></p>
+    <p>Here, <span class="math inline"><em>N</em>(<em>d</em>)</span> is the cumulative distribution function of the standard normal distribution, and the variables are:</p>
+    <ul>
+    <li><p><span class="math inline"><em>S</em><sub>0</sub></span>: Current stock price</p></li>
+    <li><p><span class="math inline"><em>K</em></span>: Strike price</p></li>
+    <li><p><span class="math inline"><em>r</em></span>: Risk-free rate</p></li>
+    <li><p><span class="math inline"><em>t</em></span>: Time to expiration</p></li>
+    <li><p><span class="math inline"><em>σ</em></span>: Volatility of the underlying asset</p></li>
+    </ul>
+    <h4 id="adjusting-for-dividends">Adjusting for Dividends</h4>
+    <p>To adjust the Black-Scholes model for dividends, the adjusted stock price becomes: <br /><span class="math display"><em>S</em><sub>0</sub>′ = <em>S</em><sub>0</sub><em>e</em><sup> − <em>y</em><em>T</em></sup></span><br /> Where <span class="math inline"><em>y</em></span> is the dividend yield. This leads to adjustments in <span class="math inline"><em>d</em><sub>1</sub></span> and <span class="math inline"><em>d</em><sub>2</sub></span>.</p>
+    <h3 id="conclusion-6">Conclusion</h3>
+    <p>In financial modeling, understanding options and their pricing mechanisms is crucial. The Black-Scholes model provides a robust framework for valuing European options, and the binomial model offers a more flexible alternative.</p>
+    <h1 id="inflation-the-hidden-tax">Inflation the Hidden Tax</h1>
+    <h3 id="introduction-to-inflation">Introduction to Inflation</h3>
+    <p>Inflation is commonly described by two primary definitions:</p>
+    <ul>
+    <li><p><strong>Rising Price Levels</strong>: An increase in the general price levels of goods and services over time.</p></li>
+    <li><p><strong>Decreasing Purchasing Power</strong>: The same amount of money buys fewer goods and services than before.</p></li>
+    </ul>
+    <p>However, there are subtleties in understanding inflation that are critical, especially regarding its impact on investments and businesses.</p>
+    <h3 id="types-of-inflation">Types of Inflation</h3>
+    <h4 id="general-inflation-vs.-relative-inflation">General Inflation vs. Relative Inflation</h4>
+    <ul>
+    <li><p><strong>General Inflation</strong>: Measures the overall decrease in purchasing power.</p></li>
+    <li><p><strong>Relative Inflation</strong>: Measures changes in prices relative to one another.</p></li>
+    </ul>
+    <p>For example, if gasoline prices increase by 25% while food prices decrease by 15%, the overall cost may not increase, indicating that a perceived inflationary effect may not exist.</p>
+    <h4 id="the-hidden-tax">The Hidden Tax</h4>
+    <p>Inflation can be considered a hidden tax, as it effectively reduces the real returns on investments and business profits without being labeled as a tax.</p>
+    <h3 id="measuring-inflation">Measuring Inflation</h3>
+    <p>Inflation must be measured systematically. The following approaches are commonly used in the U.S.:</p>
+    <ul>
+    <li><p><strong>Consumer Price Index (CPI)</strong>: Measures inflation based on goods and services purchased by consumers.</p></li>
+    <li><p><strong>Producer Price Index (PPI)</strong>: Measures the average changes in selling prices received by domestic producers for their output.</p></li>
+    <li><p><strong>GDP Deflator</strong>: Reflects the broader measure of inflation for all goods and services produced in the country.</p></li>
+    </ul>
+    <h4 id="challenges-in-measurement">Challenges in Measurement</h4>
+    <p>The selection of the ’basket of goods’ is crucial. If the basket does not accurately reflect consumer behavior or is misweighted, inflation measurement can be skewed. Factors include:</p>
+    <ul>
+    <li><p>Changes in consumer spending patterns and weights assigned to different goods.</p></li>
+    <li><p>Potential biases from government agencies which may want to reflect favorable inflation rates.</p></li>
+    </ul>
+    <p>These challenges result in different inflation rates among measures.</p>
+    <h3 id="causes-of-inflation">Causes of Inflation</h3>
+    <p>Three primary forces drive inflation:</p>
+    <ul>
+    <li><p><strong>Government Spending</strong>: Increased government deficits tend to lead to higher inflation, especially when economic growth is low.</p></li>
+    <li><p><strong>Economic Growth</strong>: Generally, higher economic growth leads to increased inflationary pressure.</p></li>
+    <li><p><strong>Monetary Policy</strong>: Excessive money printing can lead to significant inflation, particularly in extreme cases (hyperinflation).</p></li>
+    </ul>
+    <h3 id="nominal-vs.-real-returns">Nominal vs. Real Returns</h3>
+    <p>In finance, it is essential to distinguish between nominal and real returns:</p>
+    <ul>
+    <li><p><strong>Nominal Returns (R)</strong>: The percentage increase in the value of an investment without considering inflation.</p></li>
+    <li><p><strong>Real Returns (r)</strong>: Adjusted for inflation, reflecting the actual increase in purchasing power. The relationship is given by: <br /><span class="math display">(1 + <em>R</em>) = (1 + <em>r</em>) ⋅ (1 + <em>i</em>)</span><br /> where <span class="math inline"><em>i</em></span> is the inflation rate.</p></li>
+    </ul>
+    <h4 id="conversion-formula">Conversion Formula</h4>
+    <p>To convert nominal returns to real returns:</p>
+    <ul>
+    <li><p>Start with the nominal return <span class="math inline"><em>R</em></span>: <br /><span class="math display">$$r = \frac{1 + R}{1 + i} - 1$$</span><br /></p></li>
+    </ul>
+    <h3 id="illustrative-examples">Illustrative Examples</h3>
+    <p>Using historical data from 1929 to 2019:</p>
+    <ul>
+    <li><p>An investment of $100 in stocks would grow to $500,000 in nominal terms, but only $33,000 in real terms when inflation is taken into account.</p></li>
+    </ul>
+    <p><br /><span class="math display">Nominal Value = 100 ⟹ Final Nominal Value ≈ 500, 000</span><br /></p>
+    <p><br /><span class="math display">Real Value = 100 ⟹ Final Real Value ≈ 33, 000</span><br /></p>
+    <h3 id="summary">Summary</h3>
+    <p>Understanding inflation is crucial not only for investors but also for businesses. Key takeaways include:</p>
+    <ul>
+    <li><p>Recognize the difference between nominal and real values.</p></li>
+    <li><p>Always account for inflation when considering cash flows or investment returns.</p></li>
+    <li><p>Inflation affects perceptions of financial returns significantly.</p></li>
+    </ul>
+    <p>In the next session, we will discuss interest rates and their relationship with inflation.</p>
+    <h1 id="understanding-interest-rates">Understanding Interest Rates</h1>
+    <h3 id="introduction-to-interest-rates">Introduction to Interest Rates</h3>
+    <p>Interest rates are pervasive in our financial interactions, as they dictate the cost of borrowing and the return on lending money. These rates can vary widely based on context, and understanding their origins and behaviors is crucial.</p>
+    <h4 id="types-of-interest-rates">Types of Interest Rates</h4>
+    <p>Interest rates can be categorized broadly into four types:</p>
+    <ol>
+    <li><p><strong>Market Set Rates:</strong> Determined by supply and demand in the financial markets. Examples include the rates on commercial paper and U.S. Treasury bonds (T-bonds).</p></li>
+    <li><p><strong>Market Influencer Rates:</strong> Set by institutions but influenced by market conditions. For instance, mortgage rates and fixed deposit rates are affected by treasury rates.</p></li>
+    <li><p><strong>Bank and Central Bank Rates:</strong> Rates established by financial institutions and central banks, often with a more rigid structure. These may still indirectly be affected by market determined rates.</p></li>
+    <li><p><strong>Negotiated Rates:</strong> Rates established through negotiation, impacted by market rates but dependent on individual circumstances.</p></li>
+    </ol>
+    <h3 id="key-interest-rate-concepts">Key Interest Rate Concepts</h3>
+    <h4 id="nominal-vs.-real-interest-rates">Nominal vs. Real Interest Rates</h4>
+    <ul>
+    <li><p><strong>Nominal Interest Rate:</strong> The stated interest rate before adjustments for inflation.</p></li>
+    <li><p><strong>Real Interest Rate:</strong> The rate of interest an investor receives after adjusting for inflation. It can be calculated using the <strong>Fisher Equation</strong>: <br /><span class="math display">$$1 + r = \frac{1 + i}{1 + \pi}$$</span><br /> where:</p>
+    <ul>
+    <li><p><span class="math inline"><em>r</em></span> = real interest rate</p></li>
+    <li><p><span class="math inline"><em>i</em></span> = nominal interest rate</p></li>
+    <li><p><span class="math inline"><em>π</em></span> = expected inflation rate</p></li>
+    </ul></li>
+    </ul>
+    <h4 id="treasury-inflation-protected-securities-tips">Treasury Inflation-Protected Securities (TIPS)</h4>
+    <p>TIPS provide a safeguard against inflation. Instead of a fixed nominal rate, TIPS offer a real interest rate. The return adjusts based on inflation. For example, if you receive a guaranteed real interest rate of <span class="math inline"><em>r</em> = 1%</span>:</p>
+    <ul>
+    <li><p>If inflation <span class="math inline"> = 2%</span>, nominal return <span class="math inline"> = 3%</span>.</p></li>
+    <li><p>If inflation <span class="math inline"> = 10%</span>, nominal return <span class="math inline"> = 11%</span>.</p></li>
+    </ul>
+    <h3 id="central-banks-and-rate-influence">Central Banks and Rate Influence</h3>
+    <h4 id="role-of-central-banks">Role of Central Banks</h4>
+    <p>Central banks do not set all interest rates. They primarily influence rates through the <strong>federal funds rate</strong>, the rate at which banks lend to each other. Changes in this rate send signals to the market. The influence of central banks is significant but limited to perception.</p>
+    <h4 id="quantitative-easing">Quantitative Easing</h4>
+    <p>Since the 2008 financial crisis, central banks have employed quantitative easing, buying bonds to lower rates further. While this has had some effect, the fundamental drivers of interest rates remain inflation and real economic growth.</p>
+    <h3 id="the-yield-curve">The Yield Curve</h3>
+    <h4 id="understanding-the-yield-curve">Understanding the Yield Curve</h4>
+    <p>The yield curve represents the relationship between interest rates and the maturities of debt. It generally takes one of three forms:</p>
+    <ol>
+    <li><p><strong>Upward Sloping:</strong> Long-term rates are higher than short-term rates. This is the most common form.</p></li>
+    <li><p><strong>Flat:</strong> Long-term and short-term rates are similar.</p></li>
+    <li><p><strong>Downward Sloping (Inverted):</strong> Long-term rates are lower than short-term rates, often seen as a predictor of economic recessions.</p></li>
+    </ol>
+    <p>An inverted yield curve historically has been associated with recessions.</p>
+    <h3 id="correlation-between-the-yield-curve-and-economic-growth">Correlation between the Yield Curve and Economic Growth</h3>
+    <h4 id="yield-curve-analysis">Yield Curve Analysis</h4>
+    <p>When analyzing the slope of the yield curve against GDP growth, correlations can provide insight:</p>
+    <ul>
+    <li><p>A strongly upward sloping yield curve is traditionally believed to correlate with significant economic growth.</p></li>
+    <li><p>However, empirical evidence suggests that the correlation between the steepness of the yield curve and GDP growth has weakened in recent years.</p></li>
+    </ul>
+    <h3 id="conclusion-7">Conclusion</h3>
+    <p>In summary, interest rates are influenced by various factors, including inflation and real growth. Central banks play a role in influencing but not setting these rates. Understanding these concepts is vital as we move forward in discussing interest rates in the context of financial valuation.</p>
+    <h1 id="currencies-and-their-impact-on-financial-analysis">Currencies and Their Impact on Financial Analysis</h1>
+    <h3 id="introduction-6">Introduction</h3>
+    <p>In this session, we examine the importance of currencies in financial and economic analyses. With globalization, analysts must navigate multiple currencies, valuing companies not just in domestic currencies but also in foreign ones.</p>
+    <h3 id="the-currency-code">The Currency Code</h3>
+    <h4 id="why-currencies-matter">Why Currencies Matter</h4>
+    <p>Historically, financial analysis focused solely on domestic currencies. However, the emergence of globalization necessitates an understanding of multiple currencies.</p>
+    <h4 id="key-factors-affecting-currencies">Key Factors Affecting Currencies</h4>
+    <ul>
+    <li><p>Country Risk: Not the primary reason for currency differences.</p></li>
+    <li><p>Inflation Rates: The key driver of currency value differentials.</p></li>
+    </ul>
+    <h3 id="interest-rates-and-currencies">Interest Rates and Currencies</h3>
+    <h4 id="relationship-between-inflation-and-interest-rates">Relationship Between Inflation and Interest Rates</h4>
+    <p><br /><span class="math display">Higher Inflation ⇒ Higher Interest Rates</span><br /> Conversely, lower inflation rates correlate with lower interest rates.</p>
+    <h4 id="government-bond-rates">Government Bond Rates</h4>
+    <p>Government bond rates reflect both inflation expectations and country risk. The risk-free rate, adjusting for default risk, may be represented as: <br /><span class="math display"><em>r</em><sub><em>r</em><em>f</em></sub> = <em>r</em><sub><em>b</em></sub> − <em>r</em><sub><em>d</em></sub></span><br /> where <span class="math inline"><em>r</em><sub><em>r</em><em>f</em></sub></span> is the risk-free rate, <span class="math inline"><em>r</em><sub><em>b</em></sub></span> is the bond rate, and <span class="math inline"><em>r</em><sub><em>d</em></sub></span> is the default risk premium.</p>
+    <h3 id="estimating-risk-free-rates-in-foreign-currencies">Estimating Risk-Free Rates in Foreign Currencies</h3>
+    <p>When direct government bonds are not available: <br /><span class="math display"><em>R</em><sub>Foreign</sub> = <em>R</em><sub>Domestic</sub> + (<em>I</em><sub>Foreign</sub> − <em>I</em><sub>Domestic</sub>)</span><br /> where <span class="math inline"><em>R</em><sub>Foreign</sub></span> is the risk-free rate in the foreign currency, <span class="math inline"><em>R</em><sub>Domestic</sub></span> is the risk-free rate in the domestic currency, <span class="math inline"><em>I</em><sub>Foreign</sub></span> is the foreign expected inflation rate, and <span class="math inline"><em>I</em><sub>Domestic</sub></span> is the domestic expected inflation rate.</p>
+    <h4 id="example-calculation">Example Calculation</h4>
+    <p>Given:</p>
+    <p>The approximation is: <br /><span class="math display"><em>R</em><sub>EGP</sub> ≈ 2.27% + (9.7% − 1.5%) = 10.47%</span><br /> For precision, use: <br /><span class="math display">$$R_{\text{EGP, precise}} = \frac{(1 + R_{\text{USD}})}{(1 + I_{\text{USD}})} \times (1 + I_{\text{EGP}})$$</span><br /></p>
+    <h3 id="currency-consistency-in-analysis">Currency Consistency in Analysis</h3>
+    <p>When conducting project analyses, all elements must be currency consistent:</p>
+    <ul>
+    <li><p>Discount rates must match the currency of cash flows.</p></li>
+    </ul>
+    <h3 id="forecasting-exchange-rates">Forecasting Exchange Rates</h3>
+    <p>To maintain currency consistency:</p>
+    <h4 id="methods-for-forecasting">Methods for Forecasting</h4>
+    <ol>
+    <li><p>Expert Forecasting: Often unreliable; macroeconomic predictions tend to perform worse than random guesses.</p></li>
+    <li><p>Market Forecasts: Using forward and futures markets when available.</p></li>
+    <li><p>Parity Conditions:</p></li>
+    </ol>
+    <ul>
+    <li><p>Interest Rate Parity (IRP): For two currencies, the forward exchange rate can be determined by the interest rates.</p></li>
+    <li><p>Purchasing Power Parity (PPP): Forecasting exchange rates using inflation differentials: <br /><span class="math display">$$E(t) = E(0) \times \left( \frac{1 + I_{\text{domestic}}}{1 + I_{\text{foreign}}} \right)$$</span><br /></p></li>
+    </ul>
+    <h4 id="example-of-interest-rate-parity">Example of Interest Rate Parity</h4>
+    <p>Let:</p>
+    <p>Then, <br /><span class="math display">$$E(1) = E(0) \times \left( \frac{1 + r_{USD}}{1 + r_{EUR}} \right)$$</span><br /> Indicating a depreciation of the Euro as the USD interest rate is higher.</p>
+    <h3 id="purchasing-power-parity">Purchasing Power Parity</h3>
+    <h4 id="predicting-currency-depreciation">Predicting Currency Depreciation</h4>
+    <p>Given two currencies and their respective inflation rates, <br /><span class="math display">$$\text{Expected Change} = \frac{I_{\text{Foreign}} - I_{\text{Domestic}}}{1 + I_{\text{Domestic}}}$$</span><br /> This relationship implies that higher inflation in a currency leads to greater depreciation against a lower inflation currency.</p>
+    <h3 id="conclusion-8">Conclusion</h3>
+    <p>The interplay between inflation, interest rates, and currency exchange rates is crucial in financial analysis. Keeping analyses consistent across currencies ensures that results remain valid irrespective of the currency used.</p>
+    
+
+</div>
+  <!-- insert above this -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</body>
+
+</html>
+

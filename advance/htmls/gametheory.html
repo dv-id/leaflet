@@ -1,0 +1,1781 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>/\dvance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+        code {
+            white-space: pre-wrap;
+        }
+
+        span.smallcaps {
+            font-variant: small-caps;
+        }
+
+        span.underline {
+            text-decoration: underline;
+        }
+
+        div.column {
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+        }
+
+        div.hanging-indent {
+            margin-left: 1.5em;
+            text-indent: -1.5em;
+        }
+
+        ul.task-list {
+            list-style: none;
+        }
+    </style>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body style="
+    background-color: rgb(0, 0, 39);
+    color: rgb(205, 158, 250);" class="vh-100 p-0 mb-0">
+
+    <div class="container" style="margin-top: 10%;">
+        <div id="business-row" class="row justify-content-between">
+            
+            <nav class="navbar navbar-dark navbar-collapse navbar-fixed-top fixed-top justify-content-center container" style="background-color: rgb(0, 0, 40);">
+                <div class="container justify-content-center">
+                <a class="navbar-brand" href="../index.html" style="color: rgb(179, 114, 240);">/\dvance</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../finance.html">Finance</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../startups.html">Startups</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../economics.html">Economics</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../humanities.html">Humanities</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../philosophy.html">Philosophy</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../science.html">Science</a>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+
+                <div class="container" style="background-color: rgb(0, 0, 40);">
+                    <div class="col-12 d-flex justify-content-start align-items-center">
+                        <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                            <ol class="breadcrumb m-1">
+                                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="../science.html">Science</a></li>
+                                <li class="breadcrumb-item active"><a href="../htmls/gametheory.html">Game Theory</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+              <div class="btn position-fixed fixed-bottom d-flex justify-content-end p-0">
+                <a style="color: white; background-color: rgb(0, 0, 40);" class="border rounded p-1"
+                onclick="document.getElementById('contents').scrollIntoView({ behavior: 'smooth' });">contents^</a>
+              </div>
+            </nav>
+            
+        </div>
+        <div class="row">
+            <h1 id="contents" class="m-0">contents</h4>
+                <div class="col-6">
+                    <ul>
+                        <li class="mb-1">
+                            <a href="#introduction-to-game-theory">Introduction to Game Theory</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#game-theory-lecture-nots">Game Theory Lecture Notes</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-game-theory-iterative-deletion-of-dominated-strategies">Iterative Deletion of Dominated Strategies</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-on-game-theory-best-response-and-nash-equilibrium">Best Response and Nash Equilibrium</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-nash-equilibrium">Notes on Nash Equilibrium</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-on-coordination-games-and-cournot-duopoly">Lecture Notes on Coordination Games and Cournot Duopoly</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-imperfect-competition">Notes on Imperfect Competition</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-candidate-voter-model-and-mixed-strategies">Notes on Candidate-Voter Model and Mixed Strategies</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-on-mixed-strategies-and-nash-equilibrium">Lecture Notes on Mixed Strategies and Nash Equilibrium</a>
+                        </li>
+                        <li>
+                            <a href="#lecture-notes-on-mixed-strategies-and-nash-equilibria">Lecture Notes on Mixed Strategies and Nash Equilibria</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li class="mb-1">
+                            <a href="#notes-on-evolution-and-game-theory">Notes on Evolution and Game Theory</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#evolutionary-stability-and-nash-equilibrium-notes">Evolutionary Stability and Nash Equilibrium Notes</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-game-theory-cash-in-a-hat">Notes on Game Theory: Cash in a Hat</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-quantity-competition">Lecture Notes: Quantity Competition</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-on-game-theory-zermelos-theorem-and-strategic-games">Zermelo’s Theorem and Strategic Games</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-game-theory-entry-deterrence-and-reputation">Entry Deterrence and Reputation</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-ultimatum-and-bargaining-games">Notes on Ultimatum and Bargaining Games</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-game-theory">Notes on Game Theory</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-game-theory-sub-game-perfect-equilibrium">Sub-game Perfect Equilibrium</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#general-notes-on-repeated-interactions-in-game-theory">General Notes on Repeated Interactions in Game Theory</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#repeated-interaction-and-cooperation">Repeated Interaction and Cooperation</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-on-asymmetric-information-and-signaling">Lecture Notes on Asymmetric Information and Signaling</a>
+                        </li>
+                        <li>
+                            <a href="#lecture-notes-on-auctions">Lecture Notes on Auctions</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- insert under this -->
+    <div class="container">
+<h1>Intorduction to Game Theory</h1>
+        <h3 id="introduction">Introduction</h3>
+<p>Game Theory is a method of studying strategic situations, where the actions of others affect an individual’s outcomes. Strategic situations contrast with non-strategic ones, such as perfect competition and monopolies, where players do not worry about others’ actions.</p>
+<h3 id="definitions">Definitions</h3>
+<h4 id="strategic-situation">Strategic Situation</h4>
+<ul>
+<li><p>A setting where outcomes depend not only on an individual’s actions but also on the actions of others.</p></li>
+</ul>
+<h4 id="non-strategic-situation">Non-Strategic Situation</h4>
+<ul>
+<li><p>Perfect competition and monopolistic markets, where firms do not react to competitors.</p></li>
+</ul>
+<h4 id="game-theory-applications">Game Theory Applications</h4>
+<p>Game theory is applied across various fields including:</p>
+<ul>
+<li><p>Economics</p></li>
+<li><p>Politics</p></li>
+<li><p>Law</p></li>
+<li><p>Biology</p></li>
+<li><p>Sports</p></li>
+</ul>
+<h3 id="game-1-grade-scheme">Game 1: Grade Scheme</h3>
+<p>Each student must choose either:</p>
+<ul>
+<li><p>Alpha</p></li>
+<li><p>Beta</p></li>
+</ul>
+<p>The outcomes are defined as follows:</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>Row Player</strong></th>
+<th style="text-align: center;"><strong>Alpha</strong></th>
+<th style="text-align: center;"><strong>Beta</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>Alpha</strong></td>
+<td style="text-align: center;">(B-, B-)</td>
+<td style="text-align: center;">(A, C)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Beta</strong></td>
+<td style="text-align: center;">(C, A)</td>
+<td style="text-align: center;">(B+, B+)</td>
+</tr>
+</tbody>
+</table>
+<p>Where:</p>
+<ul>
+<li><p>If both choose Alpha: both get B-.</p></li>
+<li><p>If one chooses Alpha, the other chooses Beta: (A for Alpha and C for Beta).</p></li>
+<li><p>If both choose Beta: both get B+.</p></li>
+</ul>
+<h4 id="analysis-and-strategies">Analysis and Strategies</h4>
+<p>1. Dominated Strategy: A strategy that results in worse payoffs regardless of the opponent’s actions.</p>
+<p>Definition: A strategy <span class="math inline"><em>α</em></span> strictly dominates <span class="math inline"><em>β</em></span> if: <br /><span class="math display"><em>U</em>(<em>α</em>) &gt; <em>U</em>(<em>β</em>)  for all opponents’ strategies</span><br /></p>
+<p>2. Key Lesson:</p>
+<ul>
+<li><p>Do not play a strictly dominated strategy.</p></li>
+<li><p>Rational choices by rational players can lead to suboptimal (inefficient) outcomes (e.g., Prisoner’s Dilemma).</p></li>
+</ul>
+<h4 id="prisoners-dilemma">Prisoner’s Dilemma</h4>
+<p>In the classic scenario:</p>
+<ul>
+<li><p>Two players can either cooperate or defect.</p></li>
+<li><p>Mutual cooperation yields a better collective outcome, but individual incentives often lead to defection.</p></li>
+</ul>
+<p>Example Outcomes:</p>
+<ul>
+<li><p>Both cooperate: 1 year sentence each.</p></li>
+<li><p>Both defect: 2 years sentence each.</p></li>
+<li><p>One defects, the other cooperates: defector goes free.</p></li>
+</ul>
+<h4 id="lesson-summary-from-game-1">Lesson Summary from Game 1</h4>
+<ul>
+<li><p>Do not play strictly dominated strategies.</p></li>
+<li><p>Rational choices can lead to poor outcomes.</p></li>
+<li><p>Consider the perspective of others in decision making.</p></li>
+</ul>
+<h3 id="game-2-pick-a-number">Game 2: Pick a Number</h3>
+<p>In this game, students must choose a number between 1 and 100. The winner will be the person whose number is closest to two-thirds of the average chosen number.</p>
+<h4 id="example-calculation">Example Calculation</h4>
+<p>If numbers chosen: 25, 5, and 60: <br /><span class="math display">$$\text{Total} = 25 + 5 + 60 = 90 \\
+
+    \text{Average} = \frac{90}{3} = 30 \\
+\text{Two-Thirds of Average} = \frac{2}{3} \times 30 = 20$$</span><br /> The winner with the closest number to 20 will receive the prize.</p>
+<h3 id="key-takeaways">Key Takeaways</h3>
+<ul>
+<li><p>Lesson 1: Do not play a strictly dominated strategy.</p></li>
+<li><p>Lesson 2: Rational choices can lead to bad outcomes.</p></li>
+<li><p>Lesson 3: Put yourself in others’ shoes.</p></li>
+<li><p>Lesson 4: Payoffs matter significantly in decision making.</p></li>
+<li><p>Lesson 5: Collective outcomes depend on individual thinking.</p></li>
+</ul>
+<h1 id="game-theory-lecture-notes">Game Theory Lecture Notes</h1>
+<h3 id="introduction-to-game-theory">Introduction to Game Theory</h3>
+<p>In this lecture, we explore the foundational concepts of Game Theory, including normal-form games, strategies, outcomes, and payoffs. We emphasize the importance of understanding not only one’s own payoffs but also the payoffs of others.</p>
+<h4 id="game-structure">Game Structure</h4>
+<ul>
+<li><p>A game consists of players, strategies, and payoffs.</p></li>
+<li><p><strong>Players:</strong> Denoted by indices <span class="math inline"><em>i</em></span> and <span class="math inline"><em>j</em></span>. In our example, all students in the class are players.</p></li>
+<li><p><strong>Strategies:</strong> A strategy <span class="math inline"><em>s</em><sub><em>i</em></sub></span> represents a choice made by player <span class="math inline"><em>i</em></span>; the set of all strategies for player <span class="math inline"><em>i</em></span> is denoted as <span class="math inline"><em>S</em><sub><em>i</em></sub></span>.</p></li>
+<li><p><strong>Payoffs:</strong> The payoff <span class="math inline"><em>U</em><sub><em>i</em></sub></span> for player <span class="math inline"><em>i</em></span> depends on the choices made by all players and is denoted as <span class="math inline"><em>U</em><sub><em>i</em></sub>(<em>s</em>)</span> for a specific strategy profile <span class="math inline"><em>s</em></span>.</p></li>
+</ul>
+<h4 id="strictly-dominated-strategies">Strictly Dominated Strategies</h4>
+<p>A strategy <span class="math inline"><em>s</em><sub><em>i</em></sub></span> is strictly dominated by another strategy <span class="math inline"><em>s</em>′<sub><em>i</em></sub></span> if: <br /><span class="math display"><em>U</em><sub><em>i</em></sub>(<em>s</em><sub><em>i</em></sub>, <em>s</em><sub> − <em>i</em></sub>) &gt; <em>U</em><sub><em>i</em></sub>(<em>s</em>′<sub><em>i</em></sub>, <em>s</em><sub> − <em>i</em></sub>) for all <em>s</em><sub> − <em>i</em></sub>.</span><br /></p>
+<h4 id="weakly-dominated-strategies">Weakly Dominated Strategies</h4>
+<p>A strategy <span class="math inline"><em>s</em><sub><em>i</em></sub></span> is weakly dominated by <span class="math inline"><em>s</em>′<sub><em>i</em></sub></span> if: <br /><span class="math display"><em>U</em><sub><em>i</em></sub>(<em>s</em><sub><em>i</em></sub>, <em>s</em><sub> − <em>i</em></sub>) ≥ <em>U</em><sub><em>i</em></sub>(<em>s</em>′<sub><em>i</em></sub>, <em>s</em><sub> − <em>i</em></sub>) for all <em>s</em><sub> − <em>i</em></sub>  and  <em>U</em><sub><em>i</em></sub>(<em>s</em><sub><em>i</em></sub>, <em>s</em><sub> − <em>i</em></sub>) &gt; <em>U</em><sub><em>i</em></sub>(<em>s</em>′<sub><em>i</em></sub>, <em>s</em><sub> − <em>i</em></sub>) for at least one <em>s</em><sub> − <em>i</em></sub>.</span><br /></p>
+<h3 id="prisoners-dilemma-real-world-applications">Prisoners’ Dilemma: Real-World Applications</h3>
+<ul>
+<li><p>Joint projects and homework assignments where individuals may have an incentive to shirk their responsibilities.</p></li>
+<li><p>Price competition among firms which can lead to prices being driven down.</p></li>
+<li><p>Common resource issues, such as overfishing and carbon emissions.</p></li>
+</ul>
+<h3 id="example-normal-form-game">Example: Normal-Form Game</h3>
+<p>Consider a simple game with two players <span class="math inline"><em>I</em></span> and <span class="math inline"><em>I</em><em>I</em></span>:</p>
+<ul>
+<li><p>Player <span class="math inline"><em>I</em></span> has two strategies: Top (T) and Bottom (B).</p></li>
+<li><p>Player <span class="math inline"><em>I</em><em>I</em></span> has three strategies: Left (L), Center (C), and Right (R).</p></li>
+</ul>
+<p>The payoff matrix is as follows, with player <span class="math inline"><em>I</em></span>’s payoff listed first and player <span class="math inline"><em>I</em><em>I</em></span>’s listed second: <br /><span class="math display">$$\begin{array}{c|c|c|c}
+    &amp; L &amp; C &amp; R \\
+\hline
+T &amp; (5,-1) &amp; (11,3) &amp; (0,0) \\
+\hline
+B &amp; (6,4) &amp; (0,2) &amp; (2,0) \\
+\end{array}$$</span><br /></p>
+<h4 id="analysis-of-the-game">Analysis of the Game</h4>
+<ul>
+<li><p>Player <span class="math inline"><em>I</em></span> has no strictly dominated strategies.</p></li>
+<li><p>Player <span class="math inline"><em>I</em><em>I</em></span> has Right (R) as a dominated strategy since Center (C) strictly dominates it.</p></li>
+</ul>
+<h3 id="rationality-and-common-knowledge">Rationality and Common Knowledge</h3>
+<ul>
+<li><p>Rationality implies no player will choose strictly dominated strategies.</p></li>
+<li><p>Knowledge about other players’ rationality shapes strategy choices.</p></li>
+<li><p><strong>Common Knowledge:</strong> It extends beyond mutual knowledge; all players must know that others know.</p></li>
+</ul>
+<h3 id="conclusion-and-real-world-implications">Conclusion and Real-World Implications</h3>
+<p>The lecture summarized the foundational elements of Game Theory, illustrated through various examples, including the Prisoners’ Dilemma and specific strategies in normal-form games. Understanding payoffs, recognizing dominated strategies, rationality, and the essence of common knowledge are crucial for predicting behavior in strategic settings.</p>
+<h1 id="notes-on-game-theory-iterative-deletion-of-dominated-strategies">Notes on Game Theory: Iterative Deletion of Dominated Strategies</h1>
+<h3 id="introduction-1">Introduction</h3>
+<p>In this lecture, we discussed the concept of <strong>Iterative Deletion of Dominated Strategies</strong>. The main idea involves analyzing strategies in a game to identify which ones are dominated, deleting those strategies, and re-evaluating the game iteratively until no further strategies can be eliminated. The process is summarized by the following steps:</p>
+<ol>
+<li><p>Identify dominated strategies.</p></li>
+<li><p>Delete those strategies.</p></li>
+<li><p>Repeat the process on the modified game.</p></li>
+</ol>
+<h3 id="key-concepts">Key Concepts</h3>
+<h4 id="dominated-strategies">Dominated Strategies</h4>
+<p>A strategy is considered dominated if there is another strategy that yields a better payoff regardless of what the opposing player does.</p>
+<ul>
+<li><p><strong>Strict Dominance:</strong> A strategy <span class="math inline"><em>σ</em><sub><em>i</em></sub></span> strictly dominates another strategy <span class="math inline"><em>σ</em>′<sub><em>i</em></sub></span> if it always yields a higher payoff for player <span class="math inline"><em>i</em></span>, irrespective of opponents’ strategies.</p></li>
+<li><p><strong>Weak Dominance:</strong> A strategy <span class="math inline"><em>σ</em><sub><em>i</em></sub></span> weakly dominates a strategy <span class="math inline"><em>σ</em>′<sub><em>i</em></sub></span> if it yields a payoff at least equal in all scenarios and strictly better in at least one.</p></li>
+</ul>
+<h4 id="application-in-political-elections">Application in Political Elections</h4>
+<p>The discussion transitioned to a practical application of the iterative deletion of dominated strategies using a political model where two candidates position themselves on a political spectrum ranging from left (1) to right (10):</p>
+<ul>
+<li><p>Candidates choose their positions with the aim of maximizing their share of the vote.</p></li>
+<li><p>Voters choose the candidate whose position is closest to their own, leading to strategic positioning by candidates.</p></li>
+</ul>
+<h3 id="median-voter-theorem">Median Voter Theorem</h3>
+<p>The culmination of the discussion on political positioning leads to the <strong>Median Voter Theorem</strong>, which states that in a majoritarian election, candidates will move towards the median voter’s position. This results in both candidates converging towards the center of the political spectrum.</p>
+<h4 id="prediction-and-historical-examples">Prediction and Historical Examples</h4>
+<p>Historical elections, such as those between Kennedy and Nixon (1960) and Clinton’s election strategy (1992), exemplify this theorem where candidates adopted moderate positions to appeal to a broader electorate.</p>
+<h3 id="best-response-dynamics">Best Response Dynamics</h3>
+<p>We also touched upon the concept of <strong>Best Response</strong> where:</p>
+<ul>
+<li><p>Each player chooses a strategy that maximizes their payoff given the strategy chosen by the other player.</p></li>
+</ul>
+<p>The example provided discussed a game with two players where each chooses among strategies and the payoffs were calculated to determine optimal strategies based on expected outcomes.</p>
+<h4 id="graphical-representation">Graphical Representation</h4>
+<p>Instead of tedious calculations, graphical representations of payoffs based on beliefs about opponents’ strategies were utilized:</p>
+<ul>
+<li><p>The expected payoff from a strategy can be plotted against the probability of an adversary choosing one among their available strategies.</p></li>
+</ul>
+<p>This allows for visual identification of the best responses in various scenarios.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Modeling is a crucial tool in economics and political science to capture and simplify real-world complexities. The iterative deletion of dominated strategies and the Median Voter Theorem provides insightful frameworks for understanding strategic behavior in competitive settings, while best response strategies give a structured approach to decision-making based on expectations.</p>
+<h1 id="lecture-notes-on-game-theory-best-response-and-nash-equilibrium">Lecture Notes on Game Theory: Best Response and Nash Equilibrium</h1>
+<h3 id="introduction-2">Introduction</h3>
+<ul>
+<li><p>The concept of <strong>best response</strong> is introduced.</p></li>
+<li><p>A best response is a strategy that yields the highest payoff given the player’s beliefs about what others will do.</p></li>
+</ul>
+<h3 id="the-penalty-kick-game">The Penalty Kick Game</h3>
+<h4 id="game-setup">Game Setup</h4>
+<ul>
+<li><p>The penalty kick game involves a shooter (attacker) and a goalie.</p></li>
+<li><p>The shooter can kick the ball <strong>left</strong>, <strong>middle</strong>, or <strong>right</strong>.</p></li>
+<li><p>The goalie can dive to the <strong>left</strong> or <strong>right</strong>.</p></li>
+</ul>
+<h4 id="probabilities-and-payoffs">Probabilities and Payoffs</h4>
+<ul>
+<li><p>The probability of scoring and corresponding payoffs can be denoted as: <br /><span class="math display"><em>u</em><sub>1</sub>(left) = 4  (40%chance when goalie dives left)</span><br /> <br /><span class="math display"><em>u</em><sub>1</sub>(right) = 9  (90%chance when goalie dives right)</span><br /></p></li>
+<li><p>Payoff structure: <br /><span class="math display">Payoffs = (4,  − 4), (9,  − 9), (6,  − 6), (6,  − 6), (9,  − 9), (4,  − 4)</span><br /></p></li>
+</ul>
+<h4 id="strategy-dominance">Strategy Dominance</h4>
+<ul>
+<li><p>No player has a dominated strategy.</p></li>
+<li><p>Examining the shooter’s options based on the goalie’s actions:</p>
+<ul>
+<li><p>If the goalie dives left: <br /><span class="math display">Best response = Right (9) &gt; Middle (6) &gt; Left (4)</span><br /></p></li>
+<li><p>If the goalie dives right: <br /><span class="math display">Best response = Left (9) &gt; Middle (6) &gt; Right (4)</span><br /></p></li>
+</ul></li>
+</ul>
+<h4 id="expected-payoff-calculation">Expected Payoff Calculation</h4>
+<p><strong>Expected payoff</strong> based on beliefs about goalie behavior, represented as a function of the probability <span class="math inline"><em>p</em></span> that the goalie dives to the right: <br /><span class="math display"><em>E</em>(Left) = 4(1 − <em>p</em>) + 9<em>p</em></span><br /> <br /><span class="math display"><em>E</em>(Middle) = 6(1 − <em>p</em>) + 6<em>p</em> = 6</span><br /> <br /><span class="math display"><em>E</em>(Right) = 9(1 − <em>p</em>) + 4<em>p</em></span><br /></p>
+<h4 id="conclusion-of-the-penalty-kick-game">Conclusion of the Penalty Kick Game</h4>
+<ul>
+<li><p>The outcome shows that shooting to the middle is never a best response, reinforcing the lesson: <br /><span class="math display">Do not shoot to the middle!</span><br /></p></li>
+</ul>
+<h3 id="the-partnership-game">The Partnership Game</h3>
+<h4 id="game-setup-1">Game Setup</h4>
+<ul>
+<li><p>Two players are partners in a joint project, choosing effort levels <span class="math inline"><em>S</em><sub>1</sub></span> and <span class="math inline"><em>S</em><sub>2</sub></span> from the interval [0, 4].</p></li>
+<li><p>Profits function: <br /><span class="math display"><em>π</em> = 4<em>S</em><sub>1</sub> + <em>S</em><sub>2</sub> + <em>B</em><em>S</em><sub>1</sub><em>S</em><sub>2</sub></span><br /></p></li>
+</ul>
+<h4 id="player-payoffs">Player Payoffs</h4>
+<ul>
+<li><p>Each player’s payoff is: <br /><span class="math display">$$U_1 = \frac{1}{2}(4S_1 + S_2 + B S_1 S_2) - S_1^2$$</span><br /> <br /><span class="math display">$$U_2 = \frac{1}{2}(4S_2 + S_1 + B S_1 S_2) - S_2^2$$</span><br /></p></li>
+</ul>
+<h4 id="best-response-analysis">Best Response Analysis</h4>
+<ul>
+<li><p>Take the derivative with respect to <span class="math inline"><em>S</em><sub>1</sub></span>: <br /><span class="math display">$$\frac{\partial U_1}{\partial S_1} = 2 + B S_2 - 2S_1 = 0$$</span><br /></p></li>
+<li><p>Simplifying gives: <br /><span class="math display"><em>S</em><sub>1</sub><sup>*</sup> = 1 + <em>B</em><em>S</em><sub>2</sub></span><br /></p></li>
+<li><p>By symmetry, Player II’s best response can be derived similarly: <br /><span class="math display"><em>S</em><sub>2</sub><sup>*</sup> = 1 + <em>B</em><em>S</em><sub>1</sub></span><br /></p></li>
+</ul>
+<h4 id="finding-nash-equilibrium">Finding Nash Equilibrium</h4>
+<ul>
+<li><p>By solving the equations: <br /><span class="math display">$$S_1^* = S_2^* = \frac{1}{1-B}$$</span><br /> This represents the Nash Equilibrium in the partnership game.</p></li>
+</ul>
+<h4 id="efficiency-of-effort">Efficiency of Effort</h4>
+<ul>
+<li><p>The level of effort found through Nash Equilibrium is typically less than the social optimum due to externalities.</p></li>
+<li><p>Externality arises because each player only captures half the benefits of their contributions.</p></li>
+</ul>
+<h3 id="conclusion-1">Conclusion</h3>
+<ul>
+<li><p>The concepts of best response and Nash Equilibrium are critical when analyzing strategic interactions in games.</p></li>
+<li><p>Understanding these principles helps in real-world situations involving strategic decision-making, such as sports and partnerships.</p></li>
+</ul>
+<h1 id="notes-on-nash-equilibrium">Notes on Nash Equilibrium</h1>
+<h3 id="introduction-to-nash-equilibrium">Introduction to Nash Equilibrium</h3>
+<p>Nash Equilibrium (NE) is a fundamental concept in game theory that describes a situation in which no player can benefit by unilaterally changing their strategy given that the other players’ strategies remain unchanged.</p>
+<h4 id="formal-definition">Formal Definition</h4>
+<p>A strategy profile <span class="math inline">(<em>S</em><sub>1</sub><sup>*</sup>, <em>S</em><sub>2</sub><sup>*</sup>, …, <em>S</em><sub><em>M</em></sub><sup>*</sup>)</span> is a Nash Equilibrium if: <br /><span class="math display">∀<em>i</em> ∈ {1, 2, …, <em>M</em>},  <em>S</em><sub><em>i</em></sub><sup>*</sup> is a best response to <em>S</em><sub> − <em>i</em></sub><sup>*</sup></span><br /> where <span class="math inline"><em>S</em><sub> − <em>i</em></sub><sup>*</sup></span> represents the strategies chosen by all players except player <span class="math inline"><em>i</em></span>.</p>
+<h4 id="key-characteristics">Key Characteristics</h4>
+<ul>
+<li><p><strong>Best Response:</strong> A player’s strategy is a best response to the strategies of others if, given the strategies of others, there is no alternative strategy that provides a greater payoff.</p></li>
+<li><p><strong>No Regret:</strong> If a player is at Nash Equilibrium, they have no regret about their choice when they learn the choices of others.</p></li>
+</ul>
+<h3 id="motivation-for-studying-nash-equilibrium">Motivation for Studying Nash Equilibrium</h3>
+<p>1. <strong>Common Application:</strong> NE is widely used in various real-world applications and is featured in textbooks. 2. <strong>Self-Fulfilling Beliefs:</strong> If all players believe others will play strategies from a Nash Equilibrium, then it is rational for them to play those strategies as well.</p>
+<h3 id="examples-and-best-response">Examples and Best Response</h3>
+<p>Consider a simple game with two players, each having three strategies.</p>
+<h4 id="example-payoff-matrix">Example Payoff Matrix</h4>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;">Left</th>
+<th style="text-align: center;">Center</th>
+<th style="text-align: center;">Right</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Up</td>
+<td style="text-align: center;">(0,4)</td>
+<td style="text-align: center;">(4,0)</td>
+<td style="text-align: center;">(5,3)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Middle</td>
+<td style="text-align: center;">(4,0)</td>
+<td style="text-align: center;">(0,4)</td>
+<td style="text-align: center;">(5,3)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Down</td>
+<td style="text-align: center;">(3,5)</td>
+<td style="text-align: center;">(3,5)</td>
+<td style="text-align: center;">(6,6)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="finding-best-responses">Finding Best Responses</h4>
+<ul>
+<li><p>Player 1’s best response to Player 2 choosing:</p>
+<ul>
+<li><p>Left: Middle (4 &gt; 0, 4 &gt; 3)</p></li>
+<li><p>Center: Up (4 &gt; 3 &gt; 0)</p></li>
+<li><p>Right: Down (6 &gt; 5 &gt; 5)</p></li>
+</ul></li>
+<li><p>Player 2’s best response to Player 1 choosing:</p>
+<ul>
+<li><p>Up: Left (4 &gt; 3, 3 &gt; 0)</p></li>
+<li><p>Middle: Center (4 &gt; 3 &gt; 0)</p></li>
+<li><p>Down: Right (6 &gt; 5)</p></li>
+</ul></li>
+</ul>
+<h4 id="nash-equilibrium">Nash Equilibrium</h4>
+<p>By identifying best responses, we find the Nash Equilibrium is: <br /><span class="math display"><strong>Nash Equilibrium: </strong>(<em>D</em><em>o</em><em>w</em><em>n</em>, <em>R</em><em>i</em><em>g</em><em>h</em><em>t</em>) at (6, 6)</span><br /></p>
+<h3 id="dominance-vs.-nash-equilibrium">Dominance vs. Nash Equilibrium</h3>
+<h4 id="dominated-strategies-1">Dominated Strategies</h4>
+<p>No strictly dominated strategy can ever be played in a Nash Equilibrium, as it will not be a best response to any strategy.</p>
+<h4 id="weakly-dominated-strategies-1">Weakly Dominated Strategies</h4>
+<p>Unlike strictly dominated strategies, weakly dominated strategies can still be part of Nash Equilibria.</p>
+<h3 id="coordination-games">Coordination Games</h3>
+<p>Coordination problems arise when players must align their strategies for mutual benefit. Examples include:</p>
+<ul>
+<li><p>Public goods investment</p></li>
+<li><p>Coordination on locations (e.g., bars, parties)</p></li>
+<li><p>Market standards (e.g., technology standards)</p></li>
+</ul>
+<h3 id="the-investment-game">The Investment Game</h3>
+<p>In this game:</p>
+<ul>
+<li><p>Strategies: Invest (<span class="math inline">10</span>) or Not Invest (<span class="math inline">0</span>).</p></li>
+<li><p>Payoffs: If less than 90% invest, players lose their investment, otherwise gain <span class="math inline">5</span>.</p></li>
+</ul>
+<h4 id="outcomes">Outcomes</h4>
+<p>Two Nash Equilibria:</p>
+<ul>
+<li><p>Everyone invests.</p></li>
+<li><p>No one invests.</p></li>
+</ul>
+<p>The convergence towards no one investing illustrates coordination failure.</p>
+<h3 id="conclusion-2">Conclusion</h3>
+<p>1. Nash Equilibria are vital in understanding strategic interactions across economics and social sciences. 2. Outcomes in coordination games illustrate challenges and potential failures in achieving optimal equilibria, despite rational calculations.</p>
+<h1 id="lecture-notes-on-coordination-games-and-cournot-duopoly">Lecture Notes on Coordination Games and Cournot Duopoly</h1>
+<h3 id="coordination-games-1">Coordination Games</h3>
+<h4 id="introduction-3">Introduction</h4>
+<p>In coordination games, communication can be crucial in achieving better Nash Equilibriums, unlike in the Prisoner’s Dilemma where communication does not help.</p>
+<h4 id="key-properties">Key Properties</h4>
+<ul>
+<li><p>Nash Equilibria are self-enforcing agreements.</p></li>
+<li><p>Leadership can help guide players to coordinate better.</p></li>
+</ul>
+<h4 id="example-simple-coordination-game">Example: Simple Coordination Game</h4>
+<p>Consider the payoff matrix: <br /><span class="math display">$$\begin{array}{c|c|c}
+     &amp; \text{Player 2: Left} &amp; \text{Player 2: Right} \\
+    \hline
+    \text{Player 1: Up} &amp; (1,1) &amp; (0,0) \\
+    \hline
+    \text{Player 1: Down} &amp; (0,0) &amp; (1,1) \\
+\end{array}$$</span><br /> In this matrix, the players need to coordinate on either (Up, Left) or (Down, Right) to achieve the best outcome.</p>
+<h4 id="communication-and-coordination">Communication and Coordination</h4>
+<p>A historical example: the aftermath of Hurricane Katrina exemplifies the importance of coordination in crises.</p>
+<h3 id="the-investor-game">The Investor Game</h3>
+<p>In the investment game, the more players expect others to invest, the more likely they are to invest themselves. This feature indicates the presence of <strong>strategic complements</strong>.</p>
+<h3 id="battle-of-the-sexes">Battle of the Sexes</h3>
+<h4 id="game-setup-2">Game Setup</h4>
+<p>Consider two players choosing movies. They have preferences described as follows:</p>
+<ul>
+<li><p>Player 1 prefers Bourne Ultimatum (higher payoff) over Good Shepherd, and least prefers Snow White.</p></li>
+<li><p>Player 2 prefers Good Shepherd over Bourne Ultimatum, and least prefers Snow White.</p></li>
+</ul>
+<p>Payoff matrix: <br /><span class="math display">$$\begin{array}{c|c|c}
+     &amp; \text{Player 2: Good Shepherd} &amp; \text{Player 2: Bourne Ultimatum} \\
+    \hline
+    \text{Player 1: Bourne Ultimatum} &amp; (0, 1) &amp; (1,0) \\
+    \hline
+    \text{Player 1: Good Shepherd} &amp; (0, 0) &amp; (1, 0) \\
+\end{array}$$</span><br /> Snow White is dominated by both players.</p>
+<h3 id="cournot-duopoly">Cournot Duopoly</h3>
+<h4 id="game-setup-3">Game Setup</h4>
+<p>In Cournot Duopoly, two firms compete in the same market by choosing quantities of an identical product. The strategies are the quantities produced, <span class="math inline"><em>q</em><sub>1</sub></span> and <span class="math inline"><em>q</em><sub>2</sub></span>.</p>
+<h4 id="revenue-and-cost-functions">Revenue and Cost Functions</h4>
+<p>1. Price Function: <br /><span class="math display"><em>P</em> = <em>a</em> − <em>b</em>(<em>q</em><sub>1</sub> + <em>q</em><sub>2</sub>)</span><br /> where <span class="math inline"><em>a</em></span> and <span class="math inline"><em>b</em></span> are parameters affecting price.</p>
+<p>2. Profit Function for Firm 1: <br /><span class="math display"><em>π</em><sub>1</sub> = <em>P</em> ⋅ <em>q</em><sub>1</sub> − <em>c</em> ⋅ <em>q</em><sub>1</sub> = (<em>a</em> − <em>b</em>(<em>q</em><sub>1</sub> + <em>q</em><sub>2</sub>))<em>q</em><sub>1</sub> − <em>c</em><em>q</em><sub>1</sub></span><br /></p>
+<h4 id="best-response-functions">Best Response Functions</h4>
+<p>To find the Nash Equilibrium, each firm maximizes its profit by taking the other’s output as given. 1. Differentiate profit w.r.t. quantity. 2. Set the derivative to zero for optimal output.</p>
+<p>Best response of Firm 1: <br /><span class="math display">$$q_1^* = \frac{a - c}{3b}$$</span><br /> Best response of Firm 2: <br /><span class="math display">$$q_2^* = \frac{a - c}{3b}$$</span><br /></p>
+<h4 id="nash-equilibrium-1">Nash Equilibrium</h4>
+<p>At Nash Equilibrium, both firms produce: <br /><span class="math display">$$q_1^* = q_2^* = \frac{a - c}{3b}$$</span><br /></p>
+<h4 id="comparative-outcomes">Comparative Outcomes</h4>
+<ul>
+<li><p>Cournot output is lower than perfect competition and higher than monopoly.</p></li>
+<li><p>Prices are highest under monopoly and lowest under perfect competition.</p></li>
+</ul>
+<h4 id="implications">Implications</h4>
+<p>Cournot Equilibrium leads to lower industry profits compared to a monopoly but higher than perfect competition. It reflects the tension between competition and cooperation in oligopolistic markets.</p>
+<h1 id="notes-on-imperfect-competition">Notes on Imperfect Competition</h1>
+<h3 id="introduction-to-imperfect-competition">Introduction to Imperfect Competition</h3>
+<ul>
+<li><p>Imperfect competition refers to market structures that fall between monopoly (one firm) and perfect competition (many firms).</p></li>
+<li><p>Key objectives include understanding how firms compete in different frameworks and the implications for prices, outputs, and consumer welfare.</p></li>
+</ul>
+<h3 id="cournot-model-recap">Cournot Model Recap</h3>
+<ul>
+<li><p>The Cournot model involves firms competing in quantities.</p></li>
+<li><p>Main assumptions:</p>
+<ul>
+<li><p>Two firms producing identical products.</p></li>
+<li><p>Constant marginal costs equal to <span class="math inline"><em>C</em></span>.</p></li>
+<li><p>Each firm’s revenue depends on the quantity they produce.</p></li>
+</ul></li>
+<li><p>Market demand is represented as <span class="math inline"><em>Q</em>(<em>P</em>) = 1 − <em>P</em></span>, where <span class="math inline"><em>P</em></span> is the market price.</p></li>
+<li><p>The Cournot equilibrium occurs when firms decide on quantities such that neither firm has an incentive to unilaterally change its output.</p>
+<p><br /><span class="math display">Profit of Firm <em>i</em> : <em>Π</em><sub><em>i</em></sub> = <em>Q</em><sub><em>i</em></sub>(<em>P</em><sub><em>i</em></sub>) ⋅ (<em>P</em><sub><em>i</em></sub> − <em>C</em>)</span><br /></p></li>
+<li><p>Outcomes:</p>
+<ul>
+<li><p>Prices are between monopoly and perfect competition.</p></li>
+<li><p>Total industry output is more than under monopoly, less than perfect competition.</p></li>
+<li><p>Profits are positive, but less than monopoly profits and higher than zero profits in perfect competition.</p></li>
+<li><p>Consumer surplus lies in between as well.</p></li>
+</ul></li>
+</ul>
+<h3 id="bertrand-competition">Bertrand Competition</h3>
+<h4 id="transition-to-price-competition">Transition to Price Competition</h4>
+<ul>
+<li><p>Unlike Cournot, Bertrand competition involves firms competing on prices.</p></li>
+<li><p>Assumptions:</p>
+<ul>
+<li><p>Two firms setting prices <span class="math inline"><em>P</em><sub>1</sub></span> and <span class="math inline"><em>P</em><sub>2</sub></span>.</p></li>
+<li><p>Products are identical, and firms have constant marginal costs equal to <span class="math inline"><em>C</em></span>.</p></li>
+</ul></li>
+</ul>
+<h4 id="demand-structure">Demand Structure</h4>
+<ul>
+<li><p>Total quantity demanded differs based on the lower price between the two firms:</p>
+<p><br /><span class="math display"><em>Q</em>(<em>P</em>) = 1 − <em>P</em>  where <em>P</em> is the lower of the two prices.</span><br /></p></li>
+<li><p>Firm 1’s demand depending on price scenarios:</p>
+<ul>
+<li><p>If <span class="math inline"><em>P</em><sub>1</sub> &lt; <em>P</em><sub>2</sub></span>: <span class="math inline"><em>Q</em><sub>1</sub> = 1 − <em>P</em><sub>1</sub></span></p></li>
+<li><p>If <span class="math inline"><em>P</em><sub>1</sub> &gt; <em>P</em><sub>2</sub></span>: <span class="math inline"><em>Q</em><sub>1</sub> = 0</span></p></li>
+<li><p>If <span class="math inline"><em>P</em><sub>1</sub> = <em>P</em><sub>2</sub></span> and both are equal: <span class="math inline">$Q_1 = \frac{1 - P_1}{2}$</span></p></li>
+</ul></li>
+</ul>
+<h4 id="profit-maximization">Profit Maximization</h4>
+<ul>
+<li><p>Profit for Firm 1 expressed as:</p>
+<p><br /><span class="math display"><em>Π</em><sub>1</sub> = <em>Q</em><sub>1</sub>[<em>P</em><sub>1</sub> − <em>C</em>]</span><br /></p></li>
+<li><p>Firms aim to maximize profits based on the competition from both firms.</p></li>
+</ul>
+<h4 id="nash-equilibrium-2">Nash Equilibrium</h4>
+<ul>
+<li><p>To find the Nash equilibrium, firms determine their best responses given each other’s pricing.</p></li>
+<li><p>Resulting equilibrium yields:</p>
+<p><br /><span class="math display"><em>P</em><sub>1</sub> = <em>P</em><sub>2</sub> = <em>C</em></span><br /></p></li>
+<li><p>Industry profits are zero in equilibrium, mirroring outcomes from a perfectly competitive market.</p></li>
+</ul>
+<h3 id="key-takeaways-1">Key Takeaways</h3>
+<ul>
+<li><p>Different strategic decisions lead to dramatically different outcomes in terms of prices, profits, and consumer surplus.</p></li>
+<li><p>Price competition results in lower prices and higher consumer surplus compared to quantity competition.</p></li>
+<li><p>Understanding these frameworks helps in regulatory and market entry decisions.</p></li>
+</ul>
+<h3 id="differentiated-products">Differentiated Products</h3>
+<ul>
+<li><p>The next model considers differentiated products, moving beyond the assumption of identical products in Bertrand competition.</p></li>
+<li><p>Example setup includes firms located on a linear city model, where products vary based on attributes (quality, price, etc.).</p></li>
+</ul>
+<h3 id="political-implications">Political Implications</h3>
+<ul>
+<li><p>The implications of these models extend beyond economics into political science, where candidates compete for votes in a similar fashion to firms competing for market share.</p></li>
+</ul>
+<h1 id="notes-on-candidate-voter-model-and-mixed-strategies">Notes on Candidate-Voter Model and Mixed Strategies</h1>
+<h3 id="candidate-voter-model">Candidate-Voter Model</h3>
+<p>The candidate-voter model represents a scenario where voters may also be candidates; however, candidates cannot choose their positions. This is a departure from earlier models like the Downs or median-voter model, which predicted that candidates would crowd at the center.</p>
+<h4 id="key-lessons-from-the-model">Key Lessons from the Model</h4>
+<ol>
+<li><p><strong>Multiple Nash Equilibria:</strong></p>
+<ul>
+<li><p>There are numerous Nash equilibria in which candidates are not necessarily crowded at the center.</p></li>
+<li><p>Not all equilibria require candidates to be positioned at the center.</p></li>
+</ul></li>
+<li><p><strong>Entry Effects:</strong></p>
+<ul>
+<li><p>Entering on the left can lead to a right candidate winning.</p></li>
+<li><p>Conversely, entering on the right can skew the victory towards a left-wing candidate.</p></li>
+</ul></li>
+<li><p><strong>Proximity to Center:</strong></p>
+<ul>
+<li><p>Candidates cannot be positioned too far apart. If they are too distant, a candidate positioned closer to the center will likely enter and win.</p></li>
+</ul></li>
+</ol>
+<h4 id="equilibrium-analysis">Equilibrium Analysis</h4>
+<p>The candidates in the model can be positioned within a certain range. If we assume the political spectrum is represented on the interval <span class="math inline">[0, 1]</span>, the following conditions hold for the existence of equilibria: <br /><span class="math display">$$\text{If } C_L \text{ is the left candidate's position and } C_R \text{ is the right candidate's position, then } C_L &gt; \frac{1}{6} \text{ and } C_R &lt; \frac{5}{6}$$</span><br /> If candidates exceed these bounds, then a new candidate enters from the center.</p>
+<h4 id="final-observations">Final Observations</h4>
+<p>The candidates’ positions can be anywhere in the bounded interval <span class="math inline">[1/6, 5/6]</span>, illustrating that while extreme positions are unfavorable, there exists freedom to maneuver closer to the center without forcing crowding there.</p>
+<h3 id="introduction-to-mixed-strategies">Introduction to Mixed Strategies</h3>
+<p>The next stage is the introduction of mixed strategies, where players can randomize their choices instead of sticking with a pure strategy.</p>
+<h4 id="example-rock-paper-scissors">Example: Rock, Paper, Scissors</h4>
+<p>The payoff matrix for the game is: <br /><span class="math display">$$\begin{array}{c|c|c|c}
+ &amp; \text{Rock} &amp; \text{Paper} &amp; \text{Scissors} \\
+\hline
+\text{Rock} &amp; (0,0) &amp; (1,-1) &amp; (-1,1) \\
+\hline
+\text{Paper} &amp; (-1,1) &amp; (0,0) &amp; (1,-1) \\
+\hline
+\text{Scissors} &amp; (1,-1) &amp; (-1,1) &amp; (0,0) \\
+\end{array}$$</span><br /></p>
+<h4 id="existence-of-nash-equilibrium-in-mixed-strategies">Existence of Nash Equilibrium in Mixed Strategies</h4>
+<ul>
+<li><p>There is no Nash Equilibrium in pure strategies due to the cyclical nature of best responses.</p></li>
+<li><p>The Nash Equilibrium occurs when both players randomize their choices with equal probability: <br /><span class="math display">$$\text{Probability of choosing Rock} = P(R) = \frac{1}{3}, \quad P(P) = \frac{1}{3}, \quad P(S) = \frac{1}{3}$$</span><br /></p></li>
+</ul>
+<h4 id="expected-payoffs">Expected Payoffs</h4>
+<p>To prove that playing a mixed strategy is a Nash Equilibrium, we compute the expected payoffs for a player choosing each action against an opponent who plays <span class="math inline">1/3</span> for each action: <br /><span class="math display">$$\begin{aligned}
+\text{Expected Payoff for Rock} &amp;= \frac{1}{3}(0) + \frac{1}{3}(1) + \frac{1}{3}(-1) = 0 \\
+\text{Expected Payoff for Paper} &amp;= \frac{1}{3}(-1) + \frac{1}{3}(0) + \frac{1}{3}(1) = 0 \\
+\text{Expected Payoff for Scissors} &amp;= \frac{1}{3}(1) + \frac{1}{3}(-1) + \frac{1}{3}(0) = 0 \end{aligned}$$</span><br /></p>
+<p>From this, it follows that each player has no incentive to deviate from this strategy since the expected payoff remains 0 regardless of their mixed strategy.</p>
+<h3 id="conclusion-3">Conclusion</h3>
+<p>The exploration of the candidate-voter model highlights key aspects of strategic decision-making in political science. Transitioning to mixed strategies broadens our understanding of game theory applications, particularly through familiar examples like "rock, paper, scissors". This illustrates the importance of strategy randomness in achieving equilibrium in competitive environments.</p>
+<h1 id="lecture-notes-on-mixed-strategies-and-nash-equilibrium">Lecture Notes on Mixed Strategies and Nash Equilibrium</h1>
+<h3 id="introduction-to-mixed-strategies-1">Introduction to Mixed Strategies</h3>
+<p>In the previous lecture, we examined the application of mixed strategies in the game of Rock, Paper, Scissors, where the optimal strategy concluded with a probability distribution of <span class="math inline">$\frac{1}{3}, \frac{1}{3}, \frac{1}{3}$</span>.</p>
+<h4 id="definition-of-a-mixed-strategy">Definition of a Mixed Strategy</h4>
+<p>A mixed strategy <span class="math inline"><em>P</em><sub><em>i</em></sub></span> for player <span class="math inline"><em>i</em></span> is defined as a randomization over <span class="math inline"><em>i</em></span>’s pure strategies. The notation <span class="math inline"><em>P</em><sub><em>i</em></sub>(<em>s</em><sub><em>i</em></sub>)</span> denotes the probability that player <span class="math inline"><em>i</em></span> selects pure strategy <span class="math inline"><em>s</em><sub><em>i</em></sub></span> given the mixed strategy <span class="math inline"><em>P</em><sub><em>i</em></sub></span>.</p>
+<p><br /><span class="math display"><em>P</em><sub><em>i</em></sub> = (<em>P</em><sub><em>i</em></sub>(<em>R</em>), <em>P</em><sub><em>i</em></sub>(<em>P</em>), <em>P</em><sub><em>i</em></sub>(<em>S</em>)).</span><br /></p>
+<p>For example, if the probabilities for rock, paper, and scissors are set as <span class="math inline">$P_i(R) = \frac{1}{3}, P_i(P) = \frac{1}{3}, P_i(S) = \frac{1}{3}$</span>.</p>
+<h4 id="properties-of-mixed-strategies">Properties of Mixed Strategies</h4>
+<p>1. Zero Probability: A mixed strategy does not have to include all pure strategies; some can have zero probability. For instance, a mixed strategy could be <span class="math inline">$P = \left( \frac{1}{2}, \frac{1}{2}, 0 \right)$</span>.</p>
+<p>2. Pure Strategy: If the probability assigned to a pure strategy <span class="math inline"><em>s</em><sub><em>i</em></sub></span> equals 1, then that strategy is classified as a pure strategy <span class="math inline"><em>s</em><sub><em>i</em></sub></span>.</p>
+<h4 id="expected-payoffs-from-mixed-strategies">Expected Payoffs from Mixed Strategies</h4>
+<p>The expected payoff from mixed strategy <span class="math inline"><em>P</em><sub><em>i</em></sub></span> is determined as follows:</p>
+<p><br /><span class="math display">Expected Payoff(<em>P</em><sub><em>i</em></sub>) = ∑<em>P</em><sub><em>i</em></sub>(<em>s</em><sub><em>j</em></sub>) × Payoff(<em>s</em><sub><em>j</em></sub>).</span><br /></p>
+<p>Consider the example from the “Battle of the Sexes” game where Player I adopts a mixed strategy <span class="math inline">$P = \left( \frac{1}{5}, \frac{4}{5} \right)$</span> and Player II adopts <span class="math inline">$Q = \left( \frac{1}{2}, \frac{1}{2} \right)$</span>.</p>
+<p>To compute Player I’s expected payoff based on the payoffs <span class="math inline">(2, 0)</span> for strategy <span class="math inline"><em>A</em></span> and <span class="math inline">(0, 1)</span> for strategy <span class="math inline"><em>B</em></span>:</p>
+<p>1. For <span class="math inline"><em>P</em><sub><em>i</em></sub>(<em>A</em>)</span>: <br /><span class="math display">$$E_P(A) = \frac{1}{2} \cdot 2 + \frac{1}{2} \cdot 0 = 1.$$</span><br /></p>
+<p>2. For <span class="math inline"><em>P</em><sub><em>i</em></sub>(<em>B</em>)</span>: <br /><span class="math display">$$E_P(B) = \frac{1}{2} \cdot 0 + \frac{1}{2} \cdot 1 = \frac{1}{2}.$$</span><br /></p>
+<p>Finally, the expected payoff of using mixed strategy <span class="math inline"><em>P</em></span>: <br /><span class="math display">$$\text{Expected Payoff}(P) = \frac{1}{5} \cdot 1 + \frac{4}{5} \cdot \frac{1}{2} = \frac{3}{5}.$$</span><br /></p>
+<p>This shows the expected payoff must lie between the payoffs from each pure strategy:</p>
+<p><br /><span class="math display">$$\frac{1}{2} &lt; \frac{3}{5} &lt; 1.$$</span><br /></p>
+<h3 id="nash-equilibrium-in-mixed-strategies">Nash Equilibrium in Mixed Strategies</h3>
+<p>A mixed strategy profile <span class="math inline">(<em>P</em><sub>1</sub><sup>*</sup>, <em>P</em><sub>2</sub><sup>*</sup>, …, <em>P</em><sub><em>N</em></sub><sup>*</sup>)</span> is a Nash Equilibrium if each player’s strategy <span class="math inline"><em>P</em><sub><em>i</em></sub><sup>*</sup></span> is a best response to the strategies of all other players <span class="math inline"><em>P</em><sub> − <em>i</em></sub><sup>*</sup></span>.</p>
+<p>The key insight is:</p>
+<ul>
+<li><p>If a mixed strategy <span class="math inline"><em>P</em><sub><em>i</em></sub><sup>*</sup></span> is part of a Nash Equilibrium, then each pure strategy in <span class="math inline"><em>P</em><sub><em>i</em></sub><sup>*</sup></span> that has non-zero probability must also be a best response.</p></li>
+</ul>
+<h4 id="example-tennis">Example: Tennis</h4>
+<p>Consider a simplified game involving two players, Venus and Serena, where each must choose to hit the ball to the left or the right:</p>
+<p><br /><span class="math display">$$\begin{array}{c|c|c}
+&amp; \text{Serena Left (L)} &amp; \text{Serena Right (R)} \\
+\hline
+\text{Venus Left (L)} &amp; (50,50) &amp; (80,20) \\
+\hline
+\text{Venus Right (R)} &amp; (90,10) &amp; (20,80) \\
+\end{array}$$</span><br /></p>
+<p>From the payoff table, we can compute the respective expected payoffs for mixed strategies based on the probabilities assigned by both players.</p>
+<h3 id="conclusions">Conclusions</h3>
+<ul>
+<li><p>Mixed strategies provide a compelling method to analyze strategic interactions when no pure strategies lead to mutual best responses.</p></li>
+<li><p>The examples used elucidate that strategic decision-making always involves considering the probabilities and implications of opponents’ actions.</p></li>
+</ul>
+<h1 id="lecture-notes-on-mixed-strategies-and-nash-equilibria">Lecture Notes on Mixed Strategies and Nash Equilibria</h1>
+<h3 id="overview-of-the-lecture">Overview of the Lecture</h3>
+<p>In this lecture, we explore the concept of mixed strategies and, particularly, mixed-strategy equilibria. The main ideas discussed include the necessary conditions for equilibrium in mixed strategies and practical applications in game theory.</p>
+<h3 id="key-concepts-1">Key Concepts</h3>
+<h4 id="mixed-strategies">Mixed Strategies</h4>
+<p>A mixed strategy is one in which a player randomizes over two or more pure strategies. If a player is playing a mixed strategy in equilibrium, each pure strategy in the mix must be a best response to the other player’s strategy.</p>
+<h4 id="mixed-strategy-equilibria">Mixed-Strategy Equilibria</h4>
+<p>For two players, say Player I and Player II, with mixed strategies <span class="math inline"><em>P</em><sup>*</sup></span> and <span class="math inline"><em>Q</em><sup>*</sup></span>, one must confirm that:</p>
+<ul>
+<li><p>Player I is indifferent between their pure strategies given Player II’s mixed strategy.</p></li>
+<li><p>Player II is indifferent between their strategies given Player I’s mixed strategy.</p></li>
+</ul>
+<h3 id="example-venus-and-serena-game">Example: Venus and Serena Game</h3>
+<p>We analyzed Venus’ strategy (denote as <span class="math inline"><em>P</em><sup>*</sup></span>) against Serena’s mix (denote as <span class="math inline"><em>Q</em><sup>*</sup></span>). Suppose: <br /><span class="math display">$$\begin{aligned}
+P^* &amp;= 0.7 \quad \text{(probability of playing L)} \\
+1 - P^* &amp;= 0.3 \quad \text{(probability of playing R)} \\
+Q^* &amp;= 0.6 \quad \text{(probability of Serena playing l)} \\
+1 - Q^* &amp;= 0.4 \quad \text{(probability of Serena playing r)}\end{aligned}$$</span><br /></p>
+<h4 id="payoff-calculation-for-venus">Payoff Calculation for Venus</h4>
+<p>To verify that <span class="math inline"><em>P</em><sup>*</sup></span> is a best response to <span class="math inline"><em>Q</em><sup>*</sup></span>:</p>
+<ul>
+<li><p>If Venus plays <span class="math inline"><em>L</em></span>, the expected payoff is: <br /><span class="math display"><em>U</em><sub><em>L</em></sub> = 50 ⋅ <em>Q</em><sup>*</sup> + 80 ⋅ (1 − <em>Q</em><sup>*</sup>) = 50 ⋅ 0.6 + 80 ⋅ 0.4 = 62</span><br /></p></li>
+<li><p>If Venus plays <span class="math inline"><em>R</em></span>, the expected payoff is: <br /><span class="math display"><em>U</em><sub><em>R</em></sub> = 90 ⋅ <em>Q</em><sup>*</sup> + 20 ⋅ (1 − <em>Q</em><sup>*</sup>) = 90 ⋅ 0.6 + 20 ⋅ 0.4 = 62</span><br /></p></li>
+<li><p>Thus, if Venus plays <span class="math inline"><em>P</em><sup>*</sup></span>: <br /><span class="math display"><em>U</em><sub><em>P</em><sup>*</sup></sub> = 0.7 ⋅ 62 + 0.3 ⋅ 62 = 62</span><br /></p></li>
+</ul>
+<p>This confirms that maintaining mixed strategies yields the same expected payoffs.</p>
+<h4 id="strictly-profitable-deviations">Strictly Profitable Deviations</h4>
+<p>It is shown that any deviation from the mixed strategy yields either the same or a lower payoff, confirming that: <br /><span class="math display">No strictly profitable pure-strategy deviations exist.</span><br /> Additionally, any mixed strategy deviation yields the same expected payoff as the pure strategies.</p>
+<h3 id="applications-of-mixed-strategies">Applications of Mixed Strategies</h3>
+<h4 id="sports">Sports</h4>
+<p>Mixed strategies are notably relevant in sports contexts, such as:</p>
+<ul>
+<li><p><strong>Football:</strong> Teams randomize between running and passing plays.</p></li>
+<li><p><strong>Baseball:</strong> Pitchers and batters both utilize mixed strategies (e.g., varying pitches).</p></li>
+</ul>
+<h4 id="tax-audits">Tax Audits</h4>
+<p>The concept of mixed strategies can apply to tax compliance, where taxpayers may choose to report honestly or cheat, and auditors may choose to audit based on the likelihood of compliance. The equilibrium: <br /><span class="math display">$$\begin{aligned}
+Q &amp;= \text{proportion of honest taxpayers} \\
+P &amp;= \text{probability of being audited}\end{aligned}$$</span><br /> can be calculated similarly, yielding insights into compliance behavior.</p>
+<h3 id="policy-experiment-changing-audit-outcomes">Policy Experiment: Changing Audit Outcomes</h3>
+<p>When policy changes are introduced (e.g., increasing fines for tax evasion), the equilibrium outcomes might not change as expected if the audit payoffs remain static. However, tweaking the audit’s impact can shift taxpayer compliance.</p>
+<h4 id="lessons-learned">Lessons Learned</h4>
+<ul>
+<li><p>Checking for Nash Equilibria only requires looking at pure-strategy deviations.</p></li>
+<li><p>Changes in one player’s payoffs affect the equilibrium strategies of the other player.</p></li>
+<li><p>Mixed strategies can reflect population proportions in behaviors rather than individual random choices.</p></li>
+</ul>
+<h3 id="conclusion-4">Conclusion</h3>
+<p>The discussion of mixed strategies and Nash equilibria emphasizes the complexity of strategic decision-making, offering insights applicable beyond theoretical contexts into real-world scenarios like sports, business, and regulatory environments.</p>
+<h1 id="notes-on-evolution-and-game-theory">Notes on Evolution and Game Theory</h1>
+<h3 id="introduction-4">Introduction</h3>
+<p>In this lecture, we explore the relationship between evolution and Game Theory. We will discuss how concepts of Game Theory can be applied to biological systems, particularly animal behavior, and how evolutionary principles can inform social sciences.</p>
+<h4 id="supplementary-materials">Supplementary Materials</h4>
+<p>An additional reading packet is available, which may enhance understanding but is not compulsory. A handout accompanying the lecture will be provided.</p>
+<h3 id="evolution-in-the-context-of-game-theory">Evolution in the Context of Game Theory</h3>
+<h4 id="reasons-for-studying-evolution-in-game-theory">Reasons for Studying Evolution in Game Theory</h4>
+<p>1. Impact of Game Theory on Biology: In recent decades, Game Theory has significantly influenced biology, especially in the context of animal behavior.</p>
+<ul>
+<li><p>Strategies are linked to genetic traits (genes) or phenotypes, while payoffs relate to genetic fitness.</p></li>
+<li><p>Successful strategies proliferate, whereas unsuccessful ones diminish.</p></li>
+</ul>
+<p>2. Influence of Evolutionary Biology on Social Sciences: Evolutionary principles are often used metaphorically in fields like political science and economics. A notable example is competition among firms mirroring survival of the fittest in nature.</p>
+<h3 id="modeling-evolutionary-dynamics">Modeling Evolutionary Dynamics</h3>
+<p>We will consider a simplified model focusing on within-species competition through symmetric two-player games. The process involves:<br />
+<br />
+Population Dynamics: We assume a large population where individuals are matched randomly for interactions.<br />
+Strategy Outcomes:</p>
+<ul>
+<li><p>Strategies that yield higher payoffs (success) will increase in frequency.</p></li>
+<li><p>Strategies that yield lower payoffs (failure) will decrease.</p></li>
+</ul>
+<h4 id="key-assumptions">Key Assumptions</h4>
+<p>Focus on asexual reproduction to simplify dynamics. Real-world complexities are acknowledged but will not be included in this introductory model.</p>
+<h3 id="evolutionarily-stable-strategies-ess">Evolutionarily Stable Strategies (ESS)</h3>
+<p>A strategy <span class="math inline"><em>S</em></span> is termed evolutionarily stable if, when the population predominantly plays <span class="math inline"><em>S</em></span>, any mutant strategy <span class="math inline"><em>S</em>′</span> cannot invade and succeed.</p>
+<h4 id="formal-definition-1">Formal Definition</h4>
+<p>A pure strategy <span class="math inline"><em>S</em></span> is evolutionarily stable if: <br /><span class="math display">Payoff(<em>S</em>, <em>S</em>) &gt; Payoff(<em>S</em>′, <em>S</em>)  ∀<em>S</em>′</span><br /> and if <span class="math inline">Payoff(<em>S</em>, <em>S</em>) = Payoff(<em>S</em>′, <em>S</em>)</span>, then: <br /><span class="math display">Payoff(<em>S</em>, <em>S</em>′) &gt; Payoff(<em>S</em>′, <em>S</em>′)</span><br /></p>
+<h4 id="illustrative-example-prisoners-dilemma">Illustrative Example: Prisoner’s Dilemma</h4>
+<p>Let’s analyze cooperation and defection within the classic Prisoner’s Dilemma setup: - Payoff matrix: <br /><span class="math display">$$\begin{array}{c|c|c}
+   &amp; C &amp; D \\
+\hline
+C &amp; (2,2) &amp; (0,3) \\
+\hline
+D &amp; (3,0) &amp; (1,1) \\
+\end{array}$$</span><br /></p>
+<p>Analysis of Cooperation:<br />
+- If the population consists entirely of cooperators <span class="math inline"><em>C</em></span>:</p>
+<ul>
+<li><p>Each cooperator faces another cooperator 90% of the time, yielding a payoff of 2, leading to successful reproduction.</p></li>
+<li><p>Introduce 1% defectors <span class="math inline"><em>D</em></span>:</p></li>
+<li><p>A cooperator matches with a defector, yielding a payoff of 0.</p></li>
+<li><p>This dynamic leads to the conclusion that cooperation is not evolutionarily stable in this context, as defectors will proliferate.</p></li>
+</ul>
+<h3 id="key-lessons-and-insights">Key Lessons and Insights</h3>
+<ol>
+<li><p>Natural Selection: Strategies that appear advantageous might not always lead to cooperative behaviors (e.g., infanticide in baboons).</p></li>
+<li><p>Dominance Implications: A strictly dominated strategy is never evolutionarily stable.</p></li>
+<li><p>Nash Equilibrium Connection:</p></li>
+</ol>
+<ul>
+<li><p><span class="math inline"><em>S</em></span> must be a Nash equilibrium to be evolutionarily stable. If <span class="math inline">(<em>S</em>, <em>S</em>)</span> is not a Nash equilibrium, then it’s not an ESS.</p></li>
+<li><p>However, not all Nash equilibria are ESS.</p></li>
+</ul>
+<h4 id="understanding-nash-equilibria-vs.-ess">Understanding Nash Equilibria vs. ESS</h4>
+<ul>
+<li><p>If a strategy <span class="math inline"><em>S</em></span> is Nash, it may still be invaded by another strategy.</p></li>
+<li><p>Case study of Nash equilibria that are weakly stable can demonstrate vulnerability:</p></li>
+</ul>
+<p>Consider a simple two-player game: <br /><span class="math display">$$\begin{array}{c|c|c}
+   &amp; A &amp; B \\
+\hline
+A &amp; (1,1) &amp; (0,0) \\
+\hline
+B &amp; (0,0) &amp; (0,0) \\
+\end{array}$$</span><br /> The Nash equilibria of this game are <span class="math inline">(<em>A</em>, <em>A</em>)</span> and <span class="math inline">(<em>B</em>, <em>B</em>)</span>. However, <span class="math inline">(<em>B</em>, <em>B</em>)</span> is not evolutionarily stable because a rare mutation of <span class="math inline">(<em>A</em>, <em>A</em>)</span> would prove more favorable.</p>
+<h3 id="conclusion-5">Conclusion</h3>
+<p>In summary, the lecture emphasizes valuable intersections between evolutionary biology and Game Theory, underlining the vital roles of strategy stability, reproductive dynamics, and the implications of Nash equilibria within ecological and economic frameworks.</p>
+<h1 id="evolutionary-stability-and-nash-equilibrium-notes">Evolutionary Stability and Nash Equilibrium Notes</h1>
+<h3 id="introduction-5">Introduction</h3>
+<p>These notes cover the concept of evolutionary stability in relation to Nash equilibrium, primarily focused on pure strategies with applications to various examples, including social conventions and biological strategies.</p>
+<h3 id="key-definitions">Key Definitions</h3>
+<h4 id="nash-equilibrium-3">Nash Equilibrium</h4>
+<p>A strategy profile <span class="math inline">(<em>S</em>, <em>S</em>)</span> is a <strong>Nash Equilibrium</strong> if no player can benefit from unilaterally changing their strategy, i.e., <br /><span class="math display"><em>U</em><sub><em>i</em></sub>(<em>S</em>, <em>S</em>) ≥ <em>U</em><sub><em>i</em></sub>(<em>T</em>, <em>S</em>)  ∀<em>T</em> (for player <em>i</em>)</span><br /></p>
+<h4 id="evolutionarily-stable-strategies-ess-1">Evolutionarily Stable Strategies (ESS)</h4>
+<p>A strategy <span class="math inline"><em>S</em></span> is an <strong>evolutionarily stable strategy</strong> if:</p>
+<ol>
+<li><p><span class="math inline">(<em>S</em>, <em>S</em>)</span> is a Nash Equilibrium.</p></li>
+<li><p>If <span class="math inline">(<em>S</em>, <em>S</em>)</span> is not strict, meaning there exists some strategy <span class="math inline"><em>T</em></span> such that <span class="math inline"><em>U</em>(<em>S</em>, <em>S</em>) = <em>U</em>(<em>T</em>, <em>S</em>)</span>, then <br /><span class="math display"><em>U</em>(<em>S</em>, <em>T</em>) &gt; <em>U</em>(<em>T</em>, <em>T</em>)</span><br /></p></li>
+</ol>
+<h3 id="example-1-simple-game">Example 1: Simple Game</h3>
+<p>Consider a game where strategies A and B yield the following payoffs:</p>
+<p><br /><span class="math display">$$\begin{array}{c|c|c}
+   &amp; A &amp; B \\
+\hline
+A &amp; 1 &amp; 0 \\
+\hline
+B &amp; 0 &amp; 0 \\
+\end{array}$$</span><br /></p>
+<p>In this case, the symmetric Nash Equilibrium is <span class="math inline">(<em>A</em>, <em>A</em>)</span>:</p>
+<ul>
+<li><p>Check if it is strict: <span class="math inline"><em>U</em>(<em>A</em>, <em>A</em>) = <em>U</em>(<em>B</em>, <em>A</em>) = 1</span>, hence <span class="math inline">(<em>A</em>, <em>A</em>)</span> is not strict.</p></li>
+<li><p>Now check the second condition: <br /><span class="math display"><em>U</em>(<em>A</em>, <em>B</em>) = 1 &gt; 0 = <em>U</em>(<em>B</em>, <em>B</em>)</span><br /> Therefore, <span class="math inline"><em>A</em></span> is evolutionarily stable.</p></li>
+</ul>
+<h3 id="example-2-social-convention-game">Example 2: Social Convention Game</h3>
+<p>Consider driving on the left or right side of the street (a social convention) with the following payoff matrix:</p>
+<p><br /><span class="math display">$$\begin{array}{c|c|c}
+   &amp; \text{Left} &amp; \text{Right} \\
+\hline
+\text{Left} &amp; 2 &amp; 0 \\
+\hline
+\text{Right} &amp; 0 &amp; 1 \\
+\end{array}$$</span><br /></p>
+<p>The Nash equilibria here are both <span class="math inline">(<em>L</em>, <em>L</em>)</span> and <span class="math inline">(<em>R</em>, <em>R</em>)</span>:</p>
+<ul>
+<li><p>Both are strict and thus evolutionarily stable.</p></li>
+</ul>
+<h3 id="example-3-hawk-dove-game">Example 3: Hawk-Dove Game</h3>
+<p>A more complex example involves the Hawk-Dove game, significantly used in evolutionary biology. The payoff matrix is:</p>
+<p><br /><span class="math display">$$\begin{array}{c|c|c}
+   &amp; \text{Hawk} &amp; \text{Dove} \\
+\hline
+\text{Hawk} &amp; V - \frac{C}{2} &amp; V \\
+\hline
+\text{Dove} &amp; 0 &amp; \frac{V}{2} \\
+\end{array}$$</span><br /></p>
+<ul>
+<li><p>Nash Equilibrium conditions:</p>
+<ol>
+<li><p>If <span class="math inline"><em>V</em> &gt; <em>C</em></span>: <span class="math inline">(<em>H</em>, <em>H</em>)</span> is a strict Nash Equilibrium and thus ESS.</p></li>
+<li><p>If <span class="math inline"><em>V</em> &lt; <em>C</em></span>: Check mixed strategies to find proportions.</p></li>
+</ol></li>
+</ul>
+<h3 id="identification-and-predictions">Identification and Predictions</h3>
+<p>This section highlights the importance of identification and testability in evolutionary game theory. For instance:</p>
+<ul>
+<li><p>The ratio of aggressive to passive strategies can be determined by observing outcomes in nature.</p></li>
+<li><p>The Hawk-Dove game demonstrates that a heightened cost of fighting can lead to equilibrium where aggressive strategies prevail or yield mixed traits.</p></li>
+</ul>
+<h3 id="conclusion-6">Conclusion</h3>
+<p>Evolutionary stability does not universally lead to efficiency, often revealing unexpected outcomes in population strategies. Through various examples, rigorous methods can persuasively justify the dominant strategies and their stability in biological contexts.</p>
+<h1 id="notes-on-game-theory-cash-in-a-hat">Notes on Game Theory: Cash in a Hat</h1>
+<h3 id="introduction-6">Introduction</h3>
+<p>This lecture introduces a game called "Cash in a Hat," which is a simplified representation of real-world economic interactions between lenders and borrowers. The game features two players—Player I is the investor (lender), while Player II is the entrepreneur (borrower).</p>
+<h3 id="game-setup-4">Game Setup</h3>
+<h4 id="players-and-choices">Players and Choices</h4>
+<ul>
+<li><p><strong>Player I</strong> (Investor) can choose to put:</p>
+<ul>
+<li><p>Nothing</p></li>
+<li><p>$1</p></li>
+<li><p>$3</p></li>
+</ul></li>
+<li><p><strong>Player II</strong> (Entrepreneur) observes Player I’s choice and can:</p>
+<ul>
+<li><p>Match the amount Player I put in</p></li>
+<li><p>Take the cash directly from the hat</p></li>
+</ul></li>
+</ul>
+<h4 id="payoffs">Payoffs</h4>
+<p>The payoffs of the game are as follows:</p>
+<p>For Player I:</p>
+<ul>
+<li><p>If nothing is put in: payoff = $0</p></li>
+<li><p>If \$1 is put in and matched: payoff = $2 (profit = $1)</p></li>
+<li><p>If \$1 is taken by Player II: payoff = -$1</p></li>
+<li><p>If \$3 is put in and matched: payoff = $6 (profit = $3)</p></li>
+<li><p>If \$3 is taken by Player II: payoff = -$3</p></li>
+</ul>
+<p>For Player II:</p>
+<ul>
+<li><p>If Player II matches $1: payoff = $2.50 (profit = $1.50)</p></li>
+<li><p>If Player II takes $1: payoff = $1 (profit = $1)</p></li>
+<li><p>If Player II matches $3: payoff = $5 (profit = $2)</p></li>
+<li><p>If Player II takes $3: payoff = $3 (profit = $3)</p></li>
+</ul>
+<h3 id="game-analysis">Game Analysis</h3>
+<p>The analysis of the game reveals it as a sequential move game due to the observable moves of Player I by Player II. The concept of <strong>Backward Induction</strong> will be used to analyze the players’ strategies.</p>
+<h3 id="sequential-moves-and-backward-induction">Sequential Moves and Backward Induction</h3>
+<h4 id="key-concepts-2">Key Concepts</h4>
+<ul>
+<li><p><strong>Sequential Move Game</strong>: A game where one player makes a move before another player.</p></li>
+<li><p><strong>Backward Induction</strong>: A method for solving game trees by analyzing potential actions of later players and predicting how earlier players will react. The process follows these steps:</p>
+<ol>
+<li><p>Analyze the last player’s decision.</p></li>
+<li><p>Determine their best response.</p></li>
+<li><p>Move backward through the tree, determining the best actions at each node.</p></li>
+</ol></li>
+</ul>
+<h4 id="decision-process">Decision Process</h4>
+<p>Player I must consider Player II’s best response based on Player I’s action. If Player I puts in $1, Player II will likely match it (resulting in (1, 1.50)). If Player I puts in $3, Player II will likely take the cash (resulting in a loss of $3 for Player I).</p>
+<h3 id="incentive-compatibility-and-moral-hazard">Incentive Compatibility and Moral Hazard</h3>
+<h4 id="definition">Definition</h4>
+<p>The potential misalignment of interests between lenders and borrowers, known as <strong>Moral Hazard</strong>, arises when borrowers may not act in the best interest of the lender after a loan is given.</p>
+<h3 id="commitment-strategies">Commitment Strategies</h3>
+<p>To mitigate issues such as moral hazards, commitment strategies can be applied. They include:</p>
+<ul>
+<li><p>Implementing collateral</p></li>
+<li><p>Contractual stipulations restricting borrower actions</p></li>
+<li><p>Offer staggered loans dependent on project progress</p></li>
+</ul>
+<h3 id="conclusion-7">Conclusion</h3>
+<p>The concepts facilitated through the Cash in a Hat game provide insight into significant economic and strategic interactions. Understanding backward induction and incentive design are crucial for interpreting and analyzing real-world scenarios.</p>
+<h3 id="key-takeaways-2">Key Takeaways</h3>
+<ul>
+<li><p>Use backward induction for sequential moves in games.</p></li>
+<li><p>Recognize the implications of moral hazard in lending.</p></li>
+<li><p>Apply commitment strategies to align interests and create incentives.</p></li>
+</ul>
+<h1 id="lecture-notes-quantity-competition">Lecture Notes: Quantity Competition</h1>
+<h3 id="introduction-7">Introduction</h3>
+<p>In today’s lecture, we revisit quantity competition, specifically the Cournot model and its sequential counterpart, the Stackelberg model. We examine the implications of firms moving simultaneously versus sequentially in choosing their output levels.</p>
+<h3 id="the-cournot-model">The Cournot Model</h3>
+<h4 id="overview">Overview</h4>
+<p>In the Cournot model, two firms, Firm 1 and Firm 2, choose their output levels simultaneously. Let <span class="math inline"><em>Q</em><sub>1</sub></span> be the output chosen by Firm 1 and <span class="math inline"><em>Q</em><sub>2</sub></span> be the output chosen by Firm 2. The total quantity supplied to the market is given by: <br /><span class="math display"><em>Q</em> = <em>Q</em><sub>1</sub> + <em>Q</em><sub>2</sub>.</span><br /></p>
+<h4 id="market-demand">Market Demand</h4>
+<p>The market demand curve is represented as: <br /><span class="math display"><em>P</em> = <em>A</em> − <em>B</em>(<em>Q</em><sub>1</sub> + <em>Q</em><sub>2</sub>),</span><br /> where - <span class="math inline"><em>P</em></span> is the price, - <span class="math inline"><em>A</em></span> is a constant representing the intercept of the demand curve, - <span class="math inline"><em>B</em></span> is the slope of the demand curve.</p>
+<h4 id="profit-function">Profit Function</h4>
+<p>The profit for each firm can be expressed as: <br /><span class="math display"><em>π</em><sub><em>i</em></sub> = <em>P</em> ⋅ <em>Q</em><sub><em>i</em></sub> − <em>C</em> ⋅ <em>Q</em><sub><em>i</em></sub> = (<em>A</em> − <em>B</em>(<em>Q</em><sub>1</sub> + <em>Q</em><sub>2</sub>))<em>Q</em><sub><em>i</em></sub> − <em>C</em><em>Q</em><sub><em>i</em></sub>  (<em>i</em> = 1, 2),</span><br /> where <span class="math inline"><em>C</em></span> is the constant marginal cost.</p>
+<h4 id="best-response-functions-1">Best Response Functions</h4>
+<p>The best response function for Firm 1 given Firm 2’s output <span class="math inline"><em>Q</em><sub>2</sub></span> is derived by maximizing its profit: <br /><span class="math display"><em>Q</em><sub>1</sub><sup>*</sup> = <em>f</em>(<em>Q</em><sub>2</sub>),</span><br /> and similarly for Firm 2: <br /><span class="math display"><em>Q</em><sub>2</sub><sup>*</sup> = <em>g</em>(<em>Q</em><sub>1</sub>).</span><br /></p>
+<p>The Nash Equilibrium occurs where the best response functions intersect.</p>
+<h3 id="the-stackelberg-model">The Stackelberg Model</h3>
+<h4 id="sequential-decisions">Sequential Decisions</h4>
+<p>In the Stackelberg model, we analyze a sequential move game where Firm 1 moves first, and Firm 2 observes Firm 1’s choice before selecting its own output.</p>
+<h4 id="backward-induction">Backward Induction</h4>
+<p>To solve for the outcomes, we use backward induction. We begin with Firm 2’s decision: - Given <span class="math inline"><em>Q</em><sub>1</sub></span>, Firm 2 maximizes its profit by choosing <span class="math inline"><em>Q</em><sub>2</sub></span>.</p>
+<h4 id="firm-2s-decision">Firm 2’s Decision</h4>
+<p>Firm 2’s profit maximization problem can be similarly set up as before, leading to: <br /><span class="math display">$$Q_2^* = \frac{A - C - BQ_1}{2B}.$$</span><br /></p>
+<h4 id="firm-1s-decision">Firm 1’s Decision</h4>
+<p>Firm 1 anticipates how Firm 2 will respond and chooses <span class="math inline"><em>Q</em><sub>1</sub></span> to maximize its profit: <br /><span class="math display"><em>π</em><sub>1</sub> = (<em>A</em> − <em>B</em>(<em>Q</em><sub>1</sub> + <em>Q</em><sub>2</sub>))<em>Q</em><sub>1</sub> − <em>C</em><em>Q</em><sub>1</sub>.</span><br /></p>
+<p>Substituting in Firm 2’s best response gives: <br /><span class="math display">$$Q_1^* = \frac{A - C}{2B}.$$</span><br /></p>
+<h4 id="equilibrium-outcomes">Equilibrium Outcomes</h4>
+<p>At equilibrium: <br /><span class="math display">$$Q_2^* = \frac{A - C}{4B}.$$</span><br /></p>
+<p>Let us summarize key outcomes: - Firm 1’s output under Stackelberg is greater than in Cournot. - Firm 2’s output under Stackelberg is less than in Cournot. - Total output increases: <br /><span class="math display"><em>Q</em><sub>1</sub> + <em>Q</em><sub>2</sub> = <em>Q</em><sub>1</sub><sup>*</sup> + <em>Q</em><sub>2</sub><sup>*</sup> &gt; <em>Q</em><sub>1</sub><sup><em>C</em></sup> + <em>Q</em><sub>2</sub><sup><em>C</em></sup>.</span><br /> - Market prices decrease as total output increases, benefiting consumers.</p>
+<h3 id="analyzing-strategic-moves">Analyzing Strategic Moves</h3>
+<p>Let’s consider the implications of sequential versus simultaneous moves:</p>
+<ul>
+<li><p>In some contexts, first-mover advantages are present, where committing to a decision provides a strategic edge.</p></li>
+<li><p>In other contexts, such as auction scenarios or games like rock-paper-scissors, moving second can be advantageous due to the ability to adapt to the first mover’s choice (second-mover advantage).</p></li>
+</ul>
+<h3 id="conclusion-8">Conclusion</h3>
+<p>This lecture emphasizes the critical roles of timing and information in competitive settings. Understanding whether a first-mover or second-mover strategy is beneficial can greatly influence firm profits and market outcomes.</p>
+<h1 id="lecture-notes-on-game-theory-zermelos-theorem-and-strategic-games">Lecture Notes on Game Theory: Zermelo’s Theorem and Strategic Games</h1>
+<h3 id="introduction-8">Introduction</h3>
+<p>In the previous lecture, we analyzed the game of Nim, a strategic game where players alternately remove stones from two piles. The objective is to be the player who takes the last stone. We explored how initial conditions can determine which player has a winning strategy.</p>
+<h3 id="zermelos-theorem">Zermelo’s Theorem</h3>
+<p>This theorem provides insights into determining winners in games of perfect information.</p>
+<h4 id="definition-of-perfect-information">Definition of Perfect Information</h4>
+<p>A game possesses perfect information if, at every decision-making point, a player knows all previous actions taken in the game. For example:</p>
+<ul>
+<li><p>In Nim and Tic-Tac-Toe, players know all prior moves.</p></li>
+</ul>
+<h4 id="conditions-of-zermelos-theorem">Conditions of Zermelo’s Theorem</h4>
+<ol>
+<li><p>There are two players in the game.</p></li>
+<li><p>The game has a finite number of nodes, ensuring no infinite decision paths.</p></li>
+<li><p>The game has three possible outcomes:</p></li>
+</ol>
+<ul>
+<li><p>Win for Player 1, denoted <span class="math inline"><em>W</em><sub>1</sub></span></p></li>
+<li><p>Win for Player 2, denoted <span class="math inline"><em>W</em><sub>2</sub></span></p></li>
+<li><p>Tie (or draw)</p></li>
+</ul>
+<p>Under these conditions, Zermelo’s theorem states that:</p>
+<blockquote>
+<p>Either Player 1 can force a win, or Player 1 can force a tie, or Player 2 can force a win (loss for Player 1).</p>
+</blockquote>
+<p>Games can thus be categorized into those where:</p>
+<ul>
+<li><p>Player 1 has a winning strategy</p></li>
+<li><p>Player 1 can ensure at least a tie</p></li>
+<li><p>Player 2 has a winning strategy</p></li>
+</ul>
+<h3 id="illustrative-examples">Illustrative Examples</h3>
+<h4 id="the-game-of-nim">The Game of Nim</h4>
+<ul>
+<li><p>If the piles of stones are unequal, Player 1 can force a win.</p></li>
+<li><p>If the piles are equal, Player 2 can force a win.</p></li>
+</ul>
+<h4 id="tic-tac-toe">Tic-Tac-Toe</h4>
+<p>Tic-Tac-Toe is a game where, with optimal play from both players, the outcome is always a tie.</p>
+<h4 id="checkers">Checkers</h4>
+<p>Checkers can also be analyzed using Zermelo’s theorem, indicating a defined winning strategy, although the solution may not be explicitly known.</p>
+<h4 id="chess">Chess</h4>
+<p>Chess also meets the conditions of Zermelo’s theorem with many possible outcomes. It is known that there is a winning strategy (though undiscovered).</p>
+<h3 id="proof-by-induction">Proof by Induction</h3>
+<p>We will prove Zermelo’s theorem by induction on the maximum length of the game, denoted <span class="math inline"><em>N</em></span>.</p>
+<h4 id="base-case-n-1">Base Case: <span class="math inline"><em>N</em> = 1</span></h4>
+<p>The game has only one move. Possible outcomes are:</p>
+<ul>
+<li><p>Player 1 wins (<span class="math inline"><em>W</em><sub>1</sub></span>)</p></li>
+<li><p>Player 2 wins (<span class="math inline"><em>W</em><sub>2</sub></span>)</p></li>
+<li><p>Tie (<span class="math inline"><em>T</em></span>)</p></li>
+</ul>
+<p>In these cases, solutions are straightforward since we define outcomes by their immediate results.</p>
+<h4 id="inductive-step">Inductive Step</h4>
+<p>Assume the theorem holds for all games of length <span class="math inline"> ≤ <em>N</em></span>. We need to show it holds for games of length <span class="math inline"><em>N</em> + 1</span>.</p>
+<ol>
+<li><p>Consider a game tree of length <span class="math inline"><em>N</em> + 1</span>.</p></li>
+<li><p>The first move by Player 1 leads to various sub-games that are either of length <span class="math inline"><em>N</em></span> or shorter.</p></li>
+<li><p>Each sub-game has a determined outcome based on our inductive assumption.</p></li>
+<li><p>Thus, Player 1 can choose the optimal sub-game leading to a solution.</p></li>
+</ol>
+<p><br /><span class="math display">If sub-game has solution <em>W</em>:  then Player 1 wins.</span><br /> <br /><span class="math display">If sub-game has solution <em>T</em>:  then Player 1 ties.</span><br /> <br /><span class="math display">If sub-game has solution <em>W</em><sub>2</sub>:  then Player 2 wins.</span><br /></p>
+<h3 id="strategies-in-games-of-perfect-information">Strategies in Games of Perfect Information</h3>
+<p>A strategy in perfect information games is defined as a complete plan of action detailing which decisions a player will make at each of their decision nodes.</p>
+<h4 id="example-game">Example Game</h4>
+<p>In a tree with Player 1 choosing between Up (<span class="math inline"><em>U</em></span>) or Down (<span class="math inline"><em>D</em></span>) and Player 2 choosing Left (<span class="math inline"><em>L</em></span>) or Right (<span class="math inline"><em>R</em></span> based on Player 1’s choice):<br />
+Possible strategies for Player 1:</p>
+<ul>
+<li><p><span class="math inline"><em>S</em><sub>1</sub> : <em>U</em>, <em>u</em></span></p></li>
+<li><p><span class="math inline"><em>S</em><sub>2</sub> : <em>U</em>, <em>d</em></span></p></li>
+<li><p><span class="math inline"><em>S</em><sub>3</sub> : <em>D</em>, <em>u</em></span></p></li>
+<li><p><span class="math inline"><em>S</em><sub>4</sub> : <em>D</em>, <em>d</em></span></p></li>
+</ul>
+<p>Strategies should include possible actions even if they might never be reached.</p>
+<h4 id="backward-induction-analysis">Backward Induction Analysis</h4>
+<ol>
+<li><p>Analyze the game from the end.</p></li>
+<li><p>Determine Player 2’s best response based on Player 1’s actions.</p></li>
+<li><p>Work backward to discover the optimal actions for Player 1.</p></li>
+</ol>
+<h3 id="nash-equilibrium-4">Nash Equilibrium</h3>
+<p>The Nash equilibrium provides additional understanding of strategy in games. It identifies strategy pairs from which no player can improve their outcome by unilaterally changing their strategy.</p>
+<h4 id="example-of-a-nash-equilibrium">Example of a Nash Equilibrium</h4>
+<p>In a game:</p>
+<ul>
+<li><p>Player 1’s strategies: Choose to Enter or Stay Out.</p></li>
+<li><p>Player 2’s strategies: Fight or Not Fight.</p></li>
+</ul>
+<p>Payoff outcomes:</p>
+<ul>
+<li><p>If the entrant stays out, <span class="math inline">(3, 0)</span></p></li>
+<li><p>If they enter and are accommodated, <span class="math inline">(1, 1)</span></p></li>
+<li><p>If the entrant is fought, <span class="math inline">( − 1, 0)</span></p></li>
+</ul>
+<p>This leads to Nash equilibria but may result in non-credible threats.</p>
+<h3 id="conclusion-9">Conclusion</h3>
+<p>Understanding strategic game theory through concepts like Zermelo’s theorem enhances our ability to analyze games thoroughly. The applications range from simple games like Tic-Tac-Toe to complex games like chess and economics.</p>
+<p>The critical takeaway is the assurance of a solution for each game falling under these definitions, alongside the intricacies introduced through strategies, backward induction, Nash equilibria, and the importance of credible threats in potential market competitions.</p>
+<h1 id="notes-on-game-theory-entry-deterrence-and-reputation">Notes on Game Theory: Entry Deterrence and Reputation</h1>
+<h3 id="overview-1">Overview</h3>
+<p>This lecture provides a detailed analysis of a game involving an incumbent monopolist facing potential entrants in a market. The key concepts discussed include Nash Equilibria, backward induction, and the role of reputation in strategic decision-making.</p>
+<h3 id="game-setup-5">Game Setup</h3>
+<p>We considered a game with two players:</p>
+<ul>
+<li><p><strong>Entrant:</strong> A new competitor considering entering the market.</p></li>
+<li><p><strong>Incumbent:</strong> The monopolist already operating in the market.</p></li>
+</ul>
+<h4 id="payoffs-1">Payoffs</h4>
+<p>If the Entrant <strong>stays out</strong>: The Incumbent remains a monopolist and earns $3 million in profit.<br />
+If the Entrant <strong>enters</strong>:</p>
+<ul>
+<li><p>If the Incumbent <strong>accommodates</strong>: Both players earn $1 million each (i.e., a duopoly).</p></li>
+<li><p>If the Incumbent <strong>fights</strong>: The Incumbent earns $0, and the Entrant incurs a loss of $1 million.</p></li>
+</ul>
+<h4 id="analyzing-the-game">Analyzing the Game</h4>
+<p>Using a matrix form, we found two Nash Equilibria:</p>
+<ol>
+<li><p>Entrant goes <strong>in</strong> and the Incumbent <strong>does not fight</strong>.</p></li>
+<li><p>Entrant stays <strong>out</strong> and the Incumbent <strong>fights</strong>.</p></li>
+</ol>
+<p>However, backward induction suggests that the more rational outcome is for the Entrant to enter while the Incumbent chooses not to fight.</p>
+<h3 id="game-extension-multiple-markets">Game Extension: Multiple Markets</h3>
+<p>The lecture then extended the initial game to a scenario where the Incumbent monopolist, Ale, holds a monopoly in 10 different markets. Each Entrant enters the market one after the other. The key elements are:</p>
+<ul>
+<li><p>Each market is distinct (different towns).</p></li>
+<li><p>The Entrants make independent decisions based on their understanding of the Incumbent’s strategy.</p></li>
+</ul>
+<h4 id="sequential-entry-decisions">Sequential Entry Decisions</h4>
+<p>Using examples from students, the outcomes of hypothetical decisions were examined:</p>
+<ul>
+<li><p>Each Entrant’s decision can be influenced by expected actions of the Incumbent.</p></li>
+<li><p>Observing earlier fights or accommodations influences later entrants’ decisions.</p></li>
+</ul>
+<h4 id="reputation-and-entry-deterrence">Reputation and Entry Deterrence</h4>
+<p>The discussion highlighted how the Incumbent may develop a reputation as a tough competitor, which can deter future entries. The idea of a "not credible threat" by the Incumbent arises:</p>
+<ul>
+<li><p>If the Incumbent successfully fights some entrants, later entrants may believe he will fight them too, thus deterring entry.</p></li>
+</ul>
+<h3 id="establishing-reputation">Establishing Reputation</h3>
+<p>To formalize the reputation concept, the lecture introduced the idea of a small probability, say 1%, that the Incumbent is "crazy" and enjoys fighting. The mechanics are as follows:</p>
+<ul>
+<li><p>If the Entrants believe there is a slight chance of unpredictable behavior from Ale, they are likely to stay out to avoid a costly fight.</p></li>
+<li><p>Over time, an Entrant observing fights would conclude that Ale is indeed the unpredictable type and would choose to avoid entering the market.</p></li>
+</ul>
+<p>The model also emphasizes that even if Ale is sane, faking unpredictability can still deter Entrants.</p>
+<h3 id="example-game-duel">Example Game: Duel</h3>
+<p>The latter part of the lecture transitioned into analyzing a game called "duel," illustrating strategic timing:</p>
+<ul>
+<li><p><strong>Players:</strong> Two individuals armed with sponges, taking turns to either throw or step closer.</p></li>
+<li><p><strong>Game Dynamics:</strong> The ability to hit an opponent decreases as distance increases. The goal is to time the attack properly to maximize hitting probability.</p></li>
+</ul>
+<h4 id="key-notation">Key Notation</h4>
+<p><br /><span class="math display"><em>Π</em>[<em>d</em>] : Player <em>i</em>’s probability of hitting if shooting from distance <em>d</em>.</span><br /></p>
+<h4 id="assumptions-and-analysis">Assumptions and Analysis</h4>
+<p>The analysis assumed that:</p>
+<ul>
+<li><p>Hitting probability at distance 0 is 1.</p></li>
+<li><p>Hitting probability decreases with distance.</p></li>
+<li><p>The players’ shooting abilities are known.</p></li>
+</ul>
+<p>The conclusion established a distance, denoted as <span class="math inline"><em>d</em><sup>*</sup></span>, at which the first attack should occur. The logic follows that, prior to <span class="math inline"><em>d</em><sup>*</sup></span>, no player has an incentive to shoot. At <span class="math inline"><em>d</em><sup>*</sup></span>, however, the decision dynamics change based on players’ knowledge of each other’s abilities and intended actions.</p>
+<h3 id="conclusion-10">Conclusion</h3>
+<p>We learned that:</p>
+<ol>
+<li><p><strong>Reputation</strong> plays a crucial role in market entry decisions. A faint chance of aggressive behavior can alter outcomes.</p></li>
+<li><p><strong>Backward induction</strong> and dominance arguments help solve complex strategic decisions, emphasizing when to act in games.</p></li>
+<li><p>As seen in the duel game, the notion of timing decisions can influence outcome effectiveness significantly.</p></li>
+</ol>
+<p>The lecture showcases how game dynamics can seemingly contradict standard theoretical predictions and highlights the importance of considering psychological and historical contexts in strategic decision-making.</p>
+<h1 id="notes-on-ultimatum-and-bargaining-games">Notes on Ultimatum and Bargaining Games</h1>
+<h3 id="introduction-9">Introduction</h3>
+<p>In this lecture, we will explore two types of games, specifically focusing on ultimatum and bargaining games.</p>
+<h3 id="ultimatum-game">Ultimatum Game</h3>
+<h4 id="game-structure-1">Game Structure</h4>
+<p>The ultimatum game consists of two players, Player 1 and Player 2. Player 1 makes a "take it or leave it" offer concerning a pie worth $1. The split can be denoted as:</p>
+<p>Player 1 receives <span class="math inline"><em>S</em></span><br />
+Player 2 receives <span class="math inline">(1 − <em>S</em>)</span></p>
+<p>Player 2 has two choices:</p>
+<ul>
+<li><p>Accept the offer:</p>
+<ul>
+<li><p>Player 1 receives <span class="math inline"><em>S</em></span></p></li>
+<li><p>Player 2 receives <span class="math inline">(1 − <em>S</em>)</span></p></li>
+</ul></li>
+<li><p>Reject the offer:</p>
+<ul>
+<li><p>Both players receive $0.</p></li>
+</ul></li>
+</ul>
+<h4 id="example-offers">Example Offers</h4>
+<p>The lecture included real-life examples where various students made offers. Below are some examples of offers and their outcomes:</p>
+<ul>
+<li><p>Offer: 0.01 (Rejected)</p></li>
+<li><p>Offer: 0.30 (Rejected)</p></li>
+<li><p>Offer: 0.50 (Accepted)</p></li>
+</ul>
+<h4 id="backward-induction-analysis-1">Backward Induction Analysis</h4>
+<ul>
+<li><p>According to backward induction, Player 2 should accept any non-zero offer since receiving $0 is worse.</p></li>
+<li><p>Players displayed rejection of low offers due to reasons such as pride and perceived fairness.</p></li>
+</ul>
+<h3 id="two-period-bargaining-game">Two-Period Bargaining Game</h3>
+<h4 id="structure-of-the-game">Structure of the Game</h4>
+<p>In the two-period game:</p>
+<ul>
+<li><p>Player 1 makes an offer <span class="math inline"><em>S</em><sub>1</sub></span>.</p></li>
+<li><p>If Player 2 rejects, they make an offer <span class="math inline"><em>S</em><sub>2</sub></span> in the second period.</p></li>
+</ul>
+<p>The key addition is that if the game goes to the second stage, the total value of the pie shrinks to <span class="math inline"><em>δ</em></span>, where <span class="math inline">0 &lt; <em>δ</em> &lt; 1</span>.</p>
+<h4 id="discounting">Discounting</h4>
+<p>Discounting refers to the idea that money today is worth more than money tomorrow: <br /><span class="math display">Value of $1 tomorrow  = <em>δ</em> × 1 (in today’s dollars)</span><br /></p>
+<h4 id="analysis-of-the-two-period-game">Analysis of the Two-Period Game</h4>
+<p>Using backward induction, we analyze the second round:</p>
+<ul>
+<li><p>If Player 2 knows Player 1 may offer less than <span class="math inline"><em>δ</em></span>, Player 1 must offer at least <span class="math inline"><em>δ</em></span> in the first round to ensure acceptance.</p></li>
+<li><p>Thus, the optimal offer in the first round becomes: <br /><span class="math display"><em>S</em><sub>1</sub> = 1 − <em>δ</em>,  with Player 2 receiving <em>δ</em>.</span><br /></p></li>
+</ul>
+<h3 id="general-observations">General Observations</h3>
+<p>The real-world implications of these games reveal insights:</p>
+<ul>
+<li><p>The outcome of each game can vary significantly based on how players perceive fairness and their respective positions.</p></li>
+<li><p>With multiple stages of bargaining, despite the assumptions of rationality and equilibrium, deviations occur due to human emotions and biases.</p></li>
+<li><p>Players may have different discount rates impacting who has more bargaining power.</p></li>
+<li><p>If Player A is more impatient than Player B, Player B tends to have the upper hand.</p></li>
+</ul>
+<h3 id="conclusions-1">Conclusions</h3>
+<p>In conclusion, bargaining behavior can reveal significant insights into economic decisions beyond simple transactional models. The observations around fairness, reputation, and individual discount rates can influence outcomes in ways traditional models may not predict accurately.</p>
+<h1 id="notes-on-game-theory">Notes on Game Theory</h1>
+<h3 id="overview-of-game-types">Overview of Game Types</h3>
+<p>In this lecture, we distinguish between two types of games:</p>
+<ul>
+<li><p><strong>Simultaneous Move Games</strong>: Players make decisions without knowledge of the other player’s choices.</p></li>
+<li><p><strong>Sequential Move Games</strong>: Player moves occur one after the other, with later players having knowledge of earlier decisions.</p></li>
+</ul>
+<p>We aim to analyze games that involve both simultaneous and sequential moves, extending the technique of <strong>backward induction</strong>.</p>
+<h3 id="example-of-a-sequential-move-game">Example of a Sequential Move Game</h3>
+<p>Consider a simple game in which:</p>
+<ul>
+<li><p>Player 1 chooses: <em>up</em>, <em>middle</em>, or <em>down</em>.</p></li>
+<li><p>Player 2 chooses: <em>left</em> or <em>right</em> after Player 1’s choice.</p></li>
+</ul>
+<p>The payoffs are as follows: <br /><span class="math display">$$\begin{array}{|c|c|c|}
+\hline
+\text{Player 1's Choice} &amp; \text{Player 2's Choice} &amp; \text{Payoffs} \\
+\hline
+\text{up, left} &amp; (4,0) \\
+\text{up, right} &amp; (0,4) \\
+\text{middle, left} &amp; (0,4) \\
+\text{middle, right} &amp; (4,0) \\
+\text{down, left} &amp; (1,2) \\
+\text{down, right} &amp; (0,0) \\
+\hline
+\end{array}$$</span><br /></p>
+<p>To solve this game, we apply <strong>backward induction</strong>:</p>
+<ul>
+<li><p>If Player 2 is at (up) or (middle), she will choose right (4) over left (0).</p></li>
+<li><p>If Player 2 is at (down), she will choose left (2) over right (0).</p></li>
+</ul>
+<p>Thus, Player 1 predicts Player 2’s responses:</p>
+<ul>
+<li><p>From (up), Player 1 gets (0).</p></li>
+<li><p>From (middle), Player 1 gets (0).</p></li>
+<li><p>From (down), Player 1 gets (1).</p></li>
+</ul>
+<p>So, Player 1 chooses <em>down</em>, and Player 2 chooses <em>left</em>.</p>
+<h3 id="information-sets">Information Sets</h3>
+<p>Now, consider a new scenario where Player 2 cannot distinguish between the upper and middle nodes. We represent this with an <strong>information set</strong>:</p>
+<p>Player 2 knows that Player 1 chose either <em>up</em> or <em>middle</em>, but cannot determine which. This changes the optimal structure of Player 2’s responses.</p>
+<h4 id="backward-induction-with-information-sets">Backward Induction with Information Sets</h4>
+<p>In this case, Player 2’s response to uncertainty affects Player 1:</p>
+<ul>
+<li><p>If Player 1 randomizes between <em>up</em> and <em>middle</em>, Player 2 receives different payoffs based on the response to this uncertainty.</p></li>
+</ul>
+<h3 id="formal-definitions">Formal Definitions</h3>
+<h4 id="perfect-information">Perfect Information</h4>
+<p><strong>Definition:</strong> A game of <em>perfect information</em> is one where every information set contains only one node.</p>
+<h4 id="imperfect-information">Imperfect Information</h4>
+<p><strong>Definition:</strong> A game of <em>imperfect information</em> consists of at least one information set that contains more than one node.</p>
+<h4 id="strategies">Strategies</h4>
+<p>For games with imperfect information, a <strong>strategy</strong> for Player <span class="math inline"><em>i</em></span> defines actions at each <em>information set</em>:</p>
+<ul>
+<li><p>A strategy is defined by the choice made at each of Player <span class="math inline"><em>i</em></span>’s information sets.</p></li>
+</ul>
+<h3 id="nash-equilibrium-5">Nash Equilibrium</h3>
+<p>A <strong>Nash Equilibrium</strong> occurs when no player can benefit from unilaterally changing their strategy, given other players’ strategies.</p>
+<h4 id="subgame-perfect-equilibrium-spe">Subgame Perfect Equilibrium (SPE)</h4>
+<p><strong>Definition:</strong> A Nash Equilibrium is a <em>subgame perfect equilibrium</em> if it induces a Nash Equilibrium in every subgame.</p>
+<h5 id="identification-of-subgames">Identification of Subgames</h5>
+<ol>
+<li><p>A subgame starts at a single node.</p></li>
+<li><p>It includes all successor nodes of that starting node.</p></li>
+<li><p>It does not break any information sets.</p></li>
+</ol>
+<h3 id="conclusion-11">Conclusion</h3>
+<p>In summary, this class focuses on the significance of information in game theory. We have learned:</p>
+<ul>
+<li><p>How to model and analyze games with both types of moves.</p></li>
+<li><p>Key definitions like information sets, Nash equilibrium, and subgame perfect equilibrium.</p></li>
+<li><p>The importance of making rational predictions considering both the structure of the game and the information known to players.</p></li>
+</ul>
+<p>This concludes the class, and further exploration will involve applications using these concepts.</p>
+<h1 id="notes-on-game-theory-sub-game-perfect-equilibrium">Notes on Game Theory: Sub-game Perfect Equilibrium</h1>
+<h3 id="introduction-10">Introduction</h3>
+<p>In this lecture, we explored several advanced concepts in game theory, primarily focusing on sub-game perfection and how it relates to Nash equilibrium.</p>
+<h3 id="key-concepts-3">Key Concepts</h3>
+<h4 id="imperfect-information-1">Imperfect Information</h4>
+<ul>
+<li><p>Imperfect information allows modeling of games that include both simultaneous and sequential moves.</p></li>
+<li><p>It helps integrate concepts learned before and after the mid-term in game theory.</p></li>
+</ul>
+<h4 id="strategies-and-information-sets">Strategies and Information Sets</h4>
+<ul>
+<li><p>A strategy provides instructions for players at each of their information sets. Each player has strategies that cover all possible actions (choose Moves).</p></li>
+<li><p>Information sets are essential for recognizing the moves available to a player at any stage of the game.</p></li>
+</ul>
+<h4 id="sub-games">Sub-games</h4>
+<ul>
+<li><p>A sub-game is defined as a game within a game. It can consist of a particular sequence of moves and decisions that players can undertake.</p></li>
+</ul>
+<h4 id="sub-game-perfect-equilibrium-spe">Sub-game Perfect Equilibrium (SPE)</h4>
+<ul>
+<li><p>Sub-game perfection refines Nash equilibrium by requiring players to play a Nash equilibrium in every sub-game.</p></li>
+<li><p>Formally, a strategy profile is a sub-game perfect equilibrium if it induces Nash play in every sub-game.</p></li>
+</ul>
+<h3 id="example-dont-screw-up-game">Example: "Don’t Screw Up" Game</h3>
+<h4 id="game-structure-2">Game Structure</h4>
+<ul>
+<li><p>Player 1 chooses between Up (U) and Down (D).</p></li>
+<li><p>If U is chosen, Player 2 then chooses Left (L) or Right (R).</p></li>
+</ul>
+<p><br /><span class="math display">$$\begin{array}{|c|c|c|c|}
+\hline
+ &amp; \text{Left} &amp; \text{Right} \\
+\hline
+(U, U) &amp; (4, 3) &amp; (1, 2) \\
+\hline
+(U, D) &amp; (3, 1) &amp; (1, 2) \\
+\hline
+(D, U) &amp; (2, 1) &amp; - \\
+\hline
+(D, D) &amp; (2, 1) &amp; - \\
+\hline
+\end{array}$$</span><br /></p>
+<h4 id="solutions">Solutions</h4>
+<p>Backwards Induction: Start from the last stage and analyze the outcomes:</p>
+<ul>
+<li><p>If Player 1 has a choice after Player 2’s move, they will choose U to maximize their payoff.</p></li>
+<li><p>If Player 2 believes Player 1 is going to choose U (trust-based outcome), they will then choose L.</p></li>
+</ul>
+<p>This results in the backward induction equilibrium being (U, L).</p>
+<h4 id="nash-equilibria">Nash Equilibria</h4>
+<p>There are three Nash equilibria:</p>
+<ol>
+<li><p><span class="math inline">(<em>U</em>, <em>U</em>), <em>L</em> → (4, 3)</span> (Backward Induction)</p></li>
+<li><p><span class="math inline">(<em>D</em>, <em>U</em>), <em>R</em> → (2, 1)</span></p></li>
+<li><p><span class="math inline">(<em>D</em>, <em>D</em>), <em>R</em> → (2, 1)</span></p></li>
+</ol>
+<h4 id="identifying-sub-game-perfect-equilibrium">Identifying Sub-game Perfect Equilibrium</h4>
+<p>1. Last sub-game analysis (Player 1’s decisions):</p>
+<ul>
+<li><p>In this sub-game, Player 1 needs to play U for it to be a SPE.</p></li>
+<li><p>Only the first Nash equilibrium <span class="math inline">(<em>U</em>, <em>U</em>), <em>L</em></span> qualifies as sub-game perfect.</p></li>
+</ul>
+<p>2. Second sub-game (Player 2’s decisions):</p>
+<ul>
+<li><p>Requires checking decisions under Player 1’s moves; the equilibrium path must also deliver a Nash result.</p></li>
+</ul>
+<p>Final SPE confirmed is <span class="math inline">(<em>U</em>, <em>L</em>)</span>.</p>
+<h3 id="example-the-matchmaker-game">Example: The Matchmaker Game</h3>
+<h4 id="setting-the-scenario">Setting the Scenario</h4>
+<ul>
+<li><p>Player 1 (Matchmaker): Can either send (cost incurred) or not send the couple on a date.</p></li>
+<li><p>Players 2 and 3 (the couple) independently select between two venues: Cold War (Gaddis) or China (Spence).</p></li>
+</ul>
+<h4 id="strategies-and-outcomes">Strategies and Outcomes</h4>
+<p><br /><span class="math display">$$\text{If sent: Payoffs:} 
+\begin{cases}
+(2, 1) &amp; \text{if Gaddis-Gaddis (D, D)} \\
+(1, 2) &amp; \text{if Spence-Spence (S, S)} \\
+(0, 0) &amp; \text{otherwise}
+\end{cases}$$</span><br /></p>
+<h4 id="game-analysis-1">Game Analysis</h4>
+<ol>
+<li><p>Start from the last sub-game where players choose venues.</p></li>
+<li><p>Calculate the Nash equilibria and find their impacts on Player 1’s decision (to send or not).</p></li>
+<li><p>Strategic implications: Encourage softening competition through decreased outputs leading to increased profits.</p></li>
+</ol>
+<h3 id="business-application-example-cournot-competition">Business Application Example: Cournot Competition</h3>
+<h4 id="initial-setup">Initial Setup</h4>
+<p>Firm A and Firm B in Cournot competition, with prices modeled as: <br /><span class="math display">$$P = 2 - \frac{1}{3}(Q_A + Q_B)$$</span><br /> Marginal costs for both firms set at $1/ton.</p>
+<h4 id="decision-on-machine-rental">Decision on Machine Rental</h4>
+<ul>
+<li><p>Firm A considers renting a machine that reduces its marginal cost to \$0.50 at a cost of \$0.7 million.</p></li>
+</ul>
+<ol>
+<li><p>Accountant’s Perspective: Sees the fixed and varying costs leading to the decision of not renting.</p></li>
+<li><p>Economic Model: Recognizes a market shift and recalibrating quantity strategies based on strategic changes.</p></li>
+</ol>
+<h4 id="conclusion-on-renting-decision">Conclusion on Renting Decision</h4>
+<p>Incorporate strategic behavior into the equation; the ultimate analysis shows that:</p>
+<ul>
+<li><p>Renting the machine leads to a profitable shift incorporating revised equilibrium outcomes.</p></li>
+</ul>
+<h3 id="lessons-learned-1">Lessons Learned</h3>
+<ol>
+<li><p>Importance of Sub-game Analysis: Identifying developing strategies after changes in costs or entries.</p></li>
+<li><p>Strategic Interactions Matter: Assuming other players’ strategies remain constant can lead to fundamental miscalculations in expected outcomes.</p></li>
+</ol>
+<h1 id="notes-on-sub-game-perfect-equilibrium">Notes on Sub-Game Perfect Equilibrium</h1>
+<h3 id="introduction-11">Introduction</h3>
+<p>In this lecture, we explore the concept of sub-game perfect equilibrium (SPE) through a detailed analysis of a strategic game involving two players. We discuss applications of SPE in various practical scenarios and introduce a new game for analysis.</p>
+<h3 id="strategic-effects">Strategic Effects</h3>
+<ul>
+<li><p>In analyzing games, we consider how choices in a given stage (or sub-game) influence future choices, heavily relying on the idea of strategic effects.</p></li>
+<li><p>Strategic effects refer to how a player’s actions influence the others’ actions.</p></li>
+<li><p>Examples:</p>
+<ul>
+<li><p>Design of tax systems where behavioral changes must be considered.</p></li>
+<li><p>Toll booth problem: Understanding traffic flow changes with the introduction of new tolls.</p></li>
+</ul></li>
+</ul>
+<h3 id="game-setup-6">Game Setup</h3>
+<p>The game involves two players who simultaneously choose between two actions: Fight (F) or Quit (Q).</p>
+<ul>
+<li><p>Payoffs:</p>
+<ul>
+<li><p>If both players fight (F, F), each incurs a cost of <span class="math inline"> − <em>C</em></span>.</p></li>
+<li><p>If one player fights and the other quits, the fighter receives a prize <span class="math inline"><em>V</em></span> while the quitter receives <span class="math inline">0</span>.</p></li>
+<li><p>If both players quit (Q, Q), they both receive <span class="math inline">0</span>.</p></li>
+<li><p>Thus, the game concludes when one player quits; otherwise, it continues until one quits.</p></li>
+</ul></li>
+</ul>
+<h3 id="game-analysis-2">Game Analysis</h3>
+<h4 id="normal-form-representation">Normal Form Representation</h4>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;">Player B: Quit (Q)</th>
+<th style="text-align: center;">Player B: Fight (F)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Player A: Quit (Q)</td>
+<td style="text-align: center;">(0, 0)</td>
+<td style="text-align: center;">(0, V)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Player A: Fight (F)</td>
+<td style="text-align: center;">(V, 0)</td>
+<td style="text-align: center;">(-C, -C)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="sub-game-perfect-equilibria">Sub-Game Perfect Equilibria</h4>
+<p>1. <strong>Second Stage Analysis:</strong></p>
+<ul>
+<li><p>If fighting continues in the second stage (F, F), players will still incur costs.</p></li>
+<li><p>The sub-game has pure strategy Nash equilibria:</p>
+<ol>
+<li><p>(Q, F) → Payoff: (0, V)</p></li>
+<li><p>(F, Q) → Payoff: (V, 0)</p></li>
+</ol></li>
+<li><p>Both strategies lead to immediate gains without incurring further costs.</p></li>
+</ul>
+<p>2. <strong>First Stage Analysis:</strong></p>
+<ul>
+<li><p>We backtrack to the first stage and analyze expected outcomes based on second stage equilibria.</p></li>
+<li><p>Payoffs in the first stage become: <br /><span class="math display">$$\begin{aligned}
+            \text{If } (F, F): \text{Payoffs become } (-C + V, -C) \text{ or } (-C, -C) \text{ (continuation payoffs)}.
+        \end{aligned}$$</span><br /></p></li>
+</ul>
+<h4 id="mixed-strategy-equilibria-1">Mixed Strategy Equilibria</h4>
+<p>1. Players can adopt mixed strategies such that: <br /><span class="math display">$$P_A = \text{Prob}(F) = \frac{V}{V + C}$$</span><br /> <br /><span class="math display">$$P_B = \text{Prob}(F) = \frac{V}{V + C}$$</span><br /></p>
+<p>2. Expected Payoff: <br /><span class="math display"><em>E</em>[<em>A</em>] = <em>E</em>[<em>B</em>] = 0 (since mixing leads to no ultimate gain).</span><br /></p>
+<ul>
+<li><p>Fighting becomes a probabilistic endeavor, leading to equilibrium in which players fight only based on probabilities, potentially leading to longer engagements.</p></li>
+</ul>
+<h3 id="wars-of-attrition">Wars of Attrition</h3>
+<p>The concept from the game demonstrated relates well to real-world examples of <strong>Wars of Attrition</strong> where:</p>
+<ul>
+<li><p>Players incur costs (human, material) while vying for relatively small prizes.</p></li>
+<li><p>Examples include conflicts in World War I due to overwhelming costs for trivial gains.</p></li>
+</ul>
+<h3 id="infinite-horizon-games">Infinite Horizon Games</h3>
+<p>We adapt this understanding to <strong>Infinite Horizon Games</strong>:</p>
+<ol>
+<li><p>The game is modeled as ongoing indefinitely; thus, the sunk costs from any prior period become irrelevant.</p></li>
+<li><p>At any period, the players can expect future payoffs based on mixed strategies established.</p></li>
+<li><p>Thus:</p></li>
+</ol>
+<p><br /><span class="math display">Probability of continuing conflict  = <em>P</em><sup>2</sup></span><br /> leads to a distribution of probabilities over many periods.<br />
+In conclusion, the mixed strategies demonstrate how rational players might engage in a costly standoff more frequently than expected due to contingent future payoffs and sunk costs.</p>
+<h3 id="summary">Summary</h3>
+<ol>
+<li><p>The lecture provided insights into the concept of SPE and its applications in strategic thinking and behavior.</p></li>
+<li><p>Engaging in mixed strategies leads to nuanced interpretations of combat and competition, demonstrated in practical examples from economics and history.</p></li>
+</ol>
+<h1 id="general-notes-on-repeated-interactions-in-game-theory">General Notes on Repeated Interactions in Game Theory</h1>
+<h3 id="introduction-12">Introduction</h3>
+<p>In this week of study, we focus on the concept of repeated interactions among players in games, particularly how such interactions can induce and sustain cooperative behavior. We explore significant examples like the Prisoners’ Dilemma, analyzing how repeated play can alter strategic decisions.</p>
+<h3 id="the-prisoners-dilemma">The Prisoners’ Dilemma</h3>
+<p>The Prisoners’ Dilemma is characterized by two players choosing between two strategies: cooperation or defection. The payoffs can be represented in the following matrix:</p>
+<p><br /><span class="math display">$$\begin{array}{c|c|c}
+ &amp; \text{Cooperate} &amp; \text{Defect} \\
+\hline
+\text{Cooperate} &amp; (2,2) &amp; (0,3) \\
+\hline
+\text{Defect} &amp; (3,0) &amp; (1,1) \\
+\end{array}$$</span><br /></p>
+<p>Where:</p>
+<ul>
+<li><p>(2, 2): Both players cooperate</p></li>
+<li><p>(0, 3): Player A cooperates, Player B defects</p></li>
+<li><p>(3, 0): Player A defects, Player B cooperates</p></li>
+<li><p>(1, 1): Both players defect</p></li>
+</ul>
+<p>The central questions are: - Can repeated games sustain cooperation? - How and when does cooperation emerge?</p>
+<h3 id="importance-of-repeated-interaction">Importance of Repeated Interaction</h3>
+<p>When players interact repeatedly, the prospect of future rewards and the prevention of future punishments influence their current decisions. This is captured in the following principle:</p>
+<blockquote>
+<p>In ongoing relationships, the promise of future rewards and the threat of future punishments may provide incentives for good behavior today.</p>
+</blockquote>
+<h3 id="unraveling-argument">Unraveling Argument</h3>
+<p>If a game is played a finite number of times, we often face unraveling — wherein the knowledge of a final stage leads players to defect in earlier stages. Each player’s strategical decision is based on the anticipated behavior in the final round, which may lead to:</p>
+<blockquote>
+<p>If you know there is a last round where defection is optimal, it incentivizes defection in prior rounds.</p>
+</blockquote>
+<p>In the Prisoners’ Dilemma, if the game is known to be played for only two rounds, the players will tend to defect from the beginning, leading to the outcome of (Defect, Defect).</p>
+<h3 id="the-grim-trigger-strategy">The Grim Trigger Strategy</h3>
+<p>A notable strategy in repeated interactions is the Grim Trigger Strategy, which states:</p>
+<blockquote>
+<p>Cooperate until the other player defects; once defection occurs, defect forever.</p>
+</blockquote>
+<p>This strategy creates a strong incentive for cooperation, as a single deviation will lead to continuous defection.</p>
+<h3 id="sustaining-cooperation-with-infinite-repetitions">Sustaining Cooperation with Infinite Repetitions</h3>
+<p>When interactions are modeled into an infinite horizon (or a lengthy repetitive condition without a known endpoint), the dynamics change:</p>
+<ul>
+<li><p>Cooperation can persist because there is no known final stage to trigger unraveling.</p></li>
+<li><p>Each period’s outcome can incentivize future cooperation.</p></li>
+</ul>
+<h4 id="payoffs-analysis">Payoffs Analysis</h4>
+<p>To analyze the potential for sustained cooperation in the Prisoners’ Dilemma under infinite repetition:</p>
+<p>Let <span class="math inline"><em>δ</em></span> be the probability of continuing the game through the next round, which is less than one <span class="math inline">(<em>δ</em> &lt; 1)</span>. The temptation to defect is then compared to the values of reward for cooperation and punishment for defection:</p>
+<p><br /><span class="math display">$$\begin{aligned}
+\text{Temptation to Cheat} &amp;= \text{Payoff from Defection} - \text{Payoff from Cooperation} \\
+\text{Temptation} &amp;= (3) - (2) = 1\end{aligned}$$</span><br /></p>
+<p>The expected rewards and punishments need to be computed:</p>
+<p><br /><span class="math display">$$\text{Value of Cooperation} = 2 \cdot \left(1 + \delta + \delta^2 + \ldots\right) = \frac{2}{1 - \delta}$$</span><br /></p>
+<p>When evaluating the value of defecting:</p>
+<p><br /><span class="math display">Value of Defection = 0  (since both defect in subsequent rounds)</span><br /></p>
+<h4 id="inequality-for-cooperation">Inequality for Cooperation</h4>
+<p>To sustain cooperation:</p>
+<p><br /><span class="math display">Temptation ≤ Reward − Punishment</span><br /></p>
+<p>Thus for cooperation to be sustained under the Grim Trigger Strategy:</p>
+<p><br /><span class="math display">$$1 \leq \frac{2}{1 - \delta} - 0$$</span><br /></p>
+<p>Which measures the dynamics of cooperation amidst defection and necessitates a robust probabilistic consideration of future interactions.</p>
+<h3 id="conclusion-12">Conclusion</h3>
+<p>In summary, repeated interactions can help sustain cooperation through strategies such as the Grim Trigger Strategy, provided that:</p>
+<ul>
+<li><p>The games aren’t known to end soon (infinite horizon or high probability of continuation).</p></li>
+<li><p>Players properly value future payoffs over immediate gains from defection.</p></li>
+</ul>
+<p>This exploration ultimately bridges behavioral economics with game theory, illustrating the complexity of human interactions in real-world scenarios, free from contracts or enforcement mechanisms.</p>
+<h1 id="repeated-interaction-and-cooperation">Repeated Interaction and Cooperation</h1>
+<h3 id="introduction-13">Introduction</h3>
+<p>In our previous session, we focused on repeated interactions, with special attention to whether we can achieve cooperation in business or personal relationships without contracts. This week’s exploration emphasizes the idea that the future of a relationship might provide incentives for good behavior today, helping to deter cheating.</p>
+<h3 id="the-central-intuition">The Central Intuition</h3>
+<p>Consider a business relationship between two parties, where each party supplies goods for the other. For instance, if one party supplies fruit and the other vegetables, there are opportunities for both to cheat on quality or quantity. The key intuition is that cooperation today might lead to cooperation tomorrow and vice versa, creating an incentive structure based on the future interaction.<br />
+Let <span class="math inline"><em>V</em><sub><em>C</em></sub></span> be the value of continued cooperation and <span class="math inline"><em>V</em><sub><em>D</em></sub></span> the value when cheating occurs. The inequality we want to satisfy is:</p>
+<p><br /><span class="math display">Gain from cheating today &lt; <em>V</em><sub><em>C</em></sub> − <em>V</em><sub><em>D</em></sub></span><br /></p>
+<p>To formalize this, let’s denote:</p>
+<ul>
+<li><p>Gain from cheating today as <span class="math inline"><em>G</em><sub><em>C</em></sub></span>.</p></li>
+<li><p>Value when cooperating as <span class="math inline"><em>V</em><sub><em>C</em></sub></span>.</p></li>
+<li><p>Value when cheating as <span class="math inline"><em>V</em><sub><em>D</em></sub></span>.</p></li>
+</ul>
+<p>We need:</p>
+<p><br /><span class="math display"><em>G</em><sub><em>C</em></sub> &lt; <em>V</em><sub><em>C</em></sub> − <em>V</em><sub><em>D</em></sub></span><br /></p>
+<h3 id="credibility-of-promises-and-threats">Credibility of Promises and Threats</h3>
+<p>A key takeaway from previous discussions is the need for the promises of cooperation and the threats of punishment to be credible. If the relationship is known to end after a certain number of interactions, the last period may not allow for cooperation to be sustained, leading both parties to act according to Nash equilibrium strategies in the final round. This weakness in credibility results in "unraveling."</p>
+<p><br />
+To address this issue, we focus on the concept of sub-game perfect equilibria (SPE), which ensures Nash behavior in every sub-game, particularly in the last rounds of the game.</p>
+<h3 id="the-prisoners-dilemma-1">The Prisoner’s Dilemma</h3>
+<p>We can analyze cooperation in repeated versions of the Prisoner’s Dilemma by introducing a probability <span class="math inline"><em>δ</em></span>, the chance the relationship will continue each period. Thus, at every iteration:</p>
+<ul>
+<li><p>With probability <span class="math inline"><em>δ</em></span>, the game continues.</p></li>
+<li><p>With probability <span class="math inline">1 − <em>δ</em></span>, the game ends.</p></li>
+</ul>
+<p>This set up prevents the unraveling problem, as we may now establish credible threats to deter cheating.</p>
+<h3 id="the-grim-trigger-strategy-1">The Grim Trigger Strategy</h3>
+<p>A typical strategy is the Grim Trigger strategy, which states: cooperate in the first period and continue cooperating as long as the other party has not cheated. If a party cheats, they switch to defecting indefinitely.</p>
+<p>To evaluate the credibility of this strategy, we analyze:</p>
+<p><br /><span class="math display">Temptation to cheat today &lt; <em>δ</em>(Value of promise−Value of threat)</span><br /></p>
+<p>Let:</p>
+<ul>
+<li><p><span class="math inline"><em>T</em>=</span> temptation (cheating today)</p></li>
+<li><p><span class="math inline"><em>P</em>=</span> promise (continuing cooperation)</p></li>
+<li><p><span class="math inline"><em>H</em>=</span> threat (defection)</p></li>
+</ul>
+<h4 id="values">Values</h4>
+<p>1. When cheating today: <span class="math inline"><em>T</em> = 3 − 2 = 1</span>. 2. The promise of cooperating indefinitely contributes <span class="math inline">$\frac{2}{1 - \delta}$</span>. 3. The value of defection forever produces <span class="math inline">0</span>.</p>
+<p>Thus, the inequality we have is:</p>
+<p><br /><span class="math display">$$1 &lt; \delta \left( \frac{2}{1 - \delta} \right)$$</span><br /></p>
+<p>This leads to the condition:</p>
+<p><br /><span class="math display">$$\delta &gt; \frac{1}{3}$$</span><br /></p>
+<h3 id="consequences-of-cheating">Consequences of Cheating</h3>
+<p>The argument can be extended to deviations from the Grim Trigger strategy that also need to be assessed for profitability. Any deviation generating less payoff than cooperating or resulting in permanent defection strengthens our conclusions.<br />
+If an agent cheats in the first period but returns to cooperation in the second, the strategy assessments indicate that cooperation reigns virtually as long as avenues of cheating or deviation yield less than the prospect of continued loyalty and future interaction.</p>
+<h3 id="real-world-applications">Real-World Applications</h3>
+<p>The analysis of repeated cooperation extends to real-world scenarios. For instance:</p>
+<ul>
+<li><p><strong>Relationships:</strong> Individuals in long-distance relationships may cheat more frequently if separation decreases the incentive for fidelity.</p></li>
+<li><p><strong>Business Relations:</strong> In sectors like outsourcing to regions with poor contract enforcement, employers must often set high initial wages, reflecting the high value of maintaining good faith.</p></li>
+</ul>
+<h6 id="conclusion-13">Conclusion</h6>
+<p>The key takeaways can be summarized:</p>
+<ul>
+<li><p>Cooperative behavior in ongoing relationships relies on a credible understanding of future interactions.</p></li>
+<li><p>A higher probability of continuity decreases the penalties and incentives needed to sustain cooperation.</p></li>
+<li><p>Understanding these dynamics can significantly impact wage premiums and other incentives in various types of relationships.</p></li>
+</ul>
+<h1 id="lecture-notes-on-asymmetric-information-and-signaling">Lecture Notes on Asymmetric Information and Signaling</h1>
+<h3 id="introduction-14">Introduction</h3>
+<p>In this lecture, we will study <strong>asymmetric information</strong>, focusing on <strong>signaling</strong>. We will begin with a basic example to develop our understanding.</p>
+<h3 id="cournot-competition-setup">Cournot Competition Setup</h3>
+<p>We consider a <strong>Cournot competition</strong> involving two firms, denoted as Firm A and Firm B. Firm B has constant marginal costs denoted by <span class="math inline"><em>c</em><sub><em>M</em></sub></span> (medium costs). Firm A can have one of three types of costs:</p>
+<ul>
+<li><p>High costs: <span class="math inline"><em>c</em><sub><em>H</em></sub> = <em>c</em><sub><em>M</em></sub> + <em>ϵ</em></span></p></li>
+<li><p>Medium costs: <span class="math inline"><em>c</em><sub><em>M</em></sub></span></p></li>
+<li><p>Low costs: <span class="math inline"><em>c</em><sub><em>L</em></sub> = <em>c</em><sub><em>M</em></sub> − <em>ϵ</em></span></p></li>
+</ul>
+<p>where <span class="math inline"><em>ϵ</em></span> is a small positive number.</p>
+<p>Before the Cournot competition occurs, Firm A has the opportunity to reveal its true costs to Firm B in a <strong>verifiable manner</strong>. For instance, Firm A can hire an accountant to publicize its costs in a reputable journal.</p>
+<h4 id="should-firm-a-reveal-costs">Should Firm A Reveal Costs?</h4>
+<p>The key question is whether Firm A should reveal its costs:</p>
+<ul>
+<li><p>If Firm A has <strong>low costs</strong> (<span class="math inline"><em>c</em><sub><em>L</em></sub></span>), revealing its costs may induce Firm B to produce less because it will realize that Firm A can produce at a lower cost.</p></li>
+<li><p>If Firm A has <strong>high costs</strong> (<span class="math inline"><em>c</em><sub><em>H</em></sub></span>), it will not be advantageous to reveal, as this would lead Firm B to increase production, hurting Firm A.</p></li>
+<li><p>If Firm A has <strong>medium costs</strong> (<span class="math inline"><em>c</em><sub><em>M</em></sub></span>), revealing this cost will prevent Firm B from inferring that Firm A has high costs, thus allowing Firm A to maintain its competitive stance.</p></li>
+</ul>
+<h3 id="informational-unraveling">Informational Unraveling</h3>
+<p>The concept of <strong>informational unraveling</strong> is introduced.</p>
+<ul>
+<li><p>This occurs when lower-cost firms reveal their costs, leading firms with higher costs to also reveal their costs to avoid being mistaken for high-cost firms.</p></li>
+<li><p>As a result, all firms, except the highest-cost firm, will be compelled to reveal their costs.</p></li>
+</ul>
+<h4 id="key-takeaway">Key Takeaway</h4>
+<p>The lack of signaling can also provide information. The absence of attempts to signal (e.g., not revealing high costs) conveys information about the firm’s status (<em>silence speaks volumes</em>).</p>
+<h3 id="costly-signaling-model-the-spence-model">Costly Signaling Model: The Spence Model</h3>
+<p>We derive a model based on cost signaling, focusing on education as a means of signaling the productivity of workers.</p>
+<h4 id="worker-types">Worker Types</h4>
+<p>Assuming there are <strong>two types</strong> of workers:</p>
+<ul>
+<li><p>Good workers (<span class="math inline"><em>G</em></span>): Productivity of 50.</p></li>
+<li><p>Bad workers (<span class="math inline"><em>B</em></span>): Productivity of 30.</p></li>
+</ul>
+<h4 id="education-as-signaling">Education as Signaling</h4>
+<p>Workers can obtain an education (e.g., an MBA) to signal their productivity. The <strong>cost of education</strong> differs between worker types: <br /><span class="math display">$$\begin{aligned}
+    \text{Cost for Good Workers} &amp;= 5 \text{ (per year)} \\
+    \text{Cost for Bad Workers} &amp;= 10.01 \text{ (per year)}\end{aligned}$$</span><br /></p>
+<h4 id="equilibrium-analysis-1">Equilibrium Analysis</h4>
+<p>We can derive an equilibrium where:</p>
+<ul>
+<li><p>Good workers obtain the MBA’s.</p></li>
+<li><p>Employers identify MBA holders as good workers.</p></li>
+<li><p>Bad workers do not opt for the MBA due to higher costs.</p></li>
+</ul>
+<h4 id="verifying-equilibrium">Verifying Equilibrium</h4>
+<p>To validate that this scenario forms an equilibrium, we check:</p>
+<ol>
+<li><p>No worker type has an incentive to deviate from their strategy.</p></li>
+<li><p>Employers’ belief about worker productivity is consistent with equilibrium behavior.</p></li>
+</ol>
+<h4 id="impact-of-degree-duration">Impact of Degree Duration</h4>
+<p>The length of the MBA program significantly impacts signaling:</p>
+<ul>
+<li><p>Three-year MBA: Effective at distinguishing types.</p></li>
+<li><p>Two-year MBA or One-year MBA: May lead to overlaps where bad workers can also benefit.</p></li>
+</ul>
+<h3 id="lessons-from-the-spence-model">Lessons from the Spence Model</h3>
+<ul>
+<li><p>Successful signaling requires differential costs across types.</p></li>
+<li><p>A signal must provide enough of a cost differential to induce self-selection.</p></li>
+<li><p>Education can create <strong>qualification inflation</strong> if too many qualifications are easily obtainable.</p></li>
+</ul>
+<h3 id="conclusion-14">Conclusion</h3>
+<p>The model illustrates that education may separate good workers from bad workers without inherently increasing skills or productivity, leading to considerations about the social utility of education systems.</p>
+<h1 id="lecture-notes-on-auctions">Lecture Notes on Auctions</h1>
+<h3 id="types-of-value">Types of Value</h3>
+<h4 id="common-value-auction">Common Value Auction</h4>
+<p>In a common value auction, all bidders value the item the same, but may have different estimates of its value. For example, in an oil drilling auction, each company estimates how much oil is present in a field, but the actual value of the oil is the same for all once extracted. Denote the common value as: <br /><span class="math display"><em>V</em> = Value of the good</span><br /></p>
+<h4 id="private-value-auction">Private Value Auction</h4>
+<p>In contrast, a private value auction occurs when each bidder has their own valuation of the item, which does not depend on others’ valuations. Let the private value for bidder <span class="math inline"><em>i</em></span> be denoted as: <br /><span class="math display"><em>V</em><sub><em>i</em></sub></span><br /> Where <span class="math inline"><em>V</em><sub><em>i</em></sub></span> is independent of other bidders’ valuations.</p>
+<h3 id="examples-of-auctions">Examples of Auctions</h3>
+<h4 id="jars-of-coins">Jars of Coins</h4>
+<p>Professor Polak presents a practical example of an auction with jars of coins, where the true number of coins (common value) is unknown to bidders but they make bids based on their estimates.</p>
+<h3 id="winners-curse">Winner’s Curse</h3>
+<p>The winner’s curse is a phenomenon in common value auctions where the winning bidder tends to overestimate the value of the item won. This occurs due to the highest bidder often being the one who has the highest error in their estimate (consistent overestimation) amongst all bidders. The main lessons include:</p>
+<ul>
+<li><p>Avoid falling into the winner’s curse by adjusting bids relative to estimates.</p></li>
+<li><p>If a bid strategy simply approaches the estimate, the winner’s bid is likely to exceed the actual value, leading to losses.</p></li>
+</ul>
+<p>The payoff in an auction can be defined as: <br /><span class="math display">Payoff = True value − Bid</span><br /></p>
+<h3 id="bidding-strategies">Bidding Strategies</h3>
+<p>To optimize bidding in a common value auction:</p>
+<ol>
+<li><p>Bidders should consider their bids as if they expect to win.</p></li>
+<li><p>The best estimate must account for the fact that winning implies having a higher estimate than others.</p></li>
+</ol>
+<h3 id="types-of-auctions">Types of Auctions</h3>
+<p>Four common types of auctions are discussed:</p>
+<ul>
+<li><p><strong>A: First-Price Sealed-Bid Auction</strong> - Bidders submit sealed bids and the highest bid wins.</p></li>
+<li><p><strong>B: Second-Price Sealed-Bid Auction</strong> - The highest bidder wins but pays the second-highest bid (known as Vickrey auction).</p></li>
+<li><p><strong>C: Ascending Open Auction</strong> - Bidders publicly announce increasing bids until no one is willing to outbid.</p></li>
+<li><p><strong>D: Descending Open Auction</strong> - Begins at a high price and decreases until someone accepts the price.</p></li>
+</ul>
+<h3 id="comparison-of-auctions">Comparison of Auctions</h3>
+<ul>
+<li><p>In a second-price auction, it’s a weakly dominant strategy to bid one’s true value <span class="math inline"><em>V</em><sub><em>i</em></sub></span>.</p></li>
+<li><p>In a first-price auction, bidders must shade their bids below their actual value to maximize their payoff.</p></li>
+</ul>
+<p>The difference in strategies is summarized as: <br /><span class="math display">$$\begin{aligned}
+\text{Second-Price Auction:} &amp; \quad B_i = V_i \\
+\text{First-Price Auction:} &amp; \quad B_i &lt; V_i\end{aligned}$$</span><br /></p>
+<h3 id="expected-revenue">Expected Revenue</h3>
+<p>In a private values environment, under certain conditions (symmetry and independence), the expected revenue from a first-price auction and a second-price auction is the same.</p>
+<h3 id="conclusion-15">Conclusion</h3>
+<p>Professor Polak concludes by emphasizing the practical implications of understanding auction types and bidding strategies. Each auction’s structure significantly affects bidding behavior and ultimate outcomes, particularly in the presence of common or private values.</p>
+
+
+    </div>
+    <!-- insert above this -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+</body>
+
+</html>

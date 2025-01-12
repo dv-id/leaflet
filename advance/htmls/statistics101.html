@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>/\dvance</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <style>
+    code {
+      white-space: pre-wrap;
+    }
+
+    span.smallcaps {
+      font-variant: small-caps;
+    }
+
+    span.underline {
+      text-decoration: underline;
+    }
+
+    div.column {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+    }
+
+    div.hanging-indent {
+      margin-left: 1.5em;
+      text-indent: -1.5em;
+    }
+
+    ul.task-list {
+      list-style: none;
+    }
+  </style>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body style="
+    background-color: rgb(0, 0, 39);
+    color: rgb(205, 158, 250);" class="vh-100 p-0 mb-0">
+
+
+
+  <div class="container" style="margin-top: 10%;">
+
+    <div id="business-row" class="row justify-content-between">
+
+      <nav class="navbar navbar-dark navbar-collapse navbar-fixed-top fixed-top justify-content-center container" style="background-color: rgb(0, 0, 40);">
+        <div class="container justify-content-center">
+        <a class="navbar-brand" href="../index.html" style="color: rgb(179, 114, 240);">/\dvance</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="../finance.html">Finance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../startups.html">Startups</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../economics.html">Economics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../humanities.html">Humanities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../philosophy.html">Philosophy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../science.html">Science</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+
+        <div class="container" style="background-color: rgb(0, 0, 40);">
+          <div class="col-12 d-flex justify-content-start align-items-center">
+              <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                  <ol class="breadcrumb m-1">
+                      <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                      <li class="breadcrumb-item"><a href="../finance.html">Finance</a></li>
+                      <li class="breadcrumb-item active"><a href="../htmls/statistics101.html">Statistics 101</a></li>
+                  </ol>
+              </nav>
+          </div>
+      </div>
+
+      <div class="btn position-fixed fixed-bottom d-flex justify-content-end p-0">
+        <a style="color: white; background-color: rgb(0, 0, 40);" class="border rounded p-1"
+        onclick="document.getElementById('contents').scrollIntoView({ behavior: 'smooth' });">contents^</a>
+      </div>
+    </nav>
+    
+
+    </div>
+    <div class="row">
+      <h1 id="contents" class="m-0">contents</h4>
+      <div class="col-6">
+        <ul>
+          <li class="mb-1">
+            <a href="#introduction-to-statistics">Introduction to Statistics</a>
+          </li>
+          <li class="mb-1">
+            <a href="#populations-and-samples">Populations and Samples</a>
+          </li>
+          <li class="mb-1">
+            <a href="#sampling-issues-in-finance-and-investing">Sampling Issues in Finance and Investing</a>
+          </li>
+          <li class="mb-1">
+            <a href="#summary-statistics">Summary Statistics</a>
+          </li>
+          <li class="mb-1">
+            <a href="#descriptive-statistics-in-financial-data">Descriptive Statistics in Financial Data</a>
+          </li>
+          <li class="mb-1">
+            <a href="#data-distributions">Data Distributions</a>
+          </li>
+          <li>
+            <a href="#data-distributions-in-finance">Data Distributions in Finance</a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="col-6">
+        <ul>
+          <li class="mb-1">
+            <a href="#analyzing-relationships-between-two-data-variables">Analyzing Relationships Between Two Data Variables</a>
+          </li>
+          <li class="mb-1">
+            <a href="#statistical-relationships-in-finance">Statistical Relationships in Finance</a>
+          </li>
+          <li class="mb-1">
+            <a href="#regression-analysis">Regression Analysis</a>
+          </li>
+          <li class="mb-1">
+            <a href="#probability-in-finance">Probability in Finance</a>
+          </li>
+          <li class="mb-1">
+            <a href="#probabilistic-tools-in-investing-and-finance">Probabilistic Tools in Investing and Finance</a>
+          </li>
+          <li>
+            <a href="#monte-carlo-simulations-in-finance">Monte Carlo Simulations in Finance</a>
+          </li>
+
+  
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- insert under this -->
+  <div class="container">
+
+    <h1 id="statistics101">Statistics 101</h1>
+    <h3 id="introduction">Introduction</h3>
+    <p>Welcome to the course on Statistics for Finance and Investment. This course is designed primarily for those with a focus on investing and finance. To succeed in the course, students are expected to bring three prerequisites:</p>
+    <ol>
+    <li><p>Common sense and curiosity.</p></li>
+    <li><p>A basic understanding of accounting.</p></li>
+    <li><p>A fundamental grasp of statistics.</p></li>
+    </ol>
+    <h3 id="importance-of-statistics">Importance of Statistics</h3>
+    <p>Statistics plays an essential role in our everyday decision-making, especially in finance and healthcare. Understanding statistics is crucial as it allows us to interpret data accurately:</p>
+    <ul>
+    <li><p>Statistics influence health policies (e.g., vaccine efficacy rates).</p></li>
+    <li><p>Insurance rates are based on statistical data about disease prevalence.</p></li>
+    <li><p>Polling data during elections illustrates how sample selection impacts outcomes.</p></li>
+    </ul>
+    <h3 id="course-objectives">Course Objectives</h3>
+    <p>The course aims to enhance your statistical knowledge for practical applications in finance. By the end of the 15 sessions, participants should be able to:</p>
+    <ol>
+    <li><p>Understand various statistical tools and when to use them.</p></li>
+    <li><p>Recognize misapplication of statistics and ask informed questions.</p></li>
+    <li><p>Apply statistical reasoning to financial decision-making.</p></li>
+    </ol>
+    <h3 id="the-role-of-statistics-in-investment">The Role of Statistics in Investment</h3>
+    <p>The application of statistics in investment allows for better decision-making, exemplified by the concept of <em>Moneyball</em>. This term refers to using statistical analysis to gain competitive advantages, particularly in contexts normally driven by intuition.</p>
+    <blockquote>
+    <p>“Statistics allows for better decisions than gut feelings or rules of thumb.”</p>
+    </blockquote>
+    <h3 id="conclusion">Conclusion</h3>
+    <p>By participating in this course, you will gain a robust understanding of statistical tools that apply directly to finance and investment contexts. Engaging with these concepts will enable students to navigate data-driven environments more effectively, thus improving their decision-making capabilities.</p>
+    <h1 id="introduction-to-statistics">Introduction to Statistics</h1>
+    <h3 id="introduction-1">Introduction</h3>
+    <p>Welcome to the first session of a 15-session statistics class. This session will lay the groundwork for the course, discussing essential concepts in statistics, its significance, and the various components that compose the field.</p>
+    <h3 id="what-is-statistics">What is Statistics?</h3>
+    <p>Statistics is often referred to as the ‘data science’. It is a discipline designed to:</p>
+    <ul>
+    <li><p>Collect data</p></li>
+    <li><p>Record data</p></li>
+    <li><p>Analyze data</p></li>
+    <li><p>Depict data</p></li>
+    <li><p>Convert data into information</p></li>
+    </ul>
+    <p>It is crucial to understand and interpret data effectively, especially in an age where we are surrounded by vast amounts of information that can sometimes be contradictory or misleading.</p>
+    <h3 id="definitions-of-data">Definitions of Data</h3>
+    <h4 id="types-of-data">Types of Data</h4>
+    <p>Data can be defined in several ways:</p>
+    <ul>
+    <li><p><strong>Qualitative Data:</strong> Categorical information (e.g., colors, names).</p></li>
+    <li><p><strong>Quantitative Data:</strong> Numerical information, further divided into:</p>
+    <ul>
+    <li><p><em>Continuous Data:</em> Can take any value in a range (e.g., height).</p></li>
+    <li><p><em>Discrete Data:</em> Takes on specific values, usually integers (e.g., basketball scores).</p></li>
+    </ul></li>
+    </ul>
+    <h4 id="importance-of-data">Importance of Data</h4>
+    <p>Historically, data has been vital for decision-making. However, with modern advancements, we face challenges such as data overload, where the excessive amount of data can lead to confusion rather than clarity.</p>
+    <h3 id="components-of-statistics">Components of Statistics</h3>
+    <h4 id="data-collection-and-sampling">Data Collection and Sampling</h4>
+    <p>Statistics encompasses various activities, including:</p>
+    <ul>
+    <li><p>Collection: Gathering data through observations or surveys.</p></li>
+    <li><p>Sampling: Selecting a subset of data to represent a larger population.</p></li>
+    </ul>
+    <p>It is essential to ensure that sampling is unbiased and correctly executed to avoid erroneous conclusions. Two critical concepts to understand in this phase are:</p>
+    <ul>
+    <li><p><strong>Bias:</strong> A biased sample leads to inaccurate representations of the population.</p></li>
+    <li><p><strong>Noise/Error:</strong> Every sample includes an element of error; understanding the standard error is crucial.</p></li>
+    </ul>
+    <h4 id="descriptive-statistics">Descriptive Statistics</h4>
+    <p>After collecting data, the next step is summarizing it using descriptive statistics, which include:</p>
+    <ul>
+    <li><p>Measures of location (e.g., mean, median).</p></li>
+    <li><p>Measures of dispersion (e.g., variance, standard deviation).</p></li>
+    <li><p>Measures of skewness (e.g., identifying asymmetry in distributions).</p></li>
+    </ul>
+    <h4 id="data-visualization">Data Visualization</h4>
+    <p>Visual representation of data, such as histograms, enables better understanding and insights. A histogram counts the number of observations within specified ranges. The overall understanding of data distributions can provide crucial insights:</p>
+    <ul>
+    <li><p><strong>Normal Distribution:</strong> A common symmetric distribution.</p></li>
+    <li><p><strong>Other Distributions:</strong> Distributions can also be asymmetric, depending on data behavior.</p></li>
+    </ul>
+    <h4 id="correlation-and-causation">Correlation and Causation</h4>
+    <p>Exploring relationships between variables involves:</p>
+    <ul>
+    <li><p><strong>Correlation:</strong> Examining whether two variables move together.</p></li>
+    <li><p><strong>Causation:</strong> Determining if one variable influences another.</p></li>
+    <li><p><strong>Prediction:</strong> Using established relationships to forecast future outcomes.</p></li>
+    </ul>
+    <h3 id="probability-in-statistics">Probability in Statistics</h3>
+    <p>Probability measures the likelihood of events:</p>
+    <ul>
+    <li><p><strong>Discrete Events:</strong> E.g., whether a company will survive or go bankrupt.</p></li>
+    <li><p><strong>Continuous Variables:</strong> E.g., predicting whether profits exceed a certain threshold.</p></li>
+    </ul>
+    <p>Tools such as probits and logit models can help estimate probabilities based on observable data.</p>
+    <h3 id="conclusions">Conclusions</h3>
+    <p>The understanding of statistics is essential for informed decision-making in various fields, including finance, healthcare, and policy-making.</p>
+    <p>The remaining sessions will build on these foundational elements and enhance your understanding of statistics and its applications in the real world.</p>
+    <h1 id="populations-and-samples">Populations and Samples</h1>
+    <h3 id="introduction-2">Introduction</h3>
+    <p>In this session of the statistics class, we will discuss the concept of populations and samples, with a particular focus on their relevance to data analysis.</p>
+    <h3 id="definitions">Definitions</h3>
+    <h4 id="population">Population</h4>
+    <p>A <strong>population</strong> refers to the entire universe of instances of an object or phenomenon we intend to study. For example, if we want to analyze how businesses behave in crises, the population includes every business around the world—large or small, public or private, regardless of geographic location.</p>
+    <h4 id="sample">Sample</h4>
+    <p>A <strong>sample</strong> is a subset of the population. Due to practical limitations, we often rely on samples to draw conclusions about the population. For instance, during the COVID-19 pandemic, one might analyze a sample of publicly traded companies rather than all businesses.</p>
+    <h3 id="sampling-methods">Sampling Methods</h3>
+    <p>There are two main approaches to sampling:</p>
+    <h4 id="time-series-sample">Time Series Sample</h4>
+    <p>This method involves collecting data over time. For instance, analyzing the annual stock returns from the U.S. stock market since 1871 would amount to a time series sample. If only data from a specific period (e.g., 2000 to 2020) is used, it still qualifies as a sample.</p>
+    <h4 id="cross-sectional-sample">Cross-Sectional Sample</h4>
+    <p>This sampling involves looking at a snapshot from a population at a specific point in time. For example, if we focus on publicly traded companies with a market cap exceeding $10 million, we obtain a more reliable sample.</p>
+    <h3 id="reasons-for-sampling">Reasons for Sampling</h3>
+    <p>Sampling is often necessary due to:</p>
+    <ul>
+    <li><p><strong>Practicality</strong>: Analyzing an entire population may be infeasible.</p></li>
+    <li><p><strong>Cost</strong>: Collecting data from the entire population can be prohibitively expensive.</p></li>
+    <li><p><strong>Time</strong>: Quick results are often needed (e.g., political polls before elections).</p></li>
+    </ul>
+    <h3 id="types-of-sampling">Types of Sampling</h3>
+    <p>Sampling can be divided into probability-based and non-probability-based methods.</p>
+    <h4 id="probability-based-sampling">Probability-Based Sampling</h4>
+    <p>In this method, samples are chosen at random. For example, selecting 500 companies at random from 9,000 publicly traded companies.</p>
+    <h4 id="non-probability-based-sampling">Non-Probability-Based Sampling</h4>
+    <p>Here, the researcher uses specific criteria to select samples, such as picking the 500 largest market cap companies (similar to the S&amp;P 500).</p>
+    <h3 id="variants-of-random-sampling">Variants of Random Sampling</h3>
+    <h4 id="simple-random-sample">Simple Random Sample</h4>
+    <p>Every observation has an equal chance of being selected. However, this might lead to an unbalanced representation of different sectors.</p>
+    <h4 id="stratified-random-sample">Stratified Random Sample</h4>
+    <p>The population is divided into strata (groups), and samples are taken from each stratum. This method ensures that various segments are adequately represented.</p>
+    <h4 id="cluster-random-sampling">Cluster Random Sampling</h4>
+    <p>Population is divided into clusters based on a characteristic (e.g., alphabetical order of companies), and entire clusters are sampled.</p>
+    <h3 id="challenges-and-bias-in-sampling">Challenges and Bias in Sampling</h3>
+    <p><strong>Bias</strong> in sampling can originate from:</p>
+    <ul>
+    <li><p><strong>Exclusion</strong>: Members of the population are not represented in the sample (e.g., no phone access).</p></li>
+    <li><p><strong>Self-Selection</strong>: Observations from individuals who opt into a sample may skew results (e.g., those seeking healthcare).</p></li>
+    <li><p><strong>Non-Response</strong>: Individuals who do not respond to surveys may differ from those who do, skewing the sample.</p></li>
+    <li><p><strong>Survivorship Bias</strong>: Only examining entities that survive over time may lead to erroneous conclusions.</p></li>
+    </ul>
+    <h3 id="sampling-errors">Sampling Errors</h3>
+    <p>Estimation from samples includes <strong>sampling noise</strong> or error, which is a natural part of sampling due to variability. For example, when tossing a fair coin, the outcomes over a finite number of tosses will not perfectly reflect the true 50/50 odds.</p>
+    <h3 id="key-statistical-concepts">Key Statistical Concepts</h3>
+    <h4 id="independence-and-identical-distributions-iid">Independence and Identical Distributions (IID)</h4>
+    <p>Observations should ideally be independent (current event unaffected by previous events) and identically distributed (drawn from the same probability distribution).</p>
+    <h4 id="law-of-large-numbers">Law of Large Numbers</h4>
+    <p>The law states that as sample size increases, the sample average approaches the population average:</p>
+    <p><br /><span class="math display">lim<sub><em>n</em> → ∞</sub><em>X̄</em><sub><em>n</em></sub> = <em>μ</em></span><br /></p>
+    <p>where <span class="math inline"><em>X̄</em><sub><em>n</em></sub></span> is the sample mean and <span class="math inline"><em>μ</em></span> is the population mean.</p>
+    <h4 id="central-limit-theorem-clt">Central Limit Theorem (CLT)</h4>
+    <p>Regardless of population distribution, the sampling distribution of the sample mean tends toward a normal distribution as sample size increases:</p>
+    <p><br /><span class="math display">$$\bar{X} \sim N\left(\mu, \frac{\sigma}{\sqrt{n}}\right)$$</span><br /></p>
+    <p>where <span class="math inline"><em>σ</em></span> is the population standard deviation and <span class="math inline"><em>n</em></span> is the sample size.</p>
+    <h4 id="chebyshevs-inequality">Chebyshev’s Inequality</h4>
+    <p>This inequality allows for statements about distributions that are not normal, asserting that:</p>
+    <p><br /><span class="math display">$$P(|X - \mu| \geq k\sigma) \leq \frac{1}{k^2}$$</span><br /></p>
+    <p>for any <span class="math inline"><em>k</em> &gt; 1</span>, indicating that the fraction of observations that lie within <span class="math inline"><em>k</em></span> standard deviations of the mean is at least <span class="math inline">$1 - \frac{1}{k^2}$</span>.</p>
+    <h3 id="conclusion-1">Conclusion</h3>
+    <p>In statistics, sampling is a fundamental concept that allows researchers to make inferences about populations. The choice between sampling methods, awareness of biases, and understanding of relevant statistical laws such as the Law of Large Numbers and the Central Limit Theorem are crucial in conducting reliable and valid analysis.</p>
+    <h1 id="sampling-issues-in-finance-and-investing">Sampling Issues in Finance and Investing</h1>
+    <h3 id="introduction-3">Introduction</h3>
+    <p>This session focuses on sampling questions and issues frequently encountered in finance and investing. A primary aspect is understanding market indices, which serve as a sample of publicly traded stocks. It is essential to note that these samples are not random; they are selected based on specific criteria.</p>
+    <h3 id="market-indices-as-samples">Market Indices as Samples</h3>
+    <h4 id="definition-and-purpose">Definition and Purpose</h4>
+    <p>Market indices represent a sample of stocks that help gauge overall market performance. Common indices include:</p>
+    <ul>
+    <li><p><strong>Dow Jones Industrial Average (DJIA)</strong>: Initially published in 1896, includes 30 significant U.S. companies.</p></li>
+    <li><p><strong>S&amp;P 500</strong>: Comprises 500 of the largest market capitalization companies.</p></li>
+    <li><p><strong>NYSE Composite</strong>: Represents all listed securities on the New York Stock Exchange.</p></li>
+    <li><p><strong>NASDAQ Composite</strong>: Includes major stocks traded on the NASDAQ.</p></li>
+    <li><p><strong>Wilshire 5000</strong>: A more extensive index containing around 5,000 publicly traded stocks.</p></li>
+    </ul>
+    <h4 id="selection-criteria">Selection Criteria</h4>
+    <p>Indices are chosen based on criteria such as market capitalization. For instance:</p>
+    <ul>
+    <li><p><strong>Market Cap</strong>: The S&amp;P 500 is made up of the 500 largest market cap companies.</p></li>
+    <li><p><strong>Subjective Selection</strong>: Some indices like the DJIA are influenced by subjective decisions made by index editors.</p></li>
+    </ul>
+    <h4 id="weighting-schemes">Weighting Schemes</h4>
+    <p>How stocks are included and their respective weights can significantly affect the performance representation of the index:</p>
+    <ul>
+    <li><p><strong>Equally Weighted Indices</strong>: All stocks receive the same weight.</p></li>
+    <li><p><strong>Market Cap Weighted Indices</strong>: Stocks are weighted according to their market capitalization.</p></li>
+    </ul>
+    <h3 id="impact-of-index-divergence">Impact of Index Divergence</h3>
+    <p>The diversity of indices can lead to different performance trends. For example, in 2020, the performance divergence among the DJIA, S&amp;P 500, and NASDAQ was evident due to sector concentration, particularly in technology stocks.</p>
+    <h3 id="sampling-in-investment-vehicles">Sampling in Investment Vehicles</h3>
+    <h4 id="investment-strategies">Investment Strategies</h4>
+    <p>Passive investing has become increasingly prevalent through index funds and ETFs:</p>
+    <ul>
+    <li><p>The first index fund was established in the 1970s by Vanguard.</p></li>
+    <li><p>ETFs have proliferated in the past two decades.</p></li>
+    </ul>
+    <h4 id="specific-index-sampling">Specific Index Sampling</h4>
+    <p>Many index funds and ETFs claim to track indices but often have distinct compositions due to sampling methods:</p>
+    <ul>
+    <li><p>Example: An energy ETF may hold a different set of energy stocks than another ETF, leading to varying returns despite both claiming to track energy stocks.</p></li>
+    </ul>
+    <h3 id="time-sampling-issues">Time Sampling Issues</h3>
+    <h4 id="historical-data-limitations">Historical Data Limitations</h4>
+    <p>Investors often focus on specific time periods, ignoring earlier data due to reliability concerns. Historical data (e.g., post-1926 for the U.S. stock market) may distort broader market understanding.</p>
+    <h4 id="pe-ratios-and-normalized-earnings">PE Ratios and Normalized Earnings</h4>
+    <p>The Price-to-Earnings (PE) ratio is a key metric used to classify stocks: <br /><span class="math display">$$PE = \frac{\text{Price}}{\text{Earnings}}$$</span><br /></p>
+    <ul>
+    <li><p>Variants include normalized PE (using a moving average) and the CAPE ratio which adjusts for inflation.</p></li>
+    </ul>
+    <h4 id="caution-in-extrapolating-findings">Caution in Extrapolating Findings</h4>
+    <p>When using historical averages for future predictions, be cognizant of the shifting market structures that may render past data less relevant—historical averages should not be seen as definitive future indicators.</p>
+    <h3 id="the-small-cap-premium">The Small Cap Premium</h3>
+    <p>The small cap premium indicates small companies may outperform larger companies. Historical evidence up to 1980 suggested this; however, current trends need careful analysis as past performance may not predict future results.</p>
+    <h4 id="key-statistics">Key Statistics</h4>
+    <p>Historically:</p>
+    <ul>
+    <li><p>From 1927 to 1980, small cap stocks outperformed.</p></li>
+    <li><p>Since then, assessment of this premium requires cautious evaluation based on current market conditions.</p></li>
+    </ul>
+    <h3 id="empirical-irregularities-and-testing-investment-strategies">Empirical Irregularities and Testing Investment Strategies</h3>
+    <p>Many investment strategies are back-tested against historical data. Common questions to assess these strategies include:</p>
+    <ul>
+    <li><p>What universe of stocks was used?</p></li>
+    <li><p>How were stocks classified and what time period was considered?</p></li>
+    <li><p>Did the analysis account for negative earnings, survivorship, and timing biases?</p></li>
+    </ul>
+    <h3 id="event-studies-in-finance">Event Studies in Finance</h3>
+    <p>Event studies analyze stock performance surrounding specific events (e.g., mergers). Considerations include:</p>
+    <ul>
+    <li><p>Sample Creation: How were events selected?</p></li>
+    <li><p>Timing: Was the announcement date accurate or influenced by information leakage?</p></li>
+    </ul>
+    <h3 id="conclusion-2">Conclusion</h3>
+    <p>Sampling is an integral part of finance and investing. Understanding the nuances of how samples are constructed and their limitations is crucial for making informed investment decisions. Careful consideration of indices, investment vehicles, historical data, and empirical findings will lead to more robust investment strategies.</p>
+    <h1 id="summary-statistics">Summary Statistics</h1>
+    <h3 id="introduction-4">Introduction</h3>
+    <p>Summary statistics provide a compact representation of data, enabling better comprehension and communication of numerical information. This session covers four primary categories of descriptive statistics:</p>
+    <ol>
+    <li><p>Measures of Centrality</p></li>
+    <li><p>Measures of Dispersion</p></li>
+    <li><p>Measures of Symmetry</p></li>
+    <li><p>Measures of Extremes</p></li>
+    </ol>
+    <h3 id="measures-of-centrality">Measures of Centrality</h3>
+    <p>These measures describe the central value of a data set.</p>
+    <h4 id="average-mean">1. Average (Mean)</h4>
+    <p>The average, or mean, is calculated as follows: <br /><span class="math display">$$\text{Mean} = \frac{\sum_{i=1}^{n} x_i}{n}$$</span><br /> where <span class="math inline"><em>x</em><sub><em>i</em></sub></span> is each observation and <span class="math inline"><em>n</em></span> is the total number of observations.</p>
+    <h4 id="weighted-average">2. Weighted Average</h4>
+    <p>A weighted average adjusts the significance of certain values: <br /><span class="math display">$$\text{Weighted Average} = \frac{\sum_{i=1}^{n} w_i x_i}{\sum_{i=1}^{n} w_i}$$</span><br /> where <span class="math inline"><em>w</em><sub><em>i</em></sub></span> is the weight assigned to each observation.</p>
+    <h4 id="median">3. Median</h4>
+    <p>The median is the middle value when data is sorted. For an odd number of observations (<span class="math inline"><em>n</em></span>): <br /><span class="math display">$$\text{Median} = x_{\frac{n+1}{2}}$$</span><br /> For an even number of observations: <br /><span class="math display">$$\text{Median} = \frac{x_{\frac{n}{2}} + x_{\frac{n}{2} + 1}}{2}$$</span><br /></p>
+    <h4 id="mode">4. Mode</h4>
+    <p>The mode is the most frequently occurring value in the dataset.</p>
+    <h3 id="measures-of-dispersion">Measures of Dispersion</h3>
+    <p>These measures indicate the spread of data around the central value.</p>
+    <h4 id="range">1. Range</h4>
+    <p>The range is simply the difference between the maximum and minimum values: <br /><span class="math display">Range = Max(<em>X</em>) − Min(<em>X</em>)</span><br /></p>
+    <h4 id="interquartile-range-iqr">2. Interquartile Range (IQR)</h4>
+    <p>The IQR is the difference between the 75th percentile (Q3) and 25th percentile (Q1): <br /><span class="math display">IQR = <em>Q</em>3 − <em>Q</em>1</span><br /></p>
+    <h4 id="variance">3. Variance</h4>
+    <p>Variance quantifies the degree of dispersion from the mean: For a population: <br /><span class="math display">$$\sigma^2 = \frac{\sum_{i=1}^{N} (x_i - \mu)^2}{N}$$</span><br /> For a sample: <br /><span class="math display">$$s^2 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}$$</span><br /></p>
+    <h4 id="standard-deviation">4. Standard Deviation</h4>
+    <p>The standard deviation is the square root of variance: <br /><span class="math display">$$\sigma = \sqrt{\sigma^2} \quad \text{(population)}$$</span><br /> <br /><span class="math display">$$s = \sqrt{s^2} \quad \text{(sample)}$$</span><br /></p>
+    <h4 id="coefficient-of-variation-cv">5. Coefficient of Variation (CV)</h4>
+    <p>The CV is a standardized measure of dispersion, calculated as: <br /><span class="math display">$$\text{CV} = \frac{\text{Standard Deviation}}{\text{Mean}}$$</span><br /></p>
+    <h3 id="measures-of-symmetry">Measures of Symmetry</h3>
+    <p>Measures of symmetry assess the skewness of a data distribution.</p>
+    <h4 id="skewness">1. Skewness</h4>
+    <p>Skewness quantifies the asymmetry of the distribution:</p>
+    <ul>
+    <li><p>Positively skewed: Higher tail on the right.</p></li>
+    <li><p>Negatively skewed: Higher tail on the left.</p></li>
+    </ul>
+    <h3 id="measures-of-extremes">Measures of Extremes</h3>
+    <p>These measures relate to the occurrence of outliers or extreme values.</p>
+    <h4 id="kurtosis">1. Kurtosis</h4>
+    <p>Kurtosis measures the "tailedness" of the distribution: <br /><span class="math display">$$\text{Kurtosis} = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^4}{n \cdot s^4} - 3$$</span><br /></p>
+    <ul>
+    <li><p>High kurtosis indicates fatter tails (leptokurtic).</p></li>
+    <li><p>Low kurtosis indicates thinner tails (platykurtic).</p></li>
+    </ul>
+    <h3 id="conclusion-3">Conclusion</h3>
+    <p>In summary, understanding these measures enables better statistical analysis and data visualization. Key measures include:</p>
+    <ul>
+    <li><p>Centrality: Mean, Median, Mode</p></li>
+    <li><p>Dispersion: Range, IQR, Variance, Standard Deviation, Coefficient of Variation</p></li>
+    <li><p>Symmetry: Skewness</p></li>
+    <li><p>Extremes: Kurtosis</p></li>
+    </ul>
+    <h1 id="descriptive-statistics-in-financial-data">Descriptive Statistics in Financial Data</h1>
+    <h3 id="introduction-5">Introduction</h3>
+    <p>In this session, we will discuss the application of descriptive statistics to real-world financial data. We will analyze returns on three asset classes:</p>
+    <ul>
+    <li><p>U.S. Stocks</p></li>
+    <li><p>10-Year Treasury Bonds</p></li>
+    <li><p>Treasury Bills</p></li>
+    </ul>
+    <h3 id="calculating-returns">Calculating Returns</h3>
+    <h4 id="treasury-bills">Treasury Bills</h4>
+    <p>For Treasury Bills, the return is simply the rate at the end of the year, as there is no price change.</p>
+    <h4 id="treasury-bonds">Treasury Bonds</h4>
+    <p>The total return on Treasury Bonds includes two components:</p>
+    <ul>
+    <li><p>Coupon payments</p></li>
+    <li><p>Changes in bond prices during the year</p></li>
+    </ul>
+    <p>Total return can be expressed as: <br /><span class="math display">Total Return = Coupon Payment + Price Change</span><br /></p>
+    <h4 id="stock-returns">Stock Returns</h4>
+    <p>For stocks, returns are calculated using:</p>
+    <ul>
+    <li><p>Dividends received</p></li>
+    <li><p>Changes in stock price</p></li>
+    </ul>
+    <p>The total stock return is: <br /><span class="math display">Total Stock Return = Dividends + Price Change</span><br /></p>
+    <h3 id="descriptive-statistics-average-returns">Descriptive Statistics: Average Returns</h3>
+    <p>Calculating average returns over the period from 1928 to 2020:</p>
+    <ul>
+    <li><p>Average Return on Stocks: <br /><span class="math display">$$\text{Average}_{stocks} = \frac{\sum_{i=1}^{93} \text{Return}_{stocks,i}}{93} = 11.64\%$$</span><br /></p></li>
+    <li><p>Average Return on Treasury Bills: <br /><span class="math display">$$\text{Average}_{T-Bills} = \frac{\sum_{i=1}^{93} \text{Return}_{T-Bills,i}}{93} = 3.36\%$$</span><br /></p></li>
+    <li><p>Average Return on Treasury Bonds: <br /><span class="math display">$$\text{Average}_{T-Bonds} = \frac{\sum_{i=1}^{93} \text{Return}_{T-Bonds,i}}{93} = 5.21\%$$</span><br /></p></li>
+    </ul>
+    <h3 id="risk-assessment-standard-deviation">Risk Assessment: Standard Deviation</h3>
+    <p>To assess risk, we calculate the standard deviation: <br /><span class="math display">$$\sigma = \sqrt{\frac{\sum_{i=1}^{93} (x_i - \mu)^2}{n-1}}$$</span><br /> Where <span class="math inline"><em>μ</em></span> is the average return and <span class="math inline"><em>x</em><sub><em>i</em></sub></span> is each annual return.</p>
+    <p>For stocks: <br /><span class="math display"><em>σ</em><sub><em>s</em><em>t</em><em>o</em><em>c</em><em>k</em><em>s</em></sub> = 19.49%</span><br /></p>
+    <p>For Treasury Bonds and Bills, the same formula can be applied, showing their lower volatility compared to stocks.</p>
+    <h4 id="standard-error">Standard Error</h4>
+    <p>To calculate the standard error: <br /><span class="math display">$$SE = \frac{\sigma}{\sqrt{n}}$$</span><br /> For stocks: <br /><span class="math display">$$SE_{stocks} = \frac{19.49}{\sqrt{93}} \approx 2.02\%$$</span><br /></p>
+    <p>The confidence intervals can be calculated as follows:</p>
+    <ul>
+    <li><p>For 67% confidence: <br /><span class="math display">[<em>μ</em> − <em>S</em><em>E</em>, <em>μ</em> + <em>S</em><em>E</em>] = [11.64 − 2.02, 11.64 + 2.02] ≈ [9.62, 13.66]</span><br /></p></li>
+    <li><p>For 95% confidence: <br /><span class="math display">[<em>μ</em> − 2 ⋅ <em>S</em><em>E</em>, <em>μ</em> + 2 ⋅ <em>S</em><em>E</em>] = [11.64 − 4.04, 11.64 + 4.04] ≈ [7.60, 15.68]</span><br /></p></li>
+    </ul>
+    <h3 id="median-and-distribution-characteristics">Median and Distribution Characteristics</h3>
+    <ul>
+    <li><p>The median return for stocks is 14.22%, indicating a degree of skewness. Stocks exhibit a slight negative skewness leading to a median higher than the average return.</p></li>
+    <li><p>For Treasury Bonds and Bills, positive skewness is observed.</p></li>
+    </ul>
+    <h3 id="kurtosis-1">Kurtosis</h3>
+    <ul>
+    <li><p>Kurtosis for normal distribution: 3.</p></li>
+    <li><p>Stocks exhibit kurtosis close to 3 despite a slight negative skew.</p></li>
+    <li><p>Higher kurtosis in Treasury Bonds indicating a higher likelihood of extreme values.</p></li>
+    </ul>
+    <h3 id="further-analysis-pe-ratios-and-cost-of-capital">Further Analysis: PE Ratios and Cost of Capital</h3>
+    <h4 id="pe-ratios">PE Ratios</h4>
+    <ul>
+    <li><p>PE Ratio = <span class="math inline">$\frac{\text{Stock Price}}{\text{Earnings per Share}}$</span></p></li>
+    <li><p>Three measures of PE ratios:</p>
+    <ol>
+    <li><p>Current PE (most recent fiscal year)</p></li>
+    <li><p>Trailing PE (last four quarters)</p></li>
+    <li><p>Forward PE (expected earnings next four quarters)</p></li>
+    </ol></li>
+    <li><p>Distribution characteristics show a positive skew, where extreme values affect average more than median.</p></li>
+    </ul>
+    <h4 id="cost-of-capital">Cost of Capital</h4>
+    <ul>
+    <li><p>Cost of capital reflects the required return on investments, calculated for all publicly traded companies.</p></li>
+    <li><p>Differences in average and median cost of capital indicate varying skewness across regions.</p></li>
+    </ul>
+    <h3 id="conclusion-4">Conclusion</h3>
+    <p>The analysis of descriptive statistics provides insight into the performance and risk levels of different asset classes. Stocks, despite high returns, exhibit greater volatility, while Treasury securities show stability.</p>
+    <h1 id="data-distributions">Data Distributions</h1>
+    <h3 id="introduction-6">Introduction</h3>
+    <p>In this session, we transition from data descriptives to understanding distributions. Data descriptives focus on summary statistics, while distributions offer a visual and analytical framework to represent data characteristics.</p>
+    <h3 id="data-descriptives">Data Descriptives</h3>
+    <p>Data descriptives include the following measures:</p>
+    <ul>
+    <li><p>Measures of Centrality</p></li>
+    <li><p>Measures of Dispersion</p></li>
+    <li><p>Measures of Skewness</p></li>
+    <li><p>Measures of Kurtosis</p></li>
+    </ul>
+    <p>While numerical summaries are informative, visual representations like histograms and bar charts are often more compelling and easier to interpret.</p>
+    <h3 id="visual-displays">Visual Displays</h3>
+    <h4 id="bar-charts-vs.-histograms">Bar Charts vs. Histograms</h4>
+    <ul>
+    <li><p><strong>Bar Chart:</strong> Used for discrete data. Displays frequency of categories.</p></li>
+    <li><p><strong>Histogram:</strong> Used for continuous data. Displays frequency of data intervals (bins).</p></li>
+    </ul>
+    <h4 id="examples">Examples</h4>
+    <p>For instance, if we analyze Price-to-Earnings (P/E) ratios:</p>
+    <ul>
+    <li><p>Bar charts can display average P/E ratios by region.</p></li>
+    <li><p>Histograms can show the frequency of P/E ratios within defined ranges (e.g., 0 to 4, 4 to 8).</p></li>
+    </ul>
+    <h3 id="identifying-the-right-distribution">Identifying the Right Distribution</h3>
+    <p>Once visualized, identify which statistical distribution best fits the data. Key characteristics include:</p>
+    <ul>
+    <li><p>Symmetry</p></li>
+    <li><p>Skewness</p></li>
+    <li><p>Tail behavior (fat tails vs. thin tails)</p></li>
+    </ul>
+    <h4 id="normal-distribution">Normal Distribution</h4>
+    <p>The normal distribution is defined as: <br /><span class="math display"><em>X</em> ∼ <em>N</em>(<em>μ</em>, <em>σ</em><sup>2</sup>)</span><br /> where <span class="math inline"><em>μ</em></span> is the mean and <span class="math inline"><em>σ</em></span> is the standard deviation. Properties include:</p>
+    <ul>
+    <li><p>Symmetric around the mean.</p></li>
+    <li><p>Approximately 68% of observations fall within one standard deviation, 95% within two, and 99.7% within three standard deviations.</p></li>
+    </ul>
+    <p>Criterion for normality: Check the percentage of observations outside three standard deviations.</p>
+    <h3 id="alternative-distributions">Alternative Distributions</h3>
+    <p>When considering small sample sizes or specific data characteristics, alternative distributions may be more appropriate.</p>
+    <h4 id="t-distribution">T-Distribution</h4>
+    <p>Similar to the normal distribution but with:</p>
+    <ul>
+    <li><p>Lower peak</p></li>
+    <li><p>Wider tails</p></li>
+    </ul>
+    <h4 id="triangular-distribution">Triangular Distribution</h4>
+    <p>A symmetric distribution often used for bounded data, characterized by a pronounced peak and finite upper and lower bounds.</p>
+    <h4 id="uniform-distribution">Uniform Distribution</h4>
+    <p>A type of bounded distribution where all outcomes are equally likely between two defined bounds.</p>
+    <h3 id="skewed-distributions">Skewed Distributions</h3>
+    <p>If the data is not symmetric:</p>
+    <h4 id="negative-skew">Negative Skew</h4>
+    <p>Use the <strong>Minimum Extreme Value Distribution</strong> for distributions with a long tail on the negative side.</p>
+    <h4 id="positive-skew">Positive Skew</h4>
+    <p>Use the <strong>Log-Normal Distribution</strong> for data such as stock prices, where extreme values can be significantly positive.</p>
+    <h4 id="cumulants-and-kurtosis">Cumulants and Kurtosis</h4>
+    <p>The kurtosis of a distribution provides insights into tail behavior:</p>
+    <ul>
+    <li><p><strong>Normal Distribution:</strong> Kurtosis = 3</p></li>
+    <li><p><strong>Excess Kurtosis:</strong> <br /><span class="math display">Pearson Kurtosis = Kurtosis − 3</span><br /></p>
+    <ul>
+    <li><p><span class="math inline">Pearson &lt; 0</span>: Thin tails (platykurtic)</p></li>
+    <li><p><span class="math inline">Pearson = 0</span>: Similar to normal (mesokurtic)</p></li>
+    <li><p><span class="math inline">Pearson &gt; 0</span>: Fat tails (leptokurtic)</p></li>
+    </ul></li>
+    </ul>
+    <h3 id="choosing-the-correct-distribution">Choosing the Correct Distribution</h3>
+    <p>Follow this flowchart for selecting appropriate distributions:</p>
+    <ol>
+    <li><p>Is the data continuous or discrete?</p></li>
+    <li><p>Is the data symmetric or asymmetric?</p></li>
+    <li><p>If symmetric, what are the tail characteristics (thin/fat)?</p></li>
+    <li><p>If asymmetric, which direction is the skew?</p></li>
+    </ol>
+    <p>Common distributions include:</p>
+    <ul>
+    <li><p>Symmetric Continuous: Normal, T, Triangular, Uniform</p></li>
+    <li><p>Asymmetric Continuous: Log-normal, Minimum Extreme Value</p></li>
+    <li><p>Discrete: Binomial, Negative Binomial, Hypergeometric</p></li>
+    </ul>
+    <h3 id="conclusion-5">Conclusion</h3>
+    <p>Understanding the characteristics of your data and the appropriate distribution models is crucial for effective data analysis. This session covered a range of distributions and guidance for selection, which will aid in the interpretation of statistical findings.</p>
+    <h1 id="data-distributions-in-finance">Data Distributions in Finance</h1>
+    <h3 id="introduction-7">Introduction</h3>
+    <p>This document provides an overview of the importance of data distributions in finance, particularly focusing on the normal distribution. While the normal distribution simplifies analysis and modeling, it can lead to significant misjudgments if the underlying data does not conform to this distribution.</p>
+    <h3 id="normal-distribution-in-finance">Normal Distribution in Finance</h3>
+    <h4 id="reasons-for-dependency-on-normal-distribution">Reasons for Dependency on Normal Distribution</h4>
+    <ul>
+    <li><p>Simplifies theoretical and practical analysis.</p></li>
+    <li><p>Allows for the description of large datasets with just two parameters: the expected value (mean) and standard deviation (<span class="math inline"><em>σ</em></span>).</p></li>
+    </ul>
+    <p>The normal distribution has the probability density function (PDF):</p>
+    <p><br /><span class="math display">$$f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}$$</span><br /></p>
+    <p>where:</p>
+    <ul>
+    <li><p><span class="math inline"><em>x</em></span> is the variable,</p></li>
+    <li><p><span class="math inline"><em>μ</em></span> is the mean,</p></li>
+    <li><p><span class="math inline"><em>σ</em></span> is the standard deviation.</p></li>
+    </ul>
+    <h4 id="implications-of-assuming-normality">Implications of Assuming Normality</h4>
+    <p>Assuming all data is normally distributed can lead to significant errors, especially in finance where extreme outcomes (fat tails) can occur more frequently than predicted by the normal distribution.</p>
+    <h3 id="analyzing-stock-returns">Analyzing Stock Returns</h3>
+    <h4 id="case-study-disney">Case Study: Disney</h4>
+    <p>Annual returns on Disney from 1962 to 2021 were analyzed. A histogram of returns illustrates the distribution visually.</p>
+    <h5 id="histogram">Histogram</h5>
+    <p>A histogram shows returns typically ranging from -20% to over +120%, indicating extreme yearly returns.</p>
+    <h5 id="qq-plot">QQ Plot</h5>
+    <p>A Quantile-Quantile (QQ) plot compares the quantiles of the empirical data to the quantiles of a normal distribution. Ideally, points should lie on the reference line if the data is normally distributed.</p>
+    <h5 id="statistical-tests-for-normality">Statistical Tests for Normality</h5>
+    <p>Conduct various statistical tests for normality, such as:</p>
+    <ul>
+    <li><p>Shapiro-Wilk Test</p></li>
+    <li><p>Kolmogorov-Smirnov Test</p></li>
+    </ul>
+    <p>For Disney, 7 out of 9 tests did not reject the normality hypothesis.</p>
+    <h4 id="case-study-apple">Case Study: Apple</h4>
+    <p>Annual returns on Apple from 1981 to 2020 were examined, showing a broader distribution with extreme values.</p>
+    <h3 id="variability-of-returns">Variability of Returns</h3>
+    <h4 id="long-term-vs.-short-term-returns">Long-Term vs. Short-Term Returns</h4>
+    <ul>
+    <li><p>Annual returns are more likely to follow a normal distribution compared to daily returns.</p></li>
+    <li><p>Daily returns show high peaks and lower tails, leading to rejection of normality much more frequently.</p></li>
+    </ul>
+    <h3 id="consequences-of-misestimation-of-risk">Consequences of Misestimation of Risk</h3>
+    <p>If investments are misled by assuming normality, risk management systems may fail to protect against extreme outcomes:</p>
+    <ul>
+    <li><p>Price behaviors often do not fit normal distributions.</p></li>
+    <li><p>If true distributions have fatter tails (higher chances of outliers), failure to account for extreme events could be disastrous.</p></li>
+    </ul>
+    <h3 id="log-prices">Log Prices</h3>
+    <h4 id="transition-to-log-prices">Transition to Log Prices</h4>
+    <p>Log prices can be more normally distributed due to the transformation:</p>
+    <p><br /><span class="math display">Log Price = ln (Price)</span><br /></p>
+    <p>However, using logarithmic transformations does not guarantee normality. For example, post-logarithmic, Apple’s stock prices still showed signs of deviation from normality.</p>
+    <h3 id="summary-and-best-practices">Summary and Best Practices</h3>
+    <ul>
+    <li><p>Always analyze the data through histograms.</p></li>
+    <li><p>Use QQ plots and statistical tests for normality.</p></li>
+    <li><p>Be cautious when assuming normal distributions, as misestimations can lead to significant risk exposure.</p></li>
+    <li><p>Consider alternative distributions if normality is rejected, or use non-parametric methods.</p></li>
+    </ul>
+    <h3 id="conclusion-6">Conclusion</h3>
+    <p>Understanding the underlying data distributions in finance is vital for accurate risk assessment and management. Further exploration into empirical distributions and non-normality in financial datasets is encouraged.</p>
+    <h1 id="analyzing-relationships-between-two-data-variables">Analyzing Relationships Between Two Data Variables</h1>
+    <h3 id="introduction-8">Introduction</h3>
+    <p>In previous sessions, we explored single data variables and their measures of centrality, dispersion, and skewness. In this session, we shift our focus to analyzing relationships between two data variables. This can be useful in evaluating whether variables such as price-earnings ratios and interest rates, or earnings growth and GDP growth, exhibit any linkage.</p>
+    <h3 id="linkage-between-variables">Linkage Between Variables</h3>
+    <p>When examining two data series, we seek to determine if they:</p>
+    <ul>
+    <li><p>Move together in the same direction.</p></li>
+    <li><p>Move in different directions (inversely).</p></li>
+    <li><p>Are unrelated.</p></li>
+    </ul>
+    <p>If a relationship exists, we can further investigate potential lead or lag effects, in which one variable influences the timing of another.</p>
+    <h3 id="correlation-and-causation-1">Correlation and Causation</h3>
+    <p>It is critical to differentiate between correlation and causation:</p>
+    <ul>
+    <li><p><strong>Correlation</strong> indicates a statistical relationship where two variables move together.</p></li>
+    <li><p><strong>Causation</strong> implies that one variable directly influences the other, which requires further testing to establish.</p></li>
+    </ul>
+    <p>It’s important to note that correlation does not imply causation; variables may appear correlated due to random chance or third-party influences.</p>
+    <h3 id="scatter-plots">Scatter Plots</h3>
+    <p>To visually assess the relationship between two variables, we create a scatter plot:</p>
+    <ul>
+    <li><p>Let <span class="math inline"><em>x</em></span> be the independent variable and <span class="math inline"><em>y</em></span> be the dependent variable.</p></li>
+    <li><p>Plot each pair of observations <span class="math inline">(<em>x</em><sub><em>i</em></sub>, <em>y</em><sub><em>i</em></sub>)</span> on a graph.</p></li>
+    </ul>
+    <p>Scatter plots allow for a visual assessment, revealing potential correlations between the two variables.</p>
+    <h3 id="correlation-coefficient">Correlation Coefficient</h3>
+    <p>To quantify the strength of the relationship, we compute the correlation coefficient <span class="math inline"><em>r</em></span>. The most widely used is the Pearson correlation coefficient, calculated as:</p>
+    <p><br /><span class="math display">$$r = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum (x_i - \bar{x})^2} \sqrt{\sum (y_i - \bar{y})^2}}$$</span><br /></p>
+    <p>where:</p>
+    <ul>
+    <li><p><span class="math inline"><em>x</em><sub><em>i</em></sub></span> and <span class="math inline"><em>y</em><sub><em>i</em></sub></span> are individual sample points,</p></li>
+    <li><p><span class="math inline"><em>x̄</em></span> and <span class="math inline"><em>ȳ</em></span> are the means of the <span class="math inline"><em>x</em></span> and <span class="math inline"><em>y</em></span> samples.</p></li>
+    </ul>
+    <p>The correlation coefficient <span class="math inline"><em>r</em></span> ranges from -1 to 1:</p>
+    <ul>
+    <li><p><span class="math inline"><em>r</em> = 1</span> indicates a perfect positive correlation.</p></li>
+    <li><p><span class="math inline"><em>r</em> =  − 1</span> indicates a perfect negative correlation.</p></li>
+    <li><p><span class="math inline"><em>r</em> = 0</span> indicates no correlation.</p></li>
+    </ul>
+    <h3 id="covariance">Covariance</h3>
+    <p>Another measure of the relationship between two variables is covariance, defined as:</p>
+    <p><br /><span class="math display">$$\text{Cov}(X, Y) = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{n}$$</span><br /></p>
+    <p>Unlike the correlation coefficient, covariance is not standardized, meaning its values can vary widely based on the scale of the variables. Thus, it is harder to interpret directly.</p>
+    <h3 id="regression-analysis">Regression Analysis</h3>
+    <p>To analyze the relationship further, we can fit a regression line to the scatter plot. The most common approach is Ordinary Least Squares (OLS) regression, which minimizes the sum of the squared vertical distances (residuals) between the observed values and the regression line.</p>
+    <ul>
+    <li><p>The regression equation takes the form: <br /><span class="math display"><em>y</em> = <em>β</em><sub>0</sub> + <em>β</em><sub>1</sub><em>x</em> + <em>ϵ</em></span><br /> where:</p>
+    <ul>
+    <li><p><span class="math inline"><em>β</em><sub>0</sub></span> is the intercept,</p></li>
+    <li><p><span class="math inline"><em>β</em><sub>1</sub></span> is the slope of the line,</p></li>
+    <li><p><span class="math inline"><em>ϵ</em></span> represents the error term.</p></li>
+    </ul></li>
+    </ul>
+    <p>The slope <span class="math inline"><em>β</em><sub>1</sub></span> indicates the change in <span class="math inline"><em>y</em></span> per one unit change in <span class="math inline"><em>x</em></span>.</p>
+    <h3 id="r-squared">R-Squared</h3>
+    <p>An important output from regression analysis is <span class="math inline"><em>R</em><sup>2</sup></span>, which measures how well the independent variable explains the variation in the dependent variable. It quantifies the goodness of fit of the model:</p>
+    <p><br /><span class="math display">$$R^2 = 1 - \frac{\text{SS}_{res}}{\text{SS}_{tot}}$$</span><br /></p>
+    <p>where:</p>
+    <ul>
+    <li><p><span class="math inline">SS<sub><em>r</em><em>e</em><em>s</em></sub></span> is the sum of squares of residuals,</p></li>
+    <li><p><span class="math inline">SS<sub><em>t</em><em>o</em><em>t</em></sub></span> is the total sum of squares.</p></li>
+    </ul>
+    <p>An <span class="math inline"><em>R</em><sup>2</sup></span> of 0 indicates that the model does not explain any variability, while 1 indicates perfect explanatory power.</p>
+    <h3 id="multiple-regression">Multiple Regression</h3>
+    <p>When expanding to more than two variables, we can conduct multiple regressions. The model extends to:</p>
+    <p><br /><span class="math display"><em>y</em> = <em>β</em><sub>0</sub> + <em>β</em><sub>1</sub><em>x</em><sub>1</sub> + <em>β</em><sub>2</sub><em>x</em><sub>2</sub> + … + <em>β</em><sub><em>k</em></sub><em>x</em><sub><em>k</em></sub> + <em>ϵ</em></span><br /></p>
+    <p>where each <span class="math inline"><em>x</em><sub><em>i</em></sub></span> is an independent variable.</p>
+    <h4 id="issues-with-multiple-regression">Issues with Multiple Regression</h4>
+    <ol>
+    <li><p>Multicollinearity : Occurs when independent variables are correlated with each other, complicating coefficient interpretations. VIF (Variance Inflation Factor) can be used to measure multicollinearity.</p></li>
+    <li><p>Homoscedasticity : The residuals should display constant variance across all levels of the independent variable. Patterns in residuals may indicate a problem with the model.</p></li>
+    <li><p>Normality of Residuals : The residuals should be normally distributed for OLS to yield statistically valid inference.</p></li>
+    </ol>
+    <h3 id="non-linear-relationships">Non-linear Relationships</h3>
+    <p>If the relationship between variables is non-linear, non-linear regression techniques can be employed, or you can transform variables to achieve linearity. Transformations may include taking logarithms or polynomial terms.</p>
+    <h3 id="conclusion-7">Conclusion</h3>
+    <p>The analysis of relationships between two data variables involves a systematic approach of visual exploration (scatter plots), quantifying relationships (correlation and covariance), fitting models (regression analysis), and checking the underlying assumptions. These methods assess predictability, essential for sound decision-making in finance and investing.</p>
+    <p>When applying these methods, remember:</p>
+    <ul>
+    <li><p>Correlation does not imply causation.</p></li>
+    <li><p>Always check regression assumptions.</p></li>
+    <li><p>Data from the past may not consistently predict future outcomes.</p></li>
+    </ul>
+    <h1 id="statistical-relationships-in-finance">Statistical Relationships in Finance</h1>
+    <h3 id="introduction-9">Introduction</h3>
+    <p>In finance, it is essential to understand relationships between data, as these relationships can apply to various macro and micro-level variables.</p>
+    <h4 id="understanding-relationships">Understanding Relationships</h4>
+    <ul>
+    <li><p>Macro-level example : The relationship between interest rates and inflation. Conventional wisdom states that when inflation rises, interest rates also rise.</p></li>
+    <li><p>Micro-level example : The relationship between a company’s operating margins and revenue growth.</p></li>
+    </ul>
+    <h4 id="reasons-to-analyze-relationships">Reasons to Analyze Relationships</h4>
+    <p>There are two main motivations for analyzing data relationships:</p>
+    <ul>
+    <li><p>To understand data better for research and analysis.</p></li>
+    <li><p>To forecast one variable based on the other for investment purposes, aiming to make profitable predictions.</p></li>
+    </ul>
+    <h3 id="capital-asset-pricing-model-capm">Capital Asset Pricing Model (CAPM)</h3>
+    <p>One key model in finance is the Capital Asset Pricing Model (CAPM), which assesses the risk of an investment relative to a market portfolio. The idea is that the risk of an asset should be evaluated in the context of a diversified portfolio.</p>
+    <h4 id="risk-and-regression">Risk and Regression</h4>
+    <p>To measure this risk, a regression analysis can be employed: <br /><span class="math display"><em>R</em><sub><em>i</em></sub> = <em>α</em> + <em>β</em><em>R</em><sub><em>m</em></sub> + <em>ϵ</em></span><br /> Where:</p>
+    <ul>
+    <li><p><span class="math inline"><em>R</em><sub><em>i</em></sub></span> = Return of the asset</p></li>
+    <li><p><span class="math inline"><em>α</em></span> = Intercept term</p></li>
+    <li><p><span class="math inline"><em>β</em></span> = Sensitivity of the asset to market returns</p></li>
+    <li><p><span class="math inline"><em>R</em><sub><em>m</em></sub></span> = Return of the market</p></li>
+    <li><p><span class="math inline"><em>ϵ</em></span> = Error term</p></li>
+    </ul>
+    <h4 id="correlation-and-covariance">Correlation and Covariance</h4>
+    <p>Before running regression, it is useful to understand covariance and correlation between variables.</p>
+    <ul>
+    <li><p>Covariance measures how two variables move together: <br /><span class="math display">Cov(<em>X</em>, <em>Y</em>) = <em>E</em>[(<em>X</em> − <em>μ</em><sub><em>X</em></sub>)(<em>Y</em> − <em>μ</em><sub><em>Y</em></sub>)]</span><br /> A positive covariance indicates that both variables tend to move in the same direction. For the Disney and S&amp;P 500 data, the covariance calculated was <span class="math inline">0.00337</span>.</p></li>
+    <li><p>Correlation (Pearson’s r) standardizes covariance, bounded between -1 and 1: <br /><span class="math display">$$r_{XY} = \frac{\text{Cov}(X,Y)}{\sigma_X \sigma_Y}$$</span><br /> For Disney and S&amp;P 500, the correlation was calculated as <span class="math inline">0.85666</span>.</p></li>
+    <li><p>The t-statistic tests if the correlation is significantly different from zero: <br /><span class="math display">$$t = \frac{r\sqrt{n-2}}{\sqrt{1-r^2}}$$</span><br /> where <span class="math inline"><em>n</em></span> is the sample size.</p></li>
+    </ul>
+    <h3 id="regression-output-analysis">Regression Output Analysis</h3>
+    <p>When analyzing the regression output:</p>
+    <ul>
+    <li><p>Dependent variable : Return on Disney (<span class="math inline"><em>Y</em></span>)</p></li>
+    <li><p>Independent variable : Return on S&amp;P 500 (<span class="math inline"><em>X</em></span>)</p></li>
+    <li><p>R-squared (<span class="math inline"><em>R</em><sup>2</sup></span>): Measures goodness of fit, indicating the proportion of variance in the dependent variable explained by the independent variable. <br /><span class="math display">$$R^2 = \frac{\text{SS}_{\text{regression}}}{\text{SS}_{\text{total}}}$$</span><br /></p></li>
+    <li><p>Adjusted R-squared accounts for the number of predictors in the model, penalizing excessive variables.</p></li>
+    <li><p>Durbin-Watson statistic checks for autocorrelation in the residuals. A value close to 2 indicates no autocorrelation.</p></li>
+    <li><p>ANOVA (Analysis of Variance) assesses how well the independent variables explain the variance in the dependent variable.</p></li>
+    <li><p>F-statistic tests the overall significance of the regression model.</p></li>
+    </ul>
+    <h4 id="regression-coefficients">Regression Coefficients</h4>
+    <p>Understanding the coefficients from regression output:</p>
+    <ul>
+    <li><p>Intercept : Indicates the expected return when all independent variables equal zero.</p></li>
+    <li><p>Slope coefficient : Indicates the change in the dependent variable for a one-unit change in the independent variable.</p></li>
+    <li><p>The significance can be tested using the t-statistic: <br /><span class="math display">$$t = \frac{\text{coefficient}}{\text{standard error}}$$</span><br /></p></li>
+    <li><p>The p-value indicates the probability that the observed relationship occurred by chance.</p></li>
+    </ul>
+    <h3 id="examples-1">Examples</h3>
+    <h4 id="example-earnings-yield">Example: Earnings Yield</h4>
+    <p>Running a regression of earnings yield against short and long-term treasury rates can reveal relationships.</p>
+    <h4 id="example-price-to-book-ratio">Example: Price to Book Ratio</h4>
+    <p>Analyzing a group of banks based on their price-to-book ratio, return on equity, and risk can help in identifying undervalued banks.</p>
+    <h4 id="regression-diagnostics">Regression Diagnostics</h4>
+    <p>Assessing the residuals is vital to ensure that the assumptions of regression analysis (normality, homoscedasticity) hold true.</p>
+    <h3 id="final-thoughts">Final Thoughts</h3>
+    <ul>
+    <li><p>Regressions are powerful analytical tools but must be used carefully.</p></li>
+    <li><p>Avoid small samples with too many independent variables to reduce misleading results.</p></li>
+    <li><p>Understand the output to effectively use regression in financial analysis and prediction.</p></li>
+    </ul>
+    <h1 id="regression-analysis-1">Regression Analysis</h1>
+    <h3 id="introduction-10">Introduction</h3>
+    <p>In this session, we will delve into regression analysis, a fundamental statistical method used to explain relationships between variables. The key components to understand are:</p>
+    <ul>
+    <li><p>Dependent Variable: The variable we are trying to explain (e.g., price-to-earnings (P/E) ratios).</p></li>
+    <li><p>Independent Variables: The variables that explain the dependent variable (e.g., payout ratios, growth rates).</p></li>
+    </ul>
+    <h3 id="identifying-variables">Identifying Variables</h3>
+    <p>To choose independent variables for regression analysis, there are two main approaches:</p>
+    <ol>
+    <li><p><strong>Statistical Approach:</strong> Collect data and identify which independent variables correlate the most with the dependent variable.</p></li>
+    <li><p><strong>Common Sense and Economic Theory:</strong> Use economic models and intuition to select independent variables that logically influence the dependent variable.</p></li>
+    </ol>
+    <h3 id="example-explaining-pe-ratios">Example: Explaining P/E Ratios</h3>
+    <p>To illustrate, consider the P/E ratios across companies. The basic framework for the P/E ratio can be derived from the Gordon Growth Model: <br /><span class="math display">$$P_0 = \frac{D_1}{r - g}$$</span><br /> Where:</p>
+    <ul>
+    <li><p><span class="math inline"><em>P</em><sub>0</sub></span>: Price of the stock</p></li>
+    <li><p><span class="math inline"><em>D</em><sub>1</sub></span>: Expected dividends next year</p></li>
+    <li><p><span class="math inline"><em>r</em></span>: Cost of equity</p></li>
+    <li><p><span class="math inline"><em>g</em></span>: Growth rate</p></li>
+    </ul>
+    <p>Dividing by earnings per share (EPS), we derive: <br /><span class="math display">$$P/E = \frac{(D/E)}{(r - g)}$$</span><br /> Where:</p>
+    <ul>
+    <li><p><span class="math inline">(<em>D</em>/<em>E</em>)</span>: Payout ratio, percentage of earnings paid out as dividends.</p></li>
+    <li><p><span class="math inline">(<em>r</em>)</span>: Cost of equity (risk).</p></li>
+    <li><p><span class="math inline">(<em>g</em>)</span>: Growth rate of dividends.</p></li>
+    </ul>
+    <p>Thus, the relationship can be summarized as: <br /><span class="math display"><em>P</em>/<em>E</em> = <em>f</em>(Payout Ratio, Growth Rate, Cost of Equity)</span><br /></p>
+    <h3 id="running-a-regression">Running a Regression</h3>
+    <p>Before running a regression, it’s essential to visually inspect the relationship between the dependent and independent variables using scatter plots.</p>
+    <p>An example scatter plot of P/E ratios against growth rates may reveal a positive relationship but high variability (noise) around the fitted line, indicating a potentially low <span class="math inline"><em>R</em><sup>2</sup></span> value when the regression is performed.</p>
+    <p>In our case:</p>
+    <ul>
+    <li><p><span class="math inline"><em>R</em><sup>2</sup> ≈ 0.40</span>: Indicates that 40% of the variability in P/E ratios can be explained by the independent variables.</p></li>
+    <li><p><strong>Coefficients</strong>: Indicate the effect of each independent variable on the P/E ratio.</p></li>
+    <li><p>Statistically significant independent variables are determined via t-statistics or p-values.</p></li>
+    </ul>
+    <h3 id="addressing-multicollinearity">Addressing Multicollinearity</h3>
+    <p>When analyzing multiple independent variables, ensure they are independent of each other. High correlation among independent variables (multicollinearity) can distort results.</p>
+    <ul>
+    <li><p>If multicollinearity exists, consider removing one of the correlated variables or transforming the data.</p></li>
+    </ul>
+    <h3 id="improving-r2">Improving <span class="math inline"><em>R</em><sup>2</sup></span></h3>
+    <p>To enhance the model’s explanatory power:</p>
+    <ul>
+    <li><p>Seek better proxies for the independent variables.</p></li>
+    <li><p>Introduce additional independent variables based on solid logical foundations.</p></li>
+    <li><p>Address outliers, which can artificially inflate or deflate <span class="math inline"><em>R</em><sup>2</sup></span>.</p></li>
+    <li><p>Consider weighted least squares if variance across observations is unequal.</p></li>
+    </ul>
+    <h3 id="caution-against-data-mining">Caution Against Data Mining</h3>
+    <p>In practice, having more data can lead to data mining—selecting variables purely for a higher <span class="math inline"><em>R</em><sup>2</sup></span>. This can lead to so-called <strong>p-hacking</strong>:</p>
+    <ul>
+    <li><p>Researchers might artificially manipulate their dataset to show significant results.</p></li>
+    </ul>
+    <h3 id="statistical-vs.-economic-significance">Statistical vs. Economic Significance</h3>
+    <p>Remember, statistical significance does not imply economic or practical significance. A statistically significant model may not yield profitable investment decisions due to trading costs and market frictions.</p>
+    <h3 id="conclusion-8">Conclusion</h3>
+    <p>Regression analysis is a powerful tool, but it requires careful consideration when determining independent variables, analyzing correlations, accounting for multicollinearity, and ensuring that statistical significance translates into economic reality.</p>
+    <h1 id="probability-in-finance">Probability in Finance</h1>
+    <h3 id="introduction-to-probability">Introduction to Probability</h3>
+    <p>Probabilities are fundamental in understanding uncertain outcomes. In many situations, particularly in finance, we cannot predict events with certainty.</p>
+    <h4 id="definition">Definition</h4>
+    <p>A probability measures the likelihood of an event occurring under uncertainty, mathematically formalized as follows: <br /><span class="math display"><em>P</em>(<em>A</em>) = Probability of event <em>A</em></span><br /> where <span class="math inline">0 ≤ <em>P</em>(<em>A</em>) ≤ 1</span>:</p>
+    <ul>
+    <li><p><span class="math inline"><em>P</em>(<em>A</em>) = 0</span> indicates the event is impossible.</p></li>
+    <li><p><span class="math inline"><em>P</em>(<em>A</em>) = 1</span> indicates the event is certain.</p></li>
+    <li><p><span class="math inline"><em>P</em>(<em>A</em>) = 0.5</span> indicates the event is equally likely to happen or not (even odds).</p></li>
+    </ul>
+    <h3 id="importance-of-probability-in-finance">Importance of Probability in Finance</h3>
+    <p>In finance, estimating probabilities is crucial for decision-making. We often evaluate the likelihood of discrete events (e.g., bankruptcy) or continuous outcomes (e.g., future earnings).</p>
+    <h4 id="types-of-events">Types of Events</h4>
+    <ul>
+    <li><p><strong>Discrete Events</strong>: Outcomes that can be counted (e.g., bankruptcy: yes or no).</p></li>
+    <li><p><strong>Continuous Events</strong>: Outcomes that can take on a range of values (e.g., earnings greater than 1 billion dollars).</p></li>
+    </ul>
+    <h3 id="views-of-probability">Views of Probability</h3>
+    <p>There are two primary views of probability:</p>
+    <h4 id="frequentist-view">Frequentist View</h4>
+    <ul>
+    <li><p>Based on the frequency of occurrence of events.</p></li>
+    <li><p>Repeated trials can eventually reveal the true probability.</p></li>
+    <li><p>Example: Flipping a fair coin many times yields a probability of heads converging to 0.5.</p></li>
+    </ul>
+    <h4 id="subjectivist-view-bayesian-view">Subjectivist View (Bayesian View)</h4>
+    <ul>
+    <li><p>Probability reflects personal belief or estimation rather than frequency data.</p></li>
+    <li><p>Individuals may disagree on probabilities based on different available information.</p></li>
+    <li><p>Example: Different investors might estimate different probabilities for stock price movements based on their insights and analyses.</p></li>
+    </ul>
+    <h3 id="types-of-probabilities">Types of Probabilities</h3>
+    <h4 id="cumulative-probability">Cumulative Probability</h4>
+    <p>The likelihood of a series of outcomes occurring: <br /><span class="math display"><em>P</em>(<em>A</em><sub>1</sub> ∩ <em>A</em><sub>2</sub> ∩ … ∩ <em>A</em><sub><em>n</em></sub>) = <em>P</em>(<em>A</em><sub>1</sub>) + <em>P</em>(<em>A</em><sub>2</sub>) + … + <em>P</em>(<em>A</em><sub><em>n</em></sub>) − <em>P</em>(<em>A</em><sub>1</sub> ∩ <em>A</em><sub>2</sub>) − …</span><br /></p>
+    <h4 id="conditional-probability">Conditional Probability</h4>
+    <p>The probability of an event occurring given another event: <br /><span class="math display">$$P(A|B) = \frac{P(A \cap B)}{P(B)}$$</span><br /></p>
+    <h3 id="basic-rules-of-probability">Basic Rules of Probability</h3>
+    <ul>
+    <li><p>Probabilities are bounded: <span class="math inline">0 ≤ <em>P</em>(<em>A</em>) ≤ 1</span>.</p></li>
+    <li><p>The total of all possible outcomes must equal 1: <br /><span class="math display">∑<sub><em>i</em></sub><em>P</em>(<em>A</em><sub><em>i</em></sub>) = 1</span><br /></p></li>
+    <li><p>Complement Rule: <br /><span class="math display"><em>P</em>(<em>A</em>′) = 1 − <em>P</em>(<em>A</em>)</span><br /> where <span class="math inline"><em>A</em>′</span> is the event that <span class="math inline"><em>A</em></span> does not occur.</p></li>
+    <li><p>General Addition Rule: <br /><span class="math display"><em>P</em>(<em>A</em> ∪ <em>B</em>) = <em>P</em>(<em>A</em>) + <em>P</em>(<em>B</em>) − <em>P</em>(<em>A</em> ∩ <em>B</em>)</span><br /></p></li>
+    <li><p>Multiplication Rule for Independent Events: <br /><span class="math display"><em>P</em>(<em>A</em> ∩ <em>B</em>) = <em>P</em>(<em>A</em>) ⋅ <em>P</em>(<em>B</em>)</span><br /></p></li>
+    </ul>
+    <h3 id="bayes-theorem">Bayes’ Theorem</h3>
+    <p>Bayes’ theorem relates conditional probabilities and shows how to update probabilities given new evidence: <br /><span class="math display">$$P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}$$</span><br /></p>
+    <p>This emphasizes that probabilities are derived from prior knowledge and can be adjusted with new information.</p>
+    <h3 id="probit-and-logit-models">Probit and Logit Models</h3>
+    <p>These models estimate probabilities for binary outcomes (0 or 1) based on independent variables.</p>
+    <h4 id="probit-models">Probit Models</h4>
+    <p>Uses a normal distribution to convert predictions: <br /><span class="math display"><em>P</em>(<em>Y</em> = 1|<em>X</em>) = <em>Φ</em>(<em>X</em><em>β</em>)</span><br /></p>
+    <h4 id="logit-models">Logit Models</h4>
+    <p>Employs a logistic distribution: <br /><span class="math display">$$P(Y=1|X) = \frac{1}{1 + e^{-X\beta}}$$</span><br /></p>
+    <p>Example: Predicting Bankruptcy</p>
+    <ul>
+    <li><p>Historical data helps create independent variables such as earnings and debt levels.</p></li>
+    <li><p>Dependent variable is whether a firm went bankrupt (1) or not (0).</p></li>
+    </ul>
+    <p>Example: Predicting Acquisitions</p>
+    <ul>
+    <li><p>Independent variables may include stock performance metrics.</p></li>
+    <li><p>Similar modeling to predict whether a company will be acquired.</p></li>
+    </ul>
+    <h3 id="decision-trees">Decision Trees</h3>
+    <p>A useful way to visualize and assess sequential risk scenarios.</p>
+    <h4 id="components-of-decision-trees">Components of Decision Trees</h4>
+    <ul>
+    <li><p><strong>Event Nodes</strong>: Outcomes determined by chance, governed by probabilities.</p></li>
+    <li><p><strong>Decision Nodes</strong>: Points where choices are made.</p></li>
+    <li><p><strong>End Nodes</strong>: Final outcomes resulting from decisions and events.</p></li>
+    </ul>
+    <p>To analyze a decision tree, roll back from end nodes to make decisions based on expected values.</p>
+    <h3 id="scenario-analysis">Scenario Analysis</h3>
+    <p>Used to evaluate the impact of different future possible situations based on continuous outcomes.</p>
+    <h4 id="scenario-types">Scenario Types</h4>
+    <ul>
+    <li><p>Plausible scenarios for varying economic conditions.</p></li>
+    <li><p>Best-case/Worst-case analyses, though often criticized for not providing much useful information.</p></li>
+    </ul>
+    <h3 id="conclusion-9">Conclusion</h3>
+    <p>Understanding and applying probabilities is crucial in investing and finance. By utilizing tools such as Bayesian inference, Probit/Logit models, and decision trees, investors can better navigate uncertainty and make informed decisions.</p>
+    <h1 id="probabilistic-tools-in-investing-and-finance">Probabilistic Tools in Investing and Finance</h1>
+    <h3 id="introduction-11">Introduction</h3>
+    <p>In this session, we explore the application of probabilistic tools to questions in investing and finance. We will delve into how markets operate under the assumption of a random walk and how this influences investment strategies.</p>
+    <h3 id="random-walk-hypothesis">Random Walk Hypothesis</h3>
+    <h4 id="definition-1">Definition</h4>
+    <p>The market is said to follow a <strong>random walk</strong>, meaning that there is an equal probability of the market going up or down on any given day: <br /><span class="math display"><em>P</em>(up) = <em>P</em>(down) = 0.5</span><br /></p>
+    <h4 id="expected-outcomes-over-time">Expected Outcomes Over Time</h4>
+    <p>If we observe the market over <span class="math inline"><em>n</em></span> trading days, we expect to see: <br /><span class="math display">$$\text{Expected Up Days} = \frac{n}{2}, \quad \text{Expected Down Days} = \frac{n}{2}$$</span><br /> For example, over 100 days, we anticipate roughly 50 up days and 50 down days.</p>
+    <h4 id="testing-the-random-walk-hypothesis">Testing the Random Walk Hypothesis</h4>
+    <p>Researchers collect data over <span class="math inline"><em>n</em></span> trading days and analyze the actual distribution of up and down days. To estimate the standard error (<span class="math inline"><em>σ</em></span>) for the difference, the formula is: <br /><span class="math display">$$\sigma = \sqrt{\frac{P(\text{up}) \cdot P(\text{down})}{n}} = \sqrt{\frac{0.5 \cdot 0.5}{n}}$$</span><br /> For <span class="math inline"><em>n</em> = 100</span>: <br /><span class="math display">$$\sigma = \sqrt{\frac{0.25}{100}} = 0.05$$</span><br /></p>
+    <p>From the standard error, we can calculate confidence intervals: <br /><span class="math display">95%Confidence Interval = <em>p̂</em> ± 2<em>σ</em></span><br /></p>
+    <h3 id="empirical-study-sp-500-analysis">Empirical Study: S&amp;P 500 Analysis</h3>
+    <p>Over 1257 trading days (2016-2020):</p>
+    <ul>
+    <li><p>Up days: 700 (55.69%)</p></li>
+    <li><p>Down days: 557 (44.31%)</p></li>
+    </ul>
+    <h4 id="calculating-standard-error">Calculating Standard Error</h4>
+    <p>For the proportion of up days: <br /><span class="math display"><em>P</em>(up) = 0.5569,  <em>P</em>(down) = 0.4431</span><br /> The standard error is calculated as: <br /><span class="math display">$$\sigma = \sqrt{\frac{0.5569 \cdot 0.4431}{1257}} \approx 0.0141$$</span><br /></p>
+    <h4 id="confidence-interval">Confidence Interval</h4>
+    <p>At 95% confidence, <br /><span class="math display">Confidence Interval = 0.5569 ± 2(0.0141) = (0.5287, 0.5851)</span><br /> Since 50% falls outside this range, we can reject the hypothesis of equal up and down days.</p>
+    <h3 id="conditional-probabilities">Conditional Probabilities</h3>
+    <h4 id="given-previous-days-performance">Given Previous Day’s Performance</h4>
+    <p>If the market was up the previous day, we analyze the likelihood for the next day:</p>
+    <ul>
+    <li><p>After an up day: 367 up days, 333 down days (52.43%)</p></li>
+    <li><p>After a down day: 332 up days, 225 down days (59.6%)</p></li>
+    </ul>
+    <h4 id="statistical-significance">Statistical Significance</h4>
+    <p>The probability following an up day is not significantly different from 50%. However, there is a significantly higher chance of up days after down days (59.6% vs. 50%).</p>
+    <h3 id="cumulative-events-in-trading-days">Cumulative Events in Trading Days</h3>
+    <h4 id="probability-of-consecutive-events">Probability of Consecutive Events</h4>
+    <p>To find the probability of consecutive updates or down days: <br /><span class="math display"><em>P</em>(three up days) = (0.5569)<sup>3</sup> = 0.173</span><br /> For five up days: <br /><span class="math display"><em>P</em>(five up days) = (0.5569)<sup>5</sup> ≈ 0.0536</span><br /></p>
+    <h3 id="performance-persistence-and-fund-management">Performance Persistence and Fund Management</h3>
+    <h4 id="transition-probability">Transition Probability</h4>
+    <p>Funds can be classified into quartiles based on past performance, and the likelihood of performance persistence can be analyzed.</p>
+    <h3 id="default-probabilities">Default Probabilities</h3>
+    <h4 id="corporate-bonds-default-rates">Corporate Bonds Default Rates</h4>
+    <p>The probability of corporate bonds defaulting changes with economic conditions.</p>
+    <ul>
+    <li><p>High yield bond default rate over 20 years may reach approximately 50%.</p></li>
+    </ul>
+    <h4 id="altman-z-score">Altman Z-Score</h4>
+    <p>The Altman Z-score combines specific ratios to class companies based on their likelihood of bankruptcy: <br /><span class="math display">$$Z = 1.2 \frac{WC}{TA} + 1.4 \frac{RE}{TA} + 3.3 \frac{EBIT}{TA} + 0.6 \frac{MV}{TL} + \text{constant}$$</span><br /></p>
+    <h3 id="decision-trees-1">Decision Trees</h3>
+    <h4 id="sequential-decision-analysis">Sequential Decision Analysis</h4>
+    <p>Decision trees are useful for modeling complex decisions under uncertainty, such as in pharmaceutical approvals.</p>
+    <h4 id="expected-value-calculation">Expected Value Calculation</h4>
+    <p>Expected value can be calculated as: <br /><span class="math display">Expected Value = <em>P</em>(success) × Cash Flow</span><br /></p>
+    <h3 id="scenario-analysis-1">Scenario Analysis</h3>
+    <h4 id="valuation-under-different-scenarios">Valuation Under Different Scenarios</h4>
+    <p>Scenario analysis aids in evaluating the impact of different potential future events on value, focusing on extreme and likely outcomes.</p>
+    <h1 id="monte-carlo-simulations-in-finance">Monte Carlo Simulations in Finance</h1>
+    <h3 id="introduction-12">Introduction</h3>
+    <p>In this session, we will explore the integration of data distributions, probabilities, and Monte Carlo simulations as applied in data analysis and decision-making, particularly in finance.</p>
+    <h3 id="point-estimates-vs.-distributions">Point Estimates vs. Distributions</h3>
+    <p>Typically, in finance, we estimate independent variables which inform an output variable that we are attempting to explain.</p>
+    <h4 id="point-estimates">Point Estimates</h4>
+    <ul>
+    <li><p>Example: Valuing a company involves key inputs such as revenue growth and operating margins.</p></li>
+    <li><p>Suppose we estimate revenue growth at <span class="math inline"><em>g</em> = 12%</span> and operating margin at <span class="math inline"><em>m</em> = 8%</span>.</p></li>
+    <li><p>Point estimates, while convenient, are limiting due to inherent uncertainties in actual values.</p></li>
+    </ul>
+    <h4 id="transition-to-distributions">Transition to Distributions</h4>
+    <ul>
+    <li><p>Instead of providing point estimates, we replace each with a probability distribution.</p></li>
+    <li><p>For example, revenue growth could be modeled with a distribution centered around <span class="math inline">12%</span> but allowing for variance (e.g., a range between <span class="math inline">4%</span> and <span class="math inline">20%</span>).</p></li>
+    </ul>
+    <h4 id="monte-carlo-simulations">Monte Carlo Simulations</h4>
+    <p>Monte Carlo simulations allow us to:</p>
+    <ul>
+    <li><p>Select a random value from each of the distributions defined for independent variables.</p></li>
+    <li><p>Run simulations multiple times to produce a range of outputs, providing a distribution of output values rather than a single estimate.</p></li>
+    </ul>
+    <h3 id="building-a-solid-model">Building a Solid Model</h3>
+    <p>For successful simulations:</p>
+    <ol>
+    <li><p>Build a sound base model connecting independent variables to the output variable.</p></li>
+    <li><p>Keep the model simple and transparent.</p></li>
+    <li><p>Focus on the most significant independent variables in terms of their effect on outputs.</p></li>
+    </ol>
+    <h3 id="understanding-uncertainties">Understanding Uncertainties</h3>
+    <p>Analyzing uncertainties involves distinguishing between: <strong>Discrete vs. Continuous Uncertainty:</strong></p>
+    <ul>
+    <li><p><strong>Continuous Uncertainty:</strong> e.g., margins that can take on a range of values.</p></li>
+    <li><p><strong>Discrete Uncertainty:</strong> e.g., regulatory changes that can either happen or not (0 or 1).</p></li>
+    </ul>
+    <p><strong>Symmetric vs. Asymmetric Risk:</strong></p>
+    <ul>
+    <li><p>Symmetric: Uncertainty exists equally on both sides.</p></li>
+    <li><p>Asymmetric: Greater likelihood of being wrong in one direction (e.g., margins could drop significantly).</p></li>
+    </ul>
+    <h4 id="choice-of-distributions">Choice of Distributions</h4>
+    <p>It is crucial to identify the right type of distributions (e.g., normal, log-normal, triangular) to model your uncertainties.</p>
+    <h3 id="application-valuing-apple-inc.">Application: Valuing Apple Inc.</h3>
+    <p>In a valuation example performed in May 2016: Point Estimates:</p>
+    <ul>
+    <li><p>Revenue Growth (<span class="math inline"><em>g</em></span>): <span class="math inline">1.5%</span></p></li>
+    <li><p>Operating Margin (<span class="math inline"><em>m</em></span>): <span class="math inline">25%</span></p></li>
+    </ul>
+    <p>A base case valuation provided a value of <span class="math inline">126</span> per share.</p>
+    <h4 id="selecting-distributions">Selecting Distributions</h4>
+    <ul>
+    <li><p>For Revenue Growth, a log-normal distribution was chosen due to the belief in positive surprise potential.</p></li>
+    <li><p>For Operating Margin, a triangular distribution was used, with bounds set to prevent unrealistic values.</p></li>
+    </ul>
+    <h4 id="running-the-simulation">Running the Simulation</h4>
+    <p>Using Crystal Ball (an Excel add-on):</p>
+    <ul>
+    <li><p>Conducted <span class="math inline">100, 000</span> simulations.</p></li>
+    <li><p>Resulting output showed distributions of value per share.</p></li>
+    </ul>
+    <h5 id="results">Results</h5>
+    <p><strong>Median Value:</strong> Approximately $123 per share.<br />
+    <strong>Value Range:</strong></p>
+    <ul>
+    <li><p>10th Decile: $99</p></li>
+    <li><p>90th Decile: $157</p></li>
+    </ul>
+    <p>Indicates a high probability (93%) that Apple is undervalued compared to its market trading price of $93.</p>
+    <h3 id="conclusions-1">Conclusions</h3>
+    <p>Monte Carlo simulations provide not just a point estimate but a fuller picture of uncertainty, allowing analysts to make more informed decisions. By looking at the distribution of potential outcomes, analysts can more effectively address and understand the risks involved.</p>
+    <h3 id="key-takeaways">Key Takeaways</h3>
+    <ul>
+    <li><p>Establish a clear model linking independent variables and outputs.</p></li>
+    <li><p>Use distributions to represent uncertainties accurately.</p></li>
+    <li><p>Employ simulations to analyze and understand variability in outcomes.</p></li>
+    </ul>
+    
+</div>
+  <!-- insert above this -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</body>
+
+</html>
+

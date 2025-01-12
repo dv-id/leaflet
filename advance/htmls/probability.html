@@ -1,0 +1,1692 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>/\dvance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+        code {
+            white-space: pre-wrap;
+        }
+
+        span.smallcaps {
+            font-variant: small-caps;
+        }
+
+        span.underline {
+            text-decoration: underline;
+        }
+
+        div.column {
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+        }
+
+        div.hanging-indent {
+            margin-left: 1.5em;
+            text-indent: -1.5em;
+        }
+
+        ul.task-list {
+            list-style: none;
+        }
+    </style>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body style="
+    background-color: rgb(0, 0, 39);
+    color: rgb(205, 158, 250);" class="vh-100 p-0 mb-0">
+
+
+    <div class="container" style="margin-top: 10%;"> 
+        <div id="business-row" class="row justify-content-between">
+            
+            <nav class="navbar navbar-dark navbar-collapse navbar-fixed-top fixed-top justify-content-center container" style="background-color: rgb(0, 0, 40);">
+                <div class="container justify-content-center">
+                <a class="navbar-brand" href="../index.html" style="color: rgb(179, 114, 240);">/\dvance</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../finance.html">Finance</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../startups.html">Startups</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../economics.html">Economics</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../humanities.html">Humanities</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../philosophy.html">Philosophy</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../science.html">Science</a>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+
+                <div class="container" style="background-color: rgb(0, 0, 40);">
+                    <div class="col-12 d-flex justify-content-start align-items-center">
+                        <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                            <ol class="breadcrumb m-1">
+                                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="../science.html">Science</a></li>
+                                <li class="breadcrumb-item active"><a href="../htmls/probability.html">Probability</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+              <div class="btn position-fixed fixed-bottom d-flex justify-content-end p-0">
+                <a style="color: white; background-color: rgb(0, 0, 40);" class="border rounded p-1"
+                onclick="document.getElementById('contents').scrollIntoView({ behavior: 'smooth' });">contents^</a>
+              </div>
+            </nav> class="mb-1"
+
+        </div>
+        <div class="row">
+            <h1 id="contents" class="m-0">contents</h4>
+                <div class="col-6">
+                    <ul>
+                        <li class="mb-1">
+                            <a href="#counting-theory">Counting Theory</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#counting-principles-in-probability-and-combinatorics">Counting Principles in Probability and Combinatorics</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#introduction-to-probability-for-computer-scientists">Introduction to Probability for Computer Scientists</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#introduction-to-probability">Introduction to Probability</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#independence-and-probability">Independence and Probability</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#probability-and-random-variables">Probability and Random Variables</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#random-variables-binomial-distribution-and-variance">Random Variables, Binomial Distribution, and Variance</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#introduction-to-poisson-distribution">Introduction to Poisson Distribution</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-continuous-random-variables">Continuous Random Variables</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-the-normal-distribution">Normal Distribution</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#probability-notes">Probability Notes</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#inference-and-belief-updates">Inference and Belief Updates</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#bayesian-inference-and-item-response-theory">Bayesian Inference and Item Response Theory</a>
+                        </li>
+                        <li>
+                            <a href="#probabilistic-modeling-and-bayesian-networks">Probabilistic Modeling and Bayesian Networks</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li class="mb-1">
+                            <a href="#general-inference-and-rejection-sampling">General Inference and Rejection Sampling</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#probabilities-and-random-variables">Probabilities and Random Variables</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#adding-random-variables">Adding Random Variables</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-on-central-limit-theorem-and-statistics">Central Limit Theorem and Statistics</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#bootstrapping-and-p-values">Bootstrapping and P-Values</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#expectation-and-algorithmic-analysis">Expectation and Algorithmic Analysis</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#introduction-to-machine-learning">Introduction to Machine Learning</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#introduction-to-machine-learning-1">Introduction to Machine Learning II</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#naive-bayes-classification-notes">Naive Bayes Classification</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#machine-learning-and-logistic-regression">Machine Learning and Logistic Regression</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#deep-learning-notes">Deep Learning</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#ethics-and-machine-learning-detailed-notes">Ethics and Machine Learning</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#generative-models-and-neural-networks">Generative Models and Neural Networks</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#final-summary">Final Summary</a>
+                        </li>
+                        <li>
+                            <a href="#final-review-notes">Final Review</a>
+                        </li>
+
+                    </ul>
+                </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- insert under this -->
+    <div class="container">
+<h1 id="probability">Probability</h1>
+        <h1 id="counting-theory">Counting Theory</h1>
+<h4 id="why-counting">Why Counting?</h4>
+<ul>
+<li><p>Counting provides the foundational basis for understanding probability.</p></li>
+<li><p>Essential for solving complex problems in computer science and AI.</p></li>
+</ul>
+<h4 id="experiments-and-outcomes">Experiments and Outcomes</h4>
+<ul>
+<li><p>An <strong>experiment</strong> leads to various <strong>outcomes</strong>.</p></li>
+<li><p>Example: Rolling a die has outcomes: 1, 2, 3, 4, 5, 6.</p></li>
+</ul>
+<h4 id="step-rule-of-counting">Step Rule of Counting</h4>
+<p><strong>If an experiment consists of multiple steps, the total number of outcomes is the product of outcomes at each step.</strong> <br /><span class="math display"><em>N</em> = <em>n</em><sub>1</sub> × <em>n</em><sub>2</sub> × … × <em>n</em><sub><em>k</em></sub></span><br /> where <span class="math inline"><em>n</em><sub><em>i</em></sub></span> is the number of outcomes in step <span class="math inline"><em>i</em></span>.</p>
+<h5 id="example-rolling-two-dice">Example: Rolling Two Dice</h5>
+<ul>
+<li><p>Total outcomes = <span class="math inline">6 × 6 = 36</span>.</p></li>
+</ul>
+<h3 id="summation-rule-of-counting">Summation Rule of Counting</h3>
+<p><strong>If outcomes can come from two or more events (sets), the total number of outcomes equals the sum of outcomes from each event minus any overlaps.</strong> <br /><span class="math display"><em>N</em> = |<em>A</em>| + |<em>B</em>| − |<em>A</em> ∩ <em>B</em>|</span><br /> where <span class="math inline">|<em>A</em>|</span> = size of set <span class="math inline"><em>A</em></span>, <span class="math inline">|<em>B</em>|</span> = size of set <span class="math inline"><em>B</em></span>.</p>
+<h3 id="problems-for-practice">Problems for Practice</h3>
+<h4 id="unique-arrangements">Unique Arrangements</h4>
+<ul>
+<li><p><strong>How many unique arrangements of the letters "boba"?</strong></p></li>
+<li><p><strong>Challenge:</strong> How to calculate the arrangements when letters repeat.</p></li>
+</ul>
+<h5 id="solution-approach">Solution Approach</h5>
+<p><strong>General formula for unique arrangements of a multiset:</strong> <br /><span class="math display">$$N = \frac{n!}{n_1! \times n_2! \times \ldots \times n_k!}$$</span><br /> where <span class="math inline"><em>n</em></span> is the total number of items and <span class="math inline"><em>n</em><sub><em>i</em></sub></span> is the count of each unique item.</p>
+<h4 id="example-calculation-for-boba">Example Calculation for "boba"</h4>
+<p><br /><span class="math display">$$\text{Total Letters} = 4 \quad (b, o, b, a) \\
+\text{Arrangements} = \frac{4!}{2!} = \frac{24}{2} = 12$$</span><br /></p>
+<h3 id="conclusion">Conclusion</h3>
+<ul>
+<li><p>Understanding counting is essential for grasping probability.</p></li>
+<li><p>Concepts covered include basic counting principles, arrangement calculations, and real-world applications in AI and algorithms.</p></li>
+<li><p>Remember to participate, practice, and review material regularly.</p></li>
+</ul>
+<h1 id="counting-principles-in-probability-and-combinatorics">Counting Principles in Probability and Combinatorics</h1>
+<h3 id="introduction">Introduction</h3>
+<p>In this lecture, we focus on the essential rules of counting, which serve as the foundation for probability theory and combinatorial mathematics. Key concepts include permutations, combinations, and methods for counting arrangements of indistinguishable objects.</p>
+<h3 id="key-rules-of-counting">Key Rules of Counting</h3>
+<h4 id="fundamental-counting-principles">Fundamental Counting Principles</h4>
+<p>The two core rules of counting are:</p>
+<ol>
+<li><p><strong>Multiplication Rule:</strong> If an experiment can be broken down into a series of steps where the number of outcomes at each step does not depend on previous outcomes, the total number of outcomes is the product of the number of outcomes at each step.</p>
+<p><br /><span class="math display"><em>n</em> = <em>n</em><sub>1</sub> × <em>n</em><sub>2</sub> × … × <em>n</em><sub><em>k</em></sub></span><br /></p>
+<p>where <span class="math inline"><em>n</em></span> is the total number of outcomes, and <span class="math inline"><em>n</em><sub><em>i</em></sub></span> are the number of outcomes for each step.</p></li>
+<li><p><strong>Addition Rule:</strong> If an experiment can result in outcomes from two or more distinct groups, the total number of outcomes is the sum of the outcomes from each group, minus any overlaps.</p>
+<p><br /><span class="math display"><em>n</em> = <em>n</em><sub><em>A</em></sub> + <em>n</em><sub><em>B</em></sub> − <em>n</em><sub><em>A</em> ∩ <em>B</em></sub></span><br /></p></li>
+</ol>
+<h3 id="permutations">Permutations</h3>
+<p>A permutation refers to an ordered arrangement of objects.</p>
+<h4 id="distinct-objects">Distinct Objects</h4>
+<p>The number of permutations of <span class="math inline"><em>n</em></span> distinct objects is given by:</p>
+<p><br /><span class="math display"><em>P</em>(<em>n</em>) = <em>n</em>!</span><br /></p>
+<p>For example, for the letters in "CHRIS": <br /><span class="math display"><em>P</em>(5) = 5! = 120</span><br /></p>
+<h4 id="indistinct-objects">Indistinct Objects</h4>
+<p>If some objects are indistinct, the formula for permutations changes to account for the indistinguishable items.</p>
+<p>The general formula for <span class="math inline"><em>n</em></span> objects where there are groups of indistinguishable objects is:</p>
+<p><br /><span class="math display">$$P(n; n_1, n_2, \ldots, n_k) = \frac{n!}{n_1! \cdot n_2! \cdot \ldots \cdot n_k!}$$</span><br /></p>
+<p>For example, for the word "MISSISSIPPI": <br /><span class="math display">$$P = \frac{11!}{4! \cdot 4! \cdot 2!}$$</span><br /></p>
+<p>where there are four ’I’s, four ’S’s, and two ’P’s.</p>
+<h3 id="combinations">Combinations</h3>
+<p>A combination refers to the selection of objects without regard to the order.</p>
+<h4 id="distinct-objects-1">Distinct Objects</h4>
+<p>If we want to choose <span class="math inline"><em>k</em></span> objects from <span class="math inline"><em>n</em></span> distinct objects, we utilize the combinations formula:</p>
+<p><br /><span class="math display">$$C(n, k) = \frac{n!}{k!(n-k)!}$$</span><br /></p>
+<p>For example, to choose 3 books from 6: <br /><span class="math display">$$C(6, 3) = \frac{6!}{3! \cdot 3!} = 20$$</span><br /></p>
+<h4 id="indistinct-objects-1">Indistinct Objects</h4>
+<p>When dealing with indistinguishable objects, the concept is similar, but the result will count each unique grouping once. For example, choosing 3 indistinguishable items from a set where items may overlap is treated carefully.</p>
+<h3 id="putting-objects-into-buckets">Putting Objects into Buckets</h3>
+<p>If you have <span class="math inline"><em>n</em></span> indistinct objects to put into <span class="math inline"><em>r</em></span> distinct buckets, the formula is given by:</p>
+<p><br /><span class="math display">$$\text{Ways} = \frac{(n + r - 1)!}{n! \cdot (r - 1)!}$$</span><br /></p>
+<p>This is derived from the method of "stars and bars" or dividers.</p>
+<h4 id="example">Example</h4>
+<p>To place 4 indistinguishable objects into 3 distinct buckets: <br /><span class="math display">$$\text{Ways} = \frac{(4 + 3 - 1)!}{4! \cdot (3 - 1)!} = \frac{6!}{4! \cdot 2!} = 15$$</span><br /></p>
+<h3 id="conclusion-1">Conclusion</h3>
+<p>Understanding these foundational counting principles is crucial for tackling more complex problems in probability and combinatorics. Future classes will build on these concepts, particularly as we apply them to probability theory.</p>
+<h1 id="introduction-to-probability-for-computer-scientists">Introduction to Probability for Computer Scientists</h1>
+<h3 id="course-overview">Course Overview</h3>
+<p>This course marks the beginning of our journey into probability theory, specifically tailored for computer scientists. Get ready to delve deeply into the world of probabilities!</p>
+<h3 id="counting-techniques-recap">Counting Techniques Recap</h3>
+<p>In prior classes, we covered advanced counting techniques:</p>
+<ol>
+<li><p><strong>Permutations:</strong> The number of ways to arrange <span class="math inline"><em>n</em></span> distinct items: <br /><span class="math display"><em>P</em>(<em>n</em>) = <em>n</em>!</span><br /></p></li>
+<li><p><strong>Combinations:</strong> The number of ways to choose <span class="math inline"><em>k</em></span> items from <span class="math inline"><em>n</em></span>: <br /><span class="math display">$$C(n, k) = \frac{n!}{k!(n-k)!}$$</span><br /></p></li>
+<li><p><strong>Distributions (Bucketing):</strong> Number of ways to distribute <span class="math inline"><em>n</em></span> distinct items into <span class="math inline"><em>k</em></span> buckets.</p></li>
+</ol>
+<h3 id="basic-concepts-of-probability">Basic Concepts of Probability</h3>
+<h4 id="sample-space-s">Sample Space (S)</h4>
+<p>The sample space is the set of all possible outcomes of an experiment.</p>
+<ul>
+<li><p>Example: Flipping a coin yields <span class="math inline"><em>S</em> = {Heads, Tails}</span></p></li>
+<li><p>Size of sample space can be finite or infinite.</p></li>
+</ul>
+<h4 id="event-space-e">Event Space (E)</h4>
+<p>An event is a subset of the sample space that satisfies a particular condition.</p>
+<ul>
+<li><p>Example: If <span class="math inline"><em>S</em> = {1, 2, 3, 4, 5, 6}</span> (a die roll), then an event for rolling a number less than 4 would be <span class="math inline"><em>E</em> = {1, 2, 3}</span>.</p></li>
+</ul>
+<h3 id="definition-of-probability">Definition of Probability</h3>
+<p>The probability of an event <span class="math inline"><em>E</em></span> occurring is denoted <span class="math inline"><em>P</em>(<em>E</em>)</span> and is defined as: <br /><span class="math display">$$P(E) = \frac{\text{Number of favorable outcomes}}{\text{Total number of outcomes}} \quad \text{(if equally likely)}$$</span><br /> Where <span class="math inline"><em>P</em>(<em>E</em>)</span> must satisfy: <br /><span class="math display">0 ≤ <em>P</em>(<em>E</em>) ≤ 1</span><br /></p>
+<h3 id="axioms-of-probability-kahneman">Axioms of Probability (Kahneman)</h3>
+<ol>
+<li><p><strong>Non-negativity:</strong> <span class="math inline"><em>P</em>(<em>E</em>) ≥ 0</span></p></li>
+<li><p><strong>Normalization:</strong> <span class="math inline"><em>P</em>(<em>S</em>) = 1</span></p></li>
+<li><p><strong>Additivity:</strong> For mutually exclusive events <span class="math inline"><em>A</em></span> and <span class="math inline"><em>B</em></span>, <br /><span class="math display"><em>P</em>(<em>A</em> ∪ <em>B</em>) = <em>P</em>(<em>A</em>) + <em>P</em>(<em>B</em>)</span><br /></p></li>
+</ol>
+<h3 id="equally-likely-outcomes">Equally Likely Outcomes</h3>
+<p>When all outcomes in the sample space are equally likely, the probability of an event <span class="math inline"><em>E</em></span> is given by: <br /><span class="math display">$$P(E) = \frac{|E|}{|S|}$$</span><br /> where <span class="math inline">|<em>E</em>|</span> is the number of outcomes in event <span class="math inline"><em>E</em></span> and <span class="math inline">|<em>S</em>|</span> is the number of outcomes in the sample space.</p>
+<h4 id="example-rolling-two-dice-1">Example: Rolling Two Dice</h4>
+<p><br /><span class="math display">$$P(\text{sum} = 7) = \frac{6}{36} = \frac{1}{6}$$</span><br /> Here, we count the pairs: <span class="math inline">(1, 6), (2, 5), (3, 4), (4, 3), (5, 2), (6, 1)</span>.</p>
+<h3 id="complex-counting-example-cows-and-pigs">Complex Counting Example: Cows and Pigs</h3>
+<p>Consider 4 cows and 3 pigs, we want to find the probability of drawing 1 cow and 2 pigs.</p>
+<ol>
+<li><p>Sample Space: <span class="math inline"><em>C</em>(7, 3)</span></p></li>
+<li><p>Event Space: Choose 1 cow from 4, and choose 2 pigs from 3: <br /><span class="math display">$$P(\text{1 cow, 2 pigs}) = \frac{C(4, 1) \times C(3, 2)}{C(7, 3)} = \frac{4 \times 3}{35} = \frac{12}{35}$$</span><br /></p></li>
+</ol>
+<h3 id="card-probabilities-straights-in-poker">Card Probabilities: Straights in Poker</h3>
+<p>To calculate the probability of drawing a straight hand from a deck:</p>
+<ol>
+<li><p>Sample Space: <span class="math inline"><em>C</em>(52, 5)</span></p></li>
+<li><p>Event Space Count: Count valid straights: - Choose starting card value: <span class="math inline">10</span> (e.g., <span class="math inline">(2, 3, 4, 5, 6)</span>) - Choose suits for each card <span class="math inline">(4<sup>5</sup>)</span>: <br /><span class="math display">$$P(\text{Straight}) = \frac{10 \cdot 4^5}{C(52, 5)}$$</span><br /></p></li>
+</ol>
+<h3 id="probability-of-a-defective-chip">Probability of a Defective Chip</h3>
+<p>With <span class="math inline"><em>N</em></span> chips, one defective, and <span class="math inline"><em>K</em></span> chosen: <br /><span class="math display">$$P(\text{defective in sample}) = \frac{K}{N}$$</span><br /></p>
+<h3 id="final-remark">Final Remark</h3>
+<p>Probability theory is a profound language that helps us quantify uncertainty and understand the randomness inherent in our world.</p>
+<h1 id="introduction-to-probability">Introduction to Probability</h1>
+<h3 id="review-of-last-weeks-topics">Review of Last Week’s Topics</h3>
+<p>Last week focused on combinatorics and the foundations of probability. We covered:</p>
+<ul>
+<li><p>Counting orderings of objects</p></li>
+<li><p>Calculating combinations of objects</p></li>
+<li><p>The concept of permutations which can lead to large numbers.</p></li>
+</ul>
+<p>For example, arranging 52 unique cards yields <span class="math inline">52!</span> (52 factorial). This leads to the understanding that many arrangements are readily available, likely leading to unique outcomes.</p>
+<h3 id="probability-axioms">Probability Axioms</h3>
+<p>We discussed the three fundamental axioms of probability:</p>
+<ol>
+<li><p><span class="math inline"><em>P</em>(<em>E</em>) ≥ 0</span> for any event <span class="math inline"><em>E</em></span></p></li>
+<li><p><span class="math inline"><em>P</em>(<em>S</em>) = 1</span> where <span class="math inline"><em>S</em></span> is the sample space</p></li>
+<li><p>For any two mutually exclusive events <span class="math inline"><em>E</em></span> and <span class="math inline"><em>F</em></span>: <br /><span class="math display"><em>P</em>(<em>E</em> ∪ <em>F</em>) = <em>P</em>(<em>E</em>) + <em>P</em>(<em>F</em>)</span><br /></p></li>
+</ol>
+<p>What this means is that if no outcomes overlap between <span class="math inline"><em>E</em></span> and <span class="math inline"><em>F</em></span>, the probability of <span class="math inline"><em>E</em></span> or <span class="math inline"><em>F</em></span> happening can be calculated by summing their probabilities.</p>
+<h3 id="conditional-probability">Conditional Probability</h3>
+<p>A key concept in probability is conditional probability, denoted as: <br /><span class="math display">$$P(E \mid F) = \frac{P(E \cap F)}{P(F)}$$</span><br /> where <span class="math inline"><em>P</em>(<em>E</em> ∣ <em>F</em>)</span> is the probability of event <span class="math inline"><em>E</em></span> given <span class="math inline"><em>F</em></span> has occurred.</p>
+<h4 id="mutually-exclusive-events">Mutually Exclusive Events</h4>
+<p>If two events <span class="math inline"><em>E</em></span> and <span class="math inline"><em>F</em></span> are mutually exclusive, then: <br /><span class="math display"><em>P</em>(<em>E</em> ∪ <em>F</em>) = <em>P</em>(<em>E</em>) + <em>P</em>(<em>F</em>)</span><br /> We can apply these concepts to practical situations, illustrating through examples such as card drawing.</p>
+<h4 id="the-law-of-total-probability">The Law of Total Probability</h4>
+<p>The law of total probability states: <br /><span class="math display"><em>P</em>(<em>E</em>) = <em>P</em>(<em>E</em> ∣ <em>F</em>)<em>P</em>(<em>F</em>) + <em>P</em>(<em>E</em> ∣ <em>F</em><sup><em>c</em></sup>)<em>P</em>(<em>F</em><sup><em>c</em></sup>)</span><br /> This allows for assessing <span class="math inline"><em>P</em>(<em>E</em>)</span> based on conditional probabilities related to disjoint partitioning events <span class="math inline"><em>F</em></span> and <span class="math inline"><em>F</em><sup><em>c</em></sup></span>.</p>
+<h3 id="bayes-theorem">Bayes’ Theorem</h3>
+<p>Once we establish a conditional probability, we can explore probabilities in reverse using Bayes’ Theorem: <br /><span class="math display">$$P(F \mid E) = \frac{P(E \mid F) P(F)}{P(E)}$$</span><br /> This allows us to compute the probability of an event given new evidence.</p>
+<h4 id="example-testing-for-disease">Example: Testing for Disease</h4>
+<p>Consider a medical test: - The probability of having the disease = <span class="math inline"><em>P</em>(<em>D</em>)</span> - The probability of testing positive given you have the disease = <span class="math inline"><em>P</em>(<em>T</em> ∣ <em>D</em>)</span> - The probability of testing positive given you do not have the disease = <span class="math inline"><em>P</em>(<em>T</em> ∣ <em>D</em><sup><em>c</em></sup>)</span></p>
+<p>An example using these probabilities illustrates practical usage: <br /><span class="math display">$$P(D \mid T) = \frac{P(T \mid D) P(D)}{P(T)}$$</span><br /></p>
+<h3 id="updated-beliefs-and-evidence">Updated Beliefs and Evidence</h3>
+<p>When we observe an event: - Our a priori beliefs (prior probabilities) can be updated based on evidence. - This process increases our methodological robustness in decision-making.</p>
+<h3 id="conclusion-2">Conclusion</h3>
+<p>In summary, you’ve acquired tools for dealing with uncertainty through the establishment of probabilities, including:</p>
+<ul>
+<li><p>Combined events and their probabilities</p></li>
+<li><p>The relationship between conditional probabilities</p></li>
+<li><p>The application of Bayes’ Theorem in practical scenarios</p></li>
+</ul>
+<p>Spend some time working through these principles, as they are essential for understanding both theoretical and applied statistics and probability. Remember to practice using Bayes’ Theorem as it is crucial in many real-world applications.</p>
+<h1 id="independence-and-probability">Independence and Probability</h1>
+<h3 id="introduction-1">Introduction</h3>
+<p>In this lecture, we delve into the concept of independence, which is critical for understanding probability theory and building algorithms that make decisions under uncertainty.</p>
+<h3 id="review-of-probability">Review of Probability</h3>
+<h4 id="probabilities-of-events">Probabilities of Events</h4>
+<ul>
+<li><p>For two events <span class="math inline"><em>A</em></span> and <span class="math inline"><em>B</em></span>, we can ask:</p>
+<ul>
+<li><p>What is the probability that both <span class="math inline"><em>A</em></span> and <span class="math inline"><em>B</em></span> happen? (<span class="math inline"><em>P</em>(<em>A</em> ∩ <em>B</em>)</span>)</p></li>
+<li><p>What is the probability that either <span class="math inline"><em>A</em></span> or <span class="math inline"><em>B</em></span> happens? (<span class="math inline"><em>P</em>(<em>A</em> ∪ <em>B</em>)</span>)</p></li>
+<li><p>What is the probability of <span class="math inline"><em>A</em></span> given <span class="math inline"><em>B</em></span> has occurred? (<span class="math inline"><em>P</em>(<em>A</em>|<em>B</em>)</span>)</p></li>
+</ul></li>
+</ul>
+<h4 id="conditional-probability-1">Conditional Probability</h4>
+<p>The definition of conditional probability states: <br /><span class="math display">$$P(A | B) = \frac{P(A \cap B)}{P(B)}$$</span><br /> Rearranging this gives us the Chain Rule: <br /><span class="math display"><em>P</em>(<em>A</em> ∩ <em>B</em>) = <em>P</em>(<em>A</em>) ⋅ <em>P</em>(<em>B</em>|<em>A</em>)</span><br /> This formula is fundamental in probability.</p>
+<h4 id="law-of-total-probability-and-bayes-theorem">Law of Total Probability and Bayes’ Theorem</h4>
+<p>The Law of Total Probability states: <br /><span class="math display"><em>P</em>(<em>A</em>) = ∑<sub><em>i</em></sub><em>P</em>(<em>A</em>|<em>B</em><sub><em>i</em></sub>)<em>P</em>(<em>B</em><sub><em>i</em></sub>)</span><br /> where <span class="math inline"><em>B</em><sub><em>i</em></sub></span> partitions the sample space.</p>
+<p>Bayes’ theorem relates conditional probabilities: <br /><span class="math display">$$P(B | A) = \frac{P(A | B) P(B)}{P(A)}$$</span><br /></p>
+<h3 id="mutual-exclusivity-vs-independence">Mutual Exclusivity vs Independence</h3>
+<h4 id="mutual-exclusivity">Mutual Exclusivity</h4>
+<p>Two events <span class="math inline"><em>A</em></span> and <span class="math inline"><em>B</em></span> are mutually exclusive if they cannot occur at the same time: <br /><span class="math display"><em>P</em>(<em>A</em> ∩ <em>B</em>) = 0</span><br /> If they are mutually exclusive, the probability of either event occurring is: <br /><span class="math display"><em>P</em>(<em>A</em> ∪ <em>B</em>) = <em>P</em>(<em>A</em>) + <em>P</em>(<em>B</em>)</span><br /></p>
+<h4 id="independence">Independence</h4>
+<p>Two events <span class="math inline"><em>A</em></span> and <span class="math inline"><em>B</em></span> are independent if the occurrence of one does not affect the other: <br /><span class="math display"><em>P</em>(<em>A</em>|<em>B</em>) = <em>P</em>(<em>A</em>)</span><br /> This also means: <br /><span class="math display"><em>P</em>(<em>A</em> ∩ <em>B</em>) = <em>P</em>(<em>A</em>) ⋅ <em>P</em>(<em>B</em>)</span><br /></p>
+<h4 id="conditions-for-multiple-events">Conditions for Multiple Events</h4>
+<p>For <span class="math inline"><em>n</em></span> independent events <span class="math inline"><em>E</em><sub>1</sub>, <em>E</em><sub>2</sub>, …, <em>E</em><sub><em>n</em></sub></span>, the probability that all occur is: <br /><span class="math display"><em>P</em>(<em>E</em><sub>1</sub> ∩ <em>E</em><sub>2</sub> ∩ … ∩ <em>E</em><sub><em>n</em></sub>) = <em>P</em>(<em>E</em><sub>1</sub>) ⋅ <em>P</em>(<em>E</em><sub>2</sub>)⋯<em>P</em>(<em>E</em><sub><em>n</em></sub>)</span><br /></p>
+<h3 id="calculating-probabilities">Calculating Probabilities</h3>
+<h4 id="probability-of-k-heads-in-coin-flips">Probability of <span class="math inline"><em>K</em></span> Heads in Coin Flips</h4>
+<p>When flipping <span class="math inline"><em>n</em></span> coins with probability <span class="math inline"><em>p</em></span> of heads, the probability of exactly <span class="math inline"><em>k</em></span> heads is: <br /><span class="math display">$$P(k \text{ heads}) = \binom{n}{k} p^k (1-p)^{n-k}$$</span><br /></p>
+<h3 id="example-problems">Example Problems</h3>
+<h4 id="example-1-coin-flips">Example 1: Coin Flips</h4>
+<p>If we flip 10 coins and each coin has a probability of 0.6 for heads, what is the probability of getting exactly 6 heads? <br /><span class="math display">$$P(6 \text{ heads}) = \binom{10}{6} (0.6)^6 (0.4)^4$$</span><br /></p>
+<h4 id="example-2-router-functionality">Example 2: Router Functionality</h4>
+<p>If independent routers have various probabilities of functioning, the probability that at least one router is functioning can be calculated as: <br /><span class="math display">$$1 - P(\text{no router functioning}) = 1 - \prod_{i=1}^{n} (1 - p_i)$$</span><br /></p>
+<h3 id="conclusion-3">Conclusion</h3>
+<p>Understanding independence and mutual exclusivity are crucial skills for computing probabilities efficiently. The definitions and calculations introduced in this lecture lay the groundwork for solving more complex probability scenarios.</p>
+<h1 id="probability-and-random-variables">Probability and Random Variables</h1>
+<h3 id="introduction-2">Introduction</h3>
+<p>The lecture began with a warm welcome and an overview of logistics concerning problem sets and upcoming workshops. An introduction to key concepts in probability was provided, setting the stage for discussions on Bayes’ Theorem, random variables, and expectations.</p>
+<h3 id="key-concepts-in-probability">Key Concepts in Probability</h3>
+<h4 id="bayes-theorem-1">Bayes’ Theorem</h4>
+<p>Bayes’ Theorem is a fundamental concept in probability that describes how to update the probability estimate for a hypothesis as more evidence is acquired. It is expressed as: <br /><span class="math display">$$P(H | E) = \frac{P(E | H) P(H)}{P(E)}$$</span><br /> where:</p>
+<ul>
+<li><p><span class="math inline"><em>P</em>(<em>H</em>|<em>E</em>)</span> is the posterior probability,</p></li>
+<li><p><span class="math inline"><em>P</em>(<em>E</em>|<em>H</em>)</span> is the likelihood,</p></li>
+<li><p><span class="math inline"><em>P</em>(<em>H</em>)</span> is the prior probability,</p></li>
+<li><p><span class="math inline"><em>P</em>(<em>E</em>)</span> is the marginal likelihood.</p></li>
+</ul>
+<h4 id="law-of-total-probability">Law of Total Probability</h4>
+<p>The denominator of Bayes’ Theorem can be expressed using the Law of Total Probability: <br /><span class="math display"><em>P</em>(<em>E</em>) = ∑<sub><em>i</em></sub><em>P</em>(<em>E</em>|<em>H</em><sub><em>i</em></sub>)<em>P</em>(<em>H</em><sub><em>i</em></sub>)</span><br /> This allows for the calculation of probabilities over multiple possible outcomes.</p>
+<h3 id="problem-set-insights">Problem Set Insights</h3>
+<p>In the context of the problem sets, students were tasked with programming a solution involving Bayes’ Theorem, exploring more generalized scenarios with multiple outcomes rather than binary situations.</p>
+<h3 id="random-variables">Random Variables</h3>
+<h4 id="definition">Definition</h4>
+<p>A random variable <span class="math inline"><em>X</em></span> is a variable whose possible values are numerical outcomes of a random phenomenon. Random variables can be discrete or continuous.</p>
+<h4 id="probability-mass-function-pmf">Probability Mass Function (PMF)</h4>
+<p>A discrete random variable has a associated probability mass function <span class="math inline"><em>P</em>(<em>X</em> = <em>x</em>)</span> that provides the probability that the random variable takes on the value <span class="math inline"><em>x</em></span>. The PMF must satisfy: <br /><span class="math display">∑<sub><em>x</em></sub><em>P</em>(<em>X</em> = <em>x</em>) = 1</span><br /></p>
+<h4 id="expectation">Expectation</h4>
+<p>The expectation (or mean) of a random variable <span class="math inline"><em>X</em></span> is a measure of the central tendency of the random variable, defined as: <br /><span class="math display"><em>E</em>[<em>X</em>] = ∑<sub><em>x</em></sub><em>x</em><em>P</em>(<em>X</em> = <em>x</em>)</span><br /> This value may not correspond to a possible outcome of the random variable but gives a central measure.</p>
+<h4 id="example-of-expectation">Example of Expectation</h4>
+<p>For a fair six-sided die, the expectation is calculated as follows: <br /><span class="math display">$$E[X] = \frac{1}{6}(1 + 2 + 3 + 4 + 5 + 6) = 3.5$$</span><br /></p>
+<h3 id="conditional-independence">Conditional Independence</h3>
+<p>Two events <span class="math inline"><em>E</em></span> and <span class="math inline"><em>F</em></span> are conditionally independent given a third event <span class="math inline"><em>G</em></span> if: <br /><span class="math display"><em>P</em>(<em>E</em> ∩ <em>F</em>|<em>G</em>) = <em>P</em>(<em>E</em>|<em>G</em>)<em>P</em>(<em>F</em>|<em>G</em>)</span><br /> This means that information about event <span class="math inline"><em>G</em></span> does not change the dependence between <span class="math inline"><em>E</em></span> and <span class="math inline"><em>F</em></span>.</p>
+<h3 id="clarifications-and-common-confusions">Clarifications and Common Confusions</h3>
+<h4 id="events-vs.-random-variables">Events vs. Random Variables</h4>
+<p>It is important to note the distinction between events and random variables:</p>
+<ul>
+<li><p><strong>Events</strong> are the outcomes or the occurrences that can be true or false.</p></li>
+<li><p><strong>Random Variables</strong> are numerical quantities assigned to the outcomes of random phenomena.</p></li>
+</ul>
+<h3 id="conclusion-and-expectations-from-random-variables">Conclusion and Expectations from Random Variables</h3>
+<p>The lecture concluded with a challenge involving a game based on coin flips and expected winnings, leading to discussions around the implications of expectations when probabilistic outcomes diverge significantly.</p>
+<h3 id="further-discussion">Further Discussion</h3>
+<p>Students were encouraged to ask questions and discuss insights gained from the problem sets and assignments.</p>
+<h1 id="random-variables-binomial-distribution-and-variance">Random Variables, Binomial Distribution, and Variance</h1>
+<h3 id="learning-goals">Learning Goals</h3>
+<p>By the end of this lecture, you should be able to:</p>
+<ul>
+<li><p>Recognize a binomial random variable and solve related probability problems.</p></li>
+<li><p>Understand Bernoulli random variables and their applications.</p></li>
+<li><p>Calculate the variance of a random variable.</p></li>
+</ul>
+<h3 id="introduction-to-random-variables">Introduction to Random Variables</h3>
+<p>A <strong>random variable</strong> is a numerical outcome of a probabilistic process. It can take various outcomes, each with an associated probability. The relationship between these outcomes and their probabilities is captured by the <strong>probability mass function</strong> (PMF).</p>
+<p><br /><span class="math display"><em>P</em>(<em>X</em> = <em>x</em>) = PMF(<em>x</em>)</span><br /></p>
+<p>where <span class="math inline"><em>X</em></span> is a random variable, <span class="math inline"><em>x</em></span> is a particular outcome.</p>
+<h4 id="expectation-1">Expectation</h4>
+<p>The <strong>expectation</strong> (mean) of a random variable <span class="math inline"><em>X</em></span> is defined as: <br /><span class="math display"><em>E</em>[<em>X</em>] = ∑<sub><em>x</em></sub><em>x</em> ⋅ <em>P</em>(<em>X</em> = <em>x</em>)</span><br /></p>
+<p>Key properties of expectation:</p>
+<ul>
+<li><p>Linearity of expectation: <span class="math inline"><em>E</em>[<em>a</em><em>X</em> + <em>b</em><em>Y</em>] = <em>a</em><em>E</em>[<em>X</em>] + <em>b</em><em>E</em>[<em>Y</em>]</span></p></li>
+<li><p>When <span class="math inline"><em>X</em>, <em>Y</em></span> are independent, <span class="math inline"><em>E</em>[<em>X</em> + <em>Y</em>] = <em>E</em>[<em>X</em>] + <em>E</em>[<em>Y</em>]</span></p></li>
+</ul>
+<h3 id="binomial-distribution">Binomial Distribution</h3>
+<p>A Binomial random variable models the number of successes in <span class="math inline"><em>n</em></span> independent Bernoulli trials, each with a success probability <span class="math inline"><em>p</em></span>.</p>
+<p>The PMF of a binomially distributed random variable <span class="math inline"><em>X</em></span> is given by: <br /><span class="math display">$$P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$$</span><br /> where <span class="math inline">$\binom{n}{k}$</span> is the binomial coefficient.</p>
+<h4 id="examples-of-the-binomial-distribution">Examples of the Binomial Distribution</h4>
+<ul>
+<li><p>Flipping a coin <span class="math inline"><em>n</em></span> times and counting the number of heads (success).</p></li>
+<li><p>The number of voters that support a candidate given <span class="math inline"><em>n</em></span> voters and a probability <span class="math inline"><em>p</em></span> of support.</p></li>
+</ul>
+<h3 id="special-case-bernoulli-random-variable">Special Case: Bernoulli Random Variable</h3>
+<p>A Bernoulli random variable is a special case of the binomial distribution where <span class="math inline"><em>n</em> = 1</span>.</p>
+<p>It takes on two values: <br /><span class="math display">$$X = \begin{cases}
+1 &amp; \text{with probability } p \\
+0 &amp; \text{with probability } 1-p
+\end{cases}$$</span><br /></p>
+<h4 id="expectation-of-a-bernoulli-variable">Expectation of a Bernoulli Variable</h4>
+<p><br /><span class="math display"><em>E</em>[<em>X</em>] = <em>p</em></span><br /></p>
+<h3 id="variance">Variance</h3>
+<p>The variance of a random variable gives a measure of how spread out the values are. The formula for variance <span class="math inline">Var(<em>X</em>)</span> is defined as: <br /><span class="math display">Var(<em>X</em>) = <em>E</em>[(<em>X</em> − <em>μ</em>)<sup>2</sup>]</span><br /> where <span class="math inline"><em>μ</em> = <em>E</em>[<em>X</em>]</span>.</p>
+<p>Using the law of unconscious statistician: <br /><span class="math display">Var(<em>X</em>) = <em>E</em>[<em>X</em><sup>2</sup>] − (<em>E</em>[<em>X</em>])<sup>2</sup></span><br /> where <br /><span class="math display"><em>E</em>[<em>X</em><sup>2</sup>] = ∑<sub><em>x</em></sub><em>x</em><sup>2</sup> ⋅ <em>P</em>(<em>X</em> = <em>x</em>)</span><br /></p>
+<h3 id="conclusion-4">Conclusion</h3>
+<p>In today’s lecture, we covered the fundamentals of random variables, focusing on binomial and Bernoulli distributions, and calculated their expectations and variances. These concepts form the bedrock of probability theory, allowing for better understanding of data in future sessions.</p>
+<h1 id="introduction-to-poisson-distribution">Introduction to Poisson Distribution</h1>
+<h3 id="introduction-3">Introduction</h3>
+<p>In today’s class, we will explore the Poisson distribution, a fundamental concept in probability theory that is widely applicable in fields such as epidemiology, finance, and environmental science.</p>
+<h3 id="random-variables-1">Random Variables</h3>
+<h4 id="definition-1">Definition</h4>
+<p>A random variable is a variable that takes on values probabilistically, inheriting all the associated mathematical properties established by previous mathematicians.</p>
+<h4 id="types-of-random-variables">Types of Random Variables</h4>
+<p>We primarily distinguish between:</p>
+<ul>
+<li><p><strong>Discrete Random Variables</strong>: Countable outcomes with associated probabilities.</p></li>
+<li><p><strong>Continuous Random Variables</strong>: Outcomes in a continuous range.</p></li>
+</ul>
+<p>We have previously discussed discrete random variables, particularly the Binomial distribution, which models the number of successes in independent trials.</p>
+<h3 id="binomial-distribution-1">Binomial Distribution</h3>
+<h4 id="definition-2">Definition</h4>
+<p>Let <span class="math inline"><em>n</em></span> be the number of trials, and <span class="math inline"><em>p</em></span> the probability of success on each trial. The Binomial distribution models the number of successes, denoted as <span class="math inline"><em>X</em> ∼ Binomial(<em>n</em>, <em>p</em>)</span>.</p>
+<h4 id="probability-mass-function">Probability Mass Function</h4>
+<p>The probability of exactly <span class="math inline"><em>k</em></span> successes in <span class="math inline"><em>n</em></span> trials is given by: <br /><span class="math display">$$P(X = k) = \binom{n}{k} p^k (1 - p)^{n - k}$$</span><br /> where the binomial coefficient is defined as: <br /><span class="math display">$$\binom{n}{k} = \frac{n!}{k!(n - k)!}$$</span><br /></p>
+<h4 id="expectation-and-variance">Expectation and Variance</h4>
+<p>For a Binomial random variable:</p>
+<ul>
+<li><p>Expectation: <span class="math inline"><em>E</em>[<em>X</em>] = <em>n</em><em>p</em></span></p></li>
+<li><p>Variance: <span class="math inline">Var(<em>X</em>) = <em>n</em><em>p</em>(1 − <em>p</em>)</span></p></li>
+</ul>
+<h3 id="introduction-to-poisson-distribution-1">Introduction to Poisson Distribution</h3>
+<p>The Poisson distribution models the number of occurrences of an event over a fixed interval of time or space given a known average rate <span class="math inline"><em>λ</em></span>.</p>
+<h4 id="definition-3">Definition</h4>
+<p>A random variable <span class="math inline"><em>Y</em></span> is Poisson distributed if: <br /><span class="math display"><em>Y</em> ∼ Poisson(<em>λ</em>)</span><br /> where <span class="math inline"><em>λ</em></span> is the average rate of occurrences.</p>
+<h4 id="probability-mass-function-1">Probability Mass Function</h4>
+<p>The Poisson probability mass function is given by: <br /><span class="math display">$$P(Y = k) = \frac{\lambda^k e^{-\lambda}}{k!}$$</span><br /> for <span class="math inline"><em>k</em> = 0, 1, 2, …</span>.</p>
+<h4 id="connection-to-binomial-distribution">Connection to Binomial Distribution</h4>
+<p>When the number of trials <span class="math inline"><em>n</em></span> is large, and the probability of success <span class="math inline"><em>p</em></span> is small such that <span class="math inline"><em>λ</em> = <em>n</em> ⋅ <em>p</em></span> remains moderate, the Poisson distribution can be used as an approximation for the Binomial distribution.</p>
+<h4 id="expectation-and-variance-1">Expectation and Variance</h4>
+<p>For a Poisson random variable:</p>
+<ul>
+<li><p>Expectation: <span class="math inline"><em>E</em>[<em>Y</em>] = <em>λ</em></span></p></li>
+<li><p>Variance: <span class="math inline">Var(<em>Y</em>) = <em>λ</em></span></p></li>
+</ul>
+<h3 id="applications-of-poisson-distribution">Applications of Poisson Distribution</h3>
+<p>The Poisson distribution applies to various real-world scenarios, often where events occur independently over time, such as:</p>
+<ul>
+<li><p>Incoming calls to a call center</p></li>
+<li><p>The number of emails received in an hour</p></li>
+<li><p>Natural phenomena like earthquakes</p></li>
+</ul>
+<h3 id="example-analyzing-hurricane-data">Example: Analyzing Hurricane Data</h3>
+<p>In our class, we analyzed data from the HerDat Database, which records hurricanes in the Atlantic. The goal was to determine the average number of hurricanes per year.</p>
+<h4 id="calculating-the-rate">Calculating the Rate</h4>
+<p>The average rate <span class="math inline"><em>λ</em></span> was calculated as follows: <br /><span class="math display">$$\lambda = \frac{\text{Total Hurricanes}}{\text{Number of Years}}$$</span><br /></p>
+<p>Based on recorded data from 1851 to 1966: - Total Hurricanes: 975 - Number of Years: 115 - <span class="math inline">$\lambda = \frac{975}{115} \approx 8.5$</span></p>
+<h4 id="poisson-distribution-analysis">Poisson Distribution Analysis</h4>
+<p>With <span class="math inline"><em>λ</em> = 8.5</span>, we can model the number of hurricanes in a given year using a Poisson distribution: <br /><span class="math display">$$P(Y = k) = \frac{8.5^k e^{-8.5}}{k!}$$</span><br /></p>
+<p>We can determine the probability of having more than 15 hurricanes in a given year.</p>
+<p><br /><span class="math display">$$P(Y &gt; 15) = 1 - P(Y \leq 15) = 1 - \sum_{k=0}^{15} P(Y = k)$$</span><br /></p>
+<p>From historical data, the probability of exceeding 15 hurricanes in a year was found to be 1.3%.</p>
+<h4 id="distribution-shift-analysis">Distribution Shift Analysis</h4>
+<p>Post-1966, the data indicated years with 30 hurricanes, which were improbable under the initial Poisson model. The new analysis suggested a different Poisson distribution with potentially higher rates due to advancements in hurricane detection.</p>
+<h3 id="conclusion-5">Conclusion</h3>
+<p>Today’s exploration of the Poisson distribution showcased its utility in modeling rare events and highlighted the importance of recognizing underlying assumptions. Further insights were gathered through the analysis of hurricane data, which indicated a potential shift in hurricane frequency and intensity.</p>
+<h1 id="notes-on-continuous-random-variables">Notes on Continuous Random Variables</h1>
+<h3 id="introduction-4">Introduction</h3>
+<p>In this class, we will explore the concept of continuous random variables, building on prior knowledge of discrete random variables. Key topics will include various types of distributions, their properties, and the mathematical tools used to analyze them.</p>
+<h3 id="jump-to-random-variables">Jump to Random Variables</h3>
+<h4 id="random-variables-2">Random Variables</h4>
+<ul>
+<li><p>A random variable is a function that associates a numerical value with each outcome in a sample space.</p></li>
+<li><p>They can be discrete (taking on specific values) or continuous (taking on an infinite number of values within a range).</p></li>
+</ul>
+<h4 id="discrete-random-variables-recap">Discrete Random Variables Recap</h4>
+<p>1. Binomial Random Variable Represents the number of successes in <span class="math inline"><em>n</em></span> independent Bernoulli trials.<br />
+Probability Mass Function (PMF): <br /><span class="math display">$$P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}, \quad k = 0, 1, \ldots, n$$</span><br /> Expectation: <br /><span class="math display"><em>E</em>[<em>X</em>] = <em>n</em><em>p</em></span><br /> Variance: <br /><span class="math display"><em>V</em><em>a</em><em>r</em>[<em>X</em>] = <em>n</em><em>p</em>(1 − <em>p</em>)</span><br /></p>
+<p>2. Poisson Random Variable Models the number of events occurring in a fixed interval of time/space.<br />
+PMF: <br /><span class="math display">$$P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}, \quad k = 0, 1, 2, \ldots$$</span><br /> Expectation: <br /><span class="math display"><em>E</em>[<em>X</em>] = <em>λ</em></span><br /> Variance: <br /><span class="math display"><em>V</em><em>a</em><em>r</em>[<em>X</em>] = <em>λ</em></span><br /></p>
+<h4 id="new-random-variables">New Random Variables</h4>
+<p>1. Geometric Random Variable Models the number of trials until the first success.<br />
+PMF: <br /><span class="math display"><em>P</em>(<em>X</em> = <em>k</em>) = (1 − <em>p</em>)<sup><em>k</em> − 1</sup><em>p</em>,  <em>k</em> = 1, 2, …</span><br /> Expectation: <br /><span class="math display">$$E[X] = \frac{1}{p}$$</span><br /> Variance: <br /><span class="math display">$$Var[X] = \frac{1-p}{p^2}$$</span><br /></p>
+<p>2. Negative Binomial Random Variable Represents the number of trials until <span class="math inline"><em>r</em></span> successes.<br />
+PMF: <br /><span class="math display">$$P(X = n) = \binom{n-1}{r-1} p^r (1-p)^{n-r}, \quad n = r, r+1, r+2, \ldots$$</span><br /> Expectation: <br /><span class="math display">$$E[X] = \frac{r}{p}$$</span><br /> Variance: <br /><span class="math display">$$Var[X] = \frac{r(1-p)}{p^2}$$</span><br /></p>
+<h5 id="continuous-random-variables">Continuous Random Variables</h5>
+<p><strong>1. Introduction</strong></p>
+<ul>
+<li><p>Continuous random variables can take on an infinite number of values within a range.</p></li>
+<li><p>Key concept: Probability Density Function (PDF).</p></li>
+</ul>
+<p><strong>2. Probability Density Function (PDF)</strong> The PDF, <span class="math inline"><em>f</em>(<em>x</em>)</span>, gives the relative likelihood for the random variable to take on a given value.<br />
+Areas under the PDF represent probabilities:</p>
+<p><br /><span class="math display"><em>P</em>(<em>a</em> &lt; <em>X</em> &lt; <em>b</em>) = ∫<sub><em>a</em></sub><sup><em>b</em></sup><em>f</em>(<em>x</em>) <em>d</em><em>x</em></span><br /></p>
+<ul>
+<li><p>Total area under the PDF equals 1:</p></li>
+</ul>
+<p><br /><span class="math display">∫<sub> − ∞</sub><sup>∞</sup><em>f</em>(<em>x</em>) <em>d</em><em>x</em> = 1</span><br /></p>
+<p><strong>3. Uniform Distribution</strong></p>
+<p>All outcomes are equally likely between <span class="math inline"><em>a</em></span> and <span class="math inline"><em>b</em></span>.<br />
+PDF: <br /><span class="math display">$$f(x) = \begin{cases}
+       \frac{1}{b-a}, &amp; \text{if } a \leq x \leq b \\
+       0, &amp; \text{otherwise}
+     \end{cases}$$</span><br /></p>
+<p><strong>4. Exponential Distribution</strong></p>
+<p>Models the time until an event occurs (e.g., waiting time until an earthquake).<br />
+PDF: <br /><span class="math display"><em>f</em>(<em>x</em>) = <em>λ</em><em>e</em><sup> − <em>λ</em><em>x</em></sup>,  <em>x</em> ≥ 0</span><br /> Expectation: <br /><span class="math display">$$E[X] = \frac{1}{\lambda}$$</span><br /> Variance: <br /><span class="math display">$$Var[X] = \frac{1}{\lambda^2}$$</span><br /></p>
+<h5 id="application-of-continuous-random-variables">Application of Continuous Random Variables</h5>
+<p>1. Using the PDF to Calculate Probabilities - Probability that <span class="math inline"><em>X</em></span> exceeds a value can be derived using: <br /><span class="math display"><em>P</em>(<em>X</em> &gt; <em>x</em>) = 1 − <em>P</em>(<em>X</em> ≤ <em>x</em>) = 1 − ∫<sub> − ∞</sub><sup><em>x</em></sup><em>f</em>(<em>t</em>) <em>d</em><em>t</em></span><br /></p>
+<p>2. Cumulative Distribution Function (CDF) - CDF, <span class="math inline"><em>F</em>(<em>x</em>)</span>, is the probability that the random variable is less than or equal to a certain value: <br /><span class="math display"><em>F</em>(<em>x</em>) = <em>P</em>(<em>X</em> ≤ <em>x</em>) = ∫<sub> − ∞</sub><sup><em>x</em></sup><em>f</em>(<em>t</em>) <em>d</em><em>t</em></span><br /></p>
+<p>3. Conversion from PDF to CDF - To compute a desired probability, leverage the CDF when possible: <br /><span class="math display"><em>P</em>(<em>a</em> &lt; <em>X</em> &lt; <em>b</em>) = <em>F</em>(<em>b</em>) − <em>F</em>(<em>a</em>)</span><br /></p>
+<h3 id="conclusion-6">Conclusion</h3>
+<p>Understanding continuous random variables and their corresponding properties is essential in applied statistics and fields such as machine learning. This framework allows for the analysis of real-world phenomena where predictions and assessments rely on an understanding of distributions, expectations, and variances.</p>
+<h1 id="notes-on-the-normal-distribution">Notes on the Normal Distribution</h1>
+<h3 id="random-variables-3">Random Variables</h3>
+<p>Recall that random variables can be classified into:</p>
+<ul>
+<li><p>Discrete Random Variables: Take on distinct values (e.g., number of coin flips).</p></li>
+<li><p>Continuous Random Variables: Take on any value within a range (e.g., height, weight).</p></li>
+</ul>
+<h4 id="probability-and-continuous-variables">Probability and Continuous Variables</h4>
+<p>For continuous random variables:</p>
+<ul>
+<li><p>Direct probability measurements (like <span class="math inline"><em>P</em>(<em>X</em> = <em>x</em>)</span>) are not applicable.</p></li>
+<li><p>Instead, we consider the probability of occurrence within an interval, so <br /><span class="math display"><em>P</em>(<em>a</em> &lt; <em>X</em> &lt; <em>b</em>) = ∫<sub><em>a</em></sub><sup><em>b</em></sup><em>f</em><sub><em>X</em></sub>(<em>x</em>) <em>d</em><em>x</em>  where <em>f</em><sub><em>X</em></sub>(<em>x</em>) is the probability density function (PDF).</span><br /></p></li>
+</ul>
+<h3 id="the-normal-distribution">The Normal Distribution</h3>
+<p>The Normal Distribution, also known as the Gaussian distribution, is defined by its probability density function: <br /><span class="math display">$$f(x) = \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}$$</span><br /> where:</p>
+<ul>
+<li><p><span class="math inline"><em>μ</em></span> is the mean (location of the center).</p></li>
+<li><p><span class="math inline"><em>σ</em><sup>2</sup></span> is the variance (width of the bell curve).</p></li>
+<li><p>The support of the normal distribution is from <span class="math inline"> − ∞</span> to <span class="math inline">∞</span>.</p></li>
+</ul>
+<h4 id="properties">Properties</h4>
+<ul>
+<li><p>Mean <span class="math inline"><em>μ</em></span> and variance <span class="math inline"><em>σ</em><sup>2</sup></span> completely characterize the normal distribution.</p></li>
+<li><p>The expected value (mean) is: <br /><span class="math display"><em>E</em>(<em>X</em>) = <em>μ</em></span><br /></p></li>
+<li><p>The variance is: <br /><span class="math display"><em>V</em><em>a</em><em>r</em>(<em>X</em>) = <em>σ</em><sup>2</sup></span><br /></p></li>
+</ul>
+<h4 id="cumulative-distribution-function-cdf">Cumulative Distribution Function (CDF)</h4>
+<p>The CDF for the normal distribution can be expressed as: <br /><span class="math display"><em>F</em>(<em>x</em>) = <em>P</em>(<em>X</em> ≤ <em>x</em>) = ∫<sub> − ∞</sub><sup><em>x</em></sup><em>f</em>(<em>t</em>) <em>d</em><em>t</em></span><br /> Since it has no closed form, it is often approximated or referenced through standardized values.</p>
+<h4 id="standard-normal-distribution">Standard Normal Distribution</h4>
+<p>A special case of the normal distribution is the standard normal distribution which has <span class="math inline"><em>μ</em> = 0</span> and <span class="math inline"><em>σ</em><sup>2</sup> = 1</span>. The PDF simplifies to: <br /><span class="math display">$$f(z) = \frac{1}{\sqrt{2 \pi}} e^{-\frac{z^2}{2}}$$</span><br /> To convert any normal variable to the standard normal form, we apply: <br /><span class="math display">$$Z = \frac{X - \mu}{\sigma}$$</span><br /></p>
+<h3 id="applications">Applications</h3>
+<h4 id="using-the-normal-distribution">Using the Normal Distribution</h4>
+<p>Probability problems involving the normal distribution generally follow these steps:</p>
+<ol>
+<li><p>Define the random variable.</p></li>
+<li><p>Determine its mean and standard deviation.</p></li>
+<li><p>Utilize the Z-score to convert to standard normal.</p></li>
+<li><p>Reference the CDF, either through tables or computational tools.</p></li>
+</ol>
+<h4 id="continuity-correction">Continuity Correction</h4>
+<p>For discrete distributions approximated by continuous distributions (e.g., Binomial approximated by Normal):</p>
+<ul>
+<li><p>A continuity correction should be applied, usually adding or subtracting 0.5.</p></li>
+</ul>
+<h3 id="computer-simulation-and-sampling">Computer Simulation and Sampling</h3>
+<p>Many problems can be solved through computer simulation using the Monte Carlo method or direct sampling from the distributions using software tools that provide standard normal computation.</p>
+<h3 id="conclusions">Conclusions</h3>
+<p>The Normal Distribution is a foundational concept in statistics and used in various fields, from natural phenomena to data science. Its mastery is crucial for understanding more advanced topics in probability and statistics.</p>
+<h1 id="probability-notes">Probability Notes</h1>
+<h3 id="introduction-5">Introduction</h3>
+<p>In this session, we explored exciting concepts in probability, focusing on the transition from basic probability theory to solving real-world problems using probabilistic models. We also discussed a historical mystery related to the authorship of the Federalist Papers.</p>
+<h3 id="normal-distribution">Normal Distribution</h3>
+<p>The normal distribution is a fundamental concept in probability that has applications in various real-world situations.</p>
+<h4 id="probability-density-function-pdf">Probability Density Function (PDF)</h4>
+<p>The normal distribution is defined by its probability density function, given by:</p>
+<p><br /><span class="math display">$$f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}$$</span><br /></p>
+<p>where:</p>
+<ul>
+<li><p><span class="math inline"><em>μ</em></span> is the mean,</p></li>
+<li><p><span class="math inline"><em>σ</em><sup>2</sup></span> is the variance,</p></li>
+<li><p><span class="math inline"><em>e</em></span> is the base of the natural logarithm.</p></li>
+</ul>
+<h4 id="cumulative-distribution-function-cdf-1">Cumulative Distribution Function (CDF)</h4>
+<p>The cumulative distribution function (CDF) is defined as:</p>
+<p><br /><span class="math display">$$F(x) = P(X \leq x) = \Phi\left(\frac{x - \mu}{\sigma}\right)$$</span><br /></p>
+<p>where <span class="math inline"><em>Φ</em></span> represents the CDF of the standard normal distribution.</p>
+<h4 id="finding-probabilities">Finding Probabilities</h4>
+<p>To find the probability that a normally distributed random variable <span class="math inline"><em>X</em></span> is less than some value <span class="math inline"><em>x</em></span>, we use the formula:</p>
+<p><br /><span class="math display">$$P(X &lt; x) = \Phi\left(\frac{x - \mu}{\sigma}\right)$$</span><br /></p>
+<p>where <span class="math inline"><em>μ</em></span> is the mean and <span class="math inline"><em>σ</em></span> is the standard deviation.</p>
+<h3 id="joint-probability-mass-function">Joint Probability Mass Function</h3>
+<p>When dealing with two random variables <span class="math inline"><em>X</em></span> and <span class="math inline"><em>Y</em></span>, the joint probability mass function (PMF) is represented as <span class="math inline"><em>P</em>(<em>X</em> = <em>x</em>, <em>Y</em> = <em>y</em>)</span>. It provides complete information about the probabilities of different outcomes.</p>
+<h4 id="marginalization">Marginalization</h4>
+<p>The marginal probability of <span class="math inline"><em>X</em></span> can be obtained by summing over all possible values of <span class="math inline"><em>Y</em></span>:</p>
+<p><br /><span class="math display"><em>P</em>(<em>X</em> = <em>x</em>) = ∑<sub><em>y</em></sub><em>P</em>(<em>X</em> = <em>x</em>, <em>Y</em> = <em>y</em>)</span><br /></p>
+<p>This technique allows us to extract information about one variable while ignoring the other.</p>
+<h4 id="joint-probability-table">Joint Probability Table</h4>
+<p>For discrete random variables, a joint probability table can be created to summarize the probabilities of all combinations of values taken by <span class="math inline"><em>X</em></span> and <span class="math inline"><em>Y</em></span>.</p>
+<h3 id="multinomial-distribution">Multinomial Distribution</h3>
+<p>The multinomial distribution generalizes the binomial distribution for cases with more than two outcomes. It describes the probabilities of counts of <span class="math inline"><em>k</em></span> different outcomes observed in <span class="math inline"><em>n</em></span> trials.</p>
+<h4 id="probability-mass-function-2">Probability Mass Function</h4>
+<p>The multinomial PMF is given by:</p>
+<p><br /><span class="math display">$$P(X_1 = k_1, X_2 = k_2, \ldots, X_k = k_k) = \frac{n!}{k_1! k_2! \cdots k_k!} p_1^{k_1} p_2^{k_2} \cdots p_k^{k_k}$$</span><br /></p>
+<p>where <span class="math inline"><em>p</em><sub><em>i</em></sub></span> is the probability of outcome <span class="math inline"><em>i</em></span> occurring, and <span class="math inline"><em>k</em><sub><em>i</em></sub></span> is the count of those outcomes.</p>
+<h3 id="application-authorship-of-the-federalist-papers">Application: Authorship of the Federalist Papers</h3>
+<p>In investigating who authored the Federalist Papers, specifically Paper 53, we can model the problem using the multinomial distribution.</p>
+<h4 id="data-collection">Data Collection</h4>
+<p>We collect the text from the Federalist Papers and text segments known to be written by Hamilton and Madison. The goal is to use word counts to derive probabilities.</p>
+<h4 id="bayes-theorem-in-authorship-attribution">Bayes’ Theorem in Authorship Attribution</h4>
+<p>We want to find the probability of an author given the document:</p>
+<p><br /><span class="math display">$$P(H | D) = \frac{P(D | H)P(H)}{P(D)}$$</span><br /></p>
+<p>This leads to the ratio:</p>
+<p><br /><span class="math display">$$\frac{P(D | H)P(H)}{P(D | M)P(M)}$$</span><br /></p>
+<p>The multinomial model allows us to compute <span class="math inline"><em>P</em>(<em>D</em>|<em>H</em>)</span> and <span class="math inline"><em>P</em>(<em>D</em>|<em>M</em>)</span> efficiently based on word counts observed in the text.</p>
+<h3 id="conclusion-7">Conclusion</h3>
+<p>In summary, the session covered fundamental probability concepts including the normal distribution, marginalization in joint distributions, and the multinomial distribution. We also discussed an intriguing application involving the Federalist Papers, demonstrating the power of probabilistic models in solving historical questions.</p>
+<h1 id="inference-and-belief-updates">Inference and Belief Updates</h1>
+<h3 id="lecture-overview">Lecture Overview</h3>
+<ul>
+<li><p>Importance of filling out midterm attendance forms for seating arrangements.</p></li>
+<li><p>Today’s topic: inference and belief updates using probability mass functions (PMF) and probability density functions (PDF).</p></li>
+<li><p>A fun narrative to illustrate the importance of probability and inference.</p></li>
+</ul>
+<h3 id="key-concepts">Key Concepts</h3>
+<h4 id="random-variables-and-inference">Random Variables and Inference</h4>
+<p>Inference is formally about how we adjust our beliefs regarding random variables upon observing new evidence. The equations involved include: <br /><span class="math display">$$\begin{aligned}
+    P(A | B) &amp;= \frac{P(A, B)}{P(B)}\end{aligned}$$</span><br /> where <span class="math inline"><em>P</em>(<em>A</em>|<em>B</em>)</span> is the conditional probability of event <span class="math inline"><em>A</em></span> given event <span class="math inline"><em>B</em></span>.</p>
+<h4 id="joint-distributions">Joint Distributions</h4>
+<p>Understanding multiple random variables interacting is vital. For instance, if we have two random variables <span class="math inline"><em>X</em></span> and <span class="math inline"><em>Y</em></span>, their joint distribution is represented as: <br /><span class="math display">$$\begin{aligned}
+    P(X, Y) = P(X | Y) \cdot P(Y)\end{aligned}$$</span><br /></p>
+<h4 id="bayes-theorem-2">Bayes’ Theorem</h4>
+<p>Bayes’ theorem is fundamental in updating our beliefs. It can be stated as: <br /><span class="math display">$$\begin{aligned}
+    P(H | D) = \frac{P(D | H) \cdot P(H)}{P(D)}\end{aligned}$$</span><br /> where:</p>
+<ul>
+<li><p><span class="math inline"><em>H</em></span>: Hypothesis (e.g., author of a document)</p></li>
+<li><p><span class="math inline"><em>D</em></span>: Data (e.g., content of the document)</p></li>
+<li><p><span class="math inline"><em>P</em>(<em>D</em>|<em>H</em>)</span>: Likelihood of data given the hypothesis</p></li>
+<li><p><span class="math inline"><em>P</em>(<em>H</em>)</span>: Prior belief in the hypothesis</p></li>
+<li><p><span class="math inline"><em>P</em>(<em>D</em>)</span>: Normalization constant</p></li>
+</ul>
+<h3 id="probabilities-and-density-functions">Probabilities and Density Functions</h3>
+<p>A critical insight is understanding that for continuous random variables, the probability at a precise value is zero. Instead, we consider ranges or density functions. For a continuous random variable: <br /><span class="math display">$$\begin{aligned}
+    P(X = x) = 0 \quad \text{for any specific } x\end{aligned}$$</span><br /> However, we can define: <br /><span class="math display">$$\begin{aligned}
+    P(a &lt; X &lt; b) = \int_a^b f_X(x) \, dx\end{aligned}$$</span><br /> where <span class="math inline"><em>f</em><sub><em>X</em></sub>(<em>x</em>)</span> is the probability density function.</p>
+<h4 id="epsilon-trick">Epsilon Trick</h4>
+<p>When working with the probability density function: <br /><span class="math display">$$\begin{aligned}
+    P(X = x) \approx f_X(x) \cdot \epsilon\end{aligned}$$</span><br /> where <span class="math inline"><em>ϵ</em></span> represents a very small number.</p>
+<h3 id="application-elephants">Application: Elephants</h3>
+<p>We utilized a hypothetical situation involving elephant weights to illustrate Bayesian inference with continuous and discrete probability: <br /><span class="math display">$$\begin{aligned}
+    P(G = 1 | X = 163) = \frac{P(X = 163 | G = 1) \cdot P(G = 1)}{P(X = 163)}\end{aligned}$$</span><br /> where <span class="math inline"><em>G</em> = 1</span> signifies a female elephant.</p>
+<h4 id="normal-distributions">Normal Distributions</h4>
+<p>For the weights: <br /><span class="math display">$$\begin{aligned}
+    X | G=1 \sim \mathcal{N}(\mu_1, \sigma_1^2) \quad \text{and} \quad X | G=0 \sim \mathcal{N}(\mu_0, \sigma_0^2)\end{aligned}$$</span><br /> where you would compute <span class="math inline"><em>P</em>(<em>X</em> = 163|<em>G</em> = 1)</span> using the normal PDF: <br /><span class="math display">$$\begin{aligned}
+    f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}\end{aligned}$$</span><br /></p>
+<h3 id="conclusion-and-takeaways">Conclusion and Takeaways</h3>
+<p>Understanding inference involves grasping how to update our beliefs using joint distributions and applying Bayes’ theorem effectively. Continuous variables require special consideration, especially in terms of using density functions instead of probabilities.</p>
+<p>We will explore practical applications of this mathematics in real-world scenarios, specifically regarding the Stanford Acuity Test, an eye test that employs inference principles to update beliefs about visual acuity.</p>
+<h1 id="bayesian-inference-and-item-response-theory">Bayesian Inference and Item Response Theory</h1>
+<h3 id="introduction-6">Introduction</h3>
+<p>In this lecture, we explore Bayesian inference in the context of the Stanford Eye Test, where we estimate an individual’s visual acuity based on their responses to letters of varying sizes.</p>
+<h3 id="bayesian-inference">Bayesian Inference</h3>
+<p>Bayesian inference allows us to update our beliefs about a random variable based on new evidence. The fundamental tool we use is <strong>Bayes’ Theorem</strong>:</p>
+<p><br /><span class="math display">$$P(A | B) = \frac{P(B | A) P(A)}{P(B)}$$</span><br /></p>
+<p>Where:</p>
+<ul>
+<li><p><span class="math inline"><em>P</em>(<em>A</em>|<em>B</em>)</span> is the posterior probability: the probability of hypothesis <span class="math inline"><em>A</em></span> given the evidence <span class="math inline"><em>B</em></span>.</p></li>
+<li><p><span class="math inline"><em>P</em>(<em>B</em>|<em>A</em>)</span> is the likelihood: the probability of observing evidence <span class="math inline"><em>B</em></span> given <span class="math inline"><em>A</em></span>.</p></li>
+<li><p><span class="math inline"><em>P</em>(<em>A</em>)</span> is the prior probability of <span class="math inline"><em>A</em></span>.</p></li>
+<li><p><span class="math inline"><em>P</em>(<em>B</em>)</span> is the evidence or marginal likelihood of <span class="math inline"><em>B</em></span>.</p></li>
+</ul>
+<p>This theorem enables us to update our probability beliefs as we gain more evidence.</p>
+<h3 id="application-stanford-eye-test">Application: Stanford Eye Test</h3>
+<p>The Stanford Eye Test involves presenting letters of varying sizes to a subject and recording whether their responses are correct or not. Given a letter size <span class="math inline"><em>s</em></span> and a response <span class="math inline"><em>y</em></span> (correct/incorrect), we want to update our belief about the subject’s visual acuity <span class="math inline"><em>A</em></span>:</p>
+<p><br /><span class="math display">$$P(A | Y = y, S = s) = \frac{P(Y = y | A, S = s) P(A)}{P(Y = y | S = s)}$$</span><br /></p>
+<h4 id="prior-belief">Prior Belief</h4>
+<p>The prior belief about the ability to see can be represented in various forms:</p>
+<ul>
+<li><p>As a probability distribution over acuity levels.</p></li>
+<li><p>As a lookup table (or dictionary) in programming, mapping acuity values to their probabilities.</p></li>
+</ul>
+<h4 id="likelihood">Likelihood</h4>
+<p>The likelihood term <span class="math inline"><em>P</em>(<em>Y</em> = <em>y</em>|<em>A</em>, <em>S</em> = <em>s</em>)</span> is critical. It describes how likely an observation (getting a specific letter correct or incorrect) is given the subject’s ability:</p>
+<p><br /><span class="math display"><em>P</em>(<em>Y</em> = <em>y</em>|<em>A</em> = <em>a</em>, <em>S</em> = <em>s</em>) = <em>f</em>(<em>a</em>, <em>s</em>)</span><br /></p>
+<p>Where <span class="math inline"><em>f</em>(<em>a</em>, <em>s</em>)</span> is a function determined through empirical data or theoretical models.</p>
+<h3 id="normalization-constant">Normalization Constant</h3>
+<p>The normalization constant <span class="math inline"><em>P</em>(<em>Y</em> = <em>y</em>|<em>S</em> = <em>s</em>)</span> assures that probabilities sum to one after updating:</p>
+<p><br /><span class="math display"><em>P</em>(<em>Y</em> = <em>y</em>|<em>S</em> = <em>s</em>) = ∑<sub><em>a</em></sub><em>P</em>(<em>Y</em> = <em>y</em>|<em>A</em> = <em>a</em>, <em>S</em> = <em>s</em>)<em>P</em>(<em>A</em> = <em>a</em>)</span><br /></p>
+<p>This is calculated across all possible acuity levels <span class="math inline"><em>a</em></span> to ensure the posterior probability is valid.</p>
+<h3 id="item-response-theory">Item Response Theory</h3>
+<p>Item Response Theory (IRT) is a statistical framework used for modeling the probability of a correct response on a test item based on a person’s latent traits (ability) and the item’s characteristics (difficulty).</p>
+<p><br /><span class="math display">$$P(y = 1 | a, d) = \sigma(a - d) = \frac{1}{1 + e^{-(a - d)}}$$</span><br /></p>
+<p>Where:</p>
+<ul>
+<li><p><span class="math inline"><em>y</em> = 1</span> indicates a correct response.</p></li>
+<li><p><span class="math inline"><em>a</em></span> denotes the ability of the person.</p></li>
+<li><p><span class="math inline"><em>d</em></span> denotes the difficulty of the item.</p></li>
+<li><p><span class="math inline"><em>σ</em>( ⋅ )</span> is the logistic function that maps any real-valued number into a (0, 1) range.</p></li>
+</ul>
+<p>The probability of an incorrect response is simply:</p>
+<p><br /><span class="math display"><em>P</em>(<em>y</em> = 0|<em>a</em>, <em>d</em>) = 1 − <em>P</em>(<em>y</em> = 1|<em>a</em>, <em>d</em>)</span><br /></p>
+<h4 id="incorporating-guessing-and-slipping">Incorporating Guessing and Slipping</h4>
+<p>It’s vital to account for potential guessing errors or slips (failing to respond correctly even when the answer is known):</p>
+<p><br /><span class="math display"><em>P</em>(<em>y</em> = 1|<em>a</em>, <em>d</em>) = (1 − <em>p</em><sub>slip</sub>)<em>σ</em>(<em>a</em> − <em>d</em>) + <em>p</em><sub>guess</sub></span><br /></p>
+<p>Where <span class="math inline"><em>p</em><sub>slip</sub></span> is the probability of making a mistake despite knowing the answer, and <span class="math inline"><em>p</em><sub>guess</sub></span> is the probability of guessing correctly.</p>
+<h3 id="updating-beliefs-with-multiple-observations">Updating Beliefs with Multiple Observations</h3>
+<p>When new observations arise, we can iteratively update our beliefs. Each new observation’s corresponding posterior becomes the prior for the next iteration.</p>
+<p>For two observations, we have:</p>
+<p><br /><span class="math display">$$\begin{aligned}
+P(A | Y_1 = y_1, S_1 = s_1) &amp; \text{ (update belief with the first observation)} \\
+P(A | Y_2 = y_2, S_2 = s_2) &amp; \text{ (update belief with the second observation using the posterior from the first)}\end{aligned}$$</span><br /></p>
+<p>This process loops through each observation, gradually refining our estimates of acuity based on cumulative evidence.</p>
+<h3 id="conclusion-8">Conclusion</h3>
+<p>By applying Bayes’ theorem and item response theory, we can create a robust framework for estimating human visual acuity based on probabilistic models. Understanding how to update beliefs with new evidence is fundamental not only in this context but across various domains.</p>
+<h1 id="probabilistic-modeling-and-bayesian-networks">Probabilistic Modeling and Bayesian Networks</h1>
+<h3 id="understanding-joint-distributions">Understanding Joint Distributions</h3>
+<p>The core idea of probabilistic models is the concept of <strong>joint distributions</strong>. A joint distribution allows us to describe the probability of multiple random variables occurring at once:</p>
+<p><br /><span class="math display"><em>P</em>(<em>X</em><sub>1</sub>, <em>X</em><sub>2</sub>, …, <em>X</em><sub><em>n</em></sub>)</span><br /></p>
+<p>This represents the complete information about the probabilistic model involving random variables <span class="math inline"><em>X</em><sub>1</sub>, <em>X</em><sub>2</sub>, …, <em>X</em><sub><em>n</em></sub></span>.</p>
+<h4 id="inference">Inference</h4>
+<p>Once we have a joint distribution, we can perform <strong>inference</strong>, which involves updating beliefs about one or more variables given the observed values of others.</p>
+<p>An example discussed was whether one could determine the gender of an elephant from its weight. We start with the prior distribution:</p>
+<p><br /><span class="math display"><em>P</em>(<em>G</em><em>e</em><em>n</em><em>d</em><em>e</em><em>r</em>|<em>W</em><em>e</em><em>i</em><em>g</em><em>h</em><em>t</em>)</span><br /></p>
+<p>and apply Bayes’ theorem to compute the posterior distribution:</p>
+<p><br /><span class="math display">$$P(Gender | Weight) = \frac{P(Weight | Gender) \cdot P(Gender)}{P(Weight)}$$</span><br /></p>
+<p>In more complex scenarios, such as inferring a variable that can take multiple values, we may need to perform multiple iterations of Bayes’ theorem.</p>
+<h3 id="bayesian-networks">Bayesian Networks</h3>
+<p>A <strong>Bayesian Network</strong> is a graphical model that represents a set of variables and their conditional dependencies through a directed acyclic graph (DAG).</p>
+<h4 id="structure-of-a-bayesian-network">Structure of a Bayesian Network</h4>
+<p>Each node represents a random variable, while directed edges imply causality. For example, consider the following variables:</p>
+<ul>
+<li><p><span class="math inline"><em>F</em></span>: Flu (disease)</p></li>
+<li><p><span class="math inline"><em>T</em></span>: Tiredness (symptom)</p></li>
+<li><p><span class="math inline"><em>F</em><em>e</em></span>: Fever (symptom)</p></li>
+<li><p><span class="math inline"><em>U</em></span>: Undergraduate (pre-existing condition)</p></li>
+</ul>
+<p>The structure might look like this:</p>
+<p><br /><span class="math display">$$\begin{array}{c}
+\text{Flu} \\
+\downarrow \\
+\text{Fever, Tiredness} \\
+\downarrow \\
+\text{Undergraduate} 
+\end{array}$$</span><br /></p>
+<h4 id="probabilities-in-bayesian-networks">Probabilities in Bayesian Networks</h4>
+<p>To define a Bayesian Network, we need to specify probabilities for each variable conditioned on its parents. For example:</p>
+<p><br /><span class="math display"><em>P</em>(<em>F</em><em>e</em>|<em>F</em>)  and  <em>P</em>(<em>T</em>|<em>F</em>, <em>U</em>)</span><br /></p>
+<p>This leads to a product of probabilities that reconstructs the joint distribution:</p>
+<p><br /><span class="math display"><em>P</em>(<em>F</em>, <em>T</em>, <em>F</em><em>e</em>, <em>U</em>) = <em>P</em>(<em>F</em>) ⋅ <em>P</em>(<em>U</em>) ⋅ <em>P</em>(<em>F</em><em>e</em>|<em>F</em>) ⋅ <em>P</em>(<em>T</em>|<em>F</em>, <em>U</em>)</span><br /></p>
+<h3 id="calculating-covariances-and-independence">Calculating Covariances and Independence</h3>
+<p>In probabilistic modeling, understanding independence and the relation between random variables is paramount.</p>
+<h4 id="independence-definition">Independence Definition</h4>
+<p>Two random variables <span class="math inline"><em>X</em></span> and <span class="math inline"><em>Y</em></span> are independent if:</p>
+<p><br /><span class="math display"><em>P</em>(<em>X</em> ∩ <em>Y</em>) = <em>P</em>(<em>X</em>) ⋅ <em>P</em>(<em>Y</em>)</span><br /></p>
+<p>This dictate that knowledge about <span class="math inline"><em>X</em></span> provides no information about <span class="math inline"><em>Y</em></span>, and vice versa.</p>
+<h4 id="covariance">Covariance</h4>
+<p>Covariance provides a measure of how much two random variables co-vary. It is defined as:</p>
+<p><br /><span class="math display">Cov(<em>X</em>, <em>Y</em>) = <em>E</em>[(<em>X</em>−<em>E</em>[<em>X</em>])(<em>Y</em>−<em>E</em>[<em>Y</em>])]</span><br /></p>
+<p>Alternatively, it can be computed as:</p>
+<p><br /><span class="math display">Cov(<em>X</em>, <em>Y</em>) = <em>E</em>[<em>X</em><em>Y</em>] − <em>E</em>[<em>X</em>]<em>E</em>[<em>Y</em>]</span><br /></p>
+<h4 id="finding-independencies-from-data">Finding Independencies from Data</h4>
+<p>To discover the independence structure within data, one can calculate the covariance matrix. For instance, if variables have high covariance, they may be related.</p>
+<h3 id="conclusion-9">Conclusion</h3>
+<p>This lecture introduced us to probabilistic modeling and Bayesian networks. Understanding joint distributions and inference allows us to compute complex relationships in data efficiently. Furthermore, covariance and independence are essential for developing robust probabilistic models.</p>
+<h3 id="future-work">Future Work</h3>
+<p>In upcoming lectures, we will explore rejection sampling and further applications of Bayesian networks.</p>
+<h1 id="general-inference-and-rejection-sampling">General Inference and Rejection Sampling</h1>
+<h3 id="introduction-7">Introduction</h3>
+<p>In today’s lecture, we cover important concepts related to probability inference, particularly focusing on an algorithm called <strong>Rejection Sampling</strong>. This technique is critically useful in probabilistic models, particularly Bayesian Networks (B-Nets).</p>
+<h3 id="key-concepts-1">Key Concepts</h3>
+<h4 id="bayesian-networks-1">Bayesian Networks</h4>
+<p>A Bayesian Network is a graphical model that represents a set of variables and their conditional dependencies via a directed acyclic graph (DAG). The notable features include:</p>
+<ul>
+<li><p>Nodes represent random variables.</p></li>
+<li><p>Directed edges represent conditional dependencies.</p></li>
+<li><p>The joint probability distribution can be compactly encoded as follows:</p>
+<p><br /><span class="math display">$$P(X_1, X_2, \ldots, X_n) = \prod_{i=1}^n P(X_i \mid \text{Parents}(X_i))$$</span><br /></p></li>
+</ul>
+<h4 id="conditional-probability-and-inference">Conditional Probability and Inference</h4>
+<p>Inference in a Bayesian Network involves calculating conditional probabilities that define the relationships among variables. Given random variables <span class="math inline"><em>A</em></span> and <span class="math inline"><em>B</em></span>:</p>
+<p><br /><span class="math display">$$P(A | B) = \frac{P(A, B)}{P(B)}$$</span><br /></p>
+<p>Computing <span class="math inline"><em>P</em>(<em>A</em>, <em>B</em>)</span> typically requires marginalization over other variables, potentially yielding computationally intense calculations if many variables exist.</p>
+<h4 id="covariance-1">Covariance</h4>
+<p>Covariance quantifies how much two random variables change together. For random variables <span class="math inline"><em>X</em></span> and <span class="math inline"><em>Y</em></span>, it is defined as:</p>
+<p><br /><span class="math display">Cov(<em>X</em>, <em>Y</em>) = <em>E</em>[(<em>X</em> − <em>E</em>[<em>X</em>])(<em>Y</em> − <em>E</em>[<em>Y</em>])] = <em>E</em>[<em>X</em><em>Y</em>] − <em>E</em>[<em>X</em>]<em>E</em>[<em>Y</em>]</span><br /></p>
+<p>The range of covariance is not bounded, which complicates interpretations.</p>
+<h4 id="correlation">Correlation</h4>
+<p>Correlation, a scaled version of covariance, is bounded between -1 and 1. It is computed as:</p>
+<p><br /><span class="math display">$$\rho(X, Y) = \frac{\text{Cov}(X, Y)}{\sigma_X \sigma_Y}$$</span><br /></p>
+<p>High correlations should be interpreted carefully, as non-independent variables can also yield zero correlation.</p>
+<h3 id="rejection-sampling">Rejection Sampling</h3>
+<p>Rejection sampling is a Monte Carlo method for generating random samples from a distribution by using easy-to-sample distributions. The primary steps are:</p>
+<ol>
+<li><p>Generate a large number of samples from the joint distribution.</p></li>
+<li><p>Retain samples that conform to specific observed conditions.</p></li>
+</ol>
+<p>The algorithm can be summarized as follows:</p>
+<ul>
+<li><p>Define a Bayesian Network and its parameters.</p></li>
+<li><p>Collect observations <span class="math inline"><em>O</em></span>.</p></li>
+<li><p>For a defined number of samples <span class="math inline"><em>N</em></span>:</p>
+<ul>
+<li><p>Generate a sample <span class="math inline"><em>S</em></span> from the joint distribution.</p></li>
+<li><p>If <span class="math inline"><em>S</em></span> matches the observations <span class="math inline"><em>O</em></span>, store it.</p></li>
+</ul></li>
+<li><p>Estimate the conditional probability based on retained samples.</p></li>
+</ul>
+<h4 id="challenges-in-rejection-sampling">Challenges in Rejection Sampling</h4>
+<p>If observations are rare, many samples will be rejected, leading to inadequate estimates of probability.</p>
+<h3 id="sampling-continuous-variables">Sampling Continuous Variables</h3>
+<p>To sample continuous random variables, such as temperature (fever), the following process can be employed:</p>
+<ol>
+<li><p>Generate from a normal distribution based on the parent variable’s state (e.g., flu).</p></li>
+<li><p>Discretize the continuous variable to ensure matches during rejection sampling.</p></li>
+</ol>
+<h3 id="applications-and-future-directions">Applications and Future Directions</h3>
+<p>Understanding Bayesian inference and rejection sampling enables practical applications in various domains such as healthcare (e.g., WebMD) and education (e.g., student feedback). Advanced methods like Markov Chain Monte Carlo (MCMC) can further refine sampling methods by eliminating the rejection stage.</p>
+<h3 id="conclusion-10">Conclusion</h3>
+<p>Rejection sampling serves as an efficient algorithm for inference in Bayesian Networks when conditions and relationships among variables are understood thoroughly. The applicability extends beyond academia to real-world problems where probabilistic modeling is essential.</p>
+<h1 id="probabilities-and-random-variables">Probabilities and Random Variables</h1>
+<h3 id="the-concept-of-random-variables">The Concept of Random Variables</h3>
+<ul>
+<li><p>A random variable is a variable whose values depend on the outcomes of a random phenomenon.</p></li>
+<li><p>Representing likelihoods of outcomes as distributions rather than single values leads to a richer understanding.</p></li>
+</ul>
+<h3 id="examples-of-probabilities">Examples of Probabilities</h3>
+<h4 id="choosing-a-youtube-video">Choosing a YouTube Video</h4>
+<ul>
+<li><p>Consider the like-to-dislike ratios of videos as a measure of probability.</p></li>
+<li><p>Video 1: 10,000 likes and 50 dislikes. Video 2: 10 likes and 0 dislikes.</p></li>
+<li><p>Initial probability assessments based only on likes lead to erroneous conclusions.</p></li>
+</ul>
+<h4 id="weather-predictions">Weather Predictions</h4>
+<ul>
+<li><p>Different people give the same likelihood of rain (0.8) but with different confidence levels.</p></li>
+<li><p>Need for a mathematical framework that allows us to evaluate the confidence in probabilities.</p></li>
+</ul>
+<h3 id="bayesian-inference-1">Bayesian Inference</h3>
+<ul>
+<li><p>Bayes’ Theorem is fundamental in updating beliefs based on new evidence.</p></li>
+<li><p>The theorem is expressed as: <br /><span class="math display">$$P(H | E) = \frac{P(E | H) \cdot P(H)}{P(E)}$$</span><br /> Where:</p>
+<ul>
+<li><p><span class="math inline"><em>P</em>(<em>H</em>|<em>E</em>)</span> is the posterior probability.</p></li>
+<li><p><span class="math inline"><em>P</em>(<em>E</em>|<em>H</em>)</span> is the likelihood.</p></li>
+<li><p><span class="math inline"><em>P</em>(<em>H</em>)</span> is the prior.</p></li>
+<li><p><span class="math inline"><em>P</em>(<em>E</em>)</span> is the marginal likelihood, often simplified when calculations are done over a range of <span class="math inline"><em>H</em></span>.</p></li>
+</ul></li>
+</ul>
+<h3 id="random-variable-for-probability">Random Variable for Probability</h3>
+<ul>
+<li><p>Redefining probabilities as random variables enhances expressive power.</p></li>
+<li><p>Let <span class="math inline"><em>X</em></span> be the random variable representing the probability of heads when flipping a plate.</p></li>
+</ul>
+<h3 id="beta-distribution">Beta Distribution</h3>
+<h4 id="introduction-to-beta-distribution">Introduction to Beta Distribution</h4>
+<ul>
+<li><p>The Beta distribution is used to model random variables that are constrained to intervals [0, 1].</p></li>
+</ul>
+<h4 id="mathematical-representation">Mathematical Representation</h4>
+<ul>
+<li><p>If <span class="math inline"><em>n</em></span> and <span class="math inline"><em>m</em></span> are the number of heads and tails respectively, the probability density function (PDF) is given as: <br /><span class="math display">$$f(x; n, m) = \frac{x^{n-1} (1-x)^{m-1}}{B(n, m)}$$</span><br /> Where <span class="math inline"><em>B</em>(<em>n</em>, <em>m</em>)</span> is the Beta function.</p></li>
+</ul>
+<h4 id="updating-beliefs">Updating Beliefs</h4>
+<ul>
+<li><p>When new data is observed (heads and tails), use updated parameters: <br /><span class="math display">Posterior ∼ Beta(<em>n</em> + 1, <em>m</em> + 1)</span><br /></p></li>
+</ul>
+<h3 id="conjugate-priors">Conjugate Priors</h3>
+<ul>
+<li><p>A <strong>conjugate prior</strong> allows for a prior and likelihood to be in the same family of distributions.</p></li>
+<li><p>If the prior is a Beta distribution, the posterior remains a Beta distribution after observing data.</p></li>
+</ul>
+<h3 id="expectations-and-modes">Expectations and Modes</h3>
+<ul>
+<li><p>The expected value <span class="math inline"><em>E</em>[<em>X</em>]</span> of a Beta distributed random variable is given by: <br /><span class="math display">$$E[X] = \frac{n}{n + m}$$</span><br /></p></li>
+<li><p>The mode is the value where the PDF reaches its maximum, given by: <br /><span class="math display">$$\text{Mode} = \frac{n - 1}{n + m - 2} \quad \text{(for } n &gt; 1 \text{ and } m &gt; 1\text{)}$$</span><br /></p></li>
+</ul>
+<h3 id="applications-in-multi-armed-bandit-problems">Applications in Multi-Armed Bandit Problems</h3>
+<ul>
+<li><p>Multi-armed bandit problem exemplifies exploration versus exploitation.</p></li>
+<li><p>Algorithms like Thompson Sampling utilize Beta distributions to balance the need for gathering information and exploiting known best options.</p></li>
+<li><p>Strategy: Sample from Betas of each arm and select the one with the higher sample value.</p></li>
+</ul>
+<h3 id="conclusion-11">Conclusion</h3>
+<ul>
+<li><p>Understanding and utilizing random variables leads to improved decision-making and deeper insights into uncertain processes.</p></li>
+<li><p>Probability should be treated as a distribution to capture uncertainty rather than a single static number.</p></li>
+</ul>
+<h1 id="adding-random-variables">Adding Random Variables</h1>
+<h3 id="introduction-8">Introduction</h3>
+<p>Today, we will discuss the addition of random variables, a fundamental concept in probability theory with profound implications in various fields such as statistics, data science, and machine learning.</p>
+<h3 id="story-background">Story Background</h3>
+<p>An engaging story was shared about the history of the lecturer’s family, transitioning into themes of randomness and unpredictability, connecting it thematically to probability and the essence of random variables.</p>
+<h3 id="motivation">Motivation</h3>
+<p>Understanding how to add random variables is critical for solving various real-world problems, including zero-sum games and predicting behaviors in uncertain environments.</p>
+<h3 id="key-definitions">Key Definitions</h3>
+<h4 id="independent-and-identically-distributed-iid">Independent and Identically Distributed (IID)</h4>
+<p>A collection of random variables is said to be IID if:</p>
+<ul>
+<li><p>They are independent: The occurrence of one random variable does not affect the others.</p></li>
+<li><p>They are identically distributed: All variables share the same probability distribution, implying equal expected values and variances.</p></li>
+</ul>
+<h3 id="discussion-examples-of-iid">Discussion: Examples of IID</h3>
+<p>Consider the following cases: 1. <span class="math inline"><em>X</em><sub><em>i</em></sub></span> are independent exponential random variables with the same parameter <span class="math inline"><em>λ</em></span>. 2. <span class="math inline"><em>X</em><sub><em>i</em></sub></span> are independent exponential random variables with different parameters <span class="math inline"><em>λ</em><sub><em>i</em></sub></span>. 3. <span class="math inline"><em>X</em><sub>1</sub> = <em>X</em><sub>2</sub> = … = <em>X</em><sub><em>n</em></sub></span> are not independent. 4. <span class="math inline"><em>X</em><sub><em>i</em></sub></span> are independent binomial random variables with different trials but the same probability of success.</p>
+<p>Discussion with peers about these cases illustrates the nuances of independence and identical distribution.</p>
+<h3 id="addition-of-random-variables">Addition of Random Variables</h3>
+<p>Let’s denote two random variables <span class="math inline"><em>X</em></span> and <span class="math inline"><em>Y</em></span>. We wish to understand the properties of the sum <span class="math inline"><em>Z</em> = <em>X</em> + <em>Y</em></span>. The probability mass function for <span class="math inline"><em>Z</em></span>, assuming <span class="math inline"><em>X</em></span> and <span class="math inline"><em>Y</em></span> are independent, can be derived as follows:</p>
+<p><br /><span class="math display">$$P(Z = n) = \sum_{i=0}^{n} P(X = i) P(Y = n - i)$$</span><br /></p>
+<p>If <span class="math inline"><em>X</em></span> and <span class="math inline"><em>Y</em></span> are not independent, you would use the joint probability distribution:</p>
+<p><br /><span class="math display">$$P(Z = n) = \sum_{i=0}^{n} P(X = i, Y = n - i)$$</span><br /></p>
+<h4 id="special-properties">Special Properties</h4>
+<p>1. Sum of Binomials: If <span class="math inline"><em>X</em><sub>1</sub> ∼ Binomial(<em>n</em><sub>1</sub>, <em>p</em>)</span> and <span class="math inline"><em>X</em><sub>2</sub> ∼ Binomial(<em>n</em><sub>2</sub>, <em>p</em>)</span>, then <span class="math inline"><em>X</em> = <em>X</em><sub>1</sub> + <em>X</em><sub>2</sub> ∼ Binomial(<em>n</em><sub>1</sub> + <em>n</em><sub>2</sub>, <em>p</em>)</span>.<br />
+2. Sum of Normals: If <span class="math inline"><em>X</em><sub>1</sub> ∼ <em>N</em>(<em>μ</em><sub>1</sub>, <em>σ</em><sub>1</sub><sup>2</sup>)</span> and <span class="math inline"><em>X</em><sub>2</sub> ∼ <em>N</em>(<em>μ</em><sub>2</sub>, <em>σ</em><sub>2</sub><sup>2</sup>)</span> are independent, then: <br /><span class="math display"><em>X</em> = <em>X</em><sub>1</sub> + <em>X</em><sub>2</sub> ∼ <em>N</em>(<em>μ</em><sub>1</sub> + <em>μ</em><sub>2</sub>, <em>σ</em><sub>1</sub><sup>2</sup> + <em>σ</em><sub>2</sub><sup>2</sup>)</span><br /> 3. Sum of Poissons: If <span class="math inline"><em>X</em><sub>1</sub> ∼ Poisson(<em>λ</em><sub>1</sub>)</span> and <span class="math inline"><em>X</em><sub>2</sub> ∼ Poisson(<em>λ</em><sub>2</sub>)</span>, then: <br /><span class="math display"><em>X</em> = <em>X</em><sub>1</sub> + <em>X</em><sub>2</sub> ∼ Poisson(<em>λ</em><sub>1</sub> + <em>λ</em><sub>2</sub>)</span><br /></p>
+<h3 id="central-limit-theorem-clt">Central Limit Theorem (CLT)</h3>
+<p>One of the most beautiful results in probability is the Central Limit Theorem, which states: If <span class="math inline"><em>X</em><sub>1</sub>, <em>X</em><sub>2</sub>, …, <em>X</em><sub><em>n</em></sub></span> are IID random variables with finite mean <span class="math inline"><em>μ</em></span> and finite variance <span class="math inline"><em>σ</em><sup>2</sup></span>, then: <br /><span class="math display">$$Z_n = \frac{\sum_{i=1}^{n} X_i - n\mu}{\sigma \sqrt{n}} \xrightarrow{d} N(0, 1)$$</span><br /> as <span class="math inline"><em>n</em> → ∞</span>.</p>
+<p>Thus, regardless of the initial distribution of the random variables, their sum will approximate a normal distribution given a sufficiently large <span class="math inline"><em>n</em></span>.</p>
+<h3 id="applications-and-examples">Applications and Examples</h3>
+<ul>
+<li><p>Zero-Sum Games: Modeling and calculating probabilities in games (such as basketball knowledge using ELO ratings) can leverage the variance and distributions of player abilities.</p></li>
+<li><p>Simulation: Practical computational methods show normal approximations among various distributions using simulations.</p></li>
+</ul>
+<h3 id="conclusion-12">Conclusion</h3>
+<p>The lecture discussed multiple aspects of adding random variables, particularly focusing on the powerful insights provided by the Central Limit Theorem and its applications in real-world scenarios. The beauty and depth of this topic underline the importance of understanding probability and random processes.</p>
+<h1 id="lecture-notes-on-central-limit-theorem-and-statistics">Lecture Notes on Central Limit Theorem and Statistics</h1>
+<h3 id="introduction-9">Introduction</h3>
+<p>The lecture addresses the importance of understanding intelligence in the context of decision making with a specific focus on modeling human uncertainty and making optimal decisions with limited information.</p>
+<h3 id="central-limit-theorem-clt-1">Central Limit Theorem (CLT)</h3>
+<h4 id="definition-4">Definition</h4>
+<p>The Central Limit Theorem states that the sum (or average) of a large number of independent and identically distributed (IID) random variables will be approximately normally distributed, regardless of the original distribution of the variables.</p>
+<h4 id="mathematical-representation-1">Mathematical Representation</h4>
+<p>Let <span class="math inline"><em>X</em><sub>1</sub>, <em>X</em><sub>2</sub>, …, <em>X</em><sub><em>n</em></sub></span> be IID random variables with mean <span class="math inline"><em>μ</em></span> and variance <span class="math inline"><em>σ</em><sup>2</sup></span>. The CLT can be formulated as: <br /><span class="math display"><em>S</em><sub><em>n</em></sub> = <em>X</em><sub>1</sub> + <em>X</em><sub>2</sub> + … + <em>X</em><sub><em>n</em></sub> ∼ <em>N</em>(<em>n</em><em>μ</em>, <em>n</em><em>σ</em><sup>2</sup>)</span><br /> As <span class="math inline"><em>n</em> → ∞</span>, the distribution of <span class="math inline"><em>S</em><sub><em>n</em></sub></span> approaches a Normal distribution <span class="math inline"><em>N</em>(<em>n</em><em>μ</em>, <em>n</em><em>σ</em><sup>2</sup>)</span>.</p>
+<h4 id="application-in-dice-rolls">Application in Dice Rolls</h4>
+<p>For instance, consider rolling a fair six-sided die. The expected value and variance for a single die roll are: <br /><span class="math display">$$\mu = \frac{1 + 2 + 3 + 4 + 5 + 6}{6} = 3.5, \quad \sigma^2 = \frac{(1 - 3.5)^2 + (2 - 3.5)^2 + (3 - 3.5)^2 + (4 - 3.5)^2 + (5 - 3.5)^2 + (6 - 3.5)^2}{6} = \frac{35}{12}$$</span><br /> Thus, when summing <span class="math inline"><em>n</em></span> dice rolls: <br /><span class="math display">$$\text{Mean} = n \cdot \mu = 3.5n, \quad \text{Variance} = n \cdot \sigma^2 = n \cdot \frac{35}{12}$$</span><br /></p>
+<h3 id="estimation-and-sampling">Estimation and Sampling</h3>
+<h4 id="sampling-distribution-of-the-mean">Sampling Distribution of the Mean</h4>
+<p>The sample mean <span class="math inline"><em>X̄</em></span> calculated from a sample of <span class="math inline"><em>n</em></span> observations will have: <br /><span class="math display"><em>X̄</em> ∼ <em>N</em>(<em>μ</em>, <em>σ</em><sup>2</sup>/<em>n</em>)</span><br /> This shows that the sampling distribution of the mean is also normally distributed with mean <span class="math inline"><em>μ</em></span> and variance <span class="math inline"><em>σ</em><sup>2</sup>/<em>n</em></span>.</p>
+<h4 id="unbiased-estimation">Unbiased Estimation</h4>
+<p>It is critical to estimate population parameters from sample data. The sample mean is defined as: <br /><span class="math display">$$\bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i$$</span><br /> and it is an unbiased estimator of the population mean <span class="math inline"><em>μ</em></span>.</p>
+<h4 id="estimating-variance">Estimating Variance</h4>
+<p>The sample variance <span class="math inline"><em>S</em><sup>2</sup></span> is calculated as: <br /><span class="math display">$$S^2 = \frac{1}{n-1} \sum_{i=1}^{n} (X_i - \bar{X})^2$$</span><br /> The divisor <span class="math inline"><em>n</em> − 1</span> (Bessel’s correction) is used to obtain an unbiased estimator of the population variance <span class="math inline"><em>σ</em><sup>2</sup></span>.</p>
+<h3 id="hypothesis-testing">Hypothesis Testing</h3>
+<p>When estimating parameters, we often use confidence intervals. A <span class="math inline">95%</span> confidence interval for the mean, using the standard error (SE) of the mean, is calculated as: <br /><span class="math display">$$\bar{X} \pm Z_{\alpha/2} \cdot \text{SE} = \bar{X} \pm Z_{\alpha/2} \cdot \frac{s}{\sqrt{n}}$$</span><br /> where <span class="math inline"><em>Z</em><sub><em>α</em>/2</sub></span> is the Z-value for the desired confidence level.</p>
+<h3 id="conclusion-13">Conclusion</h3>
+<p>The CLT is a cornerstone of statistical theory that enables data analysts to make inferences about population parameters based on sample statistics. It is crucial to understand how to properly estimate these parameters and the limits of those estimations, especially concerning biases and sampling methods.</p>
+<h1 id="bootstrapping-and-p-values">Bootstrapping and P-Values</h1>
+<h3 id="class-overview">Class Overview</h3>
+<p>During today’s lecture, we will cover several important concepts in probability and statistics:</p>
+<ul>
+<li><p>Counting Theory</p></li>
+<li><p>Core Probability</p></li>
+<li><p>Random Variables</p></li>
+<li><p>Central Limit Theorem</p></li>
+<li><p>Bootstrapping</p></li>
+<li><p>P-Values</p></li>
+</ul>
+<h3 id="central-limit-theorem">Central Limit Theorem</h3>
+<p>The Central Limit Theorem (CLT) states that if you take a sufficiently large sample size <span class="math inline"><em>n</em></span> of independent and identically distributed (IID) random variables, the sample mean will be approximately normally distributed regardless of the shape of the original population distribution. Mathematically: <br /><span class="math display">$$\bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i$$</span><br /> where <span class="math inline"><em>X̄</em></span> is the sample mean, and <span class="math inline"><em>X</em><sub><em>i</em></sub></span> are the individual random variables.</p>
+<p>The variance of the sample mean is given by: <br /><span class="math display">$$\text{Var}(\bar{X}) = \frac{\sigma^2}{n}$$</span><br /> where <span class="math inline"><em>σ</em><sup>2</sup></span> is the population variance.</p>
+<h3 id="estimating-sample-variance">Estimating Sample Variance</h3>
+<p>The sample variance <span class="math inline"><em>s</em><sup>2</sup></span> can be estimated using the formula: <br /><span class="math display">$$s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (X_i - \bar{X})^2$$</span><br /> The <span class="math inline"><em>n</em> − 1</span> term (Bessel’s correction) is used to obtain an unbiased estimator of the population variance.</p>
+<h3 id="bootstrap-method">Bootstrap Method</h3>
+<p>The bootstrapping method allows estimation of the distribution of a statistic (e.g., mean, variance) by resampling with replacement from the original sample. The steps are as follows:</p>
+<ol>
+<li><p>Take <span class="math inline"><em>n</em></span> samples from the population to create a sample of size <span class="math inline"><em>n</em></span>.</p></li>
+<li><p>Construct the empirical probability mass function (PMF) from the sample.</p></li>
+<li><p>Resample <span class="math inline"><em>n</em></span> observations with replacement from the constructed PMF.</p></li>
+<li><p>Calculate the desired statistic (e.g., sample variance) for each resample.</p></li>
+<li><p>Repeat the resampling process <span class="math inline"><em>B</em></span> times to generate a distribution of the statistic.</p></li>
+</ol>
+<h3 id="p-values">P-Values</h3>
+<p>The P-value is a measure of the strength of the evidence against the null hypothesis. It quantifies how likely it would be to observe data as extreme as what we did, given that the null hypothesis is true.</p>
+<p>The P-value can be calculated as follows:</p>
+<ol>
+<li><p>Define the null hypothesis (<span class="math inline"><em>H</em><sub>0</sub></span>) and alternative hypothesis (<span class="math inline"><em>H</em><sub>1</sub></span>).</p></li>
+<li><p>Calculate the observed statistic (e.g., difference in means).</p></li>
+<li><p>Use bootstrapping to generate a distribution of the statistic under <span class="math inline"><em>H</em><sub>0</sub></span>.</p></li>
+<li><p>Determine the proportion of bootstrapped statistics that are more extreme than the observed statistic: <br /><span class="math display">$$P\text{-value} = \frac{\text{Number of extreme statistics}}{B}$$</span><br /></p></li>
+</ol>
+<h3 id="example-application">Example Application</h3>
+<p>For example, to test whether there is a difference in means between two groups:</p>
+<ol>
+<li><p>Combine the two groups into a single “universal” distribution under the null hypothesis.</p></li>
+<li><p>Resample two groups with replacement from this combined distribution.</p></li>
+<li><p>Calculate the difference in means for these resamples.</p></li>
+<li><p>Accumulate a distribution of differences.</p></li>
+<li><p>Compute the P-value based on how many differences are greater than or equal to the observed difference.</p></li>
+</ol>
+<p><br /><span class="math display">$$\begin{aligned}
+D_{mean} &amp;= \bar{X}_1 - \bar{X}_2 \\
+P\text{-value} &amp;= P(D_{sample} \geq D_{observed} \mid H_0 \text{ is true})\end{aligned}$$</span><br /></p>
+<h3 id="conclusion-14">Conclusion</h3>
+<p>Understanding bootstrapping and P-values provides robust tools for statistical inference, allowing researchers to express confidence in their reported statistics. Bootstrapping allows for flexible analyses without relying on strong parametric assumptions.</p>
+<h1 id="expectation-and-algorithmic-analysis">Expectation and Algorithmic Analysis</h1>
+<h3 id="introduction-10">Introduction</h3>
+<p>This lecture focuses on algorithmic analysis, particularly dealing with expectation, law of total expectation, and their implications in algorithm design and analysis. The lecture included various problems, one of which was difficult, as indicated by the instructor.</p>
+<h3 id="expectation-2">Expectation</h3>
+<h4 id="definition-of-expected-value">Definition of Expected Value</h4>
+<p>The expected value (or mean) of a random variable <span class="math inline"><em>X</em></span> can be calculated as follows:</p>
+<p><br /><span class="math display"><em>E</em>[<em>X</em>] = ∑<sub><em>x</em></sub><em>x</em> ⋅ <em>P</em>(<em>X</em> = <em>x</em>)</span><br /></p>
+<p>where <span class="math inline"><em>P</em>(<em>X</em> = <em>x</em>)</span> is the probability that the random variable <span class="math inline"><em>X</em></span> takes on the value <span class="math inline"><em>x</em></span>.</p>
+<h4 id="linearity-of-expectation">Linearity of Expectation</h4>
+<p>One essential property of expectation is linearity. If we have several random variables <span class="math inline"><em>X</em><sub>1</sub>, <em>X</em><sub>2</sub>, …, <em>X</em><sub><em>n</em></sub></span>, the expectation of their sum is the sum of their expectations:</p>
+<p><br /><span class="math display">$$E\left[\sum_{i=1}^{n} X_i\right] = \sum_{i=1}^{n} E[X_i]$$</span><br /></p>
+<p>This property holds regardless of whether the random variables are independent.</p>
+<h4 id="limitation-of-expectation">Limitation of Expectation</h4>
+<p>A limitation of the expected value is that it summarizes a probability distribution into a single number, which may overlook important characteristics of the distribution, such as variance and tail behavior.</p>
+<h4 id="law-of-unconscious-statistician">Law of Unconscious Statistician</h4>
+<p>The expected value of a function <span class="math inline"><em>g</em>(<em>X</em>)</span> of a random variable <span class="math inline"><em>X</em></span> can be computed using the following formula:</p>
+<p><br /><span class="math display"><em>E</em>[<em>g</em>(<em>X</em>)] = ∑<sub><em>x</em></sub><em>g</em>(<em>x</em>) ⋅ <em>P</em>(<em>X</em> = <em>x</em>)</span><br /></p>
+<p>This is useful in calculating expectations of functions of random variables.</p>
+<h3 id="indicator-random-variables">Indicator Random Variables</h3>
+<p>An indicator random variable <span class="math inline"><em>I</em></span> for an event <span class="math inline"><em>E</em></span> is defined as:</p>
+<p><br /><span class="math display">$$I = \begin{cases}
+1, &amp; \text{if event } E \text{ occurs} \\
+0, &amp; \text{if event } E \text{ does not occur}
+\end{cases}$$</span><br /></p>
+<p>The expected value of an indicator random variable is equal to the probability of the event:</p>
+<p><br /><span class="math display"><em>E</em>[<em>I</em>] = <em>P</em>(<em>E</em>)</span><br /></p>
+<h3 id="binomial-distribution-2">Binomial Distribution</h3>
+<p>A binomial random variable <span class="math inline"><em>Y</em></span> can be defined as the sum of <span class="math inline"><em>n</em></span> independent Bernoulli trials (indicator random variables):</p>
+<p><br /><span class="math display">$$Y = \sum_{i=1}^{n} I_i$$</span><br /></p>
+<p>where each <span class="math inline"><em>I</em><sub><em>i</em></sub></span> represents a success (1) or failure (0) in a Bernoulli trial with success probability <span class="math inline"><em>p</em></span>. The expected value of <span class="math inline"><em>Y</em></span> is:</p>
+<p><br /><span class="math display"><em>E</em>[<em>Y</em>] = <em>n</em> ⋅ <em>p</em></span><br /></p>
+<h3 id="negative-binomial-distribution">Negative Binomial Distribution</h3>
+<p>The negative binomial distribution counts the number of trials until the <span class="math inline"><em>r</em></span>th success. Its expected value is given by:</p>
+<p><br /><span class="math display">$$E[Y] = r \cdot \frac{1}{p}$$</span><br /></p>
+<p>where <span class="math inline"><em>p</em></span> is the probability of success in each trial.</p>
+<h3 id="computer-cluster-utilization-problem">Computer Cluster Utilization Problem</h3>
+<p>Consider a computer cluster with <span class="math inline"><em>K</em></span> servers and independent request probabilities <span class="math inline"><em>p</em><sub><em>i</em></sub></span> for each server. Let <span class="math inline"><em>A</em><sub><em>i</em></sub></span> be an indicator variable that represents whether server <span class="math inline"><em>i</em></span> is idle. The total number of idle servers <span class="math inline"><em>X</em></span> can be expressed as:</p>
+<p><br /><span class="math display">$$X = \sum_{i=1}^{K} A_i$$</span><br /></p>
+<p>To find the expected number of servers not idle, <span class="math inline"><em>Y</em></span>:</p>
+<p><br /><span class="math display"><em>Y</em> = <em>K</em> − <em>X</em>  ⇒  <em>E</em>[<em>Y</em>] = <em>K</em> − <em>E</em>[<em>X</em>]</span><br /></p>
+<p>Furthermore, if <span class="math inline"><em>A</em><sub><em>i</em></sub></span> is the indicator for an event, we can compute <span class="math inline"><em>E</em>[<em>A</em><sub><em>i</em></sub>]</span> as <span class="math inline">1 − <em>p</em><sub><em>i</em></sub></span>.</p>
+<h3 id="coupon-collectors-problem">Coupon Collector’s Problem</h3>
+<p>In the classic "coupon collector’s problem," let <span class="math inline"><em>X</em></span> be the number of trials until each of <span class="math inline"><em>n</em></span> buckets receives at least one coupon. The expected value of <span class="math inline"><em>X</em></span> is given by:</p>
+<p><br /><span class="math display">$$E[X] = n \cdot \sum_{k=1}^{n} \frac{1}{k} \approx n \cdot \ln(n) + \gamma n$$</span><br /></p>
+<p>Here, <span class="math inline"><em>γ</em></span> is the Euler-Mascheroni constant.</p>
+<h3 id="differential-privacy">Differential Privacy</h3>
+<p>Differential privacy is a method of ensuring privacy when dealing with sensitive datasets. The fundamental approach involves adding random noise to the outputs of queries on the dataset. The expected output under differential privacy can be analyzed with the previously discussed laws of expectation.</p>
+<h3 id="conclusion-15">Conclusion</h3>
+<p>The lecture covered a wide range of topics related to expectation and algorithmic analysis, with applications in cloud computing and data privacy. The concepts of expected values, indicator random variables, and the linearity of expectation are foundational in algorithmic design.</p>
+<h1 id="introduction-to-machine-learning">Introduction to Machine Learning</h1>
+<h3 id="introduction-11">Introduction</h3>
+<p>Machine learning is a vital part of artificial intelligence that focuses on learning from data. This lecture explores the foundational concepts of parameter estimation, particularly Maximum Likelihood Estimation (MLE) and its applications in building machine learning models.</p>
+<h3 id="parametric-models">Parametric Models</h3>
+<p>In probabilistic models, parameters define the characteristics of the distribution:</p>
+<ul>
+<li><p>Parameters are denoted by <span class="math inline"><em>Θ</em></span>.</p></li>
+<li><p>For a normal distribution, parameters might include the mean (<span class="math inline"><em>μ</em></span>) and variance (<span class="math inline"><em>σ</em><sup>2</sup></span>).</p></li>
+<li><p>For a Poisson distribution, the parameter is denoted as <span class="math inline"><em>λ</em></span>.</p></li>
+</ul>
+<h3 id="stages-of-machine-learning">Stages of Machine Learning</h3>
+<ol>
+<li><p>Modeling: Define a probabilistic model for the real-world problem.</p></li>
+<li><p>Training: Estimate parameters using available training data.</p></li>
+<li><p>Prediction: Use the model with learned parameters for predictions on new data.</p></li>
+</ol>
+<h3 id="maximum-likelihood-estimation-mle">Maximum Likelihood Estimation (MLE)</h3>
+<p>MLE is a method for estimating the parameters of a statistical model. It defines the likelihood of observing the given data under specific parameter values.</p>
+<h4 id="likelihood-function">Likelihood Function</h4>
+<p>For independent and identically distributed (IID) data points, the likelihood function <span class="math inline"><em>L</em>(<em>θ</em>)</span> is given by: <br /><span class="math display">$$L(\theta) = \prod_{i=1}^{n} P(X_i | \theta)$$</span><br /> where <span class="math inline"><em>P</em>(<em>X</em><sub><em>i</em></sub>|<em>θ</em>)</span> is the probability of observing data point <span class="math inline"><em>X</em><sub><em>i</em></sub></span> given parameter <span class="math inline"><em>θ</em></span>.</p>
+<h4 id="log-likelihood-function">Log-Likelihood Function</h4>
+<p>Taking the logarithm simplifies calculations: <br /><span class="math display">$$\log L(\theta) = \sum_{i=1}^{n} \log P(X_i | \theta)$$</span><br /></p>
+<h4 id="finding-mle">Finding MLE</h4>
+<p>To find the MLE, we maximize the log-likelihood function: <br /><span class="math display"><em>θ̂</em> = arg max<sub><em>θ</em></sub>log <em>L</em>(<em>θ</em>)</span><br /> This can involve solving: <br /><span class="math display">$$\frac{d}{d\theta} \log L(\theta) = 0$$</span><br /></p>
+<h3 id="example-estimating-parameters-for-poisson-distribution">Example: Estimating Parameters for Poisson Distribution</h3>
+<h4 id="likelihood-for-poisson">Likelihood for Poisson</h4>
+<p>The probability mass function for a Poisson distribution is: <br /><span class="math display">$$P(X = k | \lambda) = \frac{\lambda^k e^{-\lambda}}{k!}$$</span><br /> Thus, the log-likelihood is: <br /><span class="math display">$$\log L(\lambda) = \sum_{i=1}^{n} \left( X_i \log \lambda - \lambda - \log(X_i!) \right)$$</span><br /></p>
+<p>For <span class="math inline"><em>n</em></span> independent samples, the maximum likelihood estimator for <span class="math inline"><em>λ</em></span> is: <br /><span class="math display">$$\hat{\lambda} = \frac{1}{n} \sum_{i=1}^{n} X_i$$</span><br /></p>
+<h4 id="example-estimating-parameters-for-bernoulli-distribution">Example: Estimating Parameters for Bernoulli Distribution</h4>
+<p>The probability mass function for a Bernoulli distribution is: <br /><span class="math display"><em>P</em>(<em>X</em> = <em>x</em>|<em>p</em>) = <em>p</em><sup><em>x</em></sup>(1 − <em>p</em>)<sup>1 − <em>x</em></sup></span><br /></p>
+<p>The log-likelihood becomes: <br /><span class="math display">$$\log L(p) = \sum_{i=1}^{n} \left( X_i \log p + (1 - X_i) \log(1 - p) \right)$$</span><br /></p>
+<p>To find MLE for <span class="math inline"><em>p</em></span>: <br /><span class="math display">$$\hat{p} = \frac{1}{n} \sum_{i=1}^{n} X_i$$</span><br /></p>
+<h3 id="general-insights-about-mle">General Insights about MLE</h3>
+<ul>
+<li><p>Asymptotic Properties: As sample size <span class="math inline"><em>n</em> → ∞</span>, MLE converges to the true parameter values.</p></li>
+<li><p>Bias of Estimators: MLE may be biased for small sample sizes; the sample mean is an unbiased estimator for normal distribution, while variance often requires Bessel’s correction (<span class="math inline"><em>n</em> − 1</span>).</p></li>
+<li><p>Continuous Probability Distributions: For distributions without closed forms for the MLE, numerical optimization techniques can be used.</p></li>
+</ul>
+<h3 id="applications-of-mle">Applications of MLE</h3>
+<ol>
+<li><p>Identifying parameters in distributions such as Gaussian and Bernoulli.</p></li>
+<li><p>Generalizing across distributions using algorithms like Expectation-Maximization (EM) for models that include latent variables.</p></li>
+</ol>
+<h3 id="conclusion-16">Conclusion</h3>
+<p>Understanding Maximum Likelihood Estimation provides the mathematical background necessary for various machine learning techniques and helps in building more sophisticated models.</p>
+<h1 id="introduction-to-machine-learning-1">Introduction to Machine Learning</h1>
+<h3 id="overview">Overview</h3>
+<p>In this class, we are transitioning from pure probability theory to the fundamentals of machine learning. Our objective is to understand parameter estimation as the core challenge of machine learning, and how this relates to deep learning. The main focus will be on estimating parameters from probabilistic models based on given data.</p>
+<h3 id="parameter-estimation">Parameter Estimation</h3>
+<p>Parameter estimation is the process of inferring the values of parameters (<span class="math inline"><em>Θ</em></span>) in a probabilistic model based on observed data.</p>
+<p><strong>Goals:</strong></p>
+<ol>
+<li><p>Model real-world problems using probabilistic models.</p></li>
+<li><p>Estimate parameters using historical data.</p></li>
+</ol>
+<p>To denote the parameters, we will use the symbol <span class="math inline"><em>Θ</em></span> (theta).</p>
+<h4 id="maximum-likelihood-estimation-mle-1">Maximum Likelihood Estimation (MLE)</h4>
+<p>The first significant method for estimating parameters is Maximum Likelihood Estimation (MLE). The idea is to choose parameters that maximize the likelihood of observing the given data.</p>
+<h5 id="likelihood-1">Likelihood</h5>
+<p>Given a dataset <span class="math inline">{<em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>, …, <em>x</em><sub><em>n</em></sub>}</span>, the likelihood <span class="math inline"><em>L</em>(<em>Θ</em>)</span> can be written as: <br /><span class="math display">$$L(\Theta) = P(X|\Theta) = \prod_{i=1}^{n} P(x_i|\Theta)$$</span><br /></p>
+<p>Where <span class="math inline"><em>P</em>(<em>x</em><sub><em>i</em></sub>|<em>Θ</em>)</span> is the probability of observing each data point given the parameters <span class="math inline"><em>Θ</em></span>.</p>
+<h5 id="log-likelihood">Log-Likelihood</h5>
+<p>To simplify calculations, we often work with the log-likelihood, denoted as: <br /><span class="math display">$$\log L(\Theta) = \sum_{i=1}^{n} \log P(x_i|\Theta)$$</span><br /> Maximizing the log-likelihood is computationally easier than maximizing the likelihood function directly.</p>
+<h5 id="finding-the-maximum">Finding the Maximum</h5>
+<p>To find the maximum, we take the derivative of the log-likelihood with respect to <span class="math inline"><em>Θ</em></span>: <br /><span class="math display">$$\frac{d}{d\Theta} \log L(\Theta) = 0$$</span><br /> The critical points can be found by setting the above derivative to zero.</p>
+<h4 id="challenges-with-mle">Challenges with MLE</h4>
+<p>MLE can lead to overfitting, where the estimated parameters define the model too closely based on the training data, potentially failing on new data.</p>
+<h3 id="gradient-ascent">Gradient Ascent</h3>
+<p>When maximizing functions, a traditional approach may not always yield an optimal solution efficiently. Gradient ascent provides a method to incrementally reach the maximum:</p>
+<ol>
+<li><p>Start with an initial guess <span class="math inline"><em>Θ</em><sub>0</sub></span>.</p></li>
+<li><p>Compute the gradient <span class="math inline"><em>g</em></span> of the log-likelihood at that point.</p></li>
+<li><p>Update the parameters:</p></li>
+</ol>
+<p><br /><span class="math display"><em>Θ</em><sub><em>i</em> + 1</sub> = <em>Θ</em><sub><em>i</em></sub> + <em>α</em><em>g</em></span><br /> Where <span class="math inline"><em>α</em></span> is the step size.</p>
+<h4 id="parameter-estimation-with-gradient-ascent">Parameter Estimation with Gradient Ascent</h4>
+<p>The gradient ascent method will lead to the highest point (maximum) in the log-likelihood function. However, if the steps are too large, it might overshoot the maximum.</p>
+<h3 id="bayesian-estimation">Bayesian Estimation</h3>
+<p>Unlike MLE, Bayesian estimation incorporates prior beliefs about the parameters through <strong>Maximum A Posteriori</strong> (MAP) estimation.</p>
+<h4 id="bayes-theorem-3">Bayes’ Theorem</h4>
+<p>To estimate the parameters using Bayes’ theorem, we focus on: <br /><span class="math display">$$P(\Theta|X) = \frac{P(X|\Theta)P(\Theta)}{P(X)}$$</span><br /> Where: 1. <span class="math inline"><em>P</em>(<em>Θ</em>|<em>X</em>)</span> is the posterior. 2. <span class="math inline"><em>P</em>(<em>X</em>|<em>Θ</em>)</span> is the likelihood. 3. <span class="math inline"><em>P</em>(<em>Θ</em>)</span> is the prior belief.</p>
+<h4 id="maximum-a-posteriori-map">Maximum A Posteriori (MAP)</h4>
+<p>To estimate parameters using MAP: <br /><span class="math display"><em>Θ</em><sub><em>M</em><em>A</em><em>P</em></sub> = argmax<sub><em>Θ</em></sub><em>P</em>(<em>Θ</em>|<em>X</em>) = argmax<sub><em>Θ</em></sub><em>P</em>(<em>X</em>|<em>Θ</em>)<em>P</em>(<em>Θ</em>)</span><br /></p>
+<p>This is akin to performing MLE while also considering the prior: <br /><span class="math display">log <em>P</em>(<em>Θ</em>|<em>X</em>) = log <em>P</em>(<em>X</em>|<em>Θ</em>) + log <em>P</em>(<em>Θ</em>)</span><br /></p>
+<p>MAP estimation helps mitigate the overfitting issues associated with MLE by incorporating prior distributions for <span class="math inline"><em>Θ</em></span>.</p>
+<h4 id="conjugate-priors-1">Conjugate Priors</h4>
+<p>In situations where the prior distribution and the likelihood function are of the same family, we say the prior is a <strong>conjugate prior</strong>. Some common conjugate distributions include:</p>
+<ul>
+<li><p>Beta distributions for Bernoulli/binomial models.</p></li>
+<li><p>Gamma distributions for Poisson models.</p></li>
+<li><p>Normal distributions for Gaussian models.</p></li>
+</ul>
+<h4 id="example-estimating-proportions-with-bernoulli-trials">Example: Estimating Proportions with Bernoulli Trials</h4>
+<p>Given a Bernoulli trial data of successes and failures, if we want to estimate the probability <span class="math inline"><em>p</em></span>, we would use: <br /><span class="math display"><em>P</em>(<em>p</em>|data) ∝ <em>P</em>(data|<em>p</em>)<em>P</em>(<em>p</em>)</span><br /> Where <span class="math inline"><em>P</em>(<em>p</em>)</span> can be a beta prior, resulting in a posterior that is also a beta distribution.</p>
+<h4 id="implementation">Implementation</h4>
+<p>To compute MAP estimates:</p>
+<ol>
+<li><p>Specify a prior.</p></li>
+<li><p>Collect data and calculate the likelihood.</p></li>
+<li><p>Use the log-likelihood expression plus the prior’s log to optimize using gradient ascent or other optimization techniques.</p></li>
+</ol>
+<h3 id="conclusion-17">Conclusion</h3>
+<p>The transition from MLE to MAP and the introduction of priors significantly enhances our ability to make robust parameter estimates that generalize better to new data. This will be foundational as we explore more complex machine learning algorithms in the upcoming classes.</p>
+<h1 id="naive-bayes-classification-notes">Naive Bayes Classification Notes</h1>
+<h3 id="introduction-12">Introduction</h3>
+<p>Naive Bayes is a key machine learning algorithm that will be explored in the course. It serves as the first machine learning algorithm. It is particularly useful for classification tasks.</p>
+<h3 id="conceptual-framework">Conceptual Framework</h3>
+<h4 id="machine-learning-overview">Machine Learning Overview</h4>
+<p>Machine learning can be visualized as employing probabilistic models with learned parameters to make predictions based on input data.</p>
+<h4 id="parameter-estimation-1">Parameter Estimation</h4>
+<p>The two main approaches for parameter estimation are:</p>
+<ul>
+<li><p><strong>Maximum Likelihood Estimation (MLE):</strong> Chooses parameters making the observed data most probable.</p></li>
+<li><p><strong>Maximum A Posteriori (MAP):</strong> Similar to MLE, but also accounts for prior beliefs regarding parameters.</p></li>
+</ul>
+<h4 id="notation-and-variables">Notation and Variables</h4>
+<p>Inputs and outputs in classification tasks are denoted using specific notation:</p>
+<ul>
+<li><p>Let <span class="math inline"><em>X</em><sub><em>i</em></sub></span> represent input features for the <span class="math inline"><em>i</em></span>-th data point.</p></li>
+<li><p>Let <span class="math inline"><em>Y</em></span> be the output variable (the label we wish to predict).</p></li>
+<li><p>Superscripts denote specific instances (e.g., <span class="math inline"><em>Y</em><sub>1</sub></span>, <span class="math inline"><em>Y</em><sub>2</sub></span> for different users).</p></li>
+<li><p>Bold variables (e.g., <span class="math inline"><strong>X</strong></span>) indicate vectors containing input values.</p></li>
+</ul>
+<h3 id="naive-bayes-classifier">Naive Bayes Classifier</h3>
+<h4 id="assumptions">Assumptions</h4>
+<p>The naive Bayes classifier is based on the powerful assumption of conditional independence of inputs given the output class: <br /><span class="math display"><em>P</em>(<em>X</em>|<em>Y</em>) = <em>P</em>(<em>X</em><sub>1</sub>|<em>Y</em>) ⋅ <em>P</em>(<em>X</em><sub>2</sub>|<em>Y</em>)⋯<em>P</em>(<em>X</em><sub><em>m</em></sub>|<em>Y</em>)</span><br /> Where <span class="math inline"><em>X</em> = (<em>X</em><sub>1</sub>, <em>X</em><sub>2</sub>, …, <em>X</em><sub><em>m</em></sub>)</span> are input features.</p>
+<h4 id="bayes-theorem-4">Bayes’ Theorem</h4>
+<p>The prediction formula for the naive Bayes classifier can be expressed as: <br /><span class="math display"><em>P</em>(<em>Y</em>|<em>X</em>) ∝ <em>P</em>(<em>Y</em>) ⋅ <em>P</em>(<em>X</em>|<em>Y</em>)</span><br /> After applying the naive Bayes assumption, we focus on the numerator: <br /><span class="math display">$$P(Y | X) \propto P(Y) \cdot \prod_{i=1}^{m}P(X_i | Y)$$</span><br /></p>
+<h4 id="parameter-estimation-2">Parameter Estimation</h4>
+<p>Parameter estimation for naive Bayes involves:</p>
+<ul>
+<li><p>Estimating <span class="math inline"><em>P</em>(<em>Y</em> = 1)</span> and <span class="math inline"><em>P</em>(<em>Y</em> = 0)</span> using counting from training data.</p></li>
+<li><p>For each feature <span class="math inline"><em>X</em><sub><em>i</em></sub></span>, estimating <span class="math inline"><em>P</em>(<em>X</em><sub><em>i</em></sub>|<em>Y</em>)</span> using MLE or MAP. For MAP with LaPlace smoothing: <br /><span class="math display">$$P(X_i = 1 | Y) = \frac{\text{count}(X_i = 1, Y) + 1}{\text{count}(Y) + 2}$$</span><br /></p></li>
+<li><p>Where <span class="math inline">count(<em>X</em><sub><em>i</em></sub> = 1, <em>Y</em>)</span> denotes the number of instances where <span class="math inline"><em>Y</em></span> has a particular class.</p></li>
+</ul>
+<h3 id="prediction">Prediction</h3>
+<p>To make a prediction for a new data point:</p>
+<ul>
+<li><p>Compute <span class="math inline"><em>P</em>(<em>Y</em> = 1|<em>X</em>)</span> and <span class="math inline"><em>P</em>(<em>Y</em> = 0|<em>X</em>)</span> using the derived parameters.</p></li>
+<li><p>Choose the class with the higher probability: <br /><span class="math display"><em>Ŷ</em> = arg max<sub><em>Y</em></sub><em>P</em>(<em>Y</em>|<em>X</em>)</span><br /></p></li>
+</ul>
+<h3 id="applications-1">Applications</h3>
+<p>A notable application of naive Bayes is in email spam detection. In this scenario:</p>
+<ul>
+<li><p>Features are individual words (or their counts) in the email.</p></li>
+<li><p><span class="math inline"><em>Y</em></span> is a binary label indicating whether an email is spam or not.</p></li>
+<li><p>Parameters of the model are estimated from a labeled dataset of emails.</p></li>
+</ul>
+<h3 id="performance-metrics">Performance Metrics</h3>
+<p>To evaluate the classifier’s performance, standard metrics include:</p>
+<ul>
+<li><p><strong>Accuracy:</strong> Overall correctness <span class="math inline">$\frac{\text{correct predictions}}{\text{total predictions}}$</span>.</p></li>
+<li><p><strong>Precision:</strong> Ratio of true positive predictions to the total positive predictions made.</p></li>
+<li><p><strong>Recall:</strong> Ratio of true positive predictions to the actual positives in the data.</p></li>
+</ul>
+<h3 id="conclusion-18">Conclusion</h3>
+<p>Naive Bayes is a foundational algorithm for classification that simplifies complex probability calculations through its naive independence assumption. It forms the basis for understanding more complex machine learning methodologies and remains relevant due to its efficiency and effectiveness, particularly in situations with high-dimensional data, such as text classification.</p>
+<h1 id="machine-learning-and-logistic-regression">Machine Learning and Logistic Regression</h1>
+<h3 id="introduction-13">Introduction</h3>
+<ul>
+<li><p>This course covers fundamental concepts and algorithms in Machine Learning.</p></li>
+<li><p>Key topics include classification algorithms, parameter estimation, and logistic regression, leading to applications in deep learning.</p></li>
+</ul>
+<h3 id="core-concepts">Core Concepts</h3>
+<h4 id="classification-algorithms">Classification Algorithms</h4>
+<ul>
+<li><p><strong>Classification</strong>: The task of predicting discrete class labels (e.g., 1 or 0).</p></li>
+<li><p>Two primary algorithms:</p>
+<ol>
+<li><p><strong>Naive Bayes</strong>: Assumes independence among features given the class label.</p></li>
+<li><p><strong>Logistic Regression</strong>: A flexible model used to estimate probabilities of class membership.</p></li>
+</ol></li>
+</ul>
+<h4 id="modeling-process">Modeling Process</h4>
+<ul>
+<li><p>Build a model that maps input features <span class="math inline"><strong>x</strong></span> to an output class label <span class="math inline"><em>y</em></span>.</p></li>
+<li><p>Use training data <span class="math inline">(<strong>x</strong>, <em>y</em>)</span> to learn model parameters.</p></li>
+<li><p>Evaluate the model’s performance using a reserved test dataset.</p></li>
+</ul>
+<h3 id="parameter-estimation-3">Parameter Estimation</h3>
+<h4 id="maximum-likelihood-estimation-mle-2">Maximum Likelihood Estimation (MLE)</h4>
+<ul>
+<li><p>MLE is used to estimate the parameters that maximize the likelihood of the observed data.</p></li>
+<li><p>For a probabilistic model defined by a training dataset, the goal is to maximize the likelihood: <br /><span class="math display"><em>L</em>(<em>θ</em>) = <em>P</em>(<em>Y</em>|<em>X</em>; <em>θ</em>)</span><br /> where <span class="math inline"><em>θ</em></span> are the model parameters.</p></li>
+</ul>
+<h3 id="logistic-regression">Logistic Regression</h3>
+<h4 id="logistic-model">Logistic Model</h4>
+<ul>
+<li><p>Logistic regression predicts the probability that <span class="math inline"><em>y</em> = 1</span> given input features <span class="math inline"><strong>x</strong></span>.</p></li>
+<li><p>The logistic regression model is defined as follows: <br /><span class="math display">$$P(y=1 | \mathbf{x}; \theta) = \sigma(\theta^T \mathbf{x}) = \frac{1}{1 + e^{-\theta^T \mathbf{x}}}$$</span><br /> where <span class="math inline"><em>σ</em>(<em>z</em>)</span> is the sigmoid function transforming the weighted sum into a probability.</p></li>
+</ul>
+<h4 id="sigmoid-function">Sigmoid Function</h4>
+<ul>
+<li><p>The sigmoid function is defined as: <br /><span class="math display">$$\sigma(z) = \frac{1}{1 + e^{-z}}$$</span><br /></p></li>
+<li><p>Properties:</p>
+<ul>
+<li><p>Output is always between 0 and 1; useful for interpreting outputs as probabilities.</p></li>
+<li><p>Derivative: <br /><span class="math display"><em>σ</em>′(<em>z</em>) = <em>σ</em>(<em>z</em>)(1 − <em>σ</em>(<em>z</em>))</span><br /></p></li>
+</ul></li>
+</ul>
+<h4 id="model-formulation">Model Formulation</h4>
+<ul>
+<li><p>We introduce an intercept term by including a <span class="math inline"><strong>x</strong><sub>0</sub> = 1</span>, hence: <br /><span class="math display"><em>z</em> = <em>θ</em><sup><em>T</em></sup><strong>x</strong> = <em>θ</em><sub>0</sub> + <em>θ</em><sub>1</sub><em>x</em><sub>1</sub> + <em>θ</em><sub>2</sub><em>x</em><sub>2</sub> + … + <em>θ</em><sub><em>m</em></sub><em>x</em><sub><em>m</em></sub></span><br /></p></li>
+<li><p>The model predicts: <br /><span class="math display"><em>P</em>(<em>y</em> = 1|<strong>x</strong>) = <em>σ</em>(<em>z</em>)</span><br /></p></li>
+</ul>
+<h3 id="training-the-logistic-regression-model">Training the Logistic Regression Model</h3>
+<h4 id="cost-function">Cost Function</h4>
+<ul>
+<li><p>The log-likelihood function is computed for the training data: <br /><span class="math display">$$\ell(\theta) = \sum_{i=1}^n [y_i \log(\sigma(z_i)) + (1-y_i) \log(1 - \sigma(z_i))]$$</span><br /> where <span class="math inline"><em>n</em></span> is the number of training instances.</p></li>
+</ul>
+<h4 id="optimization-via-gradient-ascent">Optimization via Gradient Ascent</h4>
+<ul>
+<li><p>To optimize the parameters, compute the gradient of the log-likelihood: <br /><span class="math display">$$\frac{\partial \ell}{\partial \theta_j} = \sum_{i=1}^n (y_i - \sigma(z_i)) x_{ij}$$</span><br /></p></li>
+<li><p>Update the parameters iteratively: <br /><span class="math display">$$\theta_j \leftarrow \theta_j + \alpha \frac{\partial \ell}{\partial \theta_j}$$</span><br /> where <span class="math inline"><em>α</em></span> is the learning rate.</p></li>
+</ul>
+<h3 id="predictions">Predictions</h3>
+<ul>
+<li><p>After training, to make a prediction for an input <span class="math inline"><strong>x</strong></span>:</p>
+<ol type="i">
+<li><p>Compute <span class="math inline"><em>z</em> = <em>θ</em><sup><em>T</em></sup><strong>x</strong></span></p></li>
+<li><p>Calculate the predicted probability: <span class="math inline"><em>ŷ</em> = <em>σ</em>(<em>z</em>)</span></p></li>
+<li><p>Convert to binary prediction: <br /><span class="math display">$$\widehat{y} =
+        \begin{cases}
+        1 &amp; \text{if } \hat{y} &gt; 0.5 \\
+        0 &amp; \text{otherwise}
+        \end{cases}$$</span><br /></p></li>
+</ol></li>
+</ul>
+<h3 id="conclusion-19">Conclusion</h3>
+<ul>
+<li><p>Logistic regression serves as a foundation for understanding more complex models in deep learning.</p></li>
+</ul>
+<h1 id="deep-learning-notes">Deep Learning Notes</h1>
+<h3 id="introduction-14">Introduction</h3>
+<p>Deep learning represents a subset of machine learning focused on algorithms that learn from data in a hierarchical manner, inspired by the structure of the human brain.</p>
+<h4 id="learning-objectives">Learning Objectives</h4>
+<ul>
+<li><p>Understand the core concepts of deep learning.</p></li>
+<li><p>Familiarize with the algorithms behind many modern applications.</p></li>
+<li><p>Recognize how deep learning can be used for various tasks such as image recognition and generative models.</p></li>
+</ul>
+<h3 id="core-concepts-1">Core Concepts</h3>
+<h4 id="logistic-regression-1">Logistic Regression</h4>
+<p>Logistic regression is a fundamental algorithm in supervision classification where:</p>
+<ul>
+<li><p>Inputs are weighted and passed through a sigmoid function to yield a probability.</p></li>
+<li><p>The equation for logistic regression can be expressed as: <br /><span class="math display"><em>ŷ</em> = <em>σ</em>(<em>θ</em><sup><em>T</em></sup><em>x</em>)</span><br /> where <span class="math inline">$\sigma(z) = \frac{1}{1 + e^{-z}}$</span> is the sigmoid function.</p></li>
+</ul>
+<h4 id="neural-networks">Neural Networks</h4>
+<ul>
+<li><p>A neural network can be visualized as multiple logistic regression layers stacked together.</p></li>
+<li><p>Each neuron performs its own logistic regression, with distinct parameters (weights).</p></li>
+<li><p>A basic feedforward network structure comprises:</p>
+<ul>
+<li><p>Input layer (features)</p></li>
+<li><p>Hidden layers (neurons applying transformations)</p></li>
+<li><p>Output layer (final outcomes)</p></li>
+</ul></li>
+<li><p>Each hidden layer neuron <span class="math inline"><em>h</em><sub><em>j</em></sub></span> can be expressed mathematically as: <br /><span class="math display">$$h_j = \sigma\left(\sum_{i=0}^{m} \theta_{ji} x_i\right)$$</span><br /></p></li>
+</ul>
+<h4 id="forward-pass">Forward Pass</h4>
+<p>The forward pass through a neural network involves:</p>
+<ul>
+<li><p>Passing input data through the network to generate predictions.</p></li>
+<li><p>Each layer calculates its outputs based on the previous layer’s outputs.</p></li>
+</ul>
+<p><br /><span class="math display"><em>y</em><sup><em>h</em><em>a</em><em>t</em></sup> = <em>σ</em>(<em>W</em>⋅<em>H</em>+<em>b</em>)</span><br /></p>
+<h4 id="training-and-backpropagation">Training and Backpropagation</h4>
+<p>To train a neural network, we need to optimize the weights through a process known as backpropagation, which relies on:</p>
+<ul>
+<li><p>Gradient ascent for maximizing the likelihood function.</p></li>
+<li><p>Using the chain rule to compute gradients of weights with respect to the loss function.</p></li>
+<li><p>The loss function for binary outcomes can be represented as: <br /><span class="math display"><em>L</em>(<em>y</em>, <em>ŷ</em>) =  − (<em>y</em>log(<em>ŷ</em>)+(1−<em>y</em>)log(1−<em>ŷ</em>))</span><br /></p></li>
+</ul>
+<h4 id="chain-rule-and-gradients">Chain Rule and Gradients</h4>
+<p>In backpropagation:</p>
+<ul>
+<li><p>The chain rule allows for connecting derivatives for nested functions: <br /><span class="math display">$$\frac{\partial L}{\partial \theta} = \frac{\partial L}{\partial y^{hat}} \cdot \frac{\partial y^{hat}}{\partial h_j} \cdot \frac{\partial h_j}{\partial \theta}$$</span><br /></p></li>
+</ul>
+<h3 id="applications-of-deep-learning">Applications of Deep Learning</h3>
+<ul>
+<li><p>Image Classification (e.g., digit recognition)</p></li>
+<li><p>Natural Language Processing (NLP)</p></li>
+<li><p>Generative Models (e.g., GANs for image generation)</p></li>
+<li><p>Self-Driving Cars</p></li>
+<li><p>Health Diagnostics (e.g., cancer detection through image analysis)</p></li>
+</ul>
+<h3 id="conclusion-20">Conclusion</h3>
+<p>Deep learning enables us to create powerful predictive models by stacking layers of neurons (logistic regressions) and training them using large datasets. It is becoming ubiquitous in applications ranging from healthcare to art creation. Understanding the foundations, such as logistic regression and how neural networks operate, is key to advancing in this field.</p>
+<h3 id="questions-for-further-study">Questions for Further Study</h3>
+<p>To delve deeper into deep learning:</p>
+<ul>
+<li><p>Explore hyperparameters and their significance.</p></li>
+<li><p>Investigate optimization techniques beyond basic gradient ascent, like Adam or RMSprop.</p></li>
+<li><p>Study architectures like Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs).</p></li>
+</ul>
+<h1 id="ethics-and-machine-learning-detailed-notes">Ethics and Machine Learning: Detailed Notes</h1>
+<h3 id="introduction-15">Introduction</h3>
+<p>Today, we are diving into the important topic of the probability behind ethics in machine learning. Understanding machine learning is crucial for addressing the impacts and implications of smarter algorithms on society.</p>
+<h3 id="personal-ethics-and-human-goodness">Personal Ethics and Human Goodness</h3>
+<ul>
+<li><p>The philosophical stance gravitating towards is the Mlanous philosophy, which posits that goodness exists inherently within all of us, akin to a sprout that can grow with care.</p></li>
+<li><p>The allegory of the baby falling into a well illustrates an instinctual response to help, suggesting a hardwired goodness in human nature.</p></li>
+</ul>
+<h3 id="ai-and-its-impact-on-society">AI and Its Impact on Society</h3>
+<p>AI influences multiple aspects of our daily lives, such as:</p>
+<ul>
+<li><p>Smartphones</p></li>
+<li><p>Security cameras</p></li>
+<li><p>Social media</p></li>
+</ul>
+<p>The dual implications of AI:</p>
+<ol>
+<li><p>It holds great potential for societal benefits (e.g., better healthcare, intelligent electricity grids, access to quality education).</p></li>
+<li><p>It can also manifest in wayward applications that exhibit biases, calling for ethical considerations.</p></li>
+</ol>
+<h3 id="learning-goals-1">Learning Goals</h3>
+<p>By the end of this lecture, you should:<br />
+Understand the limitations of “fairness through unawareness.”<br />
+Recognize measurement techniques for fairness, specifically two measurement frameworks:</p>
+<ul>
+<li><p>Calibrated models</p></li>
+<li><p>Relaxation of parity</p></li>
+</ul>
+<p>Familiarize yourself with techniques to mitigate fairness issues.</p>
+<h3 id="key-concepts-in-fairness">Key Concepts in Fairness</h3>
+<p><strong>1. Protected Demographic:</strong><br />
+- Groups that are safeguarded against discrimination based on characteristics such as race, age, gender, etc.<br />
+<br />
+<strong>2. Distributive vs. Quality of Service Harm:</strong><br />
+- Quality of Service Harm: AI performs better for certain demographic groups than others (e.g., inaccurate facial recognition).<br />
+- Distributive Harm: AI impacts critical opportunities (job applications, loans) unfairly based on demographics, often resulting in more severe consequences.<br />
+<br />
+<strong>3. Procedural vs. Distributive Fairness:</strong><br />
+- Procedural fairness focuses on the fairness of the process.<br />
+- Distributive fairness emphasizes fairness in the outcomes.</p>
+<h3 id="machine-learning-basics">Machine Learning Basics</h3>
+<p>- Classification algorithms, like: - Naive Bayes - Logistic Regression</p>
+<p>Using logistic regression: - Logistic regression predicts outcomes using a sigmoid function: <br /><span class="math display">$$g(z) = \frac{1}{1 + e^{-z}}$$</span><br /> where, if <span class="math inline"><em>z</em> &gt; 0</span>, predict 1; if <span class="math inline"><em>z</em> &lt; 0</span>, predict 0. - It creates a straight line (hyperplane) that separates classes, limiting its effectiveness with non-linearly separable data.</p>
+<h3 id="fairness-definitions">Fairness Definitions</h3>
+<ol>
+<li><p><strong>Fairness through Unawareness:</strong> Excluding demographic features to make decisions.<br />
+Example: Not considering race when making decisions.</p></li>
+<li><p><strong>Fairness through Awareness:</strong> Taking demographics into account for decisions but ensuring equality in outcomes.</p></li>
+</ol>
+<p><strong>Parity:</strong> The probability of a positive prediction should be the same across demographics: <br /><span class="math display"><em>P</em>(<em>Ŷ</em> = 1|<em>D</em> = <em>d</em>0) = <em>P</em>(<em>Ŷ</em> = 1|<em>D</em> = <em>d</em>1)</span><br /> <strong>Calibration:</strong> The prediction accuracy should be equal across demographics: <br /><span class="math display"><em>P</em>(<em>Ŷ</em> = <em>T</em>|<em>D</em> = <em>d</em>) = <em>P</em>(<em>Ŷ</em> = <em>T</em>)</span><br /></p>
+<h3 id="case-studies-of-harm-in-ai">Case Studies of Harm in AI</h3>
+<ol>
+<li><p>Quality of Service Harm: Cameras malfunctioning for specific demographics, rendering poor autofocus.<br />
+Caused by training data biases.</p></li>
+<li><p>Distributive Harm Case Study: An algorithm used for college admissions that inadvertently favored demographic characteristics, hindering female and non-Caucasian applicants.</p></li>
+</ol>
+<h3 id="techniques-for-mitigating-fairness-issues">Techniques for Mitigating Fairness Issues</h3>
+<ul>
+<li><p>Improve training data balance to ensure representation.</p></li>
+<li><p>Implement model cards for transparency in AI model data and applications.</p></li>
+<li><p>Explore methods to mitigate biases by removing them with neural networks that predict demographic information from outputs.</p></li>
+</ul>
+<h3 id="ethics-in-technology">Ethics in Technology</h3>
+<ul>
+<li><p>The story of free basic internet by Facebook illustrates unforeseen consequences, such as misinformation leading to severe societal harm.</p></li>
+<li><p>Awareness of unintended biases in algorithms can provoke harm, even if the original intent was beneficial.</p></li>
+</ul>
+<h3 id="final-thoughts">Final Thoughts</h3>
+<ul>
+<li><p>The ethical framework around machine learning necessitates recognizing blind spots and being adaptable.</p></li>
+<li><p>Fostering an environment of questioning and critical thinking when deploying algorithms that impact lives is essential.</p></li>
+</ul>
+<h3 id="conclusion-21">Conclusion</h3>
+<p>Please take time to reflect on the ethical implications of your work and the constructs of fairness in machine learning. Your awareness and consideration can shape the future of technology harmoniously.</p>
+<h1 id="generative-models-and-neural-networks">Generative Models and Neural Networks</h1>
+<h3 id="generative-models-overview">Generative Models Overview</h3>
+<p>Generative models learn to generate data similar to the training set, allowing for applications such as text synthesis and image generation.</p>
+<h4 id="models-discussed">Models Discussed</h4>
+<ol>
+<li><p>DALL-E: Generates images from textual descriptions.</p></li>
+<li><p>GPT-3: Generates text based on given prompts.</p></li>
+</ol>
+<h4 id="key-concepts-2">Key Concepts</h4>
+<ul>
+<li><p>Maximum Likelihood Estimation (MLE): A method used to estimate the parameters of a statistical model.</p></li>
+<li><p>Maximum A Posteriori (MAP) Estimation: Similar to MLE but incorporates prior beliefs about the parameters.</p></li>
+</ul>
+<h3 id="image-generation-with-dall-e">Image Generation with DALL-E</h3>
+<p>DALL-E uses a neural network to create images from textual descriptions, leveraging the concept of denoising.</p>
+<h4 id="denoising-process">Denoising Process</h4>
+<p>The key idea is to start with a heavily noised image and progressively remove noise through a neural network.</p>
+<h5 id="adding-gaussian-noise">Adding Gaussian Noise</h5>
+<p>To manipulate images, Gaussian noise is added: <br /><span class="math display">Noisy_Image = Original_Image + 𝒩(0, <em>σ</em><sup>2</sup>)</span><br /> where <span class="math inline">𝒩(0, <em>σ</em><sup>2</sup>)</span> is Gaussian noise with mean 0 and variance <span class="math inline"><em>σ</em><sup>2</sup></span>.</p>
+<h5 id="training-the-neural-network">Training the Neural Network</h5>
+<p>The neural network is trained to minimize the difference between the predicted noise and the actual noise, leading to the minimization of the sum of squared errors: <br /><span class="math display">Loss(<em>θ</em>) = ∑<sub><em>i</em></sub>(<em>y</em><sub><em>i</em></sub> − <em>ŷ</em><sub><em>i</em></sub>)<sup>2</sup></span><br /> where <span class="math inline"><em>y</em><sub><em>i</em></sub></span> is the true noise and <span class="math inline"><em>ŷ</em><sub><em>i</em></sub></span> is the predicted noise.</p>
+<h5 id="expected-output">Expected Output</h5>
+<p>The process is repeated several times to generate an image that resembles the target:</p>
+<ol>
+<li><p>Start with completely noisy image.</p></li>
+<li><p>Apply the trained denoising network multiple times.</p></li>
+<li><p>Each iteration reduces the noise.</p></li>
+</ol>
+<h3 id="text-generation-with-gpt-3">Text Generation with GPT-3</h3>
+<p>GPT-3 uses a different but related approach to generate coherent and contextually relevant text.</p>
+<h4 id="attention-mechanism">Attention Mechanism</h4>
+<p>The attention mechanism allows the model to weigh the importance of different words in the context:</p>
+<p><br /><span class="math display">$$\text{Attention}(Q, K, V) = \text{softmax} \left(\frac{QK^T}{\sqrt{d_k}}\right)V$$</span><br /> where <span class="math inline"><em>Q</em></span> (queries), <span class="math inline"><em>K</em></span> (keys), and <span class="math inline"><em>V</em></span> (values) are matrices derived from input words, and <span class="math inline"><em>d</em><sub><em>k</em></sub></span> is the dimensionality of the keys.</p>
+<h4 id="generating-text">Generating Text</h4>
+<p>The text generation process can be broken down into:</p>
+<p>1. Modeling the probability of the next word given previous words: <br /><span class="math display"><em>P</em>(<em>w</em><sub><em>t</em></sub>|<em>w</em><sub>1</sub>, <em>w</em><sub>2</sub>, …, <em>w</em><sub><em>t</em> − 1</sub>)</span><br /></p>
+<p>2. Selecting the next word based on the probability distribution obtained: <br /><span class="math display">Sample from <em>P</em>(<em>w</em><sub><em>t</em></sub>)</span><br /></p>
+<p>Using a sampling strategy like sampling from the predicted probability distribution helps maintain variability in output.</p>
+<h4 id="training-the-model">Training the Model</h4>
+<p>Like DALL-E, GPT-3 is trained using MLE, focusing on maximizing the likelihood of observing the actual next word in the training set relative to the predicted word.</p>
+<h3 id="conclusion-22">Conclusion</h3>
+<p>In today’s lecture, we explored the foundational ideas behind two significant generative models: DALL-E and GPT-3.</p>
+<h4 id="final-thoughts-1">Final Thoughts</h4>
+<p>Generative models are shaping the future of AI with applications spanning multiple domains. Our understanding of these models will play a pivotal role in developing future technologies.</p>
+<h1 id="final-summary">Final Summary</h1>
+<h3 id="course-overview-1">Course Overview</h3>
+<p>Ensure you have access to practice final exams and resources. During the course, we covered several topics:</p>
+<ul>
+<li><p>Counting and Probability Fundamentals</p></li>
+<li><p>Single Random Variables</p></li>
+<li><p>Probabilistic Models</p></li>
+<li><p>Uncertainty Theory</p></li>
+<li><p>Artificial Intelligence Applications</p></li>
+</ul>
+<h3 id="key-takeaways">Key Takeaways</h3>
+<h4 id="research-insights">Research Insights</h4>
+<p>Reflection on the potential in research:</p>
+<ul>
+<li><p>There is an abundance of problems to tackle.</p></li>
+<li><p>Every student has the potential to contribute meaningfully to research.</p></li>
+</ul>
+<h4 id="problem-scotts-and-vignettes">Problem Scotts and Vignettes</h4>
+<p>A vignette was shared about using similarity distance to select representative assignments from a pool of 300 solutions. The goal is to minimize the distance between selected and unselected solutions.</p>
+<h4 id="algorithmic-improvement">Algorithmic Improvement</h4>
+<h5 id="thompson-sampling">Thompson Sampling</h5>
+<p>Thompson Sampling is a probabilistic model that can reduce complexity from <span class="math inline"><em>O</em>(<em>n</em><sup>2</sup>)</span> to <span class="math inline"><em>O</em>(<em>n</em>log <em>n</em>)</span> by evaluating uncertainty through sampling methods.</p>
+<p><br /><span class="math display"><em>P</em>(<em>A</em>|<em>B</em>) ∝ <em>P</em>(<em>B</em>|<em>A</em>)<em>P</em>(<em>A</em>)</span><br /></p>
+<p>The algorithm allows for effective exploration of best candidates by using belief distributions over possible outcomes.</p>
+<h4 id="quality-of-education">Quality of Education</h4>
+<p>A major theme discussed was the gap in quality education globally. The drive towards improving educational quality can leverage the increasing access to technology (e.g., smartphones) and rich datasets from platforms like Code.org.</p>
+<h3 id="significant-challenges-in-feedback-and-grading">Significant Challenges in Feedback and Grading</h3>
+<p>A focus was given to the difficulties in providing feedback, especially in coding assignments:</p>
+<ul>
+<li><p>Traditional feedback processes are time-consuming and often inadequate.</p></li>
+<li><p>A solution was proposed by utilizing probabilistic models to understand students’ latent needs based on their previous work.</p></li>
+</ul>
+<h4 id="feedback-processes">Feedback Processes</h4>
+<p>The idea of collecting a vast amount of labeled data to inform feedback algorithms can significantly impact students’ learning trajectories. Methods explored include:</p>
+<ul>
+<li><p>Correlation of coding errors with future decisions.</p></li>
+<li><p>The development of Rubrics to quantify feedback quantitatively.</p></li>
+</ul>
+<h4 id="bayesian-approach-to-learning">Bayesian Approach to Learning</h4>
+<p>Bayesian Models allow for:</p>
+<ul>
+<li><p>Modeling students’ progress through probabilistic inference.</p></li>
+<li><p>Using previous scores and performance, Bayesian networks can help predict and guide future learning paths.</p></li>
+</ul>
+<h3 id="probabilistic-graphical-models">Probabilistic Graphical Models</h3>
+<p>The course introduced complex graphical models for better representation and inference in relation to random variables.</p>
+<p>Given two random variables <span class="math inline"><em>X</em></span> and <span class="math inline"><em>Y</em></span>: <br /><span class="math display"><em>P</em>(<em>X</em>, <em>Y</em>) = <em>P</em>(<em>X</em>|<em>Y</em>)<em>P</em>(<em>Y</em>)</span><br /></p>
+<p>Exploring the relationships between variables can lead to insights in clustering student submissions, reducing redundancy in sample evaluations, and enabling more personalized feedback.</p>
+<h3 id="final-thoughts-on-future-directions">Final Thoughts on Future Directions</h3>
+<p>Consider the following classes that follow CS 109:</p>
+<ul>
+<li><p>Decision-Making Under Uncertainty</p></li>
+<li><p>CS 221 (Artificial Intelligence)</p></li>
+<li><p>CS 229 (Machine Learning)</p></li>
+<li><p>CS 228 (Probabilistic Graphical Models)</p></li>
+</ul>
+<h4 id="intersectionality-in-research">Intersectionality in Research</h4>
+<p>Encouragement to find unique problem intersections based on personal lived experiences, interests, and academic backgrounds.</p>
+<h3 id="conclusion-23">Conclusion</h3>
+<p>The lecture concluded with gratitude expressed towards the students for their engagement throughout the course. It emphasized the importance of continuous exploration in both academic and personal paths.</p>
+<blockquote>
+<p>“You live in interesting times — a time full of potential discoveries and opportunities.”</p>
+</blockquote>
+<h1 id="final-review-notes">Final Review Notes</h1>
+<h3 id="reading-probability-questions">Reading Probability Questions</h3>
+<ul>
+<li><p>Familiarize yourself with common phrases such as:</p>
+<ul>
+<li><p><strong>Probability of X</strong>: Calculate <span class="math inline"><em>P</em>(<em>X</em>)</span>.</p></li>
+<li><p><strong>How much more likely is X than Y?</strong>: Use the ratio of likelihoods, often expressed as: <br /><span class="math display">$$\frac{P(X)}{P(Y)}$$</span><br /></p></li>
+<li><p><strong>Is it significant?</strong>: Typically involves calculating a p-value or utilizing bootstrap methods.</p></li>
+</ul></li>
+</ul>
+<h3 id="beta-distribution-1">Beta Distribution</h3>
+<ul>
+<li><p>The Beta distribution has two parameters, <span class="math inline"><em>A</em></span> and <span class="math inline"><em>B</em></span>, representing counts of heads and tails, respectively, in a Bernoulli trial.</p></li>
+<li><p>It has a PDF given by: <br /><span class="math display">$$f(x; A, B) = \frac{x^{A-1} (1-x)^{B-1}}{B(A, B)}, \quad 0 &lt; x &lt; 1$$</span><br /></p></li>
+<li><p>The expectation and variance are critical: <br /><span class="math display">$$\text{E}(X) = \frac{A}{A+B}, \quad \text{Var}(X) = \frac{AB}{(A+B)^2(A+B+1)}$$</span><br /></p></li>
+</ul>
+<h3 id="adding-independent-random-variables">Adding Independent Random Variables</h3>
+<ul>
+<li><p>For independent identically distributed (IID) random variables, the following rules apply:</p>
+<ul>
+<li><p><strong>Poisson</strong>: The sum of independent Poisson variables is Poisson with parameter <span class="math inline"><em>λ</em> = ∑<em>λ</em><sub><em>i</em></sub></span>.</p></li>
+<li><p><strong>Normal</strong>: Sum the means and variances: <br /><span class="math display"><em>X</em> = <em>X</em><sub>1</sub> + <em>X</em><sub>2</sub> ⟹ <em>μ</em><sub><em>X</em></sub> = <em>μ</em><sub>1</sub> + <em>μ</em><sub>2</sub>,  <em>σ</em><sub><em>X</em></sub><sup>2</sup> = <em>σ</em><sub>1</sub><sup>2</sup> + <em>σ</em><sub>2</sub><sup>2</sup></span><br /></p></li>
+<li><p><strong>Binomial</strong>: The sum of independent Binomial variables is Binomial with parameters <span class="math inline"><em>n</em> = <em>n</em><sub>1</sub> + <em>n</em><sub>2</sub></span>.</p></li>
+</ul></li>
+</ul>
+<h3 id="central-limit-theorem-1">Central Limit Theorem</h3>
+<ul>
+<li><p>The sum (or average) of a large number of IID random variables will tend to be normally distributed: <br /><span class="math display">$$\text{If } X_1, X_2, \ldots, X_n \text{ are IID, then }
+    \sqrt{n} \left( \bar{X}_n - \mu \right) \overset{d}{\to} \mathcal{N}(0, \sigma^2) \text{ as } n \to \infty.$$</span><br /></p></li>
+<li><p>Ensure continuity correction when using the CLT for discrete distributions.</p></li>
+</ul>
+<h3 id="sampling-sample-mean-and-sample-variance">Sampling, Sample Mean, and Sample Variance</h3>
+<ul>
+<li><p>The sample mean is computed as: <br /><span class="math display">$$\bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i$$</span><br /></p></li>
+<li><p>The sample variance (unbiased) is: <br /><span class="math display">$$S^2 = \frac{1}{n-1} \sum_{i=1}^{n} (X_i - \bar{X})^2$$</span><br /></p></li>
+</ul>
+<h3 id="parameter-estimation-4">Parameter Estimation</h3>
+<h4 id="maximum-likelihood-estimation-mle-3">Maximum Likelihood Estimation (MLE)</h4>
+<ul>
+<li><p>MLE involves two main steps:</p>
+<ol>
+<li><p>Formulate the likelihood function, typically as: <br /><span class="math display">$$\mathcal{L}(\theta) = \prod_{i=1}^{n} f(x_i; \theta)$$</span><br /></p></li>
+<li><p>Maximize the likelihood (or log-likelihood): <br /><span class="math display">$$\log \mathcal{L}(\theta) = \sum_{i=1}^{n} \log f(x_i; \theta)$$</span><br /></p></li>
+</ol></li>
+</ul>
+<h4 id="bayesian-estimation-map">Bayesian Estimation (MAP)</h4>
+<ul>
+<li><p>The MAP estimation improves MLE by incorporating a prior: <br /><span class="math display"><em>P</em>(<em>θ</em>|<em>X</em>) ∝ <em>P</em>(<em>X</em>|<em>θ</em>)<em>P</em>(<em>θ</em>)</span><br /></p></li>
+</ul>
+<h3 id="bootstrapping">Bootstrapping</h3>
+<ul>
+<li><p>Resampling method used to estimate the distribution of a statistic (e.g., mean, variance).</p></li>
+<li><p>Typical pseudocode structure:</p>
+<pre><code>    for i in range(1000):
+        resample the data
+        compute statistic</code></pre></li>
+</ul>
+<h3 id="naive-bayes">Naive Bayes</h3>
+<ul>
+<li><p>Based on the independence assumption: <br /><span class="math display">$$P(Y | X) = \frac{P(X | Y) P(Y)}{P(X)}$$</span><br /></p></li>
+<li><p>Implement Laplace smoothing to avoid zero probabilities: <br /><span class="math display">$$P(X_i | Y) = \frac{N_{X_i, Y} + 1}{N_Y + |V|}$$</span><br /></p></li>
+</ul>
+<h3 id="logistic-regression-2">Logistic Regression</h3>
+<ul>
+<li><p>A special case of the Bernoulli distribution model: <br /><span class="math display"><em>P</em>(<em>Y</em> = 1|<em>X</em>) = <em>σ</em>(<em>W</em><sup><em>T</em></sup><em>X</em>)</span><br /> where <span class="math inline"><em>σ</em></span> is the logistic function.</p></li>
+</ul>
+<h3 id="common-questions-and-problems">Common Questions and Problems</h3>
+<ol>
+<li><p>For problems involving multiple parameters, derive partial derivatives for each parameter.</p></li>
+<li><p>Expect questions about applying MLE and MAP in practical scenarios, including parameter estimation and hypothesis testing.</p></li>
+</ol>
+<h3 id="conclusion-24">Conclusion</h3>
+<ul>
+<li><p>Focus on model applications, derive equations where necessary, and practice interpreting results from sampling methods and estimations.</p></li>
+</ul>
+
+
+    </div>
+    <!-- insert above this -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+</body>
+
+</html>

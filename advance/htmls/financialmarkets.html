@@ -1,0 +1,1788 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>/\dvance</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <style>
+    code {
+      white-space: pre-wrap;
+    }
+
+    span.smallcaps {
+      font-variant: small-caps;
+    }
+
+    span.underline {
+      text-decoration: underline;
+    }
+
+    div.column {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+    }
+
+    div.hanging-indent {
+      margin-left: 1.5em;
+      text-indent: -1.5em;
+    }
+
+    ul.task-list {
+      list-style: none;
+    }
+  </style>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body style="
+    background-color: rgb(0, 0, 39);
+    color: rgb(205, 158, 250);" class="vh-100 p-0 mb-0">
+
+  <div class="container" style="margin-top: 10%;">
+    <div id="business-row" class="row justify-content-between">
+      
+      <nav class="navbar navbar-dark navbar-collapse navbar-fixed-top fixed-top justify-content-center container" style="background-color: rgb(0, 0, 40);">
+        <div class="container justify-content-center">
+        <a class="navbar-brand" href="../index.html" style="color: rgb(179, 114, 240);">/\dvance</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="../finance.html">Finance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../startups.html">Startups</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../economics.html">Economics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../humanities.html">Humanities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../philosophy.html">Philosophy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../science.html">Science</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+
+        <div class="container" style="background-color: rgb(0, 0, 40);">
+          <div class="col-12 d-flex justify-content-start align-items-center">
+              <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                  <ol class="breadcrumb m-1">
+                      <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                      <li class="breadcrumb-item"><a href="../finance.html">Finance</a></li>
+                      <li class="breadcrumb-item active"><a href="../htmls/financialmarkets.html">Financial Markets</a></li>
+                  </ol>
+              </nav>
+          </div>
+      </div>
+
+      <div class="btn position-fixed fixed-bottom d-flex justify-content-end p-0">
+        <a style="color: white; background-color: rgb(0, 0, 40);" class="border rounded p-1"
+        onclick="document.getElementById('contents').scrollIntoView({ behavior: 'smooth' });">contents^</a>
+      </div>
+    </nav>
+      
+
+    </div>
+
+    <div class="row">
+      <h1 id="contents" class="m-0">contents</h4>
+          <div class="col-6">
+              <ul>
+                  <li class="mb-1">
+                      <a href="#introduction">Introduction</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#lecture-notes-on-probability-and-finance">Lecture Notes on Probability and Finance</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#lecture-notes-on-financial-invention">Lecture Notes on Financial Invention</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#notes-on-financial-markets">Notes on Financial Markets</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#introduction-to-insurance-and-risk-management">Introduction to Insurance and Risk Management</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#notes-on-the-yale-investment-approach-the-swensen-model">Notes on the Yale Investment Approach: The Swensen Model</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#lecture-notes-on-efficient-markets-hypothesis">Lecture Notes on Efficient Markets Hypothesis</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#theory-of-debt-and-interest-rates">Theory of Debt and Interest Rates</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#notes-on-corporate-stocks">Notes on Corporate Stocks</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#notes-on-mortgage-lending">Notes on Mortgage Lending</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#lecture-notes-on-behavioral-finance">Lecture Notes on Behavioral Finance</a>
+                  </li>
+                  <li>
+                      <a href="#regulation-and-human-misbehavior-in-financial-markets">Regulation and Human Misbehavior in Financial Markets</a>
+                  </li>
+
+              </ul>
+          </div>
+          <div class="col-6">
+              <ul>
+                <li class="mb-1">
+                  <a href="#notes-on-banking">Notes on Banking</a>
+              </li>
+              <li class="mb-1">
+                  <a href="#comprehensive-notes-on-the-discussion-between-professor-robert-shiller-and-maurice-hank-greenberg">Comprehensive Notes on the Discussion Between Professor Robert Shiller and Maurice "Hank" Greenberg</a>
+              </li>
+                 
+                  <li class="mb-1">
+                      <a href="#lecture-notes-on-futures-markets">Lecture Notes on Futures Markets</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#overview-of-financial-markets-and-regulatory-frameworks">Overview of Financial Markets and Regulatory Frameworks</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#notes-on-options">Notes on Options</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#lecture-notes-on-central-banks">Lecture Notes on Central Banks</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#investment-banking">Investment Banking</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#notes-on-institutional-investors">Notes on Institutional Investors</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#notes-on-financial-exchanges-and-clearinghouses">Notes on Financial Exchanges and Clearinghouses</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#notes-on-nonprofit-and-government-finance">Notes on Nonprofit and Government Finance</a>
+                  </li>
+                  <li>
+                      <a href="#notes-on-financial-markets-finding-your-purpose-in-a-world-of-financial-capitalism">Notes on Financial Markets: Finding Your Purpose in a World of Financial Capitalism</a>
+                  </li>
+
+
+              </ul>
+          </div>
+  </div>
+  </div>
+
+
+
+
+  <!-- insert under this -->
+  <div class="container">
+    <h1>Intro to Financial Markets</h1>
+    <h1 id="introduction">Introduction</h1>
+    <h3 id="core-themes">Core Themes</h3>
+    <ul>
+    <li><p>Financial markets are foundational for civilized society; they <strong>allocate resources</strong> across both space and time.</p></li>
+    <li><p>Key functions of finance:</p>
+    <ol>
+    <li><p><strong>Allocate limited resources</strong></p></li>
+    <li><p><strong>Incentivize productive activities</strong></p></li>
+    <li><p><strong>Manage risks associated with uncertainty</strong></p></li>
+    </ol></li>
+    <li><p>Financial activities are deeply intertwined with societal functions and needs.</p></li>
+    </ul>
+    <h3 id="course-perspective">Course Perspective</h3>
+    <ul>
+    <li><p>U.S. Focus: While the course has a U.S. bias, it aims to incorporate a global perspective due to international interest in finance.</p></li>
+    <li><p>Dynamic Nature of Finance: Continuous updates are needed due to significant recent changes in financial systems globally, especially post-2008 financial crisis.</p></li>
+    </ul>
+    <h3 id="purpose-of-the-course">Purpose of the Course</h3>
+    <ul>
+    <li><p>Aim: To equip students with practical finance knowledge relevant to various career paths.</p></li>
+    <li><p>Perspective on Finance:</p>
+    <ul>
+    <li><p>Finance is seen as a technology for practical application rather than purely a money-making domain.</p></li>
+    <li><p>Understanding finance is crucial for any impactful career.</p></li>
+    <li><p>Marked distinction from traditional vocational training.</p></li>
+    </ul></li>
+    </ul>
+    <h3 id="ethical-considerations-in-finance">Ethical Considerations in Finance</h3>
+    <ul>
+    <li><p>Finance must serve a moral purpose, and there is a growing emphasis on philanthropy among wealthy finance professionals.</p></li>
+    <li><p>Reflection on Andrew Carnegie’s "Gospel of Wealth" and contemporary billionaires’ commitments to giving.</p>
+    <p><em>Key Passage:</em><br />
+    <em>"Once a person has made much money, there is a moral obligation to use it for the benefit of humankind."</em></p></li>
+    </ul>
+    <h3 id="financial-institutions-and-crises">Financial Institutions and Crises</h3>
+    <ul>
+    <li><p>Importance of financial institutions:</p>
+    <ul>
+    <li><p>Banking and insurance are fundamental to managing risks.</p></li>
+    <li><p>Explore various types of securities and their roles in the financial system.</p></li>
+    </ul></li>
+    <li><p>Historical Context:</p>
+    <ul>
+    <li><p>Relevance of past financial crises to current markets.</p></li>
+    <li><p>Need for systematic and thoughtful regulation to avoid crises.</p></li>
+    </ul></li>
+    <li><p><strong>Equations in Risk Management:</strong> <br /><span class="math display"><em>E</em>(<em>R</em><sub><em>p</em></sub>) = <em>w</em><sub>1</sub><em>E</em>(<em>R</em><sub>1</sub>) + <em>w</em><sub>2</sub><em>E</em>(<em>R</em><sub>2</sub>) + … + <em>w</em><sub><em>n</em></sub><em>E</em>(<em>R</em><sub><em>n</em></sub>)</span><br /> Where <span class="math inline"><em>E</em>(<em>R</em><sub><em>p</em></sub>)</span> is the expected return on the portfolio, <span class="math inline"><em>E</em>(<em>R</em><sub><em>i</em></sub>)</span> is the expected return on asset <span class="math inline"><em>i</em></span>, and <span class="math inline"><em>w</em><sub><em>i</em></sub></span> is the weight of asset <span class="math inline"><em>i</em></span> in the portfolio.</p></li>
+    </ul>
+    <h3 id="course-structure">Course Structure</h3>
+    <ul>
+    <li><p>The course consists lectures with a diverse range of topics, including:</p>
+    <ol>
+    <li><p>Risk and Financial Crises</p></li>
+    <li><p>Technology and Invention in Finance</p></li>
+    <li><p>Portfolio Diversification and the Capital Asset Pricing Model</p></li>
+    <li><p>Insurance and Its Historical Development</p></li>
+    <li><p>Efficient Markets Theory</p></li>
+    <li><p>Debt and Stock Markets</p></li>
+    <li><p>Behavioral Finance</p></li>
+    <li><p>Analysis of Financial Institutions and Regulations</p></li>
+    <li><p>The Role of Investment Banking</p></li>
+    <li><p>Public and Nonprofit Finance</p></li>
+    </ol></li>
+    </ul>
+    <h3 id="conclusion-and-purpose-in-finance">Conclusion and Purpose in Finance</h3>
+    <ul>
+    <li><p>Final lecture: Exploring the moral purpose one can find in finance, moving beyond the pursuit of wealth.</p></li>
+    </ul>
+    <h1 id="lecture-notes-on-probability-and-finance">Lecture Notes on Probability and Finance</h1>
+    <h3 id="introduction-to-probability-in-finance">Introduction to Probability in Finance</h3>
+    <h6 id="section"></h6>
+    <p>This lecture focuses on the role of probability theory in understanding financial crises, particularly emphasizing the 2007 crisis, which is considered the most significant financial crisis since the Great Depression.</p>
+    <h4 id="basic-concepts">Basic Concepts</h4>
+    <ul>
+    <li><p>Financial Crises often discussed through historical narratives.</p></li>
+    <li><p>Important to consider the <strong>probability models</strong> that underlie financial theories.</p></li>
+    <li><p>Crises can sometimes be understood as the accumulation of many small shocks rather than a few major events.</p></li>
+    </ul>
+    <h4 id="key-areas-of-discussion">Key Areas of Discussion</h4>
+    <ul>
+    <li><p>Probability Theory: A conceptual framework developed to analyze uncertainty and random phenomena.</p></li>
+    <li><p>The historical development of probability concepts, culminating in their importance in modern finance.</p></li>
+    </ul>
+    <h3 id="basic-financial-returns">Basic Financial Returns</h3>
+    <h4 id="definition-of-return">Definition of Return</h4>
+    <p>The return on an investment is defined mathematically as: <br /><span class="math display">$$R_t = \frac{P_{t+1} - P_t + D}{P_t}$$</span><br /> where:</p>
+    <ul>
+    <li><p><span class="math inline"><em>R</em><sub><em>t</em></sub></span> is the return at time <span class="math inline"><em>t</em></span>,</p></li>
+    <li><p><span class="math inline"><em>P</em><sub><em>t</em> + 1</sub></span> is the price of the asset at time <span class="math inline"><em>t</em> + 1</span>,</p></li>
+    <li><p><span class="math inline"><em>P</em><sub><em>t</em></sub></span> is the price at time <span class="math inline"><em>t</em></span>,</p></li>
+    <li><p><span class="math inline"><em>D</em></span> is any dividend received.</p></li>
+    </ul>
+    <h4 id="gross-return">Gross Return</h4>
+    <p>The gross return can be expressed as: <br /><span class="math display">Gross Return = 1 + <em>R</em></span><br /> where returns can be positive or negative but are bounded between -100% and +infinity.</p>
+    <h3 id="statistical-measures">Statistical Measures</h3>
+    <h4 id="expected-value-and-mean">Expected Value and Mean</h4>
+    <p>The <strong>expected value</strong> (mean) of a random variable <span class="math inline"><em>X</em></span> is given by: <br /><span class="math display">$$E[X] = \sum_{i=1}^{n} x_i P(x_i)$$</span><br /> for discrete variables, or: <br /><span class="math display"><em>E</em>[<em>X</em>] = ∫<sub> − ∞</sub><sup>∞</sup><em>x</em><em>f</em>(<em>x</em>) <em>d</em><em>x</em></span><br /> for continuous variables, where <span class="math inline"><em>f</em>(<em>x</em>)</span> is the probability density function.</p>
+    <h4 id="variance-and-standard-deviation">Variance and Standard Deviation</h4>
+    <p>The <strong>variance</strong> of a random variable <span class="math inline"><em>X</em></span> is defined as: <br /><span class="math display"><em>V</em><em>a</em><em>r</em>(<em>X</em>) = <em>E</em>[(<em>X</em> − <em>E</em>[<em>X</em>])<sup>2</sup>]</span><br /> This measures the spread of the random variable’s values. The <strong>standard deviation</strong> is the square root of the variance: <br /><span class="math display">$$\sigma_X = \sqrt{Var(X)}$$</span><br /></p>
+    <h4 id="covariance-and-correlation">Covariance and Correlation</h4>
+    <p><strong>Covariance</strong> between two random variables <span class="math inline"><em>X</em></span> and <span class="math inline"><em>Y</em></span> is given by: <br /><span class="math display"><em>C</em><em>o</em><em>v</em>(<em>X</em>, <em>Y</em>) = <em>E</em>[(<em>X</em> − <em>E</em>[<em>X</em>])(<em>Y</em> − <em>E</em>[<em>Y</em>])]</span><br /> The correlation <span class="math inline"><em>ρ</em></span> is defined as <br /><span class="math display">$$\rho_{X,Y} = \frac{Cov(X,Y)}{\sigma_X \sigma_Y}$$</span><br /></p>
+    <h3 id="risk-management-concepts">Risk Management Concepts</h3>
+    <h4 id="value-at-risk-var">Value at Risk (VaR)</h4>
+    <p>Value at Risk provides a measure of the risk of loss on a portfolio: <br /><span class="math display"><em>V</em><em>a</em><em>R</em><sub><em>α</em></sub> = inf {<em>x</em> ∈ ℝ : <em>P</em>(<em>X</em> ≤ <em>x</em>) ≥ <em>α</em>}</span><br /> indicating that there is a <span class="math inline"><em>α</em></span> probability that the loss will not exceed <span class="math inline"><em>x</em></span>.</p>
+    <h4 id="law-of-large-numbers">Law of Large Numbers</h4>
+    <p>States that as the number of trials increases, the sample average will converge to the expected value: <br /><span class="math display">$$E\left[\frac{1}{n} \sum_{i=1}^{n} X_i\right] \to E[X] \quad \text{as } n \to \infty$$</span><br /></p>
+    <h3 id="critical-issues-in-financial-modeling">Critical Issues in Financial Modeling</h3>
+    <h4 id="independence-and-risk">Independence and Risk</h4>
+    <ul>
+    <li><p>Many financial models assume that asset returns are independent.</p></li>
+    <li><p>When independence fails, predicted outcomes diverge significantly from actual outcomes.</p></li>
+    </ul>
+    <h4 id="fat-tailed-distributions">Fat-Tailed Distributions</h4>
+    <ul>
+    <li><p>Traditional financial models often assume normal distributions; however, real-world data frequently exhibit fat tails, leading to higher probabilities of extreme events.</p></li>
+    <li><p>The implications are that:</p></li>
+    </ul>
+    <p><br /><span class="math display">$$P(|X| &gt; k) \sim \frac{1}{k^\alpha} \quad (\alpha &lt; 2)$$</span><br /> suggests that extreme events are more common than predicted by normal distributions.</p>
+    <h3 id="conclusion">Conclusion</h3>
+    <h6 id="section-1"></h6>
+    <p>Understanding the complex interplay of probability, risk, and uncertainty is crucial for financial theorists and practitioners. Emphasis on robust statistical methodology is necessary given the inconsistencies observed in traditional models during significant financial events.</p>
+    <h1 id="lecture-notes-on-financial-invention">Lecture Notes on Financial Invention</h1>
+    <h3 id="the-engineering-perspective">The Engineering Perspective</h3>
+    <ul>
+    <li><p>Importance of engineering in finance.</p></li>
+    <li><p>Complexity of financial products likened to a complicated airplane with many parts.</p></li>
+    <li><p>Human factors engineering: Understanding that engineers design devices for use by imperfect humans.</p></li>
+    <li><p>Introduction to behavioral finance: Exploring the intersection of human psychology and financial decision-making.</p></li>
+    </ul>
+    <h3 id="review-of-the-last-lecture">Review of the Last Lecture</h3>
+    <h4 id="key-concepts">Key Concepts</h4>
+    <ul>
+    <li><p><strong>Return:</strong> The gain from an investment consisting of capital gains and dividends.</p></li>
+    <li><p><strong>Random Variables:</strong> Quantities created by uncertain events that can be described through probability theory.</p></li>
+    <li><p><strong>Measures of Central Tendency:</strong> Average (mean) and geometric average.</p></li>
+    <li><p><strong>Risk Measurement:</strong> Variance as a metric of risk.</p></li>
+    <li><p><strong>Co-movement Measures:</strong> Covariance, correlation, and regression analysis.</p></li>
+    <li><p><strong>Probability Distributions:</strong> Normal distribution as a common occurrence, characterized by the bell-shaped curve.</p></li>
+    </ul>
+    <h4 id="the-central-limit-theorem">The Central Limit Theorem</h4>
+    <p>The central limit theorem states that: <br /><span class="math display">$$\text{If } X_1, X_2, \ldots, X_n \text{ are independent and identically distributed (i.i.d.) random variables with finite variance, then the distribution of the sample mean } \bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i \text{ approaches a normal distribution as } n \to \infty.$$</span><br /></p>
+    <ul>
+    <li><p>Importance of understanding that independence assumptions can lead to underestimating risks, particularly at the tails (fat tails) of distributions.</p></li>
+    </ul>
+    <h4 id="failures-of-independence-assumption">Failures of Independence Assumption</h4>
+    <ul>
+    <li><p>Discussion of idiosyncratic vs. market risk.</p></li>
+    <li><p>Mention of the impact of news on stock market returns and the false sense of independence.</p></li>
+    </ul>
+    <h3 id="inventions-in-finance">Inventions in Finance</h3>
+    <h4 id="historical-context">Historical Context</h4>
+    <ul>
+    <li><p>Financial landscape in 1970: Absence of options exchanges, financial futures, and electronic trading.</p></li>
+    <li><p>Hypothesis: Future transformations in finance to be as dramatic as past changes due to ongoing technological progress.</p></li>
+    </ul>
+    <h4 id="reflection-on-financial-inventions">Reflection on Financial Inventions</h4>
+    <ul>
+    <li><p>New financial instruments are met with scrutiny following financial crises.</p></li>
+    <li><p>Need for regulatory frameworks to ensure safety in innovations.</p></li>
+    </ul>
+    <h3 id="the-concept-of-risk">The Concept of Risk</h3>
+    <ul>
+    <li><p>Fundamental nature of finance: Managing risk while creating opportunities.</p></li>
+    <li><p>Institutions such as taxation, welfare, and education systems as risk management devices.</p></li>
+    <li><p>The balance between reducing arbitrary inequality and promoting opportunity through financial systems.</p></li>
+    </ul>
+    <h3 id="key-themes-in-financial-invention">Key Themes in Financial Invention</h3>
+    <h4 id="framing">Framing</h4>
+    <ul>
+    <li><p>Importance of context and associations in how financial products are perceived.</p></li>
+    <li><p>Designing financial inventions to have appealing frameworks for user engagement.</p></li>
+    </ul>
+    <h4 id="devices-in-finance">Devices in Finance</h4>
+    <ul>
+    <li><p>Financial instruments conceived as devices designed to fulfill specific needs.</p></li>
+    <li><p>Examples include shared resources in early communities and formal arrangements like corporations.</p></li>
+    </ul>
+    <h3 id="examples-of-financial-innovations">Examples of Financial Innovations</h3>
+    <h4 id="limited-liability-corporation">Limited Liability Corporation</h4>
+    <ul>
+    <li><p>Emergence of limited liability in corporations (New York’s 1811 law).</p></li>
+    <li><p>Simplification of starting a corporation and protecting shareholders from company debts.</p></li>
+    </ul>
+    <h4 id="inflation-indexed-bonds">Inflation-Indexed Bonds</h4>
+    <ul>
+    <li><p>Historical context of inflation and the invention of indexed bonds in Massachusetts (1780).</p></li>
+    <li><p>Comeback of inflation-indexed instruments in modern finance.</p></li>
+    </ul>
+    <h4 id="credit-default-swaps">Credit Default Swaps</h4>
+    <ul>
+    <li><p>Vehicle for managing credit risk through contractual agreements to transfer default risk between parties.</p></li>
+    <li><p>Development of regulatory frameworks that allowed swaps to thrive versus traditional credit insurance.</p></li>
+    </ul>
+    <h4 id="case-study-chiles-unidad-de-fomento">Case Study: Chile’s Unidad de Fomento</h4>
+    <ul>
+    <li><p>Introduction of a stable unit of account that adjusts with inflation, allowing contracts to maintain value amidst inflationary risks.</p></li>
+    <li><p>Examining barriers to adopting similar mechanisms in other countries.</p></li>
+    </ul>
+    <h3 id="conclusion-1">Conclusion</h3>
+    <ul>
+    <li><p>Reflection on the dual-edged nature of financial innovations: managing risks while also creating new opportunities for stakeholders.</p></li>
+    <li><p>Importance of understanding financial tools and their implications for economic stability and growth.</p></li>
+    </ul>
+    <h1 id="notes-on-financial-markets">Notes on Financial Markets</h1>
+    <h3 id="introduction-1">Introduction</h3>
+    <p>This lecture focuses on fundamental concepts in portfolio management, specifically the relationship between risk and return, leading to an introduction to the Capital Asset Pricing Model (CAPM).</p>
+    <h3 id="recap-of-previous-lecture">Recap of Previous Lecture</h3>
+    <ul>
+    <li><p>Discussed innovation in finance as a form of engineering.</p></li>
+    <li><p>Emphasized the importance of experimentation and the invention process.</p></li>
+    <li><p>Introduced the Vereenigde Oost-Indische Compagnie (VOC) as a significant historical example:</p></li>
+    </ul>
+    <ul>
+    <li><p>Established in 1602 during wartime in Holland.</p></li>
+    <li><p>Created the first stock exchange in Amsterdam with shares openly traded.</p></li>
+    </ul>
+    <h3 id="key-concepts-1">Key Concepts</h3>
+    <h4 id="the-voc-and-its-innovations">The VOC and Its Innovations</h4>
+    <ul>
+    <li><p>Allowed for long-term investment via shares.</p></li>
+    <li><p>Led to the establishment of stock brokers who facilitated trading, including the phenomenon of short-selling.</p></li>
+    <li><p>The first case of market speculation was seen with figures like Isaac La Maire shorting VOC stock.</p></li>
+    </ul>
+    <h4 id="risk-and-return">Risk and Return</h4>
+    <ul>
+    <li><p>Questioned how a consistently high return (e.g., 20% for VOC) can persist.</p></li>
+    <li><p>Noted the historical performance of stocks compared to bonds:</p></li>
+    </ul>
+    <p><br /><span class="math display"><em>R</em><sub><em>a</em><em>v</em><em>g</em></sub><sup><em>s</em><em>t</em><em>o</em><em>c</em><em>k</em><em>s</em></sup> = 6.8% (after inflation)  <em>v</em><em>s</em>.  <em>R</em><sub><em>a</em><em>v</em><em>g</em></sub><sup><em>b</em><em>o</em><em>n</em><em>d</em><em>s</em></sup> = 2.8%</span><br /></p>
+    <h3 id="the-equity-premium-puzzle">The Equity Premium Puzzle</h3>
+    <ul>
+    <li><p>Equity premium referring to the excess return that investing in the stock market provides over a risk-free rate.</p></li>
+    <li><p>Investigated why stocks tend to outperform bonds universally, citing studies like those from Jeremy Siegel and Dimson, Marsh, and Staunton.</p></li>
+    </ul>
+    <h4 id="standard-answer-risk">Standard Answer: Risk</h4>
+    <p>The high return on stocks equivalently comes with greater risk, represented statistically via standard deviation.</p>
+    <h3 id="harry-markowitz-and-portfolio-theory">Harry Markowitz and Portfolio Theory</h3>
+    <h4 id="diversification-and-portfolio-management">Diversification and Portfolio Management</h4>
+    <ul>
+    <li><p>Introduced the concept that there is no ideal investment, only trade-offs between risk and return.</p></li>
+    <li><p>Emphasized diversification through Markowitz’s definition of an optimal portfolio:</p></li>
+    </ul>
+    <p><br /><span class="math display"><em>E</em>(<em>R</em><sub><em>p</em></sub>) = <em>x</em><sub>1</sub><em>E</em>(<em>R</em><sub>1</sub>) + <em>x</em><sub>2</sub><em>E</em>(<em>R</em><sub>2</sub>) + … + <em>x</em><sub><em>n</em></sub><em>E</em>(<em>R</em><sub><em>n</em></sub>)</span><br /> Where <span class="math inline"><em>E</em>(<em>R</em><sub><em>p</em></sub>)</span> is the expected return of the portfolio, and <span class="math inline"><em>x</em><sub><em>i</em></sub></span> represents the fraction of total investment in asset <span class="math inline"><em>i</em></span>.</p>
+    <h4 id="pure-leverage">Pure Leverage</h4>
+    <p>Defined leverage and utilized an example with the VOC:</p>
+    <ul>
+    <li><p>If the risk-free rate <span class="math inline"><em>r</em><sub><em>f</em></sub> = 5%</span> and expected return for VOC is <span class="math inline">20%, <em>σ</em> = 40%</span>, the expected return using leverage becomes:</p></li>
+    </ul>
+    <p><br /><span class="math display">$$E(R_{por}) = \frac{Investment\ in\ VOC + Borrowed\ funds - Interest\ payment}{Total\ Investment}$$</span><br /></p>
+    <h3 id="constructing-the-efficient-frontier">Constructing the Efficient Frontier</h3>
+    <ul>
+    <li><p>The Efficient Frontier illustrates the best expected return for a given level of risk when combining risky assets.</p></li>
+    <li><p>Denoted by a hyperbola showing the trade-offs made by investors. Addition of assets lowers risk without compromising returns.</p></li>
+    </ul>
+    <h4 id="finding-the-tangency-portfolio">Finding the Tangency Portfolio</h4>
+    <ul>
+    <li><p>By introducing a risk-free asset into the mix, one establishes the Tangency Portfolio, which achieves the highest expected return per unit of risk, represented as:</p></li>
+    </ul>
+    <p><br /><span class="math display"><em>E</em>(<em>R</em><sub><em>i</em></sub>) = <em>r</em><sub><em>f</em></sub> + <em>β</em><sub><em>i</em></sub>(<em>E</em>(<em>R</em><sub><em>m</em></sub>) − <em>r</em><sub><em>f</em></sub>)</span><br /> Where:</p>
+    <ul>
+    <li><p><span class="math inline"><em>E</em>(<em>R</em><sub><em>i</em></sub>)</span> is the expected return of asset <span class="math inline"><em>i</em></span>,</p></li>
+    <li><p><span class="math inline"><em>β</em><sub><em>i</em></sub></span> measures the systematic risk in relation to the market.</p></li>
+    </ul>
+    <h3 id="capital-asset-pricing-model-capm">Capital Asset Pricing Model (CAPM)</h3>
+    <ul>
+    <li><p>Developed by Sharpe and Lintner, establishing that the expected return on any asset can be described by how that asset correlates with the overall market.</p></li>
+    <li><p>Expresses the relationship between systemic risk and expected return.</p></li>
+    </ul>
+    <h3 id="sharpe-ratio">Sharpe Ratio</h3>
+    <p>Defined as: <br /><span class="math display">$$Sharpe\ Ratio = \frac{E(R_p) - r_f}{\sigma_p}$$</span><br /> Where:</p>
+    <ul>
+    <li><p><span class="math inline"><em>E</em>(<em>R</em><sub><em>p</em></sub>)</span> is the expected portfolio return,</p></li>
+    <li><p><span class="math inline"><em>r</em><sub><em>f</em></sub></span> is the risk-free rate,</p></li>
+    <li><p><span class="math inline"><em>σ</em><sub><em>p</em></sub></span> is the standard deviation of the portfolio’s excess return.</p></li>
+    </ul>
+    <h3 id="conclusion-2">Conclusion</h3>
+    <ul>
+    <li><p>The session highlighted key financial theories surrounding risk and return, emphasizing the practical implications of diversification and risk management.</p></li>
+    <li><p>Markowitz’s concepts of optimal portfolios led to the development of the CAPM, essential for understanding asset pricing in financial markets.</p></li>
+    </ul>
+    <h1 id="introduction-to-insurance-and-risk-management">Introduction to Insurance and Risk Management</h1>
+    <h3 id="overview-of-insurance">Overview of Insurance</h3>
+    <p>Insurance is an important institution for managing risk, often considered separate from finance. However, the principles of risk management apply equally to both fields. Key concepts include:</p>
+    <ul>
+    <li><p>Risk Pooling: The fundamental idea of insurance revolves around pooling risks among a large group to mitigate individual exposure to extreme risks.</p></li>
+    <li><p>Financial Institutions: Financial and insurance institutions are essentially structures designed to manage risks effectively.</p></li>
+    </ul>
+    <h3 id="historical-background">Historical Background</h3>
+    <ul>
+    <li><p>The concept of insurance dates back to ancient Rome, with primitive forms targeting death expenses (funeral insurance).</p></li>
+    <li><p>The modern understanding of risk pooling emerged in the 1600s alongside developments in the mathematical theory of probability.</p></li>
+    <li><p>The oldest known reference to a collective insurance fund dates back to 1609 in an anonymous letter to Count Oldenburg.</p></li>
+    </ul>
+    <h3 id="mathematical-foundation">Mathematical Foundation</h3>
+    <h4 id="probability-theory">Probability Theory</h4>
+    <p>The insurance model assumes independence of risks. If we consider <span class="math inline"><em>n</em></span> trials of an event that occurs with probability <span class="math inline"><em>p</em></span>, the standard deviation of the proportion of occurrences is given by: <br /><span class="math display">$$\sigma = \sqrt{\frac{p(1-p)}{n}}$$</span><br /> As <span class="math inline"><em>n</em></span> increases, the standard deviation decreases, leading to more predictable outcomes when a large number of policies are sold.</p>
+    <h3 id="types-of-insurance">Types of Insurance</h3>
+    <p>Insurance generally falls into the following categories:</p>
+    <ul>
+    <li><p>Life Insurance: Covers premature death and provides financial security to beneficiaries.</p></li>
+    <li><p>Health Insurance: Covers medical expenses.</p></li>
+    <li><p>Property and Casualty Insurance: Protects against risks associated with property loss (homes, cars).</p></li>
+    <li><p>Annuities: Investment-oriented products providing regular payments.</p></li>
+    </ul>
+    <h3 id="challenges-of-insurance">Challenges of Insurance</h3>
+    <p>Creating a reliable insurance system involves overcoming several challenges:</p>
+    <h4 id="moral-hazard">Moral Hazard</h4>
+    <p>Moral hazard arises when insured individuals alter their behavior, increasing their risk exposure. For example, with fire insurance, one might be tempted to deliberately cause a fire to collect benefits.</p>
+    <h4 id="selection-bias">Selection Bias</h4>
+    <p>Selection bias occurs when individuals with higher risk are more likely to purchase insurance. This can lead to disproportionately high claims, making insurance provision unviable.</p>
+    <h3 id="regulatory-environment">Regulatory Environment</h3>
+    <p>The insurance industry is heavily regulated. Key regulations include:</p>
+    <ul>
+    <li><p>State oversight and authorization of insurance companies.</p></li>
+    <li><p>Insurance guarantee funds protect consumers against the insolvency of insurers.</p></li>
+    <li><p>The Federal Insurance Office established under the Dodd-Frank Act to monitor systemic risk.</p></li>
+    </ul>
+    <h3 id="case-study-american-international-group-aig">Case Study: American International Group (AIG)</h3>
+    <p>AIG, once the world’s largest insurance company, provides a crucial example of the principles discussed. Its systematic risk exposure led to its bailout during the 2008 financial crisis:</p>
+    <ul>
+    <li><p>Founded in 1919, it expanded to become a significant player in insurance markets.</p></li>
+    <li><p>Faced issues post-2005 related to improper risk assessment leading to extreme exposure in the real estate market.</p></li>
+    <li><p>Resulted in a $182 billion government bailout due to systemic risk concerns, highlighting the importance of robust regulatory environments.</p></li>
+    </ul>
+    <h3 id="innovations-in-insurance">Innovations in Insurance</h3>
+    <p>Recent innovations include:</p>
+    <ul>
+    <li><p>Catastrophe Bonds: Bonds that provide funding in the event of a significant disaster.</p></li>
+    <li><p>Terrorism Risk Insurance Act (TRIA): Established to offer coverage against terrorism-related losses, demonstrating the evolving nature of insurable risks.</p></li>
+    </ul>
+    <h3 id="conclusion-3">Conclusion</h3>
+    <p>The insurance industry continues to evolve as it manages diverse and significant risks affecting lives and businesses. Key areas of improvement include:</p>
+    <ul>
+    <li><p>Better underwriting processes to mitigate moral hazard and selection bias.</p></li>
+    <li><p>Innovations to cover previously excluded risks, such as terrorism.</p></li>
+    <li><p>Development of effective regulatory frameworks to ensure consumer protection and industry stability.</p></li>
+    </ul>
+    <p>The insurance industry plays a vital role in societal functioning and economic stability, constantly adapting to new challenges and improving its models.</p>
+    <h3 id="references">References</h3>
+    <ul>
+    <li><p>Fabozzi et al. <em>Insurance</em></p></li>
+    <li><p>Shiller, R. J. <em>Finance and Insurance</em></p></li>
+    </ul>
+    <h1 id="notes-on-the-yale-investment-approach-the-swensen-model">Notes on the Yale Investment Approach: The Swensen Model</h1>
+    <h3 id="introduction-2">Introduction</h3>
+    <p>The lecture features Professors David Swensen and Robert Shiller discussing the Yale Investment Approach, which has transformed Yale’s endowment from less than $1 billion in 1985 to $16.7 billion by June 2010. Swensen is notably recognized for his role in financial innovations, particularly the development of swap transactions.</p>
+    <h3 id="key-concepts-2">Key Concepts</h3>
+    <h4 id="diversification">Diversification</h4>
+    <ul>
+    <li><p><strong>Principle of Diversification:</strong> As noted by Jim Tobin, a Nobel laureate, diversification is akin to the adage "don’t put all your eggs in one basket."</p></li>
+    <li><p><strong>Markowitz’s Theory:</strong> Harry Markowitz described diversification as a "free lunch," allowing higher expected returns with lower risk or vice versa.</p></li>
+    </ul>
+    <h4 id="asset-allocation">Asset Allocation</h4>
+    <ul>
+    <li><p>The most critical tool for investment returns is asset allocation, which involves deciding the proportion of various asset classes (stocks, bonds, real estate, etc.).</p></li>
+    <li><p><strong>Decision Variables:</strong></p>
+    <ul>
+    <li><p><span class="math inline"><em>A</em><sub><em>d</em></sub></span>: Allocation to domestic stocks</p></li>
+    <li><p><span class="math inline"><em>A</em><sub><em>f</em></sub></span>: Allocation to foreign stocks</p></li>
+    <li><p><span class="math inline"><em>A</em><sub><em>r</em></sub></span>: Allocation to real estate</p></li>
+    </ul></li>
+    <li><p>Swensen’s key insight was the importance of maintaining a portfolio with a substantial equity exposure due to long-term time horizons.</p></li>
+    </ul>
+    <h4 id="market-timing">Market Timing</h4>
+    <ul>
+    <li><p>Market timing is the decision to deviate from long-term asset allocation targets based on short-term predictions (buying cheap foreign stocks, for example).</p></li>
+    <li><p>Historical evidence shows that investors typically buy high and sell low, leading to poor investment outcomes.</p></li>
+    </ul>
+    <h4 id="security-selection">Security Selection</h4>
+    <ul>
+    <li><p>Security selection involves choosing individual assets to outperform the market, which is often a zero-sum game.</p></li>
+    <li><p>Fees incurred from active management can make it a negative-sum game for investors.</p></li>
+    </ul>
+    <h3 id="performance-metrics">Performance Metrics</h3>
+    <h4 id="sharpe-ratio-1">Sharpe Ratio</h4>
+    <p>The Sharpe ratio, defined as: <br /><span class="math display">$$S = \frac{R_p - R_f}{\sigma_p}$$</span><br /> where <span class="math inline"><em>R</em><sub><em>p</em></sub></span> is the portfolio return, <span class="math inline"><em>R</em><sub><em>f</em></sub></span> is the risk-free rate, and <span class="math inline"><em>σ</em><sub><em>p</em></sub></span> is the standard deviation of the portfolio return, is used to assess risk-adjusted returns. However, it is often criticized for not adequately capturing risk.</p>
+    <h4 id="investment-philosophy">Investment Philosophy</h4>
+    <p>Swensen emphasizes:</p>
+    <ul>
+    <li><p>A strong equity bias for long-term investment.</p></li>
+    <li><p>Diversification across various asset classes to mitigate risks.</p></li>
+    </ul>
+    <p>Yale’s investment strategy produced an annualized return of 8.9% over a decade compared to an average of 4.0% for other institutions.</p>
+    <h3 id="critique-of-the-yale-model">Critique of the Yale Model</h3>
+    <p>The Barron’s article criticized the Swensen Approach, arguing it emphasized alternatives too heavily, thereby lacking diversification. Swensen countered these claims by highlighting the superior long-term returns of alternative investments.</p>
+    <h3 id="conclusion-4">Conclusion</h3>
+    <h4 id="future-outlook">Future Outlook</h4>
+    <p>The Yale model is structured to adapt and respond to market changes while focusing on the long-term goals of asset preservation and growth.</p>
+    <h4 id="discussion-points">Discussion Points</h4>
+    <p>Key takeaways from the talk include:</p>
+    <ul>
+    <li><p>The significance of maintaining a diversified portfolio.</p></li>
+    <li><p>Recognizing the limitations of market timing and security selection.</p></li>
+    <li><p>Understanding the costs associated with active management.</p></li>
+    </ul>
+    <h1 id="lecture-notes-on-efficient-markets-hypothesis">Lecture Notes on Efficient Markets Hypothesis</h1>
+    <h3 id="introduction-to-efficient-markets">Introduction to Efficient Markets</h3>
+    <p>The Efficient Markets Hypothesis (EMH) is a theory that suggests that financial markets efficiently incorporate all public information. The implications of this hypothesis are profound:</p>
+    <ul>
+    <li><p>One cannot consistently beat the market, as it implies that the market has all relevant information at any point in time.</p></li>
+    <li><p>If you believe you have superior knowledge, the market likely has already integrated that information.</p></li>
+    <li><p>The market "wins" every time in a competitive environment, leading to the conclusion that active trading and market speculation might be futile.</p></li>
+    </ul>
+    <h3 id="david-swensens-case">David Swensen’s Case</h3>
+    <p>David Swensen, the chief investment officer at Yale University, has been noted for consistently "beating the market" since 1985, raising questions about the validity of EMH:</p>
+    <ul>
+    <li><p>Critics argue he could be an outlier, suggesting that his success is based on luck rather than skill.</p></li>
+    <li><p>Swensen himself expressed skepticism toward conventional metrics such as the Sharpe ratio, which measures excess return per unit of risk.</p></li>
+    </ul>
+    <h4 id="sharpe-ratio-2">Sharpe Ratio</h4>
+    <p>The Sharpe ratio is defined as:</p>
+    <p><br /><span class="math display">$$Sharpe \, Ratio = \frac{E(R_p) - R_f}{\sigma_p}$$</span><br /></p>
+    <p>where:</p>
+    <ul>
+    <li><p><span class="math inline"><em>E</em>(<em>R</em><sub><em>p</em></sub>)</span> = expected return of the portfolio</p></li>
+    <li><p><span class="math inline"><em>R</em><sub><em>f</em></sub></span> = risk-free rate</p></li>
+    <li><p><span class="math inline"><em>σ</em><sub><em>p</em></sub></span> = standard deviation of the portfolio’s excess return</p></li>
+    </ul>
+    <p>The goal of the Sharpe ratio is to adjust returns for the risk taken. Swensen challenges its practicality, especially with the illiquidity of certain assets in his portfolio, such as private equity and real estate.</p>
+    <h3 id="market-manipulation-via-sharpe-ratio">Market Manipulation via Sharpe Ratio</h3>
+    <p>There are strategies to manipulate the Sharpe ratio to create the appearance of high performance without true risk-adjusted returns:</p>
+    <ol>
+    <li><p>Selling Off Tails: This involves selling the higher tail of return distributions (unlikely high returns) and concentrating on the lower tail (higher risk of loss).</p></li>
+    <li><p>Options Trading: By selling out-of-the-money calls and writing puts, fund managers can manipulate their return distributions for a brief period while leaving unhedged risks.</p></li>
+    </ol>
+    <h4 id="case-study-integral-investment-management">Case Study: Integral Investment Management</h4>
+    <p>The case of Integral Investment Management illustrates the dangers of high Sharpe ratios that mask underlying risk. They experienced significant losses during market downturns, leading to legal actions and discussions about mandatory disclosures.</p>
+    <h3 id="historical-perspective-on-emh">Historical Perspective on EMH</h3>
+    <p>George Gibson’s work in 1889 established early ideas of market efficiency, expressing that markets reflect collective intelligence. Subsequent work by Charles Conant in 1904 expanded on this concept, establishing a theoretical framework around market speculation.<br />
+    The evolution of the EMH gained momentum in the 1960s with Eugene Fama’s formal studies, culminating in his influential paper:</p>
+    <blockquote>
+    <p>"Efficient Capital Markets: A Review" (1969)</p>
+    </blockquote>
+    <p>Fama stated that security prices reflect all relevant information, discrediting many active management strategies.</p>
+    <h3 id="random-walk-theory">Random Walk Theory</h3>
+    <p>The Random Walk hypothesis posits that stock prices follow a random path due to unforecastable news events. The mathematical representation is:</p>
+    <p><br /><span class="math display"><em>X</em><sub><em>t</em></sub> = <em>X</em><sub><em>t</em> − 1</sub> + <em>ϵ</em><sub><em>t</em></sub></span><br /></p>
+    <p>where:</p>
+    <ul>
+    <li><p><span class="math inline"><em>X</em><sub><em>t</em></sub></span> = value of the asset at time <span class="math inline"><em>t</em></span></p></li>
+    <li><p><span class="math inline"><em>ϵ</em><sub><em>t</em></sub></span> = shock term, assumed to be normally distributed with mean zero.</p></li>
+    </ul>
+    <p>This principle suggests that price movements are purely random, challenging theories that rely on patterns (e.g., Technical Analysis techniques like "Head and Shoulders").</p>
+    <h3 id="technical-analysis-and-its-limitations">Technical Analysis and its Limitations</h3>
+    <p>Technical analysis relies on price patterns to forecast future movements. However, empirical studies (most notably by Burton Malkiel in <em>A Random Walk Down Wall Street</em>) demonstrate a lack of predictive power in these charts. Malkiel’s primary claims include:</p>
+    <ul>
+    <li><p>Technical analysts cannot predict market movements with any degree of reliability.</p></li>
+    <li><p>Genuine price patterns observable in stocks are largely coincidental.</p></li>
+    </ul>
+    <h4 id="autoregressive-models">Autoregressive Models</h4>
+    <p>A comparison of Random Walk models versus Autoregressive (AR) models reveals that:</p>
+    <p><br /><span class="math display"><em>X</em><sub><em>t</em></sub> = <em>μ</em> + <em>ϕ</em><em>X</em><sub><em>t</em> − 1</sub> + <em>ϵ</em><sub><em>t</em></sub>,</span><br /> where <span class="math inline"><em>ϕ</em></span> is a coefficient representing the influence of the previous time period.</p>
+    <p>If <span class="math inline">|<em>ϕ</em>| &lt; 1</span>, the process is stationary, indicating mean-reverting behavior. A <span class="math inline"><em>ϕ</em></span> close to 1 indicates prolonged trends with less revertive power, resembling Random Walk behavior. Such a process may misrepresent actual market dynamics, creating a sense of predictability that could be exploited.</p>
+    <h3 id="conclusion-5">Conclusion</h3>
+    <p>The Efficient Markets Hypothesis remains a foundational concept in finance, often viewed as a "half-truth." While it provides essential insights regarding the behavior of markets, the emergence of behavioral finance and criticisms of traditional notions of market efficiency challenge its absoluteness.</p>
+    <ul>
+    <li><p>Investors should be cautious of relying solely on traditional metrics like the Sharpe ratio.</p></li>
+    <li><p>A deeper understanding of market dynamics, risk, and the character of investment managers is crucial for successful investing.</p></li>
+    </ul>
+    <h1 id="theory-of-debt-and-interest-rates">Theory of Debt and Interest Rates</h1>
+    <h3 id="introduction-3">Introduction</h3>
+    <ul>
+    <li><p>Discussion focuses on the theory of debt and interest rates, highlighting significant themes including:</p>
+    <ul>
+    <li><p>Irving Fisher’s model of interest.</p></li>
+    <li><p>Present values and discount bonds.</p></li>
+    <li><p>Compound interest and conventional bonds.</p></li>
+    <li><p>The term structure of interest rates and forward rates.</p></li>
+    </ul></li>
+    <li><p>Readings include chapters from the Fabozzi et al. manuscript and a preliminary chapter from the instructor’s upcoming book.</p></li>
+    </ul>
+    <h3 id="historical-context-1">Historical Context</h3>
+    <h4 id="eugen-von-boehm-bawerks-explanations">Eugen von Boehm-Bawerk’s Explanations</h4>
+    <ul>
+    <li><p>In his book on the theory of interest (1884), Boehm-Bawerk identified three causes for the existence of interest rates:</p>
+    <ol>
+    <li><p><strong>Technical Progress</strong>: Improvements in productivity due to advancements in technology.</p></li>
+    <li><p><strong>Roundabout Production</strong>: More complex methods of production yielding higher output.</p></li>
+    <li><p><strong>Time Preference</strong>: The human tendency to prefer consumption now over in the future, reflecting impatience.</p></li>
+    </ol></li>
+    </ul>
+    <h4 id="irving-fishers-contributions">Irving Fisher’s Contributions</h4>
+    <ul>
+    <li><p>Fisher’s influential book, <em>The Theory of Interest</em> (1930), introduced several basic models in understanding interest rates.</p></li>
+    <li><p>Key concept introduced is that the interest rate is the intersection of supply and demand curves for savings.</p></li>
+    </ul>
+    <h3 id="robinson-crusoe-economy">Robinson Crusoe Economy</h3>
+    <h4 id="two-period-model">Two-Period Model</h4>
+    <ul>
+    <li><p>Consider Robinson Crusoe deciding between consumption today versus consumption in the future, represented graphically:</p></li>
+    </ul>
+    <h3 id="present-values-and-discount-bonds">Present Values and Discount Bonds</h3>
+    <h4 id="discount-bond-formula">Discount Bond Formula</h4>
+    <ul>
+    <li><p>A discount bond pays a fixed amount, <span class="math inline"><em>F</em></span>, at a future date, and is priced today as: <br /><span class="math display">$$P = \frac{F}{(1 + r)^T}$$</span><br /> where <span class="math inline"><em>P</em></span> is the current price, <span class="math inline"><em>F</em></span> is the future value, <span class="math inline"><em>r</em></span> is the interest rate, and <span class="math inline"><em>T</em></span> is the time until maturity.</p></li>
+    </ul>
+    <h4 id="compounding">Compounding</h4>
+    <ul>
+    <li><p>Discusses annual compounding versus semi-annual compounding: <br /><span class="math display">$$P = \frac{F}{(1 + z)^t}$$</span><br /> where <span class="math inline">$z = \frac{r}{2}$</span> for semi-annual compounding, and <span class="math inline"><em>t</em> = 2<em>T</em></span>.</p></li>
+    </ul>
+    <h4 id="present-discounted-value-pdv">Present Discounted Value (PDV)</h4>
+    <ul>
+    <li><p>The PDV of future payments is computed as: <br /><span class="math display">$$PDV = \sum_{t=1}^{\infty} \frac{x_t}{(1 + r)^t}$$</span><br /></p></li>
+    </ul>
+    <h4 id="annuities-and-perpetuities">Annuities and Perpetuities</h4>
+    <ul>
+    <li><p>Present Value of an annuity: <br /><span class="math display">$$PV_{\text{annuity}} = x \cdot \left( \frac{1 - (1 + r)^{-T}}{r} \right)$$</span><br /></p></li>
+    <li><p>Present Value of a consol (perpetuity): <br /><span class="math display">$$PV_{\text{perpetuity}} = \frac{C}{r}$$</span><br /> where <span class="math inline"><em>C</em></span> is the coupon payment.</p></li>
+    </ul>
+    <h3 id="forward-rates-and-term-structure">Forward Rates and Term Structure</h3>
+    <h4 id="forward-rate-formula">Forward Rate Formula</h4>
+    <ul>
+    <li><p>The forward rate between periods can be computed as: <br /><span class="math display">$$1 + f = \frac{(1 + r_2)^2}{(1 + r_1)}$$</span><br /></p></li>
+    </ul>
+    <h4 id="expectations-theory-of-term-structure">Expectations Theory of Term Structure</h4>
+    <ul>
+    <li><p>Forward rates are often viewed as the market’s expectations of future short-term rates.</p></li>
+    <li><p>Fisher’s model suggests these rates reflect current information and risk premiums.</p></li>
+    </ul>
+    <h3 id="conclusion-6">Conclusion</h3>
+    <ul>
+    <li><p>This lecture covered fundamental concepts of debt and interest theory, providing a historical context, mathematical models, and their implications in real-world economics.</p></li>
+    <li><p>Future discussions will focus on practical applications and regulatory considerations in lending practices.</p></li>
+    </ul>
+    <h1 id="notes-on-corporate-stocks">Notes on Corporate Stocks</h1>
+    <h3 id="introduction-to-corporate-stocks">Introduction to Corporate Stocks</h3>
+    <ul>
+    <li><p>Corporations issue shares to create a mechanism of organization and finance.</p></li>
+    <li><p>The first modern corporation to trade shares was the Dutch East India Company in 1602.</p></li>
+    <li><p>Corporate structure allows for the aggregation of capital and sharing of profits among shareholders.</p></li>
+    </ul>
+    <h3 id="personal-experience-with-corporations">Personal Experience with Corporations</h3>
+    <ul>
+    <li><p>Example: Case Shiller Weiss Incorporated, founded in 1991.</p></li>
+    <li><p>Shares were divided among founders, balancing contributions of money and time.</p></li>
+    <li><p>The ownership and profit-sharing model encourages alignment of interests among stakeholders.</p></li>
+    </ul>
+    <h3 id="market-capitalization">Market Capitalization</h3>
+    <ul>
+    <li><p>Market capitalization (market cap) is calculated as: <br /><span class="math display">Market Cap = Value per Share × Number of Shares</span><br /></p></li>
+    <li><p>Important to understand the number of outstanding shares to determine ownership stake: <br /><span class="math display">$$\text{Ownership Percentage} = \frac{\text{Shares Owned}}{\text{Total Shares Outstanding}}$$</span><br /></p></li>
+    </ul>
+    <h3 id="dividends-and-earnings">Dividends and Earnings</h3>
+    <ul>
+    <li><p>A dividend is a distribution of a portion of a company’s earnings to its shareholders.</p></li>
+    <li><p>Companies may choose not to pay dividends, especially in growth phases.</p></li>
+    <li><p>Key considerations for paying dividends:</p>
+    <ul>
+    <li><p>Retained earnings vs. dividends.</p></li>
+    <li><p>The role of the board of directors in declaring dividends.</p></li>
+    </ul></li>
+    </ul>
+    <h3 id="ownership-structures">Ownership Structures</h3>
+    <ul>
+    <li><p>Common stock represents ownership and comes with voting rights.</p></li>
+    <li><p>Preferred stock has a set dividend payout but usually lacks voting rights.</p></li>
+    <li><p>Difference between publicly traded (public equity) vs. privately held (private equity) companies.</p></li>
+    </ul>
+    <h3 id="corporate-governance">Corporate Governance</h3>
+    <ul>
+    <li><p>Shareholders elect a board of directors to provide oversight.</p></li>
+    <li><p>The concept of "shareholder democracy" allows investors to influence corporate decisions.</p></li>
+    <li><p>Directors have a duty of loyalty to the shareholders.</p></li>
+    </ul>
+    <h3 id="financial-metrics-and-analysis">Financial Metrics and Analysis</h3>
+    <ul>
+    <li><p>Key financial indicators for investors:</p>
+    <ul>
+    <li><p>Assets vs. liabilities on the balance sheet provides insights into financial health.</p></li>
+    <li><p>Shareholder equity is calculated as: <br /><span class="math display">Shareholder Equity = Total Assets − Total Liabilities</span><br /></p></li>
+    </ul></li>
+    <li><p>An example of a troubled company is Xerox, which faced digital disruption and financial challenges.</p></li>
+    </ul>
+    <h3 id="equity-financing-and-the-pecking-order-theory">Equity Financing and the Pecking Order Theory</h3>
+    <ul>
+    <li><p>Companies prefer internal financing (retained earnings) over issuing new equity.</p></li>
+    <li><p><strong>Pecking Order Theory</strong> suggests firms will only issue new equity as a last resort.</p></li>
+    </ul>
+    <h3 id="conclusion-7">Conclusion</h3>
+    <ul>
+    <li><p>Understanding stocks is crucial for grasping modern corporate finance and governance.</p></li>
+    <li><p>Future discussions may include a deeper dive into the distinction between real estate and stocks.</p></li>
+    </ul>
+    <h1 id="notes-on-mortgage-lending">Notes on Mortgage Lending</h1>
+    <h3 id="introduction-4">Introduction</h3>
+    <p>This lecture discusses the history and modern principles of mortgage lending, focusing on both commercial and residential real estate finance.</p>
+    <h3 id="historical-context-of-mortgages">Historical Context of Mortgages</h3>
+    <h4 id="etymology-of-mortgage">Etymology of ’Mortgage’</h4>
+    <p>The term "mortgage" comes from the Latin phrase <em>mortuus vadium</em>, meaning "death pledge". In Middle Ages France, the term was adapted to <em>gage</em>, which means "pledge". The Oxford English Dictionary states that the term entered the English language around 1283.</p>
+    <h4 id="ancient-practices">Ancient Practices</h4>
+    <p>Yale historian Valerie Hansen’s research into documents from the Tang Dynasty in China indicates early forms of loans financed through trade, while some documents imply agreements resembling mortgages.</p>
+    <h3 id="evolution-of-mortgage-systems">Evolution of Mortgage Systems</h3>
+    <h4 id="development-until-the-19th-century">Development until the 19th Century</h4>
+    <ul>
+    <li><p>Prior to the late 19th century, mortgage institutions were poorly defined, leading to issues of title and ownership.</p></li>
+    <li><p>In 1872, Prussia established the <em>Grundbuch</em> law, creating a centralized registry of property ownership which enabled a clearer property rights framework.</p></li>
+    </ul>
+    <h4 id="modern-emerging-of-mortgages">Modern Emerging of Mortgages</h4>
+    <p>Hernando de Soto argues in <em>Mystery of Capital</em> that property rights issues persist globally, inhibiting mortgage finance.</p>
+    <h3 id="commercial-real-estate-finance-in-the-u.s.">Commercial Real Estate Finance in the U.S.</h3>
+    <h4 id="ownership-structures-1">Ownership Structures</h4>
+    <p>Most commercial real estate is owned through partnerships rather than corporations to avoid double taxation. Key points include:</p>
+    <ul>
+    <li><p>Partnerships provide favorable tax treatment, while corporations suffer from double-taxation (corporate and individual taxes).</p></li>
+    <li><p>Direct Participation Programs (DPPs) allow investments by accredited investors.</p></li>
+    </ul>
+    <h4 id="real-estate-investment-trusts-reits">Real Estate Investment Trusts (REITs)</h4>
+    <p>Created in 1960, REITs allow for public investment in real estate while avoiding corporate profits taxes. These must comply with specific regulations:</p>
+    <ul>
+    <li><p>75% of assets must be in real estate or cash.</p></li>
+    <li><p>90% of income must come from real estate.</p></li>
+    <li><p>95% of income must be distributed to shareholders.</p></li>
+    </ul>
+    <h3 id="residential-real-estate-finance">Residential Real Estate Finance</h3>
+    <h4 id="u.s.-homeownership-rates">U.S. Homeownership Rates</h4>
+    <p>Approximately two-thirds of households in the U.S. own their own homes, largely due to government policies promoting mortgage lending.</p>
+    <h4 id="historical-crises-and-innovations">Historical Crises and Innovations</h4>
+    <p>The Great Depression led to a housing crisis with rising defaults. The government established the <em>Homeowners Loan Corporation</em> to bail out distressed homeowners. Key innovations included:</p>
+    <ul>
+    <li><p>Introduction of long-term mortgages through the Federal Housing Administration (FHA) in 1934.</p></li>
+    <li><p>Shift from balloon payment loans to amortizing loans with fixed monthly payments.</p></li>
+    </ul>
+    <h4 id="amortizing-mortgages">Amortizing Mortgages</h4>
+    <p>The formula for mortgage payments is derived from the present value of annuities. The monthly payment <span class="math inline"><em>x</em></span> satisfies: <br /><span class="math display">$$P = x \cdot \frac{1 - (1 + r)^{-n}}{r}$$</span><br /> where <span class="math inline"><em>P</em></span> is the initial loan amount, <span class="math inline"><em>r</em></span> is the monthly interest rate, and <span class="math inline"><em>n</em></span> is the number of months.</p>
+    <h3 id="securitization-of-mortgages">Securitization of Mortgages</h3>
+    <h4 id="government-involvement">Government Involvement</h4>
+    <p>The Federal National Mortgage Association (Fannie Mae) was established in 1938 to buy mortgages and support the housing market. In 1968, it was privatized.</p>
+    <h4 id="freddie-mac">Freddie Mac</h4>
+    <p>Created in 1970, it also aims to support mortgage markets through securitization. Both Fannie Mae and Freddie Mac issue mortgage-backed securities.</p>
+    <h4 id="crisis-of-2008">Crisis of 2008</h4>
+    <p>The mortgage market collapsed due to the failure of subprime mortgages, leading to a government bailout for both Fannie Mae and Freddie Mac, despite previous assertions that they would not be bailed out.</p>
+    <h3 id="conclusion-8">Conclusion</h3>
+    <p>The lecture concludes by highlighting the evolution of mortgage finance and the lessons learned from historical crises. Emphasis is placed on the importance of regulations and the ongoing development of financial institutions to prevent past mistakes.</p>
+    <h1 id="lecture-notes-on-behavioral-finance">Lecture Notes on Behavioral Finance</h1>
+    <h3 id="introduction-to-behavioral-finance">Introduction to Behavioral Finance</h3>
+    <p>Behavioral Finance, or Psychology and Finance, combines insights from psychology into the mechanics of financial markets. While traditional economics often relies on rational behavior as a foundational principle, Behavioral Finance acknowledges that human behavior is far more complex.</p>
+    <h4 id="key-points">Key Points</h4>
+    <ul>
+    <li><p>Behavioral Finance challenges the assumption of rationality in economic theory, highlighting that human beings often make errors due to biases and heuristics.</p></li>
+    <li><p>The importance of understanding human behavior in financial institutions is crucial, as they are designed for real people whose behavior can be unpredictable.</p></li>
+    <li><p>Morality plays a significant role in long-term business success, as reputable businesses tend not to exploit human weaknesses excessively.</p></li>
+    </ul>
+    <h3 id="historical-context-2">Historical Context</h3>
+    <h4 id="adam-smith">Adam Smith</h4>
+    <ul>
+    <li><p>In 1759, Adam Smith published <em>The Theory of Moral Sentiments</em> and in 1776 <em>The Wealth of Nations</em>.</p></li>
+    <li><p><em>The Theory of Moral Sentiments</em> examines the interplay of selfishness and altruism, suggesting that people inherently possess a desire for praise and moral approval.</p></li>
+    <li><p>Mature individuals transition from a simple craving for praise to a desire for praise-worthiness, enabling societal functioning.</p></li>
+    </ul>
+    <h4 id="selfishness-vs.-altruism">Selfishness vs. Altruism</h4>
+    <p>Smith questioned whether humans are completely selfish and concluded that they are not. Instead, people crave moral standing from their communities.</p>
+    <h3 id="personality-types-in-finance">Personality Types in Finance</h3>
+    <h4 id="antisocial-personality-disorder-apd">Antisocial Personality Disorder (APD)</h4>
+    <p>Roughly 3% of males and 1% of females exhibit characteristics of APD, which includes:</p>
+    <ul>
+    <li><p>Lack of remorse</p></li>
+    <li><p>Frequent lying</p></li>
+    <li><p>Lack of empathy</p></li>
+    <li><p>Manipulative behavior</p></li>
+    </ul>
+    <h4 id="implications-for-finance">Implications for Finance</h4>
+    <p>Understanding that a minority of individuals may possess exploitative tendencies is vital for assessing risks in financial behavior.</p>
+    <h3 id="behavioral-economic-theories">Behavioral Economic Theories</h3>
+    <h4 id="prospect-theory">Prospect Theory</h4>
+    <p>Developed by Kahneman and Tversky, Prospect Theory describes how people evaluate potential losses and gains in uncertain situations.</p>
+    <h5 id="value-function">Value Function</h5>
+    <p>The value function is S-shaped:</p>
+    <ul>
+    <li><p>Diminishing sensitivity for gains: becomes less steep as gains increase (concave).</p></li>
+    <li><p>Diminishing sensitivity for losses: becomes steeper as losses increase (convex).</p></li>
+    </ul>
+    <p>Graphically, the value function is illustrated as:</p>
+    <p><br /><span class="math display">$$\text{Value} = 
+    \begin{cases}
+        \text{concave down} &amp; \text{(for gains)} \\
+        \text{concave up} &amp; \text{(for losses)}
+    \end{cases}$$</span><br /></p>
+    <h5 id="weighting-function">Weighting Function</h5>
+    <p>The function describes how individuals perceive probabilities:</p>
+    <ul>
+    <li><p>Low probabilities may be discounted, treated as zero.</p></li>
+    <li><p>High probabilities may be treated as certain.</p></li>
+    </ul>
+    <p>Graphically, it can be illustrated, and it exhibits considerable nonlinear behavior, leading to decision-making errors regarding rare events (e.g., airplane crashes).</p>
+    <h3 id="human-biases-and-errors">Human Biases and Errors</h3>
+    <h4 id="overconfidence">Overconfidence</h4>
+    <ul>
+    <li><p>People typically overestimate their abilities and knowledge.</p></li>
+    <li><p>Experiments reveal that most individuals believe they are above average, leading to biased predictions.</p></li>
+    </ul>
+    <h4 id="cognitive-dissonance">Cognitive Dissonance</h4>
+    <p>Individuals prefer consistency in their beliefs and will ignore contradictory evidence to avoid the discomfort of being wrong.</p>
+    <h3 id="social-behavior-in-finance">Social Behavior in Finance</h3>
+    <h4 id="herd-behavior">Herd Behavior</h4>
+    <p>Investors often follow group behavior without rational deliberation, leading to stock market bubbles and crashes.</p>
+    <h4 id="moral-and-ethical-considerations">Moral and Ethical Considerations</h4>
+    <ul>
+    <li><p>The concept of shared value creation intertwines financial success with social responsibility.</p></li>
+    <li><p>Companies are increasingly recognizing that long-term success aligns with societal well-being.</p></li>
+    </ul>
+    <h3 id="conclusion-9">Conclusion</h3>
+    <p>The understanding of Behavioral Finance is influenced by the ongoing learning about psychology, personality types, and moral imperatives in finance. Although there are inherent human weaknesses in decision-making, financial institutions are evolving to mitigate these issues through regulation and ethical considerations.</p>
+    <h1 id="regulation-and-human-misbehavior-in-financial-markets">Regulation and Human Misbehavior in Financial Markets</h1>
+    <h3 id="introduction-5">Introduction</h3>
+    <p>This lecture continues the discussion from a previous session focused on behavioral finance and human misbehavior, specifically addressing regulation in financial markets and institutions.</p>
+    <h3 id="purpose-of-regulation">Purpose of Regulation</h3>
+    <p>Regulation in financial markets is aimed at addressing psychological issues and mitigating the exploitation of human weaknesses, alongside ensuring the efficiency of the financial system.</p>
+    <h4 id="key-issues-addressed-by-regulation">Key Issues Addressed by Regulation</h4>
+    <ul>
+    <li><p><strong>Psychological Problems:</strong> Addressing tendencies of individuals to manipulate others financially.</p></li>
+    <li><p><strong>Technical Problems:</strong> Ensuring proper operation of financial systems.</p></li>
+    <li><p><strong>Monopolies and Externalities:</strong> Regulation must account for phenomena like the “too big to fail” issue.</p></li>
+    </ul>
+    <h4 id="too-big-to-fail-tbtf">Too Big to Fail (TBTF)</h4>
+    <p>The TBTF phenomenon arises when large firms receive implicit government guarantees during failures due to their systemic importance. This creates moral hazard, leading to increased risk-taking by these firms.</p>
+    <h3 id="types-of-regulation">Types of Regulation</h3>
+    <p>Two primary forms of regulation exist:</p>
+    <ul>
+    <li><p><strong>Microprudential Regulation:</strong> Focuses on individual firms, ensuring prudent operational standards.</p></li>
+    <li><p><strong>Macroprudential Regulation:</strong> Addresses systemic risks affecting the entire financial system, including TBTF concerns.</p></li>
+    </ul>
+    <h3 id="analogy-of-regulators">Analogy of Regulators</h3>
+    <p>Regulators are analogous to referees in sports, enforcing rules, making decisions on rule violations, and ensuring fair play in the financial arena.</p>
+    <h3 id="levels-of-regulation">Levels of Regulation</h3>
+    <p>The lecture discusses five levels of regulation:</p>
+    <ol>
+    <li><p><strong>Within Firm Regulation:</strong> Internal rules and regulations established by firms.</p></li>
+    <li><p><strong>Trade Groups:</strong> Self-regulatory organizations formed by groups of firms.</p></li>
+    <li><p><strong>Local Government Regulation:</strong> Regulation at the city or state level.</p></li>
+    <li><p><strong>National Regulation:</strong> Regulation at the country level.</p></li>
+    <li><p><strong>International Regulation:</strong> Cross-border regulatory coordination.</p></li>
+    </ol>
+    <h3 id="within-firm-regulation">Within Firm Regulation</h3>
+    <p>Within firms, boards of directors play a regulatory role, providing oversight to ensure ethical operations and deterring malfeasance such as tunneling.</p>
+    <h4 id="tunneling">Tunneling</h4>
+    <p>Tunneling is the act of diverting resources from shareholders for personal benefit, demonstrated in types such as:</p>
+    <ul>
+    <li><p>Underpricing asset sales to family or friends.</p></li>
+    <li><p>Awarding inflated contracts to acquaintances.</p></li>
+    <li><p>Inflated executive compensation.</p></li>
+    </ul>
+    <h4 id="duties-of-board-members">Duties of Board Members</h4>
+    <p>Board members have two primary duties:</p>
+    <ul>
+    <li><p><strong>Duty of Care:</strong> To act as a reasonably prudent person would, fulfilling their oversight function.</p></li>
+    <li><p><strong>Duty of Loyalty:</strong> Originally focused on loyalty to shareholders but now includes responsibilities to broader stakeholder groups.</p></li>
+    </ul>
+    <h3 id="trade-groups-and-self-regulation">Trade Groups and Self-Regulation</h3>
+    <p>Trade groups like the New York Stock Exchange exemplify early forms of self-regulation. Post-1792 stock market crash, the "Buttonwood Agreement" established basic ethical standards for trading among brokers.</p>
+    <h4 id="changing-nature-of-self-regulation">Changing Nature of Self-Regulation</h4>
+    <p>Significant regulatory changes occurred with the abolition of fixed commissions after the May Day of 1975, promoting greater competition and the rise of discount brokerage models.</p>
+    <h3 id="local-and-national-regulation">Local and National Regulation</h3>
+    <p>Before federal regulation, financial oversight was largely local through state laws, with notable events such as the implementation of Blue Sky laws aimed at protecting investors.</p>
+    <h4 id="creation-of-the-sec">Creation of the SEC</h4>
+    <p>The Securities and Exchange Commission (SEC) was established in 1934 during the New Deal era, aiming to enhance transparency and protect investors through rigorous disclosure requirements.</p>
+    <h4 id="dodd-frank-act">Dodd-Frank Act</h4>
+    <p>The Dodd-Frank Act of 2010 aimed to address systemic risks and enhance consumer protection, establishing entities like the Financial Stability Oversight Council (FSOC) to oversee systemic risks.</p>
+    <h3 id="international-regulation">International Regulation</h3>
+    <p>With globalization, international regulatory cooperation is critical to prevent regulatory arbitrage. Institutions like the Bank for International Settlements (BIS) and the Financial Stability Board (FSB) address global financial stability.</p>
+    <h4 id="basel-frameworks">Basel Frameworks</h4>
+    <p>The Basel Committee provides recommendations for banking regulation, resulting in Basel I, II, and III frameworks, aimed at enhancing the resilience of the international banking system.</p>
+    <h4 id="g20-and-financial-regulation">G20 and Financial Regulation</h4>
+    <p>The G20, formed in response to the financial crises, includes major global economies and focuses on coordinated regulatory responses to enhance international financial stability.</p>
+    <h3 id="conclusion-10">Conclusion</h3>
+    <p>Regulations at various levels are essential to safeguarding financial systems against vulnerabilities and unethical practices. The ongoing evolution of regulations reflects the complexities introduced by globalization and the necessity for effective oversight.</p>
+    <h1 id="notes-on-banking">Notes on Banking</h1>
+    <h3 id="introduction-6">Introduction</h3>
+    <p>This lecture covers the topic of banks and banking, emphasizing traditional banks that take deposits and lend money, rather than investment banks or central banks.</p>
+    <h3 id="outline-of-the-lecture">Outline of the Lecture</h3>
+    <ul>
+    <li><p>Origins of banks</p></li>
+    <li><p>Theory of banks</p></li>
+    <li><p>Bank regulation</p></li>
+    <li><p>Shadow banking</p></li>
+    <li><p>Historical comparisons of financial crises</p></li>
+    </ul>
+    <h3 id="definitions-and-characteristics-of-banks">Definitions and Characteristics of Banks</h3>
+    <h4 id="definition-of-a-bank">Definition of a Bank</h4>
+    <p>A bank can be defined as an institution that:</p>
+    <ul>
+    <li><p>Accepts deposits</p></li>
+    <li><p>Provides loans</p></li>
+    <li><p>Earns spread income, which is defined as the difference between the interest rates at which it borrows and lends, denoted as: <br /><span class="math display">Spread Income = <em>i</em><sub>lend</sub> − <em>i</em><sub>borrow</sub></span><br /></p></li>
+    </ul>
+    <h4 id="key-functions-of-banks">Key Functions of Banks</h4>
+    <ul>
+    <li><p><strong>Liquidity Provision:</strong> Banks provide liquidity by borrowing short-term and lending long-term, allowing depositors to access their money while borrowers obtain long-term loans.</p></li>
+    <li><p><strong>Note Issuance:</strong> Historically, banks issued their own currency or banknotes. Today, this function is primarily fulfilled by central banks.</p></li>
+    </ul>
+    <h3 id="origins-of-banking">Origins of Banking</h3>
+    <h4 id="ancient-practices-1">Ancient Practices</h4>
+    <ul>
+    <li><p>Evidence suggests that the concept of interest emerged around 2000 BC in Sumeria with the term related to the offspring of livestock (mas - lamb).</p></li>
+    <li><p>Early banking activities included the lending of agricultural products, such as barley or wheat, and charging interest in kind.</p></li>
+    </ul>
+    <h4 id="development-in-italy">Development in Italy</h4>
+    <p>The first true banking practices emerged during the Renaissance in Italy, with <strong>Banca Monte dei Paschi di Siena</strong>, founded in 1472, known as the oldest surviving bank.</p>
+    <h3 id="theory-of-banks">Theory of Banks</h3>
+    <h4 id="diamond-dybvig-model">Diamond-Dybvig Model</h4>
+    <p>The Diamond-Dybvig model highlights:</p>
+    <ul>
+    <li><p>The ability of banks to create liquidity.</p></li>
+    <li><p>The existence of <strong>multiple equilibria</strong>, where:</p>
+    <ul>
+    <li><p>A good equilibrium occurs when depositors believe in the soundness of the bank.</p></li>
+    <li><p>A bad equilibrium can occur due to negative expectations leading to bank runs.</p></li>
+    </ul></li>
+    </ul>
+    <h4 id="risks-managed-by-banks">Risks Managed by Banks</h4>
+    <p>Banks solve two main problems:</p>
+    <ul>
+    <li><p><strong>Adverse Selection:</strong> Banks utilize local knowledge and relationships to assess borrower creditworthiness.</p></li>
+    <li><p><strong>Moral Hazard:</strong> Banks monitor borrowers post-loan to ensure responsible use of funds.</p></li>
+    </ul>
+    <h4 id="deposit-insurance">Deposit Insurance</h4>
+    <p>Originally proposed in the 1600s in Italy, deposit insurance protects depositors and helps maintain trust in the banking system: <br /><span class="math display">Insurance<sub>Deposit</sub> mitigates Bank Runs</span><br /></p>
+    <h3 id="bank-regulation">Bank Regulation</h3>
+    <h4 id="basel-regulations">Basel Regulations</h4>
+    <p>The Basel Committee introduces guidelines for international bank regulations to maintain stability across countries:</p>
+    <ul>
+    <li><p><strong>Basel I</strong>: Introduced capital requirements based on risk-weighted assets.</p></li>
+    <li><p><strong>Basel II</strong>: Expanded on Basel I including more complex risk assessments.</p></li>
+    <li><p><strong>Basel III</strong>: Established minimum capital requirements and introduced conservation buffers.</p></li>
+    </ul>
+    <h4 id="risk-weighted-assets">Risk-Weighted Assets</h4>
+    <p>The concept of risk-weighted assets (RWA) is critical to Basel regulations. A simplified classification is as follows:</p>
+    <ul>
+    <li><p>0% for OECD government bonds</p></li>
+    <li><p>20% for municipal bonds</p></li>
+    <li><p>50% for mortgages</p></li>
+    <li><p>100% for commercial loans</p></li>
+    </ul>
+    <p>If a bank has <span class="math inline">Total Assets = 400</span> million divided as follows:</p>
+    <ul>
+    <li><p>100 million in government bonds</p></li>
+    <li><p>100 million in Fannie Mae bonds (assumed at 20%)</p></li>
+    <li><p>100 million in mortgages (assumed at 50%)</p></li>
+    <li><p>100 million in commercial loans (assumed at 100%)</p></li>
+    </ul>
+    <p>Then, the RWA calculation is: <br /><span class="math display">RWA = (100 × 0) + (100 × 0.20) + (100 × 0.50) + (100 × 1) = 0 + 20 + 50 + 100 = 170 million</span><br /></p>
+    <h3 id="conclusion-11">Conclusion</h3>
+    <p>The role of banks is essential in creating liquidity, funding businesses, and maintaining economic stability through effective regulation. Historical patterns show that failures in the banking system often lead to wider economic crises. Continuous adjustments in regulations, such as those in the Basel agreements, are deemed necessary to adapt to financial innovations and complexities in banking practices.</p>
+    <h1 id="comprehensive-notes-on-the-discussion-between-professor-robert-shiller-and-maurice-hank-greenberg">Comprehensive Notes on the Discussion Between Professor Robert Shiller and Maurice "Hank" Greenberg</h1>
+    <h3 id="introduction-7">Introduction</h3>
+    <p>This document outlines the key insights from a discussion led by Professor Robert Shiller with Maurice "Hank" Greenberg, focusing on Greenberg’s remarkable life story, his experiences in the insurance industry, and the lessons derived from his tenure as CEO of AIG.</p>
+    <h3 id="background-of-hank-greenberg">Background of Hank Greenberg</h3>
+    <ul>
+    <li><p>Enlisted in the Army at age 17; served in World War II.</p></li>
+    <li><p>Participated in the liberation of Dachau; later served in the Korean War.</p></li>
+    <li><p>After military service, shifted careers to insurance from law.</p></li>
+    </ul>
+    <h3 id="early-career-in-insurance">Early Career in Insurance</h3>
+    <ul>
+    <li><p>Started as junior underwriter at Continental Casualty Company.</p></li>
+    <li><p>Advanced rapidly due to skills in risk analysis, becoming the youngest vice president.</p></li>
+    <li><p>Met C.V. Starr, founder of Starr International Company, leading to pivotal career changes.</p></li>
+    </ul>
+    <h3 id="aig-and-its-transformation">AIG and Its Transformation</h3>
+    <h4 id="initial-challenges">Initial Challenges</h4>
+    <ul>
+    <li><p>Took over American Home, which was losing money.</p></li>
+    <li><p>Transitioned from agent-based business to corporate brokerage.</p></li>
+    <li><p>Secured reinsurance from London, expanding the company’s capabilities.</p></li>
+    </ul>
+    <h4 id="creation-of-aig">Creation of AIG</h4>
+    <ul>
+    <li><p>In 1967, established AIG as a holding company.</p></li>
+    <li><p>Grew AIG to operate in 130 countries, providing diverse insurance products including:</p>
+    <ul>
+    <li><p>Directors and officers liability insurance.</p></li>
+    <li><p>Political risk insurance.</p></li>
+    <li><p>Kidnap and ransom insurance.</p></li>
+    </ul></li>
+    </ul>
+    <h4 id="organizational-culture-and-management">Organizational Culture and Management</h4>
+    <ul>
+    <li><p>Established a unique compensation structure:</p>
+    <ul>
+    <li><p>No one was allowed to earn more than $1 million in salary.</p></li>
+    <li><p>Bonuses based on performance rather than fixed contracts.</p></li>
+    </ul></li>
+    <li><p>Fostered a close-knit corporate culture; valued teamwork and alignment of goals.</p></li>
+    <li><p>Emphasized ethics, with a strict policy against bribery.</p></li>
+    </ul>
+    <h3 id="financial-products-and-crisis-management">Financial Products and Crisis Management</h3>
+    <h4 id="expansion-into-financial-services">Expansion into Financial Services</h4>
+    <ul>
+    <li><p>Creation of AIG Financial Products, involved in derivatives and risk management.</p></li>
+    <li><p>Implemented a robust enterprise risk management (ERM) system.</p></li>
+    </ul>
+    <h4 id="regulatory-environment-post-enron">Regulatory Environment Post-Enron</h4>
+    <ul>
+    <li><p>The regulatory landscape changed significantly after the fall of Enron.</p></li>
+    <li><p>Emphasis on risk and accountability heightened, creating challenges for AIG and other institutions.</p></li>
+    </ul>
+    <h4 id="the-2008-financial-crisis">The 2008 Financial Crisis</h4>
+    <ul>
+    <li><p>After Greenberg’s departure, AIG faced tumultuous financial straits due to extensive use of credit default swaps (CDS).</p></li>
+    <li><p>The lack of regulatory oversight regarding pricing of financial instruments led to catastrophic outcomes.</p></li>
+    <li><p>AIG was nationalized, leading to significant loss of value and employee morale.</p></li>
+    </ul>
+    <h3 id="key-lessons-and-future-of-insurance">Key Lessons and Future of Insurance</h3>
+    <ul>
+    <li><p>Importance of a strong corporate culture and ethical guidelines.</p></li>
+    <li><p>Necessity of effective risk management and accurate pricing of financial products.</p></li>
+    <li><p>Agreed on the need for regulatory reforms, especially concerning credit default swaps, to include:</p>
+    <ul>
+    <li><p>Limiting CDS responses to actual defaults, rather than declines in value.</p></li>
+    <li><p>Establishing exchanges for price discovery.</p></li>
+    </ul></li>
+    <li><p>Highlighted ongoing opportunities in emerging markets such as China, where insurance needs are expanding rapidly.</p></li>
+    </ul>
+    <h3 id="concluding-thoughts">Concluding Thoughts</h3>
+    <p>Hank Greenberg’s journey illustrates the complexities of leading a large multinational corporation within the fluctuating landscapes of global economics and governance. His stories impart critical lessons about leadership, ethics, and the imperatives of risk management.</p>
+    <h1 id="lecture-notes-on-futures-markets">Lecture Notes on Futures Markets</h1>
+    <h3 id="introduction-to-futures-markets">Introduction to Futures Markets</h3>
+    <p>Futures markets are organized platforms for trading standardized contracts that represent agreements to buy or sell a particular asset at a predetermined future date. These contracts predict future prices, and they are integral to financial and commodity markets.</p>
+    <h4 id="forward-vs.-futures-markets">Forward vs. Futures Markets</h4>
+    <ul>
+    <li><p><strong>Forward Contracts:</strong> Customized agreements between two parties that are not traded on an exchange. They entail counterparty risk, meaning either party might not fulfill their contractual obligations.</p></li>
+    <li><p><strong>Futures Contracts:</strong> Standardized contracts traded on organized exchanges, which mitigate counterparty risk through a clearinghouse that guarantees trade completion.</p></li>
+    </ul>
+    <p>Futures and forwards are both considered derivatives since their prices derive from another underlying asset’s price.</p>
+    <h3 id="important-definitions">Important Definitions</h3>
+    <ul>
+    <li><p><strong>Derivatives:</strong> Financial instruments whose value depends on the price of an underlying asset.</p></li>
+    <li><p><strong>Spot Price</strong> (<span class="math inline"><em>P</em><sub><em>s</em></sub></span>): The current market price at which an asset is bought or sold for immediate delivery.</p></li>
+    <li><p><strong>Futures Price</strong> (<span class="math inline"><em>P</em><sub><em>f</em></sub></span>): The agreed-upon price for future delivery of the asset.</p></li>
+    </ul>
+    <h3 id="mechanics-of-futures-markets">Mechanics of Futures Markets</h3>
+    <p>Futures markets originated from the need to mitigate risks associated with price fluctuations in physical commodities. Professor Shiller discusses agricultural futures, which serve as foundational examples. For example, rice futures began in 1673 in Osaka, Japan, marking the first organized futures trading.</p>
+    <h4 id="counterparty-risk-in-forward-markets">Counterparty Risk in Forward Markets</h4>
+    <p>Counterparty risk exemplifies a significant challenge in forward contracts, as illustrated by potential failures:</p>
+    <ul>
+    <li><p>A rice merchant may not fulfill an agreement if rice prices fall.</p></li>
+    <li><p>A warehouse may refuse to deliver if prices rise.</p></li>
+    </ul>
+    <h4 id="transition-to-futures-markets">Transition to Futures Markets</h4>
+    <p>To minimize issues seen in forward markets, futures markets standardize contracts and centralize trading, enhancing market reliability.</p>
+    <h3 id="the-role-of-speculation">The Role of Speculation</h3>
+    <p>Speculation involves anticipating future market movements and adjusting trading strategies accordingly. Despite public hostility towards speculation, it plays a critical role in future price forecasting:</p>
+    <ul>
+    <li><p>Speculators provide liquidity.</p></li>
+    <li><p>They enhance price discovery in markets.</p></li>
+    </ul>
+    <h3 id="pricing-of-futures-contracts">Pricing of Futures Contracts</h3>
+    <p>The price of any futures contract can be derived from the spot price and adjusted for storage costs and interest rates. The formula is:</p>
+    <p><br /><span class="math display"><em>P</em><sub><em>f</em></sub> = <em>P</em><sub><em>s</em></sub>(1 + <em>r</em> + <em>s</em>)</span><br /></p>
+    <p>where:</p>
+    <ul>
+    <li><p><span class="math inline"><em>P</em><sub><em>f</em></sub></span>: Futures price</p></li>
+    <li><p><span class="math inline"><em>P</em><sub><em>s</em></sub></span>: Spot price</p></li>
+    <li><p><span class="math inline"><em>r</em></span>: Interest rates over the period until maturity</p></li>
+    <li><p><span class="math inline"><em>s</em></span>: Storage costs</p></li>
+    </ul>
+    <h3 id="examples-of-futures-markets">Examples of Futures Markets</h3>
+    <h4 id="agricultural-futures">Agricultural Futures</h4>
+    <p>Futures markets were initially developed for agricultural products. The interaction between harvest cycles and storage capabilities illustrates how price stability can be maintained through futures trading.</p>
+    <h4 id="modern-futures-markets-oil">Modern Futures Markets: Oil</h4>
+    <p>The crude oil futures market is pivotal due to oil’s essential role in the global economy. Recent crises, such as geopolitical conflicts, have led to significant price fluctuations, which can be tracked through futures pricing.</p>
+    <p>For instance, the futures curve for light sweet crude oil may exhibit:</p>
+    <ul>
+    <li><p><strong>Contango:</strong> When futures prices increase with longer expirations (indicating anticipated price increases).</p></li>
+    <li><p><strong>Backwardation:</strong> When futures prices decrease as the delivery date approaches (indicating a surplus or a drop in demand).</p></li>
+    </ul>
+    <h4 id="financial-futures">Financial Futures</h4>
+    <p>Financial futures, such as those relating to the S&amp;P 500 index, employ a similar pricing mechanism: <br /><span class="math display"><em>P</em><sub><em>f</em></sub> = <em>P</em><sub><em>s</em></sub>(1 + <em>r</em> − <em>y</em>)</span><br /> where:</p>
+    <ul>
+    <li><p><span class="math inline"><em>y</em></span>: Dividend yield</p></li>
+    </ul>
+    <h3 id="conclusion-12">Conclusion</h3>
+    <p>Futures markets serve as crucial mechanisms in modern economies, aiding in risk management, price discovery, and providing avenues for speculation. The mathematical framework that underpins futures pricing contributes to the efficient operation of these markets.</p>
+    <p>Future discussions will delve into options pricing, continuing the exploration of derivatives in financial markets.</p>
+    <h1 id="overview-of-financial-markets-and-regulatory-frameworks">Overview of Financial Markets and Regulatory Frameworks</h1>
+    <h3 id="introduction-8">Introduction</h3>
+    <ul>
+    <li><p>Speaker: Laura Cha</p></li>
+    <li><p>Position: Distinguished executive in Asia, Director at HSBC, former member of the Executive Council of Hong Kong.</p></li>
+    <li><p>Background: Involved with China’s regulatory bodies, notably the China Securities Regulatory Commission and the National People’s Congress.</p></li>
+    </ul>
+    <h3 id="career-overview">Career Overview</h3>
+    <ul>
+    <li><p>Highlighted the importance of both public and private sectors in financial services.</p></li>
+    <li><p>Discussed different career opportunities and pathways within financial markets.</p></li>
+    <li><p>Emphasized that careers in the public sector (regulators, policymakers) are equally essential.</p></li>
+    </ul>
+    <h3 id="private-sector-vs-public-sector">Private Sector vs Public Sector</h3>
+    <h4 id="private-sector">Private Sector</h4>
+    <ul>
+    <li><p>Roles include those in banks, investment banks, hedge funds, and private equity.</p></li>
+    <li><p>Primarily focused on profit generation and financial rewards.</p></li>
+    <li><p>Entry-level roles often involve research and credit evaluation:</p>
+    <ul>
+    <li><p><strong>Creditworthiness</strong>: Assessing borrowers’ ability to repay loans.</p></li>
+    </ul></li>
+    </ul>
+    <h4 id="public-sector">Public Sector</h4>
+    <ul>
+    <li><p>Focuses on regulatory oversight, ensuring market integrity, and consumer protection.</p></li>
+    <li><p>Key regulatory bodies: SEC, CFTC, Federal Reserve, and international equivalents.</p></li>
+    <li><p>Importance of ensuring fair play in financial markets:</p>
+    <ul>
+    <li><p>Level playing field for all participants.</p></li>
+    <li><p>Transparent rules and enforcement mechanisms.</p></li>
+    </ul></li>
+    </ul>
+    <h3 id="role-of-regulators">Role of Regulators</h3>
+    <ul>
+    <li><p>Regulators provide a framework that keeps the financial services functioning properly.</p></li>
+    <li><p>Laura Cha shared her experience as a regulator:</p>
+    <ul>
+    <li><p>Experience at the Securities and Futures Commission of Hong Kong.</p></li>
+    <li><p>First person from Hong Kong to serve in the Chinese government as a regulator.</p></li>
+    </ul></li>
+    </ul>
+    <h3 id="market-development-in-hong-kong">Market Development in Hong Kong</h3>
+    <ul>
+    <li><p>Historical context: Hong Kong mainly served as a local market until 1992.</p></li>
+    <li><p>Chinese enterprises began to list their shares, significantly transforming the market.</p></li>
+    <li><p>Transition: Substantial influx of Chinese companies led to Hong Kong’s growth into a major financial center.</p>
+    <h4 id="demutualization">Demutualization</h4>
+    <ul>
+    <li><p>Assisted in the demutualization of Hong Kong’s stock and futures exchanges.</p></li>
+    <li><p>Merged with the clearinghouse to advance market stability and efficiency.</p></li>
+    </ul></li>
+    </ul>
+    <h3 id="corporate-governance-in-china">Corporate Governance in China</h3>
+    <ul>
+    <li><p>Focus on improving corporate governance practices, including:</p>
+    <ul>
+    <li><p>Introduction of independent directors.</p></li>
+    <li><p>Requirement for quarterly reporting among publicly-listed companies.</p></li>
+    </ul></li>
+    <li><p>Challenges of operating within a rapidly evolving market, reflecting on past experiences and outcomes.</p></li>
+    </ul>
+    <h3 id="internationalization-of-finance">Internationalization of Finance</h3>
+    <ul>
+    <li><p>Significance of a globalized market for career opportunities.</p></li>
+    <li><p>The trend of multi-national professionals working across borders.</p></li>
+    <li><p>Highlighted the emergence of opportunities in Asia and Latin America, not just traditional markets like the U.S. or Europe.</p></li>
+    </ul>
+    <h3 id="regulatory-changes-and-financial-crises">Regulatory Changes and Financial Crises</h3>
+    <ul>
+    <li><p>Basel III: Increasing capital adequacy requirements globally.</p></li>
+    <li><p>Historical pattern: Regulatory measures often arise in response to crises, which can swing from lax to stringent.</p></li>
+    <li><p>Importance of striking a balance in regulation to prevent future market disruptions.</p></li>
+    </ul>
+    <h3 id="conclusion-13">Conclusion</h3>
+    <p>Laura Cha emphasized the critical roles that both sectors play in ensuring robust and transparent financial markets and highlighted the value of diverse career paths. She called for bright graduates to consider roles in public service, which serve societal good and regulatory support.</p>
+    <h1 id="notes-on-options">Notes on Options</h1>
+    <h3 id="introduction-9">Introduction</h3>
+    <p>The subject of today’s lecture is options, which are financial instruments not commonly encountered in daily life but are important in economic theory and practice.</p>
+    <h3 id="definition-of-options">Definition of Options</h3>
+    <p>An <strong>option</strong> is a financial contract that provides the holder with the right, but not the obligation, to buy or sell an asset at a specified price within a specified time period. There are primarily two types of options:</p>
+    <ul>
+    <li><p><strong>Call Option</strong>: Grants the holder the right to buy an asset at a specified exercise price (also known as strike price) before or at the exercise date.</p></li>
+    <li><p><strong>Put Option</strong>: Grants the holder the right to sell an asset at a specified exercise price before or at the exercise date.</p></li>
+    </ul>
+    <h4 id="key-terms">Key Terms</h4>
+    <ul>
+    <li><p><strong>Exercise Price (Strike Price)</strong>: The specified price at which the underlying asset can be bought or sold.</p></li>
+    <li><p><strong>Exercise Date</strong>: The date until which the option can be exercised.</p></li>
+    </ul>
+    <h4 id="types-of-options">Types of Options</h4>
+    <ul>
+    <li><p><strong>American Options</strong>: Can be exercised at any time up to and including the exercise date.</p></li>
+    <li><p><strong>European Options</strong>: Can only be exercised on the exercise date.</p></li>
+    </ul>
+    <h3 id="historical-background-1">Historical Background</h3>
+    <p>Options have existed for thousands of years, dating back to ancient contracts that allowed individuals to secure rights to purchase goods or property in the future without immediate financial commitment.</p>
+    <h3 id="real-world-applications-of-options">Real-World Applications of Options</h3>
+    <p>Options are used not just in stocks but also in other scenarios such as:</p>
+    <ul>
+    <li><p>Real estate (mortgages acting as options)</p></li>
+    <li><p>Employee stock options</p></li>
+    <li><p>Insurance contracts (similar to put options)</p></li>
+    </ul>
+    <h3 id="purposes-of-options">Purposes of Options</h3>
+    <h4 id="theoretical-purpose">Theoretical Purpose</h4>
+    <p>Options are important for the efficiency of financial markets:</p>
+    <ul>
+    <li><p>They create prices for various states of the world, including potential future events or asset prices.</p></li>
+    <li><p>Options enhance price discovery in markets, allowing participants to gain insights into future price behaviors.</p></li>
+    </ul>
+    <h4 id="behavioral-purpose">Behavioral Purpose</h4>
+    <p>Options also influence how individuals interact with financial markets:</p>
+    <ul>
+    <li><p>They can affect motivation and morale within companies through incentive options.</p></li>
+    <li><p>They provide peace of mind to individuals, acting as a hedge against future uncertainties (e.g., insurance).</p></li>
+    </ul>
+    <h3 id="options-pricing">Options Pricing</h3>
+    <p>Pricing of options is crucial for effectively evaluating and trading them.</p>
+    <h4 id="basic-price-relationship">Basic Price Relationship</h4>
+    <p>The price of an option, particularly a call option, can be visualized as: <br /><span class="math display"><em>C</em> = max (0, <em>S</em> − <em>E</em>)</span><br /> where:</p>
+    <ul>
+    <li><p><span class="math inline"><em>C</em></span> = Call option price</p></li>
+    <li><p><span class="math inline"><em>S</em></span> = Stock price</p></li>
+    <li><p><span class="math inline"><em>E</em></span> = Exercise price</p></li>
+    </ul>
+    <h4 id="put-call-parity">Put-Call Parity</h4>
+    <p>The relationship between call and put options is expressed by the put-call parity: <br /><span class="math display"><em>C</em> − <em>P</em> = <em>S</em> − <em>E</em> ⋅ <em>e</em><sup> − <em>r</em><em>T</em></sup></span><br /> where:</p>
+    <ul>
+    <li><p><span class="math inline"><em>C</em></span> = Call price</p></li>
+    <li><p><span class="math inline"><em>P</em></span> = Put price</p></li>
+    <li><p><span class="math inline"><em>S</em></span> = Current stock price</p></li>
+    <li><p><span class="math inline"><em>E</em></span> = Exercise price</p></li>
+    <li><p><span class="math inline"><em>r</em></span> = Risk-free interest rate</p></li>
+    <li><p><span class="math inline"><em>T</em></span> = Time to expiration</p></li>
+    </ul>
+    <p>The put-call parity holds true until the expiration date of the options.</p>
+    <h4 id="black-scholes-option-pricing-model">Black-Scholes Option Pricing Model</h4>
+    <p>The famous Black-Scholes formula for pricing European call options is: <br /><span class="math display"><em>C</em> = <em>S</em> ⋅ <em>N</em>(<em>d</em><sub>1</sub>) − <em>E</em> ⋅ <em>e</em><sup> − <em>r</em><em>T</em></sup> ⋅ <em>N</em>(<em>d</em><sub>2</sub>)</span><br /> where:</p>
+    <ul>
+    <li><p><span class="math inline"><em>N</em>( ⋅ )</span> = Cumulative distribution function of the standard normal distribution</p></li>
+    <li><p><br /><span class="math display">$$d_1 = \frac{\ln\left(\frac{S}{E}\right) + \left(r + \frac{\sigma^2}{2}\right)T}{\sigma\sqrt{T}}$$</span><br /></p></li>
+    <li><p><br /><span class="math display">$$d_2 = d_1 - \sigma \sqrt{T}$$</span><br /></p></li>
+    <li><p><span class="math inline"><em>σ</em></span> = Volatility of the stock price</p></li>
+    </ul>
+    <h3 id="implied-volatility">Implied Volatility</h3>
+    <p>Implied volatility is a measure derived from the market price of options. It reflects the market’s expectation of future volatility. It can be computed as follows: <br /><span class="math display">Implied Volatility = solve for <em>σ</em> in the Black-Scholes equation</span><br /></p>
+    <h3 id="conclusion-14">Conclusion</h3>
+    <p>Options are essential financial tools that allow for risk management, price discovery, and improved decision-making in financial markets. Understanding both their practical applications and theoretical foundations is crucial for financial literacy and informed trading strategies.</p>
+    <h1 id="lecture-notes-on-central-banks">Lecture Notes on Central Banks</h1>
+    <h3 id="introduction-10">Introduction</h3>
+    <p>In this lecture, Professor Robert Shiller discusses the role and history of central banks. He emphasizes the importance of financial innovations in shaping the banking system, comparing it to engineering inventions.</p>
+    <h3 id="definition-of-central-banks">Definition of Central Banks</h3>
+    <ul>
+    <li><p>Central banks are special government banks responsible for managing a country’s currency and monetary policy.</p></li>
+    <li><p>Each country has its own central bank, often reflected on their paper currency.</p></li>
+    </ul>
+    <h3 id="historical-context-3">Historical Context</h3>
+    <h4 id="origins-of-banking-1">Origins of Banking</h4>
+    <ul>
+    <li><p>Modern banking patterns can be traced back to goldsmith bankers, who offered certificates for gold deposits.</p></li>
+    <li><p>The use of paper money began before it was regulated by the government.</p></li>
+    </ul>
+    <h4 id="bank-of-england">Bank of England</h4>
+    <ul>
+    <li><p>Established in 1694 as the first central bank with a charter from the British government.</p></li>
+    <li><p>It gained a monopoly on joint stock banking and became the dominant bank in the U.K.</p></li>
+    <li><p>Developed a policy to stabilize banking by requiring smaller banks to hold deposits with the Bank of England.</p></li>
+    </ul>
+    <h4 id="u.s.-banking-evolution">U.S. Banking Evolution</h4>
+    <ul>
+    <li><p>The Suffolk Bank, founded in 1819, mirrored the Bank of England’s practices in New England.</p></li>
+    <li><p>The National Banking Act (1863) introduced national banks, requiring capital deposits with the U.S. Treasury to back currency.</p></li>
+    <li><p>Current U.S. system is the Federal Reserve System, established in 1913.</p></li>
+    </ul>
+    <h3 id="functions-of-central-banks">Functions of Central Banks</h3>
+    <h4 id="lender-of-last-resort">Lender of Last Resort</h4>
+    <ul>
+    <li><p>Central banks provide liquidity to banks in crisis situations, often referred to as the lender of last resort.</p></li>
+    <li><p>Use tools like the discount window for borrowing against collateral.</p></li>
+    </ul>
+    <h4 id="monetary-policy">Monetary Policy</h4>
+    <ul>
+    <li><p>Central banks regulate the economy through interest rates and reserve requirements.</p></li>
+    <li><p>Example equation for reserve requirements: <br /><span class="math display"><em>R</em> = <em>r</em> × <em>D</em></span><br /> where <span class="math inline"><em>R</em></span> is reserves, <span class="math inline"><em>r</em></span> is the reserve ratio, and <span class="math inline"><em>D</em></span> is deposits.</p></li>
+    </ul>
+    <h4 id="interest-rates-and-inflation-control">Interest Rates and Inflation Control</h4>
+    <ul>
+    <li><p>Control the economy by adjusting interest rates: raising rates for inflation control, lowering rates to stimulate growth.</p></li>
+    <li><p>Federal Funds Rate (FFR): <br /><span class="math display">FFR = Interest Rate on Overnight Loans</span><br /></p></li>
+    </ul>
+    <h3 id="regulatory-framework">Regulatory Framework</h3>
+    <h4 id="reserve-requirements-and-capital-requirements">Reserve Requirements and Capital Requirements</h4>
+    <ul>
+    <li><p>Reserve requirements specify how much cash banks must hold against deposits.</p></li>
+    <li><p>Currently, U.S. reserve requirement for transaction accounts is approximately 10%.</p></li>
+    <li><p>Capital requirements primarily aim to ensure banks can absorb losses.</p></li>
+    </ul>
+    <h4 id="basel-iii">Basel III</h4>
+    <ul>
+    <li><p>International regulations setting capital requirements to promote stability.</p></li>
+    <li><p>Aiming for higher capital adequacy ratios (CARs): <br /><span class="math display">$$\text{CAR} = \frac{\text{Capital}}{\text{Risk-Weighted Assets}}$$</span><br /></p></li>
+    </ul>
+    <h3 id="challenges-facing-central-banks">Challenges Facing Central Banks</h3>
+    <ul>
+    <li><p>The 2007-2008 financial crisis revealed vulnerabilities in the banking system.</p></li>
+    <li><p>Calls for improved monitoring and early intervention to prevent systemic failures.</p></li>
+    </ul>
+    <h3 id="conclusion-15">Conclusion</h3>
+    <ul>
+    <li><p>Central banks play a crucial role in stabilizing the financial system but require ongoing reforms to address emerging challenges.</p></li>
+    <li><p>Future discussions in the course will transition to investment banking, providing further insights into financial institutions’ roles.</p></li>
+    </ul>
+    <h1 id="investment-banking">Investment Banking</h1>
+    <h3 id="introduction-to-investment-banking">Introduction to Investment Banking</h3>
+    <p>Investment banking is a distinct sector within the finance industry that primarily focuses on helping corporations, governments, and other entities raise capital by underwriting and issuing securities. Key functions include:</p>
+    <ul>
+    <li><p>Underwriting of new debt and equity securities.</p></li>
+    <li><p>Assisting in mergers and acquisitions.</p></li>
+    <li><p>Providing advisory services to corporations.</p></li>
+    </ul>
+    <h3 id="differences-between-investment-banking-and-other-banking-facilities">Differences Between Investment Banking and Other Banking Facilities</h3>
+    <p>Investment banking differs from commercial banking in the following ways:</p>
+    <ul>
+    <li><p>Investment banks do not accept deposits.</p></li>
+    <li><p>They do not provide traditional banking services such as savings accounts or loans.</p></li>
+    </ul>
+    <p><strong>Types of Banking:</strong></p>
+    <ul>
+    <li><p><strong>Investment Banking</strong></p>
+    <ul>
+    <li><p>Focuses on raising capital and offering advisory services.</p></li>
+    <li><p>Engages in underwriting new issues of securities.</p></li>
+    </ul></li>
+    <li><p><strong>Commercial Banking</strong></p>
+    <ul>
+    <li><p>Accepts deposits and provides loans to individuals and businesses.</p></li>
+    </ul></li>
+    </ul>
+    <h3 id="key-functions-of-investment-banks">Key Functions of Investment Banks</h3>
+    <h4 id="underwriting">Underwriting</h4>
+    <p>Investment banks manage the issuance of new shares. The common processes involved include:</p>
+    <ul>
+    <li><p><strong>Initial Public Offering (IPO):</strong> When a private company decides to go public.</p></li>
+    <li><p><strong>Seasoned Offering:</strong> When a public company issues additional shares after IPO.</p></li>
+    </ul>
+    <p>Important equations related to stock issuance include: <br /><span class="math display">Market Capitalization = Price per Share × Total Shares Outstanding</span><br /></p>
+    <h4 id="types-of-underwriting-deals">Types of Underwriting Deals</h4>
+    <ul>
+    <li><p><strong>Bought Deals:</strong> - The investment bank purchases the entire issue of shares and resells them.</p></li>
+    <li><p><strong>Best Efforts Offering:</strong> - The investment bank does not guarantee the sale of all shares but makes an effort to sell them.</p></li>
+    </ul>
+    <h3 id="regulatory-framework-1">Regulatory Framework</h3>
+    <p>Investment banks operate under strict regulations imposed by governing bodies like the Securities and Exchange Commission (SEC). These regulations are aimed at ensuring transparency, fairness, and protecting investors.</p>
+    <h3 id="historical-context-and-changes-post-financial-crisis">Historical Context and Changes Post-Financial Crisis</h3>
+    <h4 id="the-glass-steagall-act">The Glass-Steagall Act</h4>
+    <p>Passed in 1933, the Glass-Steagall Act separated commercial and investment banking. This law was largely repealed by the Gramm-Leach-Bliley Act in 1999, allowing the two business models to merge.</p>
+    <h4 id="the-financial-crisis-of-2007-2009">The Financial Crisis of 2007-2009</h4>
+    <p>The financial crisis led to increased scrutiny of investment banks, with a focus on shadow banking practices, which refer to non-bank financial intermediaries that provide services similar to traditional commercial banks but operate outside regulatory oversight.</p>
+    <h4 id="the-volcker-and-lincoln-rules">The Volcker and Lincoln Rules</h4>
+    <p>Post-crisis regulations included:</p>
+    <ul>
+    <li><p><strong>Volcker Rule:</strong> Limits proprietary trading by commercial banks to reduce risk.</p></li>
+    <li><p><strong>Lincoln Amendment:</strong> Prohibits certain swaps trading by banks.</p></li>
+    </ul>
+    <h3 id="core-values-of-investment-banks">Core Values of Investment Banks</h3>
+    <p>A significant component of the success within investment banking firms is the adherence to core values such as:</p>
+    <ul>
+    <li><p>Client Interests First</p></li>
+    <li><p>Value in People, Capital, and Reputation</p></li>
+    <li><p>Commitment to Excellence</p></li>
+    <li><p>Creativity and Imagination</p></li>
+    </ul>
+    <h3 id="investment-banking-career-path">Investment Banking Career Path</h3>
+    <p>Typically, professionals in investment banking serve as analysts and then can progress to senior levels. Skills valued in this career include strong analytical abilities, numerical proficiency, and the capacity to work under pressure.</p>
+    <h4 id="education-and-skills">Education and Skills</h4>
+    <p>Relevant educational backgrounds include finance, economics, mathematics, or engineering. Essential skills include:</p>
+    <ul>
+    <li><p>Financial modeling and valuation</p></li>
+    <li><p>Market analysis</p></li>
+    <li><p>Presentation and communication skills</p></li>
+    </ul>
+    <h3 id="concluding-thoughts-1">Concluding Thoughts</h3>
+    <p>Investment banking continues to evolve, especially in response to regulation and market dynamics. While traditional practices persist, embracing change and ongoing education will remain vital for success in the industry.</p>
+    <h1 id="notes-on-institutional-investors">Notes on Institutional Investors</h1>
+    <h3 id="introduction-11">Introduction</h3>
+    <ul>
+    <li><p>Topic: Institutional investors and their significance in global governance and wealth management.</p></li>
+    <li><p>Details include both money managers of institutional portfolios and financial advisors/planners.</p></li>
+    </ul>
+    <h3 id="wealth-overview-in-the-united-states">Wealth Overview in the United States</h3>
+    <h4 id="total-assets">Total Assets</h4>
+    <ul>
+    <li><p>Total assets owned in the United States: <br /><span class="math display"><em>W</em><sub><em>t</em><em>o</em><em>t</em><em>a</em><em>l</em></sub> = 70, 740 billion = 70 trillion</span><br /></p></li>
+    <li><p>Breakdown of Assets:</p>
+    <ul>
+    <li><p><strong>Real Estate:</strong> <span class="math inline">18 trillion</span> (households and non-profits)</p></li>
+    <li><p><strong>Pension Funds:</strong> <span class="math inline">13 trillion</span></p></li>
+    <li><p><strong>Equity in Non-Corporate Business:</strong> <span class="math inline">6 trillion</span></p></li>
+    <li><p><strong>Bank Deposits:</strong> <span class="math inline">8 trillion</span></p></li>
+    <li><p><strong>Corporate Equities:</strong> <span class="math inline">8 trillion</span></p></li>
+    <li><p><strong>Mutual Funds:</strong> <span class="math inline">5 trillion</span></p></li>
+    <li><p><strong>Consumer Durables:</strong> <span class="math inline">5 trillion</span></p></li>
+    <li><p><strong>Treasury Securities:</strong> <span class="math inline">1 trillion</span></p></li>
+    <li><p><strong>Corporate Bonds:</strong> <span class="math inline">2 trillion</span></p></li>
+    <li><p><strong>Municipal Bonds:</strong> <span class="math inline">1 trillion</span> (outstanding total near <span class="math inline">3 trillion</span>)</p></li>
+    <li><p><strong>Life Insurance Reserves:</strong> Institutional investor managed.</p></li>
+    </ul></li>
+    <li><p>Approximately half of these assets managed by institutional investors.</p></li>
+    </ul>
+    <h4 id="liabilities">Liabilities</h4>
+    <ul>
+    <li><p>Total household liabilities: <br /><span class="math display"><em>L</em><sub><em>t</em><em>o</em><em>t</em><em>a</em><em>l</em></sub> = 13.9 trillion</span><br /></p></li>
+    <li><p>Breakdown:</p>
+    <ul>
+    <li><p><strong>Home Mortgages:</strong> <span class="math inline">10 trillion</span></p></li>
+    <li><p><strong>Consumer Credit:</strong> <span class="math inline">2.4 trillion</span></p></li>
+    </ul></li>
+    <li><p><strong>Net Worth:</strong> <br /><span class="math display"><em>N</em><em>W</em><sub><em>h</em><em>o</em><em>u</em><em>s</em><em>e</em><em>h</em><em>o</em><em>l</em><em>d</em><em>s</em></sub> = <em>W</em><sub><em>t</em><em>o</em><em>t</em><em>a</em><em>l</em></sub> − <em>L</em><sub><em>t</em><em>o</em><em>t</em><em>a</em><em>l</em></sub> = 70 − 13.9 = 56.1 trillion</span><br /></p></li>
+    </ul>
+    <h3 id="national-and-global-wealth-perspectives">National and Global Wealth Perspectives</h3>
+    <h4 id="human-capital">Human Capital</h4>
+    <ul>
+    <li><p>The value of people’s ability to produce and generate income.</p></li>
+    <li><p>Total national income in the U.S. in 2010: <span class="math inline">13 trillion</span>.</p></li>
+    <li><p>Capitalized value of national income assuming <span class="math inline">3%</span> growth, <span class="math inline">5%</span> discount: <br /><span class="math display">$$V_{national} = \frac{13}{0.05 - 0.03} = 260 \text{ trillion}$$</span><br /></p></li>
+    <li><p>World GDP was estimated at <span class="math inline">62 trillion</span> leading to global wealth of about: <br /><span class="math display">$$V_{global} = \frac{62}{0.05 - 0.03} = 1.2 \text{ quadrillion}$$</span><br /></p></li>
+    </ul>
+    <h3 id="institutional-investing">Institutional Investing</h3>
+    <h4 id="role-of-institutional-investors">Role of Institutional Investors</h4>
+    <ul>
+    <li><p>Institutional investors manage a significant amount of capital and are increasingly influential in risk management.</p></li>
+    <li><p>Professional management helps to diversify and share risks that families cannot manage effectively.</p></li>
+    <li><p>Investment managers have a fiduciary duty to act in clients’ best interests.</p></li>
+    </ul>
+    <h4 id="prudent-person-rule">Prudent Person Rule</h4>
+    <ul>
+    <li><p>Defined by ERISA (Employee Retirement Income Security Act) 1974.</p></li>
+    <li><p>Requires investment managers to act with care, skill, prudence, and diligence.</p></li>
+    <li><p>Impacts legacy investing strategies and risk-taking behaviors of institutional investors.</p></li>
+    </ul>
+    <h3 id="types-of-institutional-investors">Types of Institutional Investors</h3>
+    <ul>
+    <li><p><strong>Mutual Funds:</strong> Investment funds that pool investor capital to invest in stocks and bonds.</p></li>
+    <li><p><strong>Trusts:</strong> Hold money on behalf of individuals, often providing long-term financial security.</p></li>
+    <li><p><strong>Pension Funds:</strong> Designed to provide retirement income, transparent funding methods established.</p></li>
+    <li><p><strong>Endowments:</strong> Manage a portfolio for causes like universities, keep funds for long-term sustainability.</p></li>
+    </ul>
+    <h3 id="family-offices-and-foundations">Family Offices and Foundations</h3>
+    <ul>
+    <li><p><strong>Family Offices:</strong> Establishes to manage substantial wealth (e.g., $100 million+) for wealthy individuals.</p></li>
+    <li><p><strong>Family Foundations:</strong> Charitable organizations allowing wealthy families to administer their philanthropy.</p>
+    <ul>
+    <li><p>Increase in number indicates a shift towards responsible wealth management.</p></li>
+    </ul></li>
+    </ul>
+    <h3 id="conclusion-16">Conclusion</h3>
+    <ul>
+    <li><p>Institutional investing reflects the evolving landscape of wealth management.</p></li>
+    <li><p>As families transition responsibilities to institutional investors, effective wealth distribution and investment remain crucial for societal advancement.</p></li>
+    </ul>
+    <h1 id="notes-on-financial-exchanges-and-clearinghouses">Notes on Financial Exchanges and Clearinghouses</h1>
+    <h3 id="introduction-12">Introduction</h3>
+    <h4 id="overview-of-exchanges">Overview of Exchanges</h4>
+    <ul>
+    <li><p>Exchanges are platforms where shares in corporations are traded.</p></li>
+    <li><p>Exchanges are central to economics; they facilitate the allocation of scarce resources through exchange.</p></li>
+    </ul>
+    <h4 id="definitions-of-economics">Definitions of Economics</h4>
+    <p>According to Kenneth Boulding, one definition of economics is:</p>
+    <blockquote>
+    <p><em>Economics is the study of exchange.</em></p>
+    </blockquote>
+    <p>This is further emphasized by the focus on prices and quantities, which are fundamental aspects of exchange.</p>
+    <h3 id="the-concept-of-exchange">The Concept of Exchange</h3>
+    <h4 id="karl-polanyis-point-of-view">Karl Polanyi’s Point of View</h4>
+    <ul>
+    <li><p>In his book <em>The Great Transformation</em> (1944), Polanyi argues that the invention of exchange is a key defining moment in human history.</p></li>
+    <li><p>He contrasts early human societies, where gift exchange dominated, with modern economies that have formal price-based exchanges.</p></li>
+    </ul>
+    <h4 id="types-of-exchange-in-early-societies">Types of Exchange in Early Societies</h4>
+    <ul>
+    <li><p>Gift exchange in primitive societies does not involve market transactions; relationships were solidified through gift-giving rather than price.</p></li>
+    <li><p>Archaeological evidence suggests that exchange might have existed earlier than Polanyi’s cited 10,000 years.</p></li>
+    <li><p>For example, distribution of rare commodities like flint has been found across large distances.</p></li>
+    </ul>
+    <h3 id="brokers-vs.-dealers">Brokers vs. Dealers</h3>
+    <h4 id="definitions">Definitions</h4>
+    <ul>
+    <li><p><strong>Broker</strong>: Acts on behalf of others, earning a commission.</p></li>
+    <li><p><strong>Dealer</strong>: Trades for self, profiting from the markup.</p></li>
+    </ul>
+    <h4 id="examples">Examples</h4>
+    <ul>
+    <li><p>Real estate transactions typically involve brokers.</p></li>
+    <li><p>Antique sales are usually conducted through dealers.</p></li>
+    </ul>
+    <h4 id="market-types">Market Types</h4>
+    <ul>
+    <li><p>Stock markets can be classified as either dealer markets (e.g., NASDAQ) or broker markets (e.g., NYSE).</p></li>
+    </ul>
+    <h3 id="history-of-stock-exchanges">History of Stock Exchanges</h3>
+    <h4 id="development-timeline">Development Timeline</h4>
+    <ul>
+    <li><p>Ancient Rome is credited with the first stock exchange around the Roman Forum.</p></li>
+    <li><p>The modern stock exchange concept began in Amsterdam in 1602 with the Dutch East India Company.</p></li>
+    <li><p>The London Stock Exchange developed from Jonathan’s Coffee House in 1698.</p></li>
+    <li><p>The New York Stock Exchange was founded in 1792 under a buttonwood tree.</p></li>
+    <li><p>The Bombay Stock Exchange was established in 1875.</p></li>
+    </ul>
+    <h4 id="impact-of-electronic-trading">Impact of Electronic Trading</h4>
+    <ul>
+    <li><p>Development of computerized trading has transformed traditional exchanges, like the NYSE, which still uses some manual trading methods.</p></li>
+    <li><p>The NASDAQ introduced its computerized system in the 1970s, allowing for more rapid trades.</p></li>
+    </ul>
+    <h3 id="types-of-trading-orders">Types of Trading Orders</h3>
+    <ul>
+    <li><p><strong>Market Order</strong>: Buy or sell at the best available price.</p></li>
+    <li><p><strong>Limit Order</strong>: Sets a specific price at which to buy or sell.</p></li>
+    <li><p><strong>Stop Order</strong>: A sell order placed to limit losses.</p></li>
+    </ul>
+    <h3 id="order-book-and-bid-ask-spread">Order Book and Bid-Ask Spread</h3>
+    <h4 id="bid-ask-spread-concept">Bid-Ask Spread Concept</h4>
+    <p>The bid-ask spread is the difference between the highest price a buyer is willing to pay (bid) and the lowest price a seller will accept (ask). <br /><span class="math display">Spread = Ask Price − Bid Price</span><br /></p>
+    <h4 id="dealer-and-risk-management">Dealer and Risk Management</h4>
+    <ul>
+    <li><p>Dealers must manage their risks to remain profitable.</p></li>
+    <li><p>The theory of <strong>Gambler’s Ruin</strong> can be applied to dealers in financial markets.</p></li>
+    </ul>
+    <h4 id="probability-of-ruin">Probability of Ruin</h4>
+    <p>If a dealer starts with <span class="math inline"><em>S</em></span> dollars and has a win probability <span class="math inline"><em>p</em></span>, the probability of eventual ruin is given by: <br /><span class="math display">$$P(\text{Ruin}) = 
+    \begin{cases} 
+    1 &amp; \text{if } p \leq \frac{1}{2} \\
+    1 - \left(\frac{1-p}{p}\right)^S &amp; \text{if } p &gt; \frac{1}{2} 
+    \end{cases}$$</span><br /></p>
+    <h3 id="modern-problems-in-high-frequency-trading">Modern Problems in High-Frequency Trading</h3>
+    <h4 id="market-crashes-and-regulations">Market Crashes and Regulations</h4>
+    <ul>
+    <li><p>Significant market drops, such as the crash on October 19, 1987, led to the implementation of circuit breakers.</p></li>
+    <li><p>The trading environment has become complex due to the rise of algorithmic and high-frequency trading.</p></li>
+    </ul>
+    <h4 id="case-study-may-6-2010">Case Study: May 6, 2010</h4>
+    <ul>
+    <li><p>Rapid drops were noted in the market, linked to the prevalence of high-frequency trading.</p></li>
+    <li><p>Recommendations for regulating such trading and ensuring market stability were made, but high-frequency trading itself remains a key feature of modern finance.</p></li>
+    </ul>
+    <h3 id="conclusion-17">Conclusion</h3>
+    <p>The evolution of exchanges from physical marketplaces to modern electronic systems highlights significant changes in trading dynamics and financial markets. Understanding the mechanics of exchanges, brokers, dealers, order types, and trading technologies is crucial for navigating today’s financial landscape.</p>
+    <h1 id="notes-on-nonprofit-and-government-finance">Notes on Nonprofit and Government Finance</h1>
+    <h3 id="introduction-13">Introduction</h3>
+    <ul>
+    <li><p>Finance is about incentivizing individuals to perform well and managing risks.</p></li>
+    <li><p>This topic extends beyond the private sector; it encompasses all people.</p></li>
+    </ul>
+    <h3 id="teamwork-and-individual-contribution">Teamwork and Individual Contribution</h3>
+    <ul>
+    <li><p>Achievements often require teamwork.</p></li>
+    <li><p>Individual concerns can hinder effective teamwork.</p></li>
+    <li><p>Notable individual contributions, such as those from Albert Einstein and Charles Darwin, often relied on support from organizations.</p></li>
+    </ul>
+    <h3 id="nonprofit-organizations">Nonprofit Organizations</h3>
+    <ul>
+    <li><p>Definition: Organizations with a purpose stated in their charter other than making money.</p></li>
+    <li><p>In the U.S. (2010), there were 1.6 million nonprofits, constituting about 4% of the GDP.</p></li>
+    <li><p>Nonprofits include education, healthcare, and social welfare organizations.</p></li>
+    <li><p>Example: Yale University is a nonprofit organization.</p></li>
+    </ul>
+    <h3 id="examples-of-nonprofits">Examples of Nonprofits</h3>
+    <ol>
+    <li><p><strong>Doorways to Dreams (D2D)</strong>: Founded by Peter Tufano, aimed at improving personal finance.</p>
+    <ul>
+    <li><p>Proposal: Automatic check-off on tax forms for saving through U.S. savings bonds.</p></li>
+    <li><p>Another innovative idea: Create lottery-like savings plans.</p></li>
+    </ul></li>
+    <li><p><strong>Innovations for Poverty Action (IPA)</strong>: Founded by Dean Karlan in 2002.</p>
+    <ul>
+    <li><p>Focuses on alleviating poverty through research and action.</p></li>
+    <li><p>In 2010, IPA generated $25 million in income and employed 500 people globally.</p></li>
+    </ul></li>
+    <li><p><strong>Ashoka Foundation</strong>: Founded by Bill Drayton, promotes social entrepreneurship.</p></li>
+    <li><p><strong>Teach for America</strong>: Founded by Wendy Kopp to recruit college graduates for teaching in low-income areas.</p>
+    <ul>
+    <li><p>Raised $2.5 million in her first year (1989) to launch the program.</p></li>
+    </ul></li>
+    </ol>
+    <h3 id="government-involvement-in-for-profits">Government Involvement in For-Profits</h3>
+    <ul>
+    <li><p>Governments control both nonprofits and for-profits through regulation and tax.</p></li>
+    <li><p>Consider the corporate profits tax as a form of government ownership of private companies: <br /><span class="math display"><em>T</em> = <em>T</em><sub><em>f</em><em>e</em><em>d</em><em>e</em><em>r</em><em>a</em><em>l</em></sub> + <em>T</em><sub><em>s</em><em>t</em><em>a</em><em>t</em><em>e</em>/<em>l</em><em>o</em><em>c</em><em>a</em><em>l</em></sub></span><br /> where <span class="math inline"><em>T</em></span> is the total corporate profits tax that can reach around 47% in the U.S.</p></li>
+    </ul>
+    <h4 id="examples-1">Examples</h4>
+    <ul>
+    <li><p><strong>TEPCO</strong>: Japanese electric power company involved in the Fukushima disaster, now the subject of claims and bankruptcy discussions.</p></li>
+    <li><p><strong>General Motors (GM)</strong>: Received government assistance during the financial crisis.</p>
+    <ul>
+    <li><p>Filed for Chapter 11, resulting in a restructuring where the U.S. government acquired significant ownership.</p></li>
+    </ul></li>
+    </ul>
+    <h3 id="municipal-and-state-finance">Municipal and State Finance</h3>
+    <ul>
+    <li><p>State and local governments spend significantly more than the federal government, running various public services.</p></li>
+    <li><p>States typically have a balanced budget requirement.</p></li>
+    <li><p><strong>Capital Budgeting</strong>: States use capital budgets for long-term investments, allowing for borrowing and debt accumulation for projects like schools and roads.</p></li>
+    </ul>
+    <h3 id="government-social-insurance">Government Social Insurance</h3>
+    <ul>
+    <li><p>Social insurance provides coverage that private insurers typically don’t:</p>
+    <ol>
+    <li><p>Progressive taxes</p></li>
+    <li><p>Earned Income Tax Credit (EITC)</p></li>
+    <li><p>Social Security (OASDI): Old Age, Survivors, and Disability Insurance</p></li>
+    <li><p>Workers’ compensation</p></li>
+    </ol></li>
+    </ul>
+    <h4 id="history-of-social-insurance">History of Social Insurance</h4>
+    <ul>
+    <li><p>First major social insurance schemes originated in Germany under Otto von Bismarck.</p></li>
+    <li><p>Successful implementation relied on advancements in information technology.</p>
+    <ul>
+    <li><p>Notable innovations: paper production, carbon paper, typewriters, standardized forms.</p></li>
+    </ul></li>
+    </ul>
+    <h3 id="conclusion-18">Conclusion</h3>
+    <ul>
+    <li><p>The role of finance encompasses both private and nonprofit sectors.</p></li>
+    <li><p>Distinctions between profit-oriented and nonprofit endeavors blur, as both serve broader social purposes.</p></li>
+    <li><p>Incentives in finance reflect both monetary and moral motivations.</p></li>
+    </ul>
+    <h1 id="notes-on-financial-markets-finding-your-purpose-in-a-world-of-financial-capitalism">Notes on Financial Markets: Finding Your Purpose in a World of Financial Capitalism</h1>
+    <h3 id="introduction-14">Introduction</h3>
+    <p>This lecture concludes the course titled “Financial Markets." The objective is to summarize the course and discuss the significance of financial tools in the context of personal and societal purposes.</p>
+    <h4 id="importance-of-finance">Importance of Finance</h4>
+    <p>Finance serves as a language, rich in jargon, reflecting underlying concepts essential for navigating business and society. Key purposes of finance include:</p>
+    <ul>
+    <li><p>Allocating scarce resources.</p></li>
+    <li><p>Incentivizing productivity.</p></li>
+    <li><p>Managing risks.</p></li>
+    </ul>
+    <p>These functions contribute significantly to the development of societies.</p>
+    <h3 id="central-themes-of-the-lecture">Central Themes of the Lecture</h3>
+    <p>Seven central themes will be discussed during this concluding lecture:</p>
+    <ol>
+    <li><p>Morality in finance.</p></li>
+    <li><p>The concept of hopelessness.</p></li>
+    <li><p>Insights into financial theory.</p></li>
+    <li><p>Wealth and poverty dynamics.</p></li>
+    <li><p>The future world economy.</p></li>
+    <li><p>The democratization of finance.</p></li>
+    <li><p>Career paths in finance.</p></li>
+    </ol>
+    <h3 id="morality-of-finance">Morality of Finance</h3>
+    <p>The morality of finance encapsulates the ethical implications of financial actions and decisions.</p>
+    <h4 id="key-references">Key References</h4>
+    <ul>
+    <li><p>Peter Unger’s <em>Living High and Letting Die</em> highlights moral dilemmas prone to inaction.</p></li>
+    <li><p>William Graham Sumner’s <em>What the Social Classes Owe Each Other</em> discusses the ethical standing of wealth and capitalism.</p></li>
+    </ul>
+    <h4 id="key-arguments">Key Arguments</h4>
+    <ul>
+    <li><p>Financial agents can balance profit motives with social good.</p></li>
+    <li><p>The portrayal of capitalists in society is often skewed by the perception of wealth inequality.</p></li>
+    </ul>
+    <h3 id="the-concept-of-hopelessness">The Concept of Hopelessness</h3>
+    <h4 id="ungers-perspective">Unger’s Perspective</h4>
+    <p>Discusses rationalizations like futility, which can lead to inaction.</p>
+    <h4 id="malthusian-critique">Malthusian Critique</h4>
+    <p>Thomas Malthus’ essay (1798) posits:</p>
+    <blockquote>
+    <p>“Population increases in a geometrical ratio while subsistence grows in an arithmetical ratio."</p>
+    </blockquote>
+    <p>This suggests expected resource limitations due to population pressures.</p>
+    <h3 id="insights-into-financial-theory">Insights into Financial Theory</h3>
+    <p>Combining mathematical finance with behavioral finance is essential for understanding market phenomena. This synergy aids in addressing client needs and market behaviors.</p>
+    <h3 id="wealth-and-poverty-dynamics">Wealth and Poverty Dynamics</h3>
+    <p>The course emphasizes socioeconomic disparities and the impact of financial institutions on welfare.</p>
+    <h4 id="hacker-and-pearsons-winner-take-all-politics">Hacker and Pearson’s Winner-Take-All Politics</h4>
+    <p>Explores increasing wealth polarization and the political influence of the financial sector.</p>
+    <h3 id="future-world-economy">Future World Economy</h3>
+    <p>Forecasts the democratization of finance as an emergent trend influenced by innovations in information technology.</p>
+    <h3 id="career-paths-in-finance">Career Paths in Finance</h3>
+    <p>Consideration of various career trajectories, both within and beyond finance, focusing on meaningful contributions to society.</p>
+    <h4 id="inspirational-figures">Inspirational Figures</h4>
+    <ul>
+    <li><p>Bill Gates and Microsoft’s founding story.</p></li>
+    <li><p>Muhammad Yunus, known for microfinance through the Grameen Bank.</p></li>
+    </ul>
+    <h3 id="conclusion-19">Conclusion</h3>
+    <p>The course imparts the notion that finance is a tool for societal betterment rather than an end in itself. It advocates for:</p>
+    <ul>
+    <li><p>Continuous engagement with personal development and industry trends.</p></li>
+    <li><p>Acknowledgment of randomness in career trajectories, emphasized by historical perspectives.</p></li>
+    </ul>
+    <h3 id="final-thoughts">Final Thoughts</h3>
+    <p>Students are encouraged to view their careers as part of a larger narrative, contributing to the evolving landscape of finance and its intersection with societal ethical imperatives.</p>
+    
+</div>
+  <!-- insert above this -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</body>
+
+</html>
+

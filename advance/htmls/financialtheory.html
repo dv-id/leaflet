@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>/\dvance</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <style>
+    code {
+      white-space: pre-wrap;
+    }
+
+    span.smallcaps {
+      font-variant: small-caps;
+    }
+
+    span.underline {
+      text-decoration: underline;
+    }
+
+    div.column {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+    }
+
+    div.hanging-indent {
+      margin-left: 1.5em;
+      text-indent: -1.5em;
+    }
+
+    ul.task-list {
+      list-style: none;
+    }
+  </style>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body style="
+    background-color: rgb(0, 0, 39);
+    color: rgb(205, 158, 250);" class="vh-100 p-0 mb-0">
+
+  <div class="container" style="margin-top: 10%;">
+    <div id="business-row" class="row justify-content-between">
+      
+      <nav class="navbar navbar-dark navbar-collapse navbar-fixed-top fixed-top justify-content-center container" style="background-color: rgb(0, 0, 40);">
+        <div class="container justify-content-center">
+        <a class="navbar-brand" href="../index.html" style="color: rgb(179, 114, 240);">/\dvance</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="../finance.html">Finance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../startups.html">Startups</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../economics.html">Economics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../humanities.html">Humanities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../philosophy.html">Philosophy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../science.html">Science</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+
+        <div class="container" style="background-color: rgb(0, 0, 40);">
+          <div class="col-12 d-flex justify-content-start align-items-center">
+              <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                  <ol class="breadcrumb m-1">
+                      <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                      <li class="breadcrumb-item"><a href="../finance.html">Finance</a></li>
+                      <li class="breadcrumb-item active"><a href="../htmls/financialtheory.html">Financial Theory</a></li>
+                  </ol>
+              </nav>
+          </div>
+      </div>
+
+      <div class="btn position-fixed fixed-bottom d-flex justify-content-end p-0">
+        <a style="color: white; background-color: rgb(0, 0, 40);" class="border rounded p-1"
+        onclick="document.getElementById('contents').scrollIntoView({ behavior: 'smooth' });">contents^</a>
+      </div>
+    </nav>
+
+    </div>
+
+    <div class="row">
+      <h1 id="contents" class="m-0">contents</h4>
+          <div class="col-6">
+              <ul>
+                  <li class="mb-1">
+                      <a href="#overview-of-finance">Overview of Finance</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#present-value-and-financial-concepts">Present Value and Financial Concepts</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#interest-rates-and-central-banking">Interest Rates and Central Banking</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#fixed-income">Fixed Income</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#overview-of-financial-markets">Overview of Financial Markets</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#equities">Equities</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#financial-markets-forward-and-futures-contracts">Financial Markets: Forward and Futures Contracts</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#notes-on-futures-and-forward-contracts">Notes on Futures and Forward Contracts</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#notes-on-option-pricing">Notes on Option Pricing</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#notes-on-option-pricing-and-derivatives">Notes on Option Pricing and Derivatives</a>
+                  </li>
+                  <li>
+                      <a href="#notes-on-empirical-properties-of-stocks-and-bonds">Notes on Empirical Properties of Stocks and Bonds</a>
+                  </li>
+
+
+              </ul>
+          </div>
+          <div class="col-6">
+              <ul>
+                <li class="mb-1">
+                  <a href="#portfolio-management-risk-and-return">Portfolio Management: Risk and Return</a>
+              </li>
+                <li class="mb-1">
+                  <a href="#notes-on-risk-and-expected-return">Notes on Risk and Expected Return</a>
+              </li>
+              <li class="mb-1">
+                  <a href="#lecture-notes-on-risk-and-return">Lecture Notes on Risk and Return</a>
+              </li>
+                 
+                  <li class="mb-1">
+                      <a href="#notes-on-capital-asset-pricing-model-and-capital-budgeting">Notes on Capital Asset Pricing Model and Capital Budgeting</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#capital-budgeting-and-project-financing">Capital Budgeting and Project Financing</a>
+                  </li>
+                  <li class="mb-1">
+                      <a href="#notes-on-efficient-markets-and-behavioral-finance">Notes on Efficient Markets and Behavioral Finance</a>
+                  </li>
+                  <li>
+                      <a href="#lecture-notes-on-adaptive-markets-hypothesis">Lecture Notes on Adaptive Markets Hypothesis</a>
+                  </li>
+
+              </ul>
+          </div>
+  </div>
+  </div>
+
+
+
+
+  <!-- insert under this -->
+  <div class="container">
+    <h1>Financial Theory</h1>
+    <h1 id="overview-of-finance">Overview of Finance</h1>
+<h3 id="what-is-finance">What is Finance?</h3>
+<ul>
+<li><p>Definition: <strong>Finance</strong> is the systematic and disciplined study of money transactions.</p></li>
+<li><p>A simple equation summarizing finance: <br /><span class="math display">Finance = Mathematics + Money</span><br /></p></li>
+<li><p>In finance, the range of mathematics varies from basic arithmetic to advanced topics like differential equations.</p></li>
+</ul>
+<h3 id="importance-of-finance">Importance of Finance</h3>
+<ul>
+<li><p>Finance is critical for practical management and decision-making in business.</p></li>
+<li><p>It is the lingua franca of business.</p></li>
+</ul>
+<h3 id="motivational-examples">Motivational Examples</h3>
+<ul>
+<li><p>James Simons - Mathematical professor turned successful hedge fund manager.</p></li>
+<li><p>Warren Buffett - Renowned investor known for value investing strategies using simple arithmetical calculations.</p></li>
+<li><p>Jack Welch - Former CEO of General Electric known for his decision-making and ability to enhance corporate value significantly.</p></li>
+<li><p>All three individuals exemplify a deep understanding of financial language despite their diverse backgrounds.</p></li>
+</ul>
+<h3 id="core-components-of-finance">Core Components of Finance</h3>
+<h4 id="flow-diagram-of-the-economy">Flow Diagram of the Economy</h4>
+<ul>
+<li><p>Components include:</p>
+<ol>
+<li><p>Households</p></li>
+<li><p>Financial Intermediaries</p></li>
+<li><p>Non-financial Corporations</p></li>
+<li><p>Capital Markets</p></li>
+</ol></li>
+</ul>
+<h3 id="fundamental-challenges-of-finance">Fundamental Challenges of Finance</h3>
+<ul>
+<li><p>Two primary challenges:</p>
+<ol>
+<li><p>Valuation of assets</p></li>
+<li><p>Management of assets</p></li>
+</ol></li>
+</ul>
+<h3 id="valuation-and-management">Valuation and Management</h3>
+<ul>
+<li><p>Valuation entails determining the worth of an asset, leading to management decisions based on that valuation.</p></li>
+<li><p>Example of asset value distinction:</p>
+<ul>
+<li><p>Water is essential but inexpensive.</p></li>
+<li><p>Diamonds are expensive but not necessary for survival.</p></li>
+</ul></li>
+</ul>
+<h3 id="accounting-framework">Accounting Framework</h3>
+<ul>
+<li><p>Core concepts:</p>
+<ul>
+<li><p><strong>Stock</strong>: The level of assets (similar to variables).</p></li>
+<li><p><strong>Flow</strong>: The rate of change in assets (akin to derivatives).</p></li>
+</ul></li>
+</ul>
+<h3 id="cash-flow-management-in-corporations-and-households">Cash Flow Management in Corporations and Households</h3>
+<ul>
+<li><p>Corporate financial decisions revolve around managing cash flows from:</p>
+<ol>
+<li><p>Cash raised from investors</p></li>
+<li><p>Cash invested in real assets</p></li>
+<li><p>Cash generated from operations</p></li>
+</ol></li>
+<li><p>Household financial management parallels corporate scenarios.</p></li>
+</ul>
+<h3 id="time-and-risk">Time and Risk</h3>
+<ul>
+<li><p>The roles of <strong>time</strong> and <strong>risk</strong> are critical in financial analysis; without them, finance becomes basic microeconomics.</p></li>
+<li><p>Lack of these concepts simplifies financial decisions.</p></li>
+</ul>
+<h3 id="fundamental-principles-of-finance">Fundamental Principles of Finance</h3>
+<ol>
+<li><p>There is no such thing as a free lunch.</p></li>
+<li><p>Other things equal, individuals prefer more money to less, money now rather than later, and less risk to more risk.</p></li>
+<li><p>All agents act to further their self-interest.</p></li>
+</ol>
+<h1 id="present-value-and-financial-concepts">Present Value and Financial Concepts</h1>
+<h3 id="overview-of-key-concepts">Overview of Key Concepts</h3>
+<p>These notes cover basic financial concepts including present value, net present value (NPV), perpetuity, annuities, and the implications of currency conversion on financial decisions.</p>
+<h3 id="net-present-value-npv">Net Present Value (NPV)</h3>
+<h4 id="definition">Definition</h4>
+<ul>
+<li><p>The Net Present Value of a project is defined as the difference between the present value of cash inflows and the present value of cash outflows.</p></li>
+<li><p>Mathematically, it can be expressed as: <br /><span class="math display">$$\text{NPV} = \sum_{t=1}^{N} \frac{CF_t}{(1+r)^t} - C_0$$</span><br /> where:</p>
+<ul>
+<li><p><span class="math inline"><em>C</em><em>F</em><sub><em>t</em></sub></span> = Cash flow at time <span class="math inline"><em>t</em></span></p></li>
+<li><p><span class="math inline"><em>r</em></span> = Discount rate</p></li>
+<li><p><span class="math inline"><em>N</em></span> = Total number of periods</p></li>
+<li><p><span class="math inline"><em>C</em><sub>0</sub></span> = Initial investment (cost)</p></li>
+</ul></li>
+</ul>
+<h4 id="currency-considerations">Currency Considerations</h4>
+<ul>
+<li><p>NPV can vary drastically based on the currency used for calculation.</p></li>
+<li><p>If cash flows are evaluated in different currencies, exchange rates need to be considered.</p></li>
+<li><p>In a scenario where exchange rates remain constant: <br /><span class="math display">$$\text{NPV}_\text{local} = \sum_{t=1}^{N} \frac{CF_t}{(1+r)^t}, \text{ assuming } r \text{ is constant over time.}$$</span><br /></p></li>
+<li><p>If the exchange rate fluctuates, it could impact the cash flows and NPV depending on the rate of appreciation/depreciation.</p></li>
+</ul>
+<h3 id="present-value-relationships">Present Value Relationships</h3>
+<h4 id="present-value-of-cash-flows">Present Value of Cash Flows</h4>
+<ul>
+<li><p>The present value (PV) of a future cash flow is calculated as follows: <br /><span class="math display">$$PV = \frac{CF}{(1+r)^t}$$</span><br /></p></li>
+</ul>
+<h4 id="example-calculation">Example Calculation</h4>
+<p>A firm spends $800,000 annually on electricity. Implementing a specialized lighting system reduces this expense by $90,000 annually for three years at a discount rate of 4%.</p>
+<ul>
+<li><p>Cash flow for cost savings: <br /><span class="math display"><em>C</em><em>F</em><sub>1</sub> = <em>C</em><em>F</em><sub>2</sub> = <em>C</em><em>F</em><sub>3</sub> = 90, 000</span><br /></p></li>
+<li><p>Initial cost of systems: <span class="math inline"><em>C</em><sub>0</sub> = 230, 000</span></p></li>
+<li><p>NPV Calculation: <br /><span class="math display">$$NPV = \frac{90,000}{(1+0.04)^1} + \frac{90,000}{(1+0.04)^2} + \frac{90,000}{(1+0.04)^3} - 230,000$$</span><br /></p></li>
+</ul>
+<h3 id="perpetuities">Perpetuities</h3>
+<h4 id="definition-1">Definition</h4>
+<p>A perpetuity is an asset that pays a constant cash flow <span class="math inline"><em>C</em></span> forever, starting one year from now.</p>
+<h4 id="present-value-of-a-perpetuity">Present Value of a Perpetuity</h4>
+<p>The formula for the present value <span class="math inline"><em>P</em><em>V</em></span> of a perpetuity is: <br /><span class="math display">$$PV = \frac{C}{r}$$</span><br /> where:</p>
+<ul>
+<li><p><span class="math inline"><em>C</em></span> = Cash flow per period</p></li>
+<li><p><span class="math inline"><em>r</em></span> = Discount rate (interest rate)</p></li>
+</ul>
+<h4 id="example-calculation-1">Example Calculation</h4>
+<p>For instance, if a perpetuity pays $100 a year and the interest rate is 10%: <br /><span class="math display">$$PV = \frac{100}{0.10} = 1000$$</span><br /></p>
+<h4 id="growing-perpetuities">Growing Perpetuities</h4>
+<p>If cash flows grow at rate <span class="math inline"><em>g</em></span>, the present value is given by: <br /><span class="math display">$$PV = \frac{C}{r - g}$$</span><br /> with <span class="math inline"><em>r</em> &gt; <em>g</em></span>.</p>
+<h3 id="annuities">Annuities</h3>
+<h4 id="definition-2">Definition</h4>
+<p>An annuity is a financial product that pays a fixed sum <span class="math inline"><em>C</em></span> at regular intervals for a fixed number of periods <span class="math inline"><em>T</em></span>.</p>
+<h4 id="present-value-of-annuity">Present Value of Annuity</h4>
+<p>The present value of an annuity can be derived from the present value of a perpetuity: <br /><span class="math display">$$PV = C \times \left( \frac{1 - (1 + r)^{-T}}{r} \right)$$</span><br /></p>
+<h3 id="compounding">Compounding</h3>
+<h4 id="annual-percentage-rate-apr-vs.-effective-annual-rate-ear">Annual Percentage Rate (APR) vs. Effective Annual Rate (EAR)</h4>
+<ul>
+<li><p>APR is the nominal interest rate without taking compounding into account.</p></li>
+<li><p>EAR reflects the actual interest earned or paid after compounding.</p></li>
+<li><p>FORMULA: <br /><span class="math display">$$EAR = (1 + \frac{r}{n})^{n} - 1$$</span><br /> where <span class="math inline"><em>n</em></span> is the number of compounding periods per year.</p></li>
+</ul>
+<h4 id="concept-of-continuous-compounding">Concept of Continuous Compounding</h4>
+<ul>
+<li><p>If compounding occurs continuously, the formula becomes: <br /><span class="math display"><em>A</em> = <em>P</em><em>e</em><sup><em>r</em><em>t</em></sup></span><br /> where:</p>
+<ul>
+<li><p><span class="math inline"><em>A</em></span> = Amount of money accumulated after time <span class="math inline"><em>t</em></span></p></li>
+<li><p><span class="math inline"><em>P</em></span> = Principal amount (the initial amount of money)</p></li>
+<li><p><span class="math inline"><em>e</em></span> = Base of the natural logarithm</p></li>
+<li><p><span class="math inline"><em>r</em></span> = Annual interest rate (decimal)</p></li>
+<li><p><span class="math inline"><em>t</em></span> = Time in years</p></li>
+</ul></li>
+</ul>
+<h3 id="conclusion">Conclusion</h3>
+<p>These concepts are foundational in finance and will aid in understanding more complex financial instruments and investment strategies. Understanding present value, NPV, and compounding effects are vital for assessing investment opportunities.</p>
+<h3 id="lehman-brothers-financial-overview-2007">Lehman Brothers Financial Overview (2007)</h3>
+<p>As of the end of 2007:</p>
+<ul>
+<li><p>Net Revenues: $19 billion</p></li>
+<li><p>Net Income: $4 billion</p></li>
+<li><p>Long-term Capital: $145 billion</p></li>
+<li><p>Assets Under Management: $282 billion</p></li>
+</ul>
+<h4 id="workforce-impact">Workforce Impact</h4>
+<ul>
+<li><p>Employees: 28,500</p></li>
+<li><p>Resulting job dislocation in New York City following Lehman Brothers’ collapse.</p></li>
+</ul>
+<h3 id="leverage-and-its-implications">Leverage and Its Implications</h3>
+<p>The leverage ratio signifies the amount of debt relative to equity. A higher ratio indicates higher risk.</p>
+<h4 id="example-of-leverage-personal-mortgages">Example of Leverage: Personal Mortgages</h4>
+<p>1. <strong>Using a 20% Down Payment</strong></p>
+<ul>
+<li><p>Home Price: $500,000</p></li>
+<li><p>Down Payment: $100,000</p></li>
+<li><p>Loan: $400,000</p></li>
+<li><p>Leverage Ratio: <br /><span class="math display">$$\text{Leverage} = \frac{\text{Total Assets}}{\text{Equity}} = \frac{500,000}{100,000} = 5$$</span><br /></p></li>
+</ul>
+<p>2. <strong>Using a 5% Down Payment</strong></p>
+<ul>
+<li><p>Down Payment: $25,000</p></li>
+<li><p>Loan: $475,000</p></li>
+<li><p>New Leverage Ratio: <br /><span class="math display">$$\text{Leverage} = \frac{500,000}{25,000} = 20$$</span><br /></p></li>
+</ul>
+<p>As the example shows, the potential for loss is magnitude greater with higher leverage. A decline in asset value exposes the homeowner under higher leverage to greater loss.</p>
+<h4 id="economic-consequences-of-high-leverage">Economic Consequences of High Leverage</h4>
+<ul>
+<li><p>A small percentage change in asset value (e.g., 10%) results in substantial losses for leveraged investors.</p></li>
+<li><p>When considering market firms like Lehman Brothers:</p></li>
+</ul>
+<p><br /><span class="math display">Effect of a 10%drop on $145 billion:  145 billion × 0.1 = 14.5 billion loss</span><br /></p>
+<h3 id="inflation-and-real-vs.-nominal-returns">Inflation and Real vs. Nominal Returns</h3>
+<h4 id="definitions">Definitions</h4>
+<ul>
+<li><p><strong>Nominal Return</strong>: Actual dollar growth of wealth without adjusting for inflation.</p></li>
+<li><p><strong>Real Return</strong>: Actual growth of purchasing power, adjusted for inflation.</p></li>
+</ul>
+<h4 id="calculating-real-returns">Calculating Real Returns</h4>
+<ul>
+<li><p>Using the formula: <br /><span class="math display">Real Return ≈ Nominal Return − Inflation Rate</span><br /></p></li>
+<li><p>Example: If Nominal Return is 15% and Inflation is 10%, then: <br /><span class="math display">Real Return ≈ 15% − 10% = 5%</span><br /></p></li>
+</ul>
+<h4 id="purchasing-power-and-wealth">Purchasing Power and Wealth</h4>
+<p><em>Wealth at time t and t+k</em> given as: <br /><span class="math display"><em>W</em><sub><em>t</em></sub> = Current Wealth</span><br /> <br /><span class="math display"><em>W</em><sub><em>t</em> + <em>k</em></sub> = <em>W</em><sub><em>t</em></sub>(1 + <em>r</em>)</span><br /> With inflation considered for adjustments to purchasing power: <br /><span class="math display">$$\text{Purchasing Power of Wealth} = \frac{W_{t+k}}{I_{t+k}} \quad \text{where } I \text{ is the inflation index.}$$</span><br /></p>
+<h3 id="fixed-income-securities-overview">Fixed Income Securities Overview</h3>
+<h4 id="definition-3">Definition</h4>
+<p>Fixed income securities are instruments with fixed payoffs, generally involving debt obligations.</p>
+<h4 id="types-of-fixed-income-securities">Types of Fixed Income Securities</h4>
+<ol>
+<li><p>Treasury Securities</p></li>
+<li><p>Corporate Bonds</p></li>
+<li><p>Municipal Securities</p></li>
+<li><p>Mortgage-Backed Securities</p></li>
+</ol>
+<h4 id="valuation-of-fixed-income-securities">Valuation of Fixed Income Securities</h4>
+<p><strong>Coupon Bond Valuation:</strong></p>
+<ul>
+<li><p>Cash Flows: Individual cash coupons received until maturity, plus face value at maturity.</p></li>
+<li><p>Example: For a $1,000 face value, issuing $50 semi-annually for 3 years.</p></li>
+<li><p>Bond Price Calculation: Present Value (PV)</p></li>
+</ul>
+<p><br /><span class="math display">$$PV = \sum_{t=1}^{T} \frac{C_t}{(1+r)^t} + \frac{F}{(1+r)^T}$$</span><br /></p>
+<p>Where:</p>
+<ul>
+<li><p><span class="math inline"><em>C</em><sub><em>t</em></sub></span> = Cash flow at time t</p></li>
+<li><p>r = Discount rate</p></li>
+</ul>
+<p><strong>Zero-Coupon Bond Valuation:</strong> Present value of a single future cash flow. <br /><span class="math display">$$Price = \frac{F}{(1+r)^n}$$</span><br /></p>
+<h4 id="market-implications">Market Implications</h4>
+<p>The behavior of fixed income securities allows for insights into future interest rates and economic conditions.</p>
+<h3 id="conclusion-1">Conclusion</h3>
+<p>Understanding financial leverage, the relationship between real and nominal returns, and how fixed income securities are structured provides critical insights into both individual financial decisions and the broader economic landscape. Transitioning from theory to practical application is essential, particularly in understanding current and prospective financial stability.</p>
+<h1 id="interest-rates-and-central-banking">Interest Rates and Central Banking</h1>
+<p>These notes provide a comprehensive overview of recent trends in financial markets related to interest rates and central banking policies. The focus will be on understanding the implications of these policies, as well as the fundamental concepts related to bond pricing and yield curves.</p>
+<h3 id="federal-reserve-actions">Federal Reserve Actions</h3>
+<ul>
+<li><p>The Federal Reserve (Fed) chose not to cut interest rates as widely anticipated in the market.</p></li>
+<li><p>Instead, they extended an $85 billion loan to AIG, indicating a stronger intervention in maintaining liquidity in markets.</p></li>
+<li><p>In contrast, during the collapse of Lehman Brothers, the Fed did not intervene, which signifies different assessments of systemic risk associated with AIG and Lehman Brothers.</p></li>
+</ul>
+<h3 id="interest-rate-dynamics">Interest Rate Dynamics</h3>
+<h4 id="interest-rate-expectations">Interest Rate Expectations</h4>
+<ul>
+<li><p>The market initially projected a cut in interest rates based on economic conditions.</p></li>
+<li><p>The Fed’s choice to hold rates suggests a cautious approach, possibly due to already low rates and concerns about long-term effects of further cuts.</p></li>
+<li><p>Importance of distinguishing between the cost of borrowing vs. the availability of credit was emphasized.</p></li>
+</ul>
+<h4 id="spot-rates-vs.-forward-rates">Spot Rates vs. Forward Rates</h4>
+<ul>
+<li><p><strong>Spot Rate (<span class="math inline"><em>R</em><sub><em>t</em></sub></span>)</strong>: The interest rate applicable for a loan or investment for a specific period beginning today.</p></li>
+<li><p><strong>Forward Rate (<span class="math inline"><em>F</em><sub><em>t</em>, <em>t</em> + 1</sub></span>)</strong>: The interest rate agreed upon today for a loan or investment that will begin at a specified future date.</p></li>
+</ul>
+<h4 id="mathematics-of-interest-rates">Mathematics of Interest Rates</h4>
+<ul>
+<li><p>The price of a zero-coupon bond can be written as: <br /><span class="math display">$$P = \frac{F}{(1 + r)^t}$$</span><br /> where <span class="math inline"><em>P</em></span> is the price, <span class="math inline"><em>F</em></span> is the face value, and <span class="math inline"><em>r</em></span> is the spot interest rate.</p></li>
+<li><p>Spot rates can differ based on the maturity; hence, the effective annual rate (little r) can be computed as: <br /><span class="math display">$$r_t = \sqrt[t]{\prod_{i=1}^{t}(1 + R_i)} - 1$$</span><br /> where <span class="math inline"><em>R</em><sub><em>i</em></sub></span> are the series of spot rates.</p></li>
+<li><p><strong>Geometric Mean of Spot Rates:</strong> <br /><span class="math display"><em>r</em> = (<em>R</em><sub>1</sub><em>R</em><sub>2</sub>...<em>R</em><sub><em>t</em></sub>)<sup>1/<em>t</em></sup> − 1</span><br /> describes the average effective yield across multiple periods.</p></li>
+</ul>
+<h3 id="yield-curves">Yield Curves</h3>
+<h4 id="understanding-yield-curves">Understanding Yield Curves</h4>
+<p>A yield curve plots the interest rates of bonds of equal credit quality but differing maturity dates. It can take several forms:</p>
+<ul>
+<li><p><strong>Normal Yield Curve</strong>: Upward sloping, indicating higher rates for longer maturities.</p></li>
+<li><p><strong>Inverted Yield Curve</strong>: Downward sloping, often indicating recession.</p></li>
+<li><p><strong>Flat Yield Curve</strong>: Similar rates across maturities; uncertainty in future interest rates.</p></li>
+</ul>
+<h4 id="constructing-yield-curves">Constructing Yield Curves</h4>
+<p>The yield curve gives insight into future interest rate expectations. For instance: <br /><span class="math display">$$Y_t = \frac{C_1}{(1 + R_1)} + \frac{C_2}{(1 + R_2)^2} + ... + \frac{C_n}{(1 + R_n)^n}$$</span><br /> where <span class="math inline"><em>C</em><sub><em>n</em></sub></span> are future coupon payments and <span class="math inline"><em>R</em><sub><em>n</em></sub></span> are corresponding interest rates.</p>
+<h3 id="theories-of-term-structure">Theories of Term Structure</h3>
+<p>Several theories explain the shape of the yield curve:</p>
+<ul>
+<li><p><strong>Expectations Hypothesis</strong>: Current long-term rates reflect expected future short-term rates. Thus, <span class="math inline"><em>F</em><sub><em>t</em>, <em>t</em> + 1</sub> ≈ <em>E</em>[<em>R</em><sub><em>t</em> + 1</sub>]</span>.</p></li>
+<li><p><strong>Liquidity Preference Theory</strong>: Investors demand a premium for longer-term bonds, causing a typical upward slope in yield curves.</p></li>
+<li><p><strong>Preferred Habitat Theory</strong>: Borrowers have preferred maturities, leading to varying supply and demand conditions across different maturities.</p></li>
+<li><p><strong>Market Segmentation Model</strong>: Market participants prefer specific maturities, impacting supply and demand curves for those maturities.</p></li>
+</ul>
+<h3 id="conclusion-2">Conclusion</h3>
+<p>In conclusion, the understanding of interest rates, yield curves, and the dynamics of monetary policy is fundamental for navigating financial markets. The Fed’s actions can significantly influence these rates, and comprehending the various theories of term structure further enhances this understanding.</p>
+<h1 id="fixed-income">Fixed Income</h1>
+<p>These notes cover topics related to the pricing of multiple fixed income securities, the yield curve, arbitrage opportunities, psychological reactions in financial markets, and the law of one price.</p>
+<h3 id="price-and-yield-correlation">Price and Yield Correlation</h3>
+<ul>
+<li><p>Price of Treasury securities has decreased due to:</p>
+<ul>
+<li><p>Decreased market demand</p></li>
+<li><p>Adjustments in risk perception</p></li>
+</ul></li>
+<li><p>Long-term yield changes: <br /><span class="math display"><em>Y</em><sub>30-year</sub> increased from 4% to 4.37%</span><br /></p></li>
+<li><p>Possible inflationary expectations influencing yields.</p></li>
+</ul>
+<h3 id="the-law-of-one-price">The Law of One Price</h3>
+<p><strong>Definition:</strong> The law of one price states that two identical cash flows must have the same market price.</p>
+<h4 id="implications">Implications</h4>
+<ul>
+<li><p>Arbitrage opportunities arise when identical cash flows differ in price.</p></li>
+<li><p>Example of arbitrage: <br /><span class="math display"><em>P</em><sub>Asset</sub> = <em>P</em><sub>Cash flow 1</sub> = <em>P</em><sub>Cash flow 2</sub></span><br /> Where: <br /><span class="math display">$$\begin{aligned}
+        P_{\text{Asset}} &amp; &lt; P_{\text{Cash flow 1}} \implies \text{Buy Cash Flow 1}\\
+        P_{\text{Asset}} &amp; &gt; P_{\text{Cash flow 2}} \implies \text{Sell Cash Flow 2}
+    \end{aligned}$$</span><br /></p></li>
+</ul>
+<h3 id="understanding-money-market-funds">Understanding Money Market Funds</h3>
+<h4 id="breaking-the-buck">Breaking the Buck</h4>
+<ul>
+<li><p>A money market fund “breaks the buck” when it cannot return $1 for every $1 invested.</p></li>
+<li><p>Notable instance: The Reserve Fund providing less than $1 due to market conditions.</p></li>
+</ul>
+<h3 id="bond-pricing">Bond Pricing</h3>
+<h4 id="coupon-bonds">Coupon Bonds</h4>
+<ul>
+<li><p>Coupon bonds can be priced as a portfolio of pure discount bonds.</p></li>
+<li><p>Equation for pricing coupon bonds: <br /><span class="math display">$$P = \sum_{t=1}^{T} \frac{C}{(1+y)^t} + \frac{F}{(1+y)^T}$$</span><br /> Where:</p>
+<ul>
+<li><p><span class="math inline"><em>P</em></span> = Price of the bond</p></li>
+<li><p><span class="math inline"><em>C</em></span> = Coupon payment</p></li>
+<li><p><span class="math inline"><em>F</em></span> = Face value</p></li>
+<li><p><span class="math inline"><em>y</em></span> = Yield to maturity (YTM)</p></li>
+<li><p><span class="math inline"><em>T</em></span> = Total number of periods</p></li>
+</ul></li>
+</ul>
+<h3 id="duration">Duration</h3>
+<h4 id="macaulay-duration">Macaulay Duration</h4>
+<ul>
+<li><p>Definition: The weighted average time until cash flows are received.</p></li>
+<li><p>Useful to measure interest rate risk: <br /><span class="math display">$$D = \frac{\sum_{t=1}^{T} t \cdot \frac{C}{(1+y)^t}}{P}$$</span><br /> Where <span class="math inline"><em>D</em></span> is the duration, and <span class="math inline"><em>P</em></span> is the present value of cash flows.</p></li>
+</ul>
+<h4 id="modified-duration">Modified Duration</h4>
+<ul>
+<li><p>Measures sensitivity of the bond price to changes in yield: <br /><span class="math display">$$D^* = \frac{D}{1+y}$$</span><br /> Where <span class="math inline"><em>D</em><sup>*</sup></span> is the modified duration.</p></li>
+</ul>
+<h3 id="convexity">Convexity</h3>
+<h4 id="definition-4">Definition</h4>
+<ul>
+<li><p>Measures the curvature of the bond price yield relationship.</p></li>
+<li><p>Allows for approximating changes in bond prices with changing yields.</p></li>
+</ul>
+<h4 id="mathematical-representation">Mathematical Representation</h4>
+<p><br /><span class="math display">$$\begin{aligned}
+P_{\text{new}} &amp; = P_{\text{original}} \left( 1 - D^*\Delta y + \frac{1}{2}C\Delta y^2 \right)\end{aligned}$$</span><br /></p>
+<h3 id="upcoming-topics">Upcoming Topics</h3>
+<ul>
+<li><p>Risky debt and credit ratings</p></li>
+<li><p>Case studies on subprime securities</p></li>
+</ul>
+<h1 id="overview-of-financial-markets">Overview of Financial Markets</h1>
+<h3 id="yield-curve">Yield Curve</h3>
+<p>The yield curve is a graphical representation of interest rates on debt for a range of maturities. It reflects financial market sentiments and can indicate the health of the economy.</p>
+<h4 id="current-yield-measurements">Current Yield Measurements</h4>
+<p>The yield on a three-month Treasury bill is measured at <br /><span class="math display">71 − 72 basis points</span><br /> indicating improving market conditions as compared to the previous week (previously about 30-40 basis points).<br />
+Concerns about inflation affect the long end of the yield curve. The yield on a 30-year bond is now <br /><span class="math display">4.22%</span><br /> which is lower than before.</p>
+<h3 id="market-prices-and-sentiment">Market Prices and Sentiment</h3>
+<p>Market prices reflect aggregate sentiment and may not be "correct" but instead represent current expectations of economic conditions.</p>
+<h3 id="duration-and-convexity-of-bonds">Duration and Convexity of Bonds</h3>
+<h4 id="duration-1">Duration</h4>
+<p>Duration measures the sensitivity of a bond’s price to changes in interest rates. It reflects the average time it takes to receive cash flows from the bond.</p>
+<h4 id="convexity-1">Convexity</h4>
+<p>Convexity describes the curvature in the relationship between bond prices and interest rates, illustrating how duration changes as interest rates change.</p>
+<p>The bond price <span class="math inline"><em>P</em>(<em>y</em>′)</span> at a new yield <span class="math inline"><em>y</em>′</span> can be approximated as: <br /><span class="math display">$$P(y') \approx P(y) + P'(y) \cdot (y' - y) + \frac{1}{2} P''(y) \cdot (y' - y)^2$$</span><br /> where <span class="math inline"><em>P</em>′(<em>y</em>)</span> is the first derivative (sensitivity to yield changes) and <span class="math inline"><em>P</em>″(<em>y</em>)</span> is the second derivative (reflecting convexity).</p>
+<h3 id="corporate-bonds-and-default-risk">Corporate Bonds and Default Risk</h3>
+<h4 id="credit-ratings">Credit Ratings</h4>
+<p>Credit ratings serve as a measure of default risk for corporate bonds. Major agencies include:</p>
+<ul>
+<li><p>Moody’s</p></li>
+<li><p>Standard &amp; Poor’s (S&amp;P)</p></li>
+<li><p>Fitch</p></li>
+</ul>
+<h5 id="rating-categories">Rating Categories</h5>
+<p><strong>Investment Grade:</strong></p>
+<ul>
+<li><p>AAA: Highest quality</p></li>
+<li><p>AA: High quality</p></li>
+<li><p>A: Upper-medium quality</p></li>
+</ul>
+<p><strong>Non-Investment Grade:</strong></p>
+<ul>
+<li><p>Anything below BAA is considered more speculative with higher default risks.</p></li>
+</ul>
+<h4 id="default-risk-assessment">Default Risk Assessment</h4>
+<p>The default premium varies by bond rating. For example, BAA bonds experience higher spreads compared to Treasury bonds due to perceived risk: <br /><span class="math display">Spread = Yield (BAA) − Yield (Treasury)</span><br /></p>
+<p>Historically, Moody’s BAA bonds typically show lower default rates than non-investment grade over a longer horizon.</p>
+<h3 id="securitization-and-tranches">Securitization and Tranches</h3>
+<h4 id="securitization-process">Securitization Process</h4>
+<p>Securitization transforms illiquid assets into liquid securities by pooling them and issuing new securities based on the pooled assets, which could offer varying levels of risk and return.</p>
+<h5 id="tranches">Tranches</h5>
+<ul>
+<li><p>Senior Tranche: Less risky, paid before junior tranche.</p></li>
+<li><p>Junior Tranche: Riskier, receives payouts after senior tranche.</p></li>
+</ul>
+<p>Consider a simple example where we pool two risky bonds:</p>
+<ul>
+<li><p>Each bond has a face value of $1,000 with a default risk of 10%.</p></li>
+</ul>
+<p>Creating a tranching structure changes the risk profile, and respective defaults are modeled as:</p>
+<ul>
+<li><p>Probability that both bonds fail: <span class="math inline"><em>p</em><sub><em>f</em><em>a</em><em>i</em><em>l</em></sub> = (0.1)(0.1) = 0.01</span></p></li>
+<li><p>Probability that at least one succeeds: <span class="math inline">1 − <em>p</em><sub><em>f</em><em>a</em><em>i</em><em>l</em></sub> = 0.99</span></p></li>
+</ul>
+<h3 id="impact-of-housing-market-correlation">Impact of Housing Market Correlation</h3>
+<p>The correlation of underlying assets significantly affects risk assessments:</p>
+<ul>
+<li><p>Perfectly correlated assets will lead to systemic risk as the probability of simultaneous defaults increases.</p></li>
+</ul>
+<h4 id="consequences">Consequences</h4>
+<p>If traditional models assume independence but reality shows correlation:</p>
+<ul>
+<li><p>Both senior and junior tranches can see valuations plunge as defaults spike beyond historical expectations.</p></li>
+</ul>
+<h4 id="lessons-learned">Lessons Learned</h4>
+<p>Potential pitfalls include over-reliance on credit ratings and assumptions about asset independence. Continuous monitoring and adjustment of risk models are crucial for preventing financial dislocations and ensuring stability in markets.</p>
+<h3 id="conclusion-3">Conclusion</h3>
+<p>The evolution of financial products such as bonds, along with their ratings and securitization methods, is essential for understanding investment dynamics and managing associated risks.</p>
+<h1 id="equities">Equities</h1>
+<h3 id="overview-of-equity">Overview of Equity</h3>
+<ul>
+<li><p>Equity represents ownership in a corporation.</p></li>
+<li><p>When you own equity, you own a sequence of cash flows, primarily in the form of dividends or capital gains.</p></li>
+</ul>
+<h4 id="cash-flow-components">Cash Flow Components</h4>
+<ul>
+<li><p><strong>Dividends (<span class="math inline"><em>D</em></span>)</strong>: Cash payments made to shareholders.</p></li>
+<li><p><strong>Capital Gains</strong>: Appreciation in the value of the equity.</p></li>
+<li><p>Companies, particularly early-stage growth companies, may not pay dividends to reinvest in operations.</p></li>
+</ul>
+<h3 id="key-characteristics-of-common-stock">Key Characteristics of Common Stock</h3>
+<ul>
+<li><p><strong>Residual Claimant</strong>: Shareholders are entitled to assets after bondholders are paid.</p></li>
+<li><p><strong>Limited Liability</strong>: Maximum loss is limited to the amount invested; personal assets are protected.</p></li>
+<li><p><strong>Voting Rights</strong>: Shareholders can influence company decisions through voting.</p></li>
+</ul>
+<h3 id="market-structure">Market Structure</h3>
+<ul>
+<li><p><strong>Primary Market</strong>: Initial issuance of securities.</p></li>
+<li><p><strong>Secondary Market</strong>: Trading of existing securities.</p></li>
+</ul>
+<h4 id="market-dynamics">Market Dynamics</h4>
+<h3 id="valuation-of-equities">Valuation of Equities</h3>
+<h4 id="dividend-discount-model-ddm">Dividend Discount Model (DDM)</h4>
+<ul>
+<li><p>The price of a stock today (<span class="math inline"><em>P</em><sub><em>t</em></sub></span>) is determined by the present value of expected future dividends: <br /><span class="math display">$$P_t = \sum_{t=1}^{\infty} \frac{D_t}{(1+r_t)^t}$$</span><br /> where <span class="math inline"><em>D</em><sub><em>t</em></sub></span> is the dividend at time <span class="math inline"><em>t</em></span> and <span class="math inline"><em>r</em><sub><em>t</em></sub></span> is the risk-adjusted return.</p></li>
+</ul>
+<h5 id="assumptions-for-ddm">Assumptions for DDM</h5>
+<ul>
+<li><p>Dividends <span class="math inline"><em>D</em><sub><em>t</em></sub></span> can fluctuate and are based on company performance and market conditions.</p></li>
+<li><p><strong>Risk-Adjusted Return (<span class="math inline"><em>r</em></span>)</strong>: Reflects the riskiness of the dividends.</p></li>
+</ul>
+<h4 id="fixed-dividends-and-growth-model">Fixed Dividends and Growth Model</h4>
+<ul>
+<li><p>If dividends are constant: <br /><span class="math display">$$P = \frac{D}{r}$$</span><br /></p></li>
+<li><p>If dividends grow at a constant rate <span class="math inline"><em>g</em></span>: <br /><span class="math display">$$P = \frac{D_0(1+g)}{r-g}$$</span><br /> where <span class="math inline"><em>D</em><sub>0</sub></span> is the most recent dividend.</p></li>
+</ul>
+<h4 id="important-insights">Important Insights</h4>
+<ul>
+<li><p>Price is an increasing function of expected cash flows and inversely proportional to the discount rate: <br /><span class="math display">If <em>r</em> increases, <em>P</em> decreases.</span><br /></p></li>
+<li><p>Evaluating growth opportunities and their impact on stock prices can lead to rapid price fluctuations.</p></li>
+</ul>
+<h4 id="cost-of-equity-capital">Cost of Equity Capital</h4>
+<p>The relationship between the cost of equity capital (<span class="math inline"><em>r</em></span>), dividend yield (<span class="math inline"><em>D</em>/<em>P</em></span>), and growth rate (<span class="math inline"><em>g</em></span>): <br /><span class="math display">$$r = \frac{D}{P} + g$$</span><br /> This formula captures the total return required by investors.</p>
+<h3 id="conclusion-4">Conclusion</h3>
+<p>Understanding equity pricing is complex, as it incorporates various risk factors and growth assumptions. Investors and financial managers must continuously evaluate market conditions, company performance, and the broader economic environment to make informed decisions regarding equity investments.</p>
+<h1 id="financial-markets-forward-and-futures-contracts">Financial Markets: Forward and Futures Contracts</h1>
+<h3 id="overview">Overview</h3>
+<ul>
+<li><p>The current state of the stock market indicates a decline.</p></li>
+<li><p>The three-month T-bill rate has increased by 60-70 basis points.</p></li>
+<li><p>The Federal Reserve (Fed) is focused on maintaining liquidity in markets.</p></li>
+<li><p>Despite market fears, overall interest rates remain relatively low.</p></li>
+<li><p>Investors appear to be hesitant and are waiting for clearer signals regarding economic policies and the market.</p></li>
+</ul>
+<h3 id="understanding-market-dynamics">Understanding Market Dynamics</h3>
+<h4 id="opportunities-during-crisis">Opportunities During Crisis</h4>
+<ul>
+<li><p>Historical perspectives show that crises can create opportunities for investors who are willing to take risks.</p></li>
+<li><p>Key insights from psychology and behavioral finance suggest that fear can cloud rational thinking.</p></li>
+</ul>
+<h3 id="market-instruments">Market Instruments</h3>
+<h4 id="forward-contracts">Forward Contracts</h4>
+<ul>
+<li><p>A forward contract is a commitment to buy or sell a commodity or asset at a predetermined price at a future date.</p></li>
+<li><p>Features include:</p>
+<ul>
+<li><p>Customization: Agreements tailored specifically between two parties.</p></li>
+<li><p>Non-Standardization: Terms can vary, with no fixed quantity or price.</p></li>
+<li><p>Over-the-Counter Trading: Contracts are usually traded directly between parties and not on exchanges.</p></li>
+</ul></li>
+<li><p>The forward price (<span class="math inline"><em>F</em></span>) is determined in such a way that the present value of the contract is zero at the initiation: <br /><span class="math display"><em>P</em><em>V</em>(<em>F</em>) = <em>F</em> ⋅ <em>e</em><sup> − <em>r</em><em>t</em></sup> = 0</span><br /> where <span class="math inline"><em>r</em></span> is the risk-free interest rate, and <span class="math inline"><em>t</em></span> is the time until settlement.</p></li>
+<li><p>The buyer is referred to as "long" and the seller as "short".</p></li>
+<li><p>There is significant counterparty risk; the risk that one party will default on the contract.</p></li>
+</ul>
+<h3 id="futures-contracts">Futures Contracts</h3>
+<h4 id="characteristics">Characteristics</h4>
+<ul>
+<li><p>Futures contracts are similar to forward contracts but differ in several key aspects:</p>
+<ul>
+<li><p>Standardization: Contracts for standardized quantities and qualities of commodities.</p></li>
+<li><p>Daily Settlement: Marking to market every day where gains and losses are settled daily.</p></li>
+<li><p>Clearinghouse Participation: Involves a clearing corporation that serves as an intermediary, reducing counterparty risk.</p></li>
+</ul></li>
+<li><p>Futures prices are derived from the expectations about future spot prices. <br /><span class="math display"><em>P</em><sub><em>f</em><em>u</em><em>t</em><em>u</em><em>r</em><em>e</em><em>s</em></sub> = <em>P</em><sub><em>s</em><em>p</em><em>o</em><em>t</em></sub> + <em>C</em><em>o</em><em>s</em><em>t</em><em>o</em><em>f</em><em>C</em><em>a</em><em>r</em><em>r</em><em>y</em> − <em>C</em><em>o</em><em>n</em><em>v</em><em>e</em><em>n</em><em>i</em><em>e</em><em>n</em><em>c</em><em>e</em><em>Y</em><em>i</em><em>e</em><em>l</em><em>d</em></span><br /></p></li>
+</ul>
+<h4 id="cash-settlement-vs.-physical-delivery">Cash Settlement vs. Physical Delivery</h4>
+<ul>
+<li><p>Most futures contracts are cash-settled meaning no actual delivery of the commodity occurs.</p></li>
+<li><p>However, some contracts require physical delivery, which can lead to issues if not properly managed.</p></li>
+</ul>
+<h4 id="example-of-futures-market">Example of Futures Market</h4>
+<ul>
+<li><p>NYMEX crude oil futures may have contract prices such as $76.06 per barrel.</p></li>
+<li><p>Contract margins are set to manage daily fluctuations and risk, typically requiring only around 5% of the total contract value.</p></li>
+</ul>
+<h3 id="conclusion-5">Conclusion</h3>
+<ul>
+<li><p>In times of uncertainty, understanding financial instruments such as forwards and futures can help manage risk and maintain operational focus.</p></li>
+<li><p>Companies must evaluate their exposure to commodity price fluctuations and determine the appropriateness of using these financial tools.</p></li>
+</ul>
+<h1 id="notes-on-futures-and-forward-contracts">Notes on Futures and Forward Contracts</h1>
+<h3 id="introduction">Introduction</h3>
+<h4 id="futures-and-forward-contracts">Futures and Forward Contracts</h4>
+<p>Futures and forward contracts are agreements to buy or sell an asset at a future date for a specified price. They serve as risk management tools.</p>
+<h3 id="understanding-futures-contracts">Understanding Futures Contracts</h3>
+<h4 id="definitions-1">Definitions</h4>
+<ul>
+<li><p><strong>Futures Price</strong> (<span class="math inline"><em>F</em><sub><em>t</em>, <em>T</em></sub></span>): The agreed price for the future transaction at time <span class="math inline"><em>t</em></span> for delivery at time <span class="math inline"><em>T</em></span>.</p></li>
+<li><p><strong>Spot Price</strong> (<span class="math inline"><em>S</em><sub><em>t</em></sub></span>): The current market price of the asset.</p></li>
+<li><p><strong>Contract Size</strong>: The quantity of the asset covered by the contract (e.g., in barrels for oil).</p></li>
+</ul>
+<h4 id="example">Example</h4>
+<p>Consider an oil futures contract issued on July 27, 2007, for oil delivered in December for a price of $75.06 per barrel. Each contract is for 1,000 barrels.</p>
+<ul>
+<li><p>Futures Price: <span class="math inline"><em>F</em> = 75.06</span></p></li>
+<li><p>Contract Size: <span class="math inline">1, 000 barrels</span></p></li>
+<li><p>Total Contract Value: <span class="math inline">1, 000 × 75.06 = 75, 060</span> dollars</p></li>
+</ul>
+<h4 id="mark-to-market">Mark-to-Market</h4>
+<p>No cash changes hands at the time of contract execution. The value of the contract adjusts daily based on price changes, leading to potential gains or losses.</p>
+<h3 id="margin-requirements">Margin Requirements</h3>
+<h4 id="initial-margin">Initial Margin</h4>
+<p>The initial margin is the upfront cash deposited to open a position (e.g., $4,050).</p>
+<h4 id="maintenance-margin">Maintenance Margin</h4>
+<p>The maintenance margin is the minimum account balance required to maintain the position (e.g., $3,000). Falling below this triggers a margin call.</p>
+<h4 id="cash-flow-and-profitloss-calculation">Cash Flow and Profit/Loss Calculation</h4>
+<p>If the futures price moves, the difference affects your margin account: <br /><span class="math display">Profit/Loss = (Current Futures Price − Initial Futures Price) × Contract Size</span><br /></p>
+<h4 id="example-calculation-2">Example Calculation</h4>
+<p>Initial futures price: \$0.7455 per pound (for cattle). After a decrease to $0.7435: <br /><span class="math display">$$\begin{aligned}
+\text{Contract Size} &amp;= 40,000 \text{ pounds} \\
+\text{Value of Position} &amp;= 40,000 \times 0.7435 = 297,400 \\
+\text{Loss} &amp;= 298,200 - 297,400 = 800 \text{ dollars}\end{aligned}$$</span><br /></p>
+<h3 id="pricing-of-futures-and-forward-contracts">Pricing of Futures and Forward Contracts</h3>
+<ul>
+<li><p>If the futures price rises above the initial price, the holder profits.</p></li>
+<li><p>If the futures price falls below the initial price, the holder incurs losses.</p></li>
+</ul>
+<h4 id="no-arbitrage-pricing-condition">No Arbitrage Pricing Condition</h4>
+<p>To determine the prices of futures and forwards, we equate the present value of payoffs. The relationship can be derived as: <br /><span class="math display"><em>F</em><sub>0, <em>T</em></sub> = <em>S</em><sub>0</sub>(1 + <em>r</em>)<sup><em>T</em></sup></span><br /> Where <span class="math inline"><em>r</em></span> is the risk-free interest rate.</p>
+<h4 id="considerations">Considerations</h4>
+<ul>
+<li><p>Cost of carry: storage costs or convenience yield may affect the pricing.</p></li>
+<li><p>Standard relationship (net costs):</p></li>
+</ul>
+<p><br /><span class="math display"><em>F</em><sub><em>t</em>, <em>T</em></sub> = <em>S</em><sub><em>t</em></sub>(1 + <em>r</em>)<sup><em>T</em> − <em>t</em></sup> + Storage costs − Convenience yield</span><br /></p>
+<h4 id="market-behavior">Market Behavior</h4>
+<p>The market operates under conditions of supply and demand, and arbitrage opportunities can arise if futures prices deviate from expected spot prices.</p>
+<h3 id="conclusion-6">Conclusion</h3>
+<p>Futures and forward contracts can serve not only as tools for hedging risk but also as methods for speculation. Understanding their pricing is crucial in capital markets.</p>
+<h1 id="notes-on-option-pricing">Notes on Option Pricing</h1>
+<h3 id="introduction-1">Introduction</h3>
+<p>Option pricing is a fundamental concept in financial markets, especially in the context of derivatives. Understanding the basic principles will provide insights into more complex financial instruments.</p>
+<h3 id="concept-of-options">Concept of Options</h3>
+<p>Options are contracts that give the holder the right, but not the obligation, to buy or sell an underlying asset at a predetermined price within a specified time period.</p>
+<h4 id="main-types-of-options">Main Types of Options</h4>
+<ul>
+<li><p><strong>Call Options</strong>: Give the holder the right to buy the underlying asset at a specific strike price.</p></li>
+<li><p><strong>Put Options</strong>: Give the holder the right to sell the underlying asset at a specific strike price.</p></li>
+</ul>
+<h3 id="payoff-diagrams">Payoff Diagrams</h3>
+<p>Understanding payoff diagrams is key to visualizing the value of options at expiration.</p>
+<h4 id="call-option-payoff">Call Option Payoff</h4>
+<p>The payoff of a call option at expiration is given by:</p>
+<p><br /><span class="math display">Payoff = max (0, <em>S</em><sub><em>T</em></sub> − <em>K</em>)</span><br /></p>
+<p>where <span class="math inline"><em>S</em><sub><em>T</em></sub></span> is the stock price at expiration and <span class="math inline"><em>K</em></span> is the strike price.</p>
+<h4 id="put-option-payoff">Put Option Payoff</h4>
+<p>The payoff of a put option at expiration is given by:</p>
+<p><br /><span class="math display">Payoff = max (0, <em>K</em> − <em>S</em><sub><em>T</em></sub>)</span><br /></p>
+<h3 id="net-payoff-and-option-premium">Net Payoff and Option Premium</h3>
+<p>The net payoff after paying the option premium <span class="math inline"><em>P</em></span> is given by:</p>
+<p><br /><span class="math display">Net Payoff = Payoff − <em>P</em></span><br /></p>
+<p>This changes the shape of the payoff diagram, shifting it downwards by the premium amount.</p>
+<h4 id="example-of-call-option-net-payoff">Example of Call Option Net Payoff</h4>
+<p>If the premium paid for the call option is <span class="math inline"><em>P</em></span>, then the net payoff diagram will be: <br /><span class="math display">Net Payoff = max (0, <em>S</em><sub><em>T</em></sub> − <em>K</em>) − <em>P</em></span><br /></p>
+<h4 id="example-of-put-option-net-payoff">Example of Put Option Net Payoff</h4>
+<p>If the premium paid for the put option is <span class="math inline"><em>P</em></span>, then the net payoff diagram will be: <br /><span class="math display">Net Payoff = max (0, <em>K</em> − <em>S</em><sub><em>T</em></sub>) − <em>P</em></span><br /></p>
+<h3 id="comparison-with-futures-contracts">Comparison with Futures Contracts</h3>
+<p>In a futures contract, there is no initial premium to be paid. Thus, payoffs are symmetric. In contrast, options provide asymmetric payoffs.</p>
+<h3 id="the-role-of-volatility">The Role of Volatility</h3>
+<p>Implied volatility is a crucial concept for option pricing. It represents the market’s expectation of future volatility and can be inferred from option prices. The Chicago Board Options Exchange (CBOE) publishes the VIX index, representing the market’s expectation of volatility.</p>
+<h3 id="historical-context">Historical Context</h3>
+<h4 id="development-of-option-pricing-theory">Development of Option Pricing Theory</h4>
+<p>The foundational work in option pricing theory emerged in the early to mid-20th century, particularly through the contributions of:</p>
+<ul>
+<li><p>Louis Bachelier in 1900, introducing the concept of price random walk.</p></li>
+<li><p>Fischer Black and Myron Scholes in the 1970s, formulating the Black-Scholes model.</p></li>
+</ul>
+<h4 id="the-black-scholes-formula">The Black-Scholes Formula</h4>
+<p>The Black-Scholes formula is a key result that gives the theoretical price of European call and put options. It can be represented as follows: <br /><span class="math display"><em>C</em><em>a</em><em>l</em><em>l</em> = <em>S</em><sub>0</sub><em>N</em>(<em>d</em><sub>1</sub>) − <em>K</em><em>e</em><sup> − <em>r</em><em>T</em></sup><em>N</em>(<em>d</em><sub>2</sub>)</span><br /> where: <br /><span class="math display">$$d_1 = \frac{\ln(S_0 / K) + (r + \sigma^2 / 2) T}{\sigma \sqrt{T}}, \quad d_2 = d_1 - \sigma \sqrt{T}$$</span><br /> with <span class="math inline"><em>N</em>(<em>d</em>)</span> being the cumulative distribution function of the standard normal distribution.</p>
+<h3 id="conclusion-7">Conclusion</h3>
+<p>Understanding options and their pricing is crucial for navigating financial markets. The asymmetry of payoffs, the impact of volatility, and the historical development of pricing theory provide a comprehensive background for approaching advanced topics in finance.</p>
+<h1 id="notes-on-option-pricing-and-derivatives">Notes on Option Pricing and Derivatives</h1>
+<h3 id="introduction-2">Introduction</h3>
+<p>This document covers key points from lectures on option pricing and the binomial option pricing model. This method serves as a foundational tool for understanding the valuation of options and other derivative securities.</p>
+<h3 id="option-pricing-models">Option Pricing Models</h3>
+<h4 id="the-binomial-option-pricing-model">The Binomial Option Pricing Model</h4>
+<p>The binomial model allows for a straightforward approach to derive theoretical pricing formulas for options. It is simpler than the Black-Scholes formula and can be calibrated using historical stock price behaviors.</p>
+<h4 id="basic-definitions">Basic Definitions</h4>
+<ul>
+<li><p>Let <span class="math inline"><em>S</em><sub>0</sub></span> be the current stock price.</p></li>
+<li><p>A call option with strike price <span class="math inline"><em>K</em></span> expires in one period.</p></li>
+<li><p>Tomorrow’s stock price can either go up or down: <br /><span class="math display">$$\begin{aligned}
+        S_1 = 
+        \begin{cases} 
+        u S_0 &amp; \text{(if up)} \\ 
+        d S_0 &amp; \text{(if down)} 
+        \end{cases}
+    \end{aligned}$$</span><br /> where <span class="math inline"><em>u</em> &gt; 1</span> (up factor) and <span class="math inline"><em>d</em> &lt; 1</span> (down factor).</p></li>
+<li><p>Probabilities of the respective outcomes: <br /><span class="math display">$$\begin{aligned}
+        P(\text{up}) = p \quad \text{and} \quad P(\text{down}) = 1 - p
+    \end{aligned}$$</span><br /></p></li>
+</ul>
+<h4 id="payoff-of-the-call-option">Payoff of the Call Option</h4>
+<p>The payoffs at expiration of the call option are defined as: <br /><span class="math display">$$\begin{aligned}
+    C_1 = \max(S_1 - K, 0) = 
+    \begin{cases} 
+    u S_0 - K &amp; \text{(if up)} \\ 
+    0 &amp; \text{(if down)}
+    \end{cases}\end{aligned}$$</span><br /></p>
+<h4 id="finding-the-current-price-of-the-option">Finding the Current Price of the Option</h4>
+<p>To find the price <span class="math inline"><em>C</em><sub>0</sub></span> today, we use the notion of no-arbitrage, where we construct a riskless portfolio.</p>
+<p>The expected option price can be expressed as: <br /><span class="math display">$$\begin{aligned}
+    C_0 = \frac{1}{r} \left( p \cdot C_u + (1-p) \cdot C_d \right)\end{aligned}$$</span><br /> Where: <br /><span class="math display">$$\begin{aligned}
+C_u &amp;= \max(u S_0 - K, 0) \\
+C_d &amp;= \max(d S_0 - K, 0) \\
+r &amp;= 1 + \text{risk-free rate}\end{aligned}$$</span><br /></p>
+<h4 id="key-observations">Key Observations</h4>
+<ul>
+<li><p>The risk-neutral probabilities facilitate pricing without explicitly needing the probability <span class="math inline"><em>p</em></span> of outcomes.</p></li>
+<li><p>The parameters <span class="math inline"><em>C</em><sub>0</sub></span>, <span class="math inline"><em>S</em><sub>0</sub></span>, <span class="math inline"><em>K</em></span>, <span class="math inline"><em>u</em></span>, <span class="math inline"><em>d</em></span>, and <span class="math inline"><em>r</em></span> determine the option’s price.</p></li>
+<li><p>The derived price is a weighted average of potential option payoffs.</p></li>
+</ul>
+<h3 id="multipperiod-binomial-models">Multipperiod Binomial Models</h3>
+<h4 id="generalizing-to-multiple-periods">Generalizing to Multiple Periods</h4>
+<p>The binomial model can be extended for multiple periods through a tree structure, allowing for complex option pricing scenarios.</p>
+<h4 id="connection-to-black-scholes">Connection to Black-Scholes</h4>
+<p>As the number of time periods approaches infinity and the intervals shrink, the binomial model converges toward the Black-Scholes formula, which is mathematically derived from continuous-time models.</p>
+<h3 id="measurement-of-risk">Measurement of Risk</h3>
+<h4 id="risk-return-trade-off">Risk Return Trade-off</h4>
+<p>The relationship between risk and expected return is foundational in finance, influencing portfolio management and asset pricing.</p>
+<h4 id="statistical-tools">Statistical Tools</h4>
+<ul>
+<li><p><strong>Expected Return</strong>: <span class="math inline"><em>μ</em> = 𝔼[<em>R</em>]</span></p></li>
+<li><p><strong>Variance of Returns</strong>: <span class="math inline"><em>σ</em><sup>2</sup> = 𝔼[(<em>R</em> − <em>μ</em>)<sup>2</sup>]</span></p></li>
+<li><p><strong>Standard Deviation</strong>: <span class="math inline">$\sigma = \sqrt{\sigma^2}$</span></p></li>
+<li><p><strong>Correlation</strong>: Measures how securities move relative to one another, crucial for diversification. Defined as: <br /><span class="math display">$$\begin{aligned}
+    \text{Corr}(X, Y) = \frac{\text{Cov}(X, Y)}{\sigma_X \sigma_Y}
+    \end{aligned}$$</span><br /></p></li>
+</ul>
+<h3 id="conclusion-8">Conclusion</h3>
+<p>Understanding option pricing through the binomial model provides foundational knowledge for derivatives valuation. This approach not only covers policy decisions but also sets the stage for more complex models, including the celebrated Black-Scholes framework.</p>
+<h3 id="references">References</h3>
+<ol>
+<li><p>Cox, J.C., Ross, S.A., and Rubinstein, M. "Option Pricing: A Simplified Approach." Journal of Financial Economics, 1979.</p></li>
+<li><p>Black, F. and Scholes, M. "The Pricing of Options and Corporate Liabilities." The Journal of Political Economy, 1973.</p></li>
+</ol>
+<h1 id="notes-on-empirical-properties-of-stocks-and-bonds">Notes on Empirical Properties of Stocks and Bonds</h1>
+<h3 id="market-properties">Market Properties</h3>
+<h4 id="intuition-about-markets">Intuition About Markets</h4>
+<p>Understanding market dynamics and characteristics is crucial for financial decision-making. Key elements include:</p>
+<ul>
+<li><p>Market prices are generally random and unpredictable.</p></li>
+<li><p>Prices should react quickly to new information.</p></li>
+<li><p>Investors should not be able to earn abnormal returns after risk adjustment.</p></li>
+</ul>
+<h4 id="predictability-in-markets">Predictability in Markets</h4>
+<p>A well-functioning market is one that does not exhibit predictable patterns in stock prices. If stock prices were predictable, investors could exploit these patterns, leading to volatility reduction.</p>
+<h4 id="random-walk-hypothesis">Random Walk Hypothesis</h4>
+<ul>
+<li><p>Financial markets trend toward randomness; prices merely drift over time.</p></li>
+<li><p>The more investors attempt to forecast prices, the more random prices become.</p></li>
+</ul>
+<h3 id="historical-performance-of-stocks-and-bonds">Historical Performance of Stocks and Bonds</h3>
+<h4 id="key-empirical-facts-about-the-u.s.-stock-market">Key Empirical Facts About the U.S. Stock Market</h4>
+<p>1. <strong>Real Interest Rates:</strong> The average real interest rate has been slightly positive: <br /><span class="math display">$$\begin{aligned}
+    r_{real} = r_{nominal} - r_{inflation}\end{aligned}$$</span><br /> For example: <br /><span class="math display">$$\begin{aligned}
+    r_{1\text{yr}} &amp;= 0.38\% \text{ (monthly)}, \\
+    r_{inflation} &amp;= 0.32\% \text{ (monthly)}, \\
+    r_{real} &amp;\approx 0.06\% \text{ (monthly)}.\end{aligned}$$</span><br /></p>
+<p>2. <strong>Average Returns:</strong></p>
+<ul>
+<li><p>Value Weighted Index (VW): <span class="math inline">1%</span> per month.</p></li>
+<li><p>Equal Weighted Index (EW): <span class="math inline">1.18%</span> per month.</p></li>
+<li><p>Example: Motorola had an expected rate of return of approximately <span class="math inline">1.66%</span> per month.</p></li>
+</ul>
+<p>3. <strong>Risk-Reward Trade-off:</strong></p>
+<ul>
+<li><p>Higher risk associated with higher average returns.</p></li>
+<li><p>T-bills exhibit low risk (<span class="math inline"><em>σ</em><sub><em>T</em> − <em>b</em><em>i</em><em>l</em><em>l</em><em>s</em></sub> ≈ 5%</span> monthly) compared to stocks like Motorola (<span class="math inline"><em>σ</em><sub><em>M</em><em>o</em><em>t</em><em>o</em><em>r</em><em>o</em><em>l</em><em>a</em></sub> ≈ 10%</span> monthly).</p></li>
+</ul>
+<h4 id="total-returns-of-asset-classes">Total Returns of Asset Classes</h4>
+<p>Expectations of return must include both price fluctuations and any coupon payments: <br /><span class="math display">$$\begin{aligned}
+    R_{total} = \text{Price Fluctuation} + \text{Coupon Payment}\end{aligned}$$</span><br /></p>
+<h3 id="volatility-and-risk-measurement">Volatility and Risk Measurement</h3>
+<p>Volatility can be quantified through standard deviation. A key measure of risk is: <br /><span class="math display">$$\begin{aligned}
+    \sigma = \sqrt{\frac{1}{N-1} \sum_{i=1}^{N} (R_i - \bar{R})^2}\end{aligned}$$</span><br /> where <span class="math inline"><em>R</em><sub><em>i</em></sub></span> represents individual returns and <span class="math inline"><em>R̄</em></span> is the average return.</p>
+<h4 id="predictability">Predictability</h4>
+<p>Investigating the daily return of a market index versus specific stocks shows little predictability: <br /><span class="math display">$$\begin{aligned}
+    R_{today} \text{ vs } R_{tomorrow}\end{aligned}$$</span><br /></p>
+<h3 id="portfolio-theory">Portfolio Theory</h3>
+<h4 id="definition-of-a-portfolio">Definition of a Portfolio</h4>
+<p>A portfolio is a combination of securities, denoted by weights that sum to one: <br /><span class="math display">$$\begin{aligned}
+    \omega = \left[ \omega_1, \omega_2, \ldots, \omega_n \right]\end{aligned}$$</span><br /> where <span class="math inline">$\sum_{i=1}^{n} \omega_i = 1$</span>.</p>
+<h4 id="leverage">Leverage</h4>
+<p>Using weights greater than one indicates that the investor is utilizing leverage: <br /><span class="math display">$$\begin{aligned}
+    \text{Long Asset} + \text{Short Asset} \to \text{Net Investment}\end{aligned}$$</span><br /></p>
+<h4 id="expected-return-and-risk-of-a-portfolio">Expected Return and Risk of a Portfolio</h4>
+<p>Expected returns of the portfolio can be computed as: <br /><span class="math display">$$\begin{aligned}
+    E(R_p) = \sum_{i=1}^{n} \omega_i E(R_i)\end{aligned}$$</span><br /> Risk (standard deviation) can be defined for a two-asset portfolio as: <br /><span class="math display">$$\begin{aligned}
+    \sigma_p = \sqrt{\omega_1^2 \sigma_1^2 + \omega_2^2 \sigma_2^2 + 2\omega_1 \omega_2 \text{Cov}(R_1, R_2)}\end{aligned}$$</span><br /></p>
+<h4 id="constructing-an-optimal-portfolio">Constructing an Optimal Portfolio</h4>
+<p>The goal of an investor is to choose a portfolio that maximizes expected return for a given level of risk: <br /><span class="math display">$$\begin{aligned}
+    \max_{E(R_p)} \text{ subject to } \sigma_p &lt; \text{target risk}\end{aligned}$$</span><br /></p>
+<h3 id="anomalies-in-stock-markets">Anomalies in Stock Markets</h3>
+<p>Empirical anomalies challenge traditional efficiency theory:</p>
+<ul>
+<li><p>Size Effect: Smaller firms often provide a higher return than larger firms.</p></li>
+<li><p>Value Premium: Value stocks outperform growth stocks.</p></li>
+<li><p>Momentum: Past winning stocks tend to continue winning.</p></li>
+</ul>
+<h3 id="conclusion-9">Conclusion</h3>
+<p>These empirical observations and principles of portfolio theory form the backbone of modern finance. Future discussions will elaborate on risk measurement and portfolio construction strategies to optimize investment decisions.</p>
+<h1 id="portfolio-management-risk-and-return">Portfolio Management: Risk and Return</h1>
+<h3 id="introduction-3">Introduction</h3>
+<ul>
+<li><p>We left off discussing risk and return.</p></li>
+<li><p>Assumption: Investors favor higher expected return and dislike risk (measured by volatility).</p></li>
+</ul>
+<h3 id="portfolio-representation">Portfolio Representation</h3>
+<ul>
+<li><p>Graph representation:</p>
+<ul>
+<li><p>X-axis: Standard deviation of the portfolio (<span class="math inline"><em>σ</em></span>)</p></li>
+<li><p>Y-axis: Expected return of the portfolio (<span class="math inline"><em>E</em>[<em>R</em>]</span>)</p></li>
+</ul></li>
+<li><p>Aim: Maximize happiness, depicted as moving northwest (higher returns, lower risk).</p></li>
+</ul>
+<h3 id="portfolio-construction">Portfolio Construction</h3>
+<ul>
+<li><p>Construct a portfolio through a collection of securities.</p></li>
+<li><p>Goal: Achieve the best possible position on the mean-standard deviation graph.</p></li>
+<li><p>We need to understand mean and variance of a portfolio.</p></li>
+</ul>
+<h3 id="mean-and-variance-of-a-portfolio">Mean and Variance of a Portfolio</h3>
+<h4 id="expected-return">Expected Return</h4>
+<ul>
+<li><p>Expected return of a portfolio (<span class="math inline"><em>E</em>[<em>R</em><sub><em>p</em></sub>]</span>): <br /><span class="math display">$$E[R_p] = \sum_{i=1}^{n} \omega_i E[R_i]$$</span><br /> Where:</p>
+<ul>
+<li><p><span class="math inline"><em>ω</em><sub><em>i</em></sub></span> = weight of asset <span class="math inline"><em>i</em></span></p></li>
+<li><p><span class="math inline"><em>E</em>[<em>R</em><sub><em>i</em></sub>]</span> = expected return of asset <span class="math inline"><em>i</em></span></p></li>
+</ul></li>
+</ul>
+<h4 id="variance-of-a-portfolio">Variance of a Portfolio</h4>
+<ul>
+<li><p>Variance calculation: <br /><span class="math display"><em>σ</em><sub><em>p</em></sub><sup>2</sup> = <em>E</em>[(<em>R</em><sub><em>p</em></sub>−<em>E</em>[<em>R</em><sub><em>p</em></sub>])<sup>2</sup>]</span><br /></p></li>
+<li><p>Expanding variance: <br /><span class="math display">$$\sigma^2_p = \sum_{i=1}^{n} \omega_i^2 \sigma_i^2 + \sum_{i=1}^{n} \sum_{j \neq i} \omega_i \omega_j Cov(R_i, R_j)$$</span><br /> Where:</p>
+<ul>
+<li><p><span class="math inline"><em>σ</em><sub><em>i</em></sub><sup>2</sup></span> = variance of asset <span class="math inline"><em>i</em></span></p></li>
+<li><p><span class="math inline"><em>C</em><em>o</em><em>v</em>(<em>R</em><sub><em>i</em></sub>, <em>R</em><sub><em>j</em></sub>)</span> = covariance between assets <span class="math inline"><em>i</em></span> and <span class="math inline"><em>j</em></span></p></li>
+</ul></li>
+<li><p>Covariance can be written in terms of correlation: <br /><span class="math display"><em>C</em><em>o</em><em>v</em>(<em>R</em><sub><em>i</em></sub>, <em>R</em><sub><em>j</em></sub>) = <em>ρ</em><sub><em>i</em><em>j</em></sub><em>σ</em><sub><em>i</em></sub><em>σ</em><sub><em>j</em></sub></span><br /></p></li>
+<li><p>Notice that variance is not a simple average of individual variances due to cross-products (covariances).</p></li>
+</ul>
+<h4 id="example-with-two-assets">Example with Two Assets</h4>
+<ul>
+<li><p>For two assets <span class="math inline"><em>A</em></span> and <span class="math inline"><em>B</em></span>: <br /><span class="math display"><em>E</em>[<em>R</em><sub><em>p</em></sub>] = <em>ω</em><sub><em>A</em></sub><em>E</em>[<em>R</em><sub><em>A</em></sub>] + <em>ω</em><sub><em>B</em></sub><em>E</em>[<em>R</em><sub><em>B</em></sub>]</span><br /></p></li>
+<li><p>Variance becomes: <br /><span class="math display"><em>σ</em><sub><em>p</em></sub><sup>2</sup> = <em>ω</em><sub><em>A</em></sub><sup>2</sup><em>σ</em><sub><em>A</em></sub><sup>2</sup> + <em>ω</em><sub><em>B</em></sub><sup>2</sup><em>σ</em><sub><em>B</em></sub><sup>2</sup> + 2<em>ω</em><sub><em>A</em></sub><em>ω</em><sub><em>B</em></sub><em>C</em><em>o</em><em>v</em>(<em>R</em><sub><em>A</em></sub>, <em>R</em><sub><em>B</em></sub>)</span><br /></p></li>
+</ul>
+<h3 id="risk-return-trade-off-1">Risk-Return Trade-Off</h3>
+<h4 id="graphical-representation">Graphical Representation</h4>
+<ul>
+<li><p>Plotting different combinations of assets leads to a curved bullet shape in the mean-standard deviation space.</p></li>
+<li><p>Indicates that risk does not increase linearly with expected return.</p></li>
+</ul>
+<h4 id="correlations-and-risk-reduction">Correlations and Risk Reduction</h4>
+<ul>
+<li><p>Diversifications benefit from low or negative correlations; it can reduce overall portfolio risk.</p></li>
+<li><p>If perfect negative correlation (<span class="math inline"><em>ρ</em> =  − 1</span>): <br /><span class="math display"><em>E</em>[<em>R</em><sub><em>p</em></sub>] remains positive while ensuring <em>σ</em><sub><em>p</em></sub> = 0</span><br /></p></li>
+</ul>
+<h3 id="portfolio-with-risk-free-asset">Portfolio with Risk-Free Asset</h3>
+<ul>
+<li><p>Introduce a risk-free asset (e.g., T-bills): <br /><span class="math display"><em>E</em>[<em>R</em><sub><em>p</em></sub>] = <em>ω</em><sub><em>r</em><em>i</em><em>s</em><em>k</em> − <em>f</em><em>r</em><em>e</em><em>e</em></sub><em>R</em><sub><em>r</em><em>i</em><em>s</em><em>k</em> − <em>f</em><em>r</em><em>e</em><em>e</em></sub> + <em>ω</em><sub><em>s</em><em>t</em><em>o</em><em>c</em><em>k</em><em>s</em></sub><em>E</em>[<em>R</em><sub><em>s</em><em>t</em><em>o</em><em>c</em><em>k</em><em>s</em></sub>]</span><br /></p></li>
+<li><p>If <span class="math inline"><em>σ</em><sub><em>r</em><em>i</em><em>s</em><em>k</em> − <em>f</em><em>r</em><em>e</em><em>e</em></sub> = 0</span>, variance simplifies to: <br /><span class="math display"><em>σ</em><sub><em>p</em></sub><sup>2</sup> = <em>σ</em><sub><em>s</em><em>t</em><em>o</em><em>c</em><em>k</em><em>s</em></sub><sup>2</sup></span><br /></p></li>
+</ul>
+<h3 id="maximum-portfolio-efficiency">Maximum Portfolio Efficiency</h3>
+<ul>
+<li><p>Investment decisions must be made to achieve a portfolio along the efficient frontier.</p></li>
+<li><p>Key Insight: There are portfolios that allow better risk-return trade-offs than any individual asset.</p></li>
+</ul>
+<h1 id="notes-on-risk-and-expected-return">Notes on Risk and Expected Return</h1>
+<h3 id="introduction-4">Introduction</h3>
+<p>The trade-off between expected return and risk is a central theme in finance. This lecture provides insights into portfolio construction, risk management, and the implications of diversification.</p>
+<h3 id="portfolio-risk-and-return">Portfolio Risk and Return</h3>
+<h4 id="expected-return-and-volatility">Expected Return and Volatility</h4>
+<p>The expected return of a portfolio is calculated as a weighted average of the expected returns of its components: <br /><span class="math display">$$E(R_p) = \sum_{i=1}^{n} w_i E(R_i)$$</span><br /> where <span class="math inline"><em>w</em><sub><em>i</em></sub></span> represents the weight of asset <span class="math inline"><em>i</em></span> in the portfolio, and <span class="math inline"><em>E</em>(<em>R</em><sub><em>i</em></sub>)</span> is the expected return of asset <span class="math inline"><em>i</em></span>.</p>
+<p>The variance of a portfolio (risk) is given by: <br /><span class="math display">$$\sigma_p^2 = \sum_{i=1}^{n} w_i^2 \sigma_i^2 + \sum_{i \neq j} w_i w_j \sigma_{ij}$$</span><br /> where <span class="math inline"><em>σ</em><sub><em>i</em></sub><sup>2</sup></span> is the variance of asset <span class="math inline"><em>i</em></span>, and <span class="math inline"><em>σ</em><sub><em>i</em><em>j</em></sub></span> is the covariance between assets <span class="math inline"><em>i</em></span> and <span class="math inline"><em>j</em></span>.</p>
+<h3 id="efficient-frontier">Efficient Frontier</h3>
+<p>The efficient frontier is the set of portfolios that provides the highest expected return for a given level of risk. This can be visualized as a curve (bullet-shaped) in a risk-return graph.</p>
+<h4 id="key-properties">Key Properties:</h4>
+<ul>
+<li><p>Rational investors prefer to be on the upper branch of the efficient frontier.</p></li>
+<li><p>Portfolios below the frontier can be improved upon through diversification.</p></li>
+<li><p>An investor will never want to hold 100% of a single security when better trade-offs are available on the frontier.</p></li>
+</ul>
+<h4 id="tangency-portfolio">Tangency Portfolio</h4>
+<p>The tangency portfolio is of particular importance:</p>
+<ul>
+<li><p>It represents the highest Sharpe ratio (risk-adjusted return).</p></li>
+<li><p>When mixed with a risk-free asset (T-Bills), it delineates the optimal risk-return trade-off line.</p></li>
+</ul>
+<h3 id="diversification-benefits">Diversification Benefits</h3>
+<h4 id="covariance-matrix">Covariance Matrix</h4>
+<p>A critical aspect of portfolio construction involves understanding covariance among assets:</p>
+<ul>
+<li><p>Adding assets that are not perfectly correlated decreases overall portfolio risk.</p></li>
+<li><p>The more assets included, the closer the portfolio can get to the leftmost point of the bullet shape (lower risk).</p></li>
+</ul>
+<h3 id="risk-reward-trade-off">Risk-Reward Trade-off</h3>
+<h4 id="sharpe-ratio">Sharpe Ratio</h4>
+<p>The Sharpe Ratio is defined as: <br /><span class="math display">$$\text{Sharpe Ratio} = \frac{E(R_p) - R_f}{\sigma_p}$$</span><br /> where <span class="math inline"><em>R</em><sub><em>f</em></sub></span> is the risk-free rate, and <span class="math inline"><em>σ</em><sub><em>p</em></sub></span> is the standard deviation of the portfolio returns.</p>
+<h4 id="expected-return-equation">Expected Return Equation</h4>
+<p>For any efficient portfolio: <br /><span class="math display">$$E(R) = R_f + \frac{\sigma_p}{\sigma_{M}} (E(R_M) - R_f)$$</span><br /> where <span class="math inline"><em>R</em><sub><em>M</em></sub></span> is the return of the market portfolio, and <span class="math inline"><em>σ</em><sub><em>M</em></sub></span> is the volatility of the market portfolio.</p>
+<h3 id="capital-asset-pricing-model-capm">Capital Asset Pricing Model (CAPM)</h3>
+<p>The CAPM describes the linear relationship between the expected return of an asset and its risk, measured in terms of beta: <br /><span class="math display"><em>E</em>(<em>R</em><sub><em>i</em></sub>) = <em>R</em><sub><em>f</em></sub> + <em>β</em><sub><em>i</em></sub>(<em>E</em>(<em>R</em><sub><em>M</em></sub>) − <em>R</em><sub><em>f</em></sub>)</span><br /> where <span class="math inline">$\beta_i = \frac{\text{Cov}(R_i, R_M)}{\sigma_M^2}$</span> is a measure of the sensitivity of the asset’s returns to market returns.</p>
+<h3 id="conclusion-10">Conclusion</h3>
+<ul>
+<li><p>Diversification reduces risk, making efficient use of the covariance matrix.</p></li>
+<li><p>The tangency portfolio forms the basis for maximizing return per unit of risk.</p></li>
+<li><p>Understanding beta allows for determinations of expected returns, impacting investment and capital budgeting decisions.</p></li>
+</ul>
+<h3 id="further-considerations">Further Considerations</h3>
+<p>Investors must consider changes in parameters over time, market inefficiencies, and the limitations of this framework in real-world applications. Future discussions will delve deeper into project financing and corporate investment decisions based on these principles.</p>
+<h1 id="lecture-notes-on-risk-and-return">Lecture Notes on Risk and Return</h1>
+<h3 id="risk-reward-trade-off-1">Risk-Reward Trade-off</h3>
+<p>The risk-reward trade-off is represented by the Capital Market Line (CML), which describes the expected return of portfolios based on their risk.</p>
+<h4 id="key-definitions">Key Definitions</h4>
+<ul>
+<li><p><strong>Efficient Portfolio:</strong> A portfolio that offers the highest return for a given level of risk or the lowest risk for a given level of return.</p></li>
+<li><p><strong>Capital Market Line (CML):</strong> Represents portfolios that optimally combine risk and return.</p></li>
+<li><p><strong>Security Market Line (SML):</strong> Represents the relationship between systematic risk (beta) and expected return for all securities.</p></li>
+</ul>
+<p>The equations for CML and SML are as follows:</p>
+<h4 id="equations">Equations</h4>
+<ol>
+<li><p><strong>Capital Market Line (CML):</strong> <br /><span class="math display">$$E(R_p) = R_f + \frac{\sigma_p}{\sigma_m}(E(R_m) - R_f)$$</span><br /> Where:</p>
+<ul>
+<li><p><span class="math inline"><em>E</em>(<em>R</em><sub><em>p</em></sub>)</span> = Expected return of the portfolio</p></li>
+<li><p><span class="math inline"><em>R</em><sub><em>f</em></sub></span> = Risk-free rate</p></li>
+<li><p><span class="math inline"><em>σ</em><sub><em>p</em></sub></span> = Standard deviation of the portfolio’s returns</p></li>
+<li><p><span class="math inline"><em>σ</em><sub><em>m</em></sub></span> = Standard deviation of the market’s returns</p></li>
+<li><p><span class="math inline"><em>E</em>(<em>R</em><sub><em>m</em></sub>)</span> = Expected market return</p></li>
+</ul></li>
+<li><p><strong>Security Market Line (SML):</strong> <br /><span class="math display"><em>E</em>(<em>R</em><sub><em>i</em></sub>) = <em>R</em><sub><em>f</em></sub> + <em>β</em><sub><em>i</em></sub>(<em>E</em>(<em>R</em><sub><em>m</em></sub>) − <em>R</em><sub><em>f</em></sub>)</span><br /> Where:</p>
+<ul>
+<li><p><span class="math inline"><em>E</em>(<em>R</em><sub><em>i</em></sub>)</span> = Expected return of asset <span class="math inline"><em>i</em></span></p></li>
+<li><p><span class="math inline">$\beta_i = \frac{\text{Cov}(R_i, R_m)}{\text{Var}(R_m)}$</span> is a measure of the sensitivity of asset returns to market returns.</p></li>
+</ul></li>
+</ol>
+<h3 id="understanding-beta">Understanding Beta</h3>
+<h4 id="special-cases-of-beta">Special Cases of Beta</h4>
+<ul>
+<li><p><strong>When <span class="math inline"><em>β</em> = 1</span>:</strong> <br /><span class="math display"><em>E</em>(<em>R</em><sub><em>i</em></sub>) = <em>E</em>(<em>R</em><sub><em>m</em></sub>)</span><br /> This implies the asset has the same risk as the market.</p></li>
+<li><p><strong>When <span class="math inline"><em>β</em> = 0</span>:</strong> <br /><span class="math display"><em>E</em>(<em>R</em><sub><em>i</em></sub>) = <em>R</em><sub><em>f</em></sub></span><br /> This indicates a risk-free asset, which may still be volatile.</p></li>
+<li><p><strong>When <span class="math inline"><em>β</em> &lt; 0</span>:</strong> <br /><span class="math display"><em>E</em>(<em>R</em><sub><em>i</em></sub>) &lt; <em>R</em><sub><em>f</em></sub></span><br /> A rare situation where investors expect lower returns than the risk-free rate.</p></li>
+</ul>
+<h4 id="intuition-behind-beta">Intuition Behind Beta</h4>
+<p>Beta serves as a measure of systematic risk. Unlike the total volatility (sigma), beta captures the risk inherent to a security relative to the market portfolio.</p>
+<h3 id="portfolio-and-performance-analysis">Portfolio and Performance Analysis</h3>
+<p>The beta of a portfolio can be computed as a weighted average of the individual betas of its components:</p>
+<p><br /><span class="math display">$$\beta_p = \sum_{i=1}^{n} w_i \beta_i$$</span><br /></p>
+<p>Where <span class="math inline"><em>w</em><sub><em>i</em></sub></span> is the weight of asset <span class="math inline"><em>i</em></span> in the portfolio.</p>
+<h4 id="performance-attribution">Performance Attribution</h4>
+<p>Performance can be measured through alpha, which indicates whether a security or portfolio outperformed the expected return predicted by the SML:</p>
+<p><br /><span class="math display"><em>α</em> = <em>E</em>(<em>R</em><sub><em>i</em></sub>) − (<em>R</em><sub><em>f</em></sub>+<em>β</em><sub><em>i</em></sub>(<em>E</em>(<em>R</em><sub><em>m</em></sub>)−<em>R</em><sub><em>f</em></sub>))</span><br /></p>
+<h3 id="applications-of-capm">Applications of CAPM</h3>
+<p>CAPM has practical applications in finance, allowing investors to estimate the expected return on assets, and assess the attractiveness of investing based on the risk the asset adds to a well-diversified portfolio.</p>
+<h4 id="example-calculation-3">Example Calculation</h4>
+<p>Given historical data:</p>
+<ul>
+<li><p>For Microsoft, <span class="math inline"><em>β</em> = 1.49</span></p></li>
+<li><p>For Gillette, <span class="math inline"><em>β</em> = 0.81</span></p></li>
+<li><p>Assume <span class="math inline"><em>R</em><sub><em>f</em></sub> = 5%</span> and <span class="math inline"><em>E</em>(<em>R</em><sub><em>m</em></sub>) − <em>R</em><sub><em>f</em></sub> = 6%</span></p></li>
+</ul>
+<p>The required rates of return can be calculated using:</p>
+<ol>
+<li><p>Microsoft: <br /><span class="math display"><em>E</em>(<em>R</em><sub><em>M</em><em>S</em><em>F</em><em>T</em></sub>) = 5% + 1.49 × 6% = 13.94%</span><br /></p></li>
+<li><p>Gillette: <br /><span class="math display"><em>E</em>(<em>R</em><sub><em>G</em><em>I</em><em>L</em></sub>) = 5% + 0.81 × 6% = 9.86%</span><br /></p></li>
+</ol>
+<h3 id="conclusion-11">Conclusion</h3>
+<p>Understanding the relationship between risk (beta) and expected return (SML) is crucial for making informed investment decisions. The CAPM framework provides a systematic approach to evaluate whether an investment is attractive based on its risk profile compared to the market.</p>
+<h1 id="notes-on-capital-asset-pricing-model-and-capital-budgeting">Notes on Capital Asset Pricing Model and Capital Budgeting</h1>
+<h3 id="introduction-5">Introduction</h3>
+<p>This lecture continues the discussion on the Capital Asset Pricing Model (CAPM) and transitions into the topic of capital budgeting. The CAPM is a critical framework used in finance to understand the relationship between risk and expected return.</p>
+<h3 id="capm-overview">CAPM Overview</h3>
+<p>The CAPM formula is given by: <br /><span class="math display"><em>E</em>(<em>R</em><sub><em>i</em></sub>) = <em>R</em><sub><em>f</em></sub> + <em>β</em><sub><em>i</em></sub>(<em>E</em>(<em>R</em><sub><em>m</em></sub>) − <em>R</em><sub><em>f</em></sub>)</span><br /> where:</p>
+<ul>
+<li><p><span class="math inline"><em>E</em>(<em>R</em><sub><em>i</em></sub>)</span> is the expected return on the asset</p></li>
+<li><p><span class="math inline"><em>R</em><sub><em>f</em></sub></span> is the risk-free rate</p></li>
+<li><p><span class="math inline"><em>β</em><sub><em>i</em></sub></span> is the beta of the asset</p></li>
+<li><p><span class="math inline"><em>E</em>(<em>R</em><sub><em>m</em></sub>)</span> is the expected return of the market</p></li>
+</ul>
+<p>The CAPM asserts that the expected return of an asset is proportional to its systematic risk, as measured by beta.</p>
+<h3 id="performance-of-capm">Performance of CAPM</h3>
+<p>In practice, empirical tests of CAPM can yield various results. For instance, when analyzing Biogen and Motorola, significant deviations from the expected alphas were noted, indicating possible undervaluation or inadequacies in the CAPM.</p>
+<h4 id="goodness-of-fit">Goodness of Fit</h4>
+<p>The goodness of fit of CAPM can be assessed using the R-squared statistic, which indicates how well the model explains the variability of asset returns. For Biogen and Motorola, the R-squared values were reported as:</p>
+<ul>
+<li><p>Biogen: <span class="math inline"><em>R</em><sup>2</sup> = 0.175</span></p></li>
+<li><p>Motorola: <span class="math inline"><em>R</em><sup>2</sup> = 0.33</span></p></li>
+</ul>
+<p>These values suggest a reasonable, but not perfect, fit in financial data due to the inherent noise in the returns.</p>
+<h4 id="empirical-evidence">Empirical Evidence</h4>
+<p>Empirical evidence shows varying performances of CAPM across different types of portfolios. Notably, the comparison between small-cap and large-cap portfolios reveals:</p>
+<ul>
+<li><p>Small stocks: Average monthly return of 1.33%, <span class="math inline"><em>β</em> = 1.4</span></p></li>
+<li><p>Large stocks: Average monthly return of 0.9%, <span class="math inline"><em>β</em> = 0.94</span></p></li>
+</ul>
+<p>Using the CAPM framework, these returns can be expected based on the calculated risk-free rate and market premium. The analysis provides an approximation of expected returns versus actual performance.</p>
+<h3 id="limitations-of-capm">Limitations of CAPM</h3>
+<p>While CAPM is widely used, it does have its limitations:</p>
+<ul>
+<li><p>Does not capture all risks that influence asset prices.</p></li>
+<li><p>Recent literature suggests additional factors (e.g., value, size anomalies) may explain variations in expected returns.</p></li>
+</ul>
+<p>In practice, these factors lead to the development of multi-factor models—beyond the traditional CAPM.</p>
+<h3 id="transition-to-capital-budgeting">Transition to Capital Budgeting</h3>
+<p>The next section focuses on capital budgeting, which involves planning and evaluating potential large expenditures or investments.</p>
+<h4 id="net-present-value-npv-rule">Net Present Value (NPV) Rule</h4>
+<p>The NPV is calculated as: <br /><span class="math display">$$NPV = \sum_{t=0}^{T} \frac{C_t}{(1 + r)^t}$$</span><br /> where:</p>
+<ul>
+<li><p><span class="math inline"><em>C</em><sub><em>t</em></sub></span> = cash flow at time <span class="math inline"><em>t</em></span></p></li>
+<li><p><span class="math inline"><em>r</em></span> = discount rate</p></li>
+<li><p><span class="math inline"><em>T</em></span> = total time period</p></li>
+</ul>
+<p>The NPV should be positive to consider an investment viable. Key considerations in capital budgeting include cash flow estimation and the appropriate discount rate.</p>
+<h4 id="cash-flow-considerations">Cash Flow Considerations</h4>
+<p>Important points in cash flow analysis include:</p>
+<ul>
+<li><p>Use cash flows rather than accounting earnings for decision-making.</p></li>
+<li><p>Compute after-tax cash flows.</p></li>
+<li><p>Focus on project-specific cash flows.</p></li>
+</ul>
+<h4 id="risks-and-discount-rate">Risks and Discount Rate</h4>
+<p>The discount rate for cash flows should reflect the project’s risk profile. For varying project phases, different discount rates might apply—especially if risks change over time.</p>
+<h3 id="conclusion-12">Conclusion</h3>
+<p>The CAPM serves as a foundational model in finance but must be understood within the context of its limitations. Capital budgeting principles, particularly the NPV rule, provide a structured approach to evaluating investments, urging a focus on cash flows rather than accounting measures.</p>
+<h1 id="capital-budgeting-and-project-financing">Capital Budgeting and Project Financing</h1>
+<h3 id="introduction-6">Introduction</h3>
+<ul>
+<li><p>The lecture focuses on capital budgeting and project financing.</p></li>
+<li><p>Alternatives to Net Present Value (NPV) will be discussed, specifically:</p>
+<ol>
+<li><p>Payback Period</p></li>
+<li><p>Internal Rate of Return (IRR)</p></li>
+<li><p>Profitability Index</p></li>
+</ol></li>
+<li><p>NPV is recommended as the primary criterion for capital budgeting decisions.</p></li>
+</ul>
+<h3 id="adjusted-present-value-apv">Adjusted Present Value (APV)</h3>
+<ul>
+<li><p>APV is an extension of NPV that accounts for:</p>
+<ul>
+<li><p>Taxes</p></li>
+<li><p>Project interactions</p></li>
+<li><p>Strategic alternatives</p></li>
+<li><p>Optionality</p></li>
+</ul></li>
+<li><p>Recommended for advanced courses on capital budgeting.</p></li>
+</ul>
+<h3 id="payback-period">Payback Period</h3>
+<ul>
+<li><p>Definition: The payback period (<span class="math inline"><em>k</em></span>) is the time required for an investment to generate an amount of income sufficient to recover the initial investment.</p></li>
+<li><p>Cash flows are represented as <span class="math inline">cf<sub>0</sub>, cf<sub>1</sub>, …, cf<sub><em>k</em></sub></span>.</p></li>
+<li><p>Criterion: <br /><span class="math display">Accept the project if <em>k</em> ≤ <em>t</em><sup>*</sup></span><br /> where <span class="math inline"><em>t</em><sup>*</sup></span> is a predetermined threshold.</p></li>
+<li><p>Issues with Payback Period:</p>
+<ul>
+<li><p>Ignoring cash flows after the payback period.</p></li>
+<li><p>Not considering the scale of investment and risk.</p></li>
+<li><p>May lead to short-sighted decisions focused on career risk.</p></li>
+</ul></li>
+</ul>
+<h3 id="discounted-payback-period">Discounted Payback Period</h3>
+<ul>
+<li><p>Incorporates discounting of cash flows to address the time value of money.</p></li>
+<li><p>Still ignores cash flows beyond the payback period.</p></li>
+<li><p>Useful for addressing liquidity concerns.</p></li>
+</ul>
+<h3 id="internal-rate-of-return-irr">Internal Rate of Return (IRR)</h3>
+<ul>
+<li><p>Definition: The IRR is the discount rate (<span class="math inline"><em>r</em></span>) that makes the net present value (NPV) equal to zero. <br /><span class="math display">$$\text{NPV} = 0 \Rightarrow \sum_{t=1}^T \frac{\text{cf}_t}{(1 + r)^t} - \text{cf}_0 = 0$$</span><br /></p></li>
+<li><p>Acceptance Rule:</p>
+<ul>
+<li><p>Accept if <span class="math inline">IRR ≥ <em>r</em><sup>*</sup></span> (hurdle rate)</p></li>
+<li><p>Select project with the highest IRR for mutually exclusive projects.</p></li>
+</ul></li>
+<li><p>Shortcomings of IRR:</p>
+<ul>
+<li><p>May not exist or might yield multiple IRRs depending on cash flow patterns.</p></li>
+<li><p>Can lead to incorrect project rankings, particularly with non-conventional cash flows.</p></li>
+<li><p>Ignores scale of project, making it less suitable for heterogeneous investments.</p></li>
+</ul></li>
+</ul>
+<h3 id="profitability-index">Profitability Index</h3>
+<ul>
+<li><p>Definition: <br /><span class="math display">$$\text{Profitability Index} = \frac{\text{Present Value of Cash Flows}}{\text{Initial Investment}}$$</span><br /></p></li>
+<li><p>Criteria:</p>
+<ul>
+<li><p>Accept if the profitability index <span class="math inline"> ≥ 1</span>.</p></li>
+<li><p>Maximize the profitability index when projects are mutually exclusive.</p></li>
+</ul></li>
+<li><p>Shortcomings:</p>
+<ul>
+<li><p>Does not consider the scale of investment, leading to potentially poor decisions when comparing different-sized projects.</p></li>
+</ul></li>
+</ul>
+<h3 id="conclusion-13">Conclusion</h3>
+<ul>
+<li><p>NPV remains the best method for capital budgeting.</p></li>
+<li><p>Understanding alternatives like Payback Period, IRR, and Profitability Index helps in comprehensively evaluating projects.</p></li>
+<li><p>Importance of considering career risk and cultural inertia in investment decisions.</p></li>
+</ul>
+<h1 id="notes-on-efficient-markets-and-behavioral-finance">Notes on Efficient Markets and Behavioral Finance</h1>
+<h3 id="introduction-7">Introduction</h3>
+<p>The following notes summarize key concepts covered in a course on efficient markets and behavioral finance, providing insights on market behavior, decision-making, and the underlying psychology that drives financial choices.</p>
+<h3 id="market-efficiency">Market Efficiency</h3>
+<h4 id="efficient-market-hypothesis-emh">Efficient Market Hypothesis (EMH)</h4>
+<p>The Efficient Market Hypothesis asserts that asset prices reflect all available information. This implies that:</p>
+<ul>
+<li><p>It is impossible to consistently achieve higher returns than the overall market.</p></li>
+<li><p>Any price changes in stocks occur as new information becomes available.</p></li>
+</ul>
+<h4 id="case-study-morton-thiokol">Case Study: Morton Thiokol</h4>
+<p>Following the space shuttle disaster, it was observed that Morton Thiokol’s stock price dropped significantly in a short time:</p>
+<blockquote>
+<p>"Stock prices reflected the enormous amounts of gathered information about the company’s practices."</p>
+</blockquote>
+<p>The market’s reaction was swift, implying that the information pertaining to the company was already discounted in the stock price.</p>
+<h3 id="critiques-of-emh">Critiques of EMH</h3>
+<p>Over the last two decades, criticisms of the EMH have emerged, highlighting various market inefficiencies. A humorous illustration is the following quip regarding economists and their rational behavior:</p>
+<blockquote>
+<p>"If that were a real, genuine $100 bill, someone would have already taken it, so it must be a counterfeit."</p>
+</blockquote>
+<p>This satirically underscores the idea that if profitable opportunities exist, they should be recognized and acted upon swiftly by market participants.</p>
+<h4 id="rationality-and-market-behavior">Rationality and Market Behavior</h4>
+<p>Traditional finance relies on the assumption that market participants are rational. However, behavioral finance challenges this by showcasing human biases, including:</p>
+<ul>
+<li><p>Loss Aversion</p></li>
+<li><p>Overconfidence</p></li>
+<li><p>Mental Accounting</p></li>
+<li><p>Anchoring and Framing</p></li>
+</ul>
+<h3 id="behavioral-finance">Behavioral Finance</h3>
+<h4 id="key-biases">Key Biases</h4>
+<p>The theory of behavioral finance posits that investors frequently make irrational decisions due to cognitive biases. One prominent example is loss aversion, described by Kahneman and Tversky:</p>
+<blockquote>
+<p>"People prefer to avoid losses rather than acquiring equivalent gains."</p>
+</blockquote>
+<h4 id="examples">Examples</h4>
+<h5 id="loss-aversion">Loss Aversion</h5>
+<p>Most individuals tend to choose a certain smaller gain over a risky option that offers greater potential returns. Conversely, they often gamble to avoid a certain loss despite the risk of greater losses occurring.</p>
+<h5 id="the-urn-problem">The Urn Problem</h5>
+<p>Consider two urns containing red and black balls. The first urn has an equal number of red and black balls. The second urn has an undisclosed distribution, yet individuals prefer the second urn which introduces uncertainty:</p>
+<blockquote>
+<p>"Even with the same expected value, the lack of information leads to different preferences."</p>
+</blockquote>
+<h3 id="rationality-and-emotion">Rationality and Emotion</h3>
+<p>The relationship between rationality and emotion has been clarified by recent neurological research. In particular, the work of Damasio illustrates that emotions are crucial for rational decision-making.</p>
+<h4 id="case-study-elliot">Case Study: Elliot</h4>
+<p>Elliot lost part of his brain due to surgery and exhibited rational behavior yet became unable to make effective decisions. Damasio concludes that:</p>
+<blockquote>
+<p>"Without emotion, rational decision-making becomes impaired."</p>
+</blockquote>
+<h4 id="the-triune-brain-model">The Triune Brain Model</h4>
+<p>According to Paul MacLean’s triune model:</p>
+<ul>
+<li><p>The Reptilian Brain: Controls basic survival functions.</p></li>
+<li><p>The Mammalian Brain: Manages emotions and social behavior.</p></li>
+<li><p>The Hominid Brain: Responsible for higher cognitive functions, including logic and decision-making.</p></li>
+</ul>
+<h3 id="implications-for-finance">Implications for Finance</h3>
+<p>The Adaptive Markets Hypothesis combines elements of both rational finance and behavioral finance:</p>
+<blockquote>
+<p>"Market participants are influenced by psychological biases, yet they learn and adapt through experience."</p>
+</blockquote>
+<h4 id="practical-application">Practical Application</h4>
+<p>When making financial decisions, individuals should be mindful of the emotional and cognitive biases that may influence their judgment. A heuristic approach that incorporates emotional regulation can lead to better results.</p>
+<h3 id="conclusion-14">Conclusion</h3>
+<p>The interplay between market efficiency and behavioral finance sheds light on the complexities of financial decision-making. By understanding these dynamics, investors can refine their strategies and better navigate the markets.</p>
+<h1 id="lecture-notes-on-adaptive-markets-hypothesis">Lecture Notes on Adaptive Markets Hypothesis</h1>
+<h3 id="key-properties-of-markets">Key Properties of Markets</h3>
+<p>The adaptive markets hypothesis suggests that markets satisfy the following six properties:</p>
+<ol>
+<li><p>Individuals act in their own self-interest, but they also make mistakes.</p></li>
+<li><p>Individuals learn and adapt over time.</p></li>
+<li><p>Competition drives adaptation and innovation.</p></li>
+<li><p>Natural selection shapes the survival of various heuristics used by individuals.</p></li>
+<li><p>The only thing that truly matters is survival.</p></li>
+</ol>
+<h4 id="example-of-heuristics">Example of Heuristics</h4>
+<p>An illustrative example is the problem of getting dressed in the morning, showcasing how personal heuristics have evolved over time based on life experiences.</p>
+<h3 id="implications-of-adaptive-markets">Implications of Adaptive Markets</h3>
+<p>The adaptive markets hypothesis leads to various implications that contrast with traditional efficient market theory:</p>
+<h4 id="risk-reward-trade-off-2">Risk-Reward Trade-off</h4>
+<p>The relationship between risk and expected return (e.g., illustrated by the Sharpe Ratio) is not constant over time. This is due to the variability in individual preferences and experiences, which can shape attitudes towards risk.</p>
+<p><br /><span class="math display">$$\text{Sharpe Ratio} = \frac{E[R] - R_f}{\sigma}$$</span><br /></p>
+<p>where <span class="math inline"><em>E</em>[<em>R</em>]</span> is the expected return, <span class="math inline"><em>R</em><sub><em>f</em></sub></span> is the risk-free rate, and <span class="math inline"><em>σ</em></span> is the standard deviation of the return.</p>
+<h4 id="learning-from-events">Learning from Events</h4>
+<p>Individuals may be indelibly altered by significant historical events (e.g., the Great Depression), leading to long-lasting impacts on their financial behaviors and preferences.</p>
+<h4 id="market-dynamics-1">Market Dynamics</h4>
+<p>Market dynamics fluctuate between periods of efficiency and inefficiency based on investor behavior. The adaptive markets hypothesis suggests that these behaviors can shift due to prevailing social or economic conditions.</p>
+<h3 id="arbitrage-and-market-cycles">Arbitrage and Market Cycles</h3>
+<p>Limited arbitrage exists, meaning opportunities for profit (or "free lunches") do arise but may not be consistently available due to competitive pressures.</p>
+<h4 id="ecological-analogy">Ecological Analogy</h4>
+<p>The relationship between profits (pastures) and investors (sheep) is illustrated. As profits diminish due to increased competition, the investor population may decline, followed by a resurgence of profit opportunities.</p>
+<h3 id="market-efficiency-and-investor-behavior">Market Efficiency and Investor Behavior</h3>
+<p>Market efficiency is analyzed through the random walk hypothesis, which asserts that past prices do not predict future prices. An empirical examination reveals that autocorrelation in stock returns varies over time:</p>
+<p><br /><span class="math display">$$\rho_{t} = \frac{\text{Cov}(X_t, X_{t-1})}{\sigma^2}$$</span><br /></p>
+<p>where <span class="math inline"><em>X</em><sub><em>t</em></sub></span> is the return at time <span class="math inline"><em>t</em></span> and <span class="math inline"><em>σ</em><sup>2</sup></span> is the variance.</p>
+<h4 id="historical-analysis">Historical Analysis</h4>
+<p>A rolling analysis of the first-order autocorrelation of the S&amp;P 500 from 1871 to 2003 shows fluctuations in market efficiency, suggesting that market participants change through different eras.</p>
+<h3 id="crisis-and-pain">Crisis and Pain</h3>
+<p>The role of pain in risk management was examined. Past financial gains can anesthetize individuals to potential future risks, leading to overextension and reckless decision-making.</p>
+<h4 id="neuroscientific-insight">Neuroscientific Insight</h4>
+<p>Research shows that financial rewards stimulate the same brain pathways as addictive substances. This can lead to poor decision-making when individuals are experiencing prolonged periods of profitability without accompanying pain.</p>
+<h3 id="conclusion-15">Conclusion</h3>
+<p>The adaptive markets theory posits that financial systems share more characteristics with evolutionary biology than physics. Thus, understanding market dynamics requires a focus on behavioral aspects of investors and the ecological context in which markets operate.</p>
+<h3 id="future-work-and-implications">Future Work and Implications</h3>
+<p>Discussions about improving financial regulations and adapting strategies based on historical and behavioral insights point toward the need for ongoing development of theories that can encompass market behavior across different states (normal versus distress).</p>
+
+</div>
+  <!-- insert above this -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</body>
+
+</html>
+

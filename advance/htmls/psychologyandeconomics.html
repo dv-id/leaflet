@@ -1,0 +1,3248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>/\dvance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+        code {
+            white-space: pre-wrap;
+        }
+
+        span.smallcaps {
+            font-variant: small-caps;
+        }
+
+        span.underline {
+            text-decoration: underline;
+        }
+
+        div.column {
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+        }
+
+        div.hanging-indent {
+            margin-left: 1.5em;
+            text-indent: -1.5em;
+        }
+
+        ul.task-list {
+            list-style: none;
+        }
+    </style>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body style="
+    background-color: rgb(0, 0, 39);
+    color: rgb(205, 158, 250);" class="vh-100 p-0 mb-0">
+
+
+    <div class="container" style="margin-top: 10%;">
+        <div id="business-row" class="row justify-content-between">
+            
+            <nav class="navbar navbar-dark navbar-collapse navbar-fixed-top fixed-top justify-content-center container" style="background-color: rgb(0, 0, 40);">
+                <div class="container justify-content-center">
+                <a class="navbar-brand" href="../index.html" style="color: rgb(179, 114, 240);">/\dvance</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../finance.html">Finance</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../startups.html">Startups</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../economics.html">Economics</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../humanities.html">Humanities</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../philosophy.html">Philosophy</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../science.html">Science</a>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+
+                <div class="container" style="background-color: rgb(0, 0, 40);">
+                    <div class="col-12 d-flex justify-content-start align-items-center">
+                        <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                            <ol class="breadcrumb m-1">
+                                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="../economics.html">Economics</a></li>
+                                <li class="breadcrumb-item active"><a href="../htmls/psychologyandeconomics.html">Psychology and Economics</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+              <div class="btn position-fixed fixed-bottom d-flex justify-content-end p-0">
+                <a style="color: white; background-color: rgb(0, 0, 40);" class="border rounded p-1"
+                onclick="document.getElementById('contents').scrollIntoView({ behavior: 'smooth' });">contents^</a>
+              </div>
+            </nav>
+            
+
+        </div>
+        <div class="row">
+            <h1 id="contents" class="m-0">contents</h4>
+                <div class="col-6">
+                    <ul>
+                        <li class="mb-1">
+                            <a href="#notes-on-behavioral-economics">Behavioral Economics</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-time-preferences-and-theoretical-foundations">Time Preferences and Theoretical Foundations</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-quasi-hyperbolic-discounting">Quasi-Hyperbolic Discounting</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-time-preferences-and-commitment-devices">Time Preferences and Commitment Devices</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#learning-commitment-devices-and-discounting-detailed-summary">Learning Commitment Devices and Discounting</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-risk-preferences">Risk Preferences</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-on-economic-behavior-under-risk">Economic Behavior Under Risk</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#study-notes-on-prospect-theory-and-reference-dependent-preferences">Prospect Theory and Reference-Dependent Preferences</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#social-preferences-and-experimental-games">Social Preferences and Experimental Games</a>
+                        </li>
+                        <li>
+                            <a href="#notes-on-social-preferences">Social Preferences</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-social-preferences">Social Preferences II</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-on-social-preferences">Social Preferences III</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-attention-in-behavioral-economics">Attention in Behavioral Economics</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-utility-from-beliefs">Utility from Beliefs</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-anticipatory-utility-and-information-acquisition">Anticipatory Utility and Information Acquisition</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-on-state-dependent-preferences-projection-bias-and-attribution-bias">State-Dependent Preferences, Projection Bias, and Attribution Bias</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-18-gender-discrimination-and-identity">Gender Discrimination and Identity</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-19-gender-discrimination-identity-and-nudges-in-decision-making">Gender Discrimination, Identity, and Nudges in Decision-Making</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-malleability-and-inaccessibility-of-preferences">Malleability and Inaccessibility of Preferences</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-psychology-of-poverty">Psychology of Poverty</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-happiness-and-mental-health">Happiness and Mental Health</a>
+                        </li>
+                        <li>
+                            <a href="#policy-with-behavioral-agents">Policy with Behavioral Agents</a>
+                        </li>
+
+                    </ul>
+                </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- insert under this -->
+    <div class="container">
+        <h1>Psychology and Economics</h1>
+        <h3 id="course-overview">Course Overview</h3>
+        <p>This course focuses on the integration of psychological principles into economic models to understand better
+            how individuals behave, especially in the context of poverty and decision making.</p>
+        <h3 id="understanding-behavioral-economics">Understanding Behavioral Economics</h3>
+        <p>Behavioral Economics studies the joint influence of psychological and economic factors on individual
+            behaviors. The aim is to augment traditional economic models, which often rely on rigid assumptions about
+            human behavior.</p>
+        <h4 id="core-principles-of-standard-economics">Core Principles of Standard Economics</h4>
+        <ul>
+            <li>
+                <p><strong>Stable Preferences:</strong> Individuals have well-defined and stable preferences.</p>
+            </li>
+            <li>
+                <p><strong>Rationality:</strong> Individuals behave rationally to maximize their utility function.</p>
+            </li>
+            <li>
+                <p><strong>Self-Interest:</strong> Primarily motivated by self-interest.</p>
+            </li>
+            <li>
+                <p><strong>Self-Control:</strong> Individuals possess perfect self-control to smooth consumption over
+                    time.</p>
+            </li>
+            <li>
+                <p><strong>Discounting:</strong> Constant discount factor for future versus present consumption.</p>
+            </li>
+            <li>
+                <p><strong>Risk Aversion:</strong> Individuals exhibit risk-averse behavior, characterized by a concave
+                    utility function.</p>
+            </li>
+            <li>
+                <p><strong>Information Processing:</strong> Individuals update beliefs about information in a Bayesian
+                    manner.</p>
+            </li>
+        </ul>
+        <h4 id="limitations-of-standard-models">Limitations of Standard Models</h4>
+        <p>Standard models often fail to predict actual behavior. Behavioral Economics seeks to identify and understand
+            deviations from these models.</p>
+        <h3 id="key-assumptions-and-deviations">Key Assumptions and Deviations</h3>
+        <h4 id="assumption-violations">Assumption Violations</h4>
+        <p>Behavioral Economics highlights real-world examples that contradict classical assumptions:</p>
+        <ul>
+            <li>
+                <p><strong>Information Bias:</strong> Individuals often hold beliefs that align with their interests
+                    (confirmation bias).</p>
+            </li>
+            <li>
+                <p><strong>Changing Preferences:</strong> Preferences may not be stable over time or context.</p>
+            </li>
+            <li>
+                <p><strong>Limited Attention:</strong> Individuals have constraints on processing information and may
+                    overlook important factors.</p>
+            </li>
+            <li>
+                <p><strong>Emotional Influences:</strong> Emotions can skew decision-making processes.</p>
+            </li>
+            <li>
+                <p><strong>Social Influences:</strong> Peer behavior can significantly impact individual choices.</p>
+            </li>
+        </ul>
+        <h4 id="examples-of-deviations">Examples of Deviations</h4>
+        <ol>
+            <li>
+                <p><strong>Limited Self-Control:</strong> Individuals may not follow through on intentions (e.g.,
+                    exercise).</p>
+            </li>
+            <li>
+                <p><strong>Miscalibration of Information Processing:</strong> Many people fail to update their beliefs
+                    accurately based on new information.</p>
+            </li>
+            <li>
+                <p><strong>Peer Effects:</strong> Social norms and peer behavior influence individual choices (e.g.,
+                    purchasing behaviors).</p>
+            </li>
+        </ol>
+        <h3 id="practical-applications-policies-and-decisions">Practical Applications: Policies and Decisions</h3>
+        <p>One prominent example discussed is the laptop policy in class:</p>
+        <ul>
+            <li>
+                <p><strong>Externalities:</strong> Laptop usage can distract others.</p>
+            </li>
+            <li>
+                <p><strong>Self-Control Issues:</strong> Students may intend to focus but can easily become distracted.
+                </p>
+            </li>
+            <li>
+                <p><strong>Policy Solutions:</strong> Ranging from laissez-faire to educational interventions or
+                    restrictions.</p>
+            </li>
+        </ul>
+        <h3 id="broad-topics-to-be-covered-in-the-course">Broad Topics to be Covered in the Course</h3>
+        <ol>
+            <li>
+                <p><strong>Introduction to Preferences:</strong> Examining how preferences change under different
+                    circumstances.</p>
+            </li>
+            <li>
+                <p><strong>Beliefs and Information Processing:</strong> Understanding how beliefs influence
+                    decision-making.</p>
+            </li>
+            <li>
+                <p><strong>Social Preferences and Behaviors:</strong> How individual preferences are shaped by social
+                    interactions and norms.</p>
+            </li>
+            <li>
+                <p><strong>Specifying Paternalistic Policies:</strong> Discussing when and how intervention in choices
+                    can be beneficial (nudges).</p>
+            </li>
+            <li>
+                <p><strong>Topics on Mental Health and Happiness:</strong> How mental health impacts economic decisions
+                    and behaviors.</p>
+            </li>
+            <li>
+                <p><strong>Poverty and Economic Behavior:</strong> Exploring the implications of poverty on
+                    decision-making processes.</p>
+            </li>
+        </ol>
+        <h3 id="conclusion">Conclusion</h3>
+        <p>Behavioral Economics enriches the study of economics by incorporating psychological insights and recognizes
+            that human behavior often deviates from the assumptions of classical models. This course aims to explore
+            those deviations and their implications in policy and individual decision-making.</p>
+        <h1 id="notes-on-behavioral-economics">Notes on Behavioral Economics</h1>
+        <h3 id="introduction-to-behavioral-economics">Introduction to Behavioral Economics</h3>
+        <p>Behavioral economics integrates insights from psychology into economic theory, primarily focusing on the
+            cognitive, emotional, and social factors that influence individuals’ decisions.</p>
+        <h4 id="survey-methodology">Survey Methodology</h4>
+        <p>Surveys provide suggestive evidence about behavioral issues. Ethical considerations such as IRB approval
+            depend on the anonymity and lack of personally identifiable information in surveys.</p>
+        <h3 id="components-of-economic-decision-making">Components of Economic Decision-Making</h3>
+        <p>Economists view human behavior through three main lenses:<br />
+            1. <strong>Constrained Optimization</strong> Individuals aim to maximize their utility subject to
+            constraints (e.g., budget).<br />
+            <br />
+            2. <strong>Utility Function</strong>
+        </p>
+        <ul>
+            <li>
+                <p>Describes how different goods affect individual happiness.</p>
+            </li>
+            <li>
+                <p>Examples of goods include apples and bananas.</p>
+            </li>
+            <li>
+                <p>Higher quantities of consumption produce greater utility.</p>
+            </li>
+        </ul>
+        <p>The general form of the utility function <span class="math inline"><em>U</em></span> is: <br /><span
+                class="math display"><em>U</em> = <em>U</em>(<em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>, …, <em>x</em><sub><em>n</em></sub>)</span><br />
+            where <span class="math inline"><em>x</em><sub><em>i</em></sub></span> are quantities of different goods
+            consumed.<br />
+            3. <strong>Beliefs</strong><br />
+            Individuals form beliefs about the world based on prior experiences, leading to expectations about the
+            future (posterior beliefs).</p>
+        <h4 id="types-of-utility">Types of Utility</h4>
+        <p>1. <strong>Instantaneous Utility</strong></p>
+        <ul>
+            <li>
+                <p>Utility at a specific moment in time, e.g., <span class="math inline"><em>U</em>(<em>t</em>)</span>.
+                </p>
+            </li>
+        </ul>
+        <p>2. <strong>Aggregation Over Time</strong></p>
+        <ul>
+            <li>
+                <p>How individuals value current satisfaction versus future satisfaction leads to an evaluation of time
+                    preferences.</p>
+            </li>
+        </ul>
+        <h3 id="risk-preferences-and-social-preferences">Risk Preferences and Social Preferences</h3>
+        <h4 id="risk-preferences">Risk Preferences</h4>
+        <ul>
+            <li>
+                <p>Individuals make decisions under uncertainty, e.g., entering a lottery.</p>
+            </li>
+            <li>
+                <p>Risk-averse individuals prefer outcomes with less uncertainty.</p>
+            </li>
+        </ul>
+        <h4 id="social-preferences">Social Preferences</h4>
+        <ul>
+            <li>
+                <p>Social preferences reveal individuals’ willingness to consider the welfare of others in their utility
+                    function. This leads to altruism versus selfishness in decision-making.</p>
+            </li>
+        </ul>
+        <h3 id="decision-making-framework">Decision-Making Framework</h3>
+        <p>Behavioral economics concerns itself with understanding why individuals may deviate from expected utility
+            maximization. Influences on behavior include:</p>
+        <p>1. <strong>Framing Effects</strong></p>
+        <ul>
+            <li>
+                <p>How problems are presented influences choices.</p>
+            </li>
+        </ul>
+        <p>2. <strong>Default Options and Nudges</strong></p>
+        <ul>
+            <li>
+                <p>Individuals often stick with default choices; carefully designed nudges can change behavior.</p>
+            </li>
+        </ul>
+        <p>3. <strong>Heuristics</strong></p>
+        <ul>
+            <li>
+                <p>Cognitive shortcuts that simplify decision-making at the cost of accuracy.</p>
+            </li>
+        </ul>
+        <h3 id="utility-and-altruism">Utility and Altruism</h3>
+        <h4 id="utility-function-formulation">Utility Function Formulation</h4>
+        <p>Utility functions can be expanded to include social actors: <br /><span
+                class="math display"><em>U</em> = <em>U</em>(self, others)</span><br /> This reflects that individuals
+            derive utility not only from personal consumption but also from the welfare of others.</p>
+        <h4 id="moral-and-social-obligations">Moral and Social Obligations</h4>
+        <p>Altruistic behaviors may arise from motives such as:</p>
+        <ul>
+            <li>
+                <p><strong>Warm Glow Effect</strong>: Individuals feel better about themselves when helping others.</p>
+            </li>
+            <li>
+                <p><strong>Social Image Concern</strong>: Individuals care about how they are perceived by others.</p>
+            </li>
+        </ul>
+        <h3 id="time-preferences-and-commitment-devices">Time Preferences and Commitment Devices</h3>
+        <h4 id="present-bias">Present Bias</h4>
+        <p>Present bias refers to the tendency to give stronger weight to immediate rewards compared to future benefits.
+            The general representation can be shown as: <br /><span
+                class="math display"><em>U</em> = <em>U</em><sub>0</sub> + <em>β</em><em>U</em><sub>1</sub></span><br />
+            where <span class="math inline"><em>β</em> &lt; 1</span> reflects present bias.</p>
+        <h4 id="commitment-devices">Commitment Devices</h4>
+        <p>Individuals proactively engage in actions (like dieting bets) to enforce future good behaviors despite
+            knowing their present biases.</p>
+        <h3 id="beliefs-and-information-updating">Beliefs and Information Updating</h3>
+        <h4 id="bayesian-updating">Bayesian Updating</h4>
+        <p>Individuals need to update their beliefs based on new information; e.g., if a person receives an HIV test
+            result: <br /><span class="math display">$$P(HIV | \text{Positive}) = \frac{P(\text{Positive|HIV}) \cdot
+                P(HIV)}{P(\text{Positive})}$$</span><br /> Understanding the base rate is crucial for making accurate
+            assessments—neglecting it leads to base rate neglect phenomena.</p>
+        <h3 id="anchoring-and-heuristics-in-decision-making">Anchoring and Heuristics in Decision-Making</h3>
+        <p>Individuals frequently rely on anchors (initial pieces of information) which can significantly affect
+            subsequent judgments and decisions, as demonstrated by:</p>
+        <ol>
+            <li>
+                <p><strong>Price Anchoring</strong></p>
+            </li>
+            <li>
+                <p><strong>Social Influence factors</strong></p>
+            </li>
+        </ol>
+        <h3 id="impact-of-environment-on-behavior">Impact of Environment on Behavior</h3>
+        <p>The situation can alter behavior dramatically, as shown in studies like Darley &amp; Batson’s on helping
+            behavior in relation to time pressure and mindset. The results suggest that situational variables often
+            overshadow stable personality traits.</p>
+        <h3 id="conclusions">Conclusions</h3>
+        <ul>
+            <li>
+                <p>Behavioral economics challenges the traditional utility maximization framework by incorporating
+                    preferences, beliefs, risk, and social influences.</p>
+            </li>
+            <li>
+                <p>Decisions are shaped not just by personal preferences but also by situational contexts, biases, and
+                    heuristics.</p>
+            </li>
+        </ul>
+        <h1 id="lecture-notes-time-preferences-and-theoretical-foundations">Lecture Notes: Time Preferences and
+            Theoretical Foundations</h1>
+        <h3 id="introduction">Introduction</h3>
+        <p>In this lecture and the next, we will discuss time preferences and the underlying theoretical models,
+            focusing on the following:</p>
+        <ul>
+            <li>
+                <p>Exponential Discounting as the Classical Economic Model</p>
+            </li>
+            <li>
+                <p>Limitations of Exponential Discounting</p>
+            </li>
+            <li>
+                <p>Introduction to Quasi-Hyperbolic Discounting</p>
+            </li>
+            <li>
+                <p>The Concepts of Sophistication and Naivete</p>
+            </li>
+        </ul>
+        <p>We will explore various real-world situations like procrastination, credit card debt, and more that highlight
+            the importance of understanding time preferences in economic decision-making.</p>
+        <h3 id="key-concepts">Key Concepts</h3>
+        <h4 id="exponential-discounting">Exponential Discounting</h4>
+        <p>Exponential discounting is the standard model used by economists to explain how individuals value present
+            versus future benefits. The utility maximization can be represented mathematically as follows:</p>
+        <p><br /><span class="math display">$$U = \sum_{t=0}^{\infty} \delta^t u_t$$</span><br /></p>
+        <p>Where:</p>
+        <ul>
+            <li>
+                <p><span class="math inline"><em>δ</em></span> is the discount factor where <span
+                        class="math inline">0 &lt; <em>δ</em> &lt; 1</span></p>
+            </li>
+            <li>
+                <p><span class="math inline"><em>u</em><sub><em>t</em></sub></span> is the utility received at time
+                    <span class="math inline"><em>t</em></span></p>
+            </li>
+        </ul>
+        <p>This functional form implies constant discounting over time.</p>
+        <h4 id="problems-with-exponential-discounting">Problems with Exponential Discounting</h4>
+        <p>While exponential discounting is tractable, it does not account for certain behaviors observed in
+            individuals:</p>
+        <ul>
+            <li>
+                <p>Inconsistencies over time (dynamic inconsistency)</p>
+            </li>
+            <li>
+                <p>Short-run impatience — tendency to favor immediate rewards over future gains.</p>
+            </li>
+        </ul>
+        <h4 id="quasi-hyperbolic-discounting">Quasi-Hyperbolic Discounting</h4>
+        <p>To address the limitations of exponential discounting, the quasi-hyperbolic model introduces two parameters,
+            <span class="math inline"><em>β</em></span> and <span class="math inline"><em>δ</em></span>: <br /><span
+                class="math display">$$U = u_0 + \sum_{t=1}^{\infty} \beta \delta^t u_t$$</span><br /></p>
+        <p>Where:</p>
+        <ul>
+            <li>
+                <p><span class="math inline"><em>β</em></span> reflects immediate discounting for future utilities,
+                    where <span class="math inline">0 &lt; <em>β</em> &lt; 1</span></p>
+            </li>
+            <li>
+                <p><span class="math inline"><em>δ</em></span> captures the long-term discounting factor.</p>
+            </li>
+        </ul>
+        <p>This model allows for faster discounts of near-term utilities while treating future utilities under a
+            longer-term perspective.</p>
+        <h3 id="applications-and-examples">Applications and Examples</h3>
+        <h4 id="procrastination-and-education-choices">Procrastination and Education Choices</h4>
+        <p>We can analyze decisions like whether to complete a problem set or pursue further education as follows:</p>
+        <ul>
+            <li>
+                <p>Immediate costs vs. future benefits (e.g., higher income due to education)</p>
+            </li>
+            <li>
+                <p>Discounting future payoff leads to procrastination when immediate costs are perceived as larger.</p>
+            </li>
+        </ul>
+        <h4 id="examples-of-choices">Examples of Choices</h4>
+        <ol>
+            <li>
+                <p><strong>Exercise</strong> — Immediate costs (effort and discomfort) vs. future health benefits.</p>
+            </li>
+            <li>
+                <p><strong>Spending and Credit Cards</strong> — Immediate gratification of purchases vs. future debt
+                    incurred.</p>
+            </li>
+            <li>
+                <p><strong>Investment Decisions</strong> — Decisions on savings today versus anticipated returns in the
+                    future.</p>
+            </li>
+        </ol>
+        <h3 id="behavioral-economics-insights">Behavioral Economics Insights</h3>
+        <h4 id="dynamic-consistency-vs.-time-inconsistency">Dynamic Consistency vs. Time Inconsistency</h4>
+        <p>Dynamic consistency refers to maintaining preference stability over time. The assumption in the exponential
+            discounting model suggests that an individual’s preferences should remain unchanged:</p>
+        <p><br /><span class="math display">If <em>A</em> ≻ <em>B</em> at time <em>t</em> ⇒ <em>A</em> ≻ <em>B</em> at
+                time <em>t</em> + 1</span><br /></p>
+        <p>However, evidence suggests people do not often choose the same when faced with the same option in the future,
+            displaying:</p>
+        <ul>
+            <li>
+                <p>Preference reversals</p>
+            </li>
+            <li>
+                <p>Demand for commitment devices (e.g., gym contracts, freezing credit cards).</p>
+            </li>
+        </ul>
+        <h4 id="examples-of-commitment-devices">Examples of Commitment Devices</h4>
+        <p>There are several ways individuals employ commitment devices, such as:</p>
+        <ul>
+            <li>
+                <p>Ulysses tying himself to the mast of his ship to avoid temptation.</p>
+            </li>
+            <li>
+                <p>Freezing credit cards to create barriers to impulsive spending.</p>
+            </li>
+        </ul>
+        <h3 id="conclusions-1">Conclusions</h3>
+        <p>This lecture established the foundation for understanding time preferences and their implications on
+            decision-making. The transition from exponential to quasi-hyperbolic discounting presents a more realistic
+            view of human patience and impulse control.</p>
+        <h1 id="notes-on-quasi-hyperbolic-discounting">Notes on Quasi-Hyperbolic Discounting</h1>
+        <h3 id="introduction-1">Introduction</h3>
+        <p>We started with a discussion of the workhorse model of classical economics, specifically the Exponential
+            Discounted Utility Model, highlighting its utility and limitations. We explored the assumptions of the model
+            and identified inconsistencies with observed behaviors.</p>
+        <h3 id="key-assumptions-of-exponential-discounting">Key Assumptions of Exponential Discounting</h3>
+        <p>The key assumptions of the exponential discounting model include:</p>
+        <ul>
+            <li>
+                <p><strong>Constant Discount Factor (<span class="math inline"><em>δ</em></span>):</strong> The weight
+                    placed on future utilities remains constant across time periods. For a time period <span
+                        class="math inline"><em>t</em></span>, the utility is discounted as: <br /><span
+                        class="math display"><em>U</em><sub><em>t</em></sub> = <em>U</em><sub>0</sub> ⋅ <em>δ</em><sup><em>t</em></sup></span><br />
+                    where <span class="math inline"><em>U</em><sub>0</sub></span> is the utility at the present time.
+                </p>
+            </li>
+            <li>
+                <p><strong>Dynamic Consistency:</strong> Preferences will not change over time. If you plan to make a
+                    choice today for the future, your future self will execute that plan unless affected by external
+                    factors.</p>
+            </li>
+            <li>
+                <p><strong>No Demand for Commitment:</strong> Under traditional assumptions, individuals would not
+                    restrict their future choices since more options are perceived as better.</p>
+            </li>
+        </ul>
+        <h3 id="evidence-against-exponential-discounting">Evidence Against Exponential Discounting</h3>
+        <p>We discussed various observations that contradict the exponential discounting model:</p>
+        <ul>
+            <li>
+                <p>Short-term impatience: Individuals often prefer immediate rewards over delayed ones even when the
+                    future reward is demonstrably larger.</p>
+            </li>
+            <li>
+                <p>Dynamic inconsistency: Individuals often fail to follow through with future plans, appearing to
+                    experience preference reversals.</p>
+            </li>
+            <li>
+                <p>Demand for commitment: People engage in strategies that restrict future choices as a means of
+                    controlling their impulses (e.g., deadlines, penalties).</p>
+            </li>
+        </ul>
+        <h3 id="quasi-hyperbolic-discounting-model">Quasi-Hyperbolic Discounting Model</h3>
+        <p>To address the limitations of the exponential model, the quasi-hyperbolic discounting model introduces an
+            additional parameter, <span class="math inline"><em>β</em></span>, to represent short-term bias:</p>
+        <p><br /><span class="math display">$$U_t = \begin{cases}
+                1 &amp; \text{if } t = 0 \\
+                \beta \cdot \delta^t &amp; \text{if } t &gt; 0
+                \end{cases}$$</span><br /></p>
+        <h4 class="unnumbered" id="parameters">Parameters</h4>
+        <ul>
+            <li>
+                <p><span class="math inline"><em>β</em></span>: Represents short-term bias, generally values are between
+                    0 and 1 (e.g., <span class="math inline"><em>β</em> = 0.5</span>).</p>
+            </li>
+            <li>
+                <p><span class="math inline"><em>δ</em></span>: Represents long-term discounting, typically close to 1
+                    (e.g., 0.95 or 0.99).</p>
+            </li>
+        </ul>
+        <h4 class="unnumbered" id="behavioral-implications">Behavioral Implications</h4>
+        <p>The quasi-hyperbolic model captures distinct behaviors in individuals:</p>
+        <ol>
+            <li>
+                <p>Impatience in Short-Term Rewards: Individuals may choose smaller immediate rewards over larger
+                    delayed rewards.</p>
+            </li>
+            <li>
+                <p>Long-Term Patience: While short-term preference may lead to impulsive choices, individuals may
+                    consider future rewards when making long-term decisions.</p>
+            </li>
+        </ol>
+        <h3 id="sophistication-vs.-naivete">Sophistication vs. Naivete</h3>
+        <p>We examined the difference between sophisticated and naive individuals, focusing on how self-control affects
+            decision-making:</p>
+        <ul>
+            <li>
+                <p><strong>Sophisticated individuals</strong> fully understand their biases (<span
+                        class="math inline"><em>β</em></span>) and can predict their future decision-making, allowing
+                    them to make better current choices (e.g., they may avoid procrastination).</p>
+            </li>
+            <li>
+                <p><strong>Naive individuals</strong> underestimate their future bias and fail to account for their
+                    preference reversals, often leading them to make suboptimal choices (e.g., procrastinating until the
+                    last moment).</p>
+            </li>
+        </ul>
+        <h3 id="investment-and-leisure-goods">Investment and Leisure Goods</h3>
+        <p>We categorized different choices as investment goods (immediate costs, delayed benefits) or leisure goods
+            (immediate rewards, delayed costs):</p>
+        <ul>
+            <li>
+                <p>For investment goods (e.g., exercise), sophisticated individuals tend to commit early to avoid higher
+                    future costs.</p>
+            </li>
+            <li>
+                <p>For leisure goods (e.g., indulging in dessert), sophisticated individuals may discourage themselves
+                    from immediate consumption due to future regret, which could lead to self-sabotage because they are
+                    aware of their biases.</p>
+            </li>
+        </ul>
+        <h3 id="conclusion-1">Conclusion</h3>
+        <p>The introduction of quasi-hyperbolic discounting provides a more accurate representation of human behavior in
+            terms of time preferences. Understanding the dynamics of sophistication and naivete is vital for creating
+            models that can predict and improve decision-making, guiding individuals toward better long-term choices.
+        </p>
+        <h3 id="further-reading">Further Reading</h3>
+        <p>For more on these topics, refer to the paper by Ariely and Wertenbroch, which explores applications of these
+            models in various real-world scenarios such as smoking cessation, drinking habits, and deadline effects.</p>
+        <h1 id="notes-on-time-preferences-and-commitment-devices">Notes on Time Preferences and Commitment Devices</h1>
+        <h3 id="overview-of-time-preferences">Overview of Time Preferences</h3>
+        <p>Time preferences refer to the way individuals value rewards or consumption at different points in time. Key
+            concepts discussed in the lecture include:</p>
+        <ul>
+            <li>
+                <p><strong>Exponential Discounting:</strong> A model in which individuals discount future utility at a
+                    constant rate. It leads to constant discounting, dynamic consistency, and no demand for commitment.
+                </p>
+                <p><br /><span class="math display">$$V_t = \frac{U(c_t)}{(1 + r)^t}$$</span><br /></p>
+                <p>where <span class="math inline"><em>V</em><sub><em>t</em></sub></span> is the present value, <span
+                        class="math inline"><em>U</em>(<em>c</em><sub><em>t</em></sub>)</span> is the utility of
+                    consumption at time <span class="math inline"><em>t</em></span>, and <span
+                        class="math inline"><em>r</em></span> is the discount rate.</p>
+            </li>
+            <li>
+                <p><strong>Quasi-Hyperbolic Discounting:</strong> An extension allowing for present bias, where
+                    individuals have different discount rates for the short run and the long run. The model introduces
+                    parameters <span class="math inline"><em>β</em></span> and <span
+                        class="math inline"><em>δ</em></span>:</p>
+                <p><br /><span
+                        class="math display"><em>V</em><sub><em>t</em></sub> = <em>U</em>(<em>c</em><sub><em>t</em></sub>) ⋅ <em>β</em><sup><em>t</em></sup> ⋅ <em>δ</em><sup><em>t</em></sup></span><br />
+                </p>
+                <p>where <span class="math inline"><em>β</em> &lt; 1</span> captures present bias and <span
+                        class="math inline"><em>δ</em> ≈ 1</span> reflects future utility.</p>
+            </li>
+        </ul>
+        <h3 id="sophistication-vs.-naiveté">Sophistication vs. Naiveté</h3>
+        <p>Individuals can be classified based on their ability to recognize their own present bias:</p>
+        <ul>
+            <li>
+                <p><strong>Full Naiveté:</strong> Believing they will behave differently in the future; they
+                    underestimate their future self’s present bias.</p>
+            </li>
+            <li>
+                <p><strong>Full Sophistication:</strong> Perfect foresight; individuals understand their future behavior
+                    accurately.</p>
+            </li>
+            <li>
+                <p><strong>Partial Naiveté:</strong> Individuals know they will be present-biased but underestimate the
+                    degree of it.</p>
+                <p><br /><span class="math display"><em>β</em> &lt; <em>β̂</em> &lt; 1</span><br /></p>
+                <p>where <span class="math inline"><em>β̂</em></span> reflects their belief about future behavior.</p>
+            </li>
+        </ul>
+        <h3 id="commitment-devices-1">Commitment Devices</h3>
+        <p>Commitment devices help individuals stick to their long-term goals by changing their future choices’ cost
+            structure. They can include:</p>
+        <h4 id="definition">Definition</h4>
+        <p>A commitment device is defined as an arrangement that restricts an agent’s future choice set.</p>
+        <h4 id="examples">Examples</h4>
+        <ul>
+            <li>
+                <p><strong>Financial Penalties:</strong> Paying a fee if a certain goal (e.g., completing a paper by a
+                    deadline) is not met.</p>
+            </li>
+            <li>
+                <p><strong>Restricting Access:</strong> Limiting access to temptation goods (e.g., unhealthy foods).</p>
+            </li>
+            <li>
+                <p><strong>Public Commitment:</strong> Announcing intentions publicly to increase accountability.</p>
+            </li>
+        </ul>
+        <h3 id="empirical-evidence">Empirical Evidence</h3>
+        <p>Several studies illustrate the demand for commitment devices:</p>
+        <h4 id="ariely-and-wertenbroch-2002">Ariely and Wertenbroch (2002)</h4>
+        <p>This study investigated deadlines set by MBA students at Sloan. Key findings include:</p>
+        <ul>
+            <li>
+                <p>68% of students opted for early deadlines, indicating demand for commitment.</p>
+            </li>
+            <li>
+                <p>Students who chose evenly spaced deadlines performed better than those who set their own deadlines,
+                    indicating suboptimal choices.</p>
+            </li>
+        </ul>
+        <h4 id="kaur-mullainathan-kremer-2010">Kaur, Mullainathan, Kremer (2010)</h4>
+        <p>This study with data entry workers in India provided insights into commitment devices:</p>
+        <ul>
+            <li>
+                <p>36% of workers chose dominated contracts (lower pay until they reached a target).</p>
+            </li>
+            <li>
+                <p>Production increased by 2.3% when commitment contracts were offered, suggesting efficiency gains.</p>
+            </li>
+            <li>
+                <p>Payday effects were observed; individuals worked harder on paydays, further validating theories of
+                    self-control.</p>
+            </li>
+        </ul>
+        <h4 id="dellavigna-and-malmendier-2004">Dellavigna and Malmendier (2004)</h4>
+        <p>This study examined gym memberships:</p>
+        <ul>
+            <li>
+                <p>Many individuals chose monthly contracts even when it was less cost-effective based on their actual
+                    usage.</p>
+            </li>
+            <li>
+                <p>Suggests that gym-goers may overestimate their future exercise frequency and employ the monthly fee
+                    as a commitment device.</p>
+            </li>
+        </ul>
+        <h4 id="milkman-et-al.-2014">Milkman et al. (2014)</h4>
+        <p>This research emphasized the bundling of temptations, promoting healthier choices by linking them to
+            enjoyable activities (e.g., audiobooks at the gym).</p>
+        <h3 id="conclusion-2">Conclusion</h3>
+        <p>The exploration of time preferences, commitment devices, and their empirical applications reveals important
+            implications for economic behavior. With insights from behavioral economics, firms and individuals can
+            strategically design interventions to improve self-control and decision-making.</p>
+        <h1 id="learning-commitment-devices-and-discounting-detailed-summary">Learning Commitment Devices and
+            Discounting: Detailed Summary</h1>
+        <h3 id="commitment-devices-2">Commitment Devices</h3>
+        <h4 id="definition-1">Definition</h4>
+        <p>A commitment device is something chosen by an agent that helps them to commit to a future action they believe
+            they would like to take.</p>
+        <h4 id="types-of-agents">Types of Agents</h4>
+        <p>Three types of agents can be considered:</p>
+        <ul>
+            <li>
+                <p>Fully naive: They do not realize their future selves might behave differently.</p>
+            </li>
+            <li>
+                <p>Fully sophisticated: They accurately perceive their future behaviors.</p>
+            </li>
+            <li>
+                <p>Partially naive: They have beliefs (beta hat) about what their future selves will do, which may not
+                    match their actual behavior (beta).</p>
+            </li>
+        </ul>
+        <h4 id="decision-making-process">Decision-Making Process</h4>
+        <p>To analyze the behavior of partially naive agents:</p>
+        <ol>
+            <li>
+                <p>Start with backwards induction: Begin solving from the future to the present.</p>
+            </li>
+            <li>
+                <p>Use the agent’s beliefs (beta hat) to forecast future actions.</p>
+            </li>
+            <li>
+                <p>As you move backwards, utilize the actual choices made based on actual beta in its corresponding
+                    periods.</p>
+            </li>
+        </ol>
+        <h3 id="continuous-vs-discrete-choices">Continuous vs Discrete Choices</h3>
+        <p>In economics, choices can be continuous (e.g., how much to consume) or discrete (e.g., whether to do an
+            assignment or not). Continuous choice models involve optimization with constraints, similar to those
+            discussed in introductory microeconomics courses.</p>
+        <h3 id="quasi-hyperbolic-discounting-1">Quasi-Hyperbolic Discounting</h3>
+        <p>This model describes how people evaluate present versus future rewards using the equation: <br /><span
+                class="math display">$$U = \sum_{t=0}^{\infty} \beta^t U(c_t)$$</span><br /> where:</p>
+        <ul>
+            <li>
+                <p><span class="math inline"><em>U</em>(<em>c</em><sub><em>t</em></sub>)</span>: Utility at time <span
+                        class="math inline"><em>t</em></span>.</p>
+            </li>
+            <li>
+                <p><span class="math inline"><em>β</em></span>: Represents the degree of present-bias or how much the
+                    future is discounted.</p>
+            </li>
+        </ul>
+        <h3 id="empirical-applications-of-commitment-devices">Empirical Applications of Commitment Devices</h3>
+        <h4 id="credit-card-behavior">Credit Card Behavior</h4>
+        <p>In a study on credit card offers, various deals were presented to potential customers to analyze how
+            quasi-hyperbolic discounting could affect decision-making. Relevant rates were examined:</p>
+        <ul>
+            <li>
+                <p>6.9% for six months and 16% afterwards.</p>
+            </li>
+            <li>
+                <p>4.9% followed by 16% in a teaser deal.</p>
+            </li>
+            <li>
+                <p>6.9% followed by 4% as a post-teaser deal.</p>
+            </li>
+        </ul>
+        <p>Findings suggest people often do not account for future borrowing costs when making present decisions.</p>
+        <h4 id="evaluation-of-commitment-devices">Evaluation of Commitment Devices</h4>
+        <p>Evidence indicates a strong correlation between the perceived future behaviors and the actual behavior based
+            on initial choices:</p>
+        <ul>
+            <li>
+                <p>Increase in response rates for better introductory offers by credit card companies.</p>
+            </li>
+            <li>
+                <p>The necessity of understanding the long-run effects ultimately to avoid negative outcomes for
+                    consumers.</p>
+            </li>
+        </ul>
+        <h3 id="commitment-devices-in-practice">Commitment Devices in Practice</h3>
+        <h4 id="savings-accounts-study">Savings Accounts Study</h4>
+        <p>In a study looking at a commitment savings account:</p>
+        <ul>
+            <li>
+                <p>Participants could restrict access to their savings through various goal-based mechanisms.</p>
+            </li>
+            <li>
+                <p>Results indicated that providing limited options along with commitment features increased savings
+                    behavior significantly.</p>
+            </li>
+        </ul>
+        <h3 id="alcohol-consumption-in-india">Alcohol Consumption in India</h3>
+        <p>Research on alcohol consumption among low-income workers revealed:</p>
+        <ul>
+            <li>
+                <p>High levels of alcohol consumption primarily serve as a self-medication for pain.</p>
+            </li>
+            <li>
+                <p>Potential commitment devices were explored to incentivize sobriety while minimizing consumption in
+                    such contexts.</p>
+            </li>
+        </ul>
+        <h5 id="finding-the-right-commitment-device">Finding the Right Commitment Device</h5>
+        <p>Commitment devices should ideally lead to:</p>
+        <ul>
+            <li>
+                <p>Sustained reductions in harmful behavior.</p>
+            </li>
+            <li>
+                <p>Increased awareness of future choices that might lead to long-run benefits.</p>
+            </li>
+        </ul>
+        <h3 id="fertilizer-usage-in-developing-countries">Fertilizer Usage in Developing Countries</h3>
+        <p>The work of Esther Duflo and Michael Kremer:</p>
+        <ul>
+            <li>
+                <p>Explores time-limited discounts as a commitment device to improve fertilizer usage.</p>
+            </li>
+            <li>
+                <p>The results demonstrate significant increases in fertilizer application when discounts were framed
+                    effectively.</p>
+            </li>
+        </ul>
+        <h3 id="conclusion-3">Conclusion</h3>
+        <p>In summary, commitment devices have shown potential for improving outcomes related to self-control problems.
+            However, their effectiveness varies significantly across contexts. Future work should continue to examine
+            how commitment devices can be designed and marketed to maximize their impact while minimizing failure rates.
+        </p>
+        <h1 id="notes-on-risk-preferences">Notes on Risk Preferences</h1>
+        <h3 id="overview-of-risk-preferences">Overview of Risk Preferences</h3>
+        <p>In this lecture, we will explore the notion of risk preferences from the perspective of expected utility,
+            focusing on how economics interprets choices involving risk.</p>
+        <h4 id="key-topics">Key Topics</h4>
+        <ul>
+            <li>
+                <p>Assumptions of economics regarding risk preferences</p>
+            </li>
+            <li>
+                <p>Measurement of risk preferences</p>
+            </li>
+            <li>
+                <p>Implications and limitations of risk preferences in economic models</p>
+            </li>
+            <li>
+                <p>Introduction to alternative models such as reference-dependent preferences</p>
+            </li>
+        </ul>
+        <h4 id="risk-aversion">Risk Aversion</h4>
+        <p><strong>Risk Aversion:</strong> It refers to the tendency of individuals to prefer certainty over uncertain
+            outcomes that could yield the same expected payoff. In other words, individuals are averse to taking risks.
+        </p>
+        <h4 id="economics-and-risk">Economics and Risk</h4>
+        <p>Economics generally assumes that individuals will make choices that maximize expected utility when confronted
+            with risk.</p>
+        <h4 id="expected-utility-model">Expected Utility Model</h4>
+        <p>The expected utility model is a foundational concept in economics to describe how individuals evaluate risky
+            choices: <br /><span class="math display">$$EU = \sum_{i=1}^{n} p_i \cdot u(x_i)$$</span><br /> where <span
+                class="math inline"><em>E</em><em>U</em></span> is the expected utility, <span
+                class="math inline"><em>p</em><sub><em>i</em></sub></span> is the probability of outcome <span
+                class="math inline"><em>i</em></span>, and <span
+                class="math inline"><em>u</em>(<em>x</em><sub><em>i</em></sub>)</span> is the utility of outcome <span
+                class="math inline"><em>x</em><sub><em>i</em></sub></span>.</p>
+        <h4 id="expected-monetary-value">Expected Monetary Value</h4>
+        <p>The expected monetary value (EMV) of a gamble involving two states (state 1 and state 2) is given by:
+            <br /><span
+                class="math display"><em>E</em><em>M</em><em>V</em> = <em>p</em> ⋅ <em>x</em> + (1 − <em>p</em>) ⋅ <em>y</em></span><br />
+            where <span class="math inline"><em>p</em></span> is the probability of state 1 yielding outcome <span
+                class="math inline"><em>x</em></span>, and <span class="math inline">1 − <em>p</em></span> is the
+            probability of state 2 yielding outcome <span class="math inline"><em>y</em></span>.</p>
+        <h3 id="measuring-risk-preferences">Measuring Risk Preferences</h3>
+        <h4 id="utility-function">Utility Function</h4>
+        <p>Risk preferences can be evaluated using a utility function, which translates monetary outcomes to utility
+            values. A concave utility function indicates risk aversion: <br /><span
+                class="math display">$$\frac{d^2u}{dx^2} &lt; 0$$</span><br /> suggesting diminishing marginal utility
+            of wealth.</p>
+        <h4 id="risk-aversion-coefficients">Risk Aversion Coefficients</h4>
+        <p>Economists typically measure risk aversion using two coefficients:</p>
+        <ul>
+            <li>
+                <p><strong>Absolute Risk Aversion (ARA):</strong> <br /><span class="math display">$$r =
+                        -\frac{u''(x)}{u'(x)}$$</span><br /></p>
+            </li>
+            <li>
+                <p><strong>Relative Risk Aversion (RRA):</strong> <br /><span
+                        class="math display"><em>γ</em> = <em>x</em> ⋅ <em>r</em></span><br /></p>
+            </li>
+        </ul>
+        <h4 id="examples-of-risky-decisions">Examples of Risky Decisions</h4>
+        <p>Several choices in life involve risk, such as:</p>
+        <ul>
+            <li>
+                <p>Educational investments</p>
+            </li>
+            <li>
+                <p>Major purchases (e.g., housing)</p>
+            </li>
+            <li>
+                <p>Insurance decisions</p>
+            </li>
+            <li>
+                <p>Investment portfolios</p>
+            </li>
+        </ul>
+        <h3 id="implications-of-risk-preferences">Implications of Risk Preferences</h3>
+        <h4 id="insurance-purchases">Insurance Purchases</h4>
+        <p>Individuals often purchase insurance to mitigate risks, demonstrating risk aversion. The willingness to pay
+            for insurance, despite its cost, indicates that people value reducing uncertainty.</p>
+        <h4 id="choice-between-risks">Choice Between Risks</h4>
+        <p>The willingness to take on risk varies with context. For instance, people may engage in gambling or lottery
+            tickets despite negative expected returns, which raises questions about individual risk tolerance and
+            utility perceptions.</p>
+        <h3 id="small-versus-large-scale-risk-preferences">Small versus Large Scale Risk Preferences</h3>
+        <h4 id="discrepancies-in-risk-aversion">Discrepancies in Risk Aversion</h4>
+        <p>The model struggles to reconcile small-scale risk aversion with large-scale risk choices. For example,
+            rejecting a 50% chance to gain $11 against a loss of $10 suggests extreme risk aversion, leading to
+            implausible conclusions about larger risks.</p>
+        <h4 id="rabins-argument">Rabin’s Argument</h4>
+        <p>Research by Matthew Rabin argues that consistent rejection of small-scale gambles implies unreasonable
+            valuations of larger-scale gambles:</p>
+        <ol>
+            <li>
+                <p><span class="math inline">$u(w + x) \geq \frac{1}{2}u(w + y) + \frac{1}{2}u(w - 10)$</span> suggests
+                    diminishing marginal utility.</p>
+            </li>
+            <li>
+                <p>Small payouts lead to large wealth implications, hence failing to fit observed behaviors.</p>
+            </li>
+        </ol>
+        <h3 id="conclusion-4">Conclusion</h3>
+        <p>The expected utility model provides a framework for understanding risk preferences but fails to adequately
+            explain discrepancies in small versus large-scale risk choices. Future discussions will delve into
+            alternative models that account for these anomalies.</p>
+        <h1 id="lecture-notes-on-economic-behavior-under-risk">Lecture Notes on Economic Behavior Under Risk</h1>
+        <h3 id="introduction-2">Introduction</h3>
+        <p>This lecture focuses on economic behavior under conditions of uncertainty and risk, particularly through the
+            lens of the expected utility model.</p>
+        <h3 id="expected-utility-theory">Expected Utility Theory</h3>
+        <p>The expected utility (EU) model is a powerful tool used by economists to evaluate choices made under
+            uncertainty. It is defined as:</p>
+        <p><br /><span
+                class="math display"><em>U</em>(<em>E</em>) = ∑<em>p</em><sub><em>i</em></sub><em>U</em>(<em>x</em><sub><em>i</em></sub>)</span><br />
+        </p>
+        <p>Where:</p>
+        <ul>
+            <li>
+                <p><span class="math inline"><em>U</em>(<em>E</em>)</span> is the utility of the expected value,</p>
+            </li>
+            <li>
+                <p><span class="math inline"><em>p</em><sub><em>i</em></sub></span> is the probability of outcome <span
+                        class="math inline"><em>x</em><sub><em>i</em></sub></span>,</p>
+            </li>
+            <li>
+                <p><span class="math inline"><em>U</em>(<em>x</em><sub><em>i</em></sub>)</span> is the utility
+                    associated with outcome <span class="math inline"><em>x</em><sub><em>i</em></sub></span>.</p>
+            </li>
+        </ul>
+        <p>Expected utility theory assists in understanding behaviors, such as investment decisions where higher risk
+            typically demands higher expected returns.</p>
+        <h4 id="applications">Applications</h4>
+        <ul>
+            <li>
+                <p>Investment: Investments with increased volatility necessitate a higher return.</p>
+            </li>
+            <li>
+                <p>Crime: As the likelihood of getting caught increases, criminal behavior decreases.</p>
+            </li>
+            <li>
+                <p>Insurance Choices: Individuals may prefer lower deductibles despite higher premiums due to perceived
+                    risks.</p>
+            </li>
+        </ul>
+        <h3 id="evaluating-risk-preferences">Evaluating Risk Preferences</h3>
+        <p>Risk preferences are typically represented by a parameter <span class="math inline"><em>γ</em></span> known
+            as the risk aversion coefficient. The model used frequently for estimating utility preferences is the
+            Constant Relative Risk Aversion (CRRA) utility function:</p>
+        <p><br /><span class="math display">$$U(W) = \frac{W^{1 - \gamma}}{1 - \gamma}$$</span><br /></p>
+        <p>Where <span class="math inline"><em>W</em></span> is wealth, and <span class="math inline"><em>γ</em></span>
+            represents the risk aversion level. Estimation of <span class="math inline"><em>γ</em></span> can be derived
+            from individuals’ choices in risky situations through the concept of revealed preference.</p>
+        <h4 id="contrasting-risk-aversion">Contrasting Risk Aversion</h4>
+        <p>Evidence showed that individuals exhibit varying degrees of risk aversion based on the scale of the gamble:
+        </p>
+        <ul>
+            <li>
+                <p>Small-scale gambles yield high <span class="math inline"><em>γ</em></span> (e.g., between 10-30).</p>
+            </li>
+            <li>
+                <p>Large-scale gambles yield moderate <span class="math inline"><em>γ</em></span> (e.g., between 0-2).
+                </p>
+            </li>
+        </ul>
+        <p>This contradiction poses a challenge: fitting a single <span class="math inline"><em>γ</em></span> to account
+            for both small- and large-scale gambles is not feasible.</p>
+        <h3 id="matthew-rabins-calibration-theorem">Matthew Rabin’s Calibration Theorem</h3>
+        <p>This theorem illustrates how declining small-scale gambles with positive expected value implies irrational
+            choices in larger gambles.</p>
+        <h3 id="empirical-analysis-insurance-choices">Empirical Analysis: Insurance Choices</h3>
+        <p>Justin Sydnor’s research utilized data from 50,000 home insurance policies, focusing on deductible choices to
+            ascertain risk preferences. Key points include:</p>
+        <h4 id="deductibles-and-premiums">Deductibles and Premiums</h4>
+        <p>A deductible is an out-of-pocket expense paid by a policyholder before reimbursement by the insurer:</p>
+        <ul>
+            <li>
+                <p>Choosing a lower deductible means increased premium costs.</p>
+            </li>
+            <li>
+                <p>Policyholders often favor lower deductibles despite higher premiums.</p>
+            </li>
+        </ul>
+        <h4 id="claim-rate-insights">Claim Rate Insights</h4>
+        <p>The average yearly claim rate associated with chosen deductibles is under 5%, suggesting that:</p>
+        <ul>
+            <li>
+                <p>People are willing to pay more for lower deductibles despite low likelihoods of claim.</p>
+            </li>
+            <li>
+                <p>This behavior indicates high risk aversion which is hard to reconcile with lower estimates in
+                    large-scale risks.</p>
+            </li>
+        </ul>
+        <h4 id="implied-risk-aversion">Implied Risk Aversion</h4>
+        <p>From Sydnor’s analysis, estimated <span class="math inline"><em>γ</em></span> values ranged significantly,
+            often in the hundreds or thousands, challenging traditional notions of risk aversion.</p>
+        <h3 id="kahneman-and-tverskys-prospect-theory">Kahneman and Tversky’s Prospect Theory</h3>
+        <p>Kahneman and Tversky proposed an alternative model, focusing on how people make decisions based on potential
+            losses and gains, rather than final outcomes.</p>
+        <h4 id="key-components">Key Components</h4>
+        <ul>
+            <li>
+                <p><strong>Reference Dependence:</strong> Utility is evaluated relative to a reference point.</p>
+            </li>
+            <li>
+                <p><strong>Loss Aversion:</strong> Losses impact utility more than equivalent gains.</p>
+            </li>
+            <li>
+                <p><strong>Diminishing Sensitivity:</strong> People are increasingly risk-averse with gains, but
+                    risk-seeking with losses.</p>
+            </li>
+        </ul>
+        <p><br /><span class="math display">$$\text{Utility} =
+                \begin{cases}
+                U(x) &amp; \text{if } x \geq 0 \text{ (gains)} \\
+                -\lambda U(-x) &amp; \text{if } x &lt; 0 \text{ (losses)}
+                \end{cases}$$</span><br /></p>
+        <p>Where <span class="math inline"><em>λ</em> &gt; 1</span> reflects loss aversion.</p>
+        <h4 id="experimental-evidence">Experimental Evidence</h4>
+        <p>Several experiments confirmed these concepts, including:</p>
+        <ul>
+            <li>
+                <p>Choices revealing a preference for lower risk in the context of gains.</p>
+            </li>
+            <li>
+                <p>An observable endowment effect, where individuals value items more highly once owned.</p>
+            </li>
+        </ul>
+        <h3 id="conclusion-5">Conclusion</h3>
+        <p>The lecture emphasized understanding economic decision-making under risk through expected utility theory,
+            considerations of risk preferences, and the implications of prospect theory. Future discussions will delve
+            deeper into applications of these concepts in real-world scenarios and consider social preferences.</p>
+        <h1 id="study-notes-on-prospect-theory-and-reference-dependent-preferences">Study Notes on Prospect Theory and
+            Reference-Dependent Preferences</h1>
+        <h3 id="recap-of-prospect-theory">Recap of Prospect Theory</h3>
+        <p>In their 1979 article, Kahneman and Tversky introduced Prospect Theory based on empirical evidence. Key
+            concepts include:</p>
+        <h4 id="key-characteristics-of-prospect-theory">Key Characteristics of Prospect Theory</h4>
+        <ol>
+            <li>
+                <p><strong>Reference-Dependent Utility:</strong> Utility is derived from changes relative to a reference
+                    point (denoted <span class="math inline"><em>r</em></span>), not absolute levels of consumption
+                    (denoted <span class="math inline"><em>c</em></span>). <br /><span
+                        class="math display"><em>U</em>(<em>c</em>) = <em>U</em>(<em>c</em> − <em>r</em>)</span><br />
+                </p>
+            </li>
+            <li>
+                <p><strong>Loss Aversion:</strong> Losses have a greater impact on utility than equivalent gains. For
+                    instance, losing $100 feels worse than gaining $100 feels good. This is visually represented in the
+                    value function, which is flatter in the gain domain and steeper in the loss domain.</p>
+            </li>
+            <li>
+                <p><strong>Diminishing Sensitivity:</strong> The value function exhibits diminishing sensitivity. The
+                    perceived change in utility decreases as the value moves further from the reference point.
+                    <br /><span class="math display"><em>U</em>″(<em>x</em>) &lt; 0 in gains,
+                        <em>U</em>″(<em>x</em>) &gt; 0 in losses</span><br /></p>
+            </li>
+        </ol>
+        <h3 id="key-concepts-derived-from-prospect-theory">Key Concepts Derived from Prospect Theory</h3>
+        <h4 id="reference-point">Reference Point</h4>
+        <p>The reference point (<span class="math inline"><em>r</em></span>) can be the status quo or the expected
+            outcome. It plays a crucial role in determining whether a change is perceived as a gain or a loss.</p>
+        <h4 id="examples-of-reference-dependent-utility">Examples of Reference-Dependent Utility</h4>
+        <ul>
+            <li>
+                <p>Endowment Effect: Individuals tend to value items they own more than equivalent items they do not
+                    own.</p>
+            </li>
+            <li>
+                <p>Loss Aversion in Labor Supply: Workers may choose not to work during high wage days if they feel they
+                    have already reached their income target.</p>
+            </li>
+        </ul>
+        <h3 id="applications-of-prospect-theory">Applications of Prospect Theory</h3>
+        <h4 id="labor-supply-exhibit">Labor Supply Exhibit</h4>
+        <p>Consider a worker with wage variations:</p>
+        <ul>
+            <li>
+                <p>Workers may decide to work fewer hours on high-wage days after reaching their income goals.</p>
+            </li>
+            <li>
+                <p>Loss aversion affects the decision-making process regarding how many hours to work based on reference
+                    points.</p>
+            </li>
+        </ul>
+        <h4 id="housing-market-findings">Housing Market Findings</h4>
+        <ul>
+            <li>
+                <p>Sellers often price their homes relative to their purchase price, leading to higher listing prices
+                    when the sale is at a loss.</p>
+            </li>
+            <li>
+                <p>Empirical studies show that sellers are less likely to sell their homes at a loss.</p>
+            </li>
+        </ul>
+        <h3 id="behavioral-finance-and-reference-dependent-preferences">Behavioral Finance and Reference-Dependent
+            Preferences</h3>
+        <p>Behavioral finance illustrates how reference-dependent preferences operate in trading scenarios:</p>
+        <ul>
+            <li>
+                <p>Investors are more likely to sell winning stocks (realized gains) than losing stocks (realized
+                    losses), demonstrating the disposition effect.</p>
+            </li>
+        </ul>
+        <h3 id="psychological-principles-for-firms">Psychological Principles for Firms</h3>
+        <p>Firms can leverage psychological principles to maximize profit:</p>
+        <ul>
+            <li>
+                <p><strong>High-Price Strategy:</strong> Start with a high price to create perceived gains when lowering
+                    prices.</p>
+            </li>
+            <li>
+                <p><strong>Temporary Discounts:</strong> Use short-term promotions to play into loss aversion without
+                    permanently lowering prices.</p>
+            </li>
+            <li>
+                <p><strong>Free Trials:</strong> Encourage users to feel ownership, leading to increased likelihood of
+                    purchase.</p>
+            </li>
+        </ul>
+        <h3 id="conclusion-6">Conclusion</h3>
+        <p>Prospect Theory provides significant insights into decision-making behaviors influenced by loss aversion and
+            reference dependence. Understanding these concepts is crucial not only for academic pursuits but also for
+            practical applications in economics and business settings.</p>
+        <h1 id="social-preferences-and-experimental-games">Social Preferences and Experimental Games</h1>
+        <h3 id="introduction-3">Introduction</h3>
+        <p>This document outlines key concepts and findings from a series of experimental games designed to measure
+            social preferences among individuals. These games are conducted to better understand altruism, fairness, and
+            decision-making processes in economic contexts. Three primary games are discussed:</p>
+        <ul>
+            <li>
+                <p>The Dictator Game</p>
+            </li>
+            <li>
+                <p>The Ultimatum Game</p>
+            </li>
+            <li>
+                <p>The Trust Game</p>
+            </li>
+        </ul>
+        <h3 id="the-dictator-game">The Dictator Game</h3>
+        <h4 id="purpose">Purpose</h4>
+        <p>The Dictator Game is utilized to assess an individual’s willingness to share resources with another
+            participant. This game gives insight into altruistic behavior and selfishness in decision-making.</p>
+        <h4 id="structure-of-the-game">Structure of the Game</h4>
+        <ol>
+            <li>
+                <p>One participant is designated as the <strong>Dictator</strong> and is endowed with a certain amount
+                    of money, which we denote as <span class="math inline"><em>M</em></span>.</p>
+            </li>
+            <li>
+                <p>The Dictator can choose how much to give <span class="math inline"><em>x</em></span> to another
+                    participant, called the <strong>Receiver</strong>: <br /><span
+                        class="math display"><em>x</em> ∈ [0, <em>M</em>]</span><br /></p>
+            </li>
+            <li>
+                <p>The Receiver receives <span class="math inline"><em>M</em> − <em>x</em></span>.</p>
+            </li>
+        </ol>
+        <h4 id="results-interpretation">Results Interpretation</h4>
+        <ul>
+            <li>
+                <p>If the Dictator decides to give more to the Receiver, it may indicate higher levels of altruism.</p>
+            </li>
+            <li>
+                <p>A common criticism is whether real stakes influence behavior in hypothetical scenarios.</p>
+            </li>
+        </ul>
+        <h3 id="the-ultimatum-game">The Ultimatum Game</h3>
+        <h4 id="purpose-1">Purpose</h4>
+        <p>The Ultimatum Game assesses how individuals negotiate resource division with others while considering
+            fairness and retaliation.</p>
+        <h4 id="structure-of-the-game-1">Structure of the Game</h4>
+        <ol>
+            <li>
+                <p>There are two players: the <strong>Proposer</strong> and the <strong>Responder</strong>.</p>
+            </li>
+            <li>
+                <p>The Proposer suggests a division of a sum <span class="math inline"><em>S</em></span> (e.g., 10
+                    candies): <br /><span class="math display"><em>S</em> = <em>x</em> + <em>y</em></span><br /> where
+                    <span class="math inline"><em>x</em></span> is offered to the Responder and <span
+                        class="math inline"><em>y</em></span> is kept by the Proposer.</p>
+            </li>
+            <li>
+                <p>The Responder can choose to accept the offer or reject it.</p>
+            </li>
+            <li>
+                <p>If rejected, both players receive nothing.</p>
+            </li>
+        </ol>
+        <h4 id="expected-outcomes">Expected Outcomes</h4>
+        <ul>
+            <li>
+                <p>Proposers are incentivized to offer a fair amount to ensure acceptance (typically half or more).</p>
+            </li>
+            <li>
+                <p>Responders are likely to reject offers they perceive as unfair, leading to both players receiving
+                    nothing, demonstrating preferences for fairness over personal gain.</p>
+            </li>
+        </ul>
+        <h3 id="the-trust-game">The Trust Game</h3>
+        <h4 id="purpose-2">Purpose</h4>
+        <p>The Trust Game evaluates levels of trust and reciprocity between individuals.</p>
+        <h4 id="structure-of-the-game-2">Structure of the Game</h4>
+        <ol>
+            <li>
+                <p>One player acts as the <strong>Investor</strong>, while the other is the <strong>Responder</strong>.
+                </p>
+            </li>
+            <li>
+                <p>The Investor chooses an amount <span class="math inline"><em>T</em></span> to send to the Responder,
+                    which is then multiplied by a factor <span class="math inline"><em>k</em></span> (typically <span
+                        class="math inline"><em>k</em> = 2</span> or <span class="math inline"><em>k</em> = 3</span>).
+                    <br /><span class="math display">Amount Received by Responder = <em>k</em> × <em>T</em></span><br />
+                </p>
+            </li>
+            <li>
+                <p>The Responder then decides how much of this multiplied amount <span
+                        class="math inline"><em>R</em></span> to send back to the Investor: <br /><span
+                        class="math display"><em>R</em> ≤ <em>k</em> × <em>T</em></span><br /></p>
+            </li>
+        </ol>
+        <h4 id="expected-outcomes-1">Expected Outcomes</h4>
+        <ul>
+            <li>
+                <p>Investors may send larger amounts in hopes of receiving more in return, reflecting trust.</p>
+            </li>
+            <li>
+                <p>Responders who receive trust may reciprocate, leading to a mutually beneficial situation, while
+                    betrayal (not sending back) characterizes distrust and risk.</p>
+            </li>
+        </ul>
+        <h3 id="comparative-analysis-of-the-games">Comparative Analysis of the Games</h3>
+        <h4 id="common-themes">Common Themes</h4>
+        <ul>
+            <li>
+                <p><strong>Altruism vs. Self-Interest:</strong> The Dictator Game assesses pure altruism, while the
+                    Ultimatum Game and Trust Game introduce reciprocity.</p>
+            </li>
+            <li>
+                <p><strong>Communication Effects:</strong> Allowing communication may significantly influence outcomes
+                    in Ultimatum and Trust Games, as it can create an emotional bond and trust between players.</p>
+            </li>
+            <li>
+                <p><strong>Public vs. Private Decisions:</strong> Decisions perceived in public scenarios (e.g.,
+                    classroom context) tend to be more conservative concerning the amounts given or offered.</p>
+            </li>
+        </ul>
+        <h3 id="conclusion-7">Conclusion</h3>
+        <p>These experimental games illustrate how individuals navigate social preferences influenced by perceived
+            fairness, trust, and potential outcomes. Further research may focus on refining these games to enhance
+            predictive power regarding real-world economic and social behaviors.</p>
+        <h1 id="notes-on-social-preferences">Notes on Social Preferences</h1>
+        <h3 id="introduction-to-social-preferences">Introduction to Social Preferences</h3>
+        <ul>
+            <li>
+                <p>Social preferences refer to how individuals consider the well-being of others in their
+                    decision-making processes.</p>
+            </li>
+            <li>
+                <p>The assumption of self-interest is prevalent in traditional economic models, where individuals
+                    primarily care about their own outcomes.</p>
+            </li>
+            <li>
+                <p>Key questions:</p>
+                <ul>
+                    <li>
+                        <p>What are social preferences?</p>
+                    </li>
+                    <li>
+                        <p>How do we measure social preferences?</p>
+                    </li>
+                    <li>
+                        <p>Are individuals genuinely altruistic, or do they behave nicely primarily for social image?
+                        </p>
+                    </li>
+                    <li>
+                        <p>Can policies change social preferences towards pro-social behavior?</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h3 id="measurement-of-social-preferences">Measurement of Social Preferences</h3>
+        <h4 id="experimental-games">Experimental Games</h4>
+        <p>Three commonly used games in behavioral economics:</p>
+        <ol>
+            <li>
+                <p><strong>Dictator Game</strong></p>
+                <ul>
+                    <li>
+                        <p>One player (the dictator) decides how to divide a certain amount of money between themselves
+                            and another player.</p>
+                    </li>
+                    <li>
+                        <p>Classic measure of generosity and social concern.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Ultimatum Game</strong></p>
+                <ul>
+                    <li>
+                        <p>One player proposes a split of a sum of money, and the second player can accept or reject the
+                            offer.</p>
+                    </li>
+                    <li>
+                        <p>If rejected, both players receive nothing.</p>
+                    </li>
+                    <li>
+                        <p>This game assesses fairness and the impact of perceived disrespect on decision-making.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Trust Game</strong></p>
+                <ul>
+                    <li>
+                        <p>The first player sends a certain amount of money to the second player, which is typically
+                            tripled.</p>
+                    </li>
+                    <li>
+                        <p>The second player then decides how much money to send back.</p>
+                    </li>
+                    <li>
+                        <p>This game measures trust and reciprocity in relationships.</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <h4 id="behavioral-insights-from-games">Behavioral Insights from Games</h4>
+        <ul>
+            <li>
+                <p>Typical outcomes indicate that players tend to offer around 40-50% in ultimatum games.</p>
+            </li>
+            <li>
+                <p>High offers lead to high acceptance rates, while low offers (below 20%) are often rejected due to
+                    fairness concerns.</p>
+            </li>
+            <li>
+                <p>Implication: Decisions reflect not only self-interest but also concerns about fairness and
+                    perceptions of the proposer’s intentions.</p>
+            </li>
+        </ul>
+        <h3 id="social-preferences-framework">Social Preferences Framework</h3>
+        <h4 id="types-of-social-preferences">Types of Social Preferences</h4>
+        <ol>
+            <li>
+                <p><strong>Distributional Preferences</strong></p>
+                <ul>
+                    <li>
+                        <p>Concern for the distribution of outcomes between individuals.</p>
+                    </li>
+                    <li>
+                        <p>Can be interested (considering personal outcomes) or disinterested (concerned about societal
+                            outcomes).</p>
+                    </li>
+                    <li>
+                        <p>Example utility functions: <br /><span class="math display">$$\begin{aligned}
+                                U_1 = \rho x_1 + (1 - \rho) x_2 &amp; \quad (\text{if } x_2 \geq x_1) \\
+                                U_1 = \sigma x_1 + (1 - \sigma) x_2 &amp; \quad (\text{if } x_2 &lt; x_1)
+                                \end{aligned}$$</span><br /></p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Face-Saving Concerns</strong></p>
+                <ul>
+                    <li>
+                        <p>Individuals care about maintaining a positive social image.</p>
+                    </li>
+                    <li>
+                        <p>Behavior is influenced by how actions are perceived by others.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Intentions-Based Preferences</strong></p>
+                <ul>
+                    <li>
+                        <p>Preferences based on how outcomes are generated, including concerns for reciprocity and
+                            procedural justice.</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <h4 id="experimental-findings-on-preferences">Experimental Findings on Preferences</h4>
+        <ul>
+            <li>
+                <p>Rho (<span class="math inline"><em>ρ</em></span>): Weight put on others’ outcomes when ahead.</p>
+            </li>
+            <li>
+                <p>Sigma (<span class="math inline"><em>σ</em></span>): Weight put on others’ outcomes when behind.</p>
+            </li>
+            <li>
+                <p>Generally, people are more generous (higher <span class="math inline"><em>ρ</em></span>) when they
+                    are ahead, and less concerned with inequality (lower <span class="math inline"><em>σ</em></span>)
+                    when behind.</p>
+            </li>
+        </ul>
+        <h3 id="discussion-of-generosity">Discussion of Generosity</h3>
+        <ul>
+            <li>
+                <p>Initial results indicate that individuals exhibit pro-social behavior in dictator and ultimatum
+                    games.</p>
+            </li>
+            <li>
+                <p>Additional considerations:</p>
+                <ul>
+                    <li>
+                        <p>People may give money or resources not only based on generosity but also to foster a
+                            favorable image.</p>
+                    </li>
+                    <li>
+                        <p>The context of giving (e.g., public vs. private) can significantly impact generosity.</p>
+                    </li>
+                    <li>
+                        <p>Individuals may behave differently when they anticipate repeated interactions with the same
+                            individuals.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Future discussions will explore the implications of social recognition in pro-social behavior and the
+                    potential for policy interventions to enhance social preferences.</p>
+            </li>
+        </ul>
+        <h3 id="conclusion-8">Conclusion</h3>
+        <ul>
+            <li>
+                <p>Understanding social preferences is critical for predicting behavior in economic contexts.</p>
+            </li>
+            <li>
+                <p>The interplay between self-interest and concern for others can lead to significant differences in
+                    economic outcomes, highlighting the importance of developing frameworks that account for social
+                    motivations.</p>
+            </li>
+        </ul>
+        <h1 id="lecture-notes-social-preferences">Lecture Notes: Social Preferences</h1>
+        <h3 id="social-preferences-1">Social Preferences</h3>
+        <h4 id="experimental-elicitation-of-preferences">Experimental Elicitation of Preferences</h4>
+        <ul>
+            <li>
+                <p>Review of methods used to elicit social preferences:</p>
+                <ul>
+                    <li>
+                        <p>Dictator Games</p>
+                    </li>
+                    <li>
+                        <p>Ultimatum Games</p>
+                    </li>
+                    <li>
+                        <p>Trust Games</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Observations:</p>
+                <ul>
+                    <li>
+                        <p>Apparent generosity in Dictator Games (about 20-25% shared).</p>
+                    </li>
+                    <li>
+                        <p>Ambiguity in motivations for giving: altruism vs. social image concerns.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h4 id="underlying-motivations">Underlying Motivations</h4>
+        <ul>
+            <li>
+                <p>Two primary motivations:</p>
+                <ul>
+                    <li>
+                        <p>Self-image concerns: wanting to feel good about oneself.</p>
+                    </li>
+                    <li>
+                        <p>Social image concerns: worrying about others’ perceptions.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Importance of understanding these motivations for policy implications.</p>
+            </li>
+            <li>
+                <p>Next lecture will include real-world examples and evidence.</p>
+            </li>
+        </ul>
+        <h3 id="key-experimental-evidence">Key Experimental Evidence</h3>
+        <h4 id="lazear-et-al.-costless-exit-in-dictator-game">Lazear et al. (Costless Exit in Dictator Game)</h4>
+        <ul>
+            <li>
+                <p>Experimental design with two treatments:</p>
+                <ul>
+                    <li>
+                        <p>Standard Dictator Game (split 10 euros).</p>
+                    </li>
+                    <li>
+                        <p>Exit option: either participate or receive a fixed payout (costless exit).</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Findings:</p>
+                <ul>
+                    <li>
+                        <p>Standard dictator game: average share = 0.87 euros.</p>
+                    </li>
+                    <li>
+                        <p>Costless exit option: average share = 0.58 euros.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Implication:</p>
+                <ul>
+                    <li>
+                        <p>Presence of costless exit reduced generosity; self-image concern prevails.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h4 id="andreo-ni-and-bernheim-excuses-for-selfishness">Andreo ni and Bernheim (Excuses for Selfishness)</h4>
+        <ul>
+            <li>
+                <p>Introduction of a computer’s role in decision-making.</p>
+            </li>
+            <li>
+                <p>Two scenarios:</p>
+                <ul>
+                    <li>
+                        <p>Dictator chooses; receives feedback on choices.</p>
+                    </li>
+                    <li>
+                        <p>Computer makes choice with probability <span class="math inline"><em>p</em></span>.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Outcomes:</p>
+                <ul>
+                    <li>
+                        <p>Responses changed based on the external perception of the decision.</p>
+                    </li>
+                    <li>
+                        <p>Higher likelihood of selfish choices when able to hide behind computer decisions.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Conclusions:</p>
+                <ul>
+                    <li>
+                        <p>Indicates that self-image concerns can drive behavior.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h4 id="evidence-on-intentions-based-preferences">Evidence on Intentions-Based Preferences</h4>
+        <ul>
+            <li>
+                <p>Discussion on the importance of intention, not just outcome.</p>
+            </li>
+            <li>
+                <p>Example: A boy keeping a larger apple but not being viewed negatively if intentions are clear.</p>
+            </li>
+        </ul>
+        <h3 id="utility-functions">Utility Functions</h3>
+        <h4 id="incorporating-self-and-social-image">Incorporating Self and Social Image</h4>
+        <ul>
+            <li>
+                <p>Proposed utility function: <br /><span
+                        class="math display"><em>U</em>(<em>x</em>, <em>x</em>′) = <em>v</em>(<em>x</em>) + <em>ρ</em><em>v</em>(<em>x</em>′)</span><br />
+                    where <span class="math inline"><em>x</em></span> is self-payoff and <span
+                        class="math inline"><em>x</em>′</span> is other-person’s payoff.</p>
+            </li>
+        </ul>
+        <h3 id="impressions-on-altruism-and-retribution">Impressions on Altruism and Retribution</h3>
+        <ul>
+            <li>
+                <p>Societal norms often determine how decisions are made:</p>
+                <ul>
+                    <li>
+                        <p>Recognition of social image can lead to avoiding selfish decisions.</p>
+                    </li>
+                    <li>
+                        <p>Existence of moral wiggle room allows individuals to prioritize self-image over altruism.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h3 id="field-evidence-and-next-steps">Field Evidence and Next Steps</h3>
+        <ul>
+            <li>
+                <p>Brief discussion of upcoming studies and experiments.</p>
+            </li>
+            <li>
+                <p>Expected focus on the malleability of social preferences and potential for policy design.</p>
+            </li>
+        </ul>
+        <h3 id="conclusion-9">Conclusion</h3>
+        <ul>
+            <li>
+                <p>Understanding the complexities of social preferences is crucial for designing effective policies.</p>
+            </li>
+            <li>
+                <p>Future lectures will build on today’s findings with field evidence.</p>
+            </li>
+        </ul>
+        <h1 id="lecture-notes-on-social-preferences">Lecture Notes on Social Preferences</h1>
+        <h3 id="introduction-4">Introduction</h3>
+        <p>This lecture is focused on social preferences, providing a more uplifting examination compared to previous
+            lectures. The discussion will address the following topics:</p>
+        <ul>
+            <li>
+                <p>Social preferences in the workplace</p>
+            </li>
+            <li>
+                <p>The impact of pay inequality on productivity</p>
+            </li>
+            <li>
+                <p>The influence of policies on pro-sociality</p>
+            </li>
+            <li>
+                <p>The underestimation of the benefits of pro-sociality</p>
+            </li>
+        </ul>
+        <h3 id="social-preferences-at-the-workplace">Social Preferences at the Workplace</h3>
+        <h4 id="relative-pay-and-productivity">Relative Pay and Productivity</h4>
+        <p>Bandiera et al. conducted a study on fruit farms in the UK, focusing on the effects of relative pay on
+            productivity. The study distinguished between:</p>
+        <ul>
+            <li>
+                <p>Piece rates (payment per unit of output)</p>
+            </li>
+            <li>
+                <p>Relative pay (payment based on productivity compared to that of others)</p>
+            </li>
+        </ul>
+        <h5 id="findings">Findings</h5>
+        <p>The introduction of relative pay led to unexpected productivity outcomes:</p>
+        <ul>
+            <li>
+                <p>Workers displayed a strong increase in productivity when compensated with piece rates, showing a
+                    better than 50% increase compared to relative pay schemes.</p>
+            </li>
+            <li>
+                <p>Under relative pay schemes, productivity stagnated at about 5 kilograms per hour.</p>
+            </li>
+            <li>
+                <p>The study highlighted that reduced effort among workers might stem from social preferences; when
+                    workers anticipate that high effort may disadvantage their peers, they may reduce their output
+                    voluntarily.</p>
+            </li>
+        </ul>
+        <h4 id="morale-effects-of-pay-inequality">Morale Effects of Pay Inequality</h4>
+        <p>Breza et al. examined low-skill manufacturing workers in rural India to explore how perceived pay inequality
+            affects morale and productivity:</p>
+        <ul>
+            <li>
+                <p>Workers expressed reduced cooperation and performance when they perceived unfair pay disparities.</p>
+            </li>
+            <li>
+                <p>Even high-wage workers exhibited lower productivity when surrounded by lower-wage colleagues compared
+                    to a compressed wage group.</p>
+            </li>
+        </ul>
+        <h3 id="policies-to-increase-pro-sociality">Policies to Increase Pro-Sociality</h3>
+        <h4 id="the-contact-hypothesis">The Contact Hypothesis</h4>
+        <p>This hypothesis posits that exposing individuals to diverse groups can reduce prejudice and increase
+            pro-social behavior. This was illustrated through:</p>
+        <ul>
+            <li>
+                <p>Gautam Rao’s study involving rich and poor children in Delhi, which found increased generosity among
+                    rich students exposed to their poorer peers.</p>
+            </li>
+            <li>
+                <p>Evidence from sports leagues in India, which increased integration across castes.</p>
+            </li>
+        </ul>
+        <h4 id="additional-studies">Additional Studies</h4>
+        <h5 id="roommate-interactions">Roommate Interactions</h5>
+        <p>Corno et al. explored the impact of interracial interactions among college roommates in South Africa, leading
+            to:</p>
+        <ul>
+            <li>
+                <p>Reduced stereotypes and improved friendships among races.</p>
+            </li>
+            <li>
+                <p>Enhanced academic performance and lower dropout rates among disadvantaged groups.</p>
+            </li>
+        </ul>
+        <h3 id="underestimating-the-benefits-of-pro-sociality">Underestimating the Benefits of Pro-Sociality</h3>
+        <p>Kumar and Epley’s research highlighted how people might underestimate the positive impact of being generous:
+        </p>
+        <ul>
+            <li>
+                <p>When predicting others’ reactions to acts of kindness (e.g., gratitude letters), individuals often
+                    assume negative feedback where none exists.</p>
+            </li>
+        </ul>
+        <h5 id="findings-1">Findings</h5>
+        <p>Key results indicated:</p>
+        <ul>
+            <li>
+                <p>Participants generally underestimated the positive reaction receivers would have towards their
+                    gratitude letters.</p>
+            </li>
+            <li>
+                <p>The research showed that the acts of kindness led to greater happiness in recipients than
+                    anticipated.</p>
+            </li>
+        </ul>
+        <h3 id="conclusion-10">Conclusion</h3>
+        <p>These findings suggest significant implications for understanding social preferences:</p>
+        <ul>
+            <li>
+                <p>Social preferences are deeply rooted in individual interactions and can be manipulated through
+                    exposure to diverse groups.</p>
+            </li>
+            <li>
+                <p>Relative pay dynamics and perceptions of fairness are crucial in designing effective workplace
+                    incentive schemes.</p>
+            </li>
+            <li>
+                <p>Understanding and correcting biases regarding the impact of pro-social behavior can enhance
+                    individual and collective well-being.</p>
+            </li>
+        </ul>
+        <h1 id="lecture-notes-attention-in-behavioral-economics">Lecture Notes: Attention in Behavioral Economics</h1>
+        <h3 id="introduction-5">Introduction</h3>
+        <p>In this lecture, we explore the concept of attention in the context of decision-making within the framework
+            of behavioral economics. We start with a review of preferences discussed in previous lectures, including:
+        </p>
+        <ul>
+            <li>
+                <p>Time preferences</p>
+            </li>
+            <li>
+                <p>Risk preferences</p>
+            </li>
+            <li>
+                <p>Social preferences</p>
+            </li>
+        </ul>
+        <p>In particular, we focus on how individuals make decisions based on their environment, information, and
+            learning mechanisms.</p>
+        <h3 id="attention-and-decision-making">Attention and Decision-Making</h3>
+        <p>Attention plays a fundamental role in how people gather information and make choices. Critical questions
+            include:</p>
+        <ul>
+            <li>
+                <p>How do we decide what to attend to?</p>
+            </li>
+            <li>
+                <p>What factors influence our learning from new information?</p>
+            </li>
+        </ul>
+        <h4 id="change-blindness">Change Blindness</h4>
+        <p>We introduce the concept of <strong>change blindness</strong>, where individuals fail to notice significant
+            changes in their environment.</p>
+        <ul>
+            <li>
+                <p>Example: Participants often miss a change in a bank teller when distracted.</p>
+            </li>
+            <li>
+                <p>The gorilla experiment illustrates how focusing on specific tasks (e.g., counting passes) can lead to
+                    missing obvious stimuli (e.g., a gorilla walking through the scene).</p>
+            </li>
+        </ul>
+        <h4 id="dichotic-listening-experiments">Dichotic Listening Experiments</h4>
+        <p>The study of dichotic listening experiments from 1958 demonstrates that:</p>
+        <ul>
+            <li>
+                <p>Individuals can effectively focus on one auditory channel but often fail to recall information from
+                    the unattended channel.</p>
+            </li>
+            <li>
+                <p>Attention is limited, which impacts memory retention.</p>
+            </li>
+        </ul>
+        <h3 id="factors-affecting-attention">Factors Affecting Attention</h3>
+        <p>Several factors can affect an individual’s attention:</p>
+        <ul>
+            <li>
+                <p>Physical environment (noise, temperature).</p>
+            </li>
+            <li>
+                <p>Distractions including social media and outside worries.</p>
+            </li>
+            <li>
+                <p>Social status, which can influence logics of attention and response.</p>
+            </li>
+            <li>
+                <p>Sleep deprivation and general stress levels.</p>
+            </li>
+        </ul>
+        <h3 id="rational-inattention-models">Rational Inattention Models</h3>
+        <p>Across many contexts, rational inattention models suggest that individuals may neglect important information
+            due to limited attention resources. However:</p>
+        <ul>
+            <li>
+                <p>If the costs of inattention exceed the benefits, individuals will adjust their focus accordingly.</p>
+            </li>
+            <li>
+                <p>There exists a conceptual paradox where critical information is often overlooked, leading to
+                    potential welfare losses.</p>
+            </li>
+        </ul>
+        <h4 id="chetty-et-al.-on-inattention-to-taxes">Chetty et al. on Inattention to Taxes</h4>
+        <p>The research by Raj Chetty and colleagues investigates consumer inattention regarding sales taxes:</p>
+        <ul>
+            <li>
+                <p>Sales taxes are perceived through price tags at points of purchase, which may not register until
+                    checkout.</p>
+            </li>
+            <li>
+                <p>Data from grocery stores shows significant disparities in demand when making taxes salient versus
+                    non-salient.</p>
+            </li>
+        </ul>
+        <p>The perceived value of a good, <span class="math inline"><em>V</em></span>, can be decomposed into:
+            <br /><span class="math display"><em>V</em> = <em>v</em> + <em>o</em></span><br /> where <span
+                class="math inline"><em>v</em></span> is the visible/salient component and <span
+                class="math inline"><em>o</em></span> is the opaque/invisible component.</p>
+        <p>For inattentive consumers, the perceived value, <span class="math inline"><em>V̂</em></span>, is given by:
+            <br /><span class="math display"><em>V̂</em> = <em>v</em> + (1 − <em>θ</em>)<em>o</em></span><br /> where
+            <span class="math inline"><em>θ</em></span> measures the degree of attention to the opaque component.</p>
+        <h5 id="demand-response-to-taxes">Demand Response to Taxes</h5>
+        <p>Chetty et al. analyzed how demand for goods responds when sales tax information is rendered evident. Their
+            findings support that: <br /><span class="math display">$$\Delta \log D = \frac{\theta \cdot
+                t_p}{\eta}$$</span><br /> where <span class="math inline"><em>D</em></span> is demand, <span
+                class="math inline"><em>t</em><sub><em>p</em></sub></span> is the sales tax, and <span
+                class="math inline"><em>η</em></span> is price elasticity. The estimated degree of inattention (<span
+                class="math inline"><em>θ</em></span>) is significant as it quantifies how consumers respond to the
+            introduction of sales taxes.</p>
+        <h3 id="proving-inattention">Proving Inattention</h3>
+        <p>To demonstrate the impact of inattention, Chetty et al. utilized a controlled experiment:</p>
+        <ul>
+            <li>
+                <p>By highlighting the sales tax on price tags, they gauged the consumer response.</p>
+            </li>
+            <li>
+                <p>The difference-in-differences estimator was used to compare treated groups with control groups.</p>
+            </li>
+        </ul>
+        <p>The findings indicated that consumers are considerably inattentive regarding sales taxes compared to visible
+            price changes.</p>
+        <h3 id="learning-by-noticing-schwartzstein-model">Learning by Noticing: Schwartzstein Model</h3>
+        <p>Building on the concept of rational inattention, Schwartzstein’s model illustrates how beliefs affect
+            attention:</p>
+        <ul>
+            <li>
+                <p>If consumers lack a relevant theory about a product, they may not pay attention to important
+                    information.</p>
+            </li>
+            <li>
+                <p>Case Study: Seaweed farmers in Indonesia failed to recognize pod size as a factor affecting yield,
+                    ultimately leading to suboptimal farming practices.</p>
+            </li>
+            <li>
+                <p>The importance of emphasizing experimental learning and providing explicit data to inform better
+                    decision-making.</p>
+            </li>
+        </ul>
+        <h3 id="conclusion-11">Conclusion</h3>
+        <p>The lecture integrates the evidence supporting the systematic existence of inattention in decision-making,
+            with a focus on taxes, consumer behavior, and learning failures. Understanding inattention can provide
+            insights into:</p>
+        <ul>
+            <li>
+                <p>Consumer welfare implications.</p>
+            </li>
+            <li>
+                <p>The role of public policy in promoting more informed decision-making.</p>
+            </li>
+        </ul>
+        <h1 id="lecture-notes-utility-from-beliefs">Lecture Notes: Utility from Beliefs</h1>
+        <h3 id="overview">Overview</h3>
+        <p>In this lecture, we discuss the concept of utility derived from beliefs, also addressing the implications of
+            attention and systematic deviations from optimal belief formation and information acquisition.</p>
+        <h4 id="key-concepts-1">Key Concepts</h4>
+        <ol>
+            <li>
+                <p><strong>Utility from Beliefs:</strong> People derive direct utility from their beliefs about
+                    themselves, the world, and future events.</p>
+            </li>
+            <li>
+                <p><strong>Anticipatory Utility:</strong> Utility can stem from looking forward to future positive
+                    events or outcomes.</p>
+            </li>
+            <li>
+                <p><strong>Ego Utility:</strong> Individuals derive utility from thinking positively about themselves
+                    (e.g., intelligence or appearance).</p>
+            </li>
+        </ol>
+        <h3 id="attention-and-information-acquisition">Attention and Information Acquisition</h3>
+        <ul>
+            <li>
+                <p>Attention is limited; individuals may miss critical information due to inattention or beliefs about
+                    what is important.</p>
+            </li>
+            <li>
+                <p>Example: Many people underestimate taxes in purchases because they do not see total costs clearly.
+                </p>
+            </li>
+        </ul>
+        <h4 id="systematic-deviations-in-beliefs">Systematic Deviations in Beliefs</h4>
+        <p>People may:</p>
+        <ol>
+            <li>
+                <p>Misinterpret the importance of certain information.</p>
+            </li>
+            <li>
+                <p>Suffer from cognitive biases leading to incorrect beliefs.</p>
+            </li>
+        </ol>
+        <h3 id="utility-functions-traditional-vs.-beliefs">Utility Functions: Traditional vs. Beliefs</h3>
+        <p>Economists typically define utility functions over tangible outcomes (money, health, etc.). However, utility
+            can also come from beliefs about these outcomes:</p>
+        <p><br /><span
+                class="math display"><em>U</em>(<em>x</em>, <em>b</em>) = <em>f</em>(<em>x</em>) + <em>g</em>(<em>b</em>)</span><br />
+        </p>
+        <p>Where:</p>
+        <ul>
+            <li>
+                <p><span class="math inline"><em>U</em></span> is the overall utility,</p>
+            </li>
+            <li>
+                <p><span class="math inline"><em>x</em></span> represents outcomes,</p>
+            </li>
+            <li>
+                <p><span class="math inline"><em>b</em></span> represents beliefs,</p>
+            </li>
+            <li>
+                <p><span class="math inline"><em>f</em>(<em>x</em>)</span> describes utility derived from outcomes,</p>
+            </li>
+            <li>
+                <p><span class="math inline"><em>g</em>(<em>b</em>)</span> describes utility derived from beliefs.</p>
+            </li>
+        </ul>
+        <h3 id="anticipatory-utility">Anticipatory Utility</h3>
+        <h4 id="definition-2">Definition</h4>
+        <p>Anticipatory utility refers to the utility gained from anticipating future events, both positive and
+            negative:</p>
+        <ul>
+            <li>
+                <p>Individuals derive utility not only from outcomes but from the anticipation and emotions tied to
+                    future experiences.</p>
+            </li>
+        </ul>
+        <h4 id="effects-on-decision-making">Effects on Decision-Making</h4>
+        <p>1. Timing of Experiences:</p>
+        <ul>
+            <li>
+                <p>Individuals may prefer to delay positive experiences to maximize anticipatory utility.</p>
+            </li>
+        </ul>
+        <p>2. Information Gathering:</p>
+        <ul>
+            <li>
+                <p>Anticipatory utility can lead individuals to avoid acquiring negative information (e.g., health
+                    screening).</p>
+            </li>
+        </ul>
+        <h3 id="loewensteins-experiment-on-anticipatory-utility">Loewenstein’s Experiment on Anticipatory Utility</h3>
+        <ul>
+            <li>
+                <p>Participants were asked about their willingness to pay for experiences (e.g., receiving a kiss from a
+                    movie star or avoiding an electric shock) scheduled for varying times in the future.</p>
+            </li>
+        </ul>
+        <h4 id="findings-2">Findings</h4>
+        <ol>
+            <li>
+                <p>Willingness to pay for a kiss peaked at a certain delay, highlighting anticipatory utility effects.
+                </p>
+            </li>
+            <li>
+                <p>Willingness to pay to avoid an electric shock was highest when it was immediate, indicating a desire
+                    to remove negative anticipation.</p>
+            </li>
+        </ol>
+        <h4 id="implications-of-anticipatory-utility">Implications of Anticipatory Utility</h4>
+        <p>The implications can be summed up as: <br /><span
+                class="math display"><em>E</em>[<em>U</em>] = <em>p</em> ⋅ <em>U</em>(<em>x</em><sub><em>A</em></sub>) + (1 − <em>p</em>) ⋅ <em>U</em>(<em>x</em><sub><em>B</em></sub>)</span><br />
+            Where:</p>
+        <ul>
+            <li>
+                <p><span class="math inline"><em>E</em>[<em>U</em>]</span> is the expected utility,</p>
+            </li>
+            <li>
+                <p><span class="math inline"><em>p</em></span> is the probability of the positive event,</p>
+            </li>
+            <li>
+                <p><span class="math inline"><em>U</em>(<em>x</em><sub><em>A</em></sub>)</span> is the utility from the
+                    event occurring,</p>
+            </li>
+            <li>
+                <p><span class="math inline"><em>U</em>(<em>x</em><sub><em>B</em></sub>)</span> is the utility from the
+                    event not occurring.</p>
+            </li>
+        </ul>
+        <h3 id="study-on-genetic-testing-oster-et-al.">Study on Genetic Testing (Oster et al.)</h3>
+        <ul>
+            <li>
+                <p>Low rates of genetic testing for Huntington’s Disease were observed, indicating that many individuals
+                    avoided seeking information.</p>
+            </li>
+            <li>
+                <p>Participants tended to overestimate their health status, displaying anticipatory utility behavior.
+                </p>
+            </li>
+        </ul>
+        <h4 id="key-observations">Key Observations</h4>
+        <ol>
+            <li>
+                <p>Testing rates remain low despite high potential benefits of obtaining certain information.</p>
+            </li>
+            <li>
+                <p>Subjective probability of having the disease was generally lower than the actual probability,
+                    revealing an optimism bias.</p>
+            </li>
+        </ol>
+        <h3 id="conclusion-12">Conclusion</h3>
+        <p>The concept of utility from beliefs plays a critical role in understanding how people make decisions
+            regarding future outcomes and the information they choose to acquire. Individuals may intentionally avoid
+            information that could lead to negative anticipatory utility, impacting their health and happiness over
+            time.</p>
+        <h1 id="lecture-notes-anticipatory-utility-and-information-acquisition">Lecture Notes: Anticipatory Utility and
+            Information Acquisition</h1>
+        <h3 id="introduction-6">Introduction</h3>
+        <p>In this lecture, we discussed anticipatory utility, which is the utility derived from beliefs about future
+            events and how these beliefs influence consumer behavior, particularly in terms of consumption timing and
+            information acquisition.</p>
+        <h3 id="anticipatory-utility-1">Anticipatory Utility</h3>
+        <h4 id="utility-from-beliefs">Utility from Beliefs</h4>
+        <p>Anticipatory utility affects how individuals choose to engage in activities based on their expectations of
+            future outcomes, providing a motivation to pursue positively anticipated events.</p>
+        <h4 id="information-acquisition">Information Acquisition</h4>
+        <p>When individuals derive utility from beliefs, it affects their motivation to seek or avoid information,
+            particularly negative information. For example, individuals at risk of Huntington’s disease may avoid
+            testing due to the fear of confirming a negative diagnosis, thereby maintaining a facade of health.</p>
+        <h3 id="modeling-information-and-beliefs">Modeling Information and Beliefs</h3>
+        <p>We discussed a simple model where individuals have a constraint to maintain accurate beliefs about
+            information received. The key conditions for individuals wanting to gather information are summarized in the
+            following utility function:</p>
+        <p><br /><span class="math display"><em>f</em>(<em>p</em>)</span><br /></p>
+        <p>Where:</p>
+        <ul>
+            <li>
+                <p><span class="math inline"><em>f</em>(<em>p</em>)</span> represents the utility derived from beliefs.
+                </p>
+            </li>
+            <li>
+                <p>If <span class="math inline"><em>f</em></span> is concave, individuals are information-averse.</p>
+            </li>
+            <li>
+                <p>If <span class="math inline"><em>f</em></span> is convex, individuals are information-loving.</p>
+            </li>
+        </ul>
+        <p>The decision to gather information relies on the character of <span
+                class="math inline"><em>f</em>(<em>p</em>)</span>.</p>
+        <h4 id="manipulating-beliefs">Manipulating Beliefs</h4>
+        <p>If individuals can manipulate beliefs, they might favor believing they have a higher probability (<span
+                class="math inline"><em>p</em> = 1</span>) of being healthy, especially if no consequences exist for
+            self-deception.</p>
+        <h3 id="overoptimism-and-decision-making">Overoptimism and Decision Making</h3>
+        <p>Overoptimism about future events may lead to higher momentary utility but may distort decision-making
+            adversely in the long run.</p>
+        <h4 id="empirical-evidence-1">Empirical Evidence</h4>
+        <p>Research shows that individuals often believe they are less likely to face negative outcomes (e.g., health
+            issues, divorce) compared to average populations. Examples include:</p>
+        <ul>
+            <li>
+                <p>99% of drivers consider themselves better than average drivers.</p>
+            </li>
+            <li>
+                <p>Small business owners overestimate their chances of success.</p>
+            </li>
+            <li>
+                <p>Smokers acknowledge health risks but remain unconvinced it applies to them.</p>
+            </li>
+        </ul>
+        <h3 id="understanding-biases-in-probability-judgments">Understanding Biases in Probability Judgments</h3>
+        <h4 id="heuristics-and-biases-overview">Heuristics and Biases Overview</h4>
+        <p>Kahneman and Tversky’s work has established that individuals employ heuristics, or shortcuts, to simplify
+            complex decision-making processes. This leads to systematic biases:</p>
+        <h4 id="examples-of-heuristics">Examples of Heuristics</h4>
+        <p><strong>1. Representativeness Heuristic:</strong> Individuals tend to judge probabilities by how much they
+            resemble existing prototypes.</p>
+        <ul>
+            <li>
+                <p>Example: Participants believed it more probable that Linda is a bank teller and a feminist (Statement
+                    8) rather than just a bank teller (Statement 6), despite the logic suggesting otherwise.</p>
+            </li>
+        </ul>
+        <p><strong>2. Availability Heuristic:</strong> The probability judgment of an event is influenced by how easily
+            instances can be recalled from memory.</p>
+        <ul>
+            <li>
+                <p>Example: People overestimate the frequency of homicide compared to suicide based on recent media
+                    exposure.</p>
+            </li>
+        </ul>
+        <p><strong>3. Base Rate Neglect:</strong> Individuals often ignore the base rate information when making
+            probability judgments, focusing instead on specific information such as test accuracy or event descriptions.
+            <br /><span class="math display">$$P(H | T) = \frac{P(T | H) P(H)}{P(T)}$$</span><br /> Where:</p>
+        <ul>
+            <li>
+                <p><span class="math inline"><em>P</em>(<em>H</em>|<em>T</em>)</span> is the probability of having a
+                    condition given a positive test result.</p>
+            </li>
+            <li>
+                <p><span class="math inline"><em>P</em>(<em>T</em>|<em>H</em>)</span> is the probability of a positive
+                    test result when conditioned on actually having the disease.</p>
+            </li>
+            <li>
+                <p><span class="math inline"><em>P</em>(<em>H</em>)</span> is the base rate of the disease within the
+                    population.</p>
+            </li>
+        </ul>
+        <h4 id="conclusion-and-implications">Conclusion and Implications</h4>
+        <p>Understanding these biases and heuristics can inform better decision-making strategies in various fields by
+            emphasizing the importance of accurate information dissemination and how to counteract biases effectively.
+        </p>
+        <h1 id="lecture-notes-on-state-dependent-preferences-projection-bias-and-attribution-bias">Lecture Notes on
+            State-Dependent Preferences, Projection Bias, and Attribution Bias</h1>
+        <h3 id="introduction-7">Introduction</h3>
+        <p>This lecture will cover:</p>
+        <ul>
+            <li>
+                <p>State-dependent preferences</p>
+            </li>
+            <li>
+                <p>Preference changes</p>
+            </li>
+            <li>
+                <p>Projection and attribution bias</p>
+            </li>
+        </ul>
+        <p>We will focus mainly on how people’s preferences can change in predictable and sometimes unpredictable ways
+            over time.</p>
+        <h3 id="state-dependent-preferences">State-Dependent Preferences</h3>
+        <p>People’s preferences can change based on their physiological or psychological states, for example:</p>
+        <ul>
+            <li>
+                <p>Hunger</p>
+            </li>
+            <li>
+                <p>Pain</p>
+            </li>
+            <li>
+                <p>Mood</p>
+            </li>
+        </ul>
+        <p>These state-dependent preferences can cause significant deviations in decision-making.</p>
+        <h4 id="types-of-preference-changes">Types of Preference Changes</h4>
+        <p>1. <strong>Short-term Temporary Fluctuations</strong></p>
+        <ul>
+            <li>
+                <p>Example: When hungry, people desire different foods than when satiated.</p>
+            </li>
+        </ul>
+        <p>2. <strong>Long-term Systematic Changes</strong></p>
+        <ul>
+            <li>
+                <p>Caused by personal choices (e.g., addiction) or natural aging.</p>
+            </li>
+        </ul>
+        <p>3. <strong>Adaptation</strong></p>
+        <ul>
+            <li>
+                <p>Gradual return to baseline preferences after significant changes (e.g., lottery winnings).</p>
+            </li>
+        </ul>
+        <h3 id="evidence-of-preference-changes">Evidence of Preference Changes</h3>
+        <h4 id="experimental-insights">Experimental Insights</h4>
+        <h5 id="minnesota-starvation-experiment">Minnesota Starvation Experiment</h5>
+        <ul>
+            <li>
+                <p>Individuals who were starved exhibited changes in behavior and preferences, showing a heightened
+                    interest in food.</p>
+            </li>
+            <li>
+                <p>Hunger caused preference reversals, e.g., sudden interest in food-related purchases.</p>
+            </li>
+        </ul>
+        <h5 id="shopping-on-an-empty-stomach">Shopping on an Empty Stomach</h5>
+        <ul>
+            <li>
+                <p>Nisbett and Kanouse (1969) showed evidence that shopping while hungry leads to higher consumption of
+                    food, especially junk food.</p>
+            </li>
+        </ul>
+        <p><br /><span
+                class="math display">Preferences<sub>hungry</sub> &gt; Preferences<sub>satiated</sub></span><br /></p>
+        <h5 id="sleep-deprivation">Sleep Deprivation</h5>
+        <ul>
+            <li>
+                <p>Lack of sleep impairs self-control and can lead to unhealthy choices.</p>
+            </li>
+        </ul>
+        <h3 id="projection-bias">Projection Bias</h3>
+        <h4 id="definition-3">Definition</h4>
+        <p>Projection bias refers to people’s tendency to project their current preferences onto their future
+            preferences, underestimating future changes.</p>
+        <ul>
+            <li>
+                <p>People understand the direction of change but not its magnitude.</p>
+            </li>
+        </ul>
+        <h4 id="mathematical-representation">Mathematical Representation</h4>
+        <p>Let true utility at time <span class="math inline"><em>t</em></span> depend on consumption <span
+                class="math inline"><em>c</em><sub><em>t</em></sub></span> and state <span
+                class="math inline"><em>s</em><sub><em>t</em></sub></span>: <br /><span
+                class="math display"><em>u</em>(<em>c</em><sub><em>t</em></sub>, <em>s</em><sub><em>t</em></sub>)</span><br />
+        </p>
+        <p>The predicted future utility: <br /><span
+                class="math display"><em>û</em>(<em>c</em><sub><em>τ</em></sub>, <em>s</em><sub><em>τ</em></sub>) = (1 − <em>α</em>)<em>u</em>(<em>c</em><sub><em>τ</em></sub>, <em>s</em><sub><em>τ</em></sub>) + <em>α</em><em>u</em>(<em>c</em><sub><em>τ</em></sub>, <em>s</em><sub><em>t</em></sub>)</span><br />
+            where <span class="math inline"><em>α</em></span> is the degree of projection bias.</p>
+        <h4 id="applications-of-projection-bias">Applications of Projection Bias</h4>
+        <ul>
+            <li>
+                <p><strong>Addiction:</strong> Individuals underestimate the future craving for substances like
+                    nicotine.</p>
+            </li>
+            <li>
+                <p><strong>Depression:</strong> Depressed individuals project their current state onto their past and
+                    future experiences, leading to a lack of hope.</p>
+            </li>
+        </ul>
+        <h3 id="attribution-bias">Attribution Bias</h3>
+        <p>Attribution bias is a backward-looking bias where past states overly influence evaluations.</p>
+        <h4 id="examples-1">Examples</h4>
+        <ul>
+            <li>
+                <p>The tendency to rate a restaurant favorably if the meal was experienced while hungry.</p>
+            </li>
+            <li>
+                <p>Recommending movies viewed when tired results in negative reviews.</p>
+            </li>
+        </ul>
+        <h3 id="conclusions-2">Conclusions</h3>
+        <ul>
+            <li>
+                <p>State-dependent preferences can substantially affect decision-making and choices in various
+                    scenarios.</p>
+            </li>
+            <li>
+                <p>Projection bias demonstrates systematic errors in predicting future preferences based on current
+                    emotional or physical states.</p>
+            </li>
+            <li>
+                <p>Attribution bias influences how past experiences mold current evaluations.</p>
+            </li>
+        </ul>
+        <h1 id="lecture-18-gender-discrimination-and-identity">Lecture 18: Gender Discrimination and Identity</h1>
+        <h3 id="introduction-8">Introduction</h3>
+        <ul>
+            <li>
+                <p>Overview of gender discrimination, identity, and the implications of the gender gap.</p>
+            </li>
+            <li>
+                <p>Importance of studying gender differences:</p>
+                <ul>
+                    <li>
+                        <p>Equality, fairness, and justice issues.</p>
+                    </li>
+                    <li>
+                        <p>Efficiency argument: Discrimination limits productivity.</p>
+                    </li>
+                    <li>
+                        <p>Understanding the formation of preferences and personality through gender studies.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h3 id="the-gender-gap-in-wages">The Gender Gap in Wages</h3>
+        <ul>
+            <li>
+                <p>Women earn less money than men for equal work.</p>
+            </li>
+            <li>
+                <p>Bald-summary based on Claudia Goldin’s work. <br /><span class="math display">$$\text{Gender Gap} =
+                        \frac{\text{Average Female Earnings} - \text{Average Male Earnings}}{\text{Average Male
+                        Earnings}}$$</span><br /></p>
+            </li>
+            <li>
+                <p>Observations from 2010:</p>
+                <ul>
+                    <li>
+                        <p>Mean annual earnings ratio = 0.72</p>
+                    </li>
+                    <li>
+                        <p>Median annual earnings ratio = 0.77</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Key factors for improvement:</p>
+                <ul>
+                    <li>
+                        <p>Reduction in gender gap in education.</p>
+                    </li>
+                    <li>
+                        <p>Technological innovations aiding women’s workforce participation.</p>
+                    </li>
+                    <li>
+                        <p>Labor demand shifts towards services.</p>
+                    </li>
+                    <li>
+                        <p>Increased competition lowering discrimination.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h3 id="technological-solutions-and-gender-gap">Technological Solutions and Gender Gap</h3>
+        <ul>
+            <li>
+                <p>Examining Goldin and Rouse’s paper on blind auditions in orchestras.</p>
+            </li>
+            <li>
+                <p>Impact of blind auditions on improving gender ratios.</p>
+                <ul>
+                    <li>
+                        <p>Blind auditions led to more female musicians being recruited.</p>
+                    </li>
+                    <li>
+                        <p>Yet, disparities remain in representation among conductors and directors.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h3 id="women-in-economics">Women in Economics</h3>
+        <ul>
+            <li>
+                <p>Discussing gender representation in economics and the lack of progress for female faculty.</p>
+            </li>
+            <li>
+                <p>Lundberg and Stearns (2019) observed trends in gender in economics academia.</p>
+            </li>
+        </ul>
+        <h3 id="beliefs-and-updating">Beliefs and Updating</h3>
+        <ul>
+            <li>
+                <p>Examining beliefs and skills in the workplace.</p>
+            </li>
+            <li>
+                <p>Bertrand and Mullainathan’s (2004) study on name-based discrimination using job applications.</p>
+            </li>
+            <li>
+                <p>Statistical vs. case-based discrimination:</p>
+                <ul>
+                    <li>
+                        <p>Case-based: preference for certain types of applicants.</p>
+                    </li>
+                    <li>
+                        <p>Statistical: belief that one group will perform better than another based on past outcomes.
+                        </p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h3 id="gender-identity-norms">Gender Identity Norms</h3>
+        <ul>
+            <li>
+                <p>Akerlof and Kranton (2000): identity considerations in economic models.</p>
+            </li>
+            <li>
+                <p>Gender identity norms and their implications on earnings.</p>
+                <ul>
+                    <li>
+                        <p>Men prefer to earn more than their wives.</p>
+                    </li>
+                    <li>
+                        <p>Consequential social dynamics leading to divorce or underreporting of women’s ambition.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h3 id="child-penalties-in-earnings">Child Penalties in Earnings</h3>
+        <ul>
+            <li>
+                <p>Exploring Kleven et al. on the impact of motherhood on earnings. <br /><span
+                        class="math display">$$\text{Child Penalty} = \frac{\text{Female Earnings
+                        Post-Childbirth}}{\text{Baseline Earnings}}$$</span><br /></p>
+            </li>
+        </ul>
+        <h3 id="non-promotable-tasks-and-gender-differences">Non-promotable Tasks and Gender Differences</h3>
+        <ul>
+            <li>
+                <p>Vesterlund et al.’s study on how men and women accept tasks.</p>
+            </li>
+            <li>
+                <p>Findings revealed women often say yes to non-promotable tasks more frequently than men.</p>
+            </li>
+        </ul>
+        <h3 id="conclusion-13">Conclusion</h3>
+        <ul>
+            <li>
+                <p>Gender wage gaps persist despite improvements.</p>
+            </li>
+            <li>
+                <p>Biases in beliefs and identity norms contribute to wage and promotion disparities.</p>
+            </li>
+            <li>
+                <p>Importance of addressing biases in hiring and promotion practices.</p>
+            </li>
+        </ul>
+        <h3 id="future-readings">Future Readings</h3>
+        <ul>
+            <li>
+                <p>Lecture 19: Frames, defaults, nudges, and mental accounting (Madrian and Shea, 2001).</p>
+            </li>
+            <li>
+                <p>Lecture 20: Malleability and inaccessibility of preferences (Ariely, 2003).</p>
+            </li>
+        </ul>
+        <h1 id="lecture-19-gender-discrimination-identity-and-nudges-in-decision-making">Lecture 19: Gender
+            Discrimination, Identity, and Nudges in Decision-Making</h1>
+        <h3 id="overview-1">Overview</h3>
+        <p>This lecture covers:</p>
+        <ul>
+            <li>
+                <p>Gender discrimination and identity</p>
+            </li>
+            <li>
+                <p>The child penalty for women in the workforce</p>
+            </li>
+            <li>
+                <p>Policies to address gender disparities</p>
+            </li>
+            <li>
+                <p>The concept of nudges, defaults, and decision-making frameworks</p>
+            </li>
+        </ul>
+        <h3 id="gender-identity-norms-1">Gender Identity Norms</h3>
+        <p><strong>Study by Bertrand et al.</strong>: The authors argue there exists a norm where men perceive that they
+            should earn more than their spouses, leading to:</p>
+        <ul>
+            <li>
+                <p>Formation of fewer couples</p>
+            </li>
+            <li>
+                <p>Increased instability and divorce rates in couples</p>
+            </li>
+            <li>
+                <p>Reduced working hours for women and a phenomenon termed "the second shift"</p>
+            </li>
+        </ul>
+        <h4 id="child-penalty-studies">Child Penalty Studies</h4>
+        <p><strong>Study by Kleven et al.</strong>: The study highlights a significant "child penalty" for women,
+            characterized by:</p>
+        <ul>
+            <li>
+                <p>A persistent earnings gap approximately 20% post-childbirth.</p>
+            </li>
+            <li>
+                <p>A reduction in hours worked by approximately 10%.</p>
+            </li>
+            <li>
+                <p>The remaining 10% attributed to lower wages and productivity, due to reduced job market engagement.
+                </p>
+            </li>
+        </ul>
+        <p><br /><span class="math display">Earnings
+                Gap ≈ (Earnings<sub>men</sub>−Earnings<sub>women</sub>) ÷ Earnings<sub>men</sub> ≈ 20%</span><br /></p>
+        <h3 id="generational-transmission-of-child-penalty">Generational Transmission of Child Penalty</h3>
+        <p>Child penalties appear to be transmitted through generations, suggesting that:</p>
+        <ul>
+            <li>
+                <p>Daughters whose mothers experience child penalties are likely to encounter similar penalties later in
+                    life.</p>
+            </li>
+            <li>
+                <p>This highlights how gender identity norms and family structures shape labor market outcomes.</p>
+            </li>
+        </ul>
+        <h3 id="policy-proposals">Policy Proposals</h3>
+        <p>Proposals include:</p>
+        <ul>
+            <li>
+                <p>Gender-neutral tenure clock stopping policies aimed at supporting childcare responsibilities for both
+                    parents.</p>
+            </li>
+        </ul>
+        <p>However, studies indicate that such policies can inadvertently reinforce gender inequalities.</p>
+        <h4 id="study-by-bursztyn-et-al.">Study by Bursztyn et al.</h4>
+        <p>The study investigates whether women avoid career-enhancing actions due to potential negative perceptions in
+            the dating market. Key findings include:</p>
+        <ul>
+            <li>
+                <p>Unmarried female MBA students perform similar to their married counterparts when performance is
+                    unobserved.</p>
+            </li>
+            <li>
+                <p>However, their participation rates are lower, especially in visible settings.</p>
+            </li>
+        </ul>
+        <p>This indicates that women may be holding back in certain environments due to perceived social penalties.</p>
+        <h3 id="non-promotable-tasks">Non-promotable Tasks</h3>
+        <p><strong>Vesterlund Study</strong>: This study analyzes the distribution of tasks assigned to men and women,
+            highlighting:</p>
+        <ul>
+            <li>
+                <p>Women often take on more non-promotable tasks, hindering career advancement.</p>
+            </li>
+            <li>
+                <p>Women are more likely to agree to tasks when asked, entrenching this phenomenon.</p>
+            </li>
+        </ul>
+        <h4 id="experimental-findings">Experimental Findings</h4>
+        <p>Participants in threshold public goods games have shown that:</p>
+        <ul>
+            <li>
+                <p>Women are significantly more likely to volunteer for tasks than men.</p>
+            </li>
+            <li>
+                <p>Social norms and expectations regarding gender roles influence participation levels.</p>
+            </li>
+        </ul>
+        <h3 id="nudges-and-defaults">Nudges and Defaults</h3>
+        <h4 id="k-plans">401(k) Plans</h4>
+        <p><strong>Standard economics recommendations</strong>:</p>
+        <ul>
+            <li>
+                <p>Standard tools to increase savings: matching contributions, improving financial education, or
+                    enhancing investment choices.</p>
+            </li>
+        </ul>
+        <p>However, such strategies often fail. Research indicates default effects can significantly impact savings
+            behavior.</p>
+        <h4 id="madrian-and-shea-study">Madrian and Shea Study</h4>
+        <p>This study demonstrated:</p>
+        <ul>
+            <li>
+                <p>Participation rates in 401(k) plans increased dramatically with automatic enrollment.</p>
+            </li>
+            <li>
+                <p>Active choice scenarios differ significantly from when employees are simply enrolled by default.</p>
+            </li>
+        </ul>
+        <p>Overall participation rates increased from 37% to 86%, particularly benefiting lower-income workers.</p>
+        <h4 id="default-investment-choices">Default Investment Choices</h4>
+        <p>Given 401(k) defaults, findings show:</p>
+        <ul>
+            <li>
+                <p>Many participants are prone to accept whatever the defaults entail, often leading to suboptimal
+                    investment outcomes.</p>
+            </li>
+            <li>
+                <p>It accentuates the importance of carefully selected default options.</p>
+            </li>
+        </ul>
+        <h3 id="cautionary-tales-of-defaults">Cautionary Tales of Defaults</h3>
+        <p><strong>Cronqvist and Thaler’s Study:</strong> Analysis of Sweden’s privatization of social security shows:
+        </p>
+        <ul>
+            <li>
+                <p>Unsurprisingly, uneducated choices resulted in underperformance compared to defaults.</p>
+            </li>
+            <li>
+                <p>Highlights dangers of encouraging active choice without proper financial literacy.</p>
+            </li>
+        </ul>
+        <h3 id="conclusion-14">Conclusion</h3>
+        <p><strong>Key Takeaways</strong>:</p>
+        <ul>
+            <li>
+                <p>Gender identity norms and child penalties play critical roles in labor market outcomes.</p>
+            </li>
+            <li>
+                <p>Default options significantly influence consumer behavior, sometimes resulting in less-than-ideal
+                    financial decisions.</p>
+            </li>
+            <li>
+                <p>Active choice strategies need to be coupled with education and awareness to yield optimal outcomes.
+                </p>
+            </li>
+        </ul>
+        <h1 id="lecture-notes-malleability-and-inaccessibility-of-preferences">Lecture Notes: Malleability and
+            Inaccessibility of Preferences</h1>
+        <h3 id="introduction-9">Introduction</h3>
+        <p>This lecture discusses the concepts of <strong>malleability</strong> and <strong>inaccessibility</strong> of
+            preferences. We begin with a review of the impact of defaults, nudges, and framing effects on decision
+            making.</p>
+        <h3 id="defaults-and-framing-effects">Defaults and Framing Effects</h3>
+        <h4 id="default-effects">Default Effects</h4>
+        <p>Definition: A default option is the choice that is automatically selected if no alternative is chosen by the
+            individual.<br />
+            <br />
+            Examples:
+        </p>
+        <ul>
+            <li>
+                <p>Retirement Savings: Setting a default savings rate in retirement accounts can greatly influence
+                    savings behavior as many individuals opt for the default rather than actively choosing an
+                    alternative.</p>
+            </li>
+            <li>
+                <p>Organ Donation: Countries with presumed consent (opt-out) for organ donation have significantly
+                    higher donation rates compared to countries that require explicit consent (opt-in).</p>
+            </li>
+        </ul>
+        <h4 id="choice-architecture">Choice Architecture</h4>
+        <p>Nudge Theory: According to Thaler and Sunstein, a <em>nudge</em> can steer individuals’ choices without
+            removing their freedom of choice.<br />
+            <br />
+            Key Components of Nudges:
+        </p>
+        <ul>
+            <li>
+                <p>Simplification of choices</p>
+            </li>
+            <li>
+                <p>Information disclosure</p>
+            </li>
+            <li>
+                <p>Use of social norms (e.g., feedback about energy consumption relative to neighbors)</p>
+            </li>
+        </ul>
+        <h3 id="active-choice-vs.-default">Active Choice vs. Default</h3>
+        <ul>
+            <li>
+                <p>Active Choice: Individuals are encouraged to make a decision explicitly.</p>
+            </li>
+            <li>
+                <p>Implications: Active choice is most effective when preferences are diverse, while default choices can
+                    be beneficial when individuals lack knowledge, allowing them to make better decisions without
+                    coercion.</p>
+            </li>
+        </ul>
+        <h3 id="key-research-examples">Key Research Examples</h3>
+        <h4 id="flu-shot-scheduling-experiment">Flu Shot Scheduling Experiment</h4>
+        <ul>
+            <li>
+                <p>Design: Two treatment groups received encouragement to make a plan for receiving a flu shot (date
+                    plan and time plan).</p>
+            </li>
+            <li>
+                <p>Results: Increased uptake rates from control (33%) to treatment (37%).</p>
+            </li>
+        </ul>
+        <h4 id="fafsa-assistance-study">FAFSA Assistance Study</h4>
+        <p>Research by Bettinger et al. showed that providing assistance in completing FAFSA applications significantly
+            increased college enrollment.</p>
+        <h3 id="cognitive-processes-and-preferences">Cognitive Processes and Preferences</h3>
+        <h4 id="malleability-of-preferences">Malleability of Preferences</h4>
+        <ul>
+            <li>
+                <p>Psychological research indicates that individuals often lack awareness of the origins of their
+                    preferences.</p>
+            </li>
+            <li>
+                <p>Nisbett and Wilson’s Findings: People often make up reasons for their preferences post hoc, failing
+                    to recognize the influence of external factors.</p>
+            </li>
+        </ul>
+        <h4 id="examples-of-cognitive-biases">Examples of Cognitive Biases</h4>
+        <p>1. Two-String Problem:</p>
+        <ul>
+            <li>
+                <p>Subjects fail to solve the problem until an external cue (motion of the cords) is introduced, leading
+                    to the epiphany of how to use them.</p>
+            </li>
+        </ul>
+        <p>2. Bystander Effect:</p>
+        <ul>
+            <li>
+                <p>Individuals are less likely to help others in an emergency when others are present, misattributing
+                    their inaction to personal beliefs about the situation.</p>
+            </li>
+        </ul>
+        <p>3. Position Effect:</p>
+        <ul>
+            <li>
+                <p>Individuals select items based on their position in a lineup, but fail to acknowledge that this
+                    positioning influenced their choice.</p>
+            </li>
+        </ul>
+        <h3 id="coherent-arbitrariness-and-willingness-to-pay">Coherent Arbitrariness and Willingness to Pay</h3>
+        <h4 id="coherent-arbitrariness-concept">Coherent Arbitrariness Concept</h4>
+        <ul>
+            <li>
+                <p>People construct preferences and values dynamically, based on cues and context.</p>
+            </li>
+            <li>
+                <p>Anchoring: Initial values can disproportionately influence subsequent estimates of willingness to pay
+                    (WTP).</p>
+            </li>
+        </ul>
+        <h4 id="becker-degroot-marschak-bdm-procedure">Becker-DeGroot-Marschak (BDM) Procedure</h4>
+        <ul>
+            <li>
+                <p>Purpose: Elicit true preferences for goods without the influence of bargaining strategies.</p>
+            </li>
+            <li>
+                <p>Method: Present a random price; if the bid exceeds this price, the individual buys the item.</p>
+            </li>
+            <li>
+                <p>Ensures incentive compatibility.</p>
+            </li>
+        </ul>
+        <h4 id="poetry-reading-experiment-by-ariely">Poetry Reading Experiment by Ariely</h4>
+        <ul>
+            <li>
+                <p>Two groups were presented with the same poetry reading but framed differently: as a paid activity vs.
+                    a cost to endure. Outcomes showed significant differences in WTP based on framing.</p>
+            </li>
+        </ul>
+        <h3 id="conclusion-15">Conclusion</h3>
+        <ul>
+            <li>
+                <p>Preferences are not stable; they are influenced by external factors, which can be strategically
+                    manipulated.</p>
+            </li>
+            <li>
+                <p>Understanding how preferences are constructed can inform policy design and intervention strategies
+                    aimed at improving decision-making in various domains.</p>
+            </li>
+        </ul>
+        <h3 id="future-lectures">Future Lectures</h3>
+        <ul>
+            <li>
+                <p>The next lectures will focus on poverty, happiness, and mental health.</p>
+            </li>
+        </ul>
+        <h1 id="lecture-notes-psychology-of-poverty">Lecture Notes: Psychology of Poverty</h1>
+        <h3 id="introduction-10">Introduction</h3>
+        <p>This lecture is focused on understanding poverty through the lens of psychology. It discusses the
+            implications of scarcity and the psychological impacts of living in poverty, drawing on various studies,
+            particularly the work of Mani et al.</p>
+        <h3 id="overview-2">Overview</h3>
+        <ul>
+            <li>
+                <p>Observations of suboptimal behaviors among the poor:</p>
+                <ul>
+                    <li>
+                        <p>Lack of investment in high-return opportunities (e.g., fertilizer, machinery).</p>
+                    </li>
+                    <li>
+                        <p>Low levels of savings, particularly precautionary savings for future shocks.</p>
+                    </li>
+                    <li>
+                        <p>High engagement in high-interest loans.</p>
+                    </li>
+                    <li>
+                        <p>Poor parenting practices and associated outcomes.</p>
+                    </li>
+                    <li>
+                        <p>Lower productivity and punctuality.</p>
+                    </li>
+                    <li>
+                        <p>Poor health outcomes and medical adherence.</p>
+                    </li>
+                    <li>
+                        <p>Inadequate consumption of nutritious food and increased substance abuse.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h3 id="explanatory-factors-for-suboptimal-behavior">Explanatory Factors for Suboptimal Behavior</h3>
+        <ul>
+            <li>
+                <p>Potential explanations include:</p>
+                <ul>
+                    <li>
+                        <p>Education: Lower education may lead to poor decision-making in financial investments and
+                            parenting.</p>
+                    </li>
+                    <li>
+                        <p>Environmental Conditions: Lack of transportation can affect job punctuality and productivity.
+                        </p>
+                    </li>
+                    <li>
+                        <p>Institutional Structures: Defaults for saving or health insurance can promote positive
+                            behaviors among the rich but not the poor.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Treatment Effects of Poverty: Living in poverty impacts cognitive function and decision-making.</p>
+            </li>
+        </ul>
+        <h3 id="cognitive-aspects-of-poverty">Cognitive Aspects of Poverty</h3>
+        <h4 id="the-concept-of-scarcity">The Concept of Scarcity</h4>
+        <p>Scarcity is defined as not having enough of something, leading to limited cognitive capacity. This can
+            manifest in: <br /><span class="math display">Cognitive Capacity = Total Cognitive Resources − Cognitive
+                Load from Scarcity</span><br /> When thoughts about money dominate, they leave less cognitive bandwidth
+            for other tasks.</p>
+        <h4 id="evidence-of-cognitive-effects-of-poverty">Evidence of Cognitive Effects of Poverty</h4>
+        <p>Two main studies were highlighted:</p>
+        <ol>
+            <li>
+                <p><strong>Mall Study</strong>:</p>
+                <ul>
+                    <li>
+                        <p>Participants were divided into rich and poor, tested on cognitive tasks after answering
+                            hypothetical financial questions.</p>
+                    </li>
+                    <li>
+                        <p>Results showed that poor participants performed significantly worse on tasks after hard
+                            financial questions compared to rich participants.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Sugarcane Farmer Study</strong>:</p>
+                <ul>
+                    <li>
+                        <p>Examined pre-harvest and post-harvest cognitive performance.</p>
+                    </li>
+                    <li>
+                        <p>Results indicated improved cognitive functioning post-harvest when farmers had cash in hand.
+                        </p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <h3 id="additional-psychological-factors-related-to-poverty">Additional Psychological Factors Related to Poverty
+        </h3>
+        <ul>
+            <li>
+                <p><strong>Sleep Deprivation and Health</strong>: Poor sleep quality is prevalent among the poor and is
+                    linked to decreased cognitive function and productivity.</p>
+            </li>
+            <li>
+                <p><strong>Mental Health</strong>: There is a bidirectional relationship between poverty and mental
+                    health conditions, such as anxiety and depression. Poverty affects depression.
+            </li>
+        </ul>
+        <h3 id="policy-implications">Policy Implications</h3>
+        <ul>
+            <li>
+                <p>Cash transfers and psychological interventions can alleviate stress and improve cognitive
+                    performance.</p>
+            </li>
+            <li>
+                <p>Providing tools like financial literacy can help the poor make better choices.</p>
+            </li>
+            <li>
+                <p>Understanding the challenges posed by environmental factors (e.g., noise, pollution) is crucial for
+                    developing supportive policies.</p>
+            </li>
+        </ul>
+        <h3 id="conclusions-3">Conclusions</h3>
+        <p>The psychological impacts of poverty are profound, affecting cognitive function, decision-making, and overall
+            well-being. Addressing these issues requires multifaceted approaches, including financial support,
+            education, and psycho-social interventions.</p>
+        <h1 id="lecture-notes-happiness-and-mental-health">Lecture Notes: Happiness and Mental Health</h1>
+        <h3 id="introduction-11">Introduction</h3>
+        <p>This lecture will cover:</p>
+        <ul>
+            <li>
+                <p>Concept of happiness and subjective well-being</p>
+            </li>
+            <li>
+                <p>Rationality and revealed preferences</p>
+            </li>
+            <li>
+                <p>Measuring happiness and utility</p>
+            </li>
+            <li>
+                <p>Mental health considerations</p>
+            </li>
+        </ul>
+        <h3 id="happiness-and-subjective-well-being">Happiness and Subjective Well-being</h3>
+        <p>Happiness and subjective well-being refer to how individuals experience the quality of their lives and
+            evaluates their satisfaction.</p>
+        <p><br /><span class="math display">Subjective Well-Being = Happiness + Life Satisfaction</span><br /></p>
+        <h3 id="rationality-and-revealed-preferences">Rationality and Revealed Preferences</h3>
+        <p>Rationality in economics involves the idea that beliefs, preferences, and actions are consistent. An
+            individual’s choices can reveal their underlying preferences.<br />
+            <strong>Key Definition:</strong> If a person behaves in a certain way, it must be that their preferences can
+            rationalize that behavior.
+        </p>
+        <h4 id="utility-and-choice">Utility and Choice</h4>
+        <p>Utility can be thought of as the satisfaction or benefit derived from consuming goods or services. In
+            classical economics, it is assumed that individuals seek to maximize their utility.</p>
+        <h3 id="measuring-happiness">Measuring Happiness</h3>
+        <p>Measuring happiness can be complex due to the differing ways in which it can be experienced over time.</p>
+        <h4 id="decision-utility-vs.-experience-utility">Decision Utility vs. Experience Utility</h4>
+        <ul>
+            <li>
+                <p><strong>Decision Utility</strong>: The utility that a person thinks they will achieve from a choice.
+                    It aligns with their expressed preferences.</p>
+            </li>
+            <li>
+                <p><strong>Experience Utility</strong>: The actual utility experienced during and after the outcome,
+                    often measured through emotional responses.</p>
+            </li>
+        </ul>
+        <p><br /><span class="math display">Decision Utility ≠ Experience Utility</span><br /></p>
+        <h3 id="techniques-for-measuring-well-being">Techniques for Measuring Well-being</h3>
+        <p>Common methods for measuring well-being include:</p>
+        <ul>
+            <li>
+                <p>Self-reports (surveys and interviews)</p>
+            </li>
+            <li>
+                <p>Observational measures (facial expressions and physiological data)</p>
+            </li>
+            <li>
+                <p>Brain activity scans (to evaluate emotional responses)</p>
+            </li>
+        </ul>
+        <h3 id="factors-influencing-happiness">Factors Influencing Happiness</h3>
+        <p>Several factors can influence an individual’s happiness:</p>
+        <ul>
+            <li>
+                <p>Economic status (income level)</p>
+            </li>
+            <li>
+                <p>Social connections (relationships)</p>
+            </li>
+            <li>
+                <p>Psychological support (therapy and coaching)</p>
+            </li>
+            <li>
+                <p>Life satisfaction (measured by feedback on life events)</p>
+            </li>
+        </ul>
+        <h3 id="key-insights-from-research">Key Insights from Research</h3>
+        <ol>
+            <li>
+                <p>Cultural Differences: Responses to happiness surveys can vary significantly across cultures,
+                    impacting how happiness is measured.</p>
+            </li>
+            <li>
+                <p>Income: Broadly, richer individuals report higher happiness; however, baseline sufficiency seems to
+                    settle around an income level.</p>
+            </li>
+            <li>
+                <p>Social Relationships: Maintaining strong social connections is one of the most consistent predictors
+                    of happiness.</p>
+            </li>
+            <li>
+                <p>Adaptation: People often adapt to life events (both positive and negative), leading to a return to
+                    baseline happiness over time.</p>
+            </li>
+        </ol>
+        <h3 id="policy-implications-1">Policy Implications</h3>
+        <p>As we consider interventions or policies to enhance well-being:</p>
+        <ul>
+            <li>
+                <p>Understanding human biases and limitations in decision-making is essential.</p>
+            </li>
+            <li>
+                <p>Policymakers should consider implementing programs that improve access to mental health resources.
+                </p>
+            </li>
+            <li>
+                <p>Incorporating measures of subjective well-being can inform more holistic policy-oriented approaches.
+                </p>
+            </li>
+        </ul>
+        <h3 id="concluding-notes">Concluding Notes</h3>
+        <p>In future lectures, discussions on actual implementations of policies aimed at improving mental health will
+            take place.</p>
+        <p>Consider engaging with your own happiness practices: reflect on the social ties you nurture, the balance
+            between work and life satisfaction, and the active choices you make towards your well-being.</p>
+        <h1 id="policy-with-behavioral-agents">Policy with Behavioral Agents</h1>
+        <h3 id="introduction-12">Introduction</h3>
+        <p>This lecture focuses on paternalism, examining its definitions, motivations, and implications when applied to
+            governmental policies that influence behavioral agents.</p>
+        <h3 id="definitions">Definitions</h3>
+        <h4 id="paternalism">Paternalism</h4>
+        <p>Paternalism is defined as <em>“An attempt to influence or control people’s conduct for their own good.”</em>
+            It assumes individuals may not be fully optimizing their decisions, particularly impacting themselves.</p>
+        <h4 id="internalities">Internalities</h4>
+        <p>Internalities refer to the effects individuals impose on their future selves, often leading to decisions that
+            are not in their long-term best interest.</p>
+        <h3 id="reasons-for-government-engagement">Reasons for Government Engagement</h3>
+        <p>The reasons for government involvement in economics can be categorized as follows:</p>
+        <ol>
+            <li>
+                <p><strong>Externalities:</strong></p>
+                <ul>
+                    <li>
+                        <p>Positive and negative impacts of one’s actions on others that are not accounted for (e.g.,
+                            pollution from factories).</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Desire for Equity:</strong></p>
+                <ul>
+                    <li>
+                        <p>Government programs aim to redistribute wealth (e.g., Social Security, unemployment
+                            insurance).</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Addressing Market Failures:</strong></p>
+                <ul>
+                    <li>
+                        <p>Under-provision of public goods and information asymmetry.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Macroeconomic Stability:</strong></p>
+                <ul>
+                    <li>
+                        <p>Use of fiscal and monetary policies for economic stabilization.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Internalities:</strong></p>
+                <ul>
+                    <li>
+                        <p>Interventions that account for decisions affecting one’s future self (the focus of this
+                            lecture).</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <h3 id="types-of-paternalism">Types of Paternalism</h3>
+        <h4 id="hard-paternalism">Hard Paternalism</h4>
+        <p>Involves significant interventions such as:</p>
+        <ul>
+            <li>
+                <p>Outlawing certain choices (e.g., prohibiting smoking).</p>
+            </li>
+            <li>
+                <p>Imposing high taxes on unhealthy goods.</p>
+            </li>
+        </ul>
+        <h4 id="soft-paternalism">Soft Paternalism</h4>
+        <p>Defined as “Libertarian Paternalism,” emphasizes:</p>
+        <ul>
+            <li>
+                <p>Preserving individual choice while nudging towards better decisions (e.g., default enrollment in
+                    retirement plans).</p>
+            </li>
+        </ul>
+        <h4 id="asymmetric-paternalism">Asymmetric Paternalism</h4>
+        <p>Policies aimed at assisting those who make mistakes without harming individuals who are already making
+            optimal choices.</p>
+        <h3 id="arguments-against-paternalism">Arguments Against Paternalism</h3>
+        <ul>
+            <li>
+                <p><strong>Informational Issues:</strong> Government officials may lack the necessary information.</p>
+            </li>
+            <li>
+                <p><strong>Corruption:</strong> Elected officials may misuse paternalistic powers for self-gain or
+                    benefit special interests.</p>
+            </li>
+            <li>
+                <p><strong>Freedom of Choice:</strong> The emphasis on individual freedom clashes with paternalism.</p>
+            </li>
+            <li>
+                <p><strong>Unpopularity:</strong> People may resist intervention.</p>
+            </li>
+        </ul>
+        <h3 id="arguments-in-favor-of-paternalism">Arguments in Favor of Paternalism</h3>
+        <ul>
+            <li>
+                <p>Many individuals lack the knowledge or capacity to make optimal choices.</p>
+            </li>
+            <li>
+                <p>Interventions such as nudges can lead to improved decisions without imposing restrictions (e.g.,
+                    reminders).</p>
+            </li>
+            <li>
+                <p>Soft paternalism can enhance welfare without restricting freedom.</p>
+            </li>
+        </ul>
+        <h3 id="practical-examples">Practical Examples</h3>
+        <h4 id="save-more-tomorrow-plan">Save More Tomorrow Plan</h4>
+        <ul>
+            <li>
+                <p>Employees agree to increase retirement contributions after receiving pay raises.</p>
+            </li>
+            <li>
+                <p>Leveraged principles of present bias and loss aversion.</p>
+            </li>
+        </ul>
+        <h4 id="market-limitations">Market Limitations</h4>
+        <ul>
+            <li>
+                <p>The market sometimes fails to address self-control problems.</p>
+            </li>
+            <li>
+                <p>Consumers may be targeted by firms exploiting their lack of awareness (e.g., credit card debt).</p>
+            </li>
+            <li>
+                <p>Regulatory measures (e.g., Consumer Financial Protection Bureau) aim to protect consumers.</p>
+            </li>
+        </ul>
+        <h4 id="nudges-vs.-sludges">Nudges vs. Sludges</h4>
+        <ul>
+            <li>
+                <p>Nudges help individuals make better choices (e.g., simplified energy bills).</p>
+            </li>
+            <li>
+                <p>Sludges are obstacles or manipulations that make decision-making difficult (e.g., complex rebate
+                    forms).</p>
+            </li>
+        </ul>
+        <h3 id="conclusion-16">Conclusion</h3>
+        <p>Incorporating psychological insights into policy design can influence individual behaviors positively. While
+            paternalism, especially in its softer forms, can yield benefits, careful implementation and respect for
+            individual preferences remain crucial.</p>
+
+
+    </div>
+    <!-- insert above this -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+</body>
+
+</html>

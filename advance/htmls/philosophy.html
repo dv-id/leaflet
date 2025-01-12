@@ -1,0 +1,2134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>/\dvance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+        code {
+            white-space: pre-wrap;
+        }
+
+        span.smallcaps {
+            font-variant: small-caps;
+        }
+
+        span.underline {
+            text-decoration: underline;
+        }
+
+        div.column {
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+        }
+
+        div.hanging-indent {
+            margin-left: 1.5em;
+            text-indent: -1.5em;
+        }
+
+        ul.task-list {
+            list-style: none;
+        }
+    </style>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body style="
+    background-color: rgb(0, 0, 39);
+    color: rgb(205, 158, 250);" class="vh-100 p-0 mb-0">
+
+    <div class="container" style="margin-top: 10%;">
+        <div id="business-row" class="row justify-content-between">
+            
+            <nav class="navbar navbar-dark navbar-collapse navbar-fixed-top fixed-top justify-content-center container" style="background-color: rgb(0, 0, 40);">
+                <div class="container justify-content-center">
+                <a class="navbar-brand" href="../index.html" style="color: rgb(179, 114, 240);">/\dvance</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../finance.html">Finance</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../startups.html">Startups</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../economics.html">Economics</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../humanities.html">Humanities</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../philosophy.html">Philosophy</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../science.html">Science</a>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+
+                <div class="container" style="background-color: rgb(0, 0, 40);">
+                    <div class="col-12 d-flex justify-content-start align-items-center">
+                        <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                            <ol class="breadcrumb m-1">
+                                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="../philosophy.html">Philosophy</a></li>
+                                <li class="breadcrumb-item active"><a href="../htmls/philosophy.html">General Philosophy</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+              <div class="btn position-fixed fixed-bottom d-flex justify-content-end p-0">
+                <a style="color: white; background-color: rgb(0, 0, 40);" class="border rounded p-1"
+                onclick="document.getElementById('contents').scrollIntoView({ behavior: 'smooth' });">contents^</a>
+              </div>
+            </nav>
+
+        </div>
+        <div class="row">
+            <h1 id="contents" class="m-0">contents</h4>
+                <div class="col-6">
+                    <ul>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-on-plato-and-moral-philosophy">Plato and Moral Philosophy</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-the-parts-of-the-soul">The Parts of the Soul</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-on-psychological-research-and-reasoning">Psychological Research and Reasoning</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#philosophical-reflections-on-self-regulation-and-happiness">Philosophical Reflections on Self-Regulation and Happiness</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-aristotles-views-on-happiness-and-harmony">Aristotle’s Views on Happiness and Harmony</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#notes-on-human-behavior-morality-and-flourishing">Human Behavior, Morality, and Flourishing</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-on-stoicism-and-epictetus">Stoicism and Epictetus</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-aristotle-habits-and-self-regulation">Aristotle, Habits, and Self-Regulation</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-aristotles-ethics">Aristotle’s Ethics</a>
+                        </li>
+                        <li>
+                            <a href="#lecture-notes-aristotles-moral-theory-social-psychology-and-self-regulation">Aristotle’s Moral Theory, Social Psychology, and Self-Regulation</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-introduction-to-moral-philosophy">Introduction to Moral Philosophy</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-utilitarianism-and-kantian-ethics">Utilitarianism and Kantian Ethics</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-kantian-ethics-and-the-trolley-problem">Kantian Ethics and the Trolley Problem</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#ethics-of-the-trolley-problem-lecture-notes">Ethics of the Trolley Problem</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-on-moral-philosophy-trolley-cases-and-moral-luck">Moral Philosophy: Trolley Cases and Moral Luck</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-moral-responsibility-trolley-problems-and-theories-of-punishment">Moral Responsibility, Trolley Problems, and Theories of Punishment</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-on-punishment">Punishment</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-punishment-community-and-political-legitimacy">Punishment, Community, and Political Legitimacy</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-the-prisoners-dilemma">The Prisoners’ Dilemma</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-social-structures-and-john-rawls-theory-of-justice">Social Structures and John Rawls’ Theory of Justice</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-theories-of-justice---rawls-and-nozick">Theories of Justice - Rawls and Nozick</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-on-liberty-and-political-philosophy">Liberty and Political Philosophy</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-non-rational-persuasion-in-government">Non-Rational Persuasion in Government</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#lecture-notes-political-philosophy-and-social-norms">Political Philosophy and Social Norms</a>
+                        </li>
+                        <li>
+                            <a href="#course-summary-philosophy-and-the-human-condition">Course Summary: Philosophy and the Human Condition</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- insert under this -->
+    <div class="container">
+        <h1>Philosophy</h1>
+        <h3 id="course-introduction">Course Introduction</h3>
+        <ul>
+        <li><p>Welcome to Philosophy and the Science of Human Nature.</p></li>
+        <li><p>Course cross-listed in <em>Philosophy</em>, <em>Cognitive Science</em>, and eligible for credit in the <em>Psychology</em> major.</p></li>
+        <li><p>Goal: Provide a broad overview of course content and structure.</p></li>
+        </ul>
+        <h3 id="course-structure-and-topics">Course Structure and Topics</h3>
+        <h4 id="course-goals-and-overview">Course Goals and Overview</h4>
+        <ul>
+        <li><p>Examining key themes from traditional philosophical works (Plato, Aristotle, Hobbes, Hume, Mill).</p></li>
+        <li><p>Topics in ethics:</p>
+        <ul>
+        <li><p>Utilitarianism</p></li>
+        <li><p>Deontology</p></li>
+        <li><p>Virtue Ethics</p></li>
+        </ul></li>
+        <li><p>Topics in political philosophy:</p>
+        <ul>
+        <li><p>Legitimacy of the state (Hobbes)</p></li>
+        <li><p>Debate between John Rawls and Robert Nozick.</p></li>
+        </ul></li>
+        <li><p>Distinctive aspect: Integration of multiple disciplines including psychology, political science, and literature.</p></li>
+        </ul>
+        <h4 id="main-themes">Main Themes</h4>
+        <ul>
+        <li><p><strong>Happiness and Flourishing</strong>:</p>
+        <ul>
+        <li><p>Explore ancient views on what it takes for humans to thrive.</p></li>
+        <li><p>Connection to contemporary findings on human flourishing.</p></li>
+        </ul></li>
+        <li><p><strong>Morality and Ethics</strong>:</p>
+        <ul>
+        <li><p>Exploration of moral actions and their justification.</p></li>
+        <li><p>Discussion of punishment: its psychological vs ethical justification.</p></li>
+        </ul></li>
+        <li><p><strong>Political Structures</strong>:</p>
+        <ul>
+        <li><p>Examination of what makes political structures legitimate.</p></li>
+        <li><p>How civic institutions can facilitate human flourishing.</p></li>
+        </ul></li>
+        </ul>
+        <h3 id="examples-of-course-topics">Examples of Course Topics</h3>
+        <h4 id="example-1-ring-of-gyges">Example 1: Ring of Gyges</h4>
+        <ul>
+        <li><p>Story from Plato’s <em>Republic</em> illustrating moral dilemmas.</p></li>
+        <li><p>Question posed by Glaucon: Do individuals act morally only for fear of punishment?</p></li>
+        <li><p>Empirical psychological research on behavior when unobserved.</p></li>
+        </ul>
+        <h4 id="example-2-the-trolley-problem">Example 2: The Trolley Problem</h4>
+        <ul>
+        <li><p>Ethical dilemma involving a trolley about to hit five people.</p></li>
+        <li><p>Options:</p>
+        <ul>
+        <li><p>Switch the trolley to hit one person instead of five.</p></li>
+        <li><p>Pushing a large man off a bridge to stop the trolley.</p></li>
+        </ul></li>
+        <li><p>Questions of moral permissibility and the psychology of decision-making.</p></li>
+        </ul>
+        <h4 id="example-3-procrastination-and-self-regulation">Example 3: Procrastination and Self-Regulation</h4>
+        <ul>
+        <li><p>Challenges of sticking to commitments despite reflective plans.</p></li>
+        <li><p>Strategies for improving adherence to long-term goals.</p></li>
+        <li><p>Discussion on how environmental factors affect decision-making and impulse control.</p></li>
+        </ul>
+        <h3 id="conclusion">Conclusion</h3>
+        <ul>
+        <li><p>Aim to foster an understanding of human nature from various interdisciplinary perspectives.</p></li>
+        <li><p>Prepare for discussions, interactions, and exams that reflect a deep engagement with the material.</p></li>
+        </ul>
+        <h1 id="lecture-notes-on-plato-and-moral-philosophy">Lecture Notes on Plato and Moral Philosophy</h1>
+        <h3 id="introduction">Introduction</h3>
+        <p>The lecture discusses Glaucon’s challenge in Plato’s work, particularly relating to the motivations for moral behavior, as illustrated through the story of the Ring of Gyges. The exploration also includes perspectives from contemporary psychology, particularly Daniel Batson’s research.</p>
+        <h3 id="platos-influence">Plato’s Influence</h3>
+        <ul>
+        <li><p>Plato (c. 427–347 BCE) is a foundational figure in Western philosophy.</p></li>
+        <li><p>Born into an aristocratic family in Athens; expected to pursue politics or civic leadership.</p></li>
+        <li><p>Became a student of Socrates, who influenced his philosophical outlook.</p></li>
+        <li><p>After Socrates’ death in 399 BCE, Plato founded the Academy (c. 385 BCE), one of the first institutions of higher learning in the Western world.</p></li>
+        <li><p>Key works include <em>The Republic</em>, where Plato examines justice, the ideal state, and morality.</p></li>
+        </ul>
+        <h3 id="the-ring-of-gyges">The Ring of Gyges</h3>
+        <h4 id="glaucons-challenge">Glaucon’s Challenge</h4>
+        <p>Glaucon, Plato’s brother, presents several questions concerning justice:</p>
+        <ol>
+        <li><p>Nature and origin of justice.</p></li>
+        <li><p>The claim that people act justly unwillingly—primarily for reputation or reward.</p></li>
+        <li><p>The assertion that they are right to do so.</p></li>
+        </ol>
+        <h4 id="seeming-vs.-being">Seeming vs. Being</h4>
+        <p>Key contrasts are drawn:</p>
+        <ul>
+        <li><p><strong>Seeming vs. Being:</strong> The distinction between appearances and reality is crucial in philosophical discussions concerning morality.</p></li>
+        <li><p><strong>Values:</strong></p>
+        <ul>
+        <li><p><em>Intrinsic Value</em>: Things valued for their own sake (e.g., joy, pleasure).</p></li>
+        <li><p><em>Instrumental Value</em>: Things valued for what they can bring us (e.g., money).</p></li>
+        <li><p><em>Both</em>: Certain things can have both intrinsic and instrumental value (e.g., knowledge).</p></li>
+        </ul></li>
+        </ul>
+        <h3 id="glaucons-stories">Glaucon’s Stories</h3>
+        <p>Glaucon uses hypothetical scenarios to test moral motivations:</p>
+        <ul>
+        <li><p><strong>Ring of Gyges:</strong> If one could act unjustly without consequence, they would do so.</p></li>
+        <li><p><strong>Inversion Scenario:</strong> If a just person is seen as unjust and vice versa, would they still choose to act justly?</p></li>
+        </ul>
+        <h3 id="consequences-of-actions">Consequences of Actions</h3>
+        <p>This leads to the question of whether morality is merely like taking medicine (a means to an end) or if it holds intrinsic worth. The challenge posed asks:</p>
+        <blockquote>
+        <p>Is acting morally about the outcome (reputation) or about the act itself?</p>
+        </blockquote>
+        <h3 id="daniel-batsons-research">Daniel Batson’s Research</h3>
+        <h4 id="overview">Overview</h4>
+        <p>Daniel Batson explores moral integrity and hypocrisy through experimental psychology. He examines whether people’s intentions are to be moral or merely to appear moral.</p>
+        <h4 id="experimental-design">Experimental Design</h4>
+        <p>Participants make assignments between two tasks:</p>
+        <ul>
+        <li><p>A fun task that rewards them (lottery tickets).</p></li>
+        <li><p>A dull task that does not reward them.</p></li>
+        </ul>
+        <h4 id="key-findings">Key Findings</h4>
+        <ul>
+        <li><p>In a condition without direct observation, 80% of subjects assign themselves to the beneficial task but self-rate their moral integrity only moderately (4 out of 9).</p></li>
+        <li><p>When given a coin flip opportunity, 90% assigned themselves to the beneficial task, rating themselves highly (7 out of 9).</p></li>
+        </ul>
+        <h4 id="the-role-of-self-observation">The Role of Self-Observation</h4>
+        <p>Batson’s research indicates that self-awareness affects moral behavior:</p>
+        <ul>
+        <li><p>Presence of a mirror decreases selfish behavior dramatically.</p></li>
+        <li><p>People act more fairly when they feel observed, demonstrating a social dimension to morality.</p></li>
+        </ul>
+        <h3 id="concluding-thoughts">Concluding Thoughts</h3>
+        <p>The contrasts drawn between intrinsic and instrumental value of justice and the implications of Glaucon’s scenarios echo throughout both ancient and contemporary examinations of moral behavior. The discussion raises difficult questions about human motivations and societal structures conducive to moral actions.</p>
+        <h3 id="questions-for-consideration">Questions for Consideration</h3>
+        <ul>
+        <li><p>What are the implications of acting morally only when observed?</p></li>
+        <li><p>How can society structure incentives to promote genuine moral behavior?</p></li>
+        </ul>
+        <h1 id="notes-on-the-parts-of-the-soul">Notes on the Parts of the Soul</h1>
+        <h3 id="introduction-1">Introduction</h3>
+        <p>This lecture discusses the various parts of the soul as depicted in classical and contemporary texts. It highlights the internal conflicts within human nature and the philosophical frameworks developed to understand these dynamics.</p>
+        <h3 id="literary-examples-of-internal-conflict">Literary Examples of Internal Conflict</h3>
+        <h4 id="platos-the-republic-the-story-of-leontius">Plato’s <em>The Republic</em>: The Story of Leontius</h4>
+        <ul>
+        <li><p>Leontius experiences an internal struggle between his <strong>appetite</strong> (the desire to look at corpses) and <strong>self-regulation</strong> (disgust).</p></li>
+        <li><p>He ultimately succumbs to his appetite despite knowing it is against his better judgment, illustrating a fundamental conflict in human nature.</p></li>
+        <li><p>This internal struggle is a precursor to Plato’s concept of the tripartite soul.</p></li>
+        </ul>
+        <p><em>Key Passages:</em></p>
+        <blockquote>
+        <p>"Look for yourselves, you evil wretches! Take your fill of the beautiful sight!"</p>
+        </blockquote>
+        <h4 id="ovids-metamorphoses-medeas-conflict">Ovid’s <em>Metamorphoses</em>: Medea’s Conflict</h4>
+        <ul>
+        <li><p>Medea, despite knowing her love for Jason is irrational and violates her obligations, is overtaken by desire.</p></li>
+        <li><p>The passage depicts her struggle between <strong>reason</strong> and <strong>emotion</strong>.</p></li>
+        <li><p>This emotional conflict resonates with the common human experience of acting against one’s better judgment.</p></li>
+        </ul>
+        <p><em>Key Passages:</em></p>
+        <blockquote>
+        <p>"I see the right, and I approve it too, / Condemn the wrong – and yet the wrong pursue."</p>
+        </blockquote>
+        <h4 id="contemporary-examples">Contemporary Examples</h4>
+        <ul>
+        <li><p>Discussions about NCAA pools highlight conflicts between emotion and analysis in decision-making.</p></li>
+        <li><p>Oprah contrasts being in one’s heart versus one’s head, echoing the ancient debates around reason and passion.</p></li>
+        </ul>
+        <h3 id="philosophical-frameworks">Philosophical Frameworks</h3>
+        <h4 id="platos-tripartite-soul">Plato’s Tripartite Soul</h4>
+        <p>Plato divides the soul into three parts:</p>
+        <ul>
+        <li><p><strong>Reason (Logos)</strong>: The rational part that should govern.</p></li>
+        <li><p><strong>Spirit (Thumos)</strong>: The part associated with honor and emotional responses.</p></li>
+        <li><p><strong>Appetite (Epithumos)</strong>: The base desires and impulses.</p></li>
+        </ul>
+        <p><em>Representation</em>: The charioteer (Reason), a noble horse (Spirit), and a wild, multi-headed beast (Appetite).</p>
+        <h4 id="humes-view">Hume’s View</h4>
+        <ul>
+        <li><p>Hume suggests that <strong>reason is the slave of the passions</strong>.</p></li>
+        <li><p>This indicates that emotional drives often dominate our decision-making processes.</p></li>
+        </ul>
+        <h4 id="freudian-theory">Freudian Theory</h4>
+        <p>Freud’s model consists of:</p>
+        <ul>
+        <li><p><strong>Id</strong>: Represents basic instincts and desires (similar to Appetite).</p></li>
+        <li><p><strong>Ego</strong>: Balances desires with reality (aligns with Spirit).</p></li>
+        <li><p><strong>Superego</strong>: Incorporates societal norms (aligned with Reason).</p></li>
+        </ul>
+        <p>Represents the complexity of the human psyche and the unconscious influences on behavior.</p>
+        <h4 id="dual-processing-system-1-and-system-2">Dual Processing: System 1 and System 2</h4>
+        <ul>
+        <li><p><strong>System 1</strong>: Automatic, fast, and often emotional responses.</p></li>
+        <li><p><strong>System 2</strong>: Deliberative, slow, and logical thinking.</p></li>
+        </ul>
+        <h3 id="biological-underpinnings-of-the-souls-conflict">Biological Underpinnings of the Soul’s Conflict</h3>
+        <h4 id="mind-body-distinction">Mind-Body Distinction</h4>
+        <p>Emotional responses can be processed separately from rational thought. Biological systems can operate independently.</p>
+        <h4 id="left-and-right-brain-functionality">Left and Right Brain Functionality</h4>
+        <p>Distinct functions between the hemispheres can lead to divergent understandings of information.</p>
+        <h4 id="old-brain-vs.-new-brain">Old Brain vs. New Brain</h4>
+        <p>The old brain controls basic instincts (fight or flight), while the new brain improves self-regulation and complex thought processes (linked to the prefrontal cortex).</p>
+        <h3 id="conclusion-1">Conclusion</h3>
+        <p>This lecture articulates the long-standing understanding of human conflict within the philosophical and psychological discourse. It draws connections between ancient texts and modern theories, emphasizing the complexity of the human experience regarding emotion, reason, and self-regulation.</p>
+        <h1 id="lecture-notes-on-psychological-research-and-reasoning">Lecture Notes on Psychological Research and Reasoning</h1>
+        <h3 id="introduction-2">Introduction</h3>
+        <p>This lecture focused on the importance of sampling methods in psychological research, highlighting the concept of <strong>sampling bias</strong>. It discussed Plato’s and Aristotle’s approaches to drawing conclusions about human nature and introduced the psychological concept of <strong>dual processing theory</strong>.</p>
+        <h3 id="sampling-bias-in-psychological-research">Sampling Bias in Psychological Research</h3>
+        <h4 id="definition">Definition</h4>
+        <p>Sampling bias occurs when the sample selected for research does not accurately represent the larger population from which it was drawn. This can lead to erroneous conclusions about human behaviors and traits.</p>
+        <h4 id="example-of-sampling-bias">Example of Sampling Bias</h4>
+        <p>In a recent poll by the professor regarding the percentage of students in class who have clickers, it was illustrated that the poll only captured the preferences of those with clickers: <br /><span class="math display">$$\text{Result} = \frac{\text{Number ofClicker Users}}{\text{Total Respondents}} \times 100\% = 97\%$$</span><br /></p>
+        <p>However, this does not accurately represent the entire class, which may include non-clicker users.</p>
+        <h4 id="weird-populations">WEIRD Populations</h4>
+        <p>The acronym <strong>WEIRD</strong> stands for <em>Western, Educated, Industrialized, Rich, and Democratic</em>. Many psychological studies base their findings on this limited demographic, which may not generalize to other cultural contexts.</p>
+        <h3 id="dual-processing-theory">Dual Processing Theory</h3>
+        <h4 id="overview-1">Overview</h4>
+        <p>The dual processing theory posits that there are two systems through which humans process information:</p>
+        <ul>
+        <li><p><strong>System 1</strong>:</p>
+        <ul>
+        <li><p>Fast, automatic, and unconscious.</p></li>
+        <li><p>Examples include heuristics and biases.</p></li>
+        </ul></li>
+        <li><p><strong>System 2</strong>:</p>
+        <ul>
+        <li><p>Slower, deliberate, and conscious.</p></li>
+        <li><p>Involves reasoning and complex thought processes.</p></li>
+        </ul></li>
+        </ul>
+        <h4 id="characteristics-of-system-1-and-system-2">Characteristics of System 1 and System 2</h4>
+        <table>
+        <thead>
+        <tr class="header">
+        <th style="text-align: center;"><strong>Attribute</strong></th>
+        <th style="text-align: center;"><strong>System 1</strong></th>
+        <th style="text-align: center;"><strong>System 2</strong></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td style="text-align: center;">Speed</td>
+        <td style="text-align: center;">Fast</td>
+        <td style="text-align: center;">Slow</td>
+        </tr>
+        <tr class="even">
+        <td style="text-align: center;">Operation</td>
+        <td style="text-align: center;">Automatic</td>
+        <td style="text-align: center;">Effortful</td>
+        </tr>
+        <tr class="odd">
+        <td style="text-align: center;">Consciousness</td>
+        <td style="text-align: center;">Unconscious</td>
+        <td style="text-align: center;">Conscious</td>
+        </tr>
+        <tr class="even">
+        <td style="text-align: center;">Type of Processing</td>
+        <td style="text-align: center;">Associative</td>
+        <td style="text-align: center;">Rule-based</td>
+        </tr>
+        </tbody>
+        </table>
+        <h3 id="experiment-on-reasoning-thorndikes-work">Experiment on Reasoning: Thorndike’s Work</h3>
+        <h4 id="context">Context</h4>
+        <p>Edward Thorndike’s 1922 study, titled <em>The Effect of Changed Data Upon Reasoning</em>, examined how variations in problem presentation affect reasoning efficacy.</p>
+        <h4 id="findings">Findings</h4>
+        <p>Participants performed better in solving problems with simpler characters compared to more complex ones. For example: <br /><span class="math display">(<em>x</em> + <em>y</em>)<sup>2</sup> vs. (<em>b</em><sub>1</sub> + <em>b</em><sub>2</sub>)<sup>2</sup></span><br /> Success rates differed significantly based on similarity in complexity.</p>
+        <h3 id="understanding-logical-reasoning-syllogisms-and-framing-effects">Understanding Logical Reasoning: Syllogisms and Framing Effects</h3>
+        <h4 id="syllogistic-reasoning">Syllogistic Reasoning</h4>
+        <p>Psychological experiments demonstrate that individuals often judge the validity of arguments based not only on logical structure but also on the plausibility of conclusions. <br /><span class="math display">$$\text{Example: } \text{No Greek tragedies are comedies.} \\
+        \text{Some Greek comedies are plays.} \\
+        \text{Conclusion: Some Greek plays are not Greek tragedies.} \\
+        \text{(Valid)}$$</span><br /></p>
+        <h4 id="framing-effects">Framing Effects</h4>
+        <p>Participants exhibit different preferences based on whether options are framed in terms of gains or losses, despite being quantitatively identical. <br /><span class="math display">$$\begin{aligned}
+        \text{Plan A: } &amp; 200 \text{ will live} \\
+        \text{Plan B: } &amp; 400 \text{ will die}\end{aligned}$$</span><br /></p>
+        <h3 id="wason-selection-task">Wason Selection Task</h3>
+        <p>The Wason selection task demonstrates how context affects participant responses to logical reasoning tasks.</p>
+        <h4 id="task-design">Task Design</h4>
+        <ol>
+        <li><p>Given the statement: “If there’s an A on one side, there’s a three on the other."</p></li>
+        <li><p>Cards are presented (e.g., A, 3, D, 7).</p></li>
+        <li><p>Participants must select cards to verify the statement.</p></li>
+        </ol>
+        <p>Correct selections for verification included the A and the 7, revealing a common error in participant reasoning favoring the 3.</p>
+        <h3 id="aliefs-the-duality-of-belief">Aliefs: The Duality of Belief</h3>
+        <h4 id="definition-of-alief">Definition of Alief</h4>
+        <p>The term <strong>alief</strong> describes non-conscious associative responses that can conflict with conscious beliefs.</p>
+        <h4 id="examples-of-aliefs">Examples of Aliefs</h4>
+        <ul>
+        <li><p>The sensation of fear when standing on a glass walkway despite believing it is safe.</p></li>
+        <li><p>Responding with physical reflexes while watching an action movie.</p></li>
+        </ul>
+        <h3 id="conclusion-2">Conclusion</h3>
+        <p>Understanding dual processing theory illuminates the complexities of human reasoning. Recognizing sampling biases and the limitations of studies based on WEIRD populations is crucial for interpreting psychological research accurately.</p>
+        <h3 id="further-reading">Further Reading</h3>
+        <ul>
+        <li><p>Kahneman, D., &amp; Tversky, A. (1979). <em>Prospect Theory: An Analysis of Decision under Risk.</em></p></li>
+        <li><p>Evans, J. St. B. T. (2006). <em>Heuristic and Biases: A New Perspective.</em></p></li>
+        </ul>
+        <h1 id="philosophical-reflections-on-self-regulation-and-happiness">Philosophical Reflections on Self-Regulation and Happiness</h1>
+        <h3 id="introduction-3">Introduction</h3>
+        <p>The lecture begins with a discussion on internet precommitment among students in a classroom. The decision-making process regarding internet use during class is considered a reflection of self-regulation.</p>
+        <h4 id="polling-on-internet-use">Polling on Internet Use</h4>
+        <p>Students were asked to respond to their internet usage commitments through a clicker question:</p>
+        <ul>
+        <li><p>Press 1: Completely turning off the internet</p></li>
+        <li><p>Press 2: Restricting usage in some way</p></li>
+        <li><p>Press 3: No restrictions</p></li>
+        <li><p>Press 4: Not applicable (using pencil and paper)</p></li>
+        </ul>
+        <p>The results showed:</p>
+        <ul>
+        <li><p>43% made a precommitment (written promise).</p></li>
+        <li><p>16% attempted some restriction.</p></li>
+        </ul>
+        <h3 id="commitment-and-self-regulation">Commitment and Self-Regulation</h3>
+        <p>The discussion shifted to how self-regulation is often insufficient, leading to strategies for external constraints to help maintain commitments. Examples include:</p>
+        <ul>
+        <li><p><strong>Phone Condom</strong>: A physical barrier to device access.</p></li>
+        <li><p>Software solutions that restrict internet access.</p></li>
+        <li><p>Visual reminders (stickers) promoting commitment.</p></li>
+        </ul>
+        <h3 id="philosophical-frameworks-1">Philosophical Frameworks</h3>
+        <p>The lecture explores philosophical arguments from Plato and Aristotle designed to provide a framework for understanding self-regulation.</p>
+        <h4 id="platos-tripartite-soul-1">Plato’s Tripartite Soul</h4>
+        <p>Plato’s concept suggests that the soul consists of three parts:</p>
+        <ul>
+        <li><p>Rational (reason)</p></li>
+        <li><p>Spirited (emotion, honor)</p></li>
+        <li><p>Appetitive (desire, appetite)</p></li>
+        </ul>
+        <p>Plato argues that a harmonious soul achieves happiness. He implies that:</p>
+        <blockquote>
+        <p>"One is just who does not allow the various parts within him to meddle with each other."</p>
+        </blockquote>
+        <h4 id="four-cardinal-virtues">Four Cardinal Virtues</h4>
+        <p>Plato outlines four cardinal virtues corresponding to the soul and society:</p>
+        <ul>
+        <li><p><strong>Wisdom</strong> (Rational)</p></li>
+        <li><p><strong>Courage</strong> (Spirited)</p></li>
+        <li><p><strong>Moderation</strong> (Appetitive)</p></li>
+        <li><p><strong>Justice</strong> (Harmony among parts)</p></li>
+        </ul>
+        <h3 id="glaucon-vs.-socrates-on-justice">Glaucon vs. Socrates on Justice</h3>
+        <p>Glaucon presents a materialistic view of justice, while Socrates defends justice with intrinsic value:</p>
+        <ul>
+        <li><p>Justice = health of the soul, analogous to health in the body.</p></li>
+        <li><p>Argument: <em>Justice is a form of well-being.</em></p></li>
+        </ul>
+        <h4 id="happiness-in-the-context-of-justice">Happiness in the Context of Justice</h4>
+        <p>Plato argues that true happiness comes from a well-ordered soul: <br /><span class="math display">Happiness = Pleasure from acting justly</span><br /></p>
+        <p>Socrates compares unjust acquisition of wealth to enslaving one’s soul, emphasizing the value of spiritual well-being over material gains.</p>
+        <h3 id="jonathan-haidts-modern-perspective">Jonathan Haidt’s Modern Perspective</h3>
+        <p>Haidt builds on these ideas in contemporary psychology, emphasizing:</p>
+        <ul>
+        <li><p>The <strong>Progress Principle</strong>: Happiness comes from the process of achieving goals rather than from the goals themselves.</p></li>
+        <li><p>The <strong>Hedonic Treadmill</strong>: Sustaining happiness requires constant adaptation to material gains.</p></li>
+        </ul>
+        <h3 id="aristotles-ethics">Aristotle’s Ethics</h3>
+        <p>Aristotle critiques and builds on Plato’s ideas in his ethical framework, focusing on eudaimonia or human flourishing.</p>
+        <h4 id="function-of-human-beings">Function of Human Beings</h4>
+        <p>Aristotle argues that human happiness is achieved by fulfilling one’s unique function—reason: <br /><span class="math display">The Good = Functioning according to reason</span><br /></p>
+        <h4 id="the-doctrine-of-the-mean">The Doctrine of the Mean</h4>
+        <p>Aristotle posits that virtue is found in moderation, avoiding extremes of excess and deficiency.</p>
+        <h3 id="conclusion-3">Conclusion</h3>
+        <p>The lecture encapsulates self-regulation and its philosophical implications, emphasizing:</p>
+        <ul>
+        <li><p>The importance of internal harmony among the soul’s parts.</p></li>
+        <li><p>The role of societal influences and external aids in maintaining commitments.</p></li>
+        <li><p>The comparison between ancient philosophies and contemporary psychological insights on happiness.</p></li>
+        </ul>
+        <h1 id="lecture-notes-aristotles-views-on-happiness-and-harmony">Lecture Notes: Aristotle’s Views on Happiness and Harmony</h1>
+        <h3 id="overview-2">Overview</h3>
+        <p>The lecture today focuses on two main themes:</p>
+        <ul>
+        <li><p>Concluding discussions on Aristotle’s views concerning happiness and harmony.</p></li>
+        <li><p>Introduction of the concept of the disordered soul.</p></li>
+        </ul>
+        <p>Clickers will be used in the second part of the lecture.</p>
+        <h3 id="aristotles-views-on-happiness">Aristotle’s Views on Happiness</h3>
+        <p>The ancient Greek idea central to this discussion is <strong>eudaimonia</strong>, which can be understood as human flourishing or thriving. According to Aristotle, achieving eudaimonia requires a harmonious soul composed of three parts:</p>
+        <ul>
+        <li><p><strong>Reason</strong> (rationality)</p></li>
+        <li><p><strong>Spirit</strong> (emotions concerned with honor)</p></li>
+        <li><p><strong>Appetite</strong> (desires for consumption and procreation)</p></li>
+        </ul>
+        <p>The individual who flourishes aligns instinctive appetites and emotions with their rational reflective commitments.</p>
+        <h4 id="aristotles-formula-for-cultivating-virtue">Aristotle’s Formula for Cultivating Virtue</h4>
+        <p>Aristotle asserts that there is one ultimate end that we pursue for its own sake, which is eudaimonia. He emphasizes that true happiness comes from the expression of rational capacities rather than mere satisfaction of appetites or emotions.</p>
+        <p>The special function of humans, according to Aristotle, is the expression of reason: <br /><span class="math display">Human Good = Activity of the Soul that Expresses Reason</span><br /></p>
+        <h6 id="virtue">Virtue</h6>
+        <p>Aristotle defines virtue as:</p>
+        <blockquote>
+        <p><em>Instinctive responses that align with rational commitments.</em></p>
+        </blockquote>
+        <h3 id="types-of-virtues">Types of Virtues</h3>
+        <p>Aristotle distinguishes between:</p>
+        <ul>
+        <li><p><strong>Virtues of Thought:</strong> Gained through pedagogical instruction (e.g., knowing facts).</p></li>
+        <li><p><strong>Virtues of Character:</strong> Developed through habitual actions and practices.</p></li>
+        </ul>
+        <h4 id="virtues-of-character">Virtues of Character</h4>
+        <p>Aristotle argues that virtues of character arise <em>neither by nature nor against nature</em>, but can be cultivated through habit.</p>
+        <h6 id="habituation-process">Habituation Process</h6>
+        <blockquote>
+        <p><em>We learn to do things by doing them.</em></p>
+        </blockquote>
+        <p>For instance, one becomes a builder through building, or a musician through practicing their instrument.</p>
+        <h4 id="the-danger-of-habitual-actions">The Danger of Habitual Actions</h4>
+        <p>Aristotle notes:</p>
+        <blockquote>
+        <p><em>Whatever it is that you practice doing will become habitual to you.</em></p>
+        </blockquote>
+        <p>Good habits need to be emphasized, and bad habits need to be avoided, as both can instill themselves equally through practice.</p>
+        <h3 id="the-aristotelian-mean">The Aristotelian Mean</h3>
+        <p>Aristotle advocates for a balance, or <em>mean</em>, which lies between the extremes of deficiency and excess in behaviors:</p>
+        <ul>
+        <li><p><strong>Bravery</strong> lies between cowardice and recklessness.</p></li>
+        <li><p><strong>Friendliness</strong> lies between hostility and ingratiating behavior.</p></li>
+        <li><p><strong>Magnanimity</strong> (generosity) lies between stinginess and ostentation.</p></li>
+        </ul>
+        <h4 id="the-virtuous-circle-of-habit">The Virtuous Circle of Habit</h4>
+        <p>Aristotle articulates a cycle of cultivating virtue:</p>
+        <blockquote>
+        <p><em>"Abstaining from pleasures makes us become temperate."</em></p>
+        </blockquote>
+        <p>Once one becomes temperate, they are further aided in abstaining from pleasures.</p>
+        <h3 id="disordered-soul-and-moral-injuries">Disordered Soul and Moral Injuries</h3>
+        <p>This portion of the lecture discusses the implications of having a disordered soul, relating to moral injuries experienced by soldiers as articulated by Jonathan Shay and contrasting these with thematic elements from Homer’s <em>Iliad</em>.</p>
+        <h4 id="moral-injuries">Moral Injuries</h4>
+        <p>These arise when the moral structure of an individual or community is compromised, leading to lasting psychological effects similar to PTSD for soldiers.</p>
+        <h4 id="key-quotes-from-shay">Key Quotes from Shay</h4>
+        <blockquote>
+        <p><em>“Only this bitterness eats at my heart when one man has deprived and shamed his equal, taking back his prize by abuse of power.”</em></p>
+        </blockquote>
+        <p>This parallels the experience of many soldiers who feel a sense of injustice and betrayal from their leaders.</p>
+        <h4 id="shays-thesis">Shay’s Thesis</h4>
+        <p>Shay posits:</p>
+        <ul>
+        <li><p>Injuries inflicted are not purely physical but moral.</p></li>
+        <li><p>The legitimacy of moral order is pivotal in maintaining psychological well-being and community cohesion.</p></li>
+        </ul>
+        <h3 id="conclusion-4">Conclusion</h3>
+        <p>The discussion surrounding Aristotle’s views introduces crucial questions about the nature of virtue, the process of moral cultivation, and the ramifications of a disordered soul. The principles discussed serve as a foundation for understanding human behavior in both philosophical and practical contexts.</p>
+        <h1 id="notes-on-human-behavior-morality-and-flourishing">Notes on Human Behavior, Morality, and Flourishing</h1>
+        <h3 id="introduction-4">Introduction</h3>
+        <p>These notes summarize a lecture discussing the psychological implications of obedience in the Milgram study and its relation to the human experience of morality, attachment, and flourishing.</p>
+        <h3 id="the-milgram-experiment">The Milgram Experiment</h3>
+        <h4 id="context-and-purpose">Context and Purpose</h4>
+        <p>In the context of Jonathan Shay’s work, particularly regarding the psychological costs of acting immorally, the lecture focused on the Milgram Experiment conducted at Yale University. This experiment aimed to understand the extent of obedience to authority and how ordinary individuals could engage in behavior that causes harm to others.</p>
+        <h4 id="advertisement-and-recruitment">Advertisement and Recruitment</h4>
+        <p>In 1961, an advertisement was published:</p>
+        <blockquote>
+        <p>“Public announcement. We will pay you $4 for one hour of your time... We need you only for that one hour. No special training, education, or experience was needed.”</p>
+        </blockquote>
+        <p>Participants were invited to a laboratory setting located in Linsley-Chittenden Hall, where they were told they would participate in a study of learning and memory.</p>
+        <h4 id="experimental-design-1">Experimental Design</h4>
+        <p>Participants were assigned the role of "teacher" and instructed to administer electric shocks to a "learner" for incorrect answers. The shock levels were as follows:</p>
+        <ol>
+        <li><p>Slight Shock (15V)</p></li>
+        <li><p>Moderate Shock (30V)</p></li>
+        <li><p>Strong Shock (45V)</p></li>
+        <li><p>Intense Shocks (Up to 450V)</p></li>
+        <li><p>Danger Severe Shock (Usually at 300V)</p></li>
+        <li><p>XXX (Maximum 450V)</p></li>
+        </ol>
+        <p>Interestingly, all participants (100%) administered shocks at lower levels, while 65% proceeded to the highest shock level.</p>
+        <h4 id="predictions-vs.-outcomes">Predictions vs. Outcomes</h4>
+        <p>Before the experiment, Yale psychology majors predicted that only 3% would deliver the highest shocks. Contrary to these predictions:</p>
+        <ul>
+        <li><p>100% administered minimal shocks.</p></li>
+        <li><p>88% delivered intense shocks.</p></li>
+        <li><p>68% continued when prompted by the authority figure.</p></li>
+        </ul>
+        <p>Milgram’s findings drew attention to human behavior in extreme situations, particularly in the context of historical events, such as Nazi obedience.</p>
+        <h4 id="psychological-impact-on-subjects">Psychological Impact on Subjects</h4>
+        <p>Participants displayed significant emotional distress, including sweating, stuttering, and expressions of anxiety. One participant described as a businessman became visibly agitated yet continued with the procedure.</p>
+        <h4 id="compliance-variables">Compliance Variables</h4>
+        <p>Milgram explored factors affecting compliance:</p>
+        <ul>
+        <li><p>Proximity of the experimenter (e.g., being in the same room vs. on the phone).</p></li>
+        <li><p>Feedback from the learner (e.g., no feedback vs. voice feedback vs. physical presence).</p></li>
+        </ul>
+        <p>He found that compliance decreases as personal interaction with the victim increases.</p>
+        <h3 id="flourishing-and-attachment-theory">Flourishing and Attachment Theory</h3>
+        <h4 id="human-nature-and-social-bonds">Human Nature and Social Bonds</h4>
+        <p>Human beings are inherently social creatures, as demonstrated through studies by Harry Harlow on attachment and nurturing in primates. Harlow’s cloth vs. wire mother experiment showed that emotional support is critical for healthy development.</p>
+        <h4 id="ainsworths-attachment-styles">Ainsworth’s Attachment Styles</h4>
+        <p>Mary Ainsworth identified styles of attachment in children:</p>
+        <ul>
+        <li><p><strong>Secure Attachment:</strong> Responsive caregivers foster trust and exploration.</p></li>
+        <li><p><strong>Avoidant Attachment:</strong> Distant caregivers lead to discomfort in social settings.</p></li>
+        <li><p><strong>Ambivalent Attachment:</strong> Inconsistent caregiver responses result in anxiety.</p></li>
+        <li><p><strong>Disorganized Attachment:</strong> Abused or neglected children exhibit chaotic responses.</p></li>
+        </ul>
+        <h4 id="longitudinal-studies">Longitudinal Studies</h4>
+        <p>Longitudinal studies, including a 30-year project on attachment, revealed early childhood experiences significantly influence later social skills and behaviors.</p>
+        <h4 id="social-engagement-and-longevity">Social Engagement and Longevity</h4>
+        <p>Jonathan Haidt’s insights highlighted the value of strong social relationships in predicting happiness and longevity, exceeding traditional health factors like smoking cessation.</p>
+        <h4 id="cultural-perspectives-on-flourishing">Cultural Perspectives on Flourishing</h4>
+        <p>Research indicates that the significance of social engagement in well-being is consistent across cultures (e.g. studies from the U.S., France, Japan).</p>
+        <h3 id="implications-for-society-and-moral-philosophy">Implications for Society and Moral Philosophy</h3>
+        <h4 id="moral-development-and-political-philosophy">Moral Development and Political Philosophy</h4>
+        <p>The connection between early nurturing experiences and later social behavior suggests implications for political structure and social policies. A stable, nurturing structure may promote just citizens, enhancing societal cohesion.</p>
+        <h4 id="challenges-in-moral-reasoning">Challenges in Moral Reasoning</h4>
+        <p>The lecture raised questions on moral judgments in child-rearing practices and whether trust inherently leads to a better societal structure. This invites a discourse on moral relativism and the structure of family in political philosophy.</p>
+        <h3 id="conclusion-5">Conclusion</h3>
+        <p>The interaction between social relationships, ethical behavior, and flourishing posits that our earliest experiences with attachment inform our moral capacity and societal engagement.</p>
+        <h1 id="lecture-notes-on-stoicism-and-epictetus">Lecture Notes on Stoicism and Epictetus</h1>
+        <h3 id="introduction-to-stoicism">Introduction to Stoicism</h3>
+        <ul>
+        <li><p>Focus: Psychological detachment as a response to life’s challenges.</p></li>
+        <li><p>Main Philosopher: <strong>Epictetus</strong> (circa 50 - 130 CE).</p></li>
+        <li><p>Life Context:</p>
+        <ul>
+        <li><p>Born in Greek-speaking Asia Minor.</p></li>
+        <li><p>Early life as a slave.</p></li>
+        <li><p>Later became a Stoic philosopher after gaining freedom.</p></li>
+        </ul></li>
+        </ul>
+        <h3 id="epictetuss-contributions">Epictetus’s Contributions</h3>
+        <h4 id="key-texts">Key Texts</h4>
+        <ul>
+        <li><p>Major works include:</p>
+        <ul>
+        <li><p>A four-volume collection on various topics (metaphysics, epistemology, ethics).</p></li>
+        <li><p>The <em>Handbook</em> (Enchiridion) - a 45-epigraph essay that serves as a practical guide for living a good life.</p></li>
+        </ul></li>
+        <li><p>Historical Importance: Influential in Western thought for 2000 years, read by notable figures including John Adams and Elizabeth Carter (first English translator).</p></li>
+        </ul>
+        <h3 id="core-tenets-of-stoicism">Core Tenets of Stoicism</h3>
+        <h4 id="metaphysical-framework">Metaphysical Framework</h4>
+        <ul>
+        <li><p>The world is an organic totality governed by <em>logos</em> (divine reason).</p></li>
+        <li><p>Human responsibility: to cultivate virtue by aligning actions with rational nature.</p></li>
+        <li><p>Virtue defined as acting in accordance with reason and accepting fate.</p></li>
+        </ul>
+        <h4 id="epictetuss-psychological-techniques">Epictetus’s Psychological Techniques</h4>
+        <p>Epictetus’s guidance can be broken down into three main categories:</p>
+        <ol>
+        <li><p>Altering perceptions of the world.</p></li>
+        <li><p>Cultivating appropriate desires.</p></li>
+        <li><p>Structuring life and social relations to support commitments.</p></li>
+        </ol>
+        <h3 id="strategies-for-altering-perceptions">Strategies for Altering Perceptions</h3>
+        <ol>
+        <li><p><strong>Classification of Control:</strong></p>
+        <ul>
+        <li><p>Distinguish between what you can control and what you cannot.</p></li>
+        <li><p>Important assertion: "Some things are up to us and some things are not up to us."</p></li>
+        </ul></li>
+        <li><p><strong>Anticipation of Events:</strong></p>
+        <ul>
+        <li><p>Be emotionally prepared for common situations (e.g., crowds, long lines, etc.).</p></li>
+        </ul></li>
+        <li><p><strong>Role of Judgment:</strong></p>
+        <ul>
+        <li><p>Recognize that judgments about events affect emotional responses.</p></li>
+        </ul></li>
+        </ol>
+        <h3 id="techniques-for-cultivating-desires">Techniques for Cultivating Desires</h3>
+        <ol>
+        <li><p><strong>Inverting Desire:</strong></p>
+        <ul>
+        <li><p>Change desires to align with reality, e.g., accept snow days instead of wishing them away.</p></li>
+        </ul></li>
+        <li><p><strong>Metaphorical Assimilation:</strong></p>
+        <ul>
+        <li><p>Use metaphorical thinking to create psychological distance from frustrations.</p></li>
+        </ul></li>
+        <li><p><strong>Habituation to Loss:</strong></p>
+        <ul>
+        <li><p>Acknowledge the inevitability of loss and mortality.</p></li>
+        </ul></li>
+        </ol>
+        <h3 id="social-relations-and-the-perception-of-norms">Social Relations and the Perception of Norms</h3>
+        <ul>
+        <li><p>Importance of maintaining convictions despite societal pressure.</p></li>
+        <li><p>Develop a persona of calmness and detachment in social interactions.</p></li>
+        </ul>
+        <h3 id="philosophical-reflections-and-applications">Philosophical Reflections and Applications</h3>
+        <h4 id="contemporary-connections">Contemporary Connections</h4>
+        <ul>
+        <li><p><strong>The Serenity Prayer:</strong> <br /><span class="math display">God grant me the serenity to accept the things I cannot change,</span><br /> <br /><span class="math display">courage to change the things I can, and wisdom to know the difference.</span><br /></p></li>
+        <li><p><strong>Stockdale’s Experience:</strong></p>
+        <ul>
+        <li><p>Admiral James Stockdale’s application of Stoic principles in POW situations.</p></li>
+        <li><p>Notable distinction between what can be controlled and what cannot.</p></li>
+        </ul></li>
+        </ul>
+        <h3 id="conclusion-6">Conclusion</h3>
+        <ul>
+        <li><p>The overarching question: Can we embrace Stoic principles without losing depth in human connections?</p></li>
+        <li><p>Challenge posited by the adaptations of Epictetus’s thoughts in contemporary contexts.</p></li>
+        </ul>
+        <h1 id="lecture-notes-aristotle-habits-and-self-regulation">Lecture Notes: Aristotle, Habits, and Self-Regulation</h1>
+        <h3 id="introduction-5">Introduction</h3>
+        <p>The exploration of Aristotle’s ethics focuses on the cultivation of virtue through the development of certain habits. This lecture begins with an illustration of the difference between normative and descriptive laws, using a humorous ’T-shirt’ example from MIT.</p>
+        <h4 id="laws-normative-vs.-descriptive">Laws: Normative vs. Descriptive</h4>
+        <ul>
+        <li><p><strong>Normative Laws:</strong></p>
+        <ul>
+        <li><p>Dictate how one ought to behave.</p></li>
+        <li><p>Examples:</p>
+        <ul>
+        <li><p>"Look both ways before crossing the street."</p></li>
+        <li><p>"65 miles per hour: It’s not just a good idea, it’s the law."</p></li>
+        </ul></li>
+        </ul></li>
+        <li><p><strong>Descriptive Laws:</strong></p>
+        <ul>
+        <li><p>Describe how things actually behave.</p></li>
+        <li><p>Examples:</p>
+        <ul>
+        <li><p>"If a car hits you, you will die."</p></li>
+        <li><p>"Speed of light: 186,000 miles per second."</p></li>
+        </ul></li>
+        </ul></li>
+        </ul>
+        <h3 id="aristotles-ethics-and-habits">Aristotle’s Ethics and Habits</h3>
+        <p>According to Aristotle, habits are critical tools for transforming normative commitments (what we ought to do) into actual behaviors (what we do). The key concepts include:</p>
+        <blockquote>
+        <p>"We learn a craft by producing the same product that we must produce when we’ve learned it."</p>
+        </blockquote>
+        <h4 id="developing-virtues-through-habits">Developing Virtues through Habits</h4>
+        <ul>
+        <li><p>Cultivating virtues (e.g., bravery, temperance) involves repeated actions.</p></li>
+        <li><p>Engaging actively in just actions leads to becoming just, playing the harp leads to becoming a harpist.</p></li>
+        </ul>
+        <h4 id="the-role-of-repetition">The Role of Repetition</h4>
+        <ul>
+        <li><p>Initial behaviors are consciously controlled, but through practice become automatic.</p></li>
+        <li><p>Example: Driving or dancing becomes instinctual after practice.</p></li>
+        </ul>
+        <h3 id="habits-and-self-regulation">Habits and Self-Regulation</h3>
+        <h4 id="strategies-for-changing-habits">Strategies for Changing Habits</h4>
+        <p>To alter unwanted habits, one can implement various strategies, including:</p>
+        <ul>
+        <li><p>Limiting access to cues that trigger undesired behaviors.</p></li>
+        <li><p>Reinforcement of desirable behaviors.</p></li>
+        <li><p>Influencing setting events that promote behaviors.</p></li>
+        </ul>
+        <h4 id="cognitive-behavioral-therapy-cbt">Cognitive Behavioral Therapy (CBT)</h4>
+        <p>CBT shares an understanding with Aristotle regarding the importance of habit formation. CBT emphasizes:</p>
+        <ul>
+        <li><p>Awareness of consequences of behaviors.</p></li>
+        <li><p>Positive reinforcement for desired behaviors.</p></li>
+        <li><p>Utilizing antecedents to encourage or discourage behaviors.</p></li>
+        </ul>
+        <h3 id="conditioning-explained">Conditioning Explained</h3>
+        <h4 id="classical-conditioning">Classical Conditioning</h4>
+        <ul>
+        <li><p>Involves pairing a neutral stimulus with an unconditioned stimulus until the neutral stimulus elicits a conditioned response.</p></li>
+        <li><p>Example:</p>
+        <blockquote>
+        <p>A bell (neutral stimulus) is paired with food (unconditioned stimulus), leading the dog to salivate (conditioned response).</p>
+        </blockquote></li>
+        </ul>
+        <h4 id="operant-conditioning">Operant Conditioning</h4>
+        <ul>
+        <li><p>Concerned with the relationship between behaviors and their consequences.</p></li>
+        <li><p>Positive and negative reinforcement can be employed to increase desired behaviors or decrease undesired ones.</p></li>
+        </ul>
+        <h4 id="summary-of-conditioning-concepts">Summary of Conditioning Concepts</h4>
+        <p><br /><span class="math display">$$\begin{aligned}
+            \text{Reinforcement} &amp;: \text{Increases behavior (positive or negative)} \\
+            \text{Punishment} &amp;: \text{Decreases behavior (positive or negative)} \\
+            \text{Antecedents} &amp;: \text{Factors leading to the behavior occurring}\end{aligned}$$</span><br /></p>
+        <h3 id="conclusion-7">Conclusion</h3>
+        <p>The lecture provides insights into how normative commitments can transform into habits through practice. Both Aristotle’s ethical theories and modern psychological methods emphasize the importance of structuring experiences to cultivate desired behaviors.</p>
+        <h1 id="lecture-notes-aristotles-ethics">Lecture Notes: Aristotle’s Ethics</h1>
+        <h3 id="introduction-6">Introduction</h3>
+        <ul>
+        <li><p>The purpose of the lecture is to engage in a close reading of Aristotle’s <em>Nicomachean Ethics</em>, specifically Book II, Chapter 4.</p></li>
+        <li><p>The course theme revolves around understanding virtue and moral character through Aristotle’s lens.</p></li>
+        </ul>
+        <h3 id="aristotles-claim-on-virtues">Aristotle’s Claim on Virtues</h3>
+        <ul>
+        <li><p>Virtues of character are acquired through habituation.</p></li>
+        <li><p>Example: One becomes a musician by practicing music; similarly, one becomes virtuous by performing virtuous actions.</p></li>
+        <li><p>Aristotle acknowledges that performing just or temperate actions is a necessary but not sufficient condition for being just or temperate.</p></li>
+        </ul>
+        <h3 id="correcting-misconceptions">Correcting Misconceptions</h3>
+        <ul>
+        <li><p>Actions must have the right qualities, but the agent must also be in the right state when performing them.</p></li>
+        <li><p>Example: If one refrains from intemperate action because the opportunity is unavailable, they might not truly be temperate.</p></li>
+        <li><p>Example: Acting justly by mistake does not constitute virtue; one must know and choose the virtuous act.</p></li>
+        </ul>
+        <h3 id="conditions-for-virtuous-action">Conditions for Virtuous Action</h3>
+        <p>Aristotle states that three conditions must be satisfied for an action to count as virtuous:</p>
+        <ol>
+        <li><p>The agent must know they are performing a virtuous act.</p></li>
+        <li><p>The agent must decide to perform the act because it is virtuous.</p></li>
+        <li><p>The action must emanate from a firm and unchanging state of character.</p></li>
+        </ol>
+        <h3 id="applications-to-the-example-of-bravery">Applications to the Example of Bravery</h3>
+        <ul>
+        <li><p>Condition 1: Knowing which is the brave action (e.g., acting on the battlefield).</p></li>
+        <li><p>Condition 2: Deciding to act bravely for the sake of bravery and not for recognition.</p></li>
+        <li><p>Condition 3: A brave act must be a reflection of a consistently brave character.</p></li>
+        </ul>
+        <h3 id="external-condition-of-virtuous-actions">External Condition of Virtuous Actions</h3>
+        <p>Aristotle’s fourth condition specifies:</p>
+        <ul>
+        <li><p>Pleasure or pain following an action indicates the agent’s state.</p></li>
+        <li><p>An agent enjoying abstinence is temperate, while feeling pain indicates intemperance.</p></li>
+        <li><p>A brave person feels no pain in facing danger.</p></li>
+        </ul>
+        <h3 id="the-experience-of-virtue">The Experience of Virtue</h3>
+        <ul>
+        <li><p>Julia Annas explores what it feels like to embody virtue.</p></li>
+        <li><p>Virtuous action is characterized by internal harmony and the absence of conflicting desires.</p></li>
+        <li><p>The concept of "flow" from positive psychology aligns with Aristotelian virtue: effortless, engaged, and absorbed in virtuous activities.</p></li>
+        </ul>
+        <h3 id="social-psychologys-challenge-to-aristotle">Social Psychology’s Challenge to Aristotle</h3>
+        <p>John Doris criticizes the notion of stable character traits:</p>
+        <ul>
+        <li><p>Studies (e.g., the Good Samaritan experiment) show that behavior is often more influenced by situational factors than stable dispositions.</p></li>
+        <li><p>Individuals may act contrary to their moral beliefs when faced with external pressures or distractions.</p></li>
+        </ul>
+        <h3 id="conclusion-and-future-topics">Conclusion and Future Topics</h3>
+        <ul>
+        <li><p>The next lecture will explore responses from social psychology to challenge Aristotelian ethics and analyze the conditions of weakness of will.</p></li>
+        </ul>
+        <h1 id="lecture-notes-aristotles-moral-theory-social-psychology-and-self-regulation">Lecture Notes: Aristotle’s Moral Theory, Social Psychology, and Self-Regulation</h1>
+        <h3 id="introduction-7">Introduction</h3>
+        <p>The lecture discusses critiques of Aristotle’s moral theory, particularly in the context of contemporary social psychology, focusing on the relationship between character and circumstance in determining human behavior.</p>
+        <h3 id="aristotles-moral-theory">Aristotle’s Moral Theory</h3>
+        <h4 id="key-concepts">Key Concepts</h4>
+        <ul>
+        <li><p><strong>Virtue</strong>: A stable disposition to act in accordance with reason.</p></li>
+        <li><p><strong>Phronimos</strong>: The person with good character, acting with practical wisdom.</p></li>
+        <li><p><strong>Vice</strong>: A disordered character that contradicts virtue.</p></li>
+        <li><p><strong>Bestiality</strong>: A state below vice, where moral reasoning breaks down, exemplified by extreme actions in tragedies.</p></li>
+        <li><p><strong>Divinity</strong>: A state above virtue, where virtue is not even required.</p></li>
+        </ul>
+        <h4 id="critique-by-contemporary-psychologists">Critique by Contemporary Psychologists</h4>
+        <ul>
+        <li><p><strong>John Doris’s Argument</strong>: Contemporary psychologists highlight the fundamental attribution error, suggesting that circumstances rather than character are primary determinants of behavior.</p></li>
+        <li><p><strong>Studies Cited</strong>:</p>
+        <ul>
+        <li><p><em>Good Samaritan Study</em>: Circumstantial cues have a strong influence on whether individuals help others.</p></li>
+        <li><p><em>Milgram Experiments</em>: Illustrate how situational factors can lead individuals to behave in ways contrary to their character.</p></li>
+        </ul></li>
+        </ul>
+        <h4 id="personality-psychology">Personality Psychology</h4>
+        <p>Despite the role of circumstances, research in personality psychology shows that traits, stable from early life, correlate with behaviors:</p>
+        <ul>
+        <li><p><strong>Five-Factor Model</strong>:</p>
+        <ul>
+        <li><p>Openness to experience</p></li>
+        <li><p>Conscientiousness</p></li>
+        <li><p>Extroversion</p></li>
+        <li><p>Agreeableness</p></li>
+        <li><p>Neuroticism</p></li>
+        </ul></li>
+        <li><p><strong>Walter Mischel’s Deferred Gratification Studies</strong>: Early capacity for self-regulation (e.g., resisting marshmallows) predicts later success in various life domains.</p></li>
+        </ul>
+        <h3 id="self-regulation">Self-Regulation</h3>
+        <h4 id="examination-of-incontinence">Examination of Incontinence</h4>
+        <p>Incontinence involves knowing the right course of action but lacking the will to execute it. Aristotle identifies various states:</p>
+        <ul>
+        <li><p><strong>Continence</strong>: Acknowledging the right action and overcoming contrary inclinations.</p></li>
+        <li><p><strong>Incontinence</strong>: Acknowledging the right action but yielding to contrary inclinations.</p></li>
+        <li><p><strong>Temperance and Intemperance</strong>: Reference states where one either lacks stability (temperance) or is predictably wrong (intemperance).</p></li>
+        </ul>
+        <h4 id="strategies-for-self-regulation">Strategies for Self-Regulation</h4>
+        <p>Opposition against temptation can be approached through:</p>
+        <ol>
+        <li><p><strong>External Constraints</strong>:</p>
+        <ul>
+        <li><p>Actions to physically prevent access to temptations (e.g., remove distractions).</p></li>
+        </ul></li>
+        <li><p><strong>Manipulating Incentives</strong>:</p>
+        <ul>
+        <li><p>Building positive habits that align spirit and appetite.</p></li>
+        </ul></li>
+        <li><p><strong>Principles and Reason</strong>:</p>
+        <ul>
+        <li><p>Creating internal commitments that govern behavior.</p></li>
+        <li><p>Principles create a sense of continuity in personal decisions.</p></li>
+        </ul></li>
+        </ol>
+        <h3 id="the-ainslie-curve-and-its-implications">The Ainslie Curve and Its Implications</h3>
+        <h4 id="hyperbolic-discounting-george-ainslie">Hyperbolic Discounting (George Ainslie)</h4>
+        <ul>
+        <li><p><strong>Definition</strong>: A tendency to prefer smaller, earlier rewards over larger, later ones when close in time.</p></li>
+        <li><p><strong>Consequences</strong>:</p>
+        <ul>
+        <li><p>Decision-making structures can lead to irrational choices depending on temporal proximity.</p></li>
+        </ul></li>
+        </ul>
+        <h5 id="illustrations-from-experiments">Illustrations from Experiments</h5>
+        <ul>
+        <li><p><strong>Marshmallow Studies (Mischel)</strong>: Kids’ ability to wait for the second marshmallow varies depending on visibility and distraction techniques. <br /><span class="math display">$$D(t) = \frac{V}{1 + k \cdot t}$$</span><br /> where <span class="math inline"><em>D</em>(<em>t</em>)</span> denotes the discounted value, <span class="math inline"><em>V</em></span> the nominal value of the reward, and <span class="math inline"><em>t</em></span> is the time delay.</p></li>
+        </ul>
+        <h3 id="conclusion-8">Conclusion</h3>
+        <p>The intersection of Aristotle’s moral theorizing and contemporary psychological insights provides a nuanced understanding of human behavior and self-regulation. The exploration of self-regulation strategies suggests that ethical decision-making can be supported through thoughtful design of personal environments, internal commitments, and understanding of cognitive biases.</p>
+        <h1 id="lecture-notes-introduction-to-moral-philosophy">Lecture Notes: Introduction to Moral Philosophy</h1>
+        <h3 id="introduction-8">Introduction</h3>
+        <p>In today’s lecture, we shift gears from the first unit focused on human flourishing. We have yet to examine the nature of morality in detail. Our goal is to introduce two prominent moral theories from Western philosophy and discuss their empirical research.</p>
+        <h3 id="what-is-moral-philosophy">What is Moral Philosophy?</h3>
+        <p>Moral philosophy systematically endeavors to understand moral concepts and justify moral principles and theories. It focuses on providing accounts for terms like:</p>
+        <ul>
+        <li><p>Right and Wrong</p></li>
+        <li><p>Permissible and Impermissible</p></li>
+        <li><p>Ought and Ought Not</p></li>
+        <li><p>Good and Bad</p></li>
+        </ul>
+        <p>Moral philosophy is a <strong>normative</strong> enterprise, aiming to answer how people ought to act to align with moral constraints.</p>
+        <h3 id="core-questions-of-moral-philosophy">Core Questions of Moral Philosophy</h3>
+        <p>Moral philosophy seeks to provide principled answers to three kinds of questions:</p>
+        <ol>
+        <li><p><strong>Moral Motivation:</strong> Why should we act morally?</p></li>
+        <li><p><strong>Moral Action:</strong> What actions ought we to take to be moral?</p></li>
+        <li><p><strong>Moral Justification:</strong> Why are certain actions considered moral or immoral?</p></li>
+        </ol>
+        <h4 id="moral-motivation">Moral Motivation</h4>
+        <p>Answers to moral motivation can be categorized as follows:</p>
+        <ul>
+        <li><p><strong>Self-Interest Account:</strong> Behaving morally leads to personal benefits (e.g., Socratic harmony, societal stability).</p></li>
+        <li><p><strong>Normative Features:</strong> Moral obligations exist as facts of the world.</p></li>
+        <li><p><strong>Descriptive Behavior:</strong> Pro-social behavior is inherent to human nature (evolutionary perspective).</p></li>
+        </ul>
+        <h4 id="moral-action">Moral Action</h4>
+        <p>The second aspect focuses on specific moral actions. Examples include:</p>
+        <ul>
+        <li><p>Is it permissible to harm one to save many? (e.g., Jim and the Indians case)</p></li>
+        <li><p>Our duties towards the less fortunate (e.g., Singer’s obligations toward third-world poverty).</p></li>
+        </ul>
+        <h3 id="major-moral-theories-in-western-tradition">Major Moral Theories in Western Tradition</h3>
+        <p>We will discuss four significant moral theories:</p>
+        <ol>
+        <li><p>Utilitarianism</p></li>
+        <li><p>Deontology (Kant)</p></li>
+        <li><p>Virtue Ethics (Aristotle)</p></li>
+        <li><p>Divine Command Theory</p></li>
+        </ol>
+        <h3 id="utilitarianism">Utilitarianism</h3>
+        <p>Utilitarianism states that an action is morally right if it produces the greatest good for the greatest number. <br /><span class="math display">Moral Rightness ∝ Utility Produced</span><br /> Mill emphasizes that:</p>
+        <blockquote>
+        <p>Actions are right in proportion as they tend to promote happiness; wrong as they tend to produce the reverse of happiness.</p>
+        </blockquote>
+        <h4 id="consequentialism">Consequentialism</h4>
+        <p>Utilitarianism is a form of consequentialism, meaning the morality of an act is determined solely by its consequences, particularly its utility.</p>
+        <h3 id="kants-deontological-framework">Kant’s Deontological Framework</h3>
+        <p>Kant argues that the morality of an act is defined by the intention behind it, rather than its consequences. Mill suggests that motive does not affect the moral worth of an act:</p>
+        <blockquote>
+        <p>He who saves another creature from drowning does what is morally right whether his motive be duty or self-interest.</p>
+        </blockquote>
+        <h3 id="comparative-analysis-of-moral-theories">Comparative Analysis of Moral Theories</h3>
+        <h4 id="focus-areas">Focus Areas</h4>
+        <ul>
+        <li><p><strong>Virtue Ethics</strong> focuses on the character of the actor.</p></li>
+        <li><p><strong>Deontology</strong> emphasizes the nature of the act itself.</p></li>
+        <li><p><strong>Consequentialism (Utilitarianism)</strong> assesses the outcomes produced by the act.</p></li>
+        </ul>
+        <h3 id="polls-and-case-studies">Polls and Case Studies</h3>
+        <ul>
+        <li><p>Several case studies (the fan case, cookie case) illustrate utilitarian principles.</p></li>
+        <li><p>In each case, the collective happiness produced by various actions was compared.</p></li>
+        </ul>
+        <h4 id="case-example-fan-and-cookies">Case Example: Fan and Cookies</h4>
+        <ol>
+        <li><p>You get 100 units of happiness; 100 others get 1 unit each (Total = 200 units)</p></li>
+        <li><p>If you angle the fan differently, you remain happy but others get 2 units (Total = 300 units)</p></li>
+        </ol>
+        <p>The moral decision favored increasing the collective happiness without self-sacrifice.</p>
+        <h4 id="final-case-the-omelas-dilemma">Final Case: The Omelas Dilemma</h4>
+        <p>The Omelas story illustrates a society in which the happiness of many depends on the suffering of one child:</p>
+        <ul>
+        <li><p>Does the happiness of the majority justify the suffering of the minority?</p></li>
+        </ul>
+        <h3 id="conclusions-and-further-discussion">Conclusions and Further Discussion</h3>
+        <p>We are left with profound questions about moral obligations, the rightness of actions, and societal roles in moral behavior. The lecture sets the stage for further exploration of Kantian ethics and empirical critiques of utilitarianism.</p>
+        <h1 id="lecture-notes-utilitarianism-and-kantian-ethics">Lecture Notes: Utilitarianism and Kantian Ethics</h1>
+        <h3 id="utilitarianism-1">Utilitarianism</h3>
+        <h4 id="overview-of-utilitarianism">Overview of Utilitarianism</h4>
+        <p>Utilitarianism is an ethical theory that advocates for actions that promote the greatest happiness for the greatest number. The central tenets of this theory were famously articulated by John Stuart Mill.</p>
+        <h4 id="key-principles-of-mills-utilitarianism">Key Principles of Mill’s Utilitarianism</h4>
+        <ul>
+        <li><p><strong>Greatest Happiness Principle:</strong> Actions are considered right in proportion as they tend to promote happiness; wrong as they tend to produce the reverse of happiness. <br /><span class="math display">$$H = \sum_{i=1}^{n} h_i$$</span><br /> where <span class="math inline"><em>H</em></span> is the total happiness produced and <span class="math inline"><em>h</em><sub><em>i</em></sub></span> is the happiness contributed by each individual action.</p></li>
+        <li><p><strong>Motive Irrelevance:</strong> The moral worth of an action is determined by its consequences, not the intentions behind it. For example, "He who saves another creature from drowning does what is morally right, whether his motive be duty or the hope of being paid for it."</p></li>
+        </ul>
+        <h4 id="critiques-of-utilitarianism">Critiques of Utilitarianism</h4>
+        <p>Among the classical objections to utilitarianism are:</p>
+        <ol>
+        <li><p>The Jim Case: Jim must choose between killing one individual to save the other nineteen or doing nothing, which results in the death of all twenty.</p></li>
+        <li><p>Moral Compunction: Critics argue that even if utilitarian calculus dictates killing one to save the many, the emotional and moral hesitation felt by individuals is still important.</p></li>
+        </ol>
+        <h3 id="kantian-ethics">Kantian Ethics</h3>
+        <h4 id="overview-of-kants-deontological-ethics">Overview of Kant’s Deontological Ethics</h4>
+        <p>Immanuel Kant’s moral philosophy places the emphasis on the intrinsic worth of actions, rather than the consequences. The key concepts in Kant’s ethics include:</p>
+        <ul>
+        <li><p><strong>Categorical Imperative:</strong> The fundamental principle that guides moral action.</p></li>
+        <li><p><strong>Good Will:</strong> The only thing that can be regarded as good without qualification.</p></li>
+        </ul>
+        <h4 id="key-concepts-in-kantian-ethics">Key Concepts in Kantian Ethics</h4>
+        <p>According to Kant:</p>
+        <ul>
+        <li><p>Actions have moral worth only when done from duty, not out of inclination or self-interest.</p></li>
+        <li><p>An action’s moral worth does not depend on its outcomes but rather on the maxim from which the action is performed. <br /><span class="math display">Moral Worth ⟹ Action from Duty</span><br /></p></li>
+        <li><p>Duty is defined as the necessity of an action done out of respect for the moral law.</p></li>
+        </ul>
+        <h4 id="formulations-of-the-categorical-imperative">Formulations of the Categorical Imperative</h4>
+        <p>Kant articulates the Categorical Imperative in various formulations:</p>
+        <p>1. Universalizability: <br /><span class="math display">Act only according to that maxim whereby you can at the same time will that it should become a universal law.</span><br /></p>
+        <p>2. Humanity: <br /><span class="math display">Act in such a way that you treat humanity, whether in your own person or in the person of any other, always at the same time as an end and never merely as a means.</span><br /></p>
+        <h4 id="applications-of-kants-ethics">Applications of Kant’s Ethics</h4>
+        <p>Kant uses examples such as the “lying promise” to illustrate the Categorical Imperative. In a lying promise made with the intention of deceiving, the maxim cannot be universalized without contradiction, therefore, it fails to conform to moral law.</p>
+        <h3 id="conclusion-9">Conclusion</h3>
+        <p>In summary, the lecture explored successive ethical theories: - The consequences-focused utilitarianism that prioritizes overall happiness and the objections to it, notably concerning individual moral agency. - Kant’s deontological framework which places value on the intentions behind actions and their alignment with universal moral principles.</p>
+        <p>Future discussions will delve deeper into Kant’s Categorical Imperative and its implications in various moral dilemmas.</p>
+        <h1 id="lecture-notes-kantian-ethics-and-the-trolley-problem">Lecture Notes: Kantian Ethics and the Trolley Problem</h1>
+        <h3 id="overview-3">Overview</h3>
+        <p>In today’s lecture, we cover two primary topics:</p>
+        <ul>
+        <li><p>Completion of our discussion of deontology, focusing on Kant’s ethical framework.</p></li>
+        <li><p>An introduction to Judith Jarvis Thomson’s analysis of the trolley problem.</p></li>
+        </ul>
+        <h3 id="kantian-ethics-1">Kantian Ethics</h3>
+        <p>We review three critical claims from Kant’s <em>Groundwork of the Metaphysics of Morals</em>:</p>
+        <h4 id="first-claim-moral-worth-and-duty">First Claim: Moral Worth and Duty</h4>
+        <p>An action must be done <strong>from duty</strong> to have moral worth.</p>
+        <ul>
+        <li><p>Distinction is drawn between acting in accordance with duty versus acting from duty.</p></li>
+        <li><p>Moral worth is determined not just by conformity to moral law, but by the intention to act for the sake of duty.</p></li>
+        </ul>
+        <h4 id="second-claim-the-role-of-maxims">Second Claim: The Role of Maxims</h4>
+        <p>The moral worth of an action comes from its <strong>maxim</strong>, not from the purpose of the action.</p>
+        <ul>
+        <li><p>A <em>maxim</em> is a principle that underlies an action.</p></li>
+        <li><p>To determine moral worth, we assess the description under which the action is performed.</p></li>
+        </ul>
+        <h4 id="third-claim-duty-and-moral-law">Third Claim: Duty and Moral Law</h4>
+        <p>Kant defines <strong>duty</strong> as the necessity of an action performed out of respect for the law.</p>
+        <ul>
+        <li><p>Acting in accordance with the moral law must be done with recognition of its binding nature.</p></li>
+        <li><p>This self-imposed law stems from rationality and is not influenced by external contingencies.</p></li>
+        </ul>
+        <h3 id="categorical-imperative">Categorical Imperative</h3>
+        <p>Kant’s categorical imperative serves as a foundational principle of morality:</p>
+        <h4 id="formula-of-universal-law">Formula of Universal Law</h4>
+        <p><em>Act only according to that maxim by which you can at the same time will that it should become a universal law.</em></p>
+        <h4 id="formula-of-humanity">Formula of Humanity</h4>
+        <p><em>Act in such a way that you treat humanity, whether in your own person or in the person of any other, never merely as a means to an end, but always at the same time as an end.</em></p>
+        <h4 id="formula-of-autonomy">Formula of Autonomy</h4>
+        <p><em>Act so that your will can regard itself at the same time as making universal law.</em></p>
+        <h4 id="kingdom-of-ends">Kingdom of Ends</h4>
+        <p><em>Act according to the maxims of a member giving universal laws for a possible kingdom of ends.</em></p>
+        <h3 id="the-trolley-problem-thomsons-analysis">The Trolley Problem: Thomson’s Analysis</h3>
+        <p>We explore Thomson’s challenge to intuitions around the trolley problem and related scenarios:</p>
+        <h4 id="trolley-driver-scenario">Trolley Driver Scenario</h4>
+        <p>A trolley is headed toward five individuals, and the driver must decide whether to divert it to a track with one individual.</p>
+        <ul>
+        <li><p>Options:</p>
+        <ol>
+        <li><p>A: Morally mandatory to divert the trolley.</p></li>
+        <li><p>B: Morally permitted, but not mandatory.</p></li>
+        <li><p>C: Morally prohibited to divert the trolley.</p></li>
+        </ol></li>
+        </ul>
+        <h4 id="transplant-scenario">Transplant Scenario</h4>
+        <p>A doctor could save five patients in need of organs by sacrificing one healthy individual.</p>
+        <ul>
+        <li><p>The majority view is that it is morally prohibited to sacrifice the healthy individual.</p></li>
+        </ul>
+        <h4 id="comparison-of-intuitions">Comparison of Intuitions</h4>
+        <p>Thomson contrasts these cases to reveal inconsistencies in moral reasoning between killing versus letting die.</p>
+        <ul>
+        <li><p><strong>Killing vs. Letting Die:</strong> The distinction is examined to assess moral permissibility.</p></li>
+        </ul>
+        <h4 id="bystander-effect-and-loop-scenario">Bystander Effect and Loop Scenario</h4>
+        <p>Debates arise when discussing Jim’s choice to divert the trolley versus the implications of using a person as a means to an end.</p>
+        <h4 id="final-thought-experiment-the-fat-man">Final Thought Experiment: The Fat Man</h4>
+        <p>Revisiting intuitions about whether to push a large man off a bridge to stop a trolley illustrates divergence in responses.</p>
+        <ul>
+        <li><p>Survey results showcase a significant change in moral judgment compared to earlier scenarios.</p></li>
+        </ul>
+        <h3 id="conclusions">Conclusions</h3>
+        <p>The lecture explored Kant’s foundational ideas of moral duty and the categorical imperative, leading to a deeper engagement with moral intuitions illustrated through Thomson’s trolley problem. The contrasts in responses illuminate complex ethical dilemmas and the implications of utilitarian versus deontological reasoning.</p>
+        <h1 id="ethics-of-the-trolley-problem-lecture-notes">Ethics of the Trolley Problem: Lecture Notes</h1>
+        <h3 id="introduction-9">Introduction</h3>
+        <p>The trolley problem presents a moral dilemma involving choices about saving lives. This lecture delves into Judith Thomson’s cases: the Classic Bystander Case and the Fat Man case, discussing variations in moral intuitions and responses.</p>
+        <h3 id="the-classic-bystander-case">The Classic Bystander Case</h3>
+        <ul>
+        <li><p>Situation: A trolley is about to run over five people. A bystander can pull a lever to redirect the trolley to kill one person instead.</p></li>
+        <li><p>Class Response Distribution:</p>
+        <ul>
+        <li><p>15% thought it was morally required to pull the lever (kill one to save five).</p></li>
+        <li><p>70% thought it was morally permitted.</p></li>
+        <li><p>15% thought it was morally prohibited.</p></li>
+        </ul></li>
+        </ul>
+        <h3 id="thomsons-fat-man-case">Thomson’s Fat Man Case</h3>
+        <ul>
+        <li><p>Situation: A bystander can push a fat man off a bridge to stop the trolley from hitting five people.</p></li>
+        <li><p>Class Response Distribution:</p>
+        <ul>
+        <li><p>78% believed it was morally prohibited to push the fat man.</p></li>
+        </ul></li>
+        </ul>
+        <p>The differing distribution of responses between the two cases raises the question: Why do we judge these scenarios differently despite similar outcomes?</p>
+        <h3 id="thomsons-analysis">Thomson’s Analysis</h3>
+        <ul>
+        <li><p>Thomson argues that while utilitarian reasoning suggests saving the five is better, the concept of rights prevents killing the one (the fat man).</p></li>
+        <li><p>Key distinction:</p>
+        <ul>
+        <li><p>In the Bystander case, no rights are infringed.</p></li>
+        <li><p>In the Fat Man case, rights are violated (using a person as a means to an end).</p></li>
+        </ul></li>
+        </ul>
+        <h3 id="three-non-classic-responses">Three Non-Classic Responses</h3>
+        <ul>
+        <li><p><strong>Thomson’s 2008 View: Rethinking Cases</strong></p>
+        <ul>
+        <li><p>She presents a scenario where a bystander has a choice between letting the trolley hit five, deflecting to one person, or redirecting it to hit themselves (Bystander’s Three Options).</p></li>
+        <li><p>The moral implications again spur different responses.</p></li>
+        </ul></li>
+        <li><p><strong>Josh Greene’s Utilitarian View</strong></p>
+        <ul>
+        <li><p>Greene argues for a consistent response across cases: in both the Bystander and Fat Man scenarios, utilitarianism mandates causing the death of one to save five.</p></li>
+        </ul></li>
+        <li><p><strong>Cass Sunstein’s Heuristics Approach</strong></p>
+        <ul>
+        <li><p>Sunstein suggests that moral reasoning often relies on heuristics, similar to non-moral reasoning. This could lead to systematic errors in moral judgment.</p></li>
+        </ul></li>
+        </ul>
+        <h3 id="experiments-and-observations">Experiments and Observations</h3>
+        <ul>
+        <li><p>Thomson presents cases demonstrating that as personal stakes increase (e.g., when one risks oneself), moral intuitions shift.</p></li>
+        <li><p>Observations show that many use emotional reasoning in cases like Fat Man, while rational processing appears more prominent in the Bystander case.</p></li>
+        </ul>
+        <h3 id="greenes-neuroimaging-research">Greene’s Neuroimaging Research</h3>
+        <ul>
+        <li><p>Greene’s research utilizes fMRI to show different brain areas activated during moral decision-making.</p></li>
+        <li><p>Moral personal dilemmas (e.g., Fat Man) activate brain areas associated with emotion, while moral impersonal dilemmas (e.g., Bystander) activate areas linked with rational thought.</p></li>
+        </ul>
+        <h3 id="sunsteins-heuristics-in-moral-reasoning">Sunstein’s Heuristics in Moral Reasoning</h3>
+        <ul>
+        <li><p>Sunstein highlights that heuristics, while practical, can lead to errors in moral reasoning.</p></li>
+        <li><p>Examples include:</p>
+        <ul>
+        <li><p>The availability heuristic: how easily one can recall instances can skew perception of risk.</p></li>
+        <li><p>The representative heuristic: misjudging probabilities due to overly focusing on typical instances.</p></li>
+        </ul></li>
+        </ul>
+        <h3 id="conclusion-and-future-discussions">Conclusion and Future Discussions</h3>
+        <p>These frameworks help us navigate the ethical landscape of trolley problems, challenging us to reflect on our moral intuitions and the reasoning behind them. Future discussions will delve deeper into case studies and how heuristic reasoning shapes our moral judgments.</p>
+        <h1 id="lecture-notes-on-moral-philosophy-trolley-cases-and-moral-luck">Lecture Notes on Moral Philosophy: Trolley Cases and Moral Luck</h1>
+        <h3 id="introduction-10">Introduction</h3>
+        <p>The lecture resumed the examination of the perplexities arising from the trolley problem, focusing on the apparent asymmetry in responses to different iterations of the case, specifically the Bystander and Fat Man cases.</p>
+        <h3 id="the-trolley-problem">The Trolley Problem</h3>
+        <h4 id="overview-of-cases">Overview of Cases</h4>
+        <ul>
+        <li><p><strong>Bystander Case:</strong></p>
+        <ul>
+        <li><p>You can pull a lever to divert a trolley onto a track where it will kill one person instead of five.</p></li>
+        </ul></li>
+        <li><p><strong>Fat Man Case:</strong></p>
+        <ul>
+        <li><p>You can push a person off a bridge onto the track to stop the trolley, killing that one person but saving five.</p></li>
+        </ul></li>
+        </ul>
+        <p>The lecture highlighted two philosophical responses to these cases:</p>
+        <ul>
+        <li><p><strong>Judith Thomson’s Position:</strong> There is no moral asymmetry; reflecting on additional cases reveals similar moral outcomes in both scenarios.</p></li>
+        <li><p><strong>Josh Greene’s Position:</strong> The emotional response elicited by closeness to the moral act (in Fat Man) leads to inconsistent moral judgments which he argues are unjustified.</p></li>
+        </ul>
+        <h3 id="cass-sunsteins-argument">Cass Sunstein’s Argument</h3>
+        <p>Sunstein proposes a middle ground, suggesting both cases are morally comparable at a deeper level. His analysis includes:</p>
+        <ul>
+        <li><p>The impact of heuristics in moral reasoning, akin to cognitive biases in non-moral decision-making.</p></li>
+        <li><p>Examples from Jonathan Haidt’s work highlighting moral disapprobation in certain scenarios lacking clear justification.</p></li>
+        </ul>
+        <p>Subsequently, the class discussed the framing effects in moral dilemmas: <br /><span class="math display">$$\text{Plan A: Live - } 200 \text{ of 600, } \quad \text{Plan B: Live - } \frac{1}{3}(600) \text{ (probability)}$$</span><br /></p>
+        <h4 id="framing-effects-1">Framing Effects</h4>
+        <p>Sunstein explored the Asian disease problem to illustrate how different presentations (number who will live vs number who will die) yield dramatically different moral responses despite identical mathematical outcomes.</p>
+        <h3 id="different-domains-of-moral-judgment">Different Domains of Moral Judgment</h3>
+        <p>Sunstein indicated several areas where heuristics influence moral and risk-based decisions:</p>
+        <ul>
+        <li><p><strong>Risk Regulation:</strong> How we perceive and handle risks in various contexts.</p></li>
+        <li><p><strong>Punishment:</strong> Analysis of differences in how we punish individuals versus groups.</p></li>
+        </ul>
+        <h3 id="examples-of-heuristics-and-moral-judgment">Examples of Heuristics and Moral Judgment</h3>
+        <p>The class application of clickers illustrated various examples of moral principles:</p>
+        <ul>
+        <li><p><strong>Company Risk Assessment:</strong> Condemnation differs based on certainty vs risk.</p></li>
+        <li><p><strong>Car and Driver Case:</strong> Unlucky conditions impact blame (i.e., cell phone use while driving).</p></li>
+        </ul>
+        <h3 id="moral-luck">Moral Luck</h3>
+        <p>The concept of <em>moral luck</em> was introduced, noting:</p>
+        <ul>
+        <li><p>Two individuals might take identical actions but experience different moral evaluations based on outcomes unpredictable by the agents.</p></li>
+        <li><p>A notable psychological discomfort arises when examining agents who do not intend harm but face unfortunate consequences.</p></li>
+        </ul>
+        <h4 id="types-of-moral-luck">Types of Moral Luck</h4>
+        <ul>
+        <li><p><strong>Resultant Luck:</strong> Differences in outcomes of similar actions (e.g., hitting a child).</p></li>
+        <li><p><strong>Constitutive Luck:</strong> Differences in character due to factors beyond control.</p></li>
+        <li><p><strong>Circumstantial Luck:</strong> The context that influences moral behaviors.</p></li>
+        </ul>
+        <h4 id="responses-to-moral-luck">Responses to Moral Luck</h4>
+        <p>Philosophers suggest three responses:</p>
+        <ul>
+        <li><p><strong>Rationalist Response:</strong> Reject moral luck in assessments.</p></li>
+        <li><p><strong>Irrationalist Attitude:</strong> Accept luck as influencing praise/blame.</p></li>
+        <li><p><strong>Pragmatic Attitude:</strong> Propose that there are constraints on moral evaluation.</p></li>
+        </ul>
+        <h3 id="conclusion-10">Conclusion</h3>
+        <p>The lecture concluded with the assertion that our moral frameworks must navigate competing principles: the control principle versus the moral luck principle. There is no clear resolution, leaving the discussion open for further philosophical inquiry on moral agency and responsibility.</p>
+        <h1 id="lecture-notes-moral-responsibility-trolley-problems-and-theories-of-punishment">Lecture Notes: Moral Responsibility, Trolley Problems, and Theories of Punishment</h1>
+        <h3 id="overview-of-course-structure">Overview of Course Structure</h3>
+        <p>The lecture series progresses through three distinct yet interconnected topics:</p>
+        <ol>
+        <li><p>Individual Flourishing: Focused on human beings achieving internal harmony.</p></li>
+        <li><p>Morality and Interpersonal Relations: Examines moral responsibility in relationships.</p></li>
+        <li><p>Political Structures: Investigates how political frameworks can cultivate individual behaviors.</p></li>
+        </ol>
+        <p>The unit on punishment serves as a transitional phase between morality and political philosophy.</p>
+        <h3 id="starting-class-with-clicker-questions">Starting Class with Clicker Questions</h3>
+        <p>The professor engages students with clicker questions to reflect on moral dilemmas similar to the trolley problems, transitioning to discussions of punishment.</p>
+        <h4 id="the-trolley-problem-1">The Trolley Problem</h4>
+        <p>The classic <em>Trolley Bystander case</em> presents a scenario in which a bystander must choose whether to divert a trolley, threatening the lives of five people on one track or one person on another.</p>
+        <h5 id="real-world-application-the-nuclear-case">Real-World Application: The Nuclear Case</h5>
+        <p>Consider the scenario where as the Japanese Prime Minister, a radioactive cloud threatens Tokyo (13 million people), and diverting it to a rural area (1 million people) is an option. The ethical considerations are numerous:</p>
+        <ol>
+        <li><p>Morally mandatory to redirect the plume?</p></li>
+        <li><p>Morally permitted but not mandatory?</p></li>
+        <li><p>Morally prohibited?</p></li>
+        </ol>
+        <h4 id="discussion-of-responses">Discussion of Responses</h4>
+        <p>Responses indicated that:</p>
+        <ul>
+        <li><p>31% believe redirection is morally mandatory.</p></li>
+        <li><p>56% view it as morally permitted;</p></li>
+        <li><p>13% think it is morally prohibited.</p></li>
+        </ul>
+        <h3 id="harms-way-case">Harm’s Way Case</h3>
+        <p>Involves a situation where a small group of engineers might be conscripted into certain death to save a larger population. Ethical questions arise surrounding the justification of such actions:</p>
+        <ol>
+        <li><p>Morally mandatory?</p></li>
+        <li><p>Morally permitted but not mandatory?</p></li>
+        <li><p>Morally prohibited?</p></li>
+        </ol>
+        <h4 id="responses">Responses</h4>
+        <p>The responses varied significantly compared to the fat man case, emphasizing:</p>
+        <ul>
+        <li><p>27% think it’s prohibited.</p></li>
+        <li><p>41% think it’s permitted but not mandatory.</p></li>
+        <li><p>32% believe it’s morally prohibited.</p></li>
+        </ul>
+        <h3 id="moral-responsibility-and-punishment">Moral Responsibility and Punishment</h3>
+        <p>Transitioning into discussions of punishment, the class considers whom we hold morally responsible and the psychology behind perceived deservingness of punishment.</p>
+        <h4 id="characteristics-of-civil-punishment">Characteristics of Civil Punishment</h4>
+        <p>According to the lecture, punishment broadly includes:</p>
+        <ul>
+        <li><p>Involvement of unpleasantness/suffering.</p></li>
+        <li><p>A response to a specific legal or moral offense.</p></li>
+        <li><p>Intentional administration by human agents.</p></li>
+        <li><p>Sanction by legal authority or institutions.</p></li>
+        </ul>
+        <h3 id="theories-of-justification-for-punishment">Theories of Justification for Punishment</h3>
+        <p>Two predominant justifications are:</p>
+        <ol>
+        <li><p>Utilitarian Justification: Punishment serves as a deterrent to future harm and is justified by its consequences.</p></li>
+        <li><p>Deontological Justification: Punishment is deserved because it addresses wrongdoing according to moral or legal codes.</p></li>
+        </ol>
+        <h3 id="restitution-and-rehabilitation">Restitution and Rehabilitation</h3>
+        <p>Additional frameworks discussed include:</p>
+        <ul>
+        <li><p><strong>Restitution</strong>: Restoring the victim to pre-harm conditions (e.g., return of stolen property).</p></li>
+        <li><p><strong>Rehabilitation</strong>: Facilitating re-socialization of the offender towards pro-social behavior.</p></li>
+        </ul>
+        <h4 id="restoration-of-pre-harm-state">Restoration of Pre-Harm State</h4>
+        <p>Using Gyges and Pedro’s example, various forms of appropriate responses to offenses are analyzed:</p>
+        <ul>
+        <li><p>If a horse is stolen, restitution would involve returning the horse.</p></li>
+        <li><p>If a horse is killed, one might require replacing it with an equivalent horse.</p></li>
+        </ul>
+        <h3 id="the-retributive-perspective">The Retributive Perspective</h3>
+        <p>Kant’s view on punishment focuses on moral desert, where punishment is not merely a tool for social order but a response to the moral violation itself:</p>
+        <blockquote>
+        <p>“Juridical punishment can never be administered merely as a means for promoting another good.” – Immanuel Kant</p>
+        </blockquote>
+        <p>### Key Points to Remember - Punishment acknowledges the moral order. - It stems from a societal need to restore balance and justice. - Justice involves punishment being proportional to the crime committed.</p>
+        <h3 id="conclusion-11">Conclusion</h3>
+        <p>Also noted were the complexities surrounding retributive versus revenge-based punishment. It raises questions on personal involvement versus societal responsibility in justice.</p>
+        <p>Considerations of utilitarian methods of punishment will be further explored in the next class.</p>
+        <h1 id="lecture-notes-on-punishment">Lecture Notes on Punishment</h1>
+        <h3 id="introduction-11">Introduction</h3>
+        <p>In this lecture, we explore the justification for punishment from both consequentialist and retributivist perspectives. We examine how moral and legal norms are established and what justifies punitive actions when those norms are violated.</p>
+        <h3 id="moral-norms-and-punishment">Moral Norms and Punishment</h3>
+        <ul>
+        <li><p>Before discussing punishment, we considered moral norms and principles that underpin them.</p></li>
+        <li><p>Now focusing on the implications of violations of these norms.</p></li>
+        <li><p>We explore different justifications for punishment, emphasizing restitution and rehabilitation.</p></li>
+        <li><p>The focus of today’s discussion is on consequentialist views of punishment.</p></li>
+        </ul>
+        <h3 id="characterization-of-punishment">Characterization of Punishment</h3>
+        <blockquote>
+        <p><em>Punishment is an action imposed by one judge on an offender in response to a legal offense, involving the intentional infliction of unpleasantness or suffering.</em></p>
+        </blockquote>
+        <p>The central question is how states justify imposing disutility on individuals who violate norms.</p>
+        <h3 id="consequentialist-justification">Consequentialist Justification</h3>
+        <p>Consequentialists argue that the primary justifications for punishment are <strong>deterrence</strong> and <strong>prevention</strong> of future offenses. This entails:</p>
+        <ul>
+        <li><p><strong>Deterrence</strong>: Punishment should change the cost-benefit analysis of committing a crime.</p></li>
+        <li><p><strong>Prevention</strong>: Punishment must prevent future crimes. If there are equally effective alternatives that do not involve punishment, then punishment is unjustified.</p></li>
+        </ul>
+        <p>Jeremy Bentham emphasizes that punishment must:</p>
+        <blockquote>
+        <p><em>Change the calculus of costs and benefits associated with a crime, making the act appear less desirable.</em></p>
+        </blockquote>
+        <h3 id="challenges-to-consequentialist-justifications">Challenges to Consequentialist Justifications</h3>
+        <h4 id="under-generation-of-punishment">Under-Generation of Punishment</h4>
+        <ul>
+        <li><p>Consequentialist reasoning under-generates reasons for punishment because non-punitive alternatives may suffice for incapacitating offenders.</p></li>
+        <li><p>For instance, if incapacitating someone does not require suffering beyond what is necessary, extra suffering cannot be justified.</p></li>
+        </ul>
+        <h4 id="over-generation-of-punishment">Over-Generation of Punishment</h4>
+        <ul>
+        <li><p>Consequentialism could lead to punishment of innocent individuals if it serves the goal of deterrence (e.g., punishing an innocent person to frighten others).</p></li>
+        <li><p>This practice, known as <em>telishment</em>, fails to maintain moral standards.</p></li>
+        </ul>
+        <h4 id="example">Example</h4>
+        <p>Consider a scenario where an innocent person is punished to deter future crimes. This raises ethical concerns as it contradicts established norms of fairness.</p>
+        <h3 id="two-level-theory-of-punishment">Two-Level Theory of Punishment</h3>
+        <ul>
+        <li><p>John Rawls suggests a two-level approach:</p>
+        <ul>
+        <li><p>Justification of the practice of punishment is based on societal utility.</p></li>
+        <li><p>Justification for specific punishments relies on retributive justice.</p></li>
+        </ul></li>
+        <li><p>This framework may address under-generation and over-generation issues.</p></li>
+        </ul>
+        <h3 id="empirical-investigation-into-punishment-psychology">Empirical Investigation into Punishment Psychology</h3>
+        <h4 id="intuitive-responses">Intuitive Responses</h4>
+        <p>Psychological studies reveal that people’s intuitive responses to punishment considerations frequently focus on:</p>
+        <ul>
+        <li><p><strong>Retribution</strong>: Emphasizing the wrongness of an act, considering intention and motive.</p></li>
+        <li><p><strong>Consequentialism</strong>: Looking for how punishment affects societal outcomes or deters behavior.</p></li>
+        </ul>
+        <h4 id="altruistic-punishment">Altruistic Punishment</h4>
+        <blockquote>
+        <p><em>Altruistic punishers impose costs on wrongdoers, often at their own expense, to address norm violations not directly affecting them.</em></p>
+        </blockquote>
+        <h3 id="impact-of-luck-on-punishment">Impact of Luck on Punishment</h3>
+        <h4 id="moral-luck-1">Moral Luck</h4>
+        <p>Moral and legal assessments of actions are often influenced by luck (e.g., success or failure of a crime). Consider:</p>
+        <ul>
+        <li><p>If a person intends to harm yet fails due to luck, should they be punished less severely than someone who succeeds?</p></li>
+        <li><p>David Lewis argues that equating punishment simply with outcomes can lead to a “penal lottery” approach, where individuals are punished based on luck rather than intention.</p></li>
+        </ul>
+        <h3 id="conclusion-and-further-questions">Conclusion and Further Questions</h3>
+        <ol>
+        <li><p>Can utility alone justify the practice of punishment, or does it lead to under-generation issues?</p></li>
+        <li><p>Can retribution alone adequately justify actions within the punitive practice?</p></li>
+        <li><p>How do we maintain coherence in our understanding of punishment while considering both retributive and consequentialist elements?</p></li>
+        </ol>
+        <h1 id="lecture-notes-punishment-community-and-political-legitimacy">Lecture Notes: Punishment, Community, and Political Legitimacy</h1>
+        <h3 id="introduction-12">Introduction</h3>
+        <ul>
+        <li><p>Focus of today’s lecture:</p>
+        <ol>
+        <li><p>Concluding the discussion on punishment.</p></li>
+        <li><p>Beginning the third unit of the course concerning community membership.</p></li>
+        </ol></li>
+        <li><p>In Plato’s <em>Republic</em>, there exists a parallel between the individual and the community regarding what is necessary for harmony.</p></li>
+        </ul>
+        <h3 id="review-of-punishment">Review of Punishment</h3>
+        <h4 id="key-questions-addressed">Key Questions Addressed</h4>
+        <ol>
+        <li><p>What is civil punishment?</p></li>
+        <li><p>What justifies civil punishment? (Deontological vs. Consequentialist theories)</p></li>
+        </ol>
+        <h4 id="theoretical-framework">Theoretical Framework</h4>
+        <ul>
+        <li><p>Deontological theories focus on what individuals deserve.</p></li>
+        <li><p>Consequentialist theories justify punishment based on outcomes.</p></li>
+        </ul>
+        <h4 id="psychological-aspects-of-punishment">Psychological Aspects of Punishment</h4>
+        <ul>
+        <li><p>Discussion on factors that exacerbate or mitigate punishment desire.</p></li>
+        <li><p>Influence of moral luck on responses to punishment.</p></li>
+        </ul>
+        <h3 id="personal-vs.-civil-punishment">Personal vs. Civil Punishment</h3>
+        <h4 id="kazdin-and-aristotle">Kazdin and Aristotle</h4>
+        <ul>
+        <li><p>Examination of approaches to cultivate virtue through punishment.</p></li>
+        <li><p>Emphasizes the importance of teaching desired behaviors rather than just punishing undesired ones.</p></li>
+        </ul>
+        <h4 id="kazdins-insights">Kazdin’s Insights</h4>
+        <blockquote>
+        <p>"Instead, think of what you do want to cultivate, and reinforce that behavior."</p>
+        </blockquote>
+        <ul>
+        <li><p>Punishment can be ineffective if it only suppresses behavior without promoting alternatives.</p></li>
+        <li><p>Example: Simply telling a child fighting is bad does not replace that behavior with a positive alternative.</p></li>
+        </ul>
+        <h3 id="transition-to-political-legitimacy">Transition to Political Legitimacy</h3>
+        <ul>
+        <li><p>Fundamental question: Why is it legitimate for a state to exist?</p></li>
+        <li><p>Nearly all individuals live under governance by virtue of their birth in a territory.</p></li>
+        </ul>
+        <h4 id="platos-social-contract-theory">Plato’s Social Contract Theory</h4>
+        <blockquote>
+        <p>"To do injustice is naturally good, to suffer injustice is bad."</p>
+        </blockquote>
+        <ul>
+        <li><p>Individuals form agreements to avoid mutual harm.</p></li>
+        <li><p>The essence of justice lies between doing and suffering injustice.</p></li>
+        </ul>
+        <h4 id="hobbes-leviathan">Hobbes’ Leviathan</h4>
+        <ul>
+        <li><p>Thomas Hobbes (1588-1679) argues for the legitimacy of the state based on human nature and societal stability.</p></li>
+        <li><p>Presents the state as essential for security and the avoidance of conflict.</p></li>
+        </ul>
+        <h4 id="hobbes-argument-for-the-state">Hobbes’ Argument for the State</h4>
+        <h5 id="equality-and-conflict">Equality and Conflict</h5>
+        <ul>
+        <li><p>Humans are physically and mentally equal, leading to competition.</p></li>
+        <li><p>Three sources of conflict:</p>
+        <ol>
+        <li><p><strong>Competition</strong> - Desire to gain control over resources.</p></li>
+        <li><p><strong>Preemption</strong> - Striking first to safeguard possessions.</p></li>
+        <li><p><strong>Glory</strong> - Seeking admiration and reputation.</p></li>
+        </ol></li>
+        <li><p>The outcome is a state of war: "every man against every man."</p></li>
+        </ul>
+        <h5 id="life-without-governance">Life Without Governance</h5>
+        <blockquote>
+        <p>"Life is solitary, poor, nasty, brutish, and short."</p>
+        </blockquote>
+        <ul>
+        <li><p>In such a state, industries, culture, and stability cannot thrive.</p></li>
+        </ul>
+        <h4 id="overcoming-the-state-of-nature">Overcoming the State of Nature</h4>
+        <ul>
+        <li><p>Hobbes identifies three motivations for forming a civil society:</p>
+        <ol>
+        <li><p>Fear of death.</p></li>
+        <li><p>Desire for a better quality of life.</p></li>
+        <li><p>Hope for successful cooperation.</p></li>
+        </ol></li>
+        </ul>
+        <h3 id="hobbes-laws-of-nature">Hobbes’ Laws of Nature</h3>
+        <h4 id="terminology">Terminology</h4>
+        <ul>
+        <li><p><strong>Right of nature</strong>: Fundamental rights to self-preservation.</p></li>
+        <li><p><strong>Law of nature</strong>: Binding rules for preserving life.</p></li>
+        </ul>
+        <h4 id="first-law-of-nature">First Law of Nature</h4>
+        <blockquote>
+        <p>"Seek peace if there is a chance of obtaining it; if not, prepare for war."</p>
+        </blockquote>
+        <h4 id="second-law-of-nature">Second Law of Nature</h4>
+        <blockquote>
+        <p>"Lay down your rights to the extent that others will do the same."</p>
+        </blockquote>
+        <h4 id="third-law-of-nature">Third Law of Nature</h4>
+        <blockquote>
+        <p>"Perform your covenants."</p>
+        </blockquote>
+        <ul>
+        <li><p>Enforcement of covenants is essential, necessitating a sovereign authority.</p></li>
+        </ul>
+        <h3 id="conclusion-12">Conclusion</h3>
+        <ul>
+        <li><p>Hobbes proposes that personal freedom must be curtailed to ensure societal stability and security.</p></li>
+        <li><p>The establishment of a commonwealth through collective agreement is essential for a functioning society.</p></li>
+        </ul>
+        <h1 id="lecture-notes-the-prisoners-dilemma">Lecture Notes: The Prisoners’ Dilemma</h1>
+        <h3 id="introduction-13">Introduction</h3>
+        <p>Today, we explore the concept of the Prisoners’ Dilemma, a fundamental notion in game theory that discusses cooperation versus competition. This concept appears in both Plato’s <em>Republic</em> and Hobbes’ <em>Leviathan</em>.</p>
+        <h3 id="philosophical-context">Philosophical Context</h3>
+        <h4 id="platos-republic">Plato’s Republic</h4>
+        <p>In Book Two of <em>Republic</em>, Glaucon argues about the nature and origin of justice. The key takeaway is:</p>
+        <blockquote>
+        <p>"They say that to do justice is naturally good, to suffer injustice is bad, but that the badness of suffering so far exceeds the goodness of doing it that those who have done and suffered injustice... decide that it’s profitable to come to an agreement with each other neither to do injustice nor suffer it."</p>
+        </blockquote>
+        <h4 id="hobbes-leviathan-1">Hobbes’ Leviathan</h4>
+        <p>In Chapter 13, Hobbes articulates the laws of nature:</p>
+        <ul>
+        <li><p><strong>First Law of Nature</strong>: Seek peace if it can be obtained; if not, engage in war.</p></li>
+        <li><p><strong>Second Law of Nature</strong>: Lay down rights to the extent others are willing to do the same.</p></li>
+        </ul>
+        <h3 id="the-structure-of-the-prisoners-dilemma">The Structure of the Prisoners’ Dilemma</h3>
+        <p>The Prisoners’ Dilemma can be illustrated using a two-by-two payoff matrix:</p>
+        <p>In this matrix:</p>
+        <ul>
+        <li><p>(3,3): Both cooperate (preferred outcome).</p></li>
+        <li><p>(0,5): A cooperates, B defects.</p></li>
+        <li><p>(5,0): A defects, B cooperates.</p></li>
+        <li><p>(1,1): Both defect (worst outcome).</p></li>
+        </ul>
+        <h3 id="preferences-and-rational-choices">Preferences and Rational Choices</h3>
+        <h4 id="rationality-for-player-a">Rationality for Player A</h4>
+        <p>Player A prefers:</p>
+        <ul>
+        <li><p>First choice: A defects, B cooperates <span class="math inline">(5, 0)</span></p></li>
+        <li><p>Fourth choice: Both cooperate <span class="math inline">(3, 3)</span></p></li>
+        </ul>
+        <p>Given this structure, A’s rational choice is to defect if player B is expected to defect as well: <br /><span class="math display">If A defects, she maximizes her payoff: <em>A</em> → {5, 1} (preferred over 3)</span><br /></p>
+        <h4 id="rationality-for-player-b">Rationality for Player B</h4>
+        <p>Player B has the same reasoning:</p>
+        <ul>
+        <li><p>First choice: B defects, A cooperates <span class="math inline">(0, 5)</span></p></li>
+        <li><p>Fourth choice: Both cooperate <span class="math inline">(3, 3)</span></p></li>
+        </ul>
+        <p>Thus, B will also choose to defect regardless of A’s choice.</p>
+        <h3 id="the-dilemma-and-its-implications">The Dilemma and Its Implications</h3>
+        <h4 id="outcome">Outcome</h4>
+        <p>In typical iterations of the game, both players end up in the equilibrium of defecting, represented by (1,1). This reflects a stable outcome despite the possibility for mutual cooperation, demonstrating the dilemma.</p>
+        <h3 id="generalizations-and-applications">Generalizations and Applications</h3>
+        <p>The Prisoners’ Dilemma can be generalized to various scenarios, including:</p>
+        <ul>
+        <li><p>Environmental issues (pollution)</p></li>
+        <li><p>Economic competition (price wars)</p></li>
+        <li><p>Social issues (public goods)</p></li>
+        </ul>
+        <h3 id="strategies-for-cooperation">Strategies for Cooperation</h3>
+        <p>To escape the Prisoners’ Dilemma, strategies should be implemented:</p>
+        <h4 id="external-mechanisms">External Mechanisms</h4>
+        <ul>
+        <li><p>Introduce rewards for cooperative behavior.</p></li>
+        <li><p>Impose penalties for defection.</p></li>
+        <li><p>Create compelling social norms around cooperation.</p></li>
+        </ul>
+        <h4 id="intrapersonal-mechanisms">Intrapersonal Mechanisms</h4>
+        <ul>
+        <li><p>Foster personal ethics or moral considerations.</p></li>
+        <li><p>Develop self-imposed regulations on behavior.</p></li>
+        </ul>
+        <h3 id="conclusion-13">Conclusion</h3>
+        <p>Understanding the Prisoners’ Dilemma provides insight into broader social and economic interactions, emphasizing the importance of cooperation mechanisms in achieving mutually beneficial outcomes.</p>
+        <h1 id="lecture-notes-social-structures-and-john-rawls-theory-of-justice">Lecture Notes: Social Structures and John Rawls’ Theory of Justice</h1>
+        <h3 id="introduction-14">Introduction</h3>
+        <ul>
+        <li><p>Discussion focuses on legitimate social structures that contribute to the well-being of humans.</p></li>
+        <li><p>We explore the concept of the <strong>cooperation dividend</strong> and its implications:</p>
+        <ul>
+        <li><p>When two individuals fear attacks on their resources, they might expend energy protecting their goods.</p></li>
+        <li><p>If trust arises and cooperation is achieved, resources could instead be devoted to productive endeavors that lead to mutual benefit.</p></li>
+        </ul></li>
+        </ul>
+        <h3 id="thomas-hobbes-and-the-cooperation-dividend">Thomas Hobbes and the Cooperation Dividend</h3>
+        <ul>
+        <li><p>In Leviathan, Hobbes argues that cooperation is advantageous compared to competition.</p></li>
+        <li><p>External enforcement mechanisms are necessary to sustain cooperation, such as a sovereign authority.</p></li>
+        <li><p>An environment of cooperation allows individuals to focus on productivity rather than self-defense.</p></li>
+        </ul>
+        <h3 id="transition-to-contemporary-philosophy-john-rawls">Transition to Contemporary Philosophy: John Rawls</h3>
+        <ul>
+        <li><p>John Rawls (1921-2002), a seminal figure in 20th-century philosophy, built on the social contract tradition.</p></li>
+        <li><p>Rawls explores these themes in <em>A Theory of Justice</em> (1971).</p></li>
+        <li><p>Central to Rawls’ philosophy is the assertion:</p>
+        <blockquote>
+        <p>“Justice is the first virtue of social institutions as truth is of systems of thought.”</p>
+        </blockquote></li>
+        <li><p>Justice takes precedence over efficiency in societal structures.</p></li>
+        </ul>
+        <h3 id="basic-principles-of-rawls-theory">Basic Principles of Rawls’ Theory</h3>
+        <h4 id="social-contract-theory">Social Contract Theory</h4>
+        <ul>
+        <li><p>Rawls derives his ideas from the social contract tradition, referencing philosophers like Hobbes, Locke, and Rousseau.</p></li>
+        <li><p>Principles of justice are determined based on a fair contracting process.</p></li>
+        </ul>
+        <h4 id="the-veil-of-ignorance">The Veil of Ignorance</h4>
+        <ul>
+        <li><p>Rawls introduces the idea of the <strong>veil of ignorance</strong>:</p>
+        <ul>
+        <li><p>Individuals select principles of justice without knowing their personal circumstances (class, ability, etc.).</p></li>
+        </ul></li>
+        <li><p>This ensures impartiality and fairness in determining the structure of society.</p></li>
+        </ul>
+        <h3 id="definition-of-society">Definition of Society</h3>
+        <ul>
+        <li><p>Rawls defines society as:</p>
+        <blockquote>
+        <p>“A more or less self-sufficient association of persons, who in their relations to one another recognize certain rules of conduct as binding and who, for the most part, act in accordance with them.”</p>
+        </blockquote></li>
+        <li><p>Societal cooperation must advance the good of participants, albeit with conflicts regarding the distribution of benefits.</p></li>
+        </ul>
+        <h3 id="principles-of-justice">Principles of Justice</h3>
+        <h4 id="first-principle">First Principle</h4>
+        <ul>
+        <li><p>Each person has an equal right to the most extensive basic liberties compatible with similar liberties for all.</p></li>
+        <li><p>Example liberties include:</p>
+        <ul>
+        <li><p>Right to vote</p></li>
+        <li><p>Freedom of speech</p></li>
+        <li><p>Freedom of assembly</p></li>
+        <li><p>Right to hold property</p></li>
+        </ul></li>
+        </ul>
+        <h4 id="second-principle-difference-principle">Second Principle (Difference Principle)</h4>
+        <ul>
+        <li><p>Social and economic inequalities are permissible only if they benefit the least advantaged members of society.</p></li>
+        <li><p>Inequalities must arise from positions open to all under conditions of fair equality of opportunity.</p></li>
+        </ul>
+        <h3 id="lexical-ordering-of-principles">Lexical Ordering of Principles</h3>
+        <ul>
+        <li><p>Rawls insists that the first principle (liberties) takes lexical priority over the second principle (economic inequalities).</p></li>
+        <li><p>No trading basic liberties for societal utility.</p></li>
+        <li><p>Example: Utilitarian trade-offs that infringe on liberties are unacceptable.</p></li>
+        </ul>
+        <h3 id="disagreements-with-rawls">Disagreements with Rawls</h3>
+        <ul>
+        <li><p>Disagreements might stem from:</p>
+        <ul>
+        <li><p>Different beliefs about the principles selected behind the veil of ignorance.</p></li>
+        <li><p>Doubts about the effectiveness of the veil as a representation method.</p></li>
+        <li><p>Alternatives to justice as the foundational virtue of social institutions.</p></li>
+        </ul></li>
+        </ul>
+        <h3 id="practical-applications-and-implications">Practical Applications and Implications</h3>
+        <ul>
+        <li><p>Rawls’ framework is used to evaluate social policies, legal systems, and distribution of resources.</p></li>
+        <li><p>The enduring influence of Rawls can be seen in legal cases and public discourse on justice and legitimacy.</p></li>
+        </ul>
+        <h3 id="conclusion-14">Conclusion</h3>
+        <ul>
+        <li><p>Rawls’ theory remains a vital part of discussions on justice and social cooperation, emphasizing fairness and equality.</p></li>
+        <li><p>Understanding the interplay between individual rights and collective benefits is crucial in constructing just societal frameworks.</p></li>
+        </ul>
+        <h1 id="lecture-notes-theories-of-justice---rawls-and-nozick">Lecture Notes: Theories of Justice - Rawls and Nozick</h1>
+        <h3 id="introduction-15">Introduction</h3>
+        <p>Today’s lecture contrasts John Rawls’ <em>Theory of Justice</em> with Robert Nozick’s <em>Anarchy, State, and Utopia</em>. Central themes will include notions of justice, inviolability, and the legitimacy of state authority.</p>
+        <h3 id="rawls-on-justice">Rawls on Justice</h3>
+        <h4 id="justice-as-a-virtue">Justice as a Virtue</h4>
+        <blockquote>
+        <p>"Justice is the first virtue of social institutions."</p>
+        </blockquote>
+        <p>Justice serves an essential role in legitimizing institutions, analogous to how truth validates systems of thought. Rawls states:</p>
+        <blockquote>
+        <p>"Each person possesses an inviolability founded on justice that even the welfare of society as a whole cannot override."</p>
+        </blockquote>
+        <h4 id="core-argument">Core Argument</h4>
+        <p>Rawls posits that injustices to individual freedom cannot be justified for the sake of a greater good:</p>
+        <blockquote>
+        <p>"Justice denies that the loss of freedom for some is made right by a greater good shared by others."</p>
+        </blockquote>
+        <h3 id="nozick-on-rights">Nozick on Rights</h3>
+        <h4 id="inviolability-and-rights">Inviolability and Rights</h4>
+        <p>Nozick emphasizes <em>rights</em> over <em>justice</em>. He asserts:</p>
+        <blockquote>
+        <p>"Individuals have rights and there are things that no person or group may do to them without violating those rights."</p>
+        </blockquote>
+        <h4 id="minimal-state-justification">Minimal State Justification</h4>
+        <p>Nozick argues for a minimal state limited to:</p>
+        <ul>
+        <li><p>Protection against force</p></li>
+        <li><p>Protection against theft</p></li>
+        <li><p>Protection against fraud</p></li>
+        <li><p>Enforcement of contracts</p></li>
+        </ul>
+        <p>Any state that exceeds these functions violates individual rights.</p>
+        <h3 id="comparative-analysis">Comparative Analysis</h3>
+        <h4 id="legitimacy-of-the-state">Legitimacy of the State</h4>
+        <p>Both thinkers address the legitimacy of the state, tracing back to Hobbes’ concerns. However, they diverge in:</p>
+        <ul>
+        <li><p><strong>Rawls</strong>: Sees legitimacy through the lens of justice.</p></li>
+        <li><p><strong>Nozick</strong>: Sees it through the lens of individual rights.</p></li>
+        </ul>
+        <h4 id="influence-and-citation">Influence and Citation</h4>
+        <ul>
+        <li><p><strong>Rawls (1971)</strong>: Approximately 30,000 citations.</p></li>
+        <li><p><strong>Nozick (1974)</strong>: Approximately 10,000 citations.</p></li>
+        </ul>
+        <h3 id="nozicks-justice-in-holdings">Nozick’s Justice in Holdings</h3>
+        <h4 id="three-principles-of-justice-in-holdings">Three Principles of Justice in Holdings</h4>
+        <p>Nozick delineates a structured approach to justice regarding property:</p>
+        <ol>
+        <li><p><strong>Justice in Acquisition</strong>: Conditions under which one can rightfully acquire unowned goods.</p></li>
+        <li><p><strong>Justice in Transfer</strong>: Conditions under which one can transfer goods to another without violating rights.</p></li>
+        <li><p><strong>Rectification of Injustice</strong>: Method by which one can recover goods taken by unjust means.</p></li>
+        </ol>
+        <h4 id="inductive-definition-of-justice-in-holdings">Inductive Definition of Justice in Holdings</h4>
+        <p>Nozick’s inductive definition encapsulates:</p>
+        <blockquote>
+        <p>If a person acquires a holding in keeping with the principle of justice in acquisition, the person is entitled to the holding.</p>
+        </blockquote>
+        <h6 id="induction-clause">Induction Clause:</h6>
+        <blockquote>
+        <p>If a person acquires a holding in keeping with the principle of justice in transfer, from someone entitled to hold it, then the person is entitled to it.</p>
+        </blockquote>
+        <h6 id="closure-clause">Closure Clause:</h6>
+        <blockquote>
+        <p>No one is entitled to a holding except by repeated applications of (1) and (2).</p>
+        </blockquote>
+        <h4 id="historical-principle-of-justice">Historical Principle of Justice</h4>
+        <p>Nozick argues that justice in holdings is historical; it relies on the actual processes of acquisition and transfer:</p>
+        <ul>
+        <li><p>Unjust acquisition leads to unjust holdings.</p></li>
+        <li><p>Just acquisitions followed by unjust transfers still yield unjust holdings.</p></li>
+        </ul>
+        <h3 id="lockean-proviso-and-property-rights">Lockean Proviso and Property Rights</h3>
+        <h4 id="lockes-view-on-property">Locke’s View on Property</h4>
+        <p>Nozick references Locke: Individuals mix their labor with unowned resources to create property rights. Locke states:</p>
+        <blockquote>
+        <p>"Though the Earth and all inferior creatures be common to all men, yet every man has a property in his own person."</p>
+        </blockquote>
+        <h4 id="violations-of-the-lockean-proviso">Violations of the Lockean Proviso</h4>
+        <p>Nozick’s primary concern is whether the Lockean Proviso (i.e., ensuring "enough and as good left in common for others") is often violated. He argues the appropriation of property usually does not violate this proviso and claims:</p>
+        <blockquote>
+        <p>"Acquisition of property does not typically harm others."</p>
+        </blockquote>
+        <h4 id="wilt-chamberlain-example">Wilt Chamberlain Example</h4>
+        <p>Nozick employs Wilt Chamberlain’s example to illustrate:</p>
+        <ul>
+        <li><p>The process of voluntary transfer can lead to inequality without injustice.</p></li>
+        <li><p>Justice is about the process, not the end result (i.e., it is a historical principle).</p></li>
+        </ul>
+        <h3 id="conclusion-15">Conclusion</h3>
+        <p>The lecture concludes by synthesizing Rawls and Nozick’s theories, emphasizing the relevance of their differing concepts of justice and rights in contemporary political philosophy. Future discussions will further explore justice in holdings and its implications.</p>
+        <h1 id="lecture-notes-on-liberty-and-political-philosophy">Lecture Notes on Liberty and Political Philosophy</h1>
+        <h3 id="introduction-16">Introduction</h3>
+        <p>The lecture explored the ideas of liberty and property ownership as articulated by Nozick and Rawls, emphasizing the role of luck in human experiences and examining the structures that shape society.</p>
+        <h3 id="nozicks-framework-for-political-philosophy">Nozick’s Framework for Political Philosophy</h3>
+        <p>Nozick prioritizes liberty and rights in his political philosophy, particularly in Chapter 7 of <em>Anarchy, State, and Utopia</em>. He delineates three main aspects of justice related to property ownership:</p>
+        <h4 id="justice-in-acquisition">1. Justice in Acquisition</h4>
+        <p>A person may claim ownership over unowned property if they do not violate the Lockean Proviso, which asserts that one must leave "as much and as good for others."<br />
+        Objections:</p>
+        <ul>
+        <li><p>Unzipping Problem: If ownership diminishes available resources, the first acquisition may also be deemed illegitimate.</p></li>
+        <li><p>Commons Problem: Even if the initial acquisition is legitimate, eventual ownership creates disadvantages for others.</p></li>
+        </ul>
+        <h4 id="justice-in-transfer">2. Justice in Transfer</h4>
+        <p>Nozick argues that voluntary transfers between individuals are legitimate. Any restrictions on property transfer are viewed as infringements on freedom.</p>
+        <h4 id="rectification-of-injustice">3. Rectification of Injustice</h4>
+        <p>If property is illegitimately acquired, whether initially or via illegitimate transfer, rectification is necessary. Nozick acknowledges historical injustices, prompting potential temporary state actions to benefit the least well-off.</p>
+        <blockquote>
+        <p>Nozick: "Perhaps a good rule of thumb is to organize society to benefit the least well off."</p>
+        </blockquote>
+        <h3 id="rawls-vs.-nozick">Rawls vs. Nozick</h3>
+        <p>Nozick rejects a system of natural liberty that leads to morally arbitrary distributions. He critiques Rawls’s focus on moral luck, arguing for the importance of individual choices and autonomy.<br />
+        Rawls holds that:</p>
+        <ul>
+        <li><p>Individuals have basic rights that cannot be overridden by utility.</p></li>
+        <li><p>Inequalities should benefit the least well off and offices should be equally open.</p></li>
+        </ul>
+        <h3 id="moral-luck-and-individual-responsibility">Moral Luck and Individual Responsibility</h3>
+        <p>Both philosophers wrestle with moral luck, exploring how factors beyond individual control affect societal roles and distributions:</p>
+        <ul>
+        <li><p>Epictetus: Asserts some things are within our control, and others are not.</p></li>
+        <li><p>Nozick criticizes the denigration of autonomy in evaluating individuals solely based on their circumstances.</p></li>
+        </ul>
+        <h3 id="social-structures-and-human-behavior">Social Structures and Human Behavior</h3>
+        <p>The lecture transitions to the impact of social structures on individual behavior, a topic echoed in the works of Aristotle and John Stuart Mill:</p>
+        <ul>
+        <li><p>Aristotle remarked on laws shaping character and behavior: "It’s difficult for somebody to be trained correctly from his youth if he’s not brought up under correct laws."</p></li>
+        <li><p>Mill emphasized the harmony of individual happiness with societal well-being.</p></li>
+        </ul>
+        <h4 id="empirical-evidence-on-cultural-influence">Empirical Evidence on Cultural Influence</h4>
+        <p>Discussed a survey article from <em>Behavioral and Brain Sciences</em> suggesting that WEIRD (Western, Educated, Industrialized, Rich, Democratic) individuals exhibit different cognitive styles compared to those from non-Western backgrounds.</p>
+        <h4 id="key-findings-from-weird-research">Key Findings from WEIRD Research</h4>
+        <ol>
+        <li><p>Perception: Cultural background influences how individuals perceive and interpret stimuli. For instance, participants from Western societies show typical biases based on their environments which do not affect non-Western subjects.</p></li>
+        <li><p>Self-Concept and Individualism: Surveys indicate fundamental differences in attitudes toward community, responsibility, and corporate goals between cultures.</p></li>
+        </ol>
+        <h3 id="conclusion-16">Conclusion</h3>
+        <p>The complex interplay between individual autonomy, societal structures, and moral considerations forms the crux of political philosophy. Philosophers like Nozick and Rawls provide foundations for discussing justice and liberty, while empirical studies illustrate the profound impact of cultural context on human behavior.</p>
+        <h1 id="lecture-notes-non-rational-persuasion-in-government">Lecture Notes: Non-Rational Persuasion in Government</h1>
+        <h3 id="introduction-17">Introduction</h3>
+        <ul>
+        <li><p>Discussing legitimate forms of non-rational persuasion by governments.</p></li>
+        <li><p>Context: Social contract theory, emphasizing the trade-off of freedoms for stability.</p></li>
+        <li><p>Key Authors: Plato (Republic) and Hobbes (state of nature).</p></li>
+        </ul>
+        <h3 id="the-social-contract-and-rationality">The Social Contract and Rationality</h3>
+        <ul>
+        <li><p>Governments require individuals to voluntarily relinquish some freedoms.</p></li>
+        <li><p>Rational endorsement of laws and regulations.</p></li>
+        <li><p>Hobbes’ <em>Prisoner’s Dilemma</em>: highlights conflicts of self-interest.</p></li>
+        </ul>
+        <h3 id="human-complexity">Human Complexity</h3>
+        <ul>
+        <li><p>Human beings possess more than just reason; they also have emotional and non-rational components.</p></li>
+        <li><p>The implications of human complexity for political structures.</p></li>
+        </ul>
+        <h3 id="censorship-and-norm-formation">Censorship and Norm Formation</h3>
+        <ul>
+        <li><p>Plato on censorship of fictional representations.</p></li>
+        <li><p>Cass Sunstein’s view: government must establish norms through implicit approaches.</p></li>
+        </ul>
+        <h3 id="case-study-1-murphy-brown-controversy">Case Study 1: Murphy Brown Controversy</h3>
+        <h4 id="background">Background</h4>
+        <ul>
+        <li><p>In 1992, character Murphy Brown had a child out of wedlock.</p></li>
+        <li><p>Vice President Dan Quayle criticized this, arguing it undermines family values.</p></li>
+        </ul>
+        <h4 id="media-reaction">Media Reaction</h4>
+        <ul>
+        <li><p>Significant media coverage highlights the dichotomy between fiction and societal values.</p></li>
+        </ul>
+        <h3 id="case-study-2-representation-in-television">Case Study 2: Representation in Television</h3>
+        <ul>
+        <li><p>The television show <em>24</em> depicts an African American president and later, a female president.</p></li>
+        <li><p>These representations create a conceptual space for diverse leadership in real politics.</p></li>
+        </ul>
+        <h3 id="theoretical-framework-platos-view">Theoretical Framework: Plato’s View</h3>
+        <ul>
+        <li><p>Plato argues that fictional representations shape moral dispositions and societal attitudes.</p></li>
+        <li><p>Fiction can lead to the adoption of undesirable role models.</p></li>
+        <li><p>Engagement with fiction influences emotions and behaviors, creating potential disengagement with rational evaluations.</p></li>
+        </ul>
+        <h3 id="mechanisms-of-fictional-influence">Mechanisms of Fictional Influence</h3>
+        <h4 id="emotional-engagement">Emotional Engagement</h4>
+        <ul>
+        <li><p>Fiction elicits emotional responses—can lead to implicit biases and attitudes.</p></li>
+        <li><p>Example: Plato’s observation of tragedies leading audiences to empathize with characters.</p></li>
+        </ul>
+        <h4 id="playful-imitation">Playful Imitation</h4>
+        <ul>
+        <li><p>Not all engagement with fiction is problematic—playful imitation can allow for distance.</p></li>
+        <li><p>Plato recognizes value in imaginative play, provided it does not lead to habituation of negative behaviors.</p></li>
+        </ul>
+        <h3 id="habituation-and-automatic-responses">Habituation and Automatic Responses</h3>
+        <ul>
+        <li><p>Imitation from fiction can solidify into automatic behaviors.</p></li>
+        <li><p>Once habits are formed, they are difficult to alter; example given in video games and military simulations.</p></li>
+        </ul>
+        <h3 id="platos-argument-structure">Plato’s Argument Structure</h3>
+        <ul>
+        <li><p>Fiction may cause disharmony between rational and non-rational parts of the soul.</p></li>
+        <li><p>Societal regulations might be necessary to mitigate negative influences from fiction.</p></li>
+        <li><p>Non-rational influences on behavior compel a collective decision-making approach.</p></li>
+        </ul>
+        <h3 id="conclusion-17">Conclusion</h3>
+        <ul>
+        <li><p>The complexities of human nature challenge simple rational models of agency.</p></li>
+        <li><p>Next lecture focus: Exploring how non-rational persuasion occurs in society, referencing Sunstein’s insights.</p></li>
+        </ul>
+        <h1 id="lecture-notes-political-philosophy-and-social-norms">Lecture Notes: Political Philosophy and Social Norms</h1>
+        <h3 id="introduction-18">Introduction</h3>
+        <p>The lecture aimed to tie up various loose ends and answer questions raised in directed exercises. The focus is on understanding the general structure and distinctive features of the readings discussed throughout the course.</p>
+        <h3 id="understanding-articles-as-buildings">Understanding Articles as Buildings</h3>
+        <ul>
+        <li><p>Each article can be viewed as a building to be examined.</p></li>
+        <li><p>Aim to understand the general shape, internal structure, and the connections between various approaches.</p></li>
+        <li><p>Discussion on relating individual articles to broader political philosophy frameworks.</p></li>
+        <li><p>Emphasis on understanding details of arguments while recognizing how they fit into larger themes.</p></li>
+        </ul>
+        <h3 id="social-norms-insights-from-cass-sunstein">Social Norms: Insights from Cass Sunstein</h3>
+        <h4 id="understanding-social-norms">Understanding Social Norms</h4>
+        <ul>
+        <li><p>Social norms shape our attitudes towards behaviors based on societal approval or disapproval.</p></li>
+        <li><p>Norms dictate social meanings—what actions signify approval or disapproval in different contexts.</p></li>
+        <li><p>Examples: Wearing seatbelts signifies trust in a driver in some cultures, while in others, it can imply the opposite.</p></li>
+        <li><p>The evolution of social meanings (e.g., compost heaps now viewed positively).</p></li>
+        </ul>
+        <h4 id="willingness-to-pay-vs.-willingness-to-accept">Willingness to Pay vs. Willingness to Accept</h4>
+        <ul>
+        <li><p>Sunstein discusses the endowment effect (the tendency to value owned items higher).</p></li>
+        <li><p>Definitions:</p>
+        <ul>
+        <li><p><span class="math inline"><em>W</em><em>T</em><em>A</em></span> (Willingness to Accept): Amount to sell an owned object.</p></li>
+        <li><p><span class="math inline"><em>W</em><em>T</em><em>P</em></span> (Willingness to Pay): Amount one is willing to pay for an object.</p></li>
+        </ul></li>
+        <li><p>Asymmetry in values can arise even in similar situations, exemplified by a scenario involving a Yale mug.</p></li>
+        </ul>
+        <h4 id="implications-on-social-meaning-and-behavioral-economics">Implications on Social Meaning and Behavioral Economics</h4>
+        <ul>
+        <li><p>The values attached to actions (e.g., the extinction of a species) depend significantly on social context.</p></li>
+        <li><p>Effective governmental regulation can modify social meanings to influence behavior positively.</p></li>
+        </ul>
+        <h3 id="dual-processing-in-human-reasoning">Dual Processing in Human Reasoning</h3>
+        <h4 id="understanding-dual-processing">Understanding Dual Processing</h4>
+        <p>Two systems of thought:</p>
+        <ul>
+        <li><p><strong>System 1:</strong> Automatic, fast, effortless, primal.</p></li>
+        <li><p><strong>System 2:</strong> Controlled, slow, effortful, reflective.</p></li>
+        </ul>
+        <p>Common cognitive errors may stem from misapplications of these systems.</p>
+        <h4 id="trolley-problem-variations">Trolley Problem Variations</h4>
+        <p>Examining moral intuitions via scenarios:</p>
+        <ul>
+        <li><p>Classic trolley case prompts different reactions when involving active vs. passive roles (e.g., diverting the trolley vs. pushing someone).</p></li>
+        <li><p>Response differences reflect deeper commitments to moral reasoning—utilitarianism vs. rights violations.</p></li>
+        </ul>
+        <h4 id="framework-to-analyze-moral-philosophy">Framework to Analyze Moral Philosophy</h4>
+        <ul>
+        <li><p>Consideration of moral implications in legislation and social norms.</p></li>
+        <li><p>Recognition of how heuristics influence moral decision-making.</p></li>
+        </ul>
+        <h3 id="political-philosophy-frameworks">Political Philosophy Frameworks</h3>
+        <h4 id="overview-of-key-thinkers">Overview of Key Thinkers</h4>
+        <h5 id="hobbes">Hobbes</h5>
+        <ul>
+        <li><p>Advocates for social contract theory emphasizing prudential utility.</p></li>
+        <li><p>Life in the state of nature: “solitary, poor, nasty, brutish and short”.</p></li>
+        <li><p>Laws of nature:</p>
+        <ul>
+        <li><p>Seek peace.</p></li>
+        <li><p>Lay down rights mutually.</p></li>
+        <li><p>Perform covenants.</p></li>
+        </ul></li>
+        <li><p>Necessity for authoritarian governance to enforce laws.</p></li>
+        </ul>
+        <h5 id="rawls">Rawls</h5>
+        <ul>
+        <li><p>Engages in the social contract with a moral framework centered on justice.</p></li>
+        <li><p>The Original Position: Choosing principles behind a veil of ignorance.</p></li>
+        <li><p>Principles of Justice:</p>
+        <ul>
+        <li><p>Equal liberty principle.</p></li>
+        <li><p>Difference principle (benefits the least advantaged).</p></li>
+        </ul></li>
+        </ul>
+        <h5 id="nozick">Nozick</h5>
+        <ul>
+        <li><p>Concerns historical legitimacy of property distributions.</p></li>
+        <li><p>Justice in holdings is determined by legitimacy of acquisition and transfer.</p></li>
+        <li><p>Minimal state is sufficient to respect rights without intervening in just distributions.</p></li>
+        </ul>
+        <h3 id="conclusion-18">Conclusion</h3>
+        <ul>
+        <li><p>These frameworks will guide political philosophy discussions.</p></li>
+        <li><p>Opportunities for further study in philosophy, psychology, and economics departments.</p></li>
+        <li><p>Continued exploration of moral philosophy in relation to these frameworks.</p></li>
+        </ul>
+        <h1 id="course-summary-philosophy-and-the-human-condition">Course Summary: Philosophy and the Human Condition</h1>
+        <h3 id="course-goals">Course Goals</h3>
+        <p>The syllabus outlined three primary goals:</p>
+        <ol>
+        <li><p><strong>Introduction to Philosophy:</strong></p>
+        <ul>
+        <li><p>Engage with traditional philosophical discussions about the human condition.</p></li>
+        <li><p>Authors studied include Plato, Aristotle, Epictetus, Kant, Mill, Thomson, Rawls, and Nozick.</p></li>
+        <li><p>Focus on acquiring tools for lifelong philosophical engagement.</p></li>
+        </ul></li>
+        <li><p><strong>Interdisciplinary Perspectives:</strong></p>
+        <ul>
+        <li><p>Explore related academic discussions from cognitive science and psychology.</p></li>
+        <li><p>Analyze empirical studies such as those by Batson and Kahneman, connecting them to philosophical texts.</p></li>
+        </ul></li>
+        <li><p><strong>Synthetic Thinking:</strong></p>
+        <ul>
+        <li><p>Encourage understanding insights across academic domains.</p></li>
+        <li><p>Prepare students for future interdisciplinary exploration at Yale and beyond.</p></li>
+        </ul></li>
+        </ol>
+        <h3 id="major-themes-explored">Major Themes Explored</h3>
+        <h4 id="happiness-and-flourishing">Happiness and Flourishing</h4>
+        <ul>
+        <li><p>Examined through:</p>
+        <ul>
+        <li><p>Plato’s discussion on the multi-part soul.</p></li>
+        <li><p>Aristotle’s views on virtue ethics.</p></li>
+        <li><p>Stoic insights from Epictetus and psycho-therapeutic practices.</p></li>
+        </ul></li>
+        <li><p>The concept of <em>flow</em> as introduced by Csikszentmihalyi.</p></li>
+        </ul>
+        <h4 id="morality">Morality</h4>
+        <ul>
+        <li><p>Fundamental moral theories:</p>
+        <ul>
+        <li><p>Aristotelian Virtue Ethics</p></li>
+        <li><p>Kantian Deontology</p></li>
+        <li><p>Millian Consequentialism</p></li>
+        </ul></li>
+        <li><p>Explored the moral implications of the Trolley Problem and implications of moral luck: <br /><span class="math display">$$\begin{aligned}
+                \text{Culpability:} &amp; \quad P(\text{Moral Responsibility}) \text{ may depend on the outcome versus the intention.}
+            \end{aligned}$$</span><br /></p></li>
+        </ul>
+        <h4 id="political-legitimacy-and-social-structures">Political Legitimacy and Social Structures</h4>
+        <ul>
+        <li><p>Examined through game theory’s Prisoner’s Dilemma.</p></li>
+        <li><p>Analyzed work of Rawls (equality) and Nozick (liberty).</p></li>
+        <li><p>Discussed how social norms affect moral behavior: <br /><span class="math display">$$\begin{aligned}
+                \text{Social Contract:} &amp; \quad P(A_i | S) = \text{Probability of action given social context.}
+            \end{aligned}$$</span><br /></p></li>
+        </ul>
+        <h3 id="three-organizing-themes">Three Organizing Themes</h3>
+        <h4 id="parts-of-the-soul">Parts of the Soul</h4>
+        <ul>
+        <li><p>Discussed Plato’s allegory of Leontius:</p>
+        <blockquote>
+        <p>“Tempted by corpses, perhaps we are not...”</p>
+        </blockquote></li>
+        <li><p>Introduced hyperbolic discounting (Ainslie) to explain decision-making.</p></li>
+        </ul>
+        <h4 id="luck-and-control">Luck and Control</h4>
+        <ul>
+        <li><p>Explored moral implications of luck through character comparisons: <br /><span class="math display">$$\begin{aligned}
+                \text{Lucky Alert} &amp; : \quad P(\text{Harmed No One}) \\
+                \text{Unlucky Alert} &amp; : \quad P(\text{Harmed Someone}) \\
+                &amp; \Rightarrow \text{Moral Exculpation vs. Blame}.
+            \end{aligned}$$</span><br /></p></li>
+        </ul>
+        <h4 id="individual-and-society">Individual and Society</h4>
+        <ul>
+        <li><p>Relation between personal actions and societal norms discussed.</p></li>
+        <li><p>Kant’s Categorical Imperative (moral rules) and Rawls’s Veil of Ignorance (fair justice).</p></li>
+        </ul>
+        <h3 id="key-quotations">Key Quotations</h3>
+        <blockquote>
+        <p>“What upsets people, are not things but judgments about them.” – Epictetus</p>
+        </blockquote>
+        <blockquote>
+        <p>“We learn a craft by practicing it and we cultivate virtues by acting as if we were already virtuous.” – Aristotle</p>
+        </blockquote>
+        <blockquote>
+        <p>“Choose accordingly, calling a life worse if it leads the soul to become more unjust, better if it leads the soul to become more just.” – Plato, Myth of Er</p>
+        </blockquote>
+        <h3 id="conclusion-19">Conclusion</h3>
+        <ul>
+        <li><p>The course highlighted the importance of philosophical inquiry in understanding happiness, morality, and societal structures.</p></li>
+        <li><p>Encouragement to continue reflecting on these questions as the journey of understanding continues.</p></li>
+        </ul>
+        
+
+    </div>
+    <!-- insert above this -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+</body>
+
+</html>
