@@ -1,0 +1,28 @@
+
+
+body, html {
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+
+h1 {
+    font-family: "Ultra", sans-serif;
+}
+
+
+.carousel-inner img {
+    width: 400px; /* Ensures the image fills the width of its container */
+    height: 500px; /* Set your desired fixed height */
+    object-fit: contain;
+}
+
+#carouselExampleIndicators {
+    height: 500px; /* Match this with the image height */
+    overflow: hidden;
+}
+
+.carousel-item {
+    transition: transform 0.5s ease-in-out; /* Adjusts the smoothness of the slide */
+}
+
