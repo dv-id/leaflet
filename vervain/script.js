@@ -12,9 +12,9 @@ function sendEmail() {
 
     let params = {
         fullname: document.getElementById("fullname").value,
-        to: "",
+        to: "vervainglass@protonmail.com",
         replyto: document.getElementById("email").value,
-        message: `new order! 8)! \n jméno: ${name} \n si objednal: ${producttext} \n email: ${email}`
+        message: `new order! 8)! \n name: ${name} \n ordered: ${producttext} \n email: ${email}`
     };
 
     let serviceID = "service_15c72dl"
