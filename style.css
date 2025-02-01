@@ -1,8 +1,13 @@
 body {
-    background-color: rgb(44, 1, 25) !important;
+    /* background-color: rgb(44, 1, 25) !important;
     color: rgb(255, 126, 165);
     color: rgb(255, 1, 77);
-    line-height: normal;
+    line-height: normal; */
+
+    --bs-body-bg: rgb(44, 1, 25);
+    --bs-body-color: rgb(255, 1, 77);
+    /* --bs-body-font-family: sans-serif; */
+    --bs-body-line-height: normal;
 }
 
 .alegreya-bold {
@@ -15,17 +20,23 @@ body {
     color: rgb(255, 1, 77) !important;
 }
 
-.accordion {
-    --bs-accordion-btn-bg: rgb(44, 1, 25);
-    --bs-accordion-btn-color: rgb(255, 1, 77);
-    --bs-accordion-active-bg: rgb(44, 1, 25);
-    --bs-accordion-active-color: rgb(255, 1, 77);
-    --bs-accordion-btn-focus-box-shadow: none;
-    --bs-accordion-bg: rgb(44, 1, 25);
-    --bs-accordion-color: rgba(197, 97, 130, 0.801);
-    --bs-accordion-border-color: rgba(197, 97, 130, 0.801);
+
+.modal, .modal-backdrop {
+    --bs-modal-color: rgba(197, 97, 130, 0.801);
+    --bs-modal-bg: rgb(44, 1, 25);
+    --bs-modal-border-color: rgba(197, 97, 130, 0.801);
+    --bs-modal-border-width: 2px;
+    --bs-modal-header-border-color: rgba(197, 97, 130, 0.801);
+    --bs-modal-header-color: rgb(255, 1, 77);
+    --bs-modal-footer-border-color: rgba(197, 97, 130, 0.801);
 }
 
+.stock {
+    color: rgb(255, 1, 77);
+    font-weight: 500;
+    background-color: rgb(44, 1, 25);
+    border-color: rgb(255, 1, 77);
+}
 
 .alegreya {
     font-family: "Ultra", serif;
