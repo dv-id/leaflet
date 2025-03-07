@@ -1,0 +1,26 @@
+body {
+    background-color: white;
+    color:rgb(114, 0, 0);
+    font-size: 1em;
+    text-align: start;
+}
+
+nav > a {
+    text-decoration: none;
+    font-size: 2em;
+    color:rgb(114, 0, 0);
+}
+
+.btn {
+    background-color: rgb(114, 0, 0);
+    color: rgb(255, 255, 255);
+} 
+
+/* ol {
+    counter-reset: item;
+}
+
+li:before {
+    content: counters(item, ".") " ";
+    counter-increment: item
+} */
