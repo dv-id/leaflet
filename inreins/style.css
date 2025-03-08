@@ -1,28 +1,44 @@
 body {
-    background-color: white;
-    color:rgb(52, 0, 0);
+    --dot-bg: rgb(255, 255, 255);
+    --dot-color: rgb(188, 183, 252);
+    --dot-size: 1px;
+    --dot-space: 5px;
+      background:
+          linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+          linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+          var(--dot-color);
+    color:rgb(72, 0, 255);
     font-size: 1em;
     text-align: start;
 }
 
+#mainheading {
+    text-shadow: 4px 4px 7px rgb(188, 164, 249);
+    font-weight: bold;
+    font-size: 66px;
+}
+
 nav > a {
+    background-color: inherit;
     text-decoration: none;
     font-size: 2em;
-    color:rgb(52, 0, 0);
+    color:rgb(72, 0, 255);
+    font-weight: bolder;
 }
 
 .btn {
     background-color: white;
-    color: rgb(52, 0, 0);
+    color: rgb(72, 0, 255);
     border: solid 2px;
-    border-color: rgb(94, 2, 2);
-    box-shadow: 3px 4px rgba(50, 49, 49, 0.666);
-    font-weight: 600;
+    border-color: rgb(72, 0, 255);
+    box-shadow: 
+    5px 5px 4px rgb(72, 0, 255);
+    font-weight: 700;
 
 } 
 .btn:hover {
-    border-color: rgb(52, 0, 0);
-    background-color: rgb(52, 0, 0);
+    border-color: rgb(72, 0, 255);
+    background-color: rgb(72, 0, 255);
     color: white;
 }
 
@@ -41,6 +57,10 @@ h3 {
 
 h4  {
     margin-top: 24px;
+}
+
+h3, h4 {
+    text-shadow: 1px 1px 6px rgb(188, 164, 249);
 }
 
 li {
