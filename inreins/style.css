@@ -1,3 +1,8 @@
+html {
+    background-color: white;
+    
+}
+
 body {
     --dot-bg: rgb(255, 255, 255);
     --dot-color: rgb(188, 183, 252);
@@ -10,6 +15,7 @@ body {
     color:rgb(72, 0, 255);
     font-size: 1em;
     text-align: start;
+
 }
 
 #mainheading {
@@ -70,7 +76,7 @@ li {
 
 
 .modal {
-    --bs-modal-width: 55%;
+    --bs-modal-width: 100%;
 }
 
 
