@@ -8,7 +8,7 @@ html {
 body {
     background-color: white;
     --dot-bg: rgb(255, 255, 255);
-    --dot-color: rgb(188, 183, 252);
+    --dot-color: rgba(72, 0, 255, 0.469);
     --dot-size: 1px;
     --dot-space: 5px;
       background:
