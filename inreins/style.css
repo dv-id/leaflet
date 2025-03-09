@@ -8,9 +8,9 @@ html {
 body {
     background-color: white;
     --dot-bg: rgb(255, 255, 255);
-    --dot-color: rgba(72, 0, 255, 0.469);
+    --dot-color: rgb(168, 168, 168);
     --dot-size: 1px;
-    --dot-space: 5px;
+    --dot-space: 4px;
       background:
           linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
           linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
