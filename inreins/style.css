@@ -1,14 +1,11 @@
-html {
-    background-color: white;
-    background-attachment: fixed;
-    overscroll-behavior: none;     
-}
 
-body {
-    margin: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-left) env(safe-area-inset-bottom);
-    background-color: white;
+
+html, body {
+    overflow: scroll;
+    overscroll-behavior: none; 
+    margin: 0;
     --dot-bg: rgb(255, 255, 255);
-    --dot-color: rgb(168, 168, 168);
+    --dot-color: rgb(153, 153, 153);
     --dot-size: 1px;
     --dot-space: 4px;
       background:
@@ -20,6 +17,7 @@ body {
     text-align: start;
 
 }
+
 
 #mainheading {
     text-shadow: 4px 4px 7px rgb(188, 164, 249);
