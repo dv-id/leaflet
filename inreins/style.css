@@ -70,7 +70,7 @@ h4  {
     margin-top: 24px;
 }
 
-h3, h4 {
+h3, h4, h2 {
     text-shadow: 1px 1px 6px rgb(188, 164, 249);
 }
 
@@ -84,6 +84,29 @@ li {
     --bs-modal-width: 66%;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  .rotate {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    white-space: nowrap;
+  }
+  .rotate-header {
+    width: 20px; /* Adjust width as needed */
+  }
+  .center {
+    text-align: center;
+  }
 
 /* ol {
     counter-reset: item;
