@@ -23,8 +23,8 @@ let renderresults = function () {
     
     for (i = 0; i < listofelements.length; i++) {
         
-        let heading = `<h2 style="font-weight: bold; font-size: 3em; margin-left: 10%">${listoftitles[i]}</h2>`;
-        let paragraph = `<p style="font-style: italic; font-size: 1.5em; margin-left: 10%;">${listofelements[i].value}</p>`;
+        let heading = `<h2 style="font-weight: bold; font-size: 2em; margin-left: 10%">${listoftitles[i]}</h2>`;
+        let paragraph = `<p style="font-style: italic; font-size: 1em; margin-left: 10%;">${listofelements[i].value}</p>`;
         outputs += heading + paragraph;
         
     }
@@ -39,8 +39,8 @@ let renderresults = function () {
         <title>Results</title>
     </head>
     <body>
-        <div style="padding: 60px;">
-            <h1 style="text-align: center; font-weight: bold; font-size: 5em;">Business Plan Canvas</h1>    
+        <div>
+            <h1 style="text-align: center; font-weight: bold; font-size: 3em;">Business Plan Canvas</h1>    
             <div id="resultscontainer">${outputs}</div>
         </div>
     </body>
