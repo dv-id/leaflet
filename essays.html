@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>8)</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,87 +43,304 @@
 
                                 <!-- the buttons for the modals -->
                                 <div class="col-12 d-flex justify-content-center align-items-center">
-                                    <button type="button" class="btn stock h-100 w-100" data-bs-toggle="modal" data-bs-target="#cooperation">
+                                    <button type="button" class="btn stock h-100 w-100" data-bs-toggle="modal"
+                                        data-bs-target="#cooperation">
                                         On Cooperation
-                                      </button>
+                                    </button>
                                 </div>
 
                                 <div class="col-12 d-flex justify-content-center align-items-center">
-                                    <button type="button" class="btn stock h-100 w-100" data-bs-toggle="modal" data-bs-target="#outlook">
+                                    <button type="button" class="btn stock h-100 w-100" data-bs-toggle="modal"
+                                        data-bs-target="#outlook">
                                         Future Outlook
-                                      </button>
+                                    </button>
                                 </div>
 
                                 <div class="col-12 d-flex justify-content-center align-items-center">
-                                    <button type="button" class="btn stock h-100 w-100" data-bs-toggle="modal" data-bs-target="#expectations">
+                                    <button type="button" class="btn stock h-100 w-100" data-bs-toggle="modal"
+                                        data-bs-target="#expectations">
                                         Australia Expectations
-                                      </button>
+                                    </button>
                                 </div>
 
                                 <div class="col-12 d-flex justify-content-center align-items-center">
-                                    <button type="button" class="btn stock h-100 w-100" data-bs-toggle="modal" data-bs-target="#traits">
+                                    <button type="button" class="btn stock h-100 w-100" data-bs-toggle="modal"
+                                        data-bs-target="#traits">
                                         Preferred Traits
-                                      </button>
+                                    </button>
                                 </div>
 
                                 <div class="col-12 d-flex justify-content-center align-items-center">
-                                    <button type="button" class="btn stock h-100 w-100" data-bs-toggle="modal" data-bs-target="#decisions">
+                                    <button type="button" class="btn stock h-100 w-100" data-bs-toggle="modal"
+                                        data-bs-target="#decisions">
                                         On Decisions
-                                      </button>
+                                    </button>
+                                </div>
+
+                                <div class="col-12 d-flex justify-content-center align-items-center">
+                                    <button type="button" class="btn stock h-100 w-100" data-bs-toggle="modal"
+                                        data-bs-target="#games">
+                                        Games to Play
+                                    </button>
                                 </div>
 
                             </div>
                         </div>
                     </div>
-                  </div>
+                </div>
 
-                  <!-- the modals for each company here -->
+                <!-- the modals for each company here -->
                 <div class="modal fade" id="cooperation" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h2 class="modal-title fs-5" id="cooperation2" style="color: rgb(255, 1, 77);">Under what conditions can cooperation emerge from repeated interactions?</h2>
-                        <button type="button" class="btn-close" style="background-color: rgba(197, 97, 130)" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p> Cooperation emerges when there is a high likelihood of repeated interactions between the players in the future – we will call it δ – and it yields some benefits later on – reciprocity. If you interact with the same player in the future you can reason that if you defect him in the first interaction he won’t cooperate with you in the next round. What if you need somebody to cooperate with? For example you won't be able to hunt down a large animal by yourself, you would only hunt small animals. That's the only thing you can pull off on your own. But imagine that you have to survive a cold winter and the only way to do it is to hunt large animals for their fur to stay warm when it’s freezing. You can’t do it only by yourself. You need to cooperate with others to hunt the animal down. Everyone would be better off if they got themselves to cooperate. Without cooperation they would not survive winter.</p>
-                            <p> We can spot cooperation everywhere around us in our everyday lives. Business partners are nice to each other because they are helping each other make money and expect to do so in the future. People behave nicely in their neighborhoods because the interactions between neighbors are likely to be long-term and you don’t want to make enemies in a place you won’t leave for a while (Whenever a new family moves to a new neighborhood in an american movie, they usually go around with gifts to their neighbors to make a good first impression). The existence of money relies on cooperation. What if you could not exchange money for goods and services in the future? You would not exchange anything for money in the first place. It would be worthless. </p>
-                            <p> We are going to go through two case studies on vampire bats by Gerald S. Wilkinson and on soldiers during World War I by Robert Axelrod to conclude that our two main principles: high δ and reciprocity are at the core of interactions between players in these case studies. “Once the US and the USSR know that they will be dealing with each other indefinitely, the necessary preconditions for cooperation will exist.... The foundation of cooperation is not really trust, but the durability of the relationship." — Robert Axelrod </p>
-                            <p> In an utopian world we could replace the US and USSR with every other state on Earth to embrace all potential gain from the cooperation of nations and live peacefully forever after, since we all share the same planet together and likely will be in the future. First of all we are going to use the famous Prisoners dilemma model to see how two players make strategic decisions in a one-shot interaction. The players choose whether to cooperate or defect. Cooperation is costly, but it benefits the other player by more than it costs – c < b. Thus it would be better if both of them cooperate, but there is a catch. When they are deciding what strategy to choose, they are always better off defecting. Regardless of what the other does, it pays off more to defect. This is called a dominant strategy in Game theory jargon. So looking at the interaction from an individual's point of view they both defect, but that's worse than the outcome that could be accomplished by cooperation. Yet people cooperate all the time. They help each other, they care for each other. Why is that? The answer lies in repeated interactions. There’s no reason to cooperate when you interact just once with the other player and never see them again. But people don't really interact exactly once with each other. There are situations all around us where you have to deal with the same people over and over again. How does that change the interactions? </p>
-                            <p> To find out, let's try to see how the repeated prisoners' dilemma works. In each interaction, both players play the same prisoner’s dilemma – they choose to cooperate (C) or defect (D). Then they learn what the other did and play another round. Every additional round will happen with a probability δ (or you can think about it as a discounting factor that values future rounds less than the current round). If the interactions are likely to be repeated the δ is closer to 1. Imagine that the interaction happens between two business people. If the benefits of cooperation exceed the costs – b> c – and the δ is high – close to one – then they will both benefit from cooperation. What if someone decides to deviate from cooperation and suddenly defect the other player. He would be incentivized to do that because he could gain without paying the cost. What should the betrayed do in the next round?</p>
-                            <p> We can come up with many different strategies for the repeated prisoner's dilemma. Players can cooperate in every round no matter what happened in previous interactions – ALLC strategy. Or they can defect everytime – ALLD. They can even make some conditions in their strategies like: cooperate in the first round and then from that point forward, simply copy what the other did in the previous round – Tit-for-tat (TFT). Cooperate in the first round, then continue to cooperate as long as neither of you has defected, if anyone defected you always defect from that point on – Grim trigger. And so on. Robert Axelrod organized a tournament of different strategies submitted by experts. Each of the strategies were paired off against each other to see, which would do best. The winner of all complex strategies was a simple Tit-for-tat strategy – reciprocity strategy. A second round was also won by the same strategy. From all of the interactions he concluded some principles for a successful strategy. Those were: Avoidance of unnecessary conflict by cooperating as long as the other player does. Provocability in the face of an uncalled-for defection by the other. Forgiveness after responding to a provocation and clarity of behavior so that the other player can recognize and adapt to your pattern of action. </p>
-                            <p> So far we have come to a few main principles that have to be present in order for cooperation to emerge – cooperation has to benefit more than it costs, δ has to be high, reciprocity has to be present. Let’s see if we can spot these principles in action in two case studies – one regarding the fighting in trenches during the World War I by Robert Axelrod and the other on food sharing in Vampire bats by Gerald S. Wilkinson. In the Evolution of Cooperation (title), Robert Axelrod provided an example which shows that cooperation can arise when δ is high even in the worst environment: the trenches of World War I. Because of the technology of the time, the best way to get over a trench was to go around it. Thus the opposing sides both dug trenches all the way from the North Atlantic in Belgium to the Alps in the south. This meant that the war was going to be fought in the trenches for a long time and that the same soldiers were going to face off against the same soldiers for a period of time – the δ was high. This opened the door for cooperation. Soldiers stopped fighting for real, they faked fighting by sniping and bombarding the same places over and over again to make it totally obvious for the enemies that they were not planning to hurt them and expecting to benefit from the same treatment. There are even records of soldiers apologizing for accidentally firing a round at a place and time that wasn’t expected. When soldiers shot unexpectedly or for real, the other side didn’t hold back and fired way harder back to show them that they should not do that again – punished them for breaking cooperation. This act of punishment seem to abide by the quote: “If an injury has to be done to a man it should be so severe that his vengeance need not be feared.” – Niccolo Machiavelli, The Prince The cooperation ended when the commanders on both sides noticed and made sure that no unit of soldiers faced the enemies for a long period of time – thus making the δ low. </p>
-                            <p> Let’s now find out if it's more likely for players to cooperate with those who have cooperated with them in the past – reciprocity. Gerald S. Wilkinson studied Vampire bats that are prone to starve if they hunt unsuccessfully for a few nights in a row, but they seem to be highly thankful to the other vampire bats that feed them in times of need. When bats return from a successful hunt, they will give some of the blood in its mouth to the bats that were unsuccessful. Wilkinson showed that a previously starving bat was eager to repay the favor to the bat that helped him when he needed it the most – high reciprocity. This study shows us that reciprocity is needed for cooperation to emerge. High δ was also present in this study – a lot of vampire bats had been in the same group for a long time. </p>
-                            <p> We’ve seen our principles for cooperation embraced by humans and even by bats. What if in these interactions there was somebody who was gaining the benefits and not paying any cost? In order to sustain cooperation these so called free-riders have to be punished for reaping the benefits without paying the costs. Otherwise the cooperation would not be stable and they would benefit by deviating. The punishment for not cooperating makes it less worth it for them. If free-riders go unpunished, the cooperative individuals also tend to stop cooperating. What if, in a group, the free-riders get punished but it is costly for the punishers to punish. Why would they punish the free-riders in the first case, when they could rely on the others to do it for them and reap the benefits anyway? david nikel 3 political science For the group to sustain cooperation it has to punish the free-riders and also punish those who have not been punished even though they should have had. This second order punishment motivates the punishers to punish the free-riders. So for cooperation to be sustained another principle plays a significant role – punishment of the free-riders and punishment of those who didn't punish the free-rider but should have had. The δ still has to be high in order for the punishment to have an effect. If it is not, the punisher would punish the free-rider never to interact with him again and thus would not reap any benefits from this punishment which is costly to him. This principle of a second order punishment seems to be similar to Jeremy Bentham’s Panopticon in a sense that you would rather punish the free-rider than to get punished by others for not doing so, even though your inaction may be unwitnessed by others. Just the possibility of the punishment motivates you to punish the free-rider. </p>
-                            <p> In summary, to sustain cooperation there must be a high likelihood of repeated interaction, past behavior must be highly observable. The δ must be high. Cooperating today must yield some future benefit, like others being more likely to cooperate with you later – reciprocity. Cooperative behavior needs to be conditional – people can’t just cooperate without a reason, as they might with someone they care about unconditionally like a family member just to improve his or her wellbeing. The foundation of cooperation is not really trust, but the durability of the interaction. If the conditions are right, the players come to cooperation by trial-and-error, learning what strategy comes with the biggest payoff or through imitation of other players who are successful. Even evolution helps us by eliminating the unsuccessful strategies and leaving us with the successful ones. If the conditions for cooperation are right it will emerge no matter what. </p>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title fs-5" id="cooperation2" style="color: rgb(255, 1, 77);">Under
+                                    what conditions can cooperation emerge from repeated interactions?</h2>
+                                <button type="button" class="btn-close" style="background-color: rgba(197, 97, 130)"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p> Cooperation emerges when there is a high likelihood of repeated interactions between
+                                    the players in the future – we will call it δ – and it yields some benefits later on
+                                    – reciprocity. If you interact with the same player in the future you can reason
+                                    that if you defect him in the first interaction he won’t cooperate with you in the
+                                    next round. What if you need somebody to cooperate with? For example you won't be
+                                    able to hunt down a large animal by yourself, you would only hunt small animals.
+                                    That's the only thing you can pull off on your own. But imagine that you have to
+                                    survive a cold winter and the only way to do it is to hunt large animals for their
+                                    fur to stay warm when it’s freezing. You can’t do it only by yourself. You need to
+                                    cooperate with others to hunt the animal down. Everyone would be better off if they
+                                    got themselves to cooperate. Without cooperation they would not survive winter.</p>
+                                <p> We can spot cooperation everywhere around us in our everyday lives. Business
+                                    partners are nice to each other because they are helping each other make money and
+                                    expect to do so in the future. People behave nicely in their neighborhoods because
+                                    the interactions between neighbors are likely to be long-term and you don’t want to
+                                    make enemies in a place you won’t leave for a while (Whenever a new family moves to
+                                    a new neighborhood in an american movie, they usually go around with gifts to their
+                                    neighbors to make a good first impression). The existence of money relies on
+                                    cooperation. What if you could not exchange money for goods and services in the
+                                    future? You would not exchange anything for money in the first place. It would be
+                                    worthless. </p>
+                                <p> We are going to go through two case studies on vampire bats by Gerald S. Wilkinson
+                                    and on soldiers during World War I by Robert Axelrod to conclude that our two main
+                                    principles: high δ and reciprocity are at the core of interactions between players
+                                    in these case studies. “Once the US and the USSR know that they will be dealing with
+                                    each other indefinitely, the necessary preconditions for cooperation will exist....
+                                    The foundation of cooperation is not really trust, but the durability of the
+                                    relationship." — Robert Axelrod </p>
+                                <p> In an utopian world we could replace the US and USSR with every other state on Earth
+                                    to embrace all potential gain from the cooperation of nations and live peacefully
+                                    forever after, since we all share the same planet together and likely will be in the
+                                    future. First of all we are going to use the famous Prisoners dilemma model to see
+                                    how two players make strategic decisions in a one-shot interaction. The players
+                                    choose whether to cooperate or defect. Cooperation is costly, but it benefits the
+                                    other player by more than it costs – c < b. Thus it would be better if both of them
+                                        cooperate, but there is a catch. When they are deciding what strategy to choose,
+                                        they are always better off defecting. Regardless of what the other does, it pays
+                                        off more to defect. This is called a dominant strategy in Game theory jargon. So
+                                        looking at the interaction from an individual's point of view they both defect,
+                                        but that's worse than the outcome that could be accomplished by cooperation. Yet
+                                        people cooperate all the time. They help each other, they care for each other.
+                                        Why is that? The answer lies in repeated interactions. There’s no reason to
+                                        cooperate when you interact just once with the other player and never see them
+                                        again. But people don't really interact exactly once with each other. There are
+                                        situations all around us where you have to deal with the same people over and
+                                        over again. How does that change the interactions? </p>
+                                        <p> To find out, let's try to see how the repeated prisoners' dilemma works. In
+                                            each interaction, both players play the same prisoner’s dilemma – they
+                                            choose to cooperate (C) or defect (D). Then they learn what the other did
+                                            and play another round. Every additional round will happen with a
+                                            probability δ (or you can think about it as a discounting factor that values
+                                            future rounds less than the current round). If the interactions are likely
+                                            to be repeated the δ is closer to 1. Imagine that the interaction happens
+                                            between two business people. If the benefits of cooperation exceed the costs
+                                            – b> c – and the δ is high – close to one – then they will both benefit from
+                                            cooperation. What if someone decides to deviate from cooperation and
+                                            suddenly defect the other player. He would be incentivized to do that
+                                            because he could gain without paying the cost. What should the betrayed do
+                                            in the next round?</p>
+                                        <p> We can come up with many different strategies for the repeated prisoner's
+                                            dilemma. Players can cooperate in every round no matter what happened in
+                                            previous interactions – ALLC strategy. Or they can defect everytime – ALLD.
+                                            They can even make some conditions in their strategies like: cooperate in
+                                            the first round and then from that point forward, simply copy what the other
+                                            did in the previous round – Tit-for-tat (TFT). Cooperate in the first round,
+                                            then continue to cooperate as long as neither of you has defected, if anyone
+                                            defected you always defect from that point on – Grim trigger. And so on.
+                                            Robert Axelrod organized a tournament of different strategies submitted by
+                                            experts. Each of the strategies were paired off against each other to see,
+                                            which would do best. The winner of all complex strategies was a simple
+                                            Tit-for-tat strategy – reciprocity strategy. A second round was also won by
+                                            the same strategy. From all of the interactions he concluded some principles
+                                            for a successful strategy. Those were: Avoidance of unnecessary conflict by
+                                            cooperating as long as the other player does. Provocability in the face of
+                                            an uncalled-for defection by the other. Forgiveness after responding to a
+                                            provocation and clarity of behavior so that the other player can recognize
+                                            and adapt to your pattern of action. </p>
+                                        <p> So far we have come to a few main principles that have to be present in
+                                            order for cooperation to emerge – cooperation has to benefit more than it
+                                            costs, δ has to be high, reciprocity has to be present. Let’s see if we can
+                                            spot these principles in action in two case studies – one regarding the
+                                            fighting in trenches during the World War I by Robert Axelrod and the other
+                                            on food sharing in Vampire bats by Gerald S. Wilkinson. In the Evolution of
+                                            Cooperation (title), Robert Axelrod provided an example which shows that
+                                            cooperation can arise when δ is high even in the worst environment: the
+                                            trenches of World War I. Because of the technology of the time, the best way
+                                            to get over a trench was to go around it. Thus the opposing sides both dug
+                                            trenches all the way from the North Atlantic in Belgium to the Alps in the
+                                            south. This meant that the war was going to be fought in the trenches for a
+                                            long time and that the same soldiers were going to face off against the same
+                                            soldiers for a period of time – the δ was high. This opened the door for
+                                            cooperation. Soldiers stopped fighting for real, they faked fighting by
+                                            sniping and bombarding the same places over and over again to make it
+                                            totally obvious for the enemies that they were not planning to hurt them and
+                                            expecting to benefit from the same treatment. There are even records of
+                                            soldiers apologizing for accidentally firing a round at a place and time
+                                            that wasn’t expected. When soldiers shot unexpectedly or for real, the other
+                                            side didn’t hold back and fired way harder back to show them that they
+                                            should not do that again – punished them for breaking cooperation. This act
+                                            of punishment seem to abide by the quote: “If an injury has to be done to a
+                                            man it should be so severe that his vengeance need not be feared.” – Niccolo
+                                            Machiavelli, The Prince The cooperation ended when the commanders on both
+                                            sides noticed and made sure that no unit of soldiers faced the enemies for a
+                                            long period of time – thus making the δ low. </p>
+                                        <p> Let’s now find out if it's more likely for players to cooperate with those
+                                            who have cooperated with them in the past – reciprocity. Gerald S. Wilkinson
+                                            studied Vampire bats that are prone to starve if they hunt unsuccessfully
+                                            for a few nights in a row, but they seem to be highly thankful to the other
+                                            vampire bats that feed them in times of need. When bats return from a
+                                            successful hunt, they will give some of the blood in its mouth to the bats
+                                            that were unsuccessful. Wilkinson showed that a previously starving bat was
+                                            eager to repay the favor to the bat that helped him when he needed it the
+                                            most – high reciprocity. This study shows us that reciprocity is needed for
+                                            cooperation to emerge. High δ was also present in this study – a lot of
+                                            vampire bats had been in the same group for a long time. </p>
+                                        <p> We’ve seen our principles for cooperation embraced by humans and even by
+                                            bats. What if in these interactions there was somebody who was gaining the
+                                            benefits and not paying any cost? In order to sustain cooperation these so
+                                            called free-riders have to be punished for reaping the benefits without
+                                            paying the costs. Otherwise the cooperation would not be stable and they
+                                            would benefit by deviating. The punishment for not cooperating makes it less
+                                            worth it for them. If free-riders go unpunished, the cooperative individuals
+                                            also tend to stop cooperating. What if, in a group, the free-riders get
+                                            punished but it is costly for the punishers to punish. Why would they punish
+                                            the free-riders in the first case, when they could rely on the others to do
+                                            it for them and reap the benefits anyway? david nikel 3 political science
+                                            For the group to sustain cooperation it has to punish the free-riders and
+                                            also punish those who have not been punished even though they should have
+                                            had. This second order punishment motivates the punishers to punish the
+                                            free-riders. So for cooperation to be sustained another principle plays a
+                                            significant role – punishment of the free-riders and punishment of those who
+                                            didn't punish the free-rider but should have had. The δ still has to be high
+                                            in order for the punishment to have an effect. If it is not, the punisher
+                                            would punish the free-rider never to interact with him again and thus would
+                                            not reap any benefits from this punishment which is costly to him. This
+                                            principle of a second order punishment seems to be similar to Jeremy
+                                            Bentham’s Panopticon in a sense that you would rather punish the free-rider
+                                            than to get punished by others for not doing so, even though your inaction
+                                            may be unwitnessed by others. Just the possibility of the punishment
+                                            motivates you to punish the free-rider. </p>
+                                        <p> In summary, to sustain cooperation there must be a high likelihood of
+                                            repeated interaction, past behavior must be highly observable. The δ must be
+                                            high. Cooperating today must yield some future benefit, like others being
+                                            more likely to cooperate with you later – reciprocity. Cooperative behavior
+                                            needs to be conditional – people can’t just cooperate without a reason, as
+                                            they might with someone they care about unconditionally like a family member
+                                            just to improve his or her wellbeing. The foundation of cooperation is not
+                                            really trust, but the durability of the interaction. If the conditions are
+                                            right, the players come to cooperation by trial-and-error, learning what
+                                            strategy comes with the biggest payoff or through imitation of other players
+                                            who are successful. Even evolution helps us by eliminating the unsuccessful
+                                            strategies and leaving us with the successful ones. If the conditions for
+                                            cooperation are right it will emerge no matter what. </p>
+
+                            </div>
 
                         </div>
-
-                    </div>
                     </div>
                 </div>
                 <!-- end of modal -->
 
-                  <!-- the modals for each company here -->
-                  <div class="modal fade" id="outlook" tabindex="-1" aria-hidden="true">
+                <!-- the modals for each company here -->
+                <div class="modal fade" id="outlook" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h2 class="modal-title fs-5" id="outlook" style="color: rgb(255, 1, 77);">Future life outlook</h2>
-                        <button type="button" class="btn-close" style="background-color: rgba(197, 97, 130)" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                                <p>In order to live life to its fullest potential I have to spend my time wisely. As I am limited by time, I believe I have to maximize doing the things that bring me joy and / or meaning and minimize the time spent on things that don’t. Even though I try to do that every day, I sometimes find myself in a position where I don’t spend my time as I would prefer. I want to transition from deciding on the go to a written down vision of my life in order to steer more clearly towards it and organize my thoughts.</p>
-                                <p>Firstly, I have to find the activities that bring me flow. So far I have figured out that the most amount of flow I experience when doing sports. As a kid when I was playing football or other sports in school, later on skateboarding, while loud music was on, striving to learn a new trick. The intense focus and the rewarding joy after learning a new trick or just enjoying the flow brought me great satisfaction. Then as I got into reading I enjoyed flow while reading some books, but not all of them, only the interesting, well written and illuminating ones.</p>
-                                <p>Secondly, I need to figure out what is meaningful for me or makes me feel that the time was spent well, not regretting doing the activity in hindsight. So far, these activities fit the category of some sort of personal growth or doing something for me in order to improve. It could be physical like a morning stretching routine, doing sports, healthy eating or efficiently relaxing and it could be more learning or creating something like reading a new book on a topic that interests me, watching videos that satisfy my curiosity or creating an amateur website that visually appeals to me.</p>
-                                <p>These were the things that I consider are worth the time of their pursuit. Focusing more on the future I want to envision the life that I consider well lived from my point of view and list all the things that could help me achieve it. I think that a productive morning sets the pace for the rest of the day, so a morning routine that would energize me, wake my body up and improve my health would be of benefit. It could be a morning stretching routine while listening to a podcast of interest or relaxing music, followed by swimming / a run / a workout and a healthy breakfast. After the routine I would like to work on something that I find interesting and exciting as well as meaningful. Something that adds value to the society, improves lives of others or is just something that I enjoy doing and working on. It could be building a company, investing in companies, philanthropy or just a hobby. I am yet to find a professional route that I want to take, as of now I don’t specialize in anything. Investing caught my attention but I don’t know if that is the path most desired by me. I am willing to try it since I am learning about how businesses work that could be helpful when starting my own company, not sure if I could handle that either but as I have discovered I don’t like being bossed around and working for somebody so I may try going on my own out of necessity. So the information gathered from researching companies could be helpful. I was thinking about researching industrial companies and finding a niche there so I could apply the knowledge when starting out myself. Another professional option would be to invest in new ventures, which is meaningful for improving lives as well as an interesting career, or so I think. After coming back from my job I would like to read interesting books or socialize with friends and family. As well as do sports such as cycling, running, swimming, surfing, skiing.</p>
-                                <p>Surrounding environment also influences my wellbeing. It is important for me to be woken up by natural light so a house with windows that let that morning sun in is necessary. As I am interested in aesthetically pleasing houses I would like to live in one in the future. The house should not be very large only to contain possible guests but still keep its coziness. I would prefer a modern concrete house with a view into the tree crowns or nature. In the best case with a swimming pool where I could do my morning swimming laps regardless of the weather and a wellness room with a steam and / or sauna. The house should be situated somewhere where the neighbourhood / neighbours are nice as well as close to hiking routes / cycling routes / running routes not so far from the city where other options of leisure are located.</p>
-                                <p>From a family standpoint I would like a big family if I can support it. I would like to have a wife that is passionate about something and I could help her with that and see her grow. I would like her to be ambitious and sporty.</p>
-                                <p>In conclusion, I want to focus on things that will let me squeeze out the most of life and I think the key to that is to think and reflect on things we do, why we do them and how we feel about them. My preferences may change through time but I felt the need to write this down even though it is not so insightful for others and I may edit it in the future.</p>
-                            date: 17/01/2025
-                        </div>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title fs-5" id="outlook" style="color: rgb(255, 1, 77);">Future life
+                                    outlook</h2>
+                                <button type="button" class="btn-close" style="background-color: rgba(197, 97, 130)"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>In order to live life to its fullest potential I have to spend my time wisely. As I
+                                    am limited by time, I believe I have to maximize doing the things that bring me joy
+                                    and / or meaning and minimize the time spent on things that don’t. Even though I try
+                                    to do that every day, I sometimes find myself in a position where I don’t spend my
+                                    time as I would prefer. I want to transition from deciding on the go to a written
+                                    down vision of my life in order to steer more clearly towards it and organize my
+                                    thoughts.</p>
+                                <p>Firstly, I have to find the activities that bring me flow. So far I have figured out
+                                    that the most amount of flow I experience when doing sports. As a kid when I was
+                                    playing football or other sports in school, later on skateboarding, while loud music
+                                    was on, striving to learn a new trick. The intense focus and the rewarding joy after
+                                    learning a new trick or just enjoying the flow brought me great satisfaction. Then
+                                    as I got into reading I enjoyed flow while reading some books, but not all of them,
+                                    only the interesting, well written and illuminating ones.</p>
+                                <p>Secondly, I need to figure out what is meaningful for me or makes me feel that the
+                                    time was spent well, not regretting doing the activity in hindsight. So far, these
+                                    activities fit the category of some sort of personal growth or doing something for
+                                    me in order to improve. It could be physical like a morning stretching routine,
+                                    doing sports, healthy eating or efficiently relaxing and it could be more learning
+                                    or creating something like reading a new book on a topic that interests me, watching
+                                    videos that satisfy my curiosity or creating an amateur website that visually
+                                    appeals to me.</p>
+                                <p>These were the things that I consider are worth the time of their pursuit. Focusing
+                                    more on the future I want to envision the life that I consider well lived from my
+                                    point of view and list all the things that could help me achieve it. I think that a
+                                    productive morning sets the pace for the rest of the day, so a morning routine that
+                                    would energize me, wake my body up and improve my health would be of benefit. It
+                                    could be a morning stretching routine while listening to a podcast of interest or
+                                    relaxing music, followed by swimming / a run / a workout and a healthy breakfast.
+                                    After the routine I would like to work on something that I find interesting and
+                                    exciting as well as meaningful. Something that adds value to the society, improves
+                                    lives of others or is just something that I enjoy doing and working on. It could be
+                                    building a company, investing in companies, philanthropy or just a hobby. I am yet
+                                    to find a professional route that I want to take, as of now I don’t specialize in
+                                    anything. Investing caught my attention but I don’t know if that is the path most
+                                    desired by me. I am willing to try it since I am learning about how businesses work
+                                    that could be helpful when starting my own company, not sure if I could handle that
+                                    either but as I have discovered I don’t like being bossed around and working for
+                                    somebody so I may try going on my own out of necessity. So the information gathered
+                                    from researching companies could be helpful. I was thinking about researching
+                                    industrial companies and finding a niche there so I could apply the knowledge when
+                                    starting out myself. Another professional option would be to invest in new ventures,
+                                    which is meaningful for improving lives as well as an interesting career, or so I
+                                    think. After coming back from my job I would like to read interesting books or
+                                    socialize with friends and family. As well as do sports such as cycling, running,
+                                    swimming, surfing, skiing.</p>
+                                <p>Surrounding environment also influences my wellbeing. It is important for me to be
+                                    woken up by natural light so a house with windows that let that morning sun in is
+                                    necessary. As I am interested in aesthetically pleasing houses I would like to live
+                                    in one in the future. The house should not be very large only to contain possible
+                                    guests but still keep its coziness. I would prefer a modern concrete house with a
+                                    view into the tree crowns or nature. In the best case with a swimming pool where I
+                                    could do my morning swimming laps regardless of the weather and a wellness room with
+                                    a steam and / or sauna. The house should be situated somewhere where the
+                                    neighbourhood / neighbours are nice as well as close to hiking routes / cycling
+                                    routes / running routes not so far from the city where other options of leisure are
+                                    located.</p>
+                                <p>From a family standpoint I would like a big family if I can support it. I would like
+                                    to have a wife that is passionate about something and I could help her with that and
+                                    see her grow. I would like her to be ambitious and sporty.</p>
+                                <p>In conclusion, I want to focus on things that will let me squeeze out the most of
+                                    life and I think the key to that is to think and reflect on things we do, why we do
+                                    them and how we feel about them. My preferences may change through time but I felt
+                                    the need to write this down even though it is not so insightful for others and I may
+                                    edit it in the future.</p>
+                                date: 17/01/2025
+                            </div>
 
-                    </div>
+                        </div>
                     </div>
                 </div>
                 <!-- end of modal -->
@@ -131,66 +348,367 @@
                 <!-- the modals for each company here -->
                 <div class="modal fade" id="expectations" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h2 class="modal-title fs-5" id="expectations" style="color: rgb(255, 1, 77);">Australia Expectations</h2>
-                        <button type="button" class="btn-close" style="background-color: rgba(197, 97, 130)" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                                <p>The purpose of this writing is to list all the expectations on my stay in Australia in advance so I can reflect on it later on. Unfortunately I am writing this after I have spent nine days in Adelaide already. After the arrival I was not particularly excited about being in Australia but that was likely caused by the long flight feeling very tired.</p>
-                                <p>My apriori perception of Australia was mostly influenced by all the modern houses I have watched on youtube surrounded by wild nature and beaches. It was a sense of calm, beauty and robustness that appealed to me. I was envisioning a life full of activities, beautiful nature in close proximity to entertainment in the nearby cities. Nicely tailored to family / adult life. At the same time I have watched a lot of appealing videos on the lifestyle here by travelers and locals. Their daily life seemed to be full of good habits such as eating healthy, doing all kinds of sports and a rich social life. All the while surrounded by an environment full of fauna and flora and never sleeping sun. With all those benefits that seem to be present only in exotic places visited on vacations, Australia also has a strong economy with a lot of career opportunities, which appealed to me since I wanted to work in a financial industry in a developed economy. All these lead to a decision, when deciding where my life would be most well lived and of the highest quality out of all the options.</p>
-                                <p>Being on my own would be a check on my independence. I viewed that uncertainty about how I would do on my own as a challenge since there is no better time to do that than now. I have watched a lot of college vlogs from abroad on youtube and thought to myself that I want to experience the proper student life as well since I have missed it studying my bachelors degree at a lenient university that was not demanding as much. My main focus would be to delve deep into the world of finance figuring out the mechanics of the financial industry and researching companies. With the knowledge from my courses I could make better informed decisions with my own investments and grow my wealth over time. The insights like different business models, industry specifics, financial workings of a company could also help me with my own ventures.</p>
-                                <p>University requirements and course completion will be my primary focus of attention as well as following the financial markets. Regarding my own ventures I was thinking of finally starting some. Eventually I would like to start a platform called point on which anybody could hire professionals and services as well as an app on which you would be able to fund peoples dreams or material needs that could be used instead of gifts. I also thought about finding an industrial niche in which I would control a lot of the market share in a small total addressable market so I would not face as big of a competition. In the meantime though it would be better to start small. I would start with a simple e-shop selling t-shirts with a limited downside and capital requirements or with a knowledge sharing course marketed through socials. Completion of the goals would require an immense focus and a fight with the distractions which could be plentiful. Many people from Europe come to Australia to live a free life full of adventure and social gatherings which suits them but that could sometimes create fleeting short-lived experiences at a hidden opportunity cost of building something lasting and meaningful. This creates an ever-present optimization dilemma on how much time and effort to allocate to short-term & long-term goals, the decisions to focus on the current moment or on building something that could be of benefit in the future for a price of short-term suffering. As of now, I think it is worth being long-term oriented as I find myself feeling frustrated at the end of the day whenever I have not done something for the future or somehow improved but instead lived hedonistically for a fleeting reward. But there is nothing bad if someone lives a lifestyle focused on the present moment seeking pleasures without much planning ahead, it is just a different view on living. I do not want to get caught up on a hedonic treadmill. My other goal is to have a healthy lifestyle here that includes a routine such as stretching after waking up, eating well, active lifestyle doing sports and reading a lot.</p>
-                                <p>So far I am under the impression that many of the students in my building are not so social as they are avoiding eye contact as well as conversations. After these interactions I feel more socially disconnected. On the other hand it limits me to the exposure of distraction from the goals that I want to be primarily focused on, my goal is not to make as many friends as possible nor is it to spend the most time partying or hanging out.</p>
-                                <p>Hopefully I will reach the goals in the next two years and things will turn out for the better. Let the time work its magic.</p>
-                            date: 22/02/2025
-                        </div>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title fs-5" id="expectations" style="color: rgb(255, 1, 77);">Australia
+                                    Expectations</h2>
+                                <button type="button" class="btn-close" style="background-color: rgba(197, 97, 130)"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>The purpose of this writing is to list all the expectations on my stay in Australia
+                                    in advance so I can reflect on it later on. Unfortunately I am writing this after I
+                                    have spent nine days in Adelaide already. After the arrival I was not particularly
+                                    excited about being in Australia but that was likely caused by the long flight
+                                    feeling very tired.</p>
+                                <p>My apriori perception of Australia was mostly influenced by all the modern houses I
+                                    have watched on youtube surrounded by wild nature and beaches. It was a sense of
+                                    calm, beauty and robustness that appealed to me. I was envisioning a life full of
+                                    activities, beautiful nature in close proximity to entertainment in the nearby
+                                    cities. Nicely tailored to family / adult life. At the same time I have watched a
+                                    lot of appealing videos on the lifestyle here by travelers and locals. Their daily
+                                    life seemed to be full of good habits such as eating healthy, doing all kinds of
+                                    sports and a rich social life. All the while surrounded by an environment full of
+                                    fauna and flora and never sleeping sun. With all those benefits that seem to be
+                                    present only in exotic places visited on vacations, Australia also has a strong
+                                    economy with a lot of career opportunities, which appealed to me since I wanted to
+                                    work in a financial industry in a developed economy. All these lead to a decision,
+                                    when deciding where my life would be most well lived and of the highest quality out
+                                    of all the options.</p>
+                                <p>Being on my own would be a check on my independence. I viewed that uncertainty about
+                                    how I would do on my own as a challenge since there is no better time to do that
+                                    than now. I have watched a lot of college vlogs from abroad on youtube and thought
+                                    to myself that I want to experience the proper student life as well since I have
+                                    missed it studying my bachelors degree at a lenient university that was not
+                                    demanding as much. My main focus would be to delve deep into the world of finance
+                                    figuring out the mechanics of the financial industry and researching companies. With
+                                    the knowledge from my courses I could make better informed decisions with my own
+                                    investments and grow my wealth over time. The insights like different business
+                                    models, industry specifics, financial workings of a company could also help me with
+                                    my own ventures.</p>
+                                <p>University requirements and course completion will be my primary focus of attention
+                                    as well as following the financial markets. Regarding my own ventures I was thinking
+                                    of finally starting some. Eventually I would like to start a platform called point
+                                    on which anybody could hire professionals and services as well as an app on which
+                                    you would be able to fund peoples dreams or material needs that could be used
+                                    instead of gifts. I also thought about finding an industrial niche in which I would
+                                    control a lot of the market share in a small total addressable market so I would not
+                                    face as big of a competition. In the meantime though it would be better to start
+                                    small. I would start with a simple e-shop selling t-shirts with a limited downside
+                                    and capital requirements or with a knowledge sharing course marketed through
+                                    socials. Completion of the goals would require an immense focus and a fight with the
+                                    distractions which could be plentiful. Many people from Europe come to Australia to
+                                    live a free life full of adventure and social gatherings which suits them but that
+                                    could sometimes create fleeting short-lived experiences at a hidden opportunity cost
+                                    of building something lasting and meaningful. This creates an ever-present
+                                    optimization dilemma on how much time and effort to allocate to short-term &
+                                    long-term goals, the decisions to focus on the current moment or on building
+                                    something that could be of benefit in the future for a price of short-term
+                                    suffering. As of now, I think it is worth being long-term oriented as I find myself
+                                    feeling frustrated at the end of the day whenever I have not done something for the
+                                    future or somehow improved but instead lived hedonistically for a fleeting reward.
+                                    But there is nothing bad if someone lives a lifestyle focused on the present moment
+                                    seeking pleasures without much planning ahead, it is just a different view on
+                                    living. I do not want to get caught up on a hedonic treadmill. My other goal is to
+                                    have a healthy lifestyle here that includes a routine such as stretching after
+                                    waking up, eating well, active lifestyle doing sports and reading a lot.</p>
+                                <p>So far I am under the impression that many of the students in my building are not so
+                                    social as they are avoiding eye contact as well as conversations. After these
+                                    interactions I feel more socially disconnected. On the other hand it limits me to
+                                    the exposure of distraction from the goals that I want to be primarily focused on,
+                                    my goal is not to make as many friends as possible nor is it to spend the most time
+                                    partying or hanging out.</p>
+                                <p>Hopefully I will reach the goals in the next two years and things will turn out for
+                                    the better. Let the time work its magic.</p>
+                                date: 22/02/2025
+                            </div>
 
-                    </div>
+                        </div>
                     </div>
                 </div>
                 <!-- end of modal -->
 
-                                <!-- the modals for each company here -->
+                <!-- the modals for each company here -->
                 <div class="modal fade" id="traits" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h2 class="modal-title fs-5" id="traits" style="color: rgb(255, 1, 77);">Preferred Traits</h2>
-                        <button type="button" class="btn-close" style="background-color: rgba(197, 97, 130)" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                                <p>Striving for a harmonious family life requires a responsible decision making process when choosing a potential life partner, it should focus on desired traits that lead to a prosperous relationship. Filtering out the undesired ones, thus focusing more on prevention rather than treatment in the form of resolving redundant conflicts when they arise. Conflicts between the partners are going to happen either way but the overall energy used on resolving them could be lessened by choosing the partner wisely and thus could be directed to more productive things. We all evaluate others, sometimes unconsciously, in the form of choosing friends that have the same interests, values, personalities or any other selected traits. As I have observed, a lot of conflicts that arise between partners are preventable when thought out in advance. But I suppose that the majority of people during conflicts do not think about the root cause of what got them into the arguments nor do they reflect on it afterwards. Which condemns them to a repetition without ever leaving the loop. I do not want to get into that loop in the first place or at least have an option to escape it. I would like to list all the traits that I have observed so far – they could change in the future – that I think would lead to a more constructive and prosperous relationship.</p>
-                                <p><strong><i>Ambition.</i></strong> Striving for something in life brings about meaning and fulfillment. Engaging in any activity and getting better at it is something to aim for. Improvements in sports, knowledge, career or just being a better human being is important. It also adds uniqueness to the person, since I feel like a lot of people do not set their mind on something and just steer aimlessly which could lead to self-destructing habits. Achieving a goal rewards us with dopamine and kick-starts a long-term healthy habit loop, which makes us feel better and more confident. Own goals and activities also make the person more independent of the partner which in turn reduces conflicts appearing out of boredom or excessive dependency and reliance. Healthy lifestyle in general appeals to me as well. I like when others are taking care of themselves as well as of others. Sacrificing short-term pleasure for a long-term gain comes naturally with this mindset, rather than the opposite of chasing ever-fleeting pleasure on a treadmill without ever being satiated. Growth mindset in general proves helpful in any situation when taking on a challenge or dealing with any problems that life throws at us. I find it very admirable when a person grows.</p>
-                                <p><strong><i>Logic.</i></strong> Thinking logically helps almost in any life situation. It leads to better and more objective decisions thus living more efficiently. In interactions between the partners it helps to communicate more clearly and prevent misunderstandings which are common causes of conflicts. It also helps to resolve the conflicts if both sides agree upon a framework of the discussion. For instance focusing on facts and trying to solve the problem (conflict) rather than being aimlessly swayed by emotions without reaching an agreement / conclusion and learning from it so the conflict does not repeat.</p>
-                                <p><strong><i>Beauty.</i></strong> Physical appearance plays a big part in our lives contrary to the polite well-meant clichés. Women with dark long hair, large eyes, big lips appeal to me – middle eastern (arabic) type. I also like when she makes various hairstyles. Skinny / sporty physiques with long legs are aesthetically pleasing. I prefer when she takes care of herself by eating healthy, doing sports, wearing elegant clothes and when she is feminine. All of those imposed beauty standards may seem shallow but I derive a lot of value from the beautiful aesthetics surrounding me and with a beautiful partner by my side I could do that all the time.</li>
-                                <p><strong><i>Shared values.</i></strong> Values such as kindness, respect and an active approach to situations. Pro-actively taking action rather than passively waiting for the consequences. Preference of long-term improvement over short-term pleasure. Large family with a focus on providing the best circumstances for the family to thrive. Focus only on the things that matter to living life to the fullest and at the same time abandoning the time wasting activities. Doing things together such as sports, helping each other grow and providing helpful feedback on any topic in question will make us bond together more. Calmness and thoughfulness.</p>
-                                <p>In conclusion, I strive for a life where my family has the option to go on a weekend getaway to do activities such as skiing, spending time in foreign countries, beaches and cities regularly. With enough resources to provide freedom and options for each of the family members to find his / her own source of joy in any endeavour he / she finds fit. Being independent of the resource constraints unleashes us to do whatever we want and whenever we want to. For that to become a reality I would need a partner that shares my view on future life and helps me attain it.</p>
-                            date: 01/03/2025
-                        </div>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title fs-5" id="traits" style="color: rgb(255, 1, 77);">Preferred
+                                    Traits</h2>
+                                <button type="button" class="btn-close" style="background-color: rgba(197, 97, 130)"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Striving for a harmonious family life requires a responsible decision making process
+                                    when choosing a potential life partner, it should focus on desired traits that lead
+                                    to a prosperous relationship. Filtering out the undesired ones, thus focusing more
+                                    on prevention rather than treatment in the form of resolving redundant conflicts
+                                    when they arise. Conflicts between the partners are going to happen either way but
+                                    the overall energy used on resolving them could be lessened by choosing the partner
+                                    wisely and thus could be directed to more productive things. We all evaluate others,
+                                    sometimes unconsciously, in the form of choosing friends that have the same
+                                    interests, values, personalities or any other selected traits. As I have observed, a
+                                    lot of conflicts that arise between partners are preventable when thought out in
+                                    advance. But I suppose that the majority of people during conflicts do not think
+                                    about the root cause of what got them into the arguments nor do they reflect on it
+                                    afterwards. Which condemns them to a repetition without ever leaving the loop. I do
+                                    not want to get into that loop in the first place or at least have an option to
+                                    escape it. I would like to list all the traits that I have observed so far – they
+                                    could change in the future – that I think would lead to a more constructive and
+                                    prosperous relationship.</p>
+                                <p><strong><i>Ambition.</i></strong> Striving for something in life brings about meaning
+                                    and fulfillment. Engaging in any activity and getting better at it is something to
+                                    aim for. Improvements in sports, knowledge, career or just being a better human
+                                    being is important. It also adds uniqueness to the person, since I feel like a lot
+                                    of people do not set their mind on something and just steer aimlessly which could
+                                    lead to self-destructing habits. Achieving a goal rewards us with dopamine and
+                                    kick-starts a long-term healthy habit loop, which makes us feel better and more
+                                    confident. Own goals and activities also make the person more independent of the
+                                    partner which in turn reduces conflicts appearing out of boredom or excessive
+                                    dependency and reliance. Healthy lifestyle in general appeals to me as well. I like
+                                    when others are taking care of themselves as well as of others. Sacrificing
+                                    short-term pleasure for a long-term gain comes naturally with this mindset, rather
+                                    than the opposite of chasing ever-fleeting pleasure on a treadmill without ever
+                                    being satiated. Growth mindset in general proves helpful in any situation when
+                                    taking on a challenge or dealing with any problems that life throws at us. I find it
+                                    very admirable when a person grows.</p>
+                                <p><strong><i>Logic.</i></strong> Thinking logically helps almost in any life situation.
+                                    It leads to better and more objective decisions thus living more efficiently. In
+                                    interactions between the partners it helps to communicate more clearly and prevent
+                                    misunderstandings which are common causes of conflicts. It also helps to resolve the
+                                    conflicts if both sides agree upon a framework of the discussion. For instance
+                                    focusing on facts and trying to solve the problem (conflict) rather than being
+                                    aimlessly swayed by emotions without reaching an agreement / conclusion and learning
+                                    from it so the conflict does not repeat.</p>
+                                <p><strong><i>Beauty.</i></strong> Physical appearance plays a big part in our lives
+                                    contrary to the polite well-meant clichés. Women with dark long hair, large eyes,
+                                    big lips appeal to me – middle eastern (arabic) type. I also like when she makes
+                                    various hairstyles. Skinny / sporty physiques with long legs are aesthetically
+                                    pleasing. I prefer when she takes care of herself by eating healthy, doing sports,
+                                    wearing elegant clothes and when she is feminine. All of those imposed beauty
+                                    standards may seem shallow but I derive a lot of value from the beautiful aesthetics
+                                    surrounding me and with a beautiful partner by my side I could do that all the time.
+                                    </li>
+                                <p><strong><i>Shared values.</i></strong> Values such as kindness, respect and an active
+                                    approach to situations. Pro-actively taking action rather than passively waiting for
+                                    the consequences. Preference of long-term improvement over short-term pleasure.
+                                    Large family with a focus on providing the best circumstances for the family to
+                                    thrive. Focus only on the things that matter to living life to the fullest and at
+                                    the same time abandoning the time wasting activities. Doing things together such as
+                                    sports, helping each other grow and providing helpful feedback on any topic in
+                                    question will make us bond together more. Calmness and thoughfulness.</p>
+                                <p>In conclusion, I strive for a life where my family has the option to go on a weekend
+                                    getaway to do activities such as skiing, spending time in foreign countries, beaches
+                                    and cities regularly. With enough resources to provide freedom and options for each
+                                    of the family members to find his / her own source of joy in any endeavour he / she
+                                    finds fit. Being independent of the resource constraints unleashes us to do whatever
+                                    we want and whenever we want to. For that to become a reality I would need a partner
+                                    that shares my view on future life and helps me attain it.</p>
+                                date: 01/03/2025
+                            </div>
 
-                    </div>
+                        </div>
                     </div>
                 </div>
                 <!-- end of modal -->
                 <!-- the modals for each company here -->
                 <div class="modal fade" id="decisions" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h2 class="modal-title fs-5" id="decisions" style="color: rgb(255, 1, 77);">On Decisions</h2>
-                        <button type="button" class="btn-close" style="background-color: rgba(197, 97, 130)" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p>After a month of studying finance abroad, I have often found myself doubting the benefits of the studies. Evaluation of the initial decision to study finance abroad puzzles me. As I have tried to rate the decision I could not come to a conclusion. The problem lies when I start considering alternative paths that I could have taken instead. Or as economists would like to call them “opportunity costs”. Retrospectively I can point out the negatives and positives of the path that I have chosen but what about the other ones that have not been walked on? I could consider going to another university, another country or basically giving up studying and pursuing a career but I do not know the potential outcomes of those decisions and can not compare them with my chosen path. How can I then say that I made a wise choice? I can apply all sorts of what if thought experiments and create possible scenarios but I will never know for certain how all the consequences of the other decisions impact my life. That uncertainty on how I would react to the different circumstances makes the judgement impossible. I can not say that choosing another path would be better for me, I have no google map that can calculate the outcomes and state them in a clear metric like a travel distance, time to destination and others.</p>
-                            <p>People of authority often give tips on how to do certain things, essentially telling you what the optimal path is, but that makes no sense. What worked for them does not have to apply to you. We are all born differently and with that default setup we all react to forces of destiny in different ways. Somebody who was bullied as a kid could grow up to be a driven individual and pursue excellence only because it instilled an inner motivation seed in him. Or he can become an emotionally scarred person that has to make up for the damage done to him by harming others in order to gain his self-worth back, never willing to improve himself. Why does an objectively bad thing lead to a value creating outcome and a value destroying one in the second case. This decision tree grows if you consider all the forces that influence our behaviour. I do not think that you can know the influence of factors a priori to the events happening. As rational human beings, how do we decide on what to do next when we do not know the outcomes? How do we evaluate the decisions in order to learn from them to pursue our future endeavours? As of now I came to a conclusion that I can not judge my past decisions and score them on how good they were. I can not even know what my future actions will cause and what effects they will have on me (not considering the obvious things like smoking ten packs of cigs a day).</p>
-                            <p>That leads me to think that decisions lead to outcomes that may have not been intended and thus do not make the decision maker fully accountable for the credit if it goes well and otherwise. These decisions were influenced by previous decisions and outcomes and you could extend this reasoning to the beginning of everything. Which leads to doubting free will as we do not have control over factors that have had an impact on us from the beginning. These impacts are essentially random so are my decisions random? Am I making these decisions because I have a free will or has it been decided for me by the preceding actions and their influences on me?</p>
-                            <p>As I have tried evaluating my finance studies I considered my focused attention with low clarity of all that effort translating to a more prosperous career. I have read a lot on the topic of financial markets out of my genuine interest and hoped that would provide me with an intellectual advantage over peers but it seems like school has been leveling the playing field for everyone. It takes my time away from exploring things that I am interested in outside of the school curriculum and thus assimilating my knowledge to the knowledge of my peers because we all learn the same things. Which leads to unoriginality and a limited spectrum of knowledge which could be exploited by someone who has a different point of view on things. This mechanism seems to be holding us closely with not much differentiation when applying to a potential job. But historically, people have been rewarded for thinking differently.</p>
-                            <p>The path in front of me seems to be a corporate job in which I do a lot of spreadsheets. Climbing up the corporate ladder would require competing with others that may be genetically more bright or just more fit for the job. Climbing up the hierarchy would be so energy draining as I would be forced to do tasks that I do not like. Everything that I am forced to do under resentment I find so hard to do. I like to do things my own way. Not how I am told to do it. This phenomenon shaped my life as I have tried to always find my way of doing something. I do not think I would thrive in a forcing environment based on hierarchy and authoritarian power. But that is required in corporate finance jobs. I also reflected on myself and realized that I am more of a story than numbers person in finance. I believe that there are people that have better abilities to do quantitative work in banks, hedge funds, private equity funds, consulting and other employers. I enjoy listening to podcasts about how companies make money, what is their history, how they have made the product work et cetera. So maybe I should delve deeper into how the venture capital industry works or startups in general. That is where the story plays a key role. I listened to some of the interviews with Doug Leone and was inspired by his insights and wisdom. I enjoyed reading The Venture Mindset book as well as The Power Law. I find it fascinating how they are able to participate in building so many value creating companies. I will research the industry a little more to find out if I am steering my ship to the shore with the treasure on board or not. If not I have to look again for some.</p>
-                            date: 29/03/2025
-                        </div>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title fs-5" id="decisions" style="color: rgb(255, 1, 77);">On Decisions
+                                </h2>
+                                <button type="button" class="btn-close" style="background-color: rgba(197, 97, 130)"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>After a month of studying finance abroad, I have often found myself doubting the
+                                    benefits of the studies. Evaluation of the initial decision to study finance abroad
+                                    puzzles me. As I have tried to rate the decision I could not come to a conclusion.
+                                    The problem lies when I start considering alternative paths that I could have taken
+                                    instead. Or as economists would like to call them “opportunity costs”.
+                                    Retrospectively I can point out the negatives and positives of the path that I have
+                                    chosen but what about the other ones that have not been walked on? I could consider
+                                    going to another university, another country or basically giving up studying and
+                                    pursuing a career but I do not know the potential outcomes of those decisions and
+                                    can not compare them with my chosen path. How can I then say that I made a wise
+                                    choice? I can apply all sorts of what if thought experiments and create possible
+                                    scenarios but I will never know for certain how all the consequences of the other
+                                    decisions impact my life. That uncertainty on how I would react to the different
+                                    circumstances makes the judgement impossible. I can not say that choosing another
+                                    path would be better for me, I have no google map that can calculate the outcomes
+                                    and state them in a clear metric like a travel distance, time to destination and
+                                    others.</p>
+                                <p>People of authority often give tips on how to do certain things, essentially telling
+                                    you what the optimal path is, but that makes no sense. What worked for them does not
+                                    have to apply to you. We are all born differently and with that default setup we all
+                                    react to forces of destiny in different ways. Somebody who was bullied as a kid
+                                    could grow up to be a driven individual and pursue excellence only because it
+                                    instilled an inner motivation seed in him. Or he can become an emotionally scarred
+                                    person that has to make up for the damage done to him by harming others in order to
+                                    gain his self-worth back, never willing to improve himself. Why does an objectively
+                                    bad thing lead to a value creating outcome and a value destroying one in the second
+                                    case. This decision tree grows if you consider all the forces that influence our
+                                    behaviour. I do not think that you can know the influence of factors a priori to the
+                                    events happening. As rational human beings, how do we decide on what to do next when
+                                    we do not know the outcomes? How do we evaluate the decisions in order to learn from
+                                    them to pursue our future endeavours? As of now I came to a conclusion that I can
+                                    not judge my past decisions and score them on how good they were. I can not even
+                                    know what my future actions will cause and what effects they will have on me (not
+                                    considering the obvious things like smoking ten packs of cigs a day).</p>
+                                <p>That leads me to think that decisions lead to outcomes that may have not been
+                                    intended and thus do not make the decision maker fully accountable for the credit if
+                                    it goes well and otherwise. These decisions were influenced by previous decisions
+                                    and outcomes and you could extend this reasoning to the beginning of everything.
+                                    Which leads to doubting free will as we do not have control over factors that have
+                                    had an impact on us from the beginning. These impacts are essentially random so are
+                                    my decisions random? Am I making these decisions because I have a free will or has
+                                    it been decided for me by the preceding actions and their influences on me?</p>
+                                <p>As I have tried evaluating my finance studies I considered my focused attention with
+                                    low clarity of all that effort translating to a more prosperous career. I have read
+                                    a lot on the topic of financial markets out of my genuine interest and hoped that
+                                    would provide me with an intellectual advantage over peers but it seems like school
+                                    has been leveling the playing field for everyone. It takes my time away from
+                                    exploring things that I am interested in outside of the school curriculum and thus
+                                    assimilating my knowledge to the knowledge of my peers because we all learn the same
+                                    things. Which leads to unoriginality and a limited spectrum of knowledge which could
+                                    be exploited by someone who has a different point of view on things. This mechanism
+                                    seems to be holding us closely with not much differentiation when applying to a
+                                    potential job. But historically, people have been rewarded for thinking differently.
+                                </p>
+                                <p>The path in front of me seems to be a corporate job in which I do a lot of
+                                    spreadsheets. Climbing up the corporate ladder would require competing with others
+                                    that may be genetically more bright or just more fit for the job. Climbing up the
+                                    hierarchy would be so energy draining as I would be forced to do tasks that I do not
+                                    like. Everything that I am forced to do under resentment I find so hard to do. I
+                                    like to do things my own way. Not how I am told to do it. This phenomenon shaped my
+                                    life as I have tried to always find my way of doing something. I do not think I
+                                    would thrive in a forcing environment based on hierarchy and authoritarian power.
+                                    But that is required in corporate finance jobs. I also reflected on myself and
+                                    realized that I am more of a story than numbers person in finance. I believe that
+                                    there are people that have better abilities to do quantitative work in banks, hedge
+                                    funds, private equity funds, consulting and other employers. I enjoy listening to
+                                    podcasts about how companies make money, what is their history, how they have made
+                                    the product work et cetera. So maybe I should delve deeper into how the venture
+                                    capital industry works or startups in general. That is where the story plays a key
+                                    role. I listened to some of the interviews with Doug Leone and was inspired by his
+                                    insights and wisdom. I enjoyed reading The Venture Mindset book as well as The Power
+                                    Law. I find it fascinating how they are able to participate in building so many
+                                    value creating companies. I will research the industry a little more to find out if
+                                    I am steering my ship to the shore with the treasure on board or not. If not I have
+                                    to look again for some.</p>
+                                date: 29/03/2025
+                            </div>
 
+                        </div>
                     </div>
+                </div>
+                <!-- end of modal -->
+
+                <!-- the modals for each company here -->
+                <div class="modal fade" id="games" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title fs-5" id="games" style="color: rgb(255, 1, 77);">Games to Play
+                                </h2>
+                                <button type="button" class="btn-close" style="background-color: rgba(197, 97, 130)"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <p>We face competition everywhere. The thought of competing with others and striving to
+                                    outperform peers during the career or academic life exhausts me. In school we are
+                                    always getting graded and socially viewed through the lens of grades. It does not
+                                    necessarily mean that someone who scores better on tests is a better human being as
+                                    is obvious to everyone. Still, the psychological effect it could have on individuals
+                                    in a peer group could be future defining for the individual. It could spur drive or
+                                    lead to lack of confidence ventilated through acts of violence or other immoral
+                                    acts, as one reacts to the negative feedback from the tribe that he had to be
+                                    historically aligned with. Rejection from the tribe meant nearly certain death.
+                                    Everyone wants to be socially accepted in their own way, some pursue it through
+                                    careers, others doing good for the world by working for a charity, could be
+                                    anything, even being part of a distinct football fan group. As long as that means
+                                    being positively evaluated by peers of the group.</p>
+                                <p>This leads to social signalling. We all signal certain things and once you look at it
+                                    from a third person perspective, looking at the interactions between people, looking
+                                    around at the fans on a football field or just noticing how people present
+                                    themselves to gain the evaluation by others, forms an interesting view on human
+                                    behavior. Witnessing cost signalling in society is so interesting, firstly it could
+                                    be seen as stupid but it makes sense! Animals do that too. Peacocks show their
+                                    mating rituals to potential mating partners, increasingly exposing themselves to the
+                                    predators. Why would they do that? They signal that even though they are exposing
+                                    themselves, they feel comfortable fleeing from the potential predator due to their
+                                    gifted DNA, signalling mating attractiveness to the female. Humans signal too. We
+                                    show our luxury items just to signal everyone that we can spend so much money and
+                                    still have money for the normal goods, signalling status. We show it with our ripped
+                                    bodies that we have the time to spend in the gym, signalling our health and the
+                                    amount of free time we have and other things that we hope are evaluated by peers. It
+                                    is most effective when it is perceived as unintended. I suspect that there is
+                                    something going on in a similar vein when students choose to study just for the sake
+                                    of getting a degree.</p>
+                                <p>As I have encountered some of the peers at my university I am left thinking that a
+                                    lot of the students do not study for the sake of learning because they are
+                                    interested in the field, rather they seem to study in order to get a more
+                                    prestigious job in a corporate setting. I thought it would be mostly people that go
+                                    to sleep thinking about finance (as I am studying that), dreaming about it and
+                                    reading financial news as a pre-breakfast meal, ready to discuss anything, anytime.
+                                    As that was one of my reasons to study abroad, to meet people with such an interest.
+                                    I can only speculate on what the actual motivation for studying is. I think it could
+                                    be more hidden motives. I think it is some form of uncertainty reduction which is
+                                    unpleasant to human beings as well as a status symbol by showing endurance and
+                                    intelligence. By studying they dodge the immediate bullet of responsibility that
+                                    would be fired at them as they enter the corporate world, as well as improving the
+                                    odds of a prestigious job in the future. But where does that lead to? If sufficient
+                                    amounts of people follow the same path they will all end up competing with each
+                                    other for jobs in the financial industry. Cutthroat competition in a hierarchical
+                                    corporate structure does not seem to be fun pursuing. Sacrificing a lot of time
+                                    studying, which is our most valuable asset, just to compete with other status
+                                    seeking humans with similar education in an environment that does not always reward
+                                    performance and merit seems foolish. Instead of choosing to compete one can
+                                    differentiate himself. With differentiation comes a unique value proposition that
+                                    cannot be found elsewhere, thus, if positive, sought after and valued appropriately.
+                                </p>
+                                <p>One can think of it as games that we choose to play. If we compete with a lot of
+                                    other players, chances are that some of them would outperform us. Some games become
+                                    increasingly harder to win at. As certain “games” become more popular, players
+                                    advance and become better at playing them. This reduces the odds of outsized gains
+                                    for the new entrants. For instance, in the past there was a huge difference between
+                                    the performance of sprinters as the best of the best outran others by a wide margin
+                                    measured by seconds for short distance runners, more recently the difference has
+                                    become increasingly smaller, thus giving luck more steering control over the
+                                    outcomes. The same happened in public equity markets investing. As information and
+                                    knowledge were scarce, investors with access to proprietary information and analytic
+                                    approaches outperformed other investors by a wide margin. As markets have become
+                                    more informed, due to the improvements in technology and knowledge, the margin
+                                    shrank, thus causing uncertainty if it is even worth it to play the game of beating
+                                    the market (competing with others). This general principle is present in scientific
+                                    discovery, startup markets, and any kind of specialization. You have to be the first
+                                    to do it in a certain way to gain an edge over others. To come up with a different
+                                    approach. To look at a problem in a different way and be on the cutting edge of
+                                    development. Most famous people are famous because they are different from others,
+                                    they have certain traits that people adore or value that others lack.</p>
+                                <p>Differentiation leads to being contrarian. One has to be a contrarian but he also has
+                                    to be right. I do think that relying on school to give us all the knowledge needed
+                                    is a fool’s errand. At the end of the day, an individual should find a unique path
+                                    that fits him. Learn a skill that others can not do or are not willing to do. Come
+                                    up with a different approach to do things. Otherwise one is condemned to mediocrity
+                                    with suboptimal fulfillment, results and constant competition. To walk on the path
+                                    of differentiation, one should find enjoyment in something natural to him that
+                                    guides him in the right direction. I do not quite get why schools do not focus more
+                                    on finding the strengths of the students and helping them figure out what could suit
+                                    them. The curriculum seems to be structured just to give us facts. Here is a
+                                    formula, input the numbers and you get this output, without sufficient reasoning on
+                                    why we are even doing that in the first place. Why is it not structured as working
+                                    backwards from the goals and thus portraying a story that makes more sense and is
+                                    easily remembered. Pragmatism should be at the heart of all and telling the why of
+                                    things is so important that it can not be emphasized enough. Yet not many people ask
+                                    the why of things, why are they the way they are, they are satisfied with the status
+                                    quo because that is how it should be, right?</p>
+                                date: 28/04/2025
+                            </div>
+
+                        </div>
                     </div>
                 </div>
                 <!-- end of modal -->
@@ -200,14 +718,20 @@
         </div>
     </div>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
     <script>
         var typed = new Typed('#heading', {
-          strings: ["essays"],
-          typeSpeed: 50,
-          showCursor: false
+            strings: ["essays"],
+            typeSpeed: 50,
+            showCursor: false
         });
     </script>
 </body>
