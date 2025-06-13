@@ -1,3 +1,17 @@
+
+document.addEventListener('DOMContentLoaded', function() {
+    var video = document.getElementById('vervainVideo');
+    var btn = document.getElementById('toggleMuteBtn');
+    if (video && btn) {
+        btn.addEventListener('click', function() {
+            video.muted = !video.muted;
+            btn.textContent = video.muted ? 'unmute' : 'mute';
+            video.play();
+        });
+    }
+});
+
+
 function sendEmail() {
     (function () {
         emailjs.init("AK4F4gxAdcG-3Y9ZE");
