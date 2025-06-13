@@ -20,6 +20,9 @@ body {
     color: rgb(255, 1, 77) !important;
 }
 
+.b-p {
+    --bs-border-color: rgba(197, 97, 130, 0.801);
+}
 
 .modal, .modal-backdrop {
     --bs-modal-color: rgba(197, 97, 130, 0.801);
