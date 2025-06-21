@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (video && btn) {
         btn.addEventListener('click', function() {
             video.muted = !video.muted;
-            btn.textContent = video.muted ? 'unmute' : 'mute';
+            btn.textContent = video.muted ? '>unmute<' : '>mute<';
             video.play();
         });
     }
