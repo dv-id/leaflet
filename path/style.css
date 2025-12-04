@@ -1,0 +1,113 @@
+:root {
+    --dark-green: #163300;
+    --light-green: #80e142;
+    --weak-green: #cfffb0;
+    --white-green: #effae8;
+    --white: rgb(240, 240, 240);
+}
+
+body {
+    background-color: var(--white);
+    color: var(--dark-green);
+}
+
+.container {
+    margin-top: 50px;
+}
+
+#title-placeholder {
+    height: 140px
+}
+
+#core {
+  background-color: var(--dark-green);
+  text-align: center;  
+  color: var(--weak-green);
+}
+
+#core > p, h3 {
+    text-align: left;    
+}
+
+.col > .col {
+    border: solid 1px;
+    border-radius: 12px;
+    padding: 6px;
+    margin: 0;
+    color: var(--weak-green);    
+}
+
+.col > .col:hover {
+    border: solid 1px;
+    padding: 6px;
+    color: var(--dark-green); 
+    background-color: var(--weak-green);
+    font-weight: 600;
+}
+
+.col > .col > h5 {
+    margin-bottom: 0px;
+    padding: 3px;
+}
+
+#extra {
+    background-color: var(--dark-green);
+    border: none;
+    color: var(--weak-green);
+}
+
+.modal, .modal-backdrop {
+    --bs-modal-color: var(--dark-green);
+    --bs-modal-bg: var(--white);
+    --bs-modal-border-color: var(--dark-green);
+}
+
+.btn {
+    border: solid 1px var(--weak-green);
+    color: var(--dark-green);
+    background-color: var(--weak-green);
+    outline: none
+}
+
+
+#additional > .col > .col {
+    background-color: var(--weak-green);    
+}
+
+#divider {
+    width: 100%;
+    height: 16px;
+  --s: 8px; /* control the size*/
+  --c1: var(--dark-green);
+  --c2: var(--weak-green);
+  
+  --c:var(--c1) 0 25%,#0000 0;
+  --p:0 0/calc(3*var(--s)) calc(2*var(--s));
+  background:
+    conic-gradient(from -45deg at 75% 62.5%,var(--c)) var(--p),
+    conic-gradient(from 135deg at 25% 37.5%,var(--c)) var(--p),
+    repeating-conic-gradient(from 90deg,var(--c),var(--c2) 0 50%)
+     0 0/var(--s) var(--s);
+
+}
+
+#divider2 {
+    width: 100%;
+    height: 16px;
+  --s: 8px; /* control the size*/
+  --c1: var(--white);
+  --c2: var(--dark-green);
+  
+  --c:var(--c1) 0 25%,#0000 0;
+  --p:0 0/calc(3*var(--s)) calc(2*var(--s));
+  background:
+    conic-gradient(from -45deg at 75% 62.5%,var(--c)) var(--p),
+    conic-gradient(from 135deg at 25% 37.5%,var(--c)) var(--p),
+    repeating-conic-gradient(from 90deg,var(--c),var(--c2) 0 50%)
+     0 0/var(--s) var(--s);
+
+}
+
+.light-green-text {
+    color: var(--light-green);
+}
