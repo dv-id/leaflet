@@ -1,13 +1,15 @@
 :root {
     --dark-green: #163300;
+    --dark-green-2: #bdf39441;
     --light-green: #80e142;
+    --lighter-green: #aaf876;
     --weak-green: #cfffb0;
     --white-green: #effae8;
     --white: rgb(240, 240, 240);
 }
 
 body {
-    background-color: var(--white);
+    background-color: var(--dark-green-2);
     color: var(--dark-green);
 }
 
@@ -29,32 +31,21 @@ body {
     text-align: left;    
 }
 
-.col > .col {
-    border: solid 1px;
-    border-radius: 12px;
-    padding: 6px;
-    margin: 0;
-    color: var(--weak-green);    
-}
-
-.col > .col:hover {
-    border: solid 1px;
-    padding: 6px;
-    color: var(--dark-green); 
-    background-color: var(--weak-green);
-    font-weight: 600;
-}
-
-.col > .col > h5 {
-    margin-bottom: 0px;
-    padding: 3px;
-}
-
-#extra {
+section {
     background-color: var(--dark-green);
-    border: none;
     color: var(--weak-green);
 }
+
+h5 {
+    color: var(--lighter-green);
+}
+
+.btn:hover {
+    background-color: var(--lighter-green);
+    color: var(--dark-green);
+    border: solid 1px var(--lighter-green);
+}
+
 
 .modal, .modal-backdrop {
     --bs-modal-color: var(--dark-green);
@@ -64,14 +55,16 @@ body {
 
 .btn {
     border: solid 1px var(--weak-green);
-    color: var(--dark-green);
-    background-color: var(--weak-green);
+    color: var(--weak-green);
+    background-color: var(--dark-green);
     outline: none
 }
 
-
-#additional > .col > .col {
-    background-color: var(--weak-green);    
+.btnformat {
+    border: solid 1px var(--light-green);
+    color: var(--dark-green);
+    background-color: var(--light-green);
+    outline: none
 }
 
 #divider {

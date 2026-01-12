@@ -24,101 +24,170 @@
 <body>
 
     <nav class="navbar fixed-top p-2">
-        <a class="navbar-brand" href="/index.html">home</a>
+        <a class="navbar-brand" href="/index.html">[personal page]</a>
     </nav>
 
-    <div class="container d-flex align-items-center justify-content-center">
-        <div class="row vh-100 w-100">
-            <div class="col-12 border">
-                <div id="title-placeholder">
-                    <span id="title" class="mb-4"></span>
+    <div class="container d-flex align-items-center justify-content-center min-vh-100">
+        <div class="row w-100 mt-0">
+            <div class="col-12 mt-0 ">
+                <div id="title-placeholder" class="d-flex align-items-center justify-content-center h-25">
+                    <span id="title" class="mb-0" ></span>
                 </div>
 
-                <!-- <p class="p-0 mb-2">resources that I have found interesting and hopefully so will you</p> -->
-                <section id="core" class="border rounded p-3">
+                <section id="core" class="mt-0 rounded p-3">
 
-                    <h3 class="light-green-text">core <em>path</em></h3>
-                    <p></p>
-                    <div class="row row-cols-3 gy-3">
-                        <div class="col">
-                            <div class="col">
-                                <h5>Corporate Finance</h5>
-                            </div>
-                            <!-- <p class="d-flex justify-content-start mb-0">*lectures - financial theory</p> -->
-                        </div>
-                        <div class="col">
-                            <div class="col">
-                                <h5>Corporate Finance</h5>
-                            </div>
-                            <!-- <p class="d-flex justify-content-start mb-0">*lectures - financial theory</p> -->
-                        </div>
-                        <div class="col">
-                            <div class="col">
-                                <h5>Corporate Finance</h5>
-                            </div>
-                            <!-- <p class="d-flex justify-content-start mb-0">*lectures - financial theory</p> -->
-                        </div>
-                        <div class="col">
-                            <div class="col">
-                                <h5>Corporate Finance</h5>
-                            </div>
-                            <!-- <p class="d-flex justify-content-start mb-0">*lectures - financial theory</p> -->
-                        </div>
-                        <div class="col">
-                            <div class="col">
-                                <h5>Corporate Finance</h5>
-                            </div>
-                            <!-- <p class="d-flex justify-content-start mb-0">*lectures - financial theory</p> -->
-                        </div>
-                        <div class="col">
-                            <div class="col">
-                                <h5>Corporate Finance</h5>
-                            </div>
-                            <!-- <p class="d-flex justify-content-start mb-0">*lectures - financial theory</p> -->
-                        </div>
-                    </div>
+                    <h3 style="color: #aaf876;">core resources</h3>
+
                     <div id="divider" class="mt-3"></div>
-                    <div class="mt-4">
-                        <h3 class="light-green-text">additional resources</h3>
-                    </div>
-
-
-                    <div id="additional" class="row row-cols-4 gy-3">
-                        <div class="col">
-                            <div class="col">
-                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Launch demo modal
-                                </button>
-                            </div>
+                    <h5 class="mt-2 mb-0 d-flex justify-content-start">courses</h5>
+                    <div class="row row-cols mt-0 flex-wrap">
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>I. MIT Finance Theory I</b></button></a>  
                         </div>
-                        <div class="col">
-                            <div class="col">
-                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Launch demo modal
-                                </button>
-                            </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.youtube.com/playlist?list=PLUkh9m2Borqn549nqiEOyFRIvqs4_P3d0" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>II. NYU Corporate Finance</b></button></a>  
                         </div>
-                        <div class="col">
-                            <div class="col">
-                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Launch demo modal
-                                </button>
-                            </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.youtube.com/watch?v=MqNyBBttuK8&list=PLUkh9m2BorqkYrNdut81IIcYdLfgqNd" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>III. NYU Valuation</b></button></a>  
                         </div>
-                        <div class="col">
-                            <div class="col">
-                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Launch demo modal
-                                </button>
-                            </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.edx.org/learn/financial-accounting/university-of-cambridge-financial-accounting-and-capital-markets?index=product&queryId=81c708d31e4ec5450fd5855fc67c78c9&position=7" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>IV. Cambridge Financial Accounting</b></button></a>  
                         </div>
                     </div>
+
+                    <h5 class="mt-2 mb-0 d-flex justify-content-start">readings</h5>
+                    <div class="row row-cols gy-3 gx-3 mt-0 flex-columns-wrap">
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/PVPrimer/pvprimer.htm" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>I. A Primer on the Time Value of Money</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/AccPrimer/accstate.htm" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>II. A Primer on Financial Statements</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/StatFile/statistics.htm" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>III. A Primer on Statistics</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.oaktreecapital.com/insights" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>IV. Howard Marks' Letters</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.berkshirehathaway.com/letters/letters.html" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>V. Warren Buffet's Letters</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.csisoftware.com/category/pres-letters" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>VI. Mark Leonard's Letters</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.morganstanley.com/im/publication/insights/articles/article_measuringthemoat.pdf" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>VII. Measuring the Moat</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.morganstanley.com/im/publication/insights/articles/article_valuationmultiples.pdf?1767974930538" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>VIII. Valuation Multiples</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.morganstanley.com/im/publication/insights/articles/article_themathofvalueandgrowth.pdf" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>IX. The Math of Value and Growth</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://sabercapitalmgt.com/letters-and-notes/" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>X. Return on Capital Series</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://static1.squarespace.com/…pdf" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>XI. Complexity Investing</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.georgesoros.com/2014/01/13/fallibility-reflexivity-and-the-human-uncertainty-principle-2/" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>XII. Fallibility, Reflexivity, and the Human Uncertainty Principle</b></button></a>  
+                        </div>
+                    </div>
+
+                    <h5 class="mt-2 mb-0 d-flex justify-content-start">podcasts</h5>
+                    <div class="row row-cols gy-3 gx-3 mt-0 flex-columns-wrap" >
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://podcasts.apple.com/us/podcast/business-breakdowns/id1559120677" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>Business Breakdowns</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://podcasts.apple.com/us/podcast/invest-like-the-best-with-patrick-oshaughnessy/id1154105909" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>Invest Like the Best with Patrick O'Shaughnessy</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://podcasts.apple.com/us/podcast/yet-another-value-podcast/id1526149547" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>Yet Another Value Podcast</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://podcasts.apple.com/us/podcast/investing-by-the-books/id1577368197" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>Investing by the Books</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://podcasts.apple.com/us/podcast/acquired/id1050462261" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>Acquired</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://podcasts.apple.com/dk/podcast/the-gemini-report-investment-deep-dives/id1830518221?l=da" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>The Gemini Report</b></button></a>  
+                        </div>
+   
+                    </div>
+
+                    <div id="divider" class="mt-3"></div>
                 </section>
 
+                <section id="additional" class="rounded p-3 mt-5">
+                    <h3 style="color: #aaf876;">additional resources</h3>
 
+                    <div id="divider" class="mt-3"></div>
+                    <h5 class="mt-2 mb-0 d-flex justify-content-start">courses</h5>
+                    <div class="row row-cols gy-3 gx-3 mt-0 flex-columns-wrap" >
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.wallstreetprep.com/self-study-programs/sell-side-equity-research-certification/" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>Sell-Side Equity Research</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.wallstreetprep.com/self-study-programs/buy-side-financial-modeling/" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>Buy-Side Financial Modeling</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.coursera.org/learn/wharton-quantitative-modeling" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>Quantitative Modeling</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.coursera.org/learn/wharton-accounting" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>Financial Accounting I</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.coursera.org/learn/wharton-financial-accounting" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>Financial Accounting II</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.coursera.org/learn/wharton-introduction-spreadsheets-models" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>Introduction to Spreadsheets and Models</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.coursera.org/learn/introduction-to-financial-analysis-the-why" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>Introduction to Financial Analysis</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.edx.org/learn/financial-accounting/massachusetts-institute-of-technology-financial-accounting" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>Financial Accounting</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.edx.org/learn/business-strategy/the-wharton-school-of-the-university-of-pennsylvania-business-strategy-from-wharton-competitive-advantage?index=product&queryId=be068b31cff81df8d7c1e755b1e9bdf0&position=1" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>Competitive Advantage</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.edx.org/learn/cash-flow-analysis/columbia-university-free-cash-flow-analysis" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>Free Cash Flow Analysis</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.wallstreetprep.com/self-study-programs/private-equity-masterclass/" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>Private Equity Masterclass</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.wallstreetprep.com/self-study-programs/accounting-crash-course/" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>Accounting Crash Course</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.coursera.org/learn/advanced-valuation-and-strategy#modules" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>Advanced Valuation and Strategy</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.coursera.org/learn/introduction-to-value-investing" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>Introduction to Value Investing</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.edx.org/learn/economics/new-york-institute-of-finance-equity-indexes-valuations-and-investment-vehicles" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>Equity Indexes, Valuations, and Investment Vehicles</b></button></a>  
+                        </div>
+                        
+                        
+                    </div>
+                    <h5 class="mt-2 mb-0 d-flex justify-content-start">readings</h5>
+                    <div class="row row-cols gy-3 gx-3 mt-0 flex-columns-wrap" >
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.morganstanley.com/im/publication/insights/articles/article_returnoninvestedcapital.pdf?1767974955061" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>Return on Invested Capital</b></button></a>  
+                        </div>
+                        <div class="col-12 col-md-auto mt-0 mb-0 p-2">
+                          <a href="https://www.grahamanddoddsville.net/files/buffett__superinvestors_of_graham_and_doddsville.pdf" target="_blank"><button type="button" class="btn px-5 w-100 h-100"><b>Superinvestors of Graham and Doddsville</b></button></a>  
+                        </div>
 
+                    </div>
+                    <div id="divider" class="mt-3"></div>
 
-
+                </section>
             </div>
         </div>
     </div>
