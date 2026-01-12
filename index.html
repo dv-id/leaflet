@@ -93,18 +93,21 @@
         <section id="cv" class="segment rounded-2 p-3 mb-4 mt-3" style="border-color: rgba(99, 54, 69, 0.44);">
 
             <div class="row">
-                <div class="col-auto"><h2>curriculum vitae</h2></div>
-                <div class="col-8 d-flex justify-content-start align-items-center">
-                    <button type="button" id="ASong" style="color: rgba(255, 1, 77, 0.801);" class="btn btn-lg p-1 d-flex align-items-center justify-content-left" onClick="playPause()">
+                <div class="col-auto m-auto"><h2>curriculum vitae</h2></div>
+                <div class="col-12 d-flex justify-content-center align-items-center mb-2 mb-md-5">
+                    
+                    <button type="button" id="ASong" style="color: rgba(255, 1, 77, 0.801); border: 1px dotted rgba(255, 1, 77, 0.801);" class="btn rounded-3 btn-lg p-1 d-flex align-items-center justify-content-left" onClick="playPause()">
                             <audio src="assets/st.mp3" ></audio>
                             <span id="play" class="material-symbols-outlined" style="font-size: 32px;">
                                 skip_next
                             </span>play/pause before reading
                         </button>
+                        
                 </div>
+                <div id="wave-output" class="col-12 w-100" style="height: 24px;"></div>
 
                 <div class="col-12 col-md-6 mb-3 p-2 order-2 order-md-1">
-                    <div class="col-12">not so interesting half</div>
+                    <div class="col-12 d-flex justify-content-center align-items-center">not so interesting half</div>
 
                     <div class="col-12">
                         <h5 class="mb-1 mt-2">description</h5>
@@ -200,7 +203,7 @@
                 </div>
 
                 <div id="interestinghalf" class="col-12 col-md-6 p-2 order-1 order-md-2">
-                    <div class="col-6">at least a bit more interesting half</div>
+                    <div class="col-auto text-center">at least a bit more interesting half</div>
                     <div class="row m-2 rounded-3">
                         <button type="button" class="col-auto sec btn rounded-5 p-2 m-1" style="font-size: x-large;"
                             data-bs-toggle="modal" data-bs-target="#booksread">books read</button>
@@ -929,6 +932,27 @@
             }
             isPlaying = !isPlaying;
         }
+
+        let waveAnimation; // Variable to store the Typed instance
+
+function startWaveTyping() {
+  // If an animation is already running, destroy it first to reset
+  if (waveAnimation) {
+    waveAnimation.destroy();
+  }
+
+  waveAnimation = new Typed('#wave-output', {
+    strings: ['vVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVv'], // Double backslashes to "escape" them in JS
+    typeSpeed: 0.25,
+    backSpeed: 0.25,
+    loop: true,
+    cursorChar: '',
+    contentType: 'text'
+  });
+}
+
+// Attach the function to your button
+document.getElementById('ASong').addEventListener('click', startWaveTyping);
 
     </script>
 </body>
