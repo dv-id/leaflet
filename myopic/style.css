@@ -129,7 +129,7 @@ p {
 
 @media (min-width: 768px) {
     #repertoireContent {
-        width: 75%;
+        width: 100%;
     }
 }
 
