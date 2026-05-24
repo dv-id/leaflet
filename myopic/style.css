@@ -150,6 +150,7 @@ p {
     color: var(--secondary-color);
     border: none;
     border-bottom: 1px solid var(--secondary-color);
+    padding-bottom: 0;
 
 }
 
