@@ -157,7 +157,7 @@ p {
 .list-group-item > .row > .col {
     border-bottom: none;
     text-align: right;
-    padding: 2px 2px;
+    padding: 2px 4px;
     margin: 0;
 }
 
