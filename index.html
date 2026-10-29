@@ -4,47 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>8@{}*<%&^ </title>
+    <title>alt'allure</title>
 
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-                integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
-                crossorigin="anonymous">
-            <link rel="stylesheet" href="style.css">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link
-                href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Ultra&display=swap"
-                rel="stylesheet">
-            <link rel="stylesheet"
-                href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=skip_next" />
-
-</head>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=skip_next" />
 <body>
 
     <!-- Bootstrap Navbar Start -->
-    <nav class="navbar navbar-expand-lg w-100 p-2" style="position: fixed; z-index: 1050;">
+    <nav class="navbar navbar-expand-lg navbar-dark p-2" style="position: fixed; z-index: 1050; background-color: black;">
 
-        <div class="container">
-            <a class="navbar-brand" href="#title">personal<span
-                    style="vertical-align: sub; font-size: 60%; margin-left: 1%">page</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#title">///<span
+                    style="vertical-align: sub; font-size: 60%">ALT'ALLURE</span></a>
+                             <button type="button" id="ASong"
+                        style="color: white; border: solid 1px white; font-size: 80%;"
+                        class="btn rounded-3 btn-lg p-1 d-flex align-items-center justify-content-left"
+                        onClick="playPause()">
+                        <audio src="../assets/beats.mp3"></audio>
+                        <span id="play" class="material-symbols-outlined" style="font-size: 23px;">
+                            skip_next
+                        </span>play/pause
+                    </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#cv">cv</a>
+                        <a class="nav-link" aria-current="page" href="#rhetoricTitle">RHETORIC</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="myopic/" target="_blank">myopic</a>
+                        <a class="nav-link" href="#repertoire">REPERTOIRE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="path/" target="_blank">path</a>
+                        <a class="nav-link" href="#return">RETURN</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.inreins.info" target="_blank">in reins</a>
+                        <a class="nav-link" href="#research">RESEARCH</a>
                     </li>
                 </ul>
             </div>
@@ -53,942 +58,301 @@
     <!-- Bootstrap Navbar End -->
 
 
-    <div class="container w-100">
-        <section id="introduction" class=" mb-0 d-flex justify-content-center align-items-center">
+    <div class="container p-0 m-auto w-100 h-100">
+        <section id="introduction" class="mb-4 d-flex justify-content-left align-items-end">
 
             <div id="description" class="row">
                 <div class="col-12 text-left">
 
 
 
-                    <h1 class="d-flex justify-content-left align-items-center mb-0 mr-1" id="title">8@{}*<%&^ </h1>
-                            <div id="pattern"></div>
-                            <h2 id="title-desc">curriculum vitae; collection of things I find interesting</h2>
-                            <div id="pattern"></div>
+                    <h1 class="d-flex justify-content-left align-items-center mb-0" id="title">8@{}*<% </h1>
 
-
-
-                            <div class="row ml-0">
-                                <a href="#cv" class="col-auto m-0 p-0"><button type="button"
-                                        class="sec btn rounded-5 p-2 m-2" style="font-size: x-large;">cv</button></a>
-
-                                <button type="button" class="col-auto sec btn rounded-5 p-2 m-2 px-4"
-                                    style="font-size: x-large;" data-bs-toggle="modal" data-bs-target="#booksread">books
-                                    read</button>
-                                <a href="myopic/" class="col-auto m-0 p-0" target="_blank"><button type="button"
-                                        class="sec btn rounded-5 p-2 m-2" style="font-size: x-large;">myopic
-                                        capital</button></a>
-
-                                <a href="path/" class="col-auto m-0 p-0" target="_blank"><button type="button"
-                                        class="sec btn rounded-5 p-2 m-2"
-                                        style="font-size: x-large;">://PATH</button></a>
-
-                                <a href="https://www.inreins.info" class="col-auto m-0 p-0" target="_blank"><button
-                                        type="button" class="sec btn rounded-5 p-2 m-2" style="font-size: x-large;">in
-                                        reins</button></a>
-                            </div>
                 </div>
             </div>
 
+            
+
+        </section>
+
+        <section id="pattern" class="mb-4 w-100 h-100 d-flex justify-content-center align-items-center">
+                        <div class="col-12 landing-croc-bg" aria-hidden="true"></div>
+
+        </section>
+        <section id="rhetoric">
+            <h3 id="rhetoricTitle">Rhetoric</h3>
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col p-5">
+                    <h5><em>Introduction</em></h5>
+                    <p><u>The future is unknowable.</u> Many possible states of reality will not materialize while others will. But it is nearly impossible to distinguish  in advance. The wait for the future to reveal itself is of no value as decisions have to be made in the present. One has to either master the art of a crystal ball foretelling or accept the limitations of predictions. We cannot know the future but we can be prepared for wide range of possibilities. Broad themes are preferred to a narrow set of predictions, providing more degrees of freedom. Similarly, in an evolutionary system, the most optimized thrive in a stable environment but struggle when conditions adversely change. In finance, those who optimise on narrow set of outcomes tend to blow up as Black Swan events emerge. Those paradigm shifts are more common in a chaotic system, such as the financial system, than normal distribution predictions would suggest. Hence, those who thrive in times of uncertainty win. Such resilience and adaptability should be pursued in sector & security selection and in corresponding portfolio allocation. Further, the majority of wealth compounds in the far horizons. But first, one has to survive the battles on the way to reach the promised treasure. So put simply, the objective is to stay in the game even if it means giving up some rewards on the way.</p>
+                  <img src="../assets/butterfly.png" class="img-fluid" alt="Butterfly" style="max-width: 100%; height: auto; margin-top: 20px;">
+                  </div>
+                <div class="col p-5">
+                    <h5><em>Market behaviour and implications</em></h5>
+                    <p><u>Complex adaptive system (CAS)</u>. Dynamic interactions between heterogeneous agents, that adapt as they interact, form a system which is inherently unpredictable. One instance of it is the global financial market. Agents evolve their strategies as they react to the behaviour of other agents. By doing so, they form behaviour that is unexplained at the individual level. Rather, it has to be viewed from a collective point of view. As such, emergent behaviour, power laws, non-linearity, feedback loops and phase transitions become apparent. Similarly to other complex adaptive systems such as climates, cities, ecosystems, social networks, traffic flows, earthquakes, ant colonies, the brain and many others. If one agrees with such classification of the financial market, dire implications naturally follow. The approach to investment management has to deal with these system characteristics. The implications of the new philosophy are as follows. Shift from Prediction to Preparation. Non-linearity, emergence and reflexivity diminish the accuracy of predictions. Insignificant causes may produce large effects as the interconnected system amplifies through feedback loops and system-wide shocks emerge. Even in the presence of a perfect model, seemingly small changes in initial conditions cause massive deviations in the results. Think about the changes in terminal value when different growth rates are applied. Errors compound exponentially over time. Another reason is that emergent properties can not be predicted from individual parts as it emerges dynamically. For these reasons, one should shift from point-forecasting to mapping multiple scenarios or possible futures; from optimization to building redundancy and resilience, the famous margin of safety, to prevent wipeout from a systemic collapse. In a complex adaptive system, the one with the most options in times of disturbance wins. Optionality beats optimization. Investor’s focus should be on robust companies with asymmetric opportunities and probe the possible future states. Furthermore, the actions of the agents shape the results. So called reflexivity can produce self-fulfilling prophecies. <br><br> <em>"Stop trying to act like an astronomer predicting the precise orbit of a planet and start acting like an evolutionary biologist preparing an organism to survive in a volatile ecosystem."</em></p>
+                </div>
+                <div class="col p-5">
+                    <h5><em>Company characteristics</em></h5>
+                    <p><u>Resilience, adaptability and optionality.</u> Those characteristics are sought-after. Preferred qualities that hint at those characteristics are as follows. High profitability to absorb losses, or better to transfer, rising input costs. That requires added value to customers higher than the sum of price and those additional rising costs. Pricing power in a exploitative way, zero-sum setting, is regressive and hence not preferred. Only when joined with additional value. Otherwise it introduces frictions that reduce the sough-after characteristics. To the contrary, non-zero-sumness creates an ecosystem that thrives. It is unfavourable to leave such ecosystem. Hence, increase in the cooperation time period. As company grows in complexity it becomes more rigid. But the environment is in constant flux. Thus, to survive, it pays to be decentralized. Faster decision making and of higher quality is due to the closeness to customers and information sources. Lower frictions of information spreading through the organization. Innovation thrives as well as motivation when ownership is shared and accountability is rewarded.</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="repertoire">
+            <h3 id="repertoireTitle">Repertoire</h3>
+            <div id="repertoireContent" class="row row-cols-1 m-auto">
+                <div class="col p-5">
+                    
+    <h5>HOLDINGS</h5>
+    <ul class="list-group">
+    <li class="list-group-item">
+      <div class="row row-cols-4">
+        <div class="col">Instrument</div>
+        <div class="col">Cost</div>
+        <div class="col">Market</div>
+        <div class="col">Weight</div>
+      </div>
+    </li>
+      
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">IBKR</div>
+        <div class="col">59.91</div>
+        <div class="col">83.83</div>
+        <div class="col">11.16%</div>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">GOOGL</div>
+        <div class="col">184.58</div>
+        <div class="col">387.66</div>
+        <div class="col">10.81%</div>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">ENR.DE</div>
+        <div class="col">59.69</div>
+        <div class="col">173.62</div>
+        <div class="col">8.85%</div>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">IDCC</div>
+        <div class="col">277.43</div>
+        <div class="col">267.10</div>
+        <div class="col">7.69%</div>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">CSU.TO</div>
+        <div class="col">2686.30</div>
+        <div class="col">2709.83</div>
+        <div class="col">6.20%</div>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">WBI</div>
+        <div class="col">25.56</div>
+        <div class="col">30.77</div>
+        <div class="col">6.01%</div>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">TDG</div>
+        <div class="col">1293.11</div>
+        <div class="col">1209.32</div>
+        <div class="col">4.79%</div>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">BN</div>
+        <div class="col">35.01</div>
+        <div class="col">45.44</div>
+        <div class="col">4.69%</div>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">HEI-A</div>
+        <div class="col">236.01</div>
+        <div class="col">223.85</div>
+        <div class="col">4.18%</div>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">SES.TO</div>
+        <div class="col">20.69</div>
+        <div class="col">21.46</div>
+        <div class="col">3.97%</div>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">CLH</div>
+        <div class="col">201.50</div>
+        <div class="col">282.56</div>
+        <div class="col">3.86%</div>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">CPRT</div>
+        <div class="col">40.70</div>
+        <div class="col">34.40</div>
+        <div class="col">3.85%</div>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">RR.L</div>
+        <div class="col">660</div>
+        <div class="col">1208.20</div>
+        <div class="col">3.48%</div>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">APH</div>
+        <div class="col">129.50</div>
+        <div class="col">124.86</div>
+        <div class="col">3.46%</div>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">HWM</div>
+        <div class="col">235.80</div>
+        <div class="col">259.89</div>
+        <div class="col">3.41%</div>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">TT</div>
+        <div class="col">426.18</div>
+        <div class="col">447.64</div>
+        <div class="col">2.83%</div>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">LOAR</div>
+        <div class="col">58.87</div>
+        <div class="col">62.55</div>
+        <div class="col">2.80%</div>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">AME</div>
+        <div class="col">183.48</div>
+        <div class="col">223.17</div>
+        <div class="col">2.62%</div>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">VMC</div>
+        <div class="col">266.40</div>
+        <div class="col">261.56</div>
+        <div class="col">2.60%</div>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">CHG</div>
+        <div class="col">32.55</div>
+        <div class="col">33.10</div>
+        <div class="col">1.23%</div>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">TVK.TO</div>
+        <div class="col">139.76</div>
+        <div class="col">141.20</div>
+        <div class="col">0.95%</div>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">CSPX.L</div>
+        <div class="col">452.21</div>
+        <div class="col">795.67</div>
+        <div class="col">0.29%</div>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">RKLB</div>
+        <div class="col">135.23</div>
+        <div class="col">125.45</div>
+        <div class="col">0.24%</div>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row row-cols-4 ">
+        <div class="col">FER.DRRTS</div>
+        <div class="col">0.00</div>
+        <div class="col">nan</div>
+        <div class="col">0.00%</div>
+      </div>
+    </li>
+    </ul>
+    <h6 class="mt-1">as of: 24-05-2026</h6>
+                </div>
+            </div>
         </section>
     </div>
+        
 
-    <div class="container m-auto p-3 p-md-5 w-100 pattern">
-        <section id="cv" class="segment rounded-2 p-3 mb-4 mt-3" style="border-color: rgba(99, 54, 69, 0.44);">
 
-            <div class="row">
-                <div class="col-auto m-auto">
-                    <h2>curriculum vitae</h2>
-                </div>
-                <div class="col-12 d-flex justify-content-center align-items-center mb-2 mb-md-5">
 
-                    <button type="button" id="ASong"
-                        style="color: rgba(255, 1, 77, 0.801); border: 1px dotted rgba(255, 1, 77, 0.801);"
-                        class="btn rounded-3 btn-lg p-1 d-flex align-items-center justify-content-left"
-                        onClick="playPause()">
-                        <audio src="assets/st.mp3"></audio>
-                        <span id="play" class="material-symbols-outlined" style="font-size: 32px;">
-                            skip_next
-                        </span>play/pause before reading
-                    </button>
 
-                </div>
-                <div id="wave-output" class="col-12 w-100" style="height: 24px;"></div>
 
-                <div class="col-12 col-md-6 mb-3 p-2 order-2 order-md-1">
-                    <div class="col-12 d-flex justify-content-center align-items-center">not so interesting half</div>
 
-                    <div class="col-12">
-                        <h5 class="mb-1 mt-2">description</h5>
-                        <p><em>
-                                I am driven and curious to learn thigs that interest me.
-                                Financial markets have caught my attention ever since the COVID-19 crisis hit.
-                                I've been following the markets to get better with my investing process.
-                                I've read over a hundred business and popular science books out of my curiosity.
-                                I've recently spent some time developing my website where I have collected resources for
-                                ambitious young people willing to learn.
-                                One day I would love to have my own venture that creates tangible value - possibly a
-                                niche manufacturing plant to have the resources and fulfilment to live a near optimal
-                                life.
-                            </em></p>
-                    </div>
+       
 
-                    <div class="col-12  p-2 mb-1">
-                        <h5 class="mb-1">work experience</h5>
-                        <div class="row">
-                            <div class="col-4 d-flex justify-content-center align-items-top">
-                                <ul style="list-style: none;">
-                                    <li>08/2023 to 10/2023</li>
-                                    <li>Prague, Czechia</li>
-                                </ul>
-                            </div>
-                            <div class="col-8">
-                                <ul style="list-style: none;">
-                                    <li><b>Junior Risk Manager</b></li>
-                                    <li>Winstor a.s.</li>
-                                    <li><small>evidence of trades, monitoring the liquidity of investment funds,
-                                            leverage reports</small></li>
-                                </ul>
-                            </div>
-                            <div class="col-4 d-flex justify-content-center align-items-top">
-                                <ul style="list-style: none;">
-                                    <li>07/2022 to 08/2022</li>
-                                    <li>Prague, Czechia</li>
-                                </ul>
-                            </div>
-                            <div class="col-8">
-                                <ul style="list-style: none;">
-                                    <li><b>Back office worker</b></li>
-                                    <li>CONTE energy trading</li>
-                                    <li><small>billings, communication with customers</small></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-12 p-2 mb-0">
-                        <h5 class="mb-1">education</h5>
-                        <div class="row">
-                            <div class="col-4 d-flex justify-content-center align-items-top">
-                                <ul style="list-style: none;">
-                                    <li>02/2025 to ongoing</li>
-                                    <li>Adelaide, Australia</li>
-                                </ul>
-                            </div>
-                            <div class="col-8">
-                                <ul style="list-style: none;">
-                                    <li><b>Finance | master</b></li>
-                                    <li>University of Adelaide</li>
-                                </ul>
-                            </div>
-                            <div class="col-4 d-flex justify-content-center align-items-top">
-                                <ul style="list-style: none;">
-                                    <li>09/2021 to 06/2024</li>
-                                    <li>Prague, Czechia</li>
-                                </ul>
-                            </div>
-                            <div class="col-8">
-                                <ul style="list-style: none;">
-                                    <li><b>Business and Management | bachelor</b></li>
-                                    <li>Newton University</li>
-                                </ul>
-                            </div>
-                            <div class="col-4 d-flex justify-content-center align-items-top">
-                                <ul style="list-style: none;">
-                                    <li>09/2017 to 06/2021</li>
-                                    <li>Prague, Czechia</li>
-                                </ul>
-                            </div>
-                            <div class="col-8">
-                                <ul style="list-style: none;">
-                                    <li><b>Business | high school</b></li>
-                                    <li>OA Dušní</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+      
 
 
-                </div>
-
-                <div id="interestinghalf" class="col-12 col-md-6 p-2 order-1 order-md-2">
-                    <div class="col-auto text-center">at least a bit more interesting half</div>
-                    <div class="row m-2 rounded-3">
-                        <button type="button" class="col-auto sec btn rounded-5 p-2 m-1" style="font-size: x-large;"
-                            data-bs-toggle="modal" data-bs-target="#booksread">books read</button>
-                        <a href="myopic/" class="col-auto m-0 p-0" target="_blank"><button type="button"
-                                class="sec btn rounded-5 p-2 m-1" style="font-size: x-large;">myopic
-                                capital</button></a>
-                        <a href="https://www.inreins.info" target="_blank" class="col-auto m-0 p-0"><button
-                                type="button" class="sec btn rounded-5 p-2 m-1" style="font-size: x-large;">in
-                                Reins</button></a>
-                        <a href="vervain/" class="col-auto m-0 p-0" target="_blank"><button type="button"
-                                class="sec btn rounded-5 p-2 m-1" style="font-size: x-large;">ver\/ain</button></a>
-                        <a href="advance/" class="col-auto m-0 p-0" target="_blank"><button type="button"
-                                class="sec btn rounded-5 p-2 m-1" style="font-size: x-large;">4dvance</button></a>
-                        <a href="path/" class="col-auto m-0 p-0" target="_blank"><button type="button"
-                                class="sec btn rounded-5 p-2 m-1" style="font-size: x-large;">://PATH</button></a>
-                        <a href="essays.html" class="col-auto m-0 p-0"><button type="button"
-                                class="sec btn rounded-5 p-2 m-1" style="font-size: x-large;">essays</button></a>
-                        <button type="button" class="col-auto sec btn rounded-5 p-2 m-1" style="font-size: x-large;"
-                            data-bs-toggle="modal" data-bs-target="#architecture">architecture and interiors</button>
-                        <button type="button" class="col-auto sec btn rounded-5 p-2 m-1" style="font-size: x-large;"
-                            data-bs-toggle="modal" data-bs-target="#digitalstuff">digital stuff</button>
-                        <button type="button" class="col-auto sec btn rounded-5 p-2 m-1" style="font-size: x-large;"
-                            data-bs-toggle="modal" data-bs-target="#podcasts">podcasts</button>
-                        <button type="button" class="col-auto sec btn rounded-5 p-2 m-1" style="font-size: x-large;"
-                            data-bs-toggle="modal" data-bs-target="#articles">favourite articles</button>
-                        <button type="button" class="col-auto sec btn rounded-5 p-2 m-1" style="font-size: x-large;"
-                            data-bs-toggle="modal" data-bs-target="#music">music</button>
-
-                    </div>
-
-                    <div class="row m-2 mt-3">
-                        <div class="col-12">
-                            <h5>interests</h5>
-                            <ul style="list-style: none;">
-                                <li>reading non-fiction books</li>
-                                <li>personal growth and learning</li>
-                                <li>financial markets</li>
-                                <li>sports { skateboarding, skiing, cycling, table football }</li>
-                                <li>music {
-                                    <a href="https://www.youtube.com/watch?v=ojJo4VfAbsc"
-                                        style="text-decoration: underline;">ascendant vierge</a> ,
-                                    <a href="https://www.youtube.com/watch?v=pZhUS_q4jkc&t=1046s"
-                                        style="text-decoration: underline;">Brutalismus 3000</a> ,
-                                    <a href="https://www.youtube.com/watch?v=z-8JELUcjMM&t=1501s"
-                                        style="text-decoration: underline;">I Hate Models</a> }
-                                </li>
-                                <li>podcasts</li>
-                                <li>welness, spa; healthy routine</li>
-                            </ul>
-                        </div>
-
-                        <div class="col-12">
-                            <h5>goals</h5>
-                            <ul style="list-style: none;">
-                                <li>finish masters of finance</li>
-                                <li>create an investment process and manage a portfolio</li>
-                                <li>house where I feel cozy and comfortable near nature with: a swimming pool, sauna /
-                                    steam room, library, friends in the neighbourhood</li>
-                                <li>choose a wife wisely to have a big family</li>
-                                <li>run a venture which product I find meaningful</li>
-                                <li>support a community of young students; share my experience with them; employ them
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div>
-        </section>
-
-
-
-
-
-        <!--  MODALS -->
-
-        <!-- Modal -->
-        <div class="modal fade" id="booksread" tabindex="-1" aria-labelledby="booksread" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="booksread">books read</h1>
-                        <button type="button" class="btn-close" style="background-color: rgba(197, 97, 130, 0.801)"
-                            data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-
-                        <h6>here are the books that I have read; it summs up what topics catch my interest</h6>
-                        <ul class="list-group list-group-flush">
-                            <h6><em>I had most fun reading:</em></h6>
-                            <li class="list-group-item"><strong>What We Cannot Know</strong><br> by Marcus du Sautoy
-                            </li>
-                            <li class="list-group-item"><strong>Basic Economics</strong><br> by Thomas Sowell</li>
-                            <li class="list-group-item"><strong>Fooled by Randomness</strong><br> by Nassim Nicholas
-                                Taleb</li>
-                            <li class="list-group-item"><strong>Beyond Self-Interest</strong><br> by Krzysztof Pelc</li>
-                            <li class="list-group-item"><strong>Material World</strong><br> by Ed Conway</li>
-                            <li class="list-group-item"><strong>Hidden Games</strong><br> by Hoffman & Yoeli</li>
-                            <li class="list-group-item"><strong>The Origin of Wealth</strong><br> by Eric D. Beinhocker
-                            </li>
-                            <li class="list-group-item"><strong>Determined</strong><br> by Robert M. Sapolsky</li>
-
-                            <h6 class="mt-3"><em>other books:</em></h6>
-                            <li class="list-group-item"><strong>The Changing World Order</strong><br> by Ray Dalio</li>
-
-                            <li class="list-group-item"><strong>Jak Porozumět Digitálnímu Světu</strong><br> by Brian W.
-                                Kernighan</li>
-                            <li class="list-group-item"><strong>21. Lekcí pro 21. Století</strong><br> by Yuval Noah
-                                Harari</li>
-                            <li class="list-group-item"><strong>New Dark Age</strong><br> by James Bridle</li>
-                            <li class="list-group-item"><strong>The Intelligent Asset Allocator</strong><br> by William
-                                Bernstein</li>
-
-                            <li class="list-group-item"><strong>Člověk v zrcadle teorie her</strong><br> by Jaroslav
-                                Peregrin</li>
-                            <li class="list-group-item"><strong>Odhalená Ekonomie</strong><br> by Charles Wheelan</li>
-                            <li class="list-group-item"><strong>The Man Who Solved the Market</strong><br> by Gregory
-                                Zuckerman</li>
-                            <li class="list-group-item"><strong>Hello World</strong><br> by Hannah Fry</li>
-                            <li class="list-group-item"><strong>Zero to One</strong><br> by Peter Thiel</li>
-                            <li class="list-group-item"><strong>Stuart Russell</strong><br> by Human Compatible</li>
-                            <li class="list-group-item"><strong>Numbers Don't Lie</strong><br> by Vaclav Smil</li>
-                            <li class="list-group-item"><strong>The God Equation</strong><br> by Michio Kaku</li>
-                            <li class="list-group-item"><strong>Flash Boys</strong><br> by Michael Lewis</li>
-                            <li class="list-group-item"><strong>The Laws of Human Nature</strong><br> by Robert Greene
-                            </li>
-                            <li class="list-group-item"><strong>Homo Deus</strong><br> by Yuval Noah Harari</li>
-                            <li class="list-group-item"><strong>The Tipping Point</strong><br> by Malcolm Gladwell</li>
-                            <li class="list-group-item"><strong>The Little Book of Common Sense Investing</strong><br>
-                                by Bogle</li>
-                            <li class="list-group-item"><strong>Nikdy Nedělej Kompromis</strong><br> by Chris Voss</li>
-                            <li class="list-group-item"><strong>The Four Pillars of Investing</strong><br> by William
-                                Bernstein</li>
-                            <li class="list-group-item"><strong>Sapiens</strong><br> by Yuval Noah Harari</li>
-                            <li class="list-group-item"><strong>Finanční Analýza</strong><br> by Petra Růčková</li>
-                            <li class="list-group-item"><strong>Jak Získávat Přátele a Působit na Lidi</strong><br> by
-                                Dale Carnegie</li>
-                            <li class="list-group-item"><strong>How to Avoid a Climate Disaster</strong><br> by Bill
-                                Gates</li>
-                            <li class="list-group-item"><strong>Emoční Inteligence</strong><br> by Daniel Goleman</li>
-                            <li class="list-group-item"><strong>Druhý Věk Strojů</strong><br> by Erik Brynjolfsson &
-                                Andrew McAfee</li>
-                            <li class="list-group-item"><strong>The Business Book</strong><br> by DK</li>
-                            <li class="list-group-item"><strong>12 Pravidel pro Život</strong><br> by Jordan B. Peterson
-                            </li>
-                            <li class="list-group-item"><strong>The Lean Startup</strong><br> by Eric Ries</li>
-                            <li class="list-group-item"><strong>Kniha Ekonomie</strong><br> by DK</li>
-                            <li class="list-group-item"><strong>WTF?</strong><br> by Tim O'Reilly</li>
-                            <li class="list-group-item"><strong>Umění Zkratky</strong><br> by Marcus du Sautoy</li>
-                            <li class="list-group-item"><strong>The Titanium Economy</strong><br> by Padhi, Batra,
-                                Santhanam</li>
-
-                            <li class="list-group-item"><strong>Moderní Ekonomie</strong><br> by Hana Lipovská</li>
-                            <li class="list-group-item"><strong>Úvod do Podnikové Ekonomiky</strong><br> by
-                                Martinovičová, Konečný, Vavřina</li>
-                            <li class="list-group-item"><strong>Soonish</strong><br> by Kelly, Zach Weinersmith</li>
-                            <li class="list-group-item"><strong>Livewired</strong><br> by David Eagleman</li>
-                            <li class="list-group-item"><strong>Evoluce svým vlastním tvůrcem</strong><br> by Miroslav
-                                Veverka</li>
-                            <li class="list-group-item"><strong>Odhalené Emoce</strong><br> by Paul Ekman</li>
-                            <li class="list-group-item"><strong>Vladař</strong><br> by Niccoló Machiavelli</li>
-                            <li class="list-group-item"><strong>Six Easy Pieces</strong><br> by Feynman</li>
-                            <li class="list-group-item"><strong>Price Wars</strong><br> by Rupert Russell</li>
-                            <li class="list-group-item"><strong>Range</strong><br> by David Epstein</li>
-                            <li class="list-group-item"><strong>Dark Pools</strong><br> by Scott Patterson</li>
-                            <li class="list-group-item"><strong>Technologická past</strong><br> by Carl Benedikt Frey
-                            </li>
-                            <li class="list-group-item"><strong>Myšlení Rychlé a Pomalé</strong><br> by Daniel Kahneman
-                            </li>
-                            <li class="list-group-item"><strong>Warren Buffett</strong><br> by Mary Buffett & David
-                                Clark</li>
-                            <li class="list-group-item"><strong>Atomové Návyky</strong><br> by James Clear</li>
-                            <li class="list-group-item"><strong>The Personal MBA</strong><br> by Josh Kaufman</li>
-                            <li class="list-group-item"><strong>The Righteous Mind</strong><br> by Jonathan Haidt</li>
-                            <li class="list-group-item"><strong>Faktomluva</strong><br> by Hans Rosling</li>
-                            <li class="list-group-item"><strong>The Ten Equations that Rule the World</strong><br> by
-                                David Sumpter</li>
-                            <li class="list-group-item"><strong>Future Crimes</strong><br> by Marc Goodman</li>
-                            <li class="list-group-item"><strong>Misbehaving</strong><br> by Richard Thaler</li>
-                            <li class="list-group-item"><strong>A Thousand Brains</strong><br> by Jeff Hawkins</li>
-                            <li class="list-group-item"><strong>Algoritmy pro Život</strong><br> by Brian Christian &
-                                Tom Griffiths</li>
-                            <li class="list-group-item"><strong>Brief Answers to the Big Questions</strong><br> by
-                                Stephen Hawking</li>
-                            <li class="list-group-item"><strong>Kvantová Teorie Nikoho Nezabije</strong><br> by Marcus
-                                Chown</li>
-                            <li class="list-group-item"><strong>10 Největších Omylů Odpůrců Kapitalismu</strong><br> by
-                                Rainer Zitelmann</li>
-                            <li class="list-group-item"><strong>Anatomie Svobody</strong><br> by Šichtařová & Vavruša
-                            </li>
-                            <li class="list-group-item"><strong>Liberalismus</strong><br> by Ludwig von Mises</li>
-                            <li class="list-group-item"><strong>Investice Nová Strategie</strong><br> by Pavel Kohout
-                            </li>
-                            <li class="list-group-item"><strong>Make, Think, Imagine</strong><br> by John Browne</li>
-                            <li class="list-group-item"><strong>How Technology Works</strong><br> by DK</li>
-                            <li class="list-group-item"><strong>How Business Works</strong><br> by DK</li>
-                            <li class="list-group-item"><strong>How Money Works</strong><br> by DK</li>
-                            <li class="list-group-item"><strong>Chudý Táta Bohatý Táta</strong><br> by Kiyosaki</li>
-                            <li class="list-group-item"><strong>Matematika bez Čísel</strong><br> by Milo Beckman</li>
-                            <li class="list-group-item"><strong>Akciové Investice</strong><br> by Daniel Gladiš</li>
-                            <li class="list-group-item"><strong>Radical Uncertainty</strong><br> by John Kay</li>
-                            <li class="list-group-item"><strong>Naked Statistics</strong><br> by Charles Wheelan</li>
-                            <li class="list-group-item"><strong>Right Kind of Wrong</strong><br> by Amy Edmondson</li>
-                            <li class="list-group-item"><strong>In Pursuit of The Perfect Portfolio</strong><br> by
-                                Andrew Lo and Foerster</li>
-                            <li class="list-group-item"><strong>The Great Economists</strong><br> by Linda Yueh</li>
-                            <li class="list-group-item"><strong>Fundamental</strong><br> by Tim James</li>
-                            <li class="list-group-item"><strong>Jak Drahé je Zdarma</strong><br> by Dan Ariely</li>
-                            <li class="list-group-item"><strong>Rodinné Bohatství</strong><br> by Vladimír Fichtner</li>
-                            <li class="list-group-item"><strong>Matematika Pro Život</strong><br> by Kit Yates</li>
-                            <li class="list-group-item"><strong>Smart Swarm</strong><br> by Peter Miller</li>
-                            <li class="list-group-item"><strong>How Things Are Made</strong><br> by Tim Minshall</li>
-                            <li class="list-group-item"><strong>Dopamin</strong><br> by Lieberman & Long</li>
-                            <li class="list-group-item"><strong>Před-svědčování</strong><br> by Robert B. Cialdini</li>
-                            <li class="list-group-item"><strong>Tribal</strong><br> by Michael Morris</li>
-                            <li class="list-group-item"><strong>Chip War</strong><br> by Chris Miller</li>
-                            <li class="list-group-item"><strong>Fundamental Analysis for Dummies</strong><br> by Matt
-                                Krantz</li>
-                            <li class="list-group-item"><strong>Risky Business</strong><br> by Einav, Finkelstein,
-                                Fisman</li>
-                            <li class="list-group-item"><strong>Descartesův Omyl</strong><br> by Antonio R. Damasio</li>
-                            <li class="list-group-item"><strong>50 Economics Classics</strong><br> by Tom Butler-Bowdon
-                            </li>
-                            <li class="list-group-item"><strong>How To Think Lika a Philosopher</strong><br> by Peter
-                                Cave</li>
-                            <li class="list-group-item"><strong>The World For Sale</strong><br> by Blas & Farchy</li>
-                            <li class="list-group-item"><strong>Faith vs. Fact</strong><br> by Jerry A. Coyne</li>
-                            <li class="list-group-item"><strong>The Wisdom of Finance</strong><br> by Mihir Desai</li>
-                            <li class="list-group-item"><strong>How Big Things Get Done</strong><br> by Flyvbjerg &
-                                Gardner</li>
-                            <li class="list-group-item"><strong>No Filter</strong><br> by Sarah Frier</li>
-                            <li class="list-group-item"><strong>The Dealmaker</strong><br> by Guy Hands</li>
-                            <li class="list-group-item"><strong>How Your Brain Works</strong><br> by New Scientist</li>
-                            <li class="list-group-item"><strong>The Power Law</strong><br> by Sebastian Mallaby</li>
-                            <li class="list-group-item"><strong>The Psychology of Stupidity</strong><br> by
-                                Jean-Francois Marmion</li>
-                            <li class="list-group-item"><strong>The Art of Logic</strong><br> by Eugenia Cheng</li>
-                            <li class="list-group-item"><strong>50 Philosophy Classics</strong><br> by Tom Butler-Bowdon
-                            </li>
-                            <li class="list-group-item"><strong>Can't We Just Print More Money?</strong><br> by The Bank
-                                of England</li>
-                            <li class="list-group-item"><strong>Makroekonomie</strong><br> by Václav Jurečka</li>
-                            <li class="list-group-item"><strong>If Nietzsche were a narwhal</strong><br> by Justin Gregg
-                            </li>
-                            <li class="list-group-item"><strong>A Random Walk Down Wall Street</strong><br> by Burton G.
-                                Malkiel</li>
-                            <li class="list-group-item"><strong>The Black Swan</strong><br> by Nassim Nicholas Taleb
-                            </li>
-                            <li class="list-group-item"><strong>Good Economics for Hard Times</strong><br> by Banerjee &
-                                Duflo</li>
-                            <li class="list-group-item"><strong>Finanční Trhy</strong><br> by Oldřich Rejnuš</li>
-                            <li class="list-group-item"><strong>The Creativity Code</strong><br> by Marcus du Sautoy
-                            </li>
-                            <li class="list-group-item"><strong>The Little Book of Investing Like the Pros</strong><br>
-                                by Pearl Rosenbaum</li>
-                            <li class="list-group-item"><strong>Stocks For The Long Run</strong><br> by Jeremy Siegel
-                            </li>
-                            <li class="list-group-item"><strong>Mikroekonomie</strong><br> by Václav Jurečka</li>
-                            <li class="list-group-item"><strong>Adaptive Markets</strong><br> by Andrew Lo </li>
-                            <li class="list-group-item"><strong>The Success Equation</strong><br> by Michael J.
-                                Mauboussin</li>
-                            <li class="list-group-item"><strong>The Little Book That Beats the Market</strong><br> by
-                                Joel Greenblatt</li>
-                            <li class="list-group-item"><strong>The Little Book That Builds Wealth</strong><br> by Pat
-                                Dorsey</li>
-                            <li class="list-group-item"><strong>The Little Book of Value Investing</strong><br> by
-                                Christopher H. Browne</li>
-                            <li class="list-group-item"><strong>The Little Book of Valuation</strong><br> by Aswath
-                                Damodaran</li>
-                            <li class="list-group-item"><strong>Making Sense of Chaos</strong><br> by J. Doyne Farmer
-                            </li>
-                            <li class="list-group-item"><strong>Bullshit Jobs</strong><br> by David Graeber</li>
-                            <li class="list-group-item"><strong>Moonwalking with Einstein</strong><br> by Joshua Foer
-                            </li>
-                            <li class="list-group-item"><strong>Breath</strong><br> by James Nestor</li>
-                            <li class="list-group-item"><strong>Richer, Wiser, Happier</strong><br> by William Green
-                            </li>
-                            <li class="list-group-item"><strong>More Than You Know</strong><br> by Michael J. Mauboussin
-                            </li>
-                            <li class="list-group-item"><strong>100 Baggers</strong><br> by Christopher Mayer</li>
-                            <li class="list-group-item"><strong>What I Learned About Investing From Darwin</strong><br>
-                                by Pulak Prasad</li>
-                            <li class="list-group-item"><strong>The Elephant in the Brain</strong><br> by Simler &
-                                Hanson</li>
-
-                            <li class="list-group-item"><strong>Thinking in Bets</strong><br> by Annie Duke</li>
-                            <li class="list-group-item"><strong>Against the Gods</strong><br> by Peter L. Bernstein</li>
-                            <li class="list-group-item"><strong>The Venture Mindset</strong><br> by Strebulaev & Dang
-                            </li>
-                            <li class="list-group-item"><strong>Freakonomics</strong><br> by Levitt & Dubner</li>
-                            <li class="list-group-item"><strong>A Man For All Markets</strong><br> by Edward O. Thorp
-                            </li>
-                            <li class="list-group-item"><strong>Narrative and Numbers</strong><br> by Aswath Damodaran
-                            </li>
-                            <li class="list-group-item"><strong>Our Inner Ape</strong><br> by Frans de Waal</li>
-                            <li class="list-group-item"><strong>Doing the Doing</strong><br> by Alan McKim</li>
-                            <li class="list-group-item"><strong>Deep Work</strong><br> by Cal Newport</li>
-                            <li class="list-group-item"><strong>The Art of Thinking Clearly</strong><br> by Rolf Dobelli
-                            </li>
-
-
-
-                        </ul>
-
-                    </div>
-                    <div class="modal-footer">
-
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end of modal -->
-
-        <!-- Modal -->
-        <div class="modal fade" id="architecture" tabindex="-1" aria-labelledby="architecture" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="architecture">architecture and interiors</h1>
-                        <button type="button" class="btn-close" style="background-color: rgba(197, 97, 130, 0.801)"
-                            data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-
-                        <h6>here are some of my favourite houses and interiors</h6>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=sACyMOMAK5I"
-                                    target="_blank">Australia - Brisbane</a></li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=N_UHTgGFTX8"
-                                    target="_blank">Australia - Newcastle Bunkeren</a></li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=GxIgo8WhgmQ"
-                                    target="_blank">USA - Los Angeles Sheats-Goldstein Residence</a></li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=zhDYxrQ_qwQ"
-                                    target="_blank">Australia - Noosa</a></li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=D1EMHyt3H7M"
-                                    target="_blank">USA - Connecticut Rogers Island</a></li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=-_CW3KnLczg"
-                                    target="_blank">Australia - Sorrento Victoria House</a></li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=5A5nOkCDEUY"
-                                    target="_blank">Canada - Vancouver Eppich House</a></li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=AhgtB-TqS3w"
-                                    target="_blank">Canada - Vancouver Eppich House II</a></li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=lqh_HK8MsYA"
-                                    target="_blank">USA - East Hampton</a></li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=69JcDK58EZg"
-                                    target="_blank">USA - Hampton Bays</a></li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=P7iwyVlKV-w"
-                                    target="_blank">France - Saint Jean Cap Ferrat</a></li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=7w6wAync-2Q"
-                                    target="_blank">Australia - Sydney</a></li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=W2-uo7ZdBwI"
-                                    target="_blank">Mexico - Zihuatanejo</a></li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=fX2mth3ERR0"
-                                    target="_blank">USA - Lake Tahoe</a></li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=e88mvrxSnf0"
-                                    target="_blank">USA - California Big Sur</a></li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=1npTHjKbwnE"
-                                    target="_blank">South Africa - Cape Town</a></li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=zrqqrQmeQS4"
-                                    target="_blank">USA - Rick Owen's Home</a></li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=OJ0SC2lhoL8"
-                                    target="_blank">New Zealand - Coromandel</a></li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=prwxIaRf5AQ"
-                                    target="_blank">Australia - Sydney</a></li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=haK2TnmVoT0"
-                                    target="_blank">Gwyneth Paltrow's Home Spa</a></li>
-
-
-                        </ul>
-
-                    </div>
-                    <div class="modal-footer">
-
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end of modal -->
-
-        <!-- Modal -->
-        <div class="modal fade" id="digitalstuff" tabindex="-1" aria-labelledby="digitalstuff" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="digitalstuff">digital stuff</h1>
-                        <button type="button" class="btn-close" style="background-color: rgba(197, 97, 130, 0.801)"
-                            data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-
-                        <h6>messing around; perlin flow generated</h6>
-                        <div class="row row-cols-2 g-2">
-                            <div class="col"> <img src="./assets/perlin/a.png" class="img-fluid" alt="..."></div>
-                            <div class="col"> <img src="./assets/perlin/b.png" class="img-fluid" alt="..."></div>
-                            <div class="col"> <img src="./assets/perlin/c.png" class="img-fluid" alt="..."></div>
-                            <div class="col"> <img src="./assets/perlin/d.png" class="img-fluid" alt="..."></div>
-                            <div class="col"> <img src="./assets/perlin/e.png" class="img-fluid" alt="..."></div>
-                            <div class="col"> <img src="./assets/perlin/f.png" class="img-fluid" alt="..."></div>
-                            <div class="col"> <img src="./assets/perlin/g.png" class="img-fluid" alt="..."></div>
-                            <div class="col"> <img src="./assets/perlin/h.png" class="img-fluid" alt="..."></div>
-                            <div class="col"> <img src="./assets/perlin/j.png" class="img-fluid" alt="..."></div>
-                            <div class="col"> <img src="./assets/perlin/k.png" class="img-fluid" alt="..."></div>
-                            <div class="col"> <img src="./assets/perlin/l.png" class="img-fluid" alt="..."></div>
-                            <div class="col"> <img src="./assets/perlin/m.png" class="img-fluid" alt="..."></div>
-                            <div class="col"> <img src="./assets/perlin/n.png" class="img-fluid" alt="..."></div>
-                            <div class="col"> <img src="./assets/perlin/q.png" class="img-fluid" alt="..."></div>
-                            <div class="col"> <img src="./assets/perlin/r.png" class="img-fluid" alt="..."></div>
-                            <div class="col"> <img src="./assets/perlin/s.png" class="img-fluid" alt="..."></div>
-                            <div class="col"> <img src="./assets/perlin/t.png" class="img-fluid" alt="..."></div>
-                            <div class="col"> <img src="./assets/perlin/v.png" class="img-fluid" alt="..."></div>
-                            <div class="col"> <img src="./assets/perlin/w.png" class="img-fluid" alt="..."></div>
-                            <div class="col"> <img src="./assets/perlin/x.png" class="img-fluid" alt="..."></div>
-                            <div class="col"> <img src="./assets/perlin/y.png" class="img-fluid" alt="..."></div>
-                        </div>
-
-
-
-                    </div>
-                    <div class="modal-footer">
-
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end of modal -->
-
-        <!-- Modal -->
-        <div class="modal fade" id="podcasts" tabindex="-1" aria-labelledby="podcastsLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="podcastsLabel">Podcasts</h1>
-                        <button type="button" class="btn-close" style="background-color: rgba(197, 97, 130, 0.801)""
-                            data-bs-dismiss=" modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-
-                        <h6>here are some helpful podcasts that I have found helpful and enlightening, click to get
-                            redirected</h6>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <a href="https://podcasts.apple.com/us/podcast/business-breakdowns/id1559120677"
-                                    class="mb-0" target="_blank">Business Breakdowns<br>
-                                    <p class="mb-0">by Colossus</p>
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="https://podcasts.apple.com/us/podcast/acquired/id1050462261" class="mb-0"
-                                    target="_blank">Acquired<br>
-                                    <p class="mb-0">by Gilbert, Rosenthal</p>
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="https://podcasts.apple.com/us/podcast/invest-like-the-best-with-patrick-oshaughnessy/id1154105909"
-                                    class="mb-0" target="_blank">Invest Like the Best<br>
-                                    <p class="mb-0">by Patrick O'Shaughnessy</p>
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="https://podcasts.apple.com/us/podcast/acq2-by-acquired/id1597212401"
-                                    class="mb-0" target="_blank">ACQ2 by Acquired<br>
-                                    <p class="mb-0">by Gilbert, Rosenthal</p>
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="https://podcasts.apple.com/us/podcast/yet-another-value-podcast/id1526149547"
-                                    class="mb-0" target="_blank">Yet Another Value Podcast<br>
-                                    <p class="mb-0">by Andrew Walker</p>
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="https://podcasts.apple.com/us/podcast/we-study-billionaires-the-investors-podcast-network/id928933489"
-                                    class="mb-0" target="_blank">We Study Billionaires<br>
-                                    <p class="mb-0">by The Investor's Podcast Network</p>
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="https://podcasts.apple.com/us/podcast/we-study-billionaires-the-investors-podcast-network/id928933489"
-                                    class="mb-0" target="_blank">We Study Billionaires<br>
-                                    <p class="mb-0">by The Investor's Podcast Network</p>
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="https://podcasts.apple.com/us/podcast/the-long-view/id1462214964" class="mb-0"
-                                    target="_blank">The Long View<br>
-                                    <p class="mb-0">by Morningstar</p>
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="https://podcasts.apple.com/us/podcast/the-disruptive-voice/id1107627222"
-                                    class="mb-0" target="_blank">The Disruptive Voice<br>
-                                    <p class="mb-0">by Harvard Business School</p>
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="https://podcasts.apple.com/us/podcast/investing-by-the-books/id1577368197"
-                                    class="mb-0" target="_blank">Investing by the Books<br>
-                                    <p class="mb-0">by Redeye AB</p>
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="https://podcasts.apple.com/us/podcast/in-good-company-with-nicolai-tangen/id1614211565"
-                                    class="mb-0" target="_blank">In Good Company<br>
-                                    <p class="mb-0">by Norges Bank Investment Management</p>
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="https://podcasts.apple.com/us/podcast/chit-chat-stocks/id1437766060"
-                                    class="mb-0" target="_blank">Chit Chat Stocks<br>
-                                    <p class="mb-0">by Chit Chat Stocks</p>
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-                    <div class="modal-footer">
-
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end of modal -->
-
-        <!-- Modal -->
-        <div class="modal fade" id="articles" tabindex="-1" aria-labelledby="articles" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="articles">Articles & Papers</h1>
-                        <button type="button" class="btn-close" style="background-color: rgba(197, 97, 130, 0.801)"
-                            data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-
-                        <h6>here are some helpful articles and papers that I have found helpful and enlightening,
-                            click to get redirected</h6>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <a href="https://www.paulgraham.com/articles.html" class="mb-0"
-                                    target="_blank">Essays<br>
-                                    <p class="mb-0">by Paul Graham</p>
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="https://courses.washington.edu/globfut/req%20readings/Brooks.pdf" class="mb-0"
-                                    target="_blank">The Organization Kid<br>
-                                    <p class="mb-0">by David Brooks</p>
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="http://www.e-m-h.org/Maub02.pdf" class="mb-0" target="_blank">The Stock
-                                    Market as a Complex Adaptive System<br>
-                                    <p class="mb-0">by Michael J. Mauboussin</p>
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="https://static1.squarespace.com/static/5ca38f3216b6405d11e3d4b4/t/5cd703ef9b747a78d8387d0b/1557595125616/Complexity%2BInvesting%2Bv9.1.4-1.pdf"
-                                    class="mb-0" target="_blank">Complexity Investing<br>
-                                    <p class="mb-0">by Slingerlend, Johns</p>
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="https://www.morganstanley.com/im/publication/insights/articles/article_themathofvalueandgrowth.pdf"
-                                    class="mb-0" target="_blank">The Math of Value and Growth<br>
-                                    <p class="mb-0">by Mauboussin, Callahan</p>
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="https://www.morganstanley.com/im/publication/insights/articles/article_returnoninvestedcapital.pdf"
-                                    class="mb-0" target="_blank">Return on Invested Capital<br>
-                                    <p class="mb-0">by Mauboussin, Callahan</p>
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="https://www.morganstanley.com/im/publication/insights/articles/article_roicandtheinvestmentprocess.pdf"
-                                    class="mb-0" target="_blank">ROIC and the Investment Process<br>
-                                    <p class="mb-0">by Mauboussin, Callahan</p>
-                                </a>
-                            </li>
-
-                            <li class="list-group-item">
-                                <a href="https://www.morganstanley.com/im/publication/insights/articles/article_measuringthemoat.pdf"
-                                    class="mb-0" target="_blank">Measuring the Moat<br>
-                                    <p class="mb-0">by Mauboussin, Callahan</p>
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="https://dorseyasset.com/wp-content/uploads/2025/02/competitive-advantage-and-capital-allocation_dorsey-asset-management_january-2025.pdf"
-                                    class="mb-0" target="_blank">Competitive Advantage & Capital Allocation<br>
-                                    <p class="mb-0">by Dorsey Asset Management</p>
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="https://dorseyasset.com/wp-content/uploads/2025/02/maximizing-moats_reinvestment-runways-capital-allocation_january-2025.pdf"
-                                    class="mb-0" target="_blank">Maximizing Moats: Reinvestment Runways<br>
-                                    <p class="mb-0">by Dorsey Asset Management</p>
-                                </a>
-                            </li>
-
-                            <li class="list-group-item">
-                                <a href="https://www.nfx.com/post/network-effects-bible" class="mb-0"
-                                    target="_blank">Network Effects<br>
-                                    <p class="mb-0">by NfX</p>
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="https://ergodicityeconomics.com/" class="mb-0" target="_blank">Ergodicity
-                                    Economics Blog<br>
-                                    <p class="mb-0">by Ole Peters</p>
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="https://www.csisoftware.com/category/pres-letters" class="mb-0"
-                                    target="_blank">Constellation Software Letters<br>
-                                    <p class="mb-0">by Mark Leonard</p>
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="https://www.oaktreecapital.com/insights" class="mb-0" target="_blank">Oaktree
-                                    Capital Memos<br>
-                                    <p class="mb-0">by Howard Marks</p>
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="https://www.berkshirehathaway.com/letters/letters.html" class="mb-0"
-                                    target="_blank">Berkshire Hathaway Letters<br>
-                                    <p class="mb-0">by Warren Buffett</p>
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-                    <div class="modal-footer">
-
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end of modal -->
-
-        <!-- Modal -->
-        <div class="modal fade" id="music" tabindex="-1" aria-labelledby="music" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="music">music</h1>
-                        <button type="button" class="btn-close" style="background-color: rgba(197, 97, 130, 0.801)"
-                            data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-
-                        <h6>favorite electronic music</h6>
-                        <div class="row row-cols-1">
-                            <ul class="list-group list-group-flush">
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=9iXiFk85jUc"
-                                    class="mb-0" target="_blank">HÖR set by <b>Sara Delirio</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=aADE8jFkiDw"
-                                    class="mb-0" target="_blank">Riöt set by <b>Sara Delirio</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=6HuZZSBDC4U"
-                                    class="mb-0" target="_blank">Secret Rave in Old Swimming Pool set by
-                                    <b>future.666</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=VkSYAgZYKFc"
-                                    class="mb-0" target="_blank">Intercell x BCCO set by <b>future.666</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=EzSPYJOnZRI"
-                                    class="mb-0" target="_blank">GOTEC set by <b>ÜBERKIKZ</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=pZhUS_q4jkc"
-                                    class="mb-0" target="_blank">Boiler Room set by <b>Brutalismus 3000</b><br></a>
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=z-8JELUcjMM"
-                                    class="mb-0" target="_blank">set by <b>I HATE MODELS</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=Dji8PmMTD8cc"
-                                    class="mb-0" target="_blank">Boiler Room set by <b>Lokier</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=ojJo4VfAbsc"
-                                    class="mb-0" target="_blank">Ce monde où tu n'existes pas by <b>ascendant
-                                        vierge</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=2DvQbzFAsSc"
-                                    class="mb-0" target="_blank">discoteca by <b>ascendant vierge</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=doBBAK_kRdY"
-                                    class="mb-0" target="_blank">de quoi ma nature est donc faite? by <b>ascendant
-                                        vierge</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=kvUPgaVh8_A"
-                                    class="mb-0" target="_blank">Petit Soldat by <b>ascendant vierge</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=IB2EZcPvJow"
-                                    class="mb-0" target="_blank">Pour vivre by <b>ascendant vierge</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=8Bj4rsbLqDU"
-                                    class="mb-0" target="_blank">Impossible Mais Vrai by <b>ascendant vierge</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=BX9GWqEem5o"
-                                    class="mb-0" target="_blank">JE N'EXISTE PAS by <b>Brutalismus 3000</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=qBPdU57antg"
-                                    class="mb-0" target="_blank">Europaträume by <b>Brutalismus 3000</b><br></a>
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=85VYllY3__w"
-                                    class="mb-0" target="_blank">Baby G by <b>Brutalismus 3000</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=DT8GMU56r98"
-                                    class="mb-0" target="_blank">Sosie by <b>Irène Drésel</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=EZl1pgICK9s"
-                                    class="mb-0" target="_blank">Carmen by <b>Irène Drésel</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=EPKlrL6-LVU"
-                                    class="mb-0" target="_blank">Marthe by <b>Irène Drésel</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=CPyv1E-Qe50"
-                                    class="mb-0" target="_blank">Ain't We Mermaids by <b>Anetha</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=QaIO7JHUG7Q"
-                                    class="mb-0" target="_blank">Watch Us Glow by <b>Anetha</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=oRIxvwPjQIY"
-                                    class="mb-0" target="_blank">Megalomania by <b>Joyhauser</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=FxUc3GGqCY0"
-                                    class="mb-0" target="_blank">Graveyard Spiral by <b>VELCRO</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=VhBEtIjs78U"
-                                    class="mb-0" target="_blank">Molecular Movement by <b>VELCRO</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=JswucoqES74"
-                                    class="mb-0" target="_blank">Morning Khépri by <b>VELCRO</b><br></a>
-
-                                <a class="list-group-item" href="https://www.youtube.com/watch?v=pOTgBvLqcbQ"
-                                    class="mb-0" target="_blank">HAL 9000's by <b>VELCRO</b><br></a>
-                            </ul>
-                        </div>
-
-
-
-                    </div>
-                    <div class="modal-footer">
-
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end of modal -->
-
-
-
-
-
-        <!-- end of modals -->
-        </section>
 
     </div>
 
-    </div>
+
 
 
     <script src="script.js"></script>
@@ -1002,16 +366,16 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             new Typed('#title', {
-                strings: ["personal<span style='vertical-align: sub; font-size: 60%; margin-left: 1%; margin-top: 40px'>page</span>"],
+                strings: ["<div class='row align-items-center'><div class='col-12 col-lg-6'>ALT'ALLURE</div></div><div class='col-12 col-lg-6' style='vertical-align: sub; font-size: 60%';><span>INVESTMENTS</span></div>"],
                 typeSpeed: 100,
                 backSpeed: 125,
                 cursorChar: "|",
                 showCursor: false,
-                loop: true
+                loop: false
             });
         });
 
-        var aud = document.getElementById("ASong").children[0];
+         var aud = document.getElementById("ASong").children[0];
         var isPlaying = false;
         aud.pause();
 
@@ -1023,27 +387,6 @@
             }
             isPlaying = !isPlaying;
         }
-
-        let waveAnimation; // Variable to store the Typed instance
-
-        function startWaveTyping() {
-            // If an animation is already running, destroy it first to reset
-            if (waveAnimation) {
-                waveAnimation.destroy();
-            }
-
-            waveAnimation = new Typed('#wave-output', {
-                strings: ['vVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVv'], // Double backslashes to "escape" them in JS
-                typeSpeed: 0.25,
-                backSpeed: 0.25,
-                loop: true,
-                cursorChar: '',
-                contentType: 'text'
-            });
-        }
-
-        // Attach the function to your button
-        document.getElementById('ASong').addEventListener('click', startWaveTyping);
 
     </script>
 </body>
